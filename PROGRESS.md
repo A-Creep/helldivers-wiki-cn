@@ -1,5 +1,38 @@
 # 汉化进度（自动更新）
 
+## 2026-08-18 任务 D：最终验收（增量管线跑通）
+- 执行 `python sync_update.py`：真实增量发现 5 个新增/变更页（Biomes、Castellan's Creed Legendary Warbond、Gazer Spire、Hydrobius - Void、Illuminate）→ 只重渲染 5 页（缓存命中其余）→ 校验 **176,715 个链接全绿、1143 页 0 高危/0 中危/0 低危**
+- 补拉 3 张原站新图（Illuminate_Gazer_Spire 等，wiki API imageinfo 解析 thumburl）
+- 当前本地 site_final：**1143 页 / 8,169 图 / missing_images 165 条**；未打包、未推送，线上镜像保持 E 的 `3667637`
+
+## 2026-08-18 通知：kimi_agent 已修复（任务 B）
+- 完成检测：出现 `===回答完毕===` 立即返回；回答提取不受虚拟列表抖动影响（复杂问题 435–645s 均完整取回）
+- 会话管理：默认每次新开会话，成功后自动删除 Kimi 侧对话（保留 `--keep-conversation` 选项）
+- 给 Kimi 的镜像站链接必须完整 URL（`https://a-creep.github.io/helldivers-wiki-cn/...`），kimi_recheck3/4.txt 已改好
+- 其他任务可直接放心调用 `kimi_agent.py` / `kimi_help.py`
+
+## 2026-08-18 任务 E：站点渲染质量巡检（全站修复轮）
+- **删除图集/媒体章节**：词条页"图集 / Gallery / Media"整节图库（h2/h3 级，含 gallery 网格）全站删除，保留"变体"小图库；删除边界不越过 `</main>`（修复过 Durgen_Battles 尾标签被吞的截断问题）。逻辑写入 `build_site.py` 与 `apply_zh_terms.py` 双保险。
+- **术语表扩充**（`apply_zh_terms.py`）：Push Force→推力、Demo Force→爆破力、Spread→散射、Sway→晃动、Weapon Level→武器等级、Spare Magazines/Spare Mags→备用弹匣、Starting Magazines→初始弹匣、Mags from Supply→补给弹匣数、ROUNDS→发、START MAGS/MAX MAGS→初始/最大弹匣、FULL/PARTIAL 换弹→完整/部分换弹、ZOOM→变焦、Medals→奖章、Front/Side/Rear→正面/侧面/后部、Yes/No/None→是/否/无、ExDR→爆炸抗性 等。
+- **病句修复**：`the <b>X</b> is a/an 中文` → `X 是 中文`（覆盖 `<p>`/infobox 描述/带链接与图标变体），67 页机翻病句清零。
+- **模板残留清理**（`build_site.py`）：Lua error 报错块（scribunto-error）、导航模板 ranger-meta / "View or edit this template" 元信息全站移除。
+- **验收基线（当前）**：1141 页，高危 0 / 中危 0 / 低危 0；`fix_broken_pages.py --dry-run` 0 坏页；`verify_links.py` 链接全部正常（176,541 个，页面去图集后引用减少）；`missing_images.txt` 现 162 条（随构建重写）。
+- **EXE 与镜像**：`dist\Helldivers2WikiCN.exe` 重新打包（约 494MB），冒烟通过（index 正常加载、窗口标题"绝地潜兵2 中文百科"）；镜像已推 GitHub `main`（commit 3667637）。
+
+## 2026-08-18 通知：给 Kimi 的站点链接规范
+- 凡交给 Kimi 的镜像站页面引用必须写**完整 URL**（`https://a-creep.github.io/helldivers-wiki-cn/...`），禁止相对路径（`categories/xxx.html`、`pages/xxx.html`、`index.html`）——Kimi 会把裸路径当可访问链接跳转并误判"搜索失败/内容缺失"
+- 已自查：`kimi_review_new.txt` / `kimi_recheck*.txt` 提问清单中的站点链接均为完整 URL；`同步与打包指南.md` 已新增第 9 节规范；`kimi_question.txt` 已注明其中路径为代码/本地路径非线上链接
+
+## 2026-08-18 任务 D：增量同步与工程文档（项目更名"绝地潜兵2 中文百科"）
+- **新增** `sync_update.py` 一键增量同步：检测变更页（revid 对比）→ 删变更页缓存行 → build_site 只重渲染变更页 → strip → terms → index → verify → validate → 可选打包/镜像推送
+- **新增** `同步与打包指南.md`：完整管线与耗时、增量流程、robocopy 镜像同步、git 推送（7890 代理）、FAQ 速查
+- **README/PROGRESS 补全**：项目名统一为"绝地潜兵2 中文百科"；补充目录结构、快速上手、产物说明
+- 脚本行为：无变更时秒级退出；`--invalidate 标题` 可强制重渲染单页；`--package`/`--push`/`--all` 走完整发布
+- 打包仍以 `Helldivers2WikiCN.spec` 为准（数据 `output_zh/site_final`；注意 build_exe.ps1 的 add-data 是旧路径）
+- **实测**：真实增量同步发现 31 个变更页 → 只重渲染 20 页（缓存命中其余）→ 校验 353,723 链接全绿、高危 0
+- **补拉图片**：变更页新增引用 9 张原站新图（wiki API imageinfo 解析 thumburl 下载），已补入 site/site_final 图片目录
+- **注意**：期间发现另一会话并发跑 `apply_zh_terms.py` 曾短暂造成"页面截断"假象；构建管线应单会话串行执行
+
 ## 2026-08-17 词条页布局规范（wiki.gg 风格）已落地
 - 双栏：正文流式 + 右侧固定 300px infobox（float:right，金 #d4a017 标题栏）
 - infobox：渲染图 ≤150×180、键值紧凑、小图标 16px、分区小标题条
@@ -54,8 +87,12 @@
 - **图片**：已压缩（大 PNG/GIF → WebP + 二次缩放 1280/q78），缺图 0
 - **构建流程**：build_site.py（汉化渲染+缓存）→ compress2.py → generate_index_pages.py → apply_zh_terms.py → PyInstaller
 
-## 当前统计（2026-08-16）
-- 总文本块：50,057；已翻译：12,619；待翻译：36,537
+## 当前统计（2026-08-18）
+- 页面总数：3,225（其中重定向 1,282）；site_final 保留子集：1,143 页
+- 总文本块：50,057；已翻译：13,319（锁定 901）；待翻译：35,837
+- site_final 页面：1,143；图片：8,169 张（missing_images.txt 记录 165 个缺失引用，随页面更新浮动）
+- 链接检查（E 图集/Media 删除后口径）：176,715 个全部正常（D 当天删除前实测为 353,723，口径不同属预期）
+- 上次同步：2026-08-18（增量更新 31 页）；上次操作：sync 增量
 - 已完页：敌人、武器、战略配备、护甲、近战、手雷、SEAF士兵、Major Orders of 2024（954）、Major Orders of 2025（全部）
 - 进行中：Major Orders 主页面（1,486 待译，已完成 75；批次文件 game_loc/mo_main_00.txt 起）
 - 下一步顺序：Major Orders 主页面 → Galactic War（1,231）→ 行星战史/Battle Log → 其余叙事页
