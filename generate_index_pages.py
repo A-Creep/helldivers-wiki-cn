@@ -57,17 +57,18 @@ def zh(t):
 def link_item(t):
     z = html_lib.escape(zh(t))
     e = html_lib.escape(t)
+    en_span = f'<span class="cat-en">{e}</span>' if zh(t) != t else ""
     img = IMGS.get(t, "")
     if img:
         return (f'<a class="cat-item" href="../pages/{html_lib.escape(TMAP[t]["file"])}">'
                 f'<span class="cat-thumb"><img loading="lazy" src="{html_lib.escape(img)}" alt=""></span>'
                 f'<span class="cat-name">{z}</span>'
-                f'<span class="cat-en">{e}</span></a>')
+                f'{en_span}</a>')
     initial = (zh(t) or t)[:1].upper()
     return (f'<a class="cat-item cat-nothumb" data-initial="{html_lib.escape(initial)}" '
             f'href="../pages/{html_lib.escape(TMAP[t]["file"])}">'
             f'<span class="cat-name">{z}</span>'
-            f'<span class="cat-en">{e}</span></a>')
+            f'{en_span}</a>')
 
 
 def render(groups, title, desc=""):

@@ -258,6 +258,9 @@ mark{background:var(--wiki-accent-color);color:#000;border-radius:2px;padding:0 
   background:#1c1c1c;padding:6px 10px;border-radius:4px}
 /* 8. 无横向滚动兜底 */
 html,body{overflow-x:hidden}
+.mw-parser-output .mw-editsection,
+.mw-parser-output .mw-editsection-bracket,
+.mw-parser-output .nv-view{display:none}
 
 /* ============ 全站规范（举一反三） ============ */
 /* 敌人结构表部位图 60px */

@@ -20,7 +20,7 @@
   <h1 class="page-title">网络 故障排除</h1>
   <div class="breadcrumb">网络 故障排除</div>
   <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div><div class="breadcrumb-item breadcrumb-item-final">网络 故障排除</div></div>
-<p>This 页面 is dedicated to resolving <b>网络 连接性 problems</b>.
+<p>This page is dedicated to resolving <b>网络 连接性 problems</b>.
 </p>
 <div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
@@ -28,12 +28,12 @@
 <ul>
 <li class="toclevel-2 tocsection-2"><a href="#VPNs_&amp;_other_Software"><span class="tocnumber">1.1</span> <span class="toctext">VPNs &amp; other 软件</span></a>
 <ul>
-<li class="toclevel-3 tocsection-3"><a href="#Deep_Packet_Inspection"><span class="tocnumber">1.1.1</span> <span class="toctext">深 Packet 检查</span></a></li>
+<li class="toclevel-3 tocsection-3"><a href="#Deep_Packet_Inspection"><span class="tocnumber">1.1.1</span> <span class="toctext">Deep Packet 检查</span></a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-4"><a href="#First_Steps_-_Quick_Network_Fixes"><span class="tocnumber">2</span> <span class="toctext">First Steps - Quick 网络 修复</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#First_Steps_-_Quick_Network_Fixes"><span class="tocnumber">2</span> <span class="toctext">First Steps - Quick 网络 Fixes</span></a></li>
 <li class="toclevel-1 tocsection-5"><a href="#DNS"><span class="tocnumber">3</span> <span class="toctext">DNS</span></a></li>
 <li class="toclevel-1 tocsection-6"><a href="#NAT"><span class="tocnumber">4</span> <span class="toctext">NAT</span></a>
 <ul>
@@ -44,14 +44,14 @@
 </li>
 <li class="toclevel-1 tocsection-10"><a href="#Network_drivers"><span class="tocnumber">5</span> <span class="toctext">网络 drivers</span></a>
 <ul>
-<li class="toclevel-2 tocsection-11"><a href="#Diagnosing_the_Link_Drops"><span class="tocnumber">5.1</span> <span class="toctext">Diagnosing the 链接 空投</span></a></li>
-<li class="toclevel-2 tocsection-12"><a href="#Recommended_Driver_Fixes"><span class="tocnumber">5.2</span> <span class="toctext">Recommended 驾驶员 修复</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Diagnosing_the_Link_Drops"><span class="tocnumber">5.1</span> <span class="toctext">Diagnosing the Link Drops</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Recommended_Driver_Fixes"><span class="tocnumber">5.2</span> <span class="toctext">Recommended Driver Fixes</span></a></li>
 </ul>
 </li>
 <li class="toclevel-1 tocsection-13"><a href="#Login_Problems"><span class="tocnumber">6</span> <span class="toctext">Login Problems</span></a>
 <ul>
 <li class="toclevel-2 tocsection-14"><a href="#PlayFab_Error_35"><span class="tocnumber">6.1</span> <span class="toctext">PlayFab Error 35</span></a></li>
-<li class="toclevel-2 tocsection-15"><a href="#Status_Code_400_/_Error_Code_1600"><span class="tocnumber">6.2</span> <span class="toctext">Status 法典 400 / Error 法典 1600</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Status_Code_400_/_Error_Code_1600"><span class="tocnumber">6.2</span> <span class="toctext">Status Code 400 / Error Code 1600</span></a></li>
 </ul>
 </li>
 <li class="toclevel-1 tocsection-16"><a href="#Starlink"><span class="tocnumber">7</span> <span class="toctext">Starlink</span></a></li>
@@ -59,71 +59,71 @@
 </ul>
 </div>
 
-<h2><span class="mw-headline" id="Basics">Basics</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Basics" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Basics"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
-<p>绝地潜兵 2 is a multiplayer 游戏 on a hybridized P2P (Peer-to-Peer) 网络 architecture.<sup id="cite&#95;ref-1" class="reference"><a href="#cite_note-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup><sup id="cite&#95;ref-2" class="reference"><a href="#cite_note-2"><span class="cite-bracket">&#91;</span>2<span class="cite-bracket">&#93;</span></a></sup> In 简单 terms this means you are connecting 两者 to a centralized server 网络 as well as to other 玩家 directly in 命令 to 游玩, 含义 your 电脑 will keep up two completely 分离 类型 of 网络 connections simultaneously:
+<h2><span class="mw-headline" id="Basics">Basics</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Basics" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Basics"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>绝地潜兵 2 is a multiplayer game on a hybridized P2P (Peer-to-Peer) 网络 architecture.<sup id="cite&#95;ref-1" class="reference"><a href="#cite_note-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup><sup id="cite&#95;ref-2" class="reference"><a href="#cite_note-2"><span class="cite-bracket">&#91;</span>2<span class="cite-bracket">&#93;</span></a></sup> In simple terms this means you are connecting both to a centralized server 网络 as well as to other 玩家 directly in order to play, 含义 your 电脑 will keep up two completely 分离 类型 of 网络 connections simultaneously:
 </p>
-<ul><li><b>Centralized 数据库 (Dedicated Server)</b>: This constant 连接 is used to communicate with Arrowhead's main servers. These 处理 your persistent 玩家 profile 数据 (such as 玩家 Level, unlocked 内容, 超级货币, etc.).</li>
-<li><b>玩法 Session (P2P 网络)</b>: A 指挥 连接 that is used for connecting to other 玩家 themselves. In such connections your 电脑 (or 控制台) acts 两者 as server and 客户端. The <b>Squadleader is the host of the 游戏</b> in such connections, while other 玩家 are clients.</li></ul>
-<p>This hybrid approach can explain a 非常 common 故障排除 paradox:
+<ul><li><b>Centralized 数据库 (Dedicated Server)</b>: This constant 连接 is used to communicate with Arrowhead's main servers. These handle your persistent player profile data (such as Player Level, unlocked 内容, 超级货币, etc.).</li>
+<li><b>玩法 Session (P2P 网络)</b>: A direct 连接 that is used for connecting to other 玩家 themselves. In such connections your 电脑 (or 控制台) acts both as server and client. The <b>Squadleader is the host of the game</b> in such connections, while other 玩家 are clients.</li></ul>
+<p>This hybrid approach can explain a very common 故障排除 paradox:
 </p>
-<ul><li>If you are able to 连接 to the 游戏 but can't join other 玩家, then that indicates a possible 问题 with your P2P 连接性.</li>
-<li>If you are not able to even 日志 into the 游戏, your 网络 issues might be 更多 fundamental.</li></ul>
-<p>The first of those two is 更多 common and might feel paradoxical because you might be able to 游玩 other multiplayer games with 否 problems - but if those do not rely on P2P, you will not notice that something is amiss.
+<ul><li>If you are able to 连接 to the game but can't join other 玩家, then that indicates a possible issue with your P2P 连接性.</li>
+<li>If you are not able to even log into the game, your 网络 issues might be more fundamental.</li></ul>
+<p>The first of those two is more common and might feel paradoxical because you might be able to play other multiplayer games with no problems - but if those do not rely on P2P, you will not notice that something is amiss.
 </p>
-<h3><span id="VPNs_.26_other_Software"></span><span class="mw-headline" id="VPNs_&amp;_other_Software">VPNs &amp; other 软件</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: VPNs &amp; other Software" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: VPNs &amp; other Software"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
-<p>The 使用 of Virtual 列兵 Networks (VPNs) can be a 双重-edged sword when it comes to 绝地潜兵 2. Due to the 广阔 differences between 互联网 服务 providers (ISPs), routing paths, local router settings, etc., there's 否 是 one-尺寸-fits-全部 解决方案. A VPN configuration that breaks the 游戏 for one 玩家 might be the exact 修复 another 玩家 needs to 连接 at 全部.
-</p><p>If your ISP utilizes strict <a class="mw-selflink-fragment" href="#NAT">航母-Grade NAT</a> (CGNAT), a so-called "Dual NAT", or similar problematic configurations, your router can potentially struggle to 建立 指挥 P2P-connections with other 玩家. In such scenarios, a VPN can 法案 as a 舰桥 by routing your traffic and bypass your provider's local routing restrictions. However, 许多 标准 VPN protocols inject significant latency (ping) or actively block unprompted inbound P2P traffic for 安全 reasons, which then 原因 disconnects. One such 示例 would be <i>CloudFlare WARP</i>: While its 安全 protocol technically interferes with P2P 数据 streams, there have been reports of 玩家 being able to bypass their ISP's restrictions by enabling iit.
-</p><p>As a 规则 of thumb it's 重要 that your VPN provider of choice explicitly supports and allows Peer-to-Peer (P2P) traffic. If P2P is blocked at the server level, you won't be able to join up with others. Please also be aware that Free VPN services almost 总是显示 限制 P2P traffic entirely or heavily throttle bandwidth and latency, making them poor choices for multiplayer games that 要求 低 latency.
+<h3><span id="VPNs_.26_other_Software"></span><span class="mw-headline" id="VPNs_&amp;_other_Software">VPNs &amp; other 软件</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: VPNs &amp; other Software" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: VPNs &amp; other Software"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The 使用 of Virtual 列兵 Networks (VPNs) can be a double-edged sword when it comes to 绝地潜兵 2. Due to the vast differences between 互联网 服务 providers (ISPs), routing paths, local router settings, etc., there's no true one-size-fits-all 解决方案. A VPN configuration that breaks the game for one player might be the exact fix another player needs to 连接 at all.
+</p><p>If your ISP utilizes strict <a class="mw-selflink-fragment" href="#NAT">航母-Grade NAT</a> (CGNAT), a so-called "Dual NAT", or similar problematic configurations, your router can potentially struggle to 建立 direct P2P-connections with other 玩家. In such scenarios, a VPN can act as a bridge by routing your traffic and bypass your provider's local routing restrictions. However, many 标准 VPN protocols inject significant latency (ping) or actively block unprompted inbound P2P traffic for 安全 reasons, which then cause disconnects. One such 示例 would be <i>CloudFlare WARP</i>: While its 安全 protocol technically interferes with P2P data streams, there have been reports of 玩家 being able to bypass their ISP's restrictions by enabling iit.
+</p><p>As a rule of thumb it's 重要 that your VPN provider of choice explicitly supports and allows Peer-to-Peer (P2P) traffic. If P2P is blocked at the server level, you won't be able to join up with others. Please also be aware that Free VPN services almost always 限制 P2P traffic entirely or heavily throttle bandwidth and latency, making them poor choices for multiplayer games that 要求 low latency.
 </p>
-<h4><span class="mw-headline" id="Deep_Packet_Inspection">深 Packet 检查</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Deep Packet Inspection" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Deep Packet Inspection"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
-<p>If you are using 深 Packet 检查 (DPI)-软件 (such as <i>Zapret</i>) as bypass tools or 网络 限制 workarounds, this 5月 interfere with the 游戏's 网络 protocol. Because they manipulate TCP/IP packet structures and HTTP headers on a 低 星系 level to bypass regional blocks, they directly 冲突 with the 游戏's 网络 正直 checks.
-</p><p>Using these tools simultaneously with the 游戏 will likely 结果 in:
+<h4><span class="mw-headline" id="Deep_Packet_Inspection">Deep Packet 检查</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Deep Packet Inspection" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Deep Packet Inspection"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>If you are using Deep Packet 检查 (DPI)-软件 (such as <i>Zapret</i>) as bypass tools or 网络 限制 workarounds, this may interfere with the game's 网络 protocol. Because they manipulate TCP/IP packet structures and HTTP headers on a low system level to bypass regional blocks, they directly 冲突 with the game's 网络 正直 checks.
+</p><p>Using these tools simultaneously with the game will likely result in:
 </p>
-<ul><li>全射 亏损 of server 连接性.</li>
+<ul><li>Total loss of server 连接性.</li>
 <li>Frequent "连接 Timed Out" errors.</li>
-<li>Inability to authenticate or 日志 in.</li>
+<li>Inability to authenticate or log in.</li>
 <li>Anticheat error <code>10002039</code></li></ul>
-<h2><span class="mw-headline" id="First_Steps_-_Quick_Network_Fixes">First Steps - Quick 网络 修复</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: First Steps - Quick Network Fixes" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: First Steps - Quick Network Fixes"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
-<p>These initial steps are 简单 to 处决, take 非常 少量 时间, and can 经常 解决 a 宽阔 射程 of 连接性 issues before 更多 advanced solutions can be tried:
+<h2><span class="mw-headline" id="First_Steps_-_Quick_Network_Fixes">First Steps - Quick 网络 Fixes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: First Steps - Quick Network Fixes" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: First Steps - Quick Network Fixes"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>These initial steps are simple to 处决, take very little time, and can often 解决 a wide 射程 of 连接性 issues before more advanced solutions can be tried:
 </p>
-<ul><li><b>连接 Quality 测试</b>
-<ul><li>Run the <a rel="nofollow" class="external text" href="https://speed.cloudflare.com/">CloudFlare Speedtest</a>. Particularly the 在线 Gaming Quality 分数 will be 重要. Also 支付 关闭 attention to the "Jitter/Packet 亏损" values, as 高 jitter will disrupt P2P connections.</li></ul></li>
-<li><b>检查 your Steam Profile 名称.</b>
-<ul><li>Do not use non-标准 characters. 特殊 characters might not be parsed by the 游戏 数据库 and prevent you from logging into the 游戏.</li></ul></li>
-<li><b>之力 Cycle your 网络 装备</b>
-<ul><li>Unplug the 之力 cables from 两者 your modem and router (if you have 分离 devices) for 5 分钟 and then plug them 返回 in. This will 清楚 their internal routing 内存 tables.</li></ul></li>
+<ul><li><b>连接 Quality Test</b>
+<ul><li>Run the <a rel="nofollow" class="external text" href="https://speed.cloudflare.com/">CloudFlare Speedtest</a>. Particularly the Online Gaming Quality score will be 重要. Also pay close attention to the "Jitter/Packet Loss" values, as high jitter will disrupt P2P connections.</li></ul></li>
+<li><b>Check your Steam Profile Name.</b>
+<ul><li>Do not use non-标准 characters. 特殊 characters might not be parsed by the game 数据库 and prevent you from logging into the game.</li></ul></li>
+<li><b>Power Cycle your 网络 装备</b>
+<ul><li>Unplug the power cables from both your modem and router (if you have 分离 devices) for 5 分钟 and then plug them back in. This will clear their internal routing memory tables.</li></ul></li>
 <li><b>Use the <a href="Hellbomb_Script.html" title="Hellbomb Script">Hellbomb Script</a></b>
-<ul><li>PC Users can use the script to quickly scan their 星系 环境 for DNS routing and NAT configuration problems.</li></ul></li></ul>
-<ul><li>Release / renew your IP 地址 and flush your DNS 缓存:</li></ul>
-<div class="tabber tabber--init"><header class="tabber__header"><button class="tabber__header__prev" tabindex="-1" type="button" aria-hidden="true"></button><nav class="tabber__tabs" role="tablist"><a class="tabber__tab" role="tab" id="Windows-0-label" href="#Windows-0" aria-controls="Windows-0">Windows</a><a class="tabber__tab" role="tab" id="Linux-0-label" href="#Linux-0" aria-controls="Linux-0">Linux</a></nav><button class="tabber__header__next" tabindex="-1" type="button" aria-hidden="true"></button></header><section class="tabber__section"><article class="tabber__panel" role="tabpanel" tabindex="0" id="Windows-0" aria-labelledby="Windows-0-label"><p>打开 the Windows 搜索 酒吧, 类型 <code>cmd</code>, and press <code>CTRL + SHIFT + ENTER</code> to launch the 指挥 Prompt as an 管理员.
-</p><p>类型 the following commands one after another. 一次 you've entered a 指挥, press "Enter" after 每个 line.
+<ul><li>PC Users can use the script to quickly scan their system 环境 for DNS routing and NAT configuration problems.</li></ul></li></ul>
+<ul><li>Release / renew your IP 地址 and flush your DNS cache:</li></ul>
+<div class="tabber tabber--init"><header class="tabber__header"><button class="tabber__header__prev" tabindex="-1" type="button" aria-hidden="true"></button><nav class="tabber__tabs" role="tablist"><a class="tabber__tab" role="tab" id="Windows-0-label" href="#Windows-0" aria-controls="Windows-0">Windows</a><a class="tabber__tab" role="tab" id="Linux-0-label" href="#Linux-0" aria-controls="Linux-0">Linux</a></nav><button class="tabber__header__next" tabindex="-1" type="button" aria-hidden="true"></button></header><section class="tabber__section"><article class="tabber__panel" role="tabpanel" tabindex="0" id="Windows-0" aria-labelledby="Windows-0-label"><p>Open the Windows Search bar, 类型 <code>cmd</code>, and press <code>CTRL + SHIFT + ENTER</code> to launch the 指挥 Prompt as an 管理员.
+</p><p>类型 the following commands one after another. Once you've entered a 指挥, press "Enter" after each line.
 </p>
 <ol><li><code>ipconfig /release</code> (Releases your 当前 IP 地址 assignment)</li>
 <li><code>ipconfig /renew</code> (Requests a fresh IP 地址 from your router)</li>
-<li><code>ipconfig /flushdns</code> (Purges the local DNS resolver 缓存)<p class="mw-empty-elt"></p></li></ol></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Linux-0" aria-labelledby="Linux-0-label"><p><i>Note: The exact 网络 commands 5月 vary slightly depending on your specific Linux 分布 and 网络 manager.</i>
+<li><code>ipconfig /flushdns</code> (Purges the local DNS resolver cache)<p class="mw-empty-elt"></p></li></ol></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Linux-0" aria-labelledby="Linux-0-label"><p><i>Note: The exact 网络 commands may vary slightly depending on your specific Linux 分布 and 网络 manager.</i>
 </p><p><br />
-打开 your 终端 by pressing <code>CTRL + ALT + T</code> (or use your desktop 环境's GUI 终端).
+Open your 终端 by pressing <code>CTRL + ALT + T</code> (or use your desktop 环境's GUI 终端).
 </p>
 <ol><li>First release and renew your DHCP IP lease via these commands:</li>
 <li><code>sudo dhclient -r</code></li>
 <li><code>sudo dhclient</code></li></ol>
 <p><br />
-To flush your 星系's DNS caches, 处决 one of the following commands based on your init 星系:
+To flush your system's DNS caches, 处决 one of the following commands based on your init system:
 <br />
 </p>
-<ol><li><code>sudo resolvectl flush-caches</code> (标准 for 现代 systemd-已解决)</li>
+<ol><li><code>sudo resolvectl flush-caches</code> (标准 for modern systemd-已解决)</li>
 <li><code>sudo systemd-解决 --flush-caches</code> (For older systemd structures)</li>
 <li><code>sudo systemctl 重新开始 systemd-已解决.服务</code> (Alternative: restarts the 分辨率 服务 entirely)</li></ol>
 <p><br />
 </p>
-You can 验证 if the DNS 缓存 has been flushed by typing in <code>sudo resolvectl 属性</code> . 一些 Distributions, such as CachyOS, 允许 the clearing of the 缓存 via Apps such as "CachyOS Hello".<p class="mw-empty-elt"></p></article></section></div>
-<h2><span class="mw-headline" id="DNS">DNS</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: DNS" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: DNS"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
-<p>One of the 最多 有效 ways to 解决 连接性 problems is to 检查 your DNS setup as a lot of 网络-相关 problems originate here.
-</p><p>"DNS" stands for "域名 名称 星系", which is a hierarchical, decentralized 目录 that acts as the phonebook of the 互联网. It translates 人类-readable 域名 names (such as <i>绝地潜兵.wiki.gg</i>) into numerical IP addresses that machines 要求 to 定位 and communicate with servers.<sup id="cite&#95;ref-3" class="reference"><a href="#cite_note-3"><span class="cite-bracket">&#91;</span>3<span class="cite-bracket">&#93;</span></a></sup>
-</p><p>By 默认, your router automatically 使用次数 the DNS servers provided by your 互联网 服务 Provider (ISP). However, those ISP-run DNS servers are notoriously slow to 更新 their DNS records and 相当 频繁 suffer from configuration errors. If a recent 绝地潜兵 2 server 更新 alters its 目标 IP addresses, an outdated ISP DNS will fail to 解决 the 连接, leading to 全部 manners of 连接 problems.
-</p><p>If flushing your local DNS 缓存 did not 解决 your 连接性 issues, the underlying 问题 is likely at the server level. In this scenario, the 最好 course of action is to manually configure your 网络 settings to use a fast, reliable, third-party public DNS.
+You can verify if the DNS cache has been flushed by typing in <code>sudo resolvectl 属性</code> . Some Distributions, such as CachyOS, allow the clearing of the cache via Apps such as "CachyOS Hello".<p class="mw-empty-elt"></p></article></section></div>
+<h2><span class="mw-headline" id="DNS">DNS</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: DNS" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: DNS"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>One of the most 有效 ways to 解决 连接性 problems is to check your DNS setup as a lot of 网络-相关 problems originate here.
+</p><p>"DNS" stands for "Domain Name System", which is a hierarchical, decentralized 目录 that acts as the phonebook of the 互联网. It translates human-readable domain names (such as <i>绝地潜兵.wiki.gg</i>) into numerical IP addresses that machines 要求 to locate and communicate with servers.<sup id="cite&#95;ref-3" class="reference"><a href="#cite_note-3"><span class="cite-bracket">&#91;</span>3<span class="cite-bracket">&#93;</span></a></sup>
+</p><p>By 默认, your router automatically 使用次数 the DNS servers provided by your 互联网 服务 Provider (ISP). However, those ISP-run DNS servers are notoriously slow to 更新 their DNS records and quite 频繁 suffer from configuration errors. If a recent 绝地潜兵 2 server 更新 alters its 目标 IP addresses, an outdated ISP DNS will fail to 解决 the 连接, leading to all manners of 连接 problems.
+</p><p>If flushing your local DNS cache did not 解决 your 连接性 issues, the underlying 问题 is likely at the server level. In this scenario, the best course of action is to manually configure your 网络 settings to use a fast, reliable, third-party public DNS.
 </p>
-<div class="tabber tabber--init"><header class="tabber__header"><button class="tabber__header__prev" tabindex="-1" type="button" aria-hidden="true"></button><nav class="tabber__tabs" role="tablist"><a class="tabber__tab" role="tab" id="Windows-1-label" href="#Windows-1" aria-controls="Windows-1">Windows</a><a class="tabber__tab" role="tab" id="Linux-1-label" href="#Linux-1" aria-controls="Linux-1">Linux</a><a class="tabber__tab" role="tab" id="XBOX_Series-0-label" href="#XBOX_Series-0" aria-controls="XBOX_Series-0">XBOX 系列</a><a class="tabber__tab" role="tab" id="PlayStation_5-0-label" href="#PlayStation_5-0" aria-controls="PlayStation_5-0">PlayStation 5</a></nav><button class="tabber__header__next" tabindex="-1" type="button" aria-hidden="true"></button></header><section class="tabber__section"><article class="tabber__panel" role="tabpanel" tabindex="0" id="Windows-1" aria-labelledby="Windows-1-label"><p class="mw-empty-elt"></p><table class="wikitable" style="width:400px; font-size:90%; float:right; margin-left: 40px">
+<div class="tabber tabber--init"><header class="tabber__header"><button class="tabber__header__prev" tabindex="-1" type="button" aria-hidden="true"></button><nav class="tabber__tabs" role="tablist"><a class="tabber__tab" role="tab" id="Windows-1-label" href="#Windows-1" aria-controls="Windows-1">Windows</a><a class="tabber__tab" role="tab" id="Linux-1-label" href="#Linux-1" aria-controls="Linux-1">Linux</a><a class="tabber__tab" role="tab" id="XBOX_Series-0-label" href="#XBOX_Series-0" aria-controls="XBOX_Series-0">XBOX Series</a><a class="tabber__tab" role="tab" id="PlayStation_5-0-label" href="#PlayStation_5-0" aria-controls="PlayStation_5-0">PlayStation 5</a></nav><button class="tabber__header__next" tabindex="-1" type="button" aria-hidden="true"></button></header><section class="tabber__section"><article class="tabber__panel" role="tabpanel" tabindex="0" id="Windows-1" aria-labelledby="Windows-1-label"><p class="mw-empty-elt"></p><table class="wikitable" style="width:400px; font-size:90%; float:right; margin-left: 40px">
 <caption style="text-align:center;">DNS Settings
 </caption>
 <tbody><tr>
@@ -157,22 +157,22 @@ You can 验证 if the DNS 缓存 has been flushed by typing in <code>sudo resolv
 <td>2606:4700:4700::1001</td>
 <td>2001:4860:4860::8844
 </td></tr></tbody></table>
-<p>When modifying your DNS settings on Windows, it is highly recommended to configure 两者 IPv4 <b>and</b> IPv6 to prevent fallback routing conflicts.
+<p>When modifying your DNS settings on Windows, it is highly recommended to configure both IPv4 <b>and</b> IPv6 to prevent fallback routing conflicts.
 </p>
-<ol><li>按下 <code>赢得 + R</code> to 打开 the "Run" dialog, then 类型 <code>ncpa.cpl</code>, and click "OK".</li>
-<li>正确-click on your 网络 adapter (e.g. "Ethernet" or "Wi-Fi") and 选择 <code>Properties</code> .</li>
-<li>选择 <code>互联网 Protocol Version 4 (TCP/IPv4)</code> from the 列表 and click on "Properties".</li>
-<li>Click on the <b>无线电 button</b> of <code>Use the following DNS server addresses</code> .</li>
-<li>Enter the addresses of your choice in their respective fields as "Preferred DNS Server" and "Alternate DNS Server" (see 表格 below).</li>
-<li>Click "OK" to 关闭 the IPv4 properties window.</li>
-<li>Now 选择 <code>互联网 Protocol Version 6</code> from the 列表 and click on "Properties".</li>
-<li>重复 steps 4 through 6, using the respective IPv6 addresses from the 表格 on the 正确 侧面, and then click "OK" and 关闭 the window when you are done to apply the changes.</li></ol>
-<p>Should the 手册 configuration of 习俗 DNS servers not 解决 your 连接性 problems, there's a 几率 that your 互联网 服务 provider might be struggling with an unstable Dual-Stack Lite (DS-Lite) tunnel allocation. In such scenarios disabling IPv6 entirely will 之势 your 星系 to rely strictly on a stable IPv4 routing path. This can 解决 P2P 匹配 issues:
+<ol><li>按下 <code>WIN + R</code> to open the "Run" dialog, then 类型 <code>ncpa.cpl</code>, and click "OK".</li>
+<li>Right-click on your 网络 adapter (e.g. "Ethernet" or "Wi-Fi") and select <code>Properties</code> .</li>
+<li>选择 <code>互联网 Protocol Version 4 (TCP/IPv4)</code> from the list and click on "Properties".</li>
+<li>Click on the <b>radio button</b> of <code>Use the following DNS server addresses</code> .</li>
+<li>Enter the addresses of your choice in their respective fields as "Preferred DNS Server" and "Alternate DNS Server" (see table below).</li>
+<li>Click "OK" to close the IPv4 properties window.</li>
+<li>Now select <code>互联网 Protocol Version 6</code> from the list and click on "Properties".</li>
+<li>Repeat steps 4 through 6, using the respective IPv6 addresses from the table on the right side, and then click "OK" and close the window when you are done to apply the changes.</li></ol>
+<p>Should the manual configuration of custom DNS servers not 解决 your 连接性 problems, there's a chance that your 互联网 服务 provider might be struggling with an unstable Dual-Stack Lite (DS-Lite) tunnel allocation. In such scenarios disabling IPv6 entirely will force your system to rely strictly on a stable IPv4 routing path. This can 解决 P2P 匹配 issues:
 </p>
-<ol><li>按下 <code>赢得 + R</code>, 类型 <code>ncpa.cpl</code>, and click on "OK".</li>
-<li>正确-click your active 网络 adapter and 选择 "Properties".</li>
-<li>Scroll down the 列表 and <b>uncheck</b> the box to the left of <b>互联网 Protocol Version 6 (TCP/IPv6)</b>.</li>
-<li>Finally, click "OK" to 拯救 the settings. Now try and 开始 绝地潜兵 2 再次 to 验证 if this 已解决 the 问题.<p class="mw-empty-elt"></p></li></ol></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Linux-1" aria-labelledby="Linux-1-label"><p class="mw-empty-elt"></p><table class="wikitable" style="width:400px; font-size:90%; float:right; margin-left: 40px">
+<ol><li>按下 <code>WIN + R</code>, 类型 <code>ncpa.cpl</code>, and click on "OK".</li>
+<li>Right-click your active 网络 adapter and select "Properties".</li>
+<li>Scroll down the list and <b>uncheck</b> the box to the left of <b>互联网 Protocol Version 6 (TCP/IPv6)</b>.</li>
+<li>Finally, click "OK" to save the settings. Now try and start 绝地潜兵 2 again to verify if this 已解决 the issue.<p class="mw-empty-elt"></p></li></ol></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Linux-1" aria-labelledby="Linux-1-label"><p class="mw-empty-elt"></p><table class="wikitable" style="width:400px; font-size:90%; float:right; margin-left: 40px">
 <caption style="text-align:center;">DNS Settings
 </caption>
 <tbody><tr>
@@ -206,24 +206,24 @@ You can 验证 if the DNS 缓存 has been flushed by typing in <code>sudo resolv
 <td>2606:4700:4700::1001</td>
 <td>2001:4860:4860::8844
 </td></tr></tbody></table>
-<p>Before you 开始 to 变化 your settings, it's recommended to do a quick diagnostic 测试 to 检查 if your 当前 DNS server is actively misrouting 任何 traffic.
+<p>Before you start to change your settings, it's recommended to do a quick diagnostic test to check if your 当前 DNS server is actively misrouting any traffic.
 </p>
-<ol><li>打开 your 终端 (通常 <code>CTRL + ALT + T</code>).</li>
+<ol><li>Open your 终端 (通常 <code>CTRL + ALT + T</code>).</li>
 <li>类型 in <code>nslookup cloudflare.com &amp;&amp; nslookup cloudflare.com 8.8.8.8 &amp;&amp; nslookup cloudflare.com 1.1.1.1</code> . This will compare your local provider's DNS responses against public alternatives.</li>
-<li>Compare the first server (your ISP) to the other two (8.8.8.8 - Google / 1.1.1.1 - CloudFlare) servers. If the returned IP addresses from your local server do not 比赛 the public servers, your ISP's DNS routing 表格 might be broken or outdated, which then causes problems with your 游戏's 能力 to 连接 to other 玩家.</li></ol>
-<div class="tabber tabber--init"><header class="tabber__header"><button class="tabber__header__prev" tabindex="-1" type="button" aria-hidden="true"></button><nav class="tabber__tabs" role="tablist"><a class="tabber__tab" role="tab" id="Desktop_Environments-0-label" href="#Desktop_Environments-0" aria-controls="Desktop_Environments-0">Desktop Environments</a><a class="tabber__tab" role="tab" id="Steam_Deck-0-label" href="#Steam_Deck-0" aria-controls="Steam_Deck-0">Steam 甲板</a></nav><button class="tabber__header__next" tabindex="-1" type="button" aria-hidden="true"></button></header><section class="tabber__section"><article class="tabber__panel" role="tabpanel" tabindex="0" id="Desktop_Environments-0" aria-labelledby="Desktop_Environments-0-label"><p>While distributions vary, nearly 全部 现代 gaming distros utilize <b>NetworkManager</b> to 处理 connections.
-</p><ol><li>打开 your 星系's "Settings" and navigate to "网络" (or Wi-Fi).</li>
-<li>Click on the <i>装备 图标</i> 下一个 to your active 连接 to 打开 its profile.</li>
-<li>Navigate to the "IPv4" tab. 转变 off "全自动 (DHCP) DNS" and enter the chosen addresses separated by a comma (e.g., <code>1.1.1.1, 1.0.0.1</code>).</li>
-<li>Navigate to the "IPv6" tab, disable "全自动 DNS" here as well, and 输入 the corresponding IPv6 strings (see 参考 表格 to the 正确).</li>
+<li>Compare the first server (your ISP) to the other two (8.8.8.8 - Google / 1.1.1.1 - CloudFlare) servers. If the returned IP addresses from your local server do not match the public servers, your ISP's DNS routing table might be broken or outdated, which then causes problems with your game's 能力 to 连接 to other 玩家.</li></ol>
+<div class="tabber tabber--init"><header class="tabber__header"><button class="tabber__header__prev" tabindex="-1" type="button" aria-hidden="true"></button><nav class="tabber__tabs" role="tablist"><a class="tabber__tab" role="tab" id="Desktop_Environments-0-label" href="#Desktop_Environments-0" aria-controls="Desktop_Environments-0">Desktop Environments</a><a class="tabber__tab" role="tab" id="Steam_Deck-0-label" href="#Steam_Deck-0" aria-controls="Steam_Deck-0">Steam Deck</a></nav><button class="tabber__header__next" tabindex="-1" type="button" aria-hidden="true"></button></header><section class="tabber__section"><article class="tabber__panel" role="tabpanel" tabindex="0" id="Desktop_Environments-0" aria-labelledby="Desktop_Environments-0-label"><p>While distributions vary, nearly all modern gaming distros utilize <b>NetworkManager</b> to handle connections.
+</p><ol><li>Open your system's "Settings" and navigate to "网络" (or Wi-Fi).</li>
+<li>Click on the <i>Gear Icon</i> 下一个 to your active 连接 to open its profile.</li>
+<li>Navigate to the "IPv4" tab. Turn off "全自动 (DHCP) DNS" and enter the chosen addresses separated by a comma (e.g., <code>1.1.1.1, 1.0.0.1</code>).</li>
+<li>Navigate to the "IPv6" tab, disable "全自动 DNS" here as well, and input the corresponding IPv6 strings (see 参考 table to the right).</li>
 <li>Click "Apply" and 重新开始 your 连接.</li></ol>
-<br /><p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Steam_Deck-0" aria-labelledby="Steam_Deck-0-label"><p>You do not need to 切换 to Desktop 模式 to 修复 your DNS on the Steam 甲板. You can 改变 these settings directly within SteamOS:
+<br /><p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Steam_Deck-0" aria-labelledby="Steam_Deck-0-label"><p>You do not need to switch to Desktop Mode to fix your DNS on the Steam Deck. You can alter these settings directly within SteamOS:
 </p><ol><li>Press the "Steam button" and navigate to "Settings" -&gt; "互联网".</li>
-<li>选择 your active Wi-Fi 网络 and press the <i>A button</i> to 打开 its options.</li>
-<li>Scroll down and 选择 "Advanced Settings".</li>
-<li>定位 the "DNS Server" 切换 and 切换 it from <i>全自动</i> to <b>手册</b>.</li>
-<li>Enter your preferred Primary and Secondary DNS addresses into their respective 输入 fields.</li>
-<li>确认 and 拯救 the settings.<p class="mw-empty-elt"></p></li></ol></article></section></div><p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="XBOX_Series-0" aria-labelledby="XBOX_Series-0-label"><p class="mw-empty-elt"></p><table class="wikitable" style="width:400px; font-size:90%; float:right; margin-left: 40px">
+<li>Select your active Wi-Fi 网络 and press the <i>A button</i> to open its options.</li>
+<li>Scroll down and select "Advanced Settings".</li>
+<li>Locate the "DNS Server" toggle and switch it from <i>全自动</i> to <b>手册</b>.</li>
+<li>Enter your preferred Primary and Secondary DNS addresses into their respective input fields.</li>
+<li>确认 and save the settings.<p class="mw-empty-elt"></p></li></ol></article></section></div><p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="XBOX_Series-0" aria-labelledby="XBOX_Series-0-label"><p class="mw-empty-elt"></p><table class="wikitable" style="width:400px; font-size:90%; float:right; margin-left: 40px">
 <caption style="text-align:center;">DNS Settings
 </caption>
 <tbody><tr>
@@ -257,14 +257,14 @@ You can 验证 if the DNS 缓存 has been flushed by typing in <code>sudo resolv
 <td>2606:4700:4700::1001</td>
 <td>2001:4860:4860::8844
 </td></tr></tbody></table>
-<p>Xbox 系列 allows you to 套装 a 习俗 DNS, which greatly helps resolving persistent 连接性 problems.<sup id="cite&#95;ref-4" class="reference"><a href="#cite_note-4"><span class="cite-bracket">&#91;</span>4<span class="cite-bracket">&#93;</span></a></sup>
+<p>Xbox Series allows you to set a custom DNS, which greatly helps resolving persistent 连接性 problems.<sup id="cite&#95;ref-4" class="reference"><a href="#cite_note-4"><span class="cite-bracket">&#91;</span>4<span class="cite-bracket">&#93;</span></a></sup>
 </p>
-<ol><li>Press the <b>Xbox button</b> to 打开 the 引导 and 选择 "Settings".</li>
+<ol><li>Press the <b>Xbox button</b> to open the guide and select "Settings".</li>
 <li>Navigate to "基本信息" -&gt; "网络 settings" -&gt; "Advanced settings".</li>
-<li>选择 "DNS settings" and 选择 <b>手册</b>.</li>
-<li>输入 the IPv4 addresses of your choice from the 表格 to the 正确 for 两者 the <i>主要</i> and <i>次要</i> fields.</li>
-<li>If your home 网络 utilizes IPv6, the 控制台 will automatically prompt you for IPv6 addresses 下一个. 输入 the corresponding addresses from the 表格.</li>
-<li>一次 finished, press the <b>B button</b> to 拯救 and apply the configurations. The 控制台 will run a quick 连接 测试 to 验证 the setup.<p class="mw-empty-elt"></p></li></ol></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="PlayStation_5-0" aria-labelledby="PlayStation_5-0-label"><p class="mw-empty-elt"></p><table class="wikitable" style="width:400px; font-size:90%; float:right; margin-left: 40px">
+<li>Select "DNS settings" and choose <b>手册</b>.</li>
+<li>Input the IPv4 addresses of your choice from the table to the right for both the <i>主要</i> and <i>次要</i> fields.</li>
+<li>If your home 网络 utilizes IPv6, the 控制台 will automatically prompt you for IPv6 addresses 下一个. Input the corresponding addresses from the table.</li>
+<li>Once finished, press the <b>B button</b> to save and apply the configurations. The 控制台 will run a quick 连接 test to verify the setup.<p class="mw-empty-elt"></p></li></ol></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="PlayStation_5-0" aria-labelledby="PlayStation_5-0-label"><p class="mw-empty-elt"></p><table class="wikitable" style="width:400px; font-size:90%; float:right; margin-left: 40px">
 <caption style="text-align:center;">DNS Settings
 </caption>
 <tbody><tr>
@@ -282,26 +282,26 @@ You can 验证 if the DNS 缓存 has been flushed by typing in <code>sudo resolv
 <td>1.0.0.1</td>
 <td>8.8.4.4
 </td></tr></tbody></table>
-<p>While you can 套装 the DNS for the PlayStation 5, it's 重要 to note that you can <b>only</b> 套装 IPv4; you cannot manually configure IPv6. However, this should be sufficient to work.
+<p>While you can set the DNS for the PlayStation 5, it's 重要 to note that you can <b>only</b> set IPv4; you cannot manually configure IPv6. However, this should be sufficient to work.
 </p>
-<ol><li>Navigate to the "Settings" 菜单 (装备 图标) on the top 正确 of the PS5 home screen.</li>
-<li>选择 "网络" and then navigate to "Settings" -&gt; "套装 Up 互联网 连接".</li>
-<li>Highlight your active 连接 (Wi-Fi or LAN), press the <b>Options button (☰)</b> on your DualSense controller, and 选择 "Advanced Settings".</li>
-<li>变化 the "DNS Settings" 切换 from <i>全自动</i> to <i>手册</i>.</li>
-<li>选择 "Primary DNS" and enter the IPv4 地址 of your choice. 下一个, 选择 "Secondary DNS" and enter the corresponding alternate 地址.</li>
-<li>Click "OK" to 拯救 and apply. The 控制台 will automatically 断开 and reconnect to run a brief status 检查.<p class="mw-empty-elt"></p></li></ol></article></section></div>
-<h2><span class="mw-headline" id="NAT">NAT</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: NAT" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: NAT"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
-<p>One of the 最多 basic things to 检查 and 排除故障 should be your <b>网络 地址 翻译 (NAT)</b>. To make a 长 story 短: NAT is a protocol running on your local router which translates the 列兵 IP addresses of your home devices into a 单个, global public IP 地址 which is then used to communicate with the 互联网 as a whole. So your PC, consoles, smartphones, etc. 分享 one 互联网 连接 instead of 全部 of them having their own public addresses.
+<ol><li>Navigate to the "Settings" menu (gear icon) on the top right of the PS5 home screen.</li>
+<li>Select "网络" and then navigate to "Settings" -&gt; "Set Up 互联网 连接".</li>
+<li>Highlight your active 连接 (Wi-Fi or LAN), press the <b>Options button (☰)</b> on your DualSense controller, and select "Advanced Settings".</li>
+<li>Change the "DNS Settings" toggle from <i>全自动</i> to <i>手册</i>.</li>
+<li>Select "Primary DNS" and enter the IPv4 地址 of your choice. 下一个, select "Secondary DNS" and enter the corresponding alternate 地址.</li>
+<li>Click "OK" to save and apply. The 控制台 will automatically 断开 and reconnect to run a brief status check.<p class="mw-empty-elt"></p></li></ol></article></section></div>
+<h2><span class="mw-headline" id="NAT">NAT</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: NAT" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: NAT"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>One of the most basic things to check and 排除故障 should be your <b>网络 地址 翻译 (NAT)</b>. To make a long story short: NAT is a protocol running on your local router which translates the 列兵 IP addresses of your home devices into a single, global public IP 地址 which is then used to communicate with the 互联网 as a whole. So your PC, consoles, smartphones, etc. share one 互联网 连接 instead of all of them having their own public addresses.
 </p>
-<h3><span class="mw-headline" id="Carrier-Grade_NAT">航母-Grade NAT</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Carrier-Grade NAT" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Carrier-Grade NAT"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
-<p>One of the biggest hurdles that can interfere with 绝地潜兵 2's P2P networking is the presence of a so-called <b>航母 Grade NAT (CGNAT)</b>. It's used by 互联网 服务 Providers (ISPs) in 命令 to mitigate IPv4 地址 exhaustion<sup id="cite&#95;ref-5" class="reference"><a href="#cite_note-5"><span class="cite-bracket">&#91;</span>5<span class="cite-bracket">&#93;</span></a></sup>.
-</p><p>While it exists as a necessary lifesaver for 互联网 基础设施<sup id="cite&#95;ref-6" class="reference"><a href="#cite_note-6"><span class="cite-bracket">&#91;</span>6<span class="cite-bracket">&#93;</span></a></sup>, this 非常 technology creates a 屏障 for multiplayer games. As hundreds of households are 基本上 forced to 分享 the exact same public IP 地址, incoming 指挥 连接 requests are then blocked at the ISP level before they even reach your home router. This interferes with games that 要求 P2P connections and can also 原因 problems with Remote Access or 标准 港口 Forwarding.
+<h3><span class="mw-headline" id="Carrier-Grade_NAT">航母-Grade NAT</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Carrier-Grade NAT" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Carrier-Grade NAT"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>One of the biggest hurdles that can interfere with 绝地潜兵 2's P2P networking is the presence of a so-called <b>航母 Grade NAT (CGNAT)</b>. It's used by 互联网 服务 Providers (ISPs) in order to mitigate IPv4 地址 exhaustion<sup id="cite&#95;ref-5" class="reference"><a href="#cite_note-5"><span class="cite-bracket">&#91;</span>5<span class="cite-bracket">&#93;</span></a></sup>.
+</p><p>While it exists as a necessary lifesaver for 互联网 基础设施<sup id="cite&#95;ref-6" class="reference"><a href="#cite_note-6"><span class="cite-bracket">&#91;</span>6<span class="cite-bracket">&#93;</span></a></sup>, this very technology creates a 屏障 for multiplayer games. As hundreds of households are 基本上 forced to share the exact same public IP 地址, incoming direct 连接 requests are then blocked at the ISP level before they even reach your home router. This interferes with games that 要求 P2P connections and can also cause problems with Remote Access or 标准 Port Forwarding.
 </p><p>The issues below can also appear with Dual Stack Lite connections.
 </p>
-<h3><span class="mw-headline" id="Detection">Detection</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Detection" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Detection"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
-<p>There are various methods to 测试 if your 网络 is located behind a Dual NAT or CGNAT. While 一些 玩家 are able to 游玩 even though a Dual NAT is present, others might 经验值 problems that prevent them from playing the 游戏.
+<h3><span class="mw-headline" id="Detection">Detection</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Detection" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Detection"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>There are various methods to test if your 网络 is located behind a Dual NAT or CGNAT. While some 玩家 are able to play even though a Dual NAT is present, others might 经验值 problems that prevent them from playing the game.
 </p>
-<div class="tabber tabber--init"><header class="tabber__header"><button class="tabber__header__prev" tabindex="-1" type="button" aria-hidden="true"></button><nav class="tabber__tabs" role="tablist"><a class="tabber__tab" role="tab" id="Computer-0-label" href="#Computer-0" aria-controls="Computer-0">电脑</a><a class="tabber__tab" role="tab" id="XBOX_Series-1-label" href="#XBOX_Series-1" aria-controls="XBOX_Series-1">XBOX 系列</a><a class="tabber__tab" role="tab" id="PlayStation_5-1-label" href="#PlayStation_5-1" aria-controls="PlayStation_5-1">PlayStation 5</a></nav><button class="tabber__header__next" tabindex="-1" type="button" aria-hidden="true"></button></header><section class="tabber__section"><article class="tabber__panel" role="tabpanel" tabindex="0" id="Computer-0" aria-labelledby="Computer-0-label"><p class="mw-empty-elt"></p><table class="wikitable" style="width:500px; font-size:90%; float:right; margin-left: 40px">
+<div class="tabber tabber--init"><header class="tabber__header"><button class="tabber__header__prev" tabindex="-1" type="button" aria-hidden="true"></button><nav class="tabber__tabs" role="tablist"><a class="tabber__tab" role="tab" id="Computer-0-label" href="#Computer-0" aria-controls="Computer-0">电脑</a><a class="tabber__tab" role="tab" id="XBOX_Series-1-label" href="#XBOX_Series-1" aria-controls="XBOX_Series-1">XBOX Series</a><a class="tabber__tab" role="tab" id="PlayStation_5-1-label" href="#PlayStation_5-1" aria-controls="PlayStation_5-1">PlayStation 5</a></nav><button class="tabber__header__next" tabindex="-1" type="button" aria-hidden="true"></button></header><section class="tabber__section"><article class="tabber__panel" role="tabpanel" tabindex="0" id="Computer-0" aria-labelledby="Computer-0-label"><p class="mw-empty-elt"></p><table class="wikitable" style="width:500px; font-size:90%; float:right; margin-left: 40px">
 <tbody><tr>
 <th>IP 地址 射程</th>
 <th>Protocol 标准</th>
@@ -310,59 +310,59 @@ You can 验证 if the DNS 缓存 has been flushed by typing in <code>sudo resolv
 <tr>
 <td><b>100.64.0.0 – 100.127.255.255</b></td>
 <td>RFC 6598</td>
-<td><b>是 CGNAT Layer</b><br />(Explicitly reserved for provider-level NAT routing).
+<td><b>True CGNAT Layer</b><br />(Explicitly reserved for provider-level NAT routing).
 </td></tr>
 <tr>
 <td><b>10.x.x.x</b></td>
 <td>RFC 1918</td>
-<td><b>列兵 网络 / Rogue CGNAT</b><br />(经常 deployed by campus networks, universities, or 预算 ISPs).
+<td><b>列兵 网络 / Rogue CGNAT</b><br />(Often deployed by campus networks, universities, or budget ISPs).
 </td></tr>
 <tr>
 <td><b>192.168.x.x / 172.16.x.x</b></td>
 <td>RFC 1918</td>
 <td><b>Internal Dual NAT</b><br />(The 冲突 is inside your house, 通常 caused by daisy-chaining two routers together).
 </td></tr></tbody></table>
-<p>If you are on PC, you can use the <a href="Hellbomb_Script.html" title="Hellbomb Script">Hellbomb Script</a> to 检查 your 网络 for the presence of a CGNAT. If you do not want to / can't use the Hellbomb Script, you can perform a 手册 two-step verification using your 浏览器 and 指挥-line tools.
+<p>If you are on PC, you can use the <a href="Hellbomb_Script.html" title="Hellbomb Script">Hellbomb Script</a> to check your 网络 for the presence of a CGNAT. If you do not want to / can't use the Hellbomb Script, you can perform a manual two-step verification using your 浏览器 and 指挥-line tools.
 </p><p><b>Step 1: 识别 your IP 地址:</b> 
-打开 your web 浏览器 and visit one of the following pages and note down your 当前 external IPv4 地址:
+Open your web 浏览器 and visit one of the following pages and note down your 当前 external IPv4 地址:
 </p>
 <ul><li><a rel="nofollow" class="external text" href="https://www.whatismyip.com">WhatIsMyIP.com</a></li>
 <li><a rel="nofollow" class="external text" href="https://whatismyipaddress.com">WhatIsMyIPAddress.com</a></li>
 <li><a rel="nofollow" class="external text" href="https://www.wieistmeineip.de">WieIstMeineIP.de</a></li></ul>
-<p>In our 下一个 step, please 日志 into your local home router's web interface and 定位 your <i>WAN (互联网) IP 地址</i>. Compare this with the 地址 you've noted down.
+<p>In our 下一个 step, please log into your local home router's web interface and locate your <i>WAN (互联网) IP 地址</i>. Compare this with the 地址 you've noted down.
 </p>
-<ul><li><b>If the IP addresses 比赛:</b> You likely have a 是 public IPv4 地址. 继续 to Step 2 to 确认.</li>
-<li><b>If the IP addresses DO NOT 比赛:</b> Your router is receiving a 列兵 or intermediate IP from your ISP, 含义 you are definitely behind a CGNAT.</li></ul>
-<p>Additionally, 检查 if your router's WAN IP falls into one of these specific 受限 blocks (see the 表格 on the 正确 侧面).
+<ul><li><b>If the IP addresses MATCH:</b> You likely have a true public IPv4 地址. 继续 to Step 2 to 确认.</li>
+<li><b>If the IP addresses DO NOT MATCH:</b> Your router is receiving a 列兵 or intermediate IP from your ISP, 含义 you are definitely behind a CGNAT.</li></ul>
+<p>Additionally, check if your router's WAN IP falls into one of these specific 受限 blocks (see the table on the right side).
 </p><p><b>Step 2: Traceroute verification:</b>
-Please be aware that these IP-addresses are just indicators. Just because your IP falls outside of that 射程 there is 否 guarantee that 否 CG-NAT is present. In 命令 to 验证 this, you will have to 检查 if your ISP is intercepting P2P packets by counting the "hops" (routing stations) it takes to reach the public IP 地址 found in Step 1.
+Please be aware that these IP-addresses are just indicators. Just because your IP falls outside of that 射程 there is no guarantee that no CG-NAT is present. In order to verify this, you will have to check if your ISP is intercepting P2P packets by counting the "hops" (routing stations) it takes to reach the public IP 地址 found in Step 1.
 </p>
-<ul><li><b>One hop:</b> You directly 解决 your public IP 地址 which means that there is 否 CG-NAT present.</li>
-<li><b>Two or 更多 hops:</b> Your traffic is being filtered through an external ISP 翻译 layer, 含义 that there's a CG-NAT present.</li></ul>
+<ul><li><b>One hop:</b> You directly 解决 your public IP 地址 which means that there is no CG-NAT present.</li>
+<li><b>Two or more hops:</b> Your traffic is being filtered through an external ISP 翻译 layer, 含义 that there's a CG-NAT present.</li></ul>
 <div class="tabber tabber--init"><header class="tabber__header"><button class="tabber__header__prev" tabindex="-1" type="button" aria-hidden="true"></button><nav class="tabber__tabs" role="tablist"><a class="tabber__tab" role="tab" id="Windows-2-label" href="#Windows-2" aria-controls="Windows-2">Windows</a><a class="tabber__tab" role="tab" id="Linux_/_MacOS-0-label" href="#Linux_/_MacOS-0" aria-controls="Linux_/_MacOS-0">Linux / MacOS</a></nav><button class="tabber__header__next" tabindex="-1" type="button" aria-hidden="true"></button></header><section class="tabber__section"><article class="tabber__panel" role="tabpanel" tabindex="0" id="Windows-2" aria-labelledby="Windows-2-label"><p class="mw-empty-elt">
-</p><ol><li>打开 your 开始 菜单, 类型 <code>cmd</code> or <code>powershell</code>, and launch it.</li>
-<li>类型 the 指挥 <code>tracert -4</code> followed by a 太空 and the <b>public IP</b> 地址 you copied from the 网站 <b>in Step 1</b>, then press Enter.</li>
+</p><ol><li>Open your Start menu, 类型 <code>cmd</code> or <code>powershell</code>, and launch it.</li>
+<li>类型 the 指挥 <code>tracert -4</code> followed by a space and the <b>public IP</b> 地址 you copied from the 网站 <b>in Step 1</b>, then press Enter.</li>
 <li><i>示例:</i> <code>tracert -4 93.184.216.34</code></li></ol>
 <p><br />
 </p>
 <p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Linux_/_MacOS-0" aria-labelledby="Linux_/_MacOS-0-label"><p class="mw-empty-elt">
-</p><ol><li>打开 your 终端.</li>
+</p><ol><li>Open your 终端.</li>
 <li>处决 the traceroute tool by typing <code>traceroute -I</code> (or simply <code>traceroute</code> depending on your distro's utilities) followed by <b>your public IP 地址 from Step 1</b>.</li>
 <li><i>示例:</i> <code>traceroute -I 93.184.216.34</code></li></ol>
 <p><br />
 </p>
 <p class="mw-empty-elt"></p></article></section></div>
-检查 the 输出 列表: If line #1 shows your home router and line #2 shows another IP 地址 before the 追踪 completes, a 航母-Grade NAT is actively filtering your 绝地潜兵 2 连接.<p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="XBOX_Series-1" aria-labelledby="XBOX_Series-1-label"><p>The Xbox dashboard features a built-in 网络 diagnostic tool that explicitly identifies your NAT status and flags potential conflicts.
-</p><ol><li>Press the <b>Xbox button</b> to 打开 the 引导 and 选择 "Settings".</li>
+Check the output list: If line #1 shows your home router and line #2 shows another IP 地址 before the trace completes, a 航母-Grade NAT is actively filtering your 绝地潜兵 2 连接.<p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="XBOX_Series-1" aria-labelledby="XBOX_Series-1-label"><p>The Xbox dashboard features a built-in 网络 diagnostic tool that explicitly identifies your NAT status and flags potential conflicts.
+</p><ol><li>Press the <b>Xbox button</b> to open the guide and select "Settings".</li>
 <li>Navigate to "基本信息" -&gt; "网络 settings".</li>
-<li>Look at the center 列 under "当前 网络 Status" to find your "NAT 类型".</li>
+<li>Look at the center column under "当前 网络 Status" to find your "NAT 类型".</li>
 <li>For an 最佳, stutter-free 匹配 经验值 in 绝地潜兵 2, your NAT 类型 should ideally 显示 as <b>打开</b>.</li></ol>
 <ul><li>If your 网络 shows that the NAT is <code>中等</code> or <code>Strict</code>, this could 表明 that your router is actively filtering incoming requests and can prevent you from connecting with others.</li>
-<li><b>双重 NAT detected:</b> If this explicit 警告 appears 下一个 to your NAT status, you might be looking at two home routers or an external 航母-Grade NAT preventing you from playing.</li></ul>
-<p>In 命令 to 解决 this, you can try this:
+<li><b>Double NAT detected:</b> If this explicit 警告 appears 下一个 to your NAT status, you might be looking at two home routers or an external 航母-Grade NAT preventing you from playing.</li></ul>
+<p>In order to 解决 this, you can try this:
 </p>
-<ol><li><b>Perform a Router 之力 Cycle:</b> Unplug your modem and router for 5 分钟 and then 测试 the 连接 再次.</li>
-<li><b>Enable UPnP (Universal Plug and 游玩):</b> 日志 into your home router's settings and 切换 UPnP "On". This allows the Xbox to dynamically request the temporary ports it needs to 建立 the 连接. Please be aware that while UPnP is an 容易 automated 修复, it does come with inherent local 网络 安全 risks.<p class="mw-empty-elt"></p></li></ol></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="PlayStation_5-1" aria-labelledby="PlayStation_5-1-label"><p class="mw-empty-elt"></p><table class="wikitable" style="width:500px; font-size:90%; float:right; margin-left: 40px">
+<ol><li><b>Perform a Router Power Cycle:</b> Unplug your modem and router for 5 分钟 and then test the 连接 again.</li>
+<li><b>Enable UPnP (Universal Plug and Play):</b> Log into your home router's settings and toggle UPnP "On". This allows the Xbox to dynamically request the temporary ports it needs to 建立 the 连接. Please be aware that while UPnP is an 容易 automated fix, it does come with inherent local 网络 安全 risks.<p class="mw-empty-elt"></p></li></ol></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="PlayStation_5-1" aria-labelledby="PlayStation_5-1-label"><p class="mw-empty-elt"></p><table class="wikitable" style="width:500px; font-size:90%; float:right; margin-left: 40px">
 <tbody><tr>
 <th>NAT</th>
 <th>Status</th>
@@ -370,13 +370,13 @@ Please be aware that these IP-addresses are just indicators. Just because your I
 </th></tr>
 <tr>
 <td>类型 1</td>
-<td>打开 / 指挥</td>
-<td>Your PS5 is connected directly to the 互联网 modem without a router filtering traffic. 完美 for games 点赞 绝地潜兵 2 but leaves the 控制台 without 任何 排序 of 保护 that a router would provide. Such connections are highly uncommon.
+<td>Open / Direct</td>
+<td>Your PS5 is connected directly to the 互联网 modem without a router filtering traffic. 完美 for games like 绝地潜兵 2 but leaves the 控制台 without any sort of 保护 that a router would provide. Such connections are highly uncommon.
 </td></tr>
 <tr>
 <td>类型 2</td>
 <td>中等 / Router</td>
-<td>Your 控制台 is connected to a 标准 home router which is properly routing ports. This is the 理想 目标 for 95% of 全部 玩家. You can host games, join other lobbies and use voice chat without issues.
+<td>Your 控制台 is connected to a 标准 home router which is properly routing ports. This is the ideal 目标 for 95% of all 玩家. You can host games, join other lobbies and use voice chat without issues.
 </td></tr>
 <tr>
 <td>类型 3</td>
@@ -386,83 +386,83 @@ Please be aware that these IP-addresses are just indicators. Just because your I
 <tr>
 <td>-</td>
 <td>失败</td>
-<td>Your 控制台 cannot 建立 a 安全 网络 handshake, which 通常 points to an active 航母-Grade (CG-NAT) block or a severe local router configuration error.
+<td>Your 控制台 cannot 建立 a secure 网络 handshake, which 通常 points to an active 航母-Grade (CG-NAT) block or a severe local router configuration error.
 </td></tr></tbody></table>
-<p>Unlike other platforms, Sony 使用次数 a simplified numbering 星系 (类型 1, 2, or 3) to categorize your 控制台's 网络 环境. 
+<p>Unlike other platforms, Sony 使用次数 a simplified numbering system (类型 1, 2, or 3) to categorize your 控制台's 网络 环境. 
 </p>
-<ol><li>Navigate to "Settings" (装备 图标) on the top 正确 of the PS5 home screen.</li>
+<ol><li>Navigate to "Settings" (gear icon) on the top right of the PS5 home screen.</li>
 <li>Go to "网络" -&gt; "连接 Status".</li>
-<li>选择 "测试 互联网 连接" and wait for the diagnostic 酒吧 to 完成.</li>
-<li>Scroll to the bottom of the results 页面 to find your "NAT 类型".</li></ol>
-<p>If your 星系 displays NAT 类型 3, 日志 into your home router's configuration panel and attempt the following sequential 修复:
+<li>Select "Test 互联网 连接" and wait for the diagnostic bar to finish.</li>
+<li>Scroll to the bottom of the results page to find your "NAT 类型".</li></ol>
+<p>If your system displays NAT 类型 3, log into your home router's configuration panel and attempt the following sequential fixes:
 </p>
-<ol><li><b>Enable UPnP:</b> 转变 on Universal Plug and 游玩 to 允许 the PS5 to automatically 打开 必需 temporary ports.</li>
-<li><b>Configure a 静电 IP:</b> Assign a permanent IP 地址 to your PS5 within your router settings.<p class="mw-empty-elt"></p></li></ol></article></section></div>
-<h3><span class="mw-headline" id="Solutions_for_NATs">Solutions for NATs</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Solutions for NATs" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Solutions for NATs"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
-<p>If your diagnostic tests 确认 the presence of a 航母-Grade NAT (CGNAT) or a 双重 NAT,there are 一些 options you can do in 命令 to 解决 the situation.
+<ol><li><b>Enable UPnP:</b> Turn on Universal Plug and Play to allow the PS5 to automatically open 必需 temporary ports.</li>
+<li><b>Configure a Static IP:</b> Assign a permanent IP 地址 to your PS5 within your router settings.<p class="mw-empty-elt"></p></li></ol></article></section></div>
+<h3><span class="mw-headline" id="Solutions_for_NATs">Solutions for NATs</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Solutions for NATs" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Solutions for NATs"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>If your diagnostic tests 确认 the presence of a 航母-Grade NAT (CGNAT) or a Double NAT,there are some options you can do in order to 解决 the situation.
 </p>
-<ol><li><b>联络 Your 互联网 服务 Provider:</b> In 最多 cases, you can 解决 CGNAT entirely at the 来源. 呼叫 your ISP's 顾客 支援 hotline or 打开 a ticket stating that you “要求 a public IPv4 地址 for remote work VPNs and peer-to-peer 在线 gaming.” 许多 少校 providers will 切换 your 账户 from a shared CGNAT profile to a dedicated, dynamic public IPv4 地址, 经常 for an additional 费用 or while changing your 计划 to a business 计划. Be prepared for the additional one-时间 or recurring 费用 this 5月 incur.</li>
-<li><b>Utilize a Premium VPN:</b> If your ISP refuses to grant a public IP, using a 高-quality VPN with dedicated P2P 支援 is your 最好 alternative. As <a class="mw-selflink-fragment" href="#VPNs_&amp;_other_Software">detailed above</a>, a paid VPN tunnels your traffic past the provider's restrictive 翻译 layers. Alternatively, you can rent a VPS or a root server (make sure it comes with a dedicated IPv4 地址) and build your own 港口 forwarding VPN using Wireguard.</li>
-<li><b>消除 Internal 双重 NAT:</b> If your traceroute showed two hops but your external IPs matched, the 瓶颈 is inside your own house. This can happen in scenarios where you daisy-锁链 a gaming router into a modem/router combo supplied by your ISP. You can 解决 such setups by 任一 disconnecting the second router or logging into it and 变化 its 操作 模式 from "Router" to "Access Point (AP 模式)". Alternatively you might have to enable "舰桥 模式 / Passthrough" on your ISP's modem.</li>
-<li><b>变化 Your 连接 类型:</b> If 否 other options are available, switching to a different 网络 基础设施 that offers native public routing (such as transitioning from a restrictive 5G home 立方体 to a stable DSL 连接) will permanently 消除 the 问题. 最多 cable (i.e. Vodafone) and fiber connections as well as mobile (i.e. 5G) and 卫星 connections (i.e. Starlink) make use of CGNAT or Dual Stack Lite.</li></ol>
-<h2><span class="mw-headline" id="Network_drivers">网络 drivers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Network drivers" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Network drivers"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
-<p>There are prevalent 链接 掉落 issues with 两者 <i>Intel i225v/i226v</i> and <i>Realtek RTL81\*\* 2.5Gb</i> 网络 adapters. These are common adapters shipping from 2019/2020. These issues 结果 in random 链接 空投 with rapid reconnects. 经常 these can occur so quickly that Windows does not even notify the user, however the 链接 空投 are disruptive enough to 原因 a 断开 from the rest of the lobby. Please note that this specific 问题 does not only affect 绝地潜兵 2 but also other games.
+<ol><li><b>联络 Your 互联网 服务 Provider:</b> In most cases, you can 解决 CGNAT entirely at the 来源. Call your ISP's 顾客 支援 hotline or open a ticket stating that you “要求 a public IPv4 地址 for remote work VPNs and peer-to-peer online gaming.” Many major providers will switch your 账户 from a shared CGNAT profile to a dedicated, dynamic public IPv4 地址, often for an additional fee or while changing your plan to a business plan. Be prepared for the additional one-time or recurring 费用 this may incur.</li>
+<li><b>Utilize a Premium VPN:</b> If your ISP refuses to grant a public IP, using a high-quality VPN with dedicated P2P 支援 is your best alternative. As <a class="mw-selflink-fragment" href="#VPNs_&amp;_other_Software">detailed above</a>, a paid VPN tunnels your traffic past the provider's restrictive 翻译 layers. Alternatively, you can rent a VPS or a root server (make sure it comes with a dedicated IPv4 地址) and build your own port forwarding VPN using Wireguard.</li>
+<li><b>消除 Internal Double NAT:</b> If your traceroute showed two hops but your external IPs matched, the 瓶颈 is inside your own house. This can happen in scenarios where you daisy-chain a gaming router into a modem/router combo supplied by your ISP. You can 解决 such setups by either disconnecting the second router or logging into it and change its 操作 mode from "Router" to "Access Point (AP Mode)". Alternatively you might have to enable "Bridge Mode / Passthrough" on your ISP's modem.</li>
+<li><b>Change Your 连接 类型:</b> If no other options are available, switching to a different 网络 基础设施 that offers native public routing (such as transitioning from a restrictive 5G home cube to a stable DSL 连接) will permanently 消除 the issue. Most cable (i.e. Vodafone) and fiber connections as well as mobile (i.e. 5G) and 卫星 connections (i.e. Starlink) make use of CGNAT or Dual Stack Lite.</li></ol>
+<h2><span class="mw-headline" id="Network_drivers">网络 drivers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Network drivers" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Network drivers"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>There are prevalent link 掉落 issues with both <i>Intel i225v/i226v</i> and <i>Realtek RTL81\*\* 2.5Gb</i> 网络 adapters. These are common adapters shipping from 2019/2020. These issues result in random link drops with rapid reconnects. Often these can occur so quickly that Windows does not even notify the user, however the link drops are disruptive enough to cause a 断开 from the rest of the lobby. Please note that this specific issue does not only affect 绝地潜兵 2 but also other games.
 </p>
-<h3><span class="mw-headline" id="Diagnosing_the_Link_Drops">Diagnosing the 链接 空投</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Diagnosing the Link Drops" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Diagnosing the Link Drops"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
-<p>To 确认 if your 网络 adapter is actively dropping connections, you can 检查 the Windows background logs:
+<h3><span class="mw-headline" id="Diagnosing_the_Link_Drops">Diagnosing the Link Drops</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Diagnosing the Link Drops" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Diagnosing the Link Drops"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>To 确认 if your 网络 adapter is actively dropping connections, you can check the Windows background logs:
 </p>
-<ol><li>Press the <b>Windows Key</b>, 类型 "事件 Viewer", and press <b>进入</b>.</li>
-<li>展开 "Windows Logs" on the left 侧边栏 and 选择 "星系".</li>
+<ol><li>Press the <b>Windows Key</b>, 类型 "Event Viewer", and press <b>进入</b>.</li>
+<li>Expand "Windows Logs" on the left 侧边栏 and select "System".</li>
 <li>Look for <b>警告</b> entries labeled with the 来源 "e1dexpress" (Intel) or "Rt640" (Realtek).</li>
-<li>If you see logs stating <i>"The 网络 链接 has been disconnected"</i> (事件 ID 27) your hardware requires an immediate 驾驶员 更新.</li></ol>
-<h3><span class="mw-headline" id="Recommended_Driver_Fixes">Recommended 驾驶员 修复</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Recommended Driver Fixes" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Recommended Driver Fixes"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
-<p>两者 Intel and Realtek released new drivers in 2月 2025 that are intended to 地址 these specific 链接 空投. These 驾驶员 packages are compatible with <b>许多</b> Intel and Realtek 网络 adapters. If you have an Intel or Realtek 网络 adapter that is 1Gb, 2.5Gb, 5Gb or 10Gb, you can use these packages to 更新 your 网络 drivers as they are fully backward compatible with 最多 of those adapters from 两者 brands.
+<li>If you see logs stating <i>"The 网络 link has been disconnected"</i> (Event ID 27) your hardware requires an immediate driver 更新.</li></ol>
+<h3><span class="mw-headline" id="Recommended_Driver_Fixes">Recommended Driver Fixes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Recommended Driver Fixes" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Recommended Driver Fixes"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Both Intel and Realtek released new drivers in 2月 2025 that are intended to 地址 these specific link drops. These driver packages are compatible with <b>许多</b> Intel and Realtek 网络 adapters. If you have an Intel or Realtek 网络 adapter that is 1Gb, 2.5Gb, 5Gb or 10Gb, you can use these packages to 更新 your 网络 drivers as they are fully backward compatible with most of those adapters from both brands.
 </p><p><b>Intel 网络 Adapters:</b>
 </p>
-<ul><li><a rel="nofollow" class="external text" href="https://www.intel.com/content/www/us/en/download/18293/intel-network-adapter-driver-for-windows-10.html">官员 Intel Ethernet 驾驶员 包 for Windows 10</a></li>
-<li><a rel="nofollow" class="external text" href="https://www.intel.com/content/www/us/en/download/727998/intel-network-adapter-driver-for-microsoft-windows-11.html">官员 Intel Ethernet 驾驶员 包 for Windows 11</a></li></ul>
+<ul><li><a rel="nofollow" class="external text" href="https://www.intel.com/content/www/us/en/download/18293/intel-network-adapter-driver-for-windows-10.html">官员 Intel Ethernet Driver 包 for Windows 10</a></li>
+<li><a rel="nofollow" class="external text" href="https://www.intel.com/content/www/us/en/download/727998/intel-network-adapter-driver-for-microsoft-windows-11.html">官员 Intel Ethernet Driver 包 for Windows 11</a></li></ul>
 <p><b>Realtek 网络 Adapters:</b>
 </p>
-<ul><li><a rel="nofollow" class="external text" href="https://www.realtek.com/Download/List?cate_id=584">官员 Realtek PCIe Ethernet 家庭 Controller Drivers (Windows 10 &amp; 11)</a></li></ul>
-<h2><span class="mw-headline" id="Login_Problems">Login Problems</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Login Problems" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Login Problems"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
-<h3><span class="mw-headline" id="PlayFab_Error_35">PlayFab Error 35</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: PlayFab Error 35" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: PlayFab Error 35"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
-<p>If you are unable to login and 接收 "PlayFab Error 35", then this means <code>CURLE_SSL_连接_ERROR</code>. This error indicates that your device failed to 建立 a 安全 cryptographic handshake when attempting to authenticate against Arrowhead's PlayFab 数据库. 
-</p><p>Due to the 自然 of these SSL/TLS certificates and their precise expiration timestamps, this failure is almost 总是显示 triggered because your 星系's 时钟 has drifted out of sync with the global atomic 时间 servers. Luckily it can be 已修复 by resynchronizing your 星系 时钟.
+<ul><li><a rel="nofollow" class="external text" href="https://www.realtek.com/Download/List?cate_id=584">官员 Realtek PCIe Ethernet Family Controller Drivers (Windows 10 &amp; 11)</a></li></ul>
+<h2><span class="mw-headline" id="Login_Problems">Login Problems</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Login Problems" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Login Problems"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="PlayFab_Error_35">PlayFab Error 35</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: PlayFab Error 35" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: PlayFab Error 35"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>If you are unable to login and 接收 "PlayFab Error 35", then this means <code>CURLE_SSL_连接_ERROR</code>. This error indicates that your device failed to 建立 a secure cryptographic handshake when attempting to authenticate against Arrowhead's PlayFab 数据库. 
+</p><p>Due to the nature of these SSL/TLS certificates and their precise expiration timestamps, this failure is almost always triggered because your system's clock has drifted out of sync with the global atomic time servers. Luckily it can be fixed by resynchronizing your system clock.
 </p>
 <div class="tabber tabber--init"><header class="tabber__header"><button class="tabber__header__prev" tabindex="-1" type="button" aria-hidden="true"></button><nav class="tabber__tabs" role="tablist"><a class="tabber__tab" role="tab" id="Windows-3-label" href="#Windows-3" aria-controls="Windows-3">Windows</a><a class="tabber__tab" role="tab" id="Linux-2-label" href="#Linux-2" aria-controls="Linux-2">Linux</a></nav><button class="tabber__header__next" tabindex="-1" type="button" aria-hidden="true"></button></header><section class="tabber__section"><article class="tabber__panel" role="tabpanel" tabindex="0" id="Windows-3" aria-labelledby="Windows-3-label"><p class="mw-empty-elt">
-</p><ol><li>按下 <code>赢得 + R</code> to 打开 the "Run" dialog, 类型 <code>services.msc</code>, and click "OK".</li>
-<li>Scroll to the bottom of the "services" 列表, 正确-click "Windows 时间", and 选择 "开始" (or "重新开始" if it is already running). 关闭 the window.</li>
-<li>打开 the Windows 搜索 酒吧, 类型 <code>cmd</code>, and press <code>CTRL + SHIFT + ENTER</code> to launch the 指挥 Prompt as an 管理员.</li>
-<li>类型 the following 指挥 and press Enter to 之势 an atomic 时钟 synchronization: <code>w32tm /resync</code></li></ol>
+</p><ol><li>按下 <code>WIN + R</code> to open the "Run" dialog, 类型 <code>services.msc</code>, and click "OK".</li>
+<li>Scroll to the bottom of the "services" list, right-click "Windows Time", and select "Start" (or "重新开始" if it is already running). Close the window.</li>
+<li>Open the Windows Search bar, 类型 <code>cmd</code>, and press <code>CTRL + SHIFT + ENTER</code> to launch the 指挥 Prompt as an 管理员.</li>
+<li>类型 the following 指挥 and press Enter to force an atomic clock synchronization: <code>w32tm /resync</code></li></ol>
 <ul><li><b>Success:</b> You should now see the 确认 message: <code>The 指挥 completed successfully.</code></li>
-<li><b>Failure:</b> If you instead 接收 an error stating the 服务 is not running or timed out, re-run the <code>w32tm /resync</code> 指挥 再次 until it confirms. Should this not happen, you might have to 应对 your settings first, 点赞 an 激进 firewall blocking NTP 港口 123.</li></ul>
-<p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Linux-2" aria-labelledby="Linux-2-label"><p>As your first step, please 检查 if your 时间 is desynchronized:
-</p><ol><li>打开 your 终端 (<code>CTRL + ALT + T</code>).</li>
-<li>检查 your 当前 synchronization metrics by running <code>timedatectl status</code></li>
-<li>Look at the line "星系 时钟 synchronized". If it says "否", your 星系 时间 is drifted and blocking 安全 certificates.</li></ol>
-<p>If your 时间 is indeed out of sync, you can 之势 your 星系 to immediately fetch a clean timestamp from public servers. 关注 these commands one after the other:
+<li><b>Failure:</b> If you instead 接收 an error stating the 服务 is not running or timed out, re-run the <code>w32tm /resync</code> 指挥 again until it confirms. Should this not happen, you might have to 应对 your settings first, like an 激进 firewall blocking NTP port 123.</li></ul>
+<p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Linux-2" aria-labelledby="Linux-2-label"><p>As your first step, please check if your time is desynchronized:
+</p><ol><li>Open your 终端 (<code>CTRL + ALT + T</code>).</li>
+<li>Check your 当前 synchronization metrics by running <code>timedatectl status</code></li>
+<li>Look at the line "System clock synchronized". If it says "no", your system time is drifted and blocking 安全 certificates.</li></ol>
+<p>If your time is indeed out of sync, you can force your system to immediately fetch a clean timestamp from public servers. Follow these commands one after the other:
 </p>
-<ol><li>Enable the 网络 时间 protocol daemon: <code>sudo timedatectl 套装-ntp 是</code></li>
-<li>重新开始 the 时间 synchronization 服务 to 之势 an 瞬间 更新: <code>sudo systemctl 重新开始 systemd-timesyncd.服务</code></li>
-<li>验证 the 修复 by running <code>timedatectl status</code> 再次. The "星系 时钟 synchronized" 数值 should now 显示 as "是".<p class="mw-empty-elt"></p></li></ol></article></section></div>
-<h3><span id="Status_Code_400_.2F_Error_Code_1600"></span><span class="mw-headline" id="Status_Code_400_/_Error_Code_1600">Status 法典 400 / Error 法典 1600</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Status Code 400 / Error Code 1600" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Status Code 400 / Error Code 1600"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<ol><li>Enable the 网络 time protocol daemon: <code>sudo timedatectl set-ntp true</code></li>
+<li>重新开始 the time synchronization 服务 to force an 瞬间 更新: <code>sudo systemctl 重新开始 systemd-timesyncd.服务</code></li>
+<li>Verify the fix by running <code>timedatectl status</code> again. The "System clock synchronized" value should now 显示 as "yes".<p class="mw-empty-elt"></p></li></ol></article></section></div>
+<h3><span id="Status_Code_400_.2F_Error_Code_1600"></span><span class="mw-headline" id="Status_Code_400_/_Error_Code_1600">Status Code 400 / Error Code 1600</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Status Code 400 / Error Code 1600" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Status Code 400 / Error Code 1600"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
 <p>The error is caused by 不寻常 characters in your Steam username.
-</p><p>Switching it for an alphanumerical (a-Z and 0-9) username should 解决 the 问题.
+</p><p>Switching it for an alphanumerical (a-Z and 0-9) username should solve the issue.
 </p>
-<h2><span class="mw-headline" id="Starlink">Starlink</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Starlink" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Starlink"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
-<p>There are known 连接性 issues with wired connections that 连接 to <b>Starlink UTR-211 modems</b>. This 问题 seems to be rather 老 and has 从不显示 been 真正 addressed, leading to IPv6 addresses randomly not being properly passed through the 切换 of the modem.
+<h2><span class="mw-headline" id="Starlink">Starlink</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Starlink" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Starlink"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>There are known 连接性 issues with wired connections that 连接 to <b>Starlink UTR-211 modems</b>. This 问题 seems to be rather old and has never been truly addressed, leading to IPv6 addresses randomly not being properly passed through the switch of the modem.
 </p><p>You can attempt different methods to 解决 these issues:
 </p>
-<ol><li>If you are wired into a router that is then connected to the Starlink 模式, 套装 your router's IPv6 模式 to "autoconfigure" instead of "autodetect".</li>
-<li>游玩 on wireless with 否 other changes.</li>
-<li>Disable IPv6 on your 网络 adapter (Windows -&gt; Uncheck "互联网 Protocol Version 6") and see if that 修复 it. If it does, you can just do this before you 游玩 the 游戏, but it 通常 修复 other 连接 issues on other applications as well.</li></ol>
-<p>有时 it 5月 also work with IPv6 enabled.
+<ol><li>If you are wired into a router that is then connected to the Starlink mode, set your router's IPv6 mode to "autoconfigure" instead of "autodetect".</li>
+<li>Play on wireless with no other changes.</li>
+<li>Disable IPv6 on your 网络 adapter (Windows -&gt; Uncheck "互联网 Protocol Version 6") and see if that fixes it. If it does, you can just do this before you play the game, but it 通常 fixes other 连接 issues on other applications as well.</li></ol>
+<p>有时 it may also work with IPv6 enabled.
 </p>
-<h2><span class="mw-headline" id="References">参考</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: References" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: References"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<h2><span class="mw-headline" id="References">参考</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: References" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: References"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
 <div class="mw-references-wrap"><ol class="references">
 <li id="cite&#95;note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://www.geeksforgeeks.org/computer-networks/what-is-p2p-peer-to-peer-process/">Geeks For Geeks - Peer to Peer explained</a></span>
 </li>
-<li id="cite&#95;note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://www.techpowerup.com/318262/helldivers-2-technical-director-addresses-anti-cheat-concerns">Techpowerup - 绝地潜兵 2 技术信息 导演 Addresses Anti-作弊 Concerns</a></span>
+<li id="cite&#95;note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://www.techpowerup.com/318262/helldivers-2-technical-director-addresses-anti-cheat-concerns">Techpowerup - 绝地潜兵 2 技术信息 导演 Addresses Anti-Cheat Concerns</a></span>
 </li>
 <li id="cite&#95;note-3"><span class="mw-cite-backlink"><a href="#cite_ref-3">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://www.cloudflare.com/learning/dns/what-is-dns/">Cloudflare - What is DNS?</a></span>
 </li>
@@ -470,37 +470,37 @@ Please be aware that these IP-addresses are just indicators. Just because your I
 </li>
 <li id="cite&#95;note-5"><span class="mw-cite-backlink"><a href="#cite_ref-5">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://www.a10networks.com/glossary/what-is-carrier-grade-nat-cgn-cgnat/">A10 Networks - What is 航母 Grade NAT?</a></span>
 </li>
-<li id="cite&#95;note-6"><span class="mw-cite-backlink"><a href="#cite_ref-6">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://www.networkworld.com/article/757662/cisco-subnet-large-scale-nat-architectures.html">Networkworld - 大 鳞片 NAT Architectures</a></span>
+<li id="cite&#95;note-6"><span class="mw-cite-backlink"><a href="#cite_ref-6">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://www.networkworld.com/article/757662/cisco-subnet-large-scale-nat-architectures.html">Networkworld - Large Scale NAT Architectures</a></span>
 </li>
 </ol></div>
-<div role="navigation" aria-label="Navbox" class="ranger-navbox navigation-not-searchable striped-even mw-collapsible"><div class="ranger-title"><div class="mw-collapsible-toggle-placeholder"></div><span class="ranger-meta"><span class="nv nv-view"><a href="../index.html" title="Template:Navbox Troubleshooting"><span title="View or edit this template">查看 or 编辑 this template</span></a></span></span><div class="ranger-title-text"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div></div><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:4"><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Tools</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist"><div class="ranger-list">
+<div role="navigation" aria-label="Navbox" class="ranger-navbox navigation-not-searchable striped-even mw-collapsible"><div class="ranger-title"><div class="mw-collapsible-toggle-placeholder"></div><span class="ranger-meta"><span class="nv nv-view"><a href="../index.html" title="Template:Navbox Troubleshooting"><span title="View or edit this template">View or edit this template</span></a></span></span><div class="ranger-title-text"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div></div><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:4"><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Tools</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist"><div class="ranger-list">
 <ul><li><a href="Hellbomb_Script.html" title="Hellbomb Script">Hellbomb Script</a></li>
 <li><a href="Steam_Launch_Commands.html" title="Steam Launch Commands">Steam Launch Commands</a></li></ul>
 </div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Platform</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist"><div class="ranger-list">
 <ul><li><a href="Laptop_Troubleshooting.html" title="Laptop Troubleshooting">Laptop 故障排除</a></li>
-<li><a href="Linux_Steam_Deck_Troubleshooting.html" title="Linux / Steam Deck Troubleshooting">Linux / Steam 甲板 故障排除</a></li>
+<li><a href="Linux_Steam_Deck_Troubleshooting.html" title="Linux / Steam Deck Troubleshooting">Linux / Steam Deck 故障排除</a></li>
 <li><a href="PlayStation_Troubleshooting.html" title="PlayStation Troubleshooting">PlayStation 故障排除</a></li>
 <li><a href="Steam_Troubleshooting.html" title="Steam Troubleshooting">Steam 故障排除</a></li>
 <li><a href="Xbox_Troubleshooting.html" title="Xbox Troubleshooting">Xbox 故障排除</a></li></ul>
 </div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Performance &amp; 稳定性</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist"><div class="ranger-list">
 <ul><li><a href="BIOS_Updates.html" title="BIOS Updates">BIOS Updates</a></li>
-<li><a href="Clearing_The_Shader_Cache.html" title="Clearing The Shader Cache">Clearing The Shader 缓存</a></li>
-<li><a href="GPU_Driver_Recommendation.html" title="GPU Driver Recommendation">GPU 驾驶员 Recommendation</a></li>
+<li><a href="Clearing_The_Shader_Cache.html" title="Clearing The Shader Cache">Clearing The Shader Cache</a></li>
+<li><a href="GPU_Driver_Recommendation.html" title="GPU Driver Recommendation">GPU Driver Recommendation</a></li>
 <li><a href="User_Settings_Config_FPS_Optimization.html" title="User Settings Config FPS Optimization">User Settings Config FPS 优化</a></li>
-<li><a href="Virtual_Memory.html" title="Virtual Memory">Virtual 内存</a></li></ul>
+<li><a href="Virtual_Memory.html" title="Virtual Memory">Virtual Memory</a></li></ul>
 </div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">崩溃 &amp; Issues</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist"><div class="ranger-list">
 <ul><li><a href="Audio_Problems.html" title="Audio Problems">Audio Problems</a></li>
 <li><a href="../index.html" title="Broken Mods">Broken Mods</a></li>
-<li><a href="Crash_On_Startup.html" title="Crash On Startup">崩溃 On Startup</a></li>
-<li><a href="Crash_To_Desktop.html" title="Crash To Desktop">崩溃 To Desktop</a></li>
-<li><a href="Error_Code_409.html" title="Error Code 409">Error 法典 409</a></li>
-<li><a href="In-Game_Problems.html" title="In-Game Problems">In-游戏 Problems</a></li>
-<li><a href="Input_Problems.html" title="Input Problems">输入 Problems</a></li>
+<li><a href="Crash_On_Startup.html" title="Crash On Startup">Crash On Startup</a></li>
+<li><a href="Crash_To_Desktop.html" title="Crash To Desktop">Crash To Desktop</a></li>
+<li><a href="Error_Code_409.html" title="Error Code 409">Error Code 409</a></li>
+<li><a href="In-Game_Problems.html" title="In-Game Problems">In-Game Problems</a></li>
+<li><a href="Input_Problems.html" title="Input Problems">Input Problems</a></li>
 <li><a class="mw-selflink selflink">网络 故障排除</a></li>
 <li><a href="Reinstallation_of_GameGuard.html" title="Reinstallation of GameGuard">Reinstallation of GameGuard</a></li>
 <li><a href="Reinstallation_of_Visual_C++_Redistributables.html" title="Reinstallation of Visual C++ Redistributables">Reinstallation of Visual C++ Redistributables</a></li>
-<li><a href="Troubleshooting_System_Failure.html" title="Troubleshooting System Failure">故障排除 星系 Failure</a></li>
-<li><a href="Troubleshooting_Stutters_Short_Freezes.html" title="Troubleshooting Stutters/Short Freezes">故障排除 Stutters/短 Freezes</a></li></ul>
+<li><a href="Troubleshooting_System_Failure.html" title="Troubleshooting System Failure">故障排除 System Failure</a></li>
+<li><a href="Troubleshooting_Stutters_Short_Freezes.html" title="Troubleshooting Stutters/Short Freezes">故障排除 Stutters/Short Freezes</a></li></ul>
 </div></div></div></div></div></div></div>
 <!-- 
 NewPP limit report

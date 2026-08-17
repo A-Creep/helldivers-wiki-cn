@@ -206,6 +206,10 @@ def build_title_map(keep):
         "P-4 Senator": "P-4参议员",
         "B-01 Tactical": "B-01战术",
         "FS-38 Eradicator": "FS-38根除者",
+        "APW-1 Anti-Materiel Rifle": "APW-1反器材步枪",
+        "StA-52 Assault Rifle": "StA-52突击步枪",
+        "40-K Meltagun": "40-K熔体枪",
+        "A/AC-8 Autocannon Sentry": "A/AC-8机炮哨戒炮",
         "Support Weapons": "支援武器",
         "Weapons": "武器",
         "Stratagems": "战略配备",
@@ -390,6 +394,8 @@ class SiteBuilder:
         html = re.sub(
             r"<(p|div|span|li)[^>]*>[\s\S]*?No Passive found[\s\S]*?</\1>",
             "", html, flags=re.I)
+        html = re.sub(r"Syntax Error\s*", "", html, flags=re.I)
+        html = re.sub(r"(致命|庞大|小|中型|大型)\?", r"\1", html)
         html = re.sub(r'\bhref=(["\'])index\.html\1', f'href="{index_rel}"', html)
         for i, u in enumerate(urls):
             html = html.replace(f"__IMG_{i}__", f"../images/{local_img(u)}")

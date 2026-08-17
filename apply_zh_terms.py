@@ -157,6 +157,9 @@ try:
         zh = str(zh).strip()
         if not en or not zh or len(en.split()) > 3 or len(zh) > 8:
             continue
+        words = en.split()
+        if not (len(words) >= 2 or len(en) >= 7):
+            continue  # 单短词容易误伤正文（match/set/may 等），跳过
         if re.search(r"[^A-Za-z \-']", en):
             continue
         if en.lower() in ("a", "an", "the", "and", "of", "for", "to", "in", "on"):

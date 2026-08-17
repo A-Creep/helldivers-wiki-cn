@@ -1,60 +1,78 @@
-# 绝地潜兵2 离线汉化百科（Helldivers 2 离线 Wiki 汉化版）
+# Helldivers 2（绝地潜兵2）Wiki 本地化工具
 
-把 helldivers.wiki.gg 的绝地潜兵2 内容本地化并打包成离线可查的百科阅读器。
-本仓库同时包含：
+把 helldivers.wiki.gg 的 **Helldivers 2 英文内容**同步到本地 → 提取待翻译文本（保留 wikitext
+结构）→ 人工翻译 → 回填生成汉化版 → 制作离线 EXE 阅读器。
 
-- **静态站**（仓库根目录）：`index.html` / `pages/` / `categories/` / `images/`，可直接部署到 GitHub Pages 离线浏览
-- **源码**：生成该静态站的全部 Python 脚本与主题
-- **设计稿/截图**：`ui_shots/*.png`（界面截图，含长截图，供 UI 评审参考）
+自动排除：Helldivers 1 一代内容（分类树 + 标题启发式）、非英语子页（/ru /zh /de 等）。
 
-## 技术栈
+## 文件说明
 
-- **抓取与解析**：Python 3.11 + MediaWiki API（`action=parse`）+ `mwparserfromhell`
-- **翻译**：规则引擎 + 官方词典（`game_loc/en_cn_by_key.json`，来自游戏解包 265 个 strings JSON）+ Kimi 网页批量翻译
-- **站点生成**：`build_site.py`（汉化 wikitext → parse 渲染中文 HTML → 路径重写/去广告/去视频/清 HD1）
-- **主题**：纯 CSS（`site_theme.css`），wiki.gg Helldivers 深色风格（双栏：右侧固定 300px infobox + 正文高密度）
-- **图片**：Pillow 压缩（WebP，宽 ≤1280，质量 72-78）
-- **桌面端**：`app.py`（pywebview + EdgeChromium）→ PyInstaller 单文件 EXE
-- **Kimi 辅助**：Playwright 网页自动化（`kimi_agent`，外部仓库）
+| 文件 | 作用 |
+|------|------|
+| `wiki_extractor.py` | 主工具（同步/提取/导入/构建/统计） |
+| `config.json` | 配置（API 地址、数据库路径、延迟等） |
+| `glossary.json` | 术语表：匹配的文本自动锁定翻译，不重复翻译 |
+| `wiki_local.db` | SQLite 数据库（页面 + 翻译记忆库） |
+| `untranslated.json` | 待翻译文本（53,400 条） |
+| `untranslated.csv` | 同上，Excel 友好版（在 translated 列填写译文） |
+| `output_zh/*.wiki.txt` | 构建出的汉化 wikitext |
 
-## 目录结构
-
-```
-index.html / patch_notes.html / theme.css   # 首页、更新日志、主题
-pages/          # 词条页（敌人/武器/装备/战略配备/任务等）
-categories/     # 分类索引页（卡片网格 + 筛选）
-images/         # 本地化图片（WebP，宽≤1280）
-build_site.py   # 主构建：汉化渲染 + 路径重写 + 清理
-apply_zh_terms.py   # 渲染后模板/UI 英文术语汉化
-generate_index_pages.py  # 分类索引页生成
-verify_links.py  # 全站链接完整性检查（HTMLParser）
-strip_hd1.py     # 清理绝地潜兵1 相关内容
-compress*.py     # 图片压缩
-app.py           # 桌面阅读器入口
-build_exe.ps1    # PyInstaller 打包脚本
-```
-
-## 构建流程
+## 常用命令
 
 ```bash
-python build_site.py          # 生成 output_zh/site_final（含中文渲染）
-python strip_hd1.py           # 清理 HD1
-python apply_zh_terms.py      # 术语汉化
-python generate_index_pages.py
-python verify_links.py        # 全站链接检查
-# 打包 EXE（Windows）：
-python -m PyInstaller --onefile --windowed --name Helldivers2WikiCN --add-data "output_zh/site_final;site" app.py
+python wiki_extractor.py init                        # 初始化数据库
+python wiki_extractor.py sync --refresh-excludes     # 重建一代排除表 + 全量同步
+python wiki_extractor.py sync                        # 增量同步（只拉变更页）
+python wiki_extractor.py extract                     # 提取待译文本 → untranslated.json
+python wiki_extractor.py extract --changed-only      # 只提取变更页面
+python wiki_extractor.py extract --format csv        # 导出 CSV（Excel 翻译用）
+python wiki_extractor.py import translated.json      # 导入翻译
+python wiki_extractor.py build                       # 生成汉化 wikitext
+python wiki_extractor.py stats                       # 统计（页面/文本块/翻译进度）
+python wiki_extractor.py update                      # 一键：增量同步+提取新增+构建
 ```
 
-## 设计说明（供 UI 评审）
+## 翻译流程
 
-- 双栏布局：正文流式 + 右侧固定 300px infobox（金色标题栏 #d4a017）
-- 图片严格限宽：infobox 渲染图 ≤150×180、部位图 ≤60px、武器图 ≤180×120、图标 16-24px
-- 表格 `table-layout: fixed`，表头已汉化（部位/生命值/护甲值/位置/耐久/主血量占比）
-- 导航模板可折叠、金左边框、派系图标 ≤20px
-- 1920×1080 / 1366×768 无横向滚动条
-- `ui_shots/` 内为各页面长截图（敌人/武器/战略配备/护甲/任务/首页/分类）
+1. 用 Excel 打开 `untranslated.csv`，在 `translated` 列填写译文（保留 `hash` 不动）。
+2. 保存后交回（或自行转成 translated.json，格式见下）。
+3. 导入：`python wiki_extractor.py import translated.json`
+4. 构建 + 制作离线 EXE 阅读器（下一步）。
 
-## 在线访问
+translated.json 格式：
 
-部署到 GitHub Pages 后，直接访问 Pages URL 即可浏览完整静态站（无需构建）。
+```json
+[
+  { "hash": "a1b2c3d4e5f67890", "translated": "战略配备", "status": "translated" }
+]
+```
+
+## 增量更新（网站内容变更后）
+
+```bash
+python wiki_extractor.py sync
+python wiki_extractor.py extract --changed-only
+```
+
+只会提取新增/变更文本，已有翻译不受影响。
+
+## Phase 2：离线阅读器 EXE（已完成）
+
+- `python build_mirror.py`：抓取文章渲染 HTML → `output_zh/site`（原站正文、去广告、图片本地化）
+- `python compress_images.py`：大 PNG/GIF 转 WebP，压缩图片体积
+- `python classify2.py`：按标题粗分 实用/叙事 页面，输出 keep_pages.txt / drop_pages.txt / maybe_pages.txt
+- `python build_subset.py`：按确认范围裁剪出 `output_zh/site_subset`（战斗实用页 + 补丁页）
+- `app.py` + PyInstaller：单文件 EXE（内置 WebView2 窗口，无 DevTools）
+
+打包命令：
+```bash
+python -m PyInstaller --noconfirm --clean --onefile --windowed `
+  --name "Helldivers2WikiCN" `
+  --add-data "output_zh/site_subset;site" `
+  --hidden-import "webview.platforms.edgechromium" `
+  --hidden-import "webview.platforms.winforms" `
+  --collect-all clr_loader --collect-all pythonnet `
+  app.py
+```
+
+产物：`dist/Helldivers2WikiCN.exe`（约 440MB，双击即用；首次启动解压约 20~30 秒）。

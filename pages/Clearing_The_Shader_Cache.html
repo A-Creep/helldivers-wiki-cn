@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Clearing The Shader 缓存 - 绝地潜兵2 离线百科</title>
+<title>Clearing The Shader Cache - 绝地潜兵2 离线百科</title>
 <link rel="stylesheet" href="../theme.css">
 </head>
 <body>
@@ -17,61 +17,61 @@
   </div>
 </header>
 <main class="content">
-  <h1 class="page-title">Clearing The Shader 缓存</h1>
-  <div class="breadcrumb">Clearing The Shader 缓存</div>
-  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div><div class="breadcrumb-item breadcrumb-item-final">Clearing The Shader 缓存</div></div>
-<p>This 页面 discusses how and why you might 删除 the <b>shader 缓存</b> for <a href="Helldivers_2.html" title="Helldivers 2">绝地潜兵 2</a>.
+  <h1 class="page-title">Clearing The Shader Cache</h1>
+  <div class="breadcrumb">Clearing The Shader Cache</div>
+  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div><div class="breadcrumb-item breadcrumb-item-final">Clearing The Shader Cache</div></div>
+<p>This page discusses how and why you might delete the <b>shader cache</b> for <a href="Helldivers_2.html" title="Helldivers 2">绝地潜兵 2</a>.
 </p>
 <div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="#What_Is_The_Shader_Cache?"><span class="tocnumber">1</span> <span class="toctext">What Is The Shader 缓存?</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="#Why_Should_I_Clear_My_Shader_Cache?"><span class="tocnumber">2</span> <span class="toctext">Why Should I 清楚 My Shader 缓存?</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="#Is_Deleting_The_Shader_Cache_Safe?"><span class="tocnumber">3</span> <span class="toctext">Is Deleting The Shader 缓存 安全?</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="#What_Is_The_Shader_Cache?"><span class="tocnumber">1</span> <span class="toctext">What Is The Shader Cache?</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Why_Should_I_Clear_My_Shader_Cache?"><span class="tocnumber">2</span> <span class="toctext">Why Should I Clear My Shader Cache?</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Is_Deleting_The_Shader_Cache_Safe?"><span class="tocnumber">3</span> <span class="toctext">Is Deleting The Shader Cache Safe?</span></a></li>
 <li class="toclevel-1 tocsection-4"><a href="#DX12_vs_DX11_Difference"><span class="tocnumber">4</span> <span class="toctext">DX12 vs DX11 Difference</span></a></li>
 <li class="toclevel-1 tocsection-5"><a href="#(Linux)_Shader_Pre-Caching"><span class="tocnumber">5</span> <span class="toctext">(Linux) Shader Pre-Caching</span></a>
 <ul>
-<li class="toclevel-2 tocsection-6"><a href="#Best_Practice"><span class="tocnumber">5.1</span> <span class="toctext">最好 Practice</span></a>
+<li class="toclevel-2 tocsection-6"><a href="#Best_Practice"><span class="tocnumber">5.1</span> <span class="toctext">Best Practice</span></a>
 <ul>
 <li class="toclevel-3 tocsection-7"><a href="#Valve_Proton"><span class="tocnumber">5.1.1</span> <span class="toctext">Valve Proton</span></a></li>
 <li class="toclevel-3 tocsection-8"><a href="#Community_Proton"><span class="tocnumber">5.1.2</span> <span class="toctext">Community Proton</span></a></li>
 </ul>
 </li>
 <li class="toclevel-2 tocsection-9"><a href="#How_to_deactivate_Shader_Pre-Caching"><span class="tocnumber">5.2</span> <span class="toctext">How to deactivate Shader Pre-Caching</span></a></li>
-<li class="toclevel-2 tocsection-10"><a href="#Faster_Shader_Pre-compilation"><span class="tocnumber">5.3</span> <span class="toctext">更快 Shader Pre-compilation</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Faster_Shader_Pre-compilation"><span class="tocnumber">5.3</span> <span class="toctext">Faster Shader Pre-compilation</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-11"><a href="#Instructions_to_clear_the_Cache"><span class="tocnumber">6</span> <span class="toctext">Instructions to 清楚 the 缓存</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Instructions_to_clear_the_Cache"><span class="tocnumber">6</span> <span class="toctext">Instructions to clear the Cache</span></a></li>
 <li class="toclevel-1 tocsection-12"><a href="#References"><span class="tocnumber">7</span> <span class="toctext">参考</span></a></li>
 </ul>
 </div>
 
-<h2><span id="What_Is_The_Shader_Cache.3F"></span><span class="mw-headline" id="What_Is_The_Shader_Cache?">What Is The Shader 缓存?</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: What Is The Shader Cache?" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: What Is The Shader Cache?"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
-<p>the <b>shader 缓存</b> is a dedicated 存储 文件夹 that saves the results of shader compilation for reuse in 未来 sessions.
-</p><p>Shaders are mini-programs executed directly by your graphics card (GPU) to calculate visual elements, such as lighting, shadows, particle 效果, etc. By caching the results on your 存储 drive, the 游戏 引擎 can then instantly fetch the ready-to-use 数据, instead of re-compiling shaders over and over 再次. This can prevent severe 车架 空投 and ensuring a 光滑 经验值.<sup id="cite&#95;ref-nvidia&#95;shader&#95;cache&#95;1-0" class="reference"><a href="#cite_note-nvidia_shader_cache-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup>
+<h2><span id="What_Is_The_Shader_Cache.3F"></span><span class="mw-headline" id="What_Is_The_Shader_Cache?">What Is The Shader Cache?</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: What Is The Shader Cache?" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: What Is The Shader Cache?"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>the <b>shader cache</b> is a dedicated 存储 folder that saves the results of shader compilation for reuse in future sessions.
+</p><p>Shaders are mini-programs executed directly by your graphics card (GPU) to calculate visual elements, such as lighting, shadows, particle 效果, etc. By caching the results on your 存储 drive, the game engine can then instantly fetch the ready-to-use data, instead of re-compiling shaders over and over again. This can prevent severe frame drops and ensuring a smooth 经验值.<sup id="cite&#95;ref-nvidia&#95;shader&#95;cache&#95;1-0" class="reference"><a href="#cite_note-nvidia_shader_cache-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup>
 </p>
-<h2><span id="Why_Should_I_Clear_My_Shader_Cache.3F"></span><span class="mw-headline" id="Why_Should_I_Clear_My_Shader_Cache?">Why Should I 清楚 My Shader 缓存?</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Why Should I Clear My Shader Cache?" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Why Should I Clear My Shader Cache?"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
-<p>Over 时间, your cached shader files can 成为 outdated or corrupted, leading to performance 空投, 崩溃, or missing/broken visual 效果 (such as purple 问题 marks or 崩溃 when using certain 武器 or 战略配备).
-</p><p>This is especially 是 after a new <a href="Game_Version.html" title="Game Version">游戏 更新</a> or GPU 驾驶员 刷新 when the older cached files 否 longer 比赛 the new 软件 法典. Therefore it is recommended to 删除 the cached files after a 游戏 补丁 or 驾驶员 更新.
-</p><p>Corrupted shaders can 原因 a variety of problems, including:
+<h2><span id="Why_Should_I_Clear_My_Shader_Cache.3F"></span><span class="mw-headline" id="Why_Should_I_Clear_My_Shader_Cache?">Why Should I Clear My Shader Cache?</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Why Should I Clear My Shader Cache?" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Why Should I Clear My Shader Cache?"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Over time, your cached shader files can become outdated or corrupted, leading to performance drops, 崩溃, or missing/broken visual 效果 (such as purple 问题 marks or 崩溃 when using certain 武器 or 战略配备).
+</p><p>This is especially true after a new <a href="Game_Version.html" title="Game Version">Game 更新</a> or GPU driver 刷新 when the older cached files no longer match the new 软件 code. Therefore it is recommended to delete the cached files after a game 补丁 or driver 更新.
+</p><p>Corrupted shaders can cause a variety of problems, including:
 </p>
-<ul><li><b>游戏 崩溃:</b> This can be 任一 a 崩溃 to the desktop while playing or the 游戏 refusing to 打开 at 全部 and crashing upon trying to 负载 into the 超级驱逐舰.</li>
-<li><b>Performance 空投:</b> Unexplained stuttering or a 亏损 of performance.</li>
-<li><b>Missing assets:</b> Missing assets are 经常 depicted as purple 问题 marks in place of actual models.</li></ul>
-<h2><span id="Is_Deleting_The_Shader_Cache_Safe.3F"></span><span class="mw-headline" id="Is_Deleting_The_Shader_Cache_Safe?">Is Deleting The Shader 缓存 安全?</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Is Deleting The Shader Cache Safe?" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Is Deleting The Shader Cache Safe?"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
-<p>是, this 流程 is entirely 安全. Deleting the cached files has 否 influence on your character 流程, 习俗 keybinds or other aspects of the 游戏. Upon the 下一个 launch of 绝地潜兵 2, the 引擎 will automatically 继续 compiling the files from scratch 再次 and rebuild a clean 缓存.
-</p><p>It is 重要 to note that the 持续时间 of this initial compilation phase does depend on your hardware. 更低-结束 systems might 经验值 a <i>black screen</i> for extended periods of 时间 during the 下一个 startup. Should this be the 案例 for you, please be patient and 允许 the 引擎 a 少数 分钟 to 完成 rebuilding the 缓存.
-</p><p><b>ATTENTION:</b> <b>从不</b> 套装 your shader 缓存 文件夹 to "read only". Doing so prevents the 游戏 from saving or updating pre-compiled files and forces it to recalculate 每个 单个 shader 资产 in 真实 时间 during 玩法, resulting in stuttering and possibly out-of-内存 崩溃.<sup id="cite&#95;ref-nvidia&#95;shader&#95;cache&#95;1-1" class="reference"><a href="#cite_note-nvidia_shader_cache-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup>
+<ul><li><b>Game 崩溃:</b> This can be either a crash to the desktop while playing or the game refusing to open at all and crashing upon trying to load into the 超级驱逐舰.</li>
+<li><b>Performance drops:</b> Unexplained stuttering or a loss of performance.</li>
+<li><b>Missing assets:</b> Missing assets are often depicted as purple 问题 marks in place of actual models.</li></ul>
+<h2><span id="Is_Deleting_The_Shader_Cache_Safe.3F"></span><span class="mw-headline" id="Is_Deleting_The_Shader_Cache_Safe?">Is Deleting The Shader Cache Safe?</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Is Deleting The Shader Cache Safe?" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Is Deleting The Shader Cache Safe?"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Yes, this 流程 is entirely safe. Deleting the cached files has no influence on your character 流程, custom keybinds or other aspects of the game. Upon the 下一个 launch of 绝地潜兵 2, the engine will automatically resume compiling the files from scratch again and rebuild a clean cache.
+</p><p>It is 重要 to note that the 持续时间 of this initial compilation phase does depend on your hardware. Lower-end systems might 经验值 a <i>black screen</i> for extended periods of time during the 下一个 startup. Should this be the case for you, please be patient and allow the engine a few 分钟 to finish rebuilding the cache.
+</p><p><b>ATTENTION:</b> <b>从不</b> set your shader cache folder to "read only". Doing so prevents the game from saving or updating pre-compiled files and forces it to recalculate every single shader asset in real time during 玩法, resulting in stuttering and possibly out-of-memory 崩溃.<sup id="cite&#95;ref-nvidia&#95;shader&#95;cache&#95;1-1" class="reference"><a href="#cite_note-nvidia_shader_cache-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup>
 </p>
-<h2><span class="mw-headline" id="DX12_vs_DX11_Difference">DX12 vs DX11 Difference</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: DX12 vs DX11 Difference" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: DX12 vs DX11 Difference"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
-<p>By 默认, <a href="Helldivers_2.html" title="Helldivers 2">绝地潜兵 2</a> 使用次数 DirectX 12 and therefore 使用次数 its own local shadercache 文件夹 in <code>%appdata%</code>.
-</p><p>If you decide to use the DX11 <a href="Steam_Launch_Commands.html" title="Steam Launch Commands">launch argument</a> <code>--use-d3d11</code> instead, then DX11 will 代表 the shader 管理 to the GPU 驾驶员. In the 事件 that you are using DX11, please 关注 the DX11 instructions at the bottom of the 引导 instead.
+<h2><span class="mw-headline" id="DX12_vs_DX11_Difference">DX12 vs DX11 Difference</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: DX12 vs DX11 Difference" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: DX12 vs DX11 Difference"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>By 默认, <a href="Helldivers_2.html" title="Helldivers 2">绝地潜兵 2</a> 使用次数 DirectX 12 and therefore 使用次数 its own local shadercache folder in <code>%appdata%</code>.
+</p><p>If you decide to use the DX11 <a href="Steam_Launch_Commands.html" title="Steam Launch Commands">launch argument</a> <code>--use-d3d11</code> instead, then DX11 will 代表 the shader 管理 to the GPU driver. In the event that you are using DX11, please follow the DX11 instructions at the bottom of the guide instead.
 </p>
-<h2><span id=".28Linux.29_Shader_Pre-Caching"></span><span class="mw-headline" id="(Linux)_Shader_Pre-Caching">(Linux) Shader Pre-Caching</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: (Linux) Shader Pre-Caching" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: (Linux) Shader Pre-Caching"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
-<p>By 默认, Steam on Linux utilizes a 特性 called "Shader Pre-Caching".<sup id="cite&#95;ref-2" class="reference"><a href="#cite_note-2"><span class="cite-bracket">&#91;</span>2<span class="cite-bracket">&#93;</span></a></sup> The idea behind shader pre-caching is to 下载 pre-compiled shader pipelines pre-optimized for your specific GPU architecture instead of compiling shaders locally 每个 时间 you 开始 the 游戏.
-</p><p>This 流程 is significantly 更少 computationally expensive for your hardware. Instead of experiencing stutters, dropping framerates and a reduction in 稳定性 you only need to 下载 更多, which is an 增加 in background 下载 traffic, as Steam 频繁 updates these shaders.
+<h2><span id=".28Linux.29_Shader_Pre-Caching"></span><span class="mw-headline" id="(Linux)_Shader_Pre-Caching">(Linux) Shader Pre-Caching</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: (Linux) Shader Pre-Caching" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: (Linux) Shader Pre-Caching"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>By 默认, Steam on Linux utilizes a 特性 called "Shader Pre-Caching".<sup id="cite&#95;ref-2" class="reference"><a href="#cite_note-2"><span class="cite-bracket">&#91;</span>2<span class="cite-bracket">&#93;</span></a></sup> The idea behind shader pre-caching is to 下载 pre-compiled shader pipelines pre-optimized for your specific GPU architecture instead of compiling shaders locally every time you start the game.
+</p><p>This 流程 is significantly less computationally expensive for your hardware. Instead of experiencing stutters, dropping framerates and a reduction in 稳定性 you only need to 下载 more, which is an 增加 in background 下载 traffic, as Steam 频繁 updates these shaders.
 </p>
-<h3><span class="mw-headline" id="Best_Practice">最好 Practice</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Best Practice" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Best Practice"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
-<h4><span class="mw-headline" id="Valve_Proton">Valve Proton</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Valve Proton" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Valve Proton"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<h3><span class="mw-headline" id="Best_Practice">Best Practice</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Best Practice" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Best Practice"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<h4><span class="mw-headline" id="Valve_Proton">Valve Proton</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Valve Proton" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Valve Proton"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
 <p>It is possible to deactivate Shader Pre-Caching. 通常 speaking it is recommended to keep Shader Pre-Caching active if you use a 标准 Proton provided by Valve, such as:
 </p>
 <ul><li>Proton Experimental</li>
@@ -79,144 +79,144 @@
 <li>Proton 10.04</li></ul>
 <p>etc.
 </p>
-<h4><span class="mw-headline" id="Community_Proton">Community Proton</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Community Proton" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Community Proton"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
-<p>However, the 官员 CachyOS Gaming 引导<sup id="cite&#95;ref-3" class="reference"><a href="#cite_note-3"><span class="cite-bracket">&#91;</span>3<span class="cite-bracket">&#93;</span></a></sup> recommends that users who use a community-driven Proton (点赞 CachyOS-Proton), to disable Shader Pre-Caching instead. These 习俗 branches utilize advanced, 真实-时间 graphics translations which can be compiled by 现代 CPU/GPU configurations without a hitch. If you are using a 更低-结束 电脑 instead, then it might be 更多 sensible to keep Pre-Caching active to preserve 车架 pacing.
+<h4><span class="mw-headline" id="Community_Proton">Community Proton</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Community Proton" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Community Proton"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>However, the 官员 CachyOS Gaming Guide<sup id="cite&#95;ref-3" class="reference"><a href="#cite_note-3"><span class="cite-bracket">&#91;</span>3<span class="cite-bracket">&#93;</span></a></sup> recommends that users who use a community-driven Proton (like CachyOS-Proton), to disable Shader Pre-Caching instead. These custom branches utilize advanced, real-time graphics translations which can be compiled by modern CPU/GPU configurations without a hitch. If you are using a lower-end 电脑 instead, then it might be more sensible to keep Pre-Caching active to preserve frame pacing.
 Community Driven Protons are:
 </p>
 <ul><li>Proton-CachyOS</li>
 <li>Proton-GE</li>
 <li>Proton-EM</li></ul>
-<p>Furthermore it's also 重要 to note that updating your 驾驶员 or Mesa3D graphics stack will inevitably invalidate the existing 缓存, forcing a 完成 rebuild during the 下一个 launch.
-</p><p><b>Attention:</b> If you deactivate Shader Pre-Caching, your local shader 缓存 for 绝地潜兵 2 will be empty and forces the 游戏 to conduct native shader compilation. For 更多 Linux-specific 技巧, consult <a href="../index.html" class="mw-redirect" title="Linux Troubleshooting">Linux 故障排除</a>.
+<p>Furthermore it's also 重要 to note that updating your driver or Mesa3D graphics stack will inevitably invalidate the existing cache, forcing a 完成 rebuild during the 下一个 launch.
+</p><p><b>Attention:</b> If you deactivate Shader Pre-Caching, your local shader cache for 绝地潜兵 2 will be empty and forces the game to conduct native shader compilation. For more Linux-specific 技巧, consult <a href="../index.html" class="mw-redirect" title="Linux Troubleshooting">Linux 故障排除</a>.
 </p>
-<h3><span class="mw-headline" id="How_to_deactivate_Shader_Pre-Caching">How to deactivate Shader Pre-Caching</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: How to deactivate Shader Pre-Caching" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: How to deactivate Shader Pre-Caching"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
-<p>If you want to deactivate Shader Pre-Caching, 关注 these steps:
+<h3><span class="mw-headline" id="How_to_deactivate_Shader_Pre-Caching">How to deactivate Shader Pre-Caching</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: How to deactivate Shader Pre-Caching" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: How to deactivate Shader Pre-Caching"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>If you want to deactivate Shader Pre-Caching, follow these steps:
 </p>
-<ol><li>打开 Steam.</li>
+<ol><li>Open Steam.</li>
 <li>Click the "Steam" button in the upper left corner.</li>
 <li>Go to “Settings”.</li>
 <li>Click on the "Downloads" tab.</li>
 <li>Scroll down to “Shader Pre-Caching”.</li>
 <li>Deactivate the Pre-Caching.</li></ol>
-<h3><span class="mw-headline" id="Faster_Shader_Pre-compilation">更快 Shader Pre-compilation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Faster Shader Pre-compilation" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Faster Shader Pre-compilation"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
-<p>Please be aware that Shader Pre-Caching with HDR active can 原因 abnormally prolonged processing times. If you 经验值 任何 strange occurrences using HDR, it warrants a 测试 with Shader Pre-Caching deactivated. 
-</p><p>It can occur that the shader pre-compilation might be unusually slow because for 一些 理性 the 星系 only 使用次数 one 核心. You can override this if you want to:<sup id="cite&#95;ref-4" class="reference"><a href="#cite_note-4"><span class="cite-bracket">&#91;</span>4<span class="cite-bracket">&#93;</span></a></sup>
+<h3><span class="mw-headline" id="Faster_Shader_Pre-compilation">Faster Shader Pre-compilation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Faster Shader Pre-compilation" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Faster Shader Pre-compilation"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Please be aware that Shader Pre-Caching with HDR active can cause abnormally prolonged processing times. If you 经验值 any strange occurrences using HDR, it warrants a test with Shader Pre-Caching deactivated. 
+</p><p>It can occur that the shader pre-compilation might be unusually slow because for some reason the system only 使用次数 one core. You can override this if you want to:<sup id="cite&#95;ref-4" class="reference"><a href="#cite_note-4"><span class="cite-bracket">&#91;</span>4<span class="cite-bracket">&#93;</span></a></sup>
 </p>
 <ol><li>打开 <code>~/.steam/steam/steam_dev.cfg</code>.</li>
-<li>套装 <code>unShaderBackgroundProcessingThreads</code> to <code>8</code>. (This would 之势 the 使用 of 8 cores for shader pre-compilation, you can of course 套装 it to other values.)</li></ol>
-<h2><span class="mw-headline" id="Instructions_to_clear_the_Cache">Instructions to 清楚 the 缓存</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Instructions to clear the Cache" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Instructions to clear the Cache"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
-<div class="tabber tabber--init"><header class="tabber__header"><button class="tabber__header__prev" tabindex="-1" type="button" aria-hidden="true"></button><nav class="tabber__tabs" role="tablist"><a class="tabber__tab" role="tab" id="Windows_(DX12)-0-label" href="#Windows_(DX12)-0" aria-controls="Windows_(DX12)-0">Windows (DX12)</a><a class="tabber__tab" role="tab" id="Windows_(DX11)-0-label" href="#Windows_(DX11)-0" aria-controls="Windows_(DX11)-0">Windows (DX11)</a><a class="tabber__tab" role="tab" id="Linux_/_Steam_Deck-0-label" href="#Linux_/_Steam_Deck-0" aria-controls="Linux_/_Steam_Deck-0">Linux / Steam 甲板</a><a class="tabber__tab" role="tab" id="Xbox_Series-0-label" href="#Xbox_Series-0" aria-controls="Xbox_Series-0">Xbox 系列</a><a class="tabber__tab" role="tab" id="PlayStation-0-label" href="#PlayStation-0" aria-controls="PlayStation-0">PlayStation</a></nav><button class="tabber__header__next" tabindex="-1" type="button" aria-hidden="true"></button></header><section class="tabber__section"><article class="tabber__panel" role="tabpanel" tabindex="0" id="Windows_(DX12)-0" aria-labelledby="Windows_(DX12)-0-label"><p class="mw-empty-elt">
-</p><ol><li>关闭 the 游戏.</li>
-<li>按下 <code>⊞ 赢得</code> + <code>R</code> to 打开 the Run dialog.</li>
+<li>套装 <code>unShaderBackgroundProcessingThreads</code> to <code>8</code>. (This would force the 使用 of 8 cores for shader pre-compilation, you can of course set it to other values.)</li></ol>
+<h2><span class="mw-headline" id="Instructions_to_clear_the_Cache">Instructions to clear the Cache</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Instructions to clear the Cache" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Instructions to clear the Cache"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="tabber tabber--init"><header class="tabber__header"><button class="tabber__header__prev" tabindex="-1" type="button" aria-hidden="true"></button><nav class="tabber__tabs" role="tablist"><a class="tabber__tab" role="tab" id="Windows_(DX12)-0-label" href="#Windows_(DX12)-0" aria-controls="Windows_(DX12)-0">Windows (DX12)</a><a class="tabber__tab" role="tab" id="Windows_(DX11)-0-label" href="#Windows_(DX11)-0" aria-controls="Windows_(DX11)-0">Windows (DX11)</a><a class="tabber__tab" role="tab" id="Linux_/_Steam_Deck-0-label" href="#Linux_/_Steam_Deck-0" aria-controls="Linux_/_Steam_Deck-0">Linux / Steam Deck</a><a class="tabber__tab" role="tab" id="Xbox_Series-0-label" href="#Xbox_Series-0" aria-controls="Xbox_Series-0">Xbox Series</a><a class="tabber__tab" role="tab" id="PlayStation-0-label" href="#PlayStation-0" aria-controls="PlayStation-0">PlayStation</a></nav><button class="tabber__header__next" tabindex="-1" type="button" aria-hidden="true"></button></header><section class="tabber__section"><article class="tabber__panel" role="tabpanel" tabindex="0" id="Windows_(DX12)-0" aria-labelledby="Windows_(DX12)-0-label"><p class="mw-empty-elt">
+</p><ol><li>Close the game.</li>
+<li>按下 <code>⊞ Win</code> + <code>R</code> to open the Run dialog.</li>
 <li>粘贴 <code>%APPDATA%/Arrowhead/绝地潜兵2</code> into the Run dialog and click OK.</li>
-<li>删除 the shader_缓存 文件夹 (use <code>SHIFT</code> + <code>删除</code> to skip the Recycle Bin).</li>
-<li>开始 the 游戏.</li></ol>
-<p><b>Note:</b> Deleting the entire <code>%APPDATA%/Arrowhead/绝地潜兵2</code> 文件夹 will also wipe your graphics settings and keybinds.
+<li>Delete the shader_cache folder (use <code>SHIFT</code> + <code>删除</code> to skip the Recycle Bin).</li>
+<li>Start the game.</li></ol>
+<p><b>Note:</b> Deleting the entire <code>%APPDATA%/Arrowhead/绝地潜兵2</code> folder will also wipe your graphics settings and keybinds.
 </p>
 <table>
 <tbody><tr>
 <td><div class="thumb tnone"><div class="thumbinner" style="width:322px;"><a href="../index.html" class="image"><img src="../images/320px-ShaderCacheRunWindow.png" decoding="async" loading="lazy" width="320" height="164" class="thumbimage" data-file-width="397" data-file-height="204" /></a>  <div class="thumbcaption"><div class="magnify"><a href="../index.html" class="internal" title="Enlarge"></a></div>The Run Window</div></div></div>
 </td>
-<td><div class="thumb tnone"><div class="thumbinner" style="width:322px;"><a href="../index.html" class="image"><img src="../images/320px-ShaderCacheAppData.png" decoding="async" loading="lazy" width="320" height="180" class="thumbimage" data-file-width="1121" data-file-height="629" /></a>  <div class="thumbcaption"><div class="magnify"><a href="../index.html" class="internal" title="Enlarge"></a></div>The 文件夹 containing the shader_缓存 文件夹</div></div></div>
+<td><div class="thumb tnone"><div class="thumbinner" style="width:322px;"><a href="../index.html" class="image"><img src="../images/320px-ShaderCacheAppData.png" decoding="async" loading="lazy" width="320" height="180" class="thumbimage" data-file-width="1121" data-file-height="629" /></a>  <div class="thumbcaption"><div class="magnify"><a href="../index.html" class="internal" title="Enlarge"></a></div>The folder containing the shader_cache folder</div></div></div>
 </td></tr></tbody></table>
 <p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Windows_(DX11)-0" aria-labelledby="Windows_(DX11)-0-label"><p class="mw-empty-elt">
-</p><ol><li>打开 the NVIDIA 控制 Panel.<sup id="cite&#95;ref-5" class="reference"><a href="#cite_note-5"><span class="cite-bracket">&#91;</span>5<span class="cite-bracket">&#93;</span></a></sup></li>
+</p><ol><li>Open the NVIDIA 控制 Panel.<sup id="cite&#95;ref-5" class="reference"><a href="#cite_note-5"><span class="cite-bracket">&#91;</span>5<span class="cite-bracket">&#93;</span></a></sup></li>
 <li>Go to "Manage 3D Settings" on the left panel.</li>
-<li>On the 正确 panel, 搜索 for "Shader 缓存 尺寸" and 选择 "Off".</li>
-<li>Click "Apply" to 拯救 the setting.</li>
+<li>On the right panel, search for "Shader Cache Size" and select "Off".</li>
+<li>Click "Apply" to save the setting.</li>
 <li>Reboot your PC.</li>
-<li>After the PC boots, 打开 the "Run" dialog box (<code>赢得 + R</code> or press the 开始 button).</li>
-<li>类型 the following into the Run dialog box or the 文件 探索者 地址 酒吧 and hit Enter: <code>%USERPROFILE%\AppData\Local</code> or <code>%USERPROFILE%\AppData\LocalLow\NVIDIA\</code></li>
-<li>In the "Local" 文件夹, 打开 the "NVIDIA" 目录, then 打开 the "DXCache" 文件夹, and 删除 全部 目录.</li>
-<li>回报 to the "Local" 文件夹.</li>
-<li>打开 the "NVIDIA Corporation" 目录.</li>
-<li>打开 the "NV_缓存" 文件夹 and 删除 全部 its 目录.</li>
-<li>Reopen the NVIDIA 控制 Panel and 套装 "Shader 缓存" 返回 to "驾驶员 默认". Larger sizes can provide 最佳 performance with larger 游戏 libraries.</li>
-<li>Click "Apply" to 拯救 the changes.</li>
-<li>重新开始 your PC 一次 更多 to 完成 the 流程.</li></ol>
-<p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Linux_/_Steam_Deck-0" aria-labelledby="Linux_/_Steam_Deck-0-label"><p>Please note that Linux has 几个 caches for shaders to be stored - this also depends on your 分布 or if you are using a Steam 甲板. You might need to empty 多个 locations. 绝地潜兵 folders will 总是显示 have the ID 数字 <code>553850</code>.
-</p><p>If you are unable to see them, please enable "显示 隐藏 Files". On 最多 distributions you need to press <code>CTRL + H</code> to enable this in your 文件 浏览器.
+<li>After the PC boots, open the "Run" dialog box (<code>WIN + R</code> or press the Start button).</li>
+<li>类型 the following into the Run dialog box or the File 探索者 地址 bar and hit Enter: <code>%USERPROFILE%\AppData\Local</code> or <code>%USERPROFILE%\AppData\LocalLow\NVIDIA\</code></li>
+<li>In the "Local" folder, open the "NVIDIA" 目录, then open the "DXCache" folder, and delete all 目录.</li>
+<li>Return to the "Local" folder.</li>
+<li>Open the "NVIDIA Corporation" 目录.</li>
+<li>Open the "NV_Cache" folder and delete all its 目录.</li>
+<li>Reopen the NVIDIA 控制 Panel and set "Shader Cache" back to "Driver 默认". Larger sizes can provide 最佳 performance with larger game libraries.</li>
+<li>Click "Apply" to save the changes.</li>
+<li>重新开始 your PC once more to 完成 the 流程.</li></ol>
+<p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Linux_/_Steam_Deck-0" aria-labelledby="Linux_/_Steam_Deck-0-label"><p>Please note that Linux has 几个 caches for shaders to be stored - this also depends on your 分布 or if you are using a Steam Deck. You might need to empty 多个 locations. 绝地潜兵 folders will always have the ID number <code>553850</code>.
+</p><p>If you are unable to see them, please enable "Show Hidden Files". On most distributions you need to press <code>CTRL + H</code> to enable this in your file 浏览器.
 </p>
-<div class="tabber tabber--init"><header class="tabber__header"><button class="tabber__header__prev" tabindex="-1" type="button" aria-hidden="true"></button><nav class="tabber__tabs" role="tablist"><a class="tabber__tab" role="tab" id="Native-0-label" href="#Native-0" aria-controls="Native-0">Native</a><a class="tabber__tab" role="tab" id="Steam_Deck-0-label" href="#Steam_Deck-0" aria-controls="Steam_Deck-0">Steam 甲板</a><a class="tabber__tab" role="tab" id="FlatPak-0-label" href="#FlatPak-0" aria-controls="FlatPak-0">FlatPak</a></nav><button class="tabber__header__next" tabindex="-1" type="button" aria-hidden="true"></button></header><section class="tabber__section"><article class="tabber__panel" role="tabpanel" tabindex="0" id="Native-0" aria-labelledby="Native-0-label"><p class="mw-empty-elt">
-</p><ul><li>Steam Shader 缓存: <code>~/.local/分享/Steam/steamapps/shadercache/</code></li></ul>
-<p>删除 全部 files in the shadercache 文件夹.
+<div class="tabber tabber--init"><header class="tabber__header"><button class="tabber__header__prev" tabindex="-1" type="button" aria-hidden="true"></button><nav class="tabber__tabs" role="tablist"><a class="tabber__tab" role="tab" id="Native-0-label" href="#Native-0" aria-controls="Native-0">Native</a><a class="tabber__tab" role="tab" id="Steam_Deck-0-label" href="#Steam_Deck-0" aria-controls="Steam_Deck-0">Steam Deck</a><a class="tabber__tab" role="tab" id="FlatPak-0-label" href="#FlatPak-0" aria-controls="FlatPak-0">FlatPak</a></nav><button class="tabber__header__next" tabindex="-1" type="button" aria-hidden="true"></button></header><section class="tabber__section"><article class="tabber__panel" role="tabpanel" tabindex="0" id="Native-0" aria-labelledby="Native-0-label"><p class="mw-empty-elt">
+</p><ul><li>Steam Shader Cache: <code>~/.local/share/Steam/steamapps/shadercache/</code></li></ul>
+<p>Delete all files in the shadercache folder.
 </p>
-<ul><li>The vkd3d-proton.缓存 文件: <code>~/.local/分享/Steam/steamapps/common/绝地潜兵 2/</code></li>
-<li>The DXVK 文件夹 in the 绝地潜兵 prefix 文件夹: <code>~/.local/分享/Steam/steamapps/compatdata/553850/pfx/drive_c/users/steamuser/AppData/Local/</code></li>
-<li>The shader_缓存 文件夹 in the 绝地潜兵 prefix 文件夹: <code>~/.local/分享/Steam/steamapps/compatdata/553850/pfx/drive_c/users/steamuser/AppData/Roaming/Arrowhead/绝地潜兵2/</code></li></ul>
+<ul><li>The vkd3d-proton.cache file: <code>~/.local/share/Steam/steamapps/common/绝地潜兵 2/</code></li>
+<li>The DXVK folder in the 绝地潜兵 prefix folder: <code>~/.local/share/Steam/steamapps/compatdata/553850/pfx/drive_c/users/steamuser/AppData/Local/</code></li>
+<li>The shader_cache folder in the 绝地潜兵 prefix folder: <code>~/.local/share/Steam/steamapps/compatdata/553850/pfx/drive_c/users/steamuser/AppData/Roaming/Arrowhead/绝地潜兵2/</code></li></ul>
 <p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Steam_Deck-0" aria-labelledby="Steam_Deck-0-label"><p class="mw-empty-elt">
-</p><ul><li>Steam Shader 缓存: <code>/home/甲板/.local/分享/Steam/shadercache/</code></li></ul>
-<p>删除 全部 files in the shadercache 文件夹.
+</p><ul><li>Steam Shader Cache: <code>/home/deck/.local/share/Steam/shadercache/</code></li></ul>
+<p>Delete all files in the shadercache folder.
 </p>
-<ul><li>The vkd3d-proton.缓存 文件: <code>/home/甲板/.local/分享/Steam/steamapps/common/绝地潜兵 2/</code></li>
-<li>The DXVK 文件夹 in the 绝地潜兵 prefix 文件夹: <code>/home/甲板/.local/分享/Steam/steamapps/compatdata/553850/pfx/drive_c/users/steamuser/AppData/Local/</code></li>
-<li>The shader_缓存 文件夹 in the 绝地潜兵 prefix 文件夹: <code>/home/甲板/.local/分享/Steam/steamapps/compatdata/553850/pfx/drive_c/users/steamuser/Roaming/Arrowhead/绝地潜兵2/</code></li></ul>
+<ul><li>The vkd3d-proton.cache file: <code>/home/deck/.local/share/Steam/steamapps/common/绝地潜兵 2/</code></li>
+<li>The DXVK folder in the 绝地潜兵 prefix folder: <code>/home/deck/.local/share/Steam/steamapps/compatdata/553850/pfx/drive_c/users/steamuser/AppData/Local/</code></li>
+<li>The shader_cache folder in the 绝地潜兵 prefix folder: <code>/home/deck/.local/share/Steam/steamapps/compatdata/553850/pfx/drive_c/users/steamuser/Roaming/Arrowhead/绝地潜兵2/</code></li></ul>
 <p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="FlatPak-0" aria-labelledby="FlatPak-0-label"><p class="mw-empty-elt">
-</p><ul><li>Steam Shader 缓存:<code>~/.var/app/com.valvesoftware.Steam/数据/Steam/shadercache/</code></li></ul>
-<p>删除 全部 files in the shadercache 文件夹.
+</p><ul><li>Steam Shader Cache:<code>~/.var/app/com.valvesoftware.Steam/data/Steam/shadercache/</code></li></ul>
+<p>Delete all files in the shadercache folder.
 </p>
-<ul><li>The vkd3d-proton.缓存 文件: <code>~/.var/app/com.valvesoftware.Steam/数据/Steam/steamapps/common/绝地潜兵 2/</code></li>
-<li>The DXVK 文件夹 in the 绝地潜兵 prefix 文件夹: <code>~/.var/app/com.valvesoftware.Steam/数据/Steam/steamapps/compatdata/553850/pfx/drive_c/users/steamuser/AppData/Local/</code></li>
-<li>The shader_缓存 文件夹 in the 绝地潜兵 prefix 文件夹: <code>~/.var/app/com.valvesoftware.Steam/数据/Steam/steamapps/compatdata/553850/pfx/drive_c/users/steamuser/Roaming/Arrowhead/绝地潜兵2/</code></li></ul>
+<ul><li>The vkd3d-proton.cache file: <code>~/.var/app/com.valvesoftware.Steam/data/Steam/steamapps/common/绝地潜兵 2/</code></li>
+<li>The DXVK folder in the 绝地潜兵 prefix folder: <code>~/.var/app/com.valvesoftware.Steam/data/Steam/steamapps/compatdata/553850/pfx/drive_c/users/steamuser/AppData/Local/</code></li>
+<li>The shader_cache folder in the 绝地潜兵 prefix folder: <code>~/.var/app/com.valvesoftware.Steam/data/Steam/steamapps/compatdata/553850/pfx/drive_c/users/steamuser/Roaming/Arrowhead/绝地潜兵2/</code></li></ul>
 <p class="mw-empty-elt"></p></article></section></div>
-<p>Please note that your 驾驶员 also has it's own Shadercache. These do not necessarily have to be cleaned out but are mentioned in 案例 you are looking for them:
+<p>Please note that your driver also has it's own Shadercache. These do not necessarily have to be cleaned out but are mentioned in case you are looking for them:
 </p>
-<ul><li>For Mesa it's located in <code>/home/$USER/.缓存/mesa_shader_缓存/</code></li>
-<li>NVIDIA’s proprietary drivers have their own 缓存 in <code>~/.nv/GLCache/</code> or <code>~/.缓存/nvidia/GLCache/</code><p class="mw-empty-elt"></p></li></ul></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Xbox_Series-0" aria-labelledby="Xbox_Series-0-label"><p class="mw-empty-elt">
-</p><ol><li>Press and 按住 the "Xbox button" on the 正面 of the 控制台 for roughly 10 秒 until it shuts off completely.</li>
-<li>Unplug the 之力 cable from the 返回.</li>
-<li>Press and 按住 the 之力 button a 少数 times while unplugged to fully 放电 the internal capacitors.</li>
-<li>Wait 1 minute, reconnect the cable, and 转变 the 控制台 返回 on.</li></ol>
+<ul><li>For Mesa it's located in <code>/home/$USER/.cache/mesa_shader_cache/</code></li>
+<li>NVIDIA’s proprietary drivers have their own cache in <code>~/.nv/GLCache/</code> or <code>~/.cache/nvidia/GLCache/</code><p class="mw-empty-elt"></p></li></ul></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Xbox_Series-0" aria-labelledby="Xbox_Series-0-label"><p class="mw-empty-elt">
+</p><ol><li>Press and hold the "Xbox button" on the front of the 控制台 for roughly 10 秒 until it shuts off completely.</li>
+<li>Unplug the power cable from the back.</li>
+<li>Press and hold the power button a few times while unplugged to fully 放电 the internal capacitors.</li>
+<li>Wait 1 minute, reconnect the cable, and turn the 控制台 back on.</li></ol>
 <p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="PlayStation-0" aria-labelledby="PlayStation-0-label"><p class="mw-empty-elt">
-</p><ol><li>之力 off completely (do not use Rest 模式).</li>
+</p><ol><li>Power off completely (do not use Rest Mode).</li>
 <li>Unplug the 控制台 for 2 分钟.</li>
-<li>Plug the 控制台 返回 in.</li>
-<li>转变 it 返回 on into 安全 模式. Press and 按住 the 之力 button 再次.</li>
+<li>Plug the 控制台 back in.</li>
+<li>Turn it back on into Safe Mode. Press and hold the power button again.</li>
 <li>Release it after you hear the second beep — one beep sounds when you first press, and another seven 秒 later.</li>
 <li>连接 the controller with the USB cable and press the PS button on the controller.</li>
-<li>选择 "清楚 星系 软件 缓存" and rebuild 数据库.</li></ol>
+<li>Select "Clear System 软件 Cache" and rebuild 数据库.</li></ol>
 <p class="mw-empty-elt"></p></article></section></div>
-<h2><span class="mw-headline" id="References">参考</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: References" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: References"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<h2><span class="mw-headline" id="References">参考</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: References" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: References"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
 <div class="mw-references-wrap"><ol class="references">
 <li id="cite&#95;note-nvidia&#95;shader&#95;cache-1"><span class="mw-cite-backlink">↑ <sup><a href="#cite_ref-nvidia_shader_cache_1-0">1.0</a></sup> <sup><a href="#cite_ref-nvidia_shader_cache_1-1">1.1</a></sup></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://docs.omniverse.nvidia.com/ovas/latest/architecture/shader-cache.html#shared-shader-caching–">NVIDIA shader 文档</a></span>
 </li>
-<li id="cite&#95;note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://store.steampowered.com/oldnews/35534?l=french#:~:text=New%20feature:%20Shader%20Pre%2DCaching,based%20games%20on%20supported%20hardware.">Steam - Steam 客户端 更新 Released</a></span>
+<li id="cite&#95;note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://store.steampowered.com/oldnews/35534?l=french#:~:text=New%20feature:%20Shader%20Pre%2DCaching,based%20games%20on%20supported%20hardware.">Steam - Steam Client 更新 Released</a></span>
 </li>
-<li id="cite&#95;note-3"><span class="mw-cite-backlink"><a href="#cite_ref-3">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://wiki.cachyos.org/configuration/gaming/#pre-caching-shaders-with-proton-cachyos--ge-and--em">CachyOS Gaming 引导 - Pre-caching Shaders with Proton-CachyOS, -GE, and -EM</a></span>
+<li id="cite&#95;note-3"><span class="mw-cite-backlink"><a href="#cite_ref-3">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://wiki.cachyos.org/configuration/gaming/#pre-caching-shaders-with-proton-cachyos--ge-and--em">CachyOS Gaming Guide - Pre-caching Shaders with Proton-CachyOS, -GE, and -EM</a></span>
 </li>
-<li id="cite&#95;note-4"><span class="mw-cite-backlink"><a href="#cite_ref-4">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://wiki.archlinux.org/title/Steam#Faster_shader_pre-compilation">Arch Linux - 更快 Shader Pre-Compilation</a></span>
+<li id="cite&#95;note-4"><span class="mw-cite-backlink"><a href="#cite_ref-4">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://wiki.archlinux.org/title/Steam#Faster_shader_pre-compilation">Arch Linux - Faster Shader Pre-Compilation</a></span>
 </li>
-<li id="cite&#95;note-5"><span class="mw-cite-backlink"><a href="#cite_ref-5">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://nvidia.custhelp.com/app/answers/detail/a_id/5735/">NVIDIA DX11 shader 缓存 清楚 instructions</a> - Instructions from NVIDIA on how to 清楚 the DX11 shader 缓存</span>
+<li id="cite&#95;note-5"><span class="mw-cite-backlink"><a href="#cite_ref-5">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://nvidia.custhelp.com/app/answers/detail/a_id/5735/">NVIDIA DX11 shader cache clear instructions</a> - Instructions from NVIDIA on how to clear the DX11 shader cache</span>
 </li>
 </ol></div>
-<div role="navigation" aria-label="Navbox" class="ranger-navbox navigation-not-searchable striped-even mw-collapsible"><div class="ranger-title"><div class="mw-collapsible-toggle-placeholder"></div><span class="ranger-meta"><span class="nv nv-view"><a href="../index.html" title="Template:Navbox Troubleshooting"><span title="View or edit this template">查看 or 编辑 this template</span></a></span></span><div class="ranger-title-text"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div></div><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:4"><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Tools</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist"><div class="ranger-list">
+<div role="navigation" aria-label="Navbox" class="ranger-navbox navigation-not-searchable striped-even mw-collapsible"><div class="ranger-title"><div class="mw-collapsible-toggle-placeholder"></div><span class="ranger-meta"><span class="nv nv-view"><a href="../index.html" title="Template:Navbox Troubleshooting"><span title="View or edit this template">View or edit this template</span></a></span></span><div class="ranger-title-text"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div></div><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:4"><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Tools</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist"><div class="ranger-list">
 <ul><li><a href="Hellbomb_Script.html" title="Hellbomb Script">Hellbomb Script</a></li>
 <li><a href="Steam_Launch_Commands.html" title="Steam Launch Commands">Steam Launch Commands</a></li></ul>
 </div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Platform</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist"><div class="ranger-list">
 <ul><li><a href="Laptop_Troubleshooting.html" title="Laptop Troubleshooting">Laptop 故障排除</a></li>
-<li><a href="Linux_Steam_Deck_Troubleshooting.html" title="Linux / Steam Deck Troubleshooting">Linux / Steam 甲板 故障排除</a></li>
+<li><a href="Linux_Steam_Deck_Troubleshooting.html" title="Linux / Steam Deck Troubleshooting">Linux / Steam Deck 故障排除</a></li>
 <li><a href="PlayStation_Troubleshooting.html" title="PlayStation Troubleshooting">PlayStation 故障排除</a></li>
 <li><a href="Steam_Troubleshooting.html" title="Steam Troubleshooting">Steam 故障排除</a></li>
 <li><a href="Xbox_Troubleshooting.html" title="Xbox Troubleshooting">Xbox 故障排除</a></li></ul>
 </div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Performance &amp; 稳定性</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist"><div class="ranger-list">
 <ul><li><a href="BIOS_Updates.html" title="BIOS Updates">BIOS Updates</a></li>
-<li><a class="mw-selflink selflink">Clearing The Shader 缓存</a></li>
-<li><a href="GPU_Driver_Recommendation.html" title="GPU Driver Recommendation">GPU 驾驶员 Recommendation</a></li>
+<li><a class="mw-selflink selflink">Clearing The Shader Cache</a></li>
+<li><a href="GPU_Driver_Recommendation.html" title="GPU Driver Recommendation">GPU Driver Recommendation</a></li>
 <li><a href="User_Settings_Config_FPS_Optimization.html" title="User Settings Config FPS Optimization">User Settings Config FPS 优化</a></li>
-<li><a href="Virtual_Memory.html" title="Virtual Memory">Virtual 内存</a></li></ul>
+<li><a href="Virtual_Memory.html" title="Virtual Memory">Virtual Memory</a></li></ul>
 </div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">崩溃 &amp; Issues</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist"><div class="ranger-list">
 <ul><li><a href="Audio_Problems.html" title="Audio Problems">Audio Problems</a></li>
 <li><a href="../index.html" title="Broken Mods">Broken Mods</a></li>
-<li><a href="Crash_On_Startup.html" title="Crash On Startup">崩溃 On Startup</a></li>
-<li><a href="Crash_To_Desktop.html" title="Crash To Desktop">崩溃 To Desktop</a></li>
-<li><a href="Error_Code_409.html" title="Error Code 409">Error 法典 409</a></li>
-<li><a href="In-Game_Problems.html" title="In-Game Problems">In-游戏 Problems</a></li>
-<li><a href="Input_Problems.html" title="Input Problems">输入 Problems</a></li>
+<li><a href="Crash_On_Startup.html" title="Crash On Startup">Crash On Startup</a></li>
+<li><a href="Crash_To_Desktop.html" title="Crash To Desktop">Crash To Desktop</a></li>
+<li><a href="Error_Code_409.html" title="Error Code 409">Error Code 409</a></li>
+<li><a href="In-Game_Problems.html" title="In-Game Problems">In-Game Problems</a></li>
+<li><a href="Input_Problems.html" title="Input Problems">Input Problems</a></li>
 <li><a href="Network_Troubleshooting.html" title="Network Troubleshooting">网络 故障排除</a></li>
 <li><a href="Reinstallation_of_GameGuard.html" title="Reinstallation of GameGuard">Reinstallation of GameGuard</a></li>
 <li><a href="Reinstallation_of_Visual_C++_Redistributables.html" title="Reinstallation of Visual C++ Redistributables">Reinstallation of Visual C++ Redistributables</a></li>
-<li><a href="Troubleshooting_System_Failure.html" title="Troubleshooting System Failure">故障排除 星系 Failure</a></li>
-<li><a href="Troubleshooting_Stutters_Short_Freezes.html" title="Troubleshooting Stutters/Short Freezes">故障排除 Stutters/短 Freezes</a></li></ul>
+<li><a href="Troubleshooting_System_Failure.html" title="Troubleshooting System Failure">故障排除 System Failure</a></li>
+<li><a href="Troubleshooting_Stutters_Short_Freezes.html" title="Troubleshooting Stutters/Short Freezes">故障排除 Stutters/Short Freezes</a></li></ul>
 </div></div></div></div></div></div></div>
 <!-- 
 NewPP limit report

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Linux / Steam 甲板 故障排除 - 绝地潜兵2 离线百科</title>
+<title>Linux / Steam Deck 故障排除 - 绝地潜兵2 离线百科</title>
 <link rel="stylesheet" href="../theme.css">
 </head>
 <body>
@@ -17,13 +17,13 @@
   </div>
 </header>
 <main class="content">
-  <h1 class="page-title">Linux / Steam 甲板 故障排除</h1>
-  <div class="breadcrumb">Linux / Steam 甲板 故障排除</div>
-  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div><div class="breadcrumb-item breadcrumb-item-final">Linux / Steam 甲板 故障排除</div></div>
-<p>These 故障排除 技巧 are meant for users who use <b>Linux</b> distributions and the <b>Steam 甲板</b>.
+  <h1 class="page-title">Linux / Steam Deck 故障排除</h1>
+  <div class="breadcrumb">Linux / Steam Deck 故障排除</div>
+  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div><div class="breadcrumb-item breadcrumb-item-final">Linux / Steam Deck 故障排除</div></div>
+<p>These 故障排除 技巧 are meant for users who use <b>Linux</b> distributions and the <b>Steam Deck</b>.
 </p>
-<ul><li>If you encounter 网络-相关 errors and problems, please 检查 <a href="Network_Troubleshooting.html" title="Network Troubleshooting">网络 故障排除</a>.</li>
-<li>For Performance 技巧, please 检查 <a href="User_Settings_Config_FPS_Optimization.html#Linux_/_Steam_Deck" title="User Settings Config FPS Optimization">the Performance 引导</a>.<br /><br /></li></ul>
+<ul><li>If you encounter 网络-相关 errors and problems, please check <a href="Network_Troubleshooting.html" title="Network Troubleshooting">网络 故障排除</a>.</li>
+<li>For Performance 技巧, please check <a href="User_Settings_Config_FPS_Optimization.html#Linux_/_Steam_Deck" title="User Settings Config FPS Optimization">the Performance Guide</a>.<br /><br /></li></ul>
 <div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Basics"><span class="tocnumber">1</span> <span class="toctext">Basics</span></a>
@@ -31,14 +31,14 @@
 <li class="toclevel-2 tocsection-2"><a href="#Proton"><span class="tocnumber">1.1</span> <span class="toctext">Proton</span></a>
 <ul>
 <li class="toclevel-3 tocsection-3"><a href="#Community_Proton_Installation"><span class="tocnumber">1.1.1</span> <span class="toctext">Community Proton Installation</span></a></li>
-<li class="toclevel-3 tocsection-4"><a href="#How_to_change_Proton_versions"><span class="tocnumber">1.1.2</span> <span class="toctext">How to 变化 Proton versions</span></a></li>
+<li class="toclevel-3 tocsection-4"><a href="#How_to_change_Proton_versions"><span class="tocnumber">1.1.2</span> <span class="toctext">How to change Proton versions</span></a></li>
 <li class="toclevel-3 tocsection-5"><a href="#Steam_Launch_Commands"><span class="tocnumber">1.1.3</span> <span class="toctext">Steam Launch Commands</span></a></li>
 </ul>
 </li>
 <li class="toclevel-2 tocsection-6"><a href="#Steam_Runtime"><span class="tocnumber">1.2</span> <span class="toctext">Steam Runtime</span></a></li>
-<li class="toclevel-2 tocsection-7"><a href="#File_System"><span class="tocnumber">1.3</span> <span class="toctext">文件 星系</span></a>
+<li class="toclevel-2 tocsection-7"><a href="#File_System"><span class="tocnumber">1.3</span> <span class="toctext">File System</span></a>
 <ul>
-<li class="toclevel-3 tocsection-8"><a href="#User_Rights_Management"><span class="tocnumber">1.3.1</span> <span class="toctext">User 权利 管理</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="#User_Rights_Management"><span class="tocnumber">1.3.1</span> <span class="toctext">User Rights 管理</span></a></li>
 <li class="toclevel-3 tocsection-9"><a href="#NTFS_corruption"><span class="tocnumber">1.3.2</span> <span class="toctext">NTFS corruption</span></a></li>
 </ul>
 </li>
@@ -46,10 +46,10 @@
 </ul>
 </li>
 <li class="toclevel-1 tocsection-11"><a href="#Proton_Logs"><span class="tocnumber">2</span> <span class="toctext">Proton Logs</span></a></li>
-<li class="toclevel-1 tocsection-12"><a href="#Crash_upon_Start"><span class="tocnumber">3</span> <span class="toctext">崩溃 upon 开始</span></a>
+<li class="toclevel-1 tocsection-12"><a href="#Crash_upon_Start"><span class="tocnumber">3</span> <span class="toctext">Crash upon Start</span></a>
 <ul>
-<li class="toclevel-2 tocsection-13"><a href="#GameGuard_doesn&#39;t_load"><span class="tocnumber">3.1</span> <span class="toctext">GameGuard doesn't 负载</span></a></li>
-<li class="toclevel-2 tocsection-14"><a href="#User_Rights_Problems"><span class="tocnumber">3.2</span> <span class="toctext">User 权利 Problems</span></a>
+<li class="toclevel-2 tocsection-13"><a href="#GameGuard_doesn&#39;t_load"><span class="tocnumber">3.1</span> <span class="toctext">GameGuard doesn't load</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#User_Rights_Problems"><span class="tocnumber">3.2</span> <span class="toctext">User Rights Problems</span></a>
 <ul>
 <li class="toclevel-3 tocsection-15"><a href="#Sandbox_vs._Native"><span class="tocnumber">3.2.1</span> <span class="toctext">Sandbox vs. Native</span></a></li>
 </ul>
@@ -61,14 +61,14 @@
 <ul>
 <li class="toclevel-2 tocsection-18"><a href="#Black_Screen"><span class="tocnumber">4.1</span> <span class="toctext">Black Screen</span></a></li>
 <li class="toclevel-2 tocsection-19"><a href="#Graphical_Errors"><span class="tocnumber">4.2</span> <span class="toctext">Graphical Errors</span></a></li>
-<li class="toclevel-2 tocsection-20"><a href="#Very_low_FPS_/_FPS_Stuck_at_30"><span class="tocnumber">4.3</span> <span class="toctext">非常 低 FPS / FPS Stuck at 30</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#Very_low_FPS_/_FPS_Stuck_at_30"><span class="tocnumber">4.3</span> <span class="toctext">Very low FPS / FPS Stuck at 30</span></a></li>
 <li class="toclevel-2 tocsection-21"><a href="#HDR_is_not_working"><span class="tocnumber">4.4</span> <span class="toctext">HDR is not working</span></a></li>
 <li class="toclevel-2 tocsection-22"><a href="#White_border_around_the_screen"><span class="tocnumber">4.5</span> <span class="toctext">White border around the screen</span></a></li>
 </ul>
 </li>
 <li class="toclevel-1 tocsection-23"><a href="#Steam_Problems"><span class="tocnumber">5</span> <span class="toctext">Steam Problems</span></a>
 <ul>
-<li class="toclevel-2 tocsection-24"><a href="#Steam_and_Helldivers_Crash_simultaneously"><span class="tocnumber">5.1</span> <span class="toctext">Steam and 绝地潜兵 崩溃 simultaneously</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="#Steam_and_Helldivers_Crash_simultaneously"><span class="tocnumber">5.1</span> <span class="toctext">Steam and 绝地潜兵 Crash simultaneously</span></a></li>
 <li class="toclevel-2 tocsection-25"><a href="#Steam_Overlay"><span class="tocnumber">5.2</span> <span class="toctext">Steam Overlay</span></a></li>
 <li class="toclevel-2 tocsection-26"><a href="#Shader_Pre-Caching_is_stuck"><span class="tocnumber">5.3</span> <span class="toctext">Shader Pre-Caching is stuck</span></a></li>
 </ul>
@@ -76,7 +76,7 @@
 <li class="toclevel-1 tocsection-27"><a href="#GPU_Problems"><span class="tocnumber">6</span> <span class="toctext">GPU Problems</span></a>
 <ul>
 <li class="toclevel-2 tocsection-28"><a href="#GPU_Autodetection_Failed"><span class="tocnumber">6.1</span> <span class="toctext">GPU Autodetection Failed</span></a></li>
-<li class="toclevel-2 tocsection-29"><a href="#GPU_Driver_Hang"><span class="tocnumber">6.2</span> <span class="toctext">GPU 驾驶员 Hang</span></a></li>
+<li class="toclevel-2 tocsection-29"><a href="#GPU_Driver_Hang"><span class="tocnumber">6.2</span> <span class="toctext">GPU Driver Hang</span></a></li>
 </ul>
 </li>
 <li class="toclevel-1 tocsection-30"><a href="#Other_Problems"><span class="tocnumber">7</span> <span class="toctext">Other Problems</span></a>
@@ -84,7 +84,7 @@
 <li class="toclevel-2 tocsection-31"><a href="#Mouse_problems"><span class="tocnumber">7.1</span> <span class="toctext">Mouse problems</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-32"><a href="#Steam_Deck"><span class="tocnumber">8</span> <span class="toctext">Steam 甲板</span></a>
+<li class="toclevel-1 tocsection-32"><a href="#Steam_Deck"><span class="tocnumber">8</span> <span class="toctext">Steam Deck</span></a>
 <ul>
 <li class="toclevel-2 tocsection-33"><a href="#Crackling_Audio"><span class="tocnumber">8.1</span> <span class="toctext">Crackling Audio</span></a></li>
 <li class="toclevel-2 tocsection-34"><a href="#Glitchy_Textures"><span class="tocnumber">8.2</span> <span class="toctext">Glitchy Textures</span></a></li>
@@ -94,27 +94,27 @@
 </ul>
 </div>
 
-<h2><span class="mw-headline" id="Basics">Basics</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Basics" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Basics"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
-<p><b>Please note:</b> Due to the decentralized 自然 of Linux, specific 终端 commands, 包 managers, and 文件 paths 5月 vary depending on your configuration (分布, FlatPak vs. Native Steam, individual changes, etc.). It's 总是显示 最好 to consult your 分布's 官员 手册 if a generic 指挥 fails to 处决.
-</p><p>Due to 绝地潜兵 2 not having a native Linux build, the operating 星系 instead relies on a compatibility layer. For Linux, this strictly involves two elements that are mandatory:
+<h2><span class="mw-headline" id="Basics">Basics</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Basics" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Basics"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><b>Please note:</b> Due to the decentralized nature of Linux, specific 终端 commands, 包 managers, and file paths may vary depending on your configuration (分布, FlatPak vs. Native Steam, individual changes, etc.). It's always best to consult your 分布's 官员 manual if a generic 指挥 fails to 处决.
+</p><p>Due to 绝地潜兵 2 not having a native Linux build, the operating system instead relies on a compatibility layer. For Linux, this strictly involves two elements that are mandatory:
 </p>
-<ol><li><b>Proton:</b> A specialized compatibility layer developed by Valve (built upon WINE) that acts as a 真实-时间 translator.</li>
+<ol><li><b>Proton:</b> A specialized compatibility layer developed by Valve (built upon WINE) that acts as a real-time translator.</li>
 <li><b>Steam Runtimes:</b> A 合集 of standardized, isolated 容器 environments (a "faux Windows 环境").</li></ol>
-<h3><span class="mw-headline" id="Proton">Proton</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Proton" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Proton"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
-<p>The first and 最多 重要 element you 最多 likely interact with is called "Proton", which is the compatibility tool (or 翻译 layer) that has been created by Valve to 帮助 games that are native to Windows but not Linux to run in a Linux 环境.<sup id="cite&#95;ref-1" class="reference"><a href="#cite_note-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup> It translates Windows API calls so that Linux understands what the 游戏 wants and can therefore interact with it.
-</p><p>It's 重要 to note that Proton is not <i>just</i> Proton and that Proton <b>is not</b> WINE (it's based on it). It has 多个 versions provided by Valve and there are also community-driven Proton versions that come with a 少数 extra tweaks and additions for additional functionality or 修复 for specific video games.
-</p><p><b>Please note:</b> Video Games that are native on Windows <b>总是</b> 要求 a 翻译 layer because Linux does not know how to 处理 Windows API calls without such. Therefore on Steam you will 总是显示 need a Proton version to run a 游戏 that is not programmed natively for Linux.
+<h3><span class="mw-headline" id="Proton">Proton</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Proton" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Proton"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The first and most 重要 element you most likely interact with is called "Proton", which is the compatibility tool (or 翻译 layer) that has been created by Valve to help games that are native to Windows but not Linux to run in a Linux 环境.<sup id="cite&#95;ref-1" class="reference"><a href="#cite_note-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup> It translates Windows API calls so that Linux understands what the game wants and can therefore interact with it.
+</p><p>It's 重要 to note that Proton is not <i>just</i> Proton and that Proton <b>is not</b> WINE (it's based on it). It has 多个 versions provided by Valve and there are also community-driven Proton versions that come with a few extra tweaks and additions for additional functionality or fixes for specific video games.
+</p><p><b>Please note:</b> Video Games that are native on Windows <b>总是</b> 要求 a 翻译 layer because Linux does not know how to handle Windows API calls without such. Therefore on Steam you will ALWAYS need a Proton version to run a game that is not programmed natively for Linux.
 </p>
-<ul><li><b>Proton Stable (e.g. 11.0)</b>: Those are tested, reliable versions which are the 默认 for 最多 games. It can occur that they might not work, especially with newer 软件 or patches that 变化 things on a 更多 fundamental level.</li>
-<li><b>Proton Hotfix</b>: These are 特殊, 短-lived versions that have been designed to 修复 specific new 游戏 launches.</li>
-<li><b>Proton Experimental</b>: These are untested versions that contain cutting-edge 修复 and tweaks before they hit stable versions. They can be unstable and should only be used if nothing else is working.</li>
-<li><b>Proton Experimental (流血 Edge)</b>: You can activate 流血 Edge by setting Proton Experimental into the 流血 Edge 测试版. This Proton version contains the absolute newest, untested 法典.</li>
-<li><b>Proton-GE / Proton-CachyOS</b>: These Proton versions are community-made and contain extra patches for video playback, enable HDR in 一些 games or contain other specific 游戏 修复 that cannot be found in Valve's versions.</li></ul>
-<p><b>Please note</b>: Proton 11 (and so practically 任何 version based on it 点赞 Proton-CachyOS) seems to have 一些 detection issues and 5月 报道 a 错误 GPU; e.g. users with an AMD RX 570 or RX 580 might 结束 up seeing that the 游戏 reports the existence of an RX 480 instead. This however, should not affect functionality or performance as those generations are nearly identical.
+<ul><li><b>Proton Stable (e.g. 11.0)</b>: Those are tested, reliable versions which are the 默认 for most games. It can occur that they might not work, especially with newer 软件 or patches that change things on a more fundamental level.</li>
+<li><b>Proton Hotfix</b>: These are 特殊, short-lived versions that have been designed to fix specific new game launches.</li>
+<li><b>Proton Experimental</b>: These are untested versions that contain cutting-edge fixes and tweaks before they hit stable versions. They can be unstable and should only be used if nothing else is working.</li>
+<li><b>Proton Experimental (流血 Edge)</b>: You can activate 流血 Edge by setting Proton Experimental into the 流血 Edge Beta. This Proton version contains the absolute newest, untested code.</li>
+<li><b>Proton-GE / Proton-CachyOS</b>: These Proton versions are community-made and contain extra patches for video playback, enable HDR in some games or contain other specific game fixes that cannot be found in Valve's versions.</li></ul>
+<p><b>Please note</b>: Proton 11 (and so practically any version based on it like Proton-CachyOS) seems to have some detection issues and may report a wrong GPU; e.g. users with an AMD RX 570 or RX 580 might end up seeing that the game reports the existence of an RX 480 instead. This however, should not affect functionality or performance as those generations are nearly identical.
 <br />
 </p>
 <div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ 重要, recent changes make it unable to use older Proton Versions! ⚠</b></div>
-<p>截至 <a href="1.006.202.html" title="1.006.202">Version 1.006.202</a> of the 游戏, the newly introduced 驾驶员 checks make it 不可能 to use older Proton versions 点赞 Proton 9.x as those are not patched.
+<p>截至 <a href="1.006.202.html" title="1.006.202">Version 1.006.202</a> of the game, the newly introduced driver checks make it 不可能 to use older Proton versions like Proton 9.x as those are not patched.
 </p><p>Currently the following versions are known to work with 补丁 1.006.202 and later:
 </p>
 <ul><li>Valve
@@ -123,238 +123,238 @@
 <li>Proton 11.0-2 Release Candidate</li></ul></li>
 <li>Community-Protons
 <ul><li><a rel="nofollow" class="external text" href="https://github.com/CachyOS/proton-cachyos">CachyOS-Proton</a></li>
-<li>DW-Proton (黎明 Winery) 11.0-1+</li>
+<li>DW-Proton (Dawn Winery) 11.0-1+</li>
 <li><a rel="nofollow" class="external text" href="https://github.com/GloriousEggroll/proton-ge-custom">GE-Proton 11-1+</a></li></ul></li></ul>
 <p>You do not need a specific Linux 分布 to use specific Proton versions; Proton-CachyOS does not 要求 you to use CachyOS as your distro. 软件, such as Proton Plus, allows you to quickly 安装 and manage different Proton versions, which also include community versions.
 </p>
-<h4><span class="mw-headline" id="Community_Proton_Installation">Community Proton Installation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Community Proton Installation" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Community Proton Installation"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<h4><span class="mw-headline" id="Community_Proton_Installation">Community Proton Installation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Community Proton Installation" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Community Proton Installation"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
 <p><b>全自动 Installation:</b>
 The quickest and easiest way to 安装 new community Proton versions (such as GE-Proton) is done via 软件 such as ProtonPlus or ProtonUp-Qt.
-</p><p><b>手册 Installation:</b>
-Please get new Proton versions directly via their respective Githubs! There are unfortunately pages out in the 打开 that 声称 to be legitimate but they are not. For 安全 reasons it is recommended that you 验证 your downloaded files before unpacking / installing / running the 游戏.
+</p><p><b>Manual Installation:</b>
+Please get new Proton versions directly via their respective Githubs! There are unfortunately pages out in the open that claim to be legitimate but they are not. For 安全 reasons it is recommended that you verify your downloaded files before unpacking / installing / running the game.
 </p>
 <ol><li>下载 the Proton tarball (archive) from their respective Github repository.</li>
-<li>Also 下载 the respective SHA 文件 (it should be named along the lines of <code>GE-Proton11-1.sha512总和</code>. Names of course will vary depending on what Proton version you 下载).</li>
-<li>一次 you have downloaded 两者 files, 打开 your 终端 (<code>CTRL + ALT + T</code>).</li>
-<li>Run <code>sha512总和 -c GE-Proton11-1.sha512总和</code> (再次, this might vary).
-<ul><li>If the SHA is 正确, it should 回报 <code>OK</code>.</li>
-<li>If not please 检查 if you have downloaded from the 正确 repository before launching anything.</li></ul></li>
-<li>After verifying the files, please 关闭 Steam via the tray 图标.</li>
-<li>Unpack the tarball into <code>~/.steam/steam/compatibilitytools.d/</code> (Might vary if you use Steam 甲板 or a FlatPak version).</li>
-<li>开始 Steam 再次.</li></ol>
-<p>You should now be able to 选择 the new community Proton (See 下一个 章节).
+<li>Also 下载 the respective SHA file (it should be named along the lines of <code>GE-Proton11-1.sha512sum</code>. Names of course will vary depending on what Proton version you 下载).</li>
+<li>Once you have downloaded both files, open your 终端 (<code>CTRL + ALT + T</code>).</li>
+<li>Run <code>sha512sum -c GE-Proton11-1.sha512sum</code> (Again, this might vary).
+<ul><li>If the SHA is 正确, it should return <code>OK</code>.</li>
+<li>If not please check if you have downloaded from the 正确 repository before launching anything.</li></ul></li>
+<li>After verifying the files, please close Steam via the tray icon.</li>
+<li>Unpack the tarball into <code>~/.steam/steam/compatibilitytools.d/</code> (Might vary if you use Steam Deck or a FlatPak version).</li>
+<li>Start Steam again.</li></ol>
+<p>You should now be able to select the new community Proton (See 下一个 章节).
 </p>
-<h4><span class="mw-headline" id="How_to_change_Proton_versions">How to 变化 Proton versions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: How to change Proton versions" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: How to change Proton versions"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<h4><span class="mw-headline" id="How_to_change_Proton_versions">How to change Proton versions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: How to change Proton versions" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: How to change Proton versions"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
 <div class="floatright"><a href="../index.html" class="image"><img alt="SteamCompatibilityProton.png" src="../images/400px-SteamCompatibilityProton.png" decoding="async" loading="lazy" width="400" height="287" data-file-width="1035" data-file-height="742" /></a></div>
-<p>In 命令 to 套装 / 变化 Proton versions without the 使用 of Proton Plus,关注 these 简单 steps:
+<p>In order to set / change Proton versions without the 使用 of Proton Plus,follow these simple steps:
 </p>
-<ol><li>正确 Click on "绝地潜兵 2" in your Steam 图书馆.</li>
+<ol><li>Right Click on "绝地潜兵 2" in your Steam 图书馆.</li>
 <li>Click on "Properties...".</li>
 <li>Go to "Compatibility".</li>
-<li>Make sure that the box left of "之势 the use of a specific Steam 游玩 compatibility tool" is checked.</li>
-<li>Now you can 选择 your preferred version of Proton out of that dialog box below.</li></ol>
-<h4><span class="mw-headline" id="Steam_Launch_Commands">Steam Launch Commands</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Steam Launch Commands" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Steam Launch Commands"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
-<p>更多 than regular Windows, Linux allows for the 使用 of additional <a href="Steam_Launch_Commands.html" title="Steam Launch Commands">Steam Launch Commands</a>. You can 套装 various variables and can 修复 a variety of issues that might occur with individual configurations in 案例 they run into 麻烦. These commands 允许 you to 套装 environmental variables by accessing different layers of your 星系 and 变化 parts to 修复 issues and make things compatible.
+<li>Make sure that the box left of "Force the use of a specific Steam Play compatibility tool" is checked.</li>
+<li>Now you can choose your preferred version of Proton out of that dialog box below.</li></ol>
+<h4><span class="mw-headline" id="Steam_Launch_Commands">Steam Launch Commands</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Steam Launch Commands" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Steam Launch Commands"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>More than regular Windows, Linux allows for the 使用 of additional <a href="Steam_Launch_Commands.html" title="Steam Launch Commands">Steam Launch Commands</a>. You can set various variables and can fix a variety of issues that might occur with individual configurations in case they run into 麻烦. These commands allow you to set environmental variables by accessing different layers of your system and change parts to fix issues and make things compatible.
 </p>
-<h3><span class="mw-headline" id="Steam_Runtime">Steam Runtime</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Steam Runtime" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Steam Runtime"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
-<p>The other big 部分 关于 installing games on Linux focuses on a so-called "Steam Runtime" which Steam 通常 looks for itself if it is needed for video games. These runtimes will 创建 a faux Windows partition / drive to 安装 the 必需 files, such as .NET, Virtual C++ Redistributables, etc. there so it can simulate a Windows 环境 for a 游戏 that has 否 native Linux 支援. Within this 容器 the 游戏 acts normally as it would on a Windows 电脑, while Proton 使用次数 it to 接收 全部 the API calls and translates them so Linux can then utilize it.
-</p><p><b>重要:</b> Depending on which Proton version you are using, you will necessarily need a different Runtime as 每个 Runtime is built specifically for different Proton versions. Proton 9 will 最多 likely use Steam Runtime 3.0 but Proton 11.0 could potentially 崩溃 with Runtime 3.0 because that Runtime doesn't have the libraries Proton 11.0 requires; instead you need a newer version. Luckily Steam will 安装 whatever Steam Runtime you need for your Proton version of choice, so there's 否 worries 关于 not having the 正确 one. If you want to 检查 for yourself, please ensure that <b>Steam Runtime 4.0 is installed</b>. This can 帮助 修复 problems such as blackscreens / 崩溃 on startup. If you haven't installed it, please do so. If it is installed and you run into problems, it is 好 to at 最少 一次 验证 its files to ensure it's not corrupted.
-</p><p>There are also additional runtimes for Anticheat 软件 that Steam automatically downloads and installs if possible, such as BattleEye or 容易 Anticheat. However it is 重要 to note that if a 游戏 does not need them then there is 否 受益 in installing them. They simply 帮助 run the Anticheat 软件 更好.
+<h3><span class="mw-headline" id="Steam_Runtime">Steam Runtime</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Steam Runtime" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Steam Runtime"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The other big part about installing games on Linux focuses on a so-called "Steam Runtime" which Steam 通常 looks for itself if it is needed for video games. These runtimes will create a faux Windows partition / drive to 安装 the 必需 files, such as .NET, Virtual C++ Redistributables, etc. there so it can simulate a Windows 环境 for a game that has no native Linux 支援. Within this 容器 the game acts normally as it would on a Windows 电脑, while Proton 使用次数 it to 接收 all the API calls and translates them so Linux can then utilize it.
+</p><p><b>重要:</b> Depending on which Proton version you are using, you will necessarily need a different Runtime as each Runtime is built specifically for different Proton versions. Proton 9 will most likely use Steam Runtime 3.0 but Proton 11.0 could potentially crash with Runtime 3.0 because that Runtime doesn't have the libraries Proton 11.0 requires; instead you need a newer version. Luckily Steam will 安装 whatever Steam Runtime you need for your Proton version of choice, so there's no worries about not having the 正确 one. If you want to check for yourself, please ensure that <b>Steam Runtime 4.0 is installed</b>. This can help fix problems such as blackscreens / 崩溃 on startup. If you haven't installed it, please do so. If it is installed and you run into problems, it is good to at least once verify its files to ensure it's not corrupted.
+</p><p>There are also additional runtimes for Anticheat 软件 that Steam automatically downloads and installs if possible, such as BattleEye or 容易 Anticheat. However it is 重要 to note that if a game does not need them then there is no 受益 in installing them. They simply help run the Anticheat 软件 better.
 </p>
-<h3><span class="mw-headline" id="File_System">文件 星系</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: File System" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: File System"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
-<p>It is not recommended to use Linux with a NTFS 文件 星系. NTFS is a proprietary 星系 developed by Microsoft. Since the 法典 was 从不显示 made publicly available, developers had to reverse-工程师 to 创建 一些 compatibility. As with the 自然 of these things, this doesn't work 100% correctly and can 原因 许多 issues in of itself.
+<h3><span class="mw-headline" id="File_System">File System</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: File System" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: File System"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>It is not recommended to use Linux with a NTFS file system. NTFS is a proprietary system developed by Microsoft. Since the code was never made publicly available, developers had to reverse-工程师 to create some compatibility. As with the nature of these things, this doesn't work 100% correctly and can cause many issues in of itself.
 </p>
-<h4><span class="mw-headline" id="User_Rights_Management">User 权利 管理</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: User Rights Management" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: User Rights Management"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
-<p>One of the 最多 fundamental problems is user 权利 管理. NTFS relies on ACL (Access 控制 Lists), whereas Linux 文件 systems, such as ext4 or btrfs, rely on POSIX (Portable Operating 星系 Interface). If an NTFS partition is mounted incorrectly, it can possibly 带领 to you being unable to 安装 or run 任何 programs that are on that partition.
-</p><p>For games to be run within Linux on a NTFS partition, you will have to 创建 a symlink outside of the NTFS partition. Another 问题 is that older games tend to write their saves to a local 文件夹 at the 游戏's .exe-位置, completely ignoring a possible WINE prefix sitting outside of the NTFS drive.
+<h4><span class="mw-headline" id="User_Rights_Management">User Rights 管理</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: User Rights Management" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: User Rights Management"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>One of the most fundamental problems is user rights 管理. NTFS relies on ACL (Access 控制 Lists), whereas Linux file systems, such as ext4 or btrfs, rely on POSIX (Portable Operating System Interface). If an NTFS partition is mounted incorrectly, it can possibly lead to you being unable to 安装 or run any programs that are on that partition.
+</p><p>For games to be run within Linux on a NTFS partition, you will have to create a symlink outside of the NTFS partition. Another issue is that older games tend to write their saves to a local folder at the game's .exe-位置, completely ignoring a possible WINE prefix sitting outside of the NTFS drive.
 </p>
-<h4><span class="mw-headline" id="NTFS_corruption">NTFS corruption</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: NTFS corruption" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: NTFS corruption"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
-<p>Another possible 问题 that can occur is when you try to 分享 a NTFS partition between Linux and Windows. There's a 高 几率 that it will 带领 to 数据 corruption as NTFS Linux drivers are 更少 than 完美 and 频繁 corrupt the 期刊, which means you would have to reboot into Windows to 检查 the filesystem there.
-</p><p>While the newer ntfs3-plus 驾驶员 is 更多 reliable and is getting 频繁 updated, it will still 要求 considerable work to ensure 数据 安全.
+<h4><span class="mw-headline" id="NTFS_corruption">NTFS corruption</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: NTFS corruption" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: NTFS corruption"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Another possible issue that can occur is when you try to share a NTFS partition between Linux and Windows. There's a high chance that it will lead to data corruption as NTFS Linux drivers are less than 完美 and 频繁 corrupt the 期刊, which means you would have to reboot into Windows to check the filesystem there.
+</p><p>While the newer ntfs3-plus driver is more reliable and is getting 频繁 updated, it will still 要求 considerable work to ensure data safety.
 </p>
-<h3><span class="mw-headline" id="Additional_information">Additional information</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Additional information" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Additional information"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
-<p>While this 话题 is rather 大, there are a 少数 更多 things you might need to know to 帮助 understand how games work on Linux. Please note that these points are meant to 帮助 those who want to get a 更好 understanding of their own 分布 and how things work. Feel free to skip to the 下一个 部分 if you are not interested in 技术信息 explanations.
+<h3><span class="mw-headline" id="Additional_information">Additional information</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Additional information" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Additional information"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>While this topic is rather large, there are a few more things you might need to know to help understand how games work on Linux. Please note that these points are meant to help those who want to get a better understanding of their own 分布 and how things work. Feel free to skip to the 下一个 part if you are not interested in 技术信息 explanations.
 </p>
-<ul><li>Vulkan: Just 点赞 DirectX 12 "Vulkan" is a 低-level graphics API. While DirectX12 is dominant on Windows and Xbox, Vulkan can be found on 多个 platforms such as 机器人 and Linux. Where DX12 is developed by Microsoft, the development of Vulkan is done by the Khronos 群组. Since DirectX 12 is not natively supported on Linux by Microsoft, it therefore needs a 翻译 layer so DX12 calls can be answered by Vulkan. (This is one of the reasons why you use a 翻译 layer on Linux for non-native games!)</li>
-<li>VKD3D:<sup id="cite&#95;ref-2" class="reference"><a href="#cite_note-2"><span class="cite-bracket">&#91;</span>2<span class="cite-bracket">&#93;</span></a></sup> In 命令 to translate DirectX12 API calls into Vulkan you need a 图书馆 that tells the 星系 how to do that. VKD3D is a Valve-developed 打开-来源 3D graphics 图书馆 which does exactly that. Proton utilizes VKD3D in 命令 to 处理 DX12 API calls (Proton does of course 更多 than just that, but it helps to understand in which constellation VKD3D and Proton stand.)</li>
-<li>DXVK: Just 点赞 VKD3D translates DX12 API calls, DXVK handles older DirectX calls, such as DX8 to DX11. It's 重要 to keep in 心智 that 两者 DXVK and VKD3D 分享 components within Proton; VKD3D relies on DXVK's implementation of the so-called "DXGI" (DirectX Graphics 基础设施). To make a 长 and 复杂 回答 短: DXVK 提供 一些 of the 最多 重要 parts and VKD3D can be "hands off" for certain 显示 tasks, such as HDR. This 5月 帮助 in understanding why 有时 certain environmental variables are 套装 with DXVK instead of VKD3D, even if you are playing a DX12 游戏.</li>
-<li>Mesa:<sup id="cite&#95;ref-3" class="reference"><a href="#cite_note-3"><span class="cite-bracket">&#91;</span>3<span class="cite-bracket">&#93;</span></a></sup> "Mesa" or "Mesa3D" is an 打开-来源 graphics 图书馆. It's 经常 mistaken as the GPU 驾驶员 when in actuality the 打开-来源 drivers are just 部分 of it. It's 更多 commonly referred to as the "Linux graphics stack" and acts also as a translator for standardized graphics API-calls with OpenGL, Vulkan and OpenCL. Keeping it up to 日期 is highly recommended, not only for GPU drivers (such as the AMDGPU 驾驶员 that is 部分 of it) but also to keep your Vulkan up-to-日期.</li></ul>
-<h2><span class="mw-headline" id="Proton_Logs">Proton Logs</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Proton Logs" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Proton Logs"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
-<p>If you encounter 任何 种类 of problems while playing on Linux, you are able to 创建 a so-called <b>Proton 日志</b>. This is a logfile that will 详情 what exactly went 错误 (e.g. "DXVK failed to initialize"). These files can be opened with 文本 editors.
-</p><p>In 命令 to get Steam to 日志 the 数据, please 关注 these steps:
+<ul><li>Vulkan: Just like DirectX 12 "Vulkan" is a low-level graphics API. While DirectX12 is dominant on Windows and Xbox, Vulkan can be found on 多个 platforms such as 机器人 and Linux. Where DX12 is developed by Microsoft, the development of Vulkan is done by the Khronos Group. Since DirectX 12 is not natively supported on Linux by Microsoft, it therefore needs a 翻译 layer so DX12 calls can be answered by Vulkan. (This is one of the reasons why you use a 翻译 layer on Linux for non-native games!)</li>
+<li>VKD3D:<sup id="cite&#95;ref-2" class="reference"><a href="#cite_note-2"><span class="cite-bracket">&#91;</span>2<span class="cite-bracket">&#93;</span></a></sup> In order to translate DirectX12 API calls into Vulkan you need a 图书馆 that tells the system how to do that. VKD3D is a Valve-developed open-来源 3D graphics 图书馆 which does exactly that. Proton utilizes VKD3D in order to handle DX12 API calls (Proton does of course more than just that, but it helps to understand in which constellation VKD3D and Proton stand.)</li>
+<li>DXVK: Just like VKD3D translates DX12 API calls, DXVK handles older DirectX calls, such as DX8 to DX11. It's 重要 to keep in mind that both DXVK and VKD3D share components within Proton; VKD3D relies on DXVK's implementation of the so-called "DXGI" (DirectX Graphics 基础设施). To make a long and 复杂 answer short: DXVK 提供 some of the most 重要 parts and VKD3D can be "hands off" for certain 显示 tasks, such as HDR. This may help in understanding why 有时 certain environmental variables are set with DXVK instead of VKD3D, even if you are playing a DX12 game.</li>
+<li>Mesa:<sup id="cite&#95;ref-3" class="reference"><a href="#cite_note-3"><span class="cite-bracket">&#91;</span>3<span class="cite-bracket">&#93;</span></a></sup> "Mesa" or "Mesa3D" is an open-来源 graphics 图书馆. It's often mistaken as the GPU driver when in actuality the open-来源 drivers are just part of it. It's more commonly referred to as the "Linux graphics stack" and acts also as a translator for standardized graphics API-calls with OpenGL, Vulkan and OpenCL. Keeping it up to date is highly recommended, not only for GPU drivers (such as the AMDGPU driver that is part of it) but also to keep your Vulkan up-to-date.</li></ul>
+<h2><span class="mw-headline" id="Proton_Logs">Proton Logs</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Proton Logs" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Proton Logs"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>If you encounter any kind of problems while playing on Linux, you are able to create a so-called <b>Proton Log</b>. This is a logfile that will detail what exactly went wrong (e.g. "DXVK failed to initialize"). These files can be opened with text editors.
+</p><p>In order to get Steam to log the data, please follow these steps:
 </p>
-<ol><li>打开 your Steam 图书馆.</li>
-<li>正确-click on "绝地潜兵 2".</li>
-<li>选择 "Properties...".</li>
-<li>Under the "基本信息" tab, 添加 this launch options: <code>PROTON_日志=1 %指挥%</code></li>
-<li>关闭 the Window.</li>
-<li>开始 the 游戏 and 游玩 until it 崩溃.</li></ol>
-<p>This 文件 will be called <code>steam-553850.日志</code> and will be located in Steam's home 目录.
+<ol><li>Open your Steam 图书馆.</li>
+<li>Right-click on "绝地潜兵 2".</li>
+<li>Select "Properties...".</li>
+<li>Under the "基本信息" tab, add this launch options: <code>PROTON_LOG=1 %指挥%</code></li>
+<li>Close the Window.</li>
+<li>Start the game and play until it 崩溃.</li></ol>
+<p>This file will be called <code>steam-553850.log</code> and will be located in Steam's home 目录.
 </p>
 <ul><li>Native: <code>/home/$USER/</code></li>
 <li>FlatPak: <code>~/.var/app/com.valvesoftware.Steam/</code></li></ul>
 <p>If it is not there you might need to look in other folders, such as in <code>/snap/</code> or similar, especially when you are using a FlatPak version of Steam.
 </p>
-<h2><span class="mw-headline" id="Crash_upon_Start">崩溃 upon 开始</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Crash upon Start" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Crash upon Start"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
-<p>This error 描述 is a bit vague and can be caused by 许多 things. 通常 this 种类 of 问题 shows itself by pressing "游玩" and after a 短 时刻 Steam will 显示 the "游玩" button 再次.
+<h2><span class="mw-headline" id="Crash_upon_Start">Crash upon Start</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Crash upon Start" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Crash upon Start"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>This error 描述 is a bit vague and can be caused by many things. 通常 this kind of 问题 shows itself by pressing "Play" and after a short moment Steam will show the "Play" button again.
 </p>
-<ul><li>If you recently uninstalled a Proton version, it's advisable to 检查 if Proton is still correctly 套装 for 绝地潜兵 2 in Steam. Deinstalling an older Proton version which the 游戏 was configured to would inevitably prevent the 游戏 from starting as there's 否 翻译 layer present that could 处决 the 游戏.</li>
-<li>You 5月 try another Proton Version and see if the 问题 persists.</li>
-<li>Please 验证 the installed files of 绝地潜兵 2, your installed Proton Version <b>and</b> the Steam Runtimes.</li></ul>
-<div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ Please only 验证 the files of ONE thing at a 时间. Trying to do 多个 can 原因 problems. ⚠</b></div>
+<ul><li>If you recently uninstalled a Proton version, it's advisable to check if Proton is still correctly set for 绝地潜兵 2 in Steam. Deinstalling an older Proton version which the game was configured to would inevitably prevent the game from starting as there's no 翻译 layer present that could 处决 the game.</li>
+<li>You may try another Proton Version and see if the issue persists.</li>
+<li>Please verify the installed files of 绝地潜兵 2, your installed Proton Version <b>and</b> the Steam Runtimes.</li></ul>
+<div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ Please only verify the files of ONE thing at a time. Trying to do 多个 can cause problems. ⚠</b></div>
 <div class="floatright"><a href="../index.html" class="image"><img alt="SteamVerifyFiles.png" src="../images/400px-SteamVerifyFiles.png" decoding="async" loading="lazy" width="400" height="286" data-file-width="1047" data-file-height="749" /></a></div>
-<ol><li>正确 Click on "绝地潜兵 2" in your Steam 图书馆.</li>
-<li>Click on "Properties..." in the 菜单.</li>
+<ol><li>Right Click on "绝地潜兵 2" in your Steam 图书馆.</li>
+<li>Click on "Properties..." in the menu.</li>
 <li>Navigate to "Installed Files".</li>
-<li>Click "验证 正直 of installed files".</li>
-<li>一次 done, 搜索 for "Proton" in your Steam 图书馆 to 显示 全部 Proton versions.</li>
-<li>验证 the files of your Proton version (e.g. Stable or Hotfix. Community-driven Proton versions 点赞 Proton-CachyOS will not 显示 up in the 图书馆 and you can skip that step).</li>
-<li>一次 Proton has been verified, look for "Steam Runtime" in your 图书馆 and 验证 全部 installed Runtimes.</li>
-<li>Attempt to 开始 the 游戏.</li></ol>
-<h3><span id="GameGuard_doesn.27t_load"></span><span class="mw-headline" id="GameGuard_doesn't_load">GameGuard doesn't 负载</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: GameGuard doesn&#039;t load" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: GameGuard doesn&#039;t load"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
-<div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ This error should be 已修复 by now with newer Proton versions. This listing here is meant in 案例 it resurfaces. ⚠</b></div>
-<p>An 老 问题 that occurred in the past was that GameGuard 5月 hang and doesn't 开始 the 游戏. The Anticheat would be stuck on loading and would not progress. In the early days of the freshly released NTSync the addition of the NTSync 指挥 would 原因 GameGuard to hang, requiring the launch 指挥 <code>PROTON_USE_NTSYNC=1 PROTON_USE_WOW64=1 %指挥%</code> so GameGuard as a 32-bit 应用程序 could be run in a 64-bit 环境.
-</p><p>The 问题 has been 已修复 by now and shouldn't occur anymore.
+<li>Click "Verify 正直 of installed files".</li>
+<li>Once done, search for "Proton" in your Steam 图书馆 to 显示 all Proton versions.</li>
+<li>Verify the files of your Proton version (e.g. Stable or Hotfix. Community-driven Proton versions like Proton-CachyOS will not show up in the 图书馆 and you can skip that step).</li>
+<li>Once Proton has been verified, look for "Steam Runtime" in your 图书馆 and verify all installed Runtimes.</li>
+<li>Attempt to start the game.</li></ol>
+<h3><span id="GameGuard_doesn.27t_load"></span><span class="mw-headline" id="GameGuard_doesn't_load">GameGuard doesn't load</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: GameGuard doesn&#039;t load" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: GameGuard doesn&#039;t load"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ This error should be fixed by now with newer Proton versions. This listing here is meant in case it resurfaces. ⚠</b></div>
+<p>An old issue that occurred in the past was that GameGuard may hang and doesn't start the game. The Anticheat would be stuck on loading and would not progress. In the early days of the freshly released NTSync the addition of the NTSync 指挥 would cause GameGuard to hang, requiring the launch 指挥 <code>PROTON_USE_NTSYNC=1 PROTON_USE_WOW64=1 %指挥%</code> so GameGuard as a 32-bit 应用程序 could be run in a 64-bit 环境.
+</p><p>The issue has been fixed by now and shouldn't occur anymore.
 </p>
-<h3><span class="mw-headline" id="User_Rights_Problems">User 权利 Problems</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: User Rights Problems" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: User Rights Problems"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
-<p>If a Proton 日志 returns something 点赞 <code>SteamLibrary/steamapps/compatdata/553850/pfx is not owned by you.</code>. This means that the 文件夹 where 绝地潜兵 2 is located is probably owned by <b>root</b> and not the user - and since the user doesn’t have the appropriate 权利 to write and 修改 files, the 游戏 will refuse to 开始.
-</p><p>It's 重要 to 检查 first which 文件 星系 the disc utilizes that 绝地潜兵 2 is located on. The 最多 突出 examples would be ext4 or NTFS. As mentioned further above, it is not advisable to run Proton on a Windows formatted drive as those 原因 ownership problems among other issues.
+<h3><span class="mw-headline" id="User_Rights_Problems">User Rights Problems</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: User Rights Problems" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: User Rights Problems"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>If a Proton log returns something like <code>SteamLibrary/steamapps/compatdata/553850/pfx is not owned by you.</code>. This means that the folder where 绝地潜兵 2 is located is probably owned by <b>root</b> and not the user - and since the user doesn’t have the appropriate rights to write and modify files, the game will refuse to start.
+</p><p>It's 重要 to check first which file system the disc utilizes that 绝地潜兵 2 is located on. The most 突出 examples would be ext4 or NTFS. As mentioned further above, it is not advisable to run Proton on a Windows formatted drive as those cause ownership problems among other issues.
 </p>
-<ul><li><b>ext4:</b> If the disc was formatted in ext4, you can 变化 ownership via <code>sudo chown -R $USER /path/to/compatdata</code>.</li>
-<li><b>NTFS:</b> If the disc was formatted in NTFS, this could 原因 problems because such drives need to be configured for ownership when they are mounted into Linux. The 问题 is that NTFS lacks Linux permissions, which then causes WINE to fail. It's possible to do systems links, but that's a workaround that is not guaranteed to work. For a 引导 to mount NTFS drives onto Linux, 检查 <a rel="nofollow" class="external text" href="https://linuxconfig.org/changing-file-permissions-on-ntfs-partitions-in-linux">this 链接 by Linuxconfig</a>.</li></ul>
-<p><b>exFAT:</b> It's 不可能 to 开始 a 游戏 in Linux on a drive that 使用次数 exFAT as this doesn't even 支援 symlinks.
+<ul><li><b>ext4:</b> If the disc was formatted in ext4, you can change ownership via <code>sudo chown -R $USER /path/to/compatdata</code>.</li>
+<li><b>NTFS:</b> If the disc was formatted in NTFS, this could cause problems because such drives need to be configured for ownership when they are mounted into Linux. The 问题 is that NTFS lacks Linux permissions, which then causes WINE to fail. It's possible to do systems links, but that's a workaround that is not guaranteed to work. For a guide to mount NTFS drives onto Linux, check <a rel="nofollow" class="external text" href="https://linuxconfig.org/changing-file-permissions-on-ntfs-partitions-in-linux">this link by Linuxconfig</a>.</li></ul>
+<p><b>exFAT:</b> It's 不可能 to start a game in Linux on a drive that 使用次数 exFAT as this doesn't even 支援 symlinks.
 </p>
-<h4><span class="mw-headline" id="Sandbox_vs._Native">Sandbox vs. Native</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Sandbox vs. Native" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Sandbox vs. Native"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
-<p>The 游戏 might still refuse to 开始, even if the 文件 星系 is 正确. This can be the 案例 when Steam is sandboxed in and not installed natively. Sandboxed means that Steam has been installed 任一 as a FlatPak or a Snap version. 软件 installed in such a 格式 is heavily 受限 and works in an isolated 环境 to avoid potential 安全 issues. In 最多 cases the 软件 might be 受限 to just the bare 最小 of 权利 so it can operate within the partition its installed in but will fail when it tries to communicate with other parts of the 星系 (e.g. a 游戏 would try to access Vulkan to 显示 graphics).
-</p><p>通常 speaking it is recommended to use FlatPak opposed to Snap as FlatPak has been designed with the idea of video games in 心智 so 一些 variables are already 套装 by 默认. Furthermore you can use 软件 such as "FlatSeal" to 展开 the 权利 of sandboxed 软件 on a 手册 basis, allowing you to get around the issues caused by the sandbox.
+<h4><span class="mw-headline" id="Sandbox_vs._Native">Sandbox vs. Native</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Sandbox vs. Native" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Sandbox vs. Native"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>The game might still refuse to start, even if the file system is 正确. This can be the case when Steam is sandboxed in and not installed natively. Sandboxed means that Steam has been installed either as a FlatPak or a Snap version. 软件 installed in such a format is heavily 受限 and works in an isolated 环境 to avoid potential 安全 issues. In most cases the 软件 might be 受限 to just the bare 最小 of rights so it can operate within the partition its installed in but will fail when it tries to communicate with other parts of the system (e.g. a game would try to access Vulkan to 显示 graphics).
+</p><p>通常 speaking it is recommended to use FlatPak opposed to Snap as FlatPak has been designed with the idea of video games in mind so some variables are already set by 默认. Furthermore you can use 软件 such as "FlatSeal" to expand the rights of sandboxed 软件 on a manual basis, allowing you to get around the issues caused by the sandbox.
 </p>
-<h3><span class="mw-headline" id="Sony_Crashhandler_appears">Sony Crashhandler appears</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Sony Crashhandler appears" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Sony Crashhandler appears"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
-<p>As of Version 1.006.202 the newly integrated 驾驶员 checks seem to have 已更改 something and make it so that older Proton Versions do not work anymore. Currently the known working versions for 绝地潜兵 2 are:
+<h3><span class="mw-headline" id="Sony_Crashhandler_appears">Sony Crashhandler appears</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Sony Crashhandler appears" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Sony Crashhandler appears"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>As of Version 1.006.202 the newly integrated driver checks seem to have 已更改 something and make it so that older Proton Versions do not work anymore. Currently the known working versions for 绝地潜兵 2 are:
 </p>
-<ul><li>Proton Experimental (流血 Edge) - Activate the "流血 Edge" 测试版 in Steam. 搜索 for "Proton Experimental" in your 图书馆, 正确 Click on "Properties" and then go under the tab "Betas". There you can activate it.</li>
+<ul><li>Proton Experimental (流血 Edge) - Activate the "流血 Edge" beta in Steam. Search for "Proton Experimental" in your 图书馆, Right Click on "Properties" and then go under the tab "Betas". There you can activate it.</li>
 <li>Proton Hotfix</li>
 <li>Proton-CachyOS</li>
 <li>Proton-DW</li></ul>
-<p>There are various workarounds that 5月 帮助 if you encounter 崩溃 even after using the 正确 Proton version:
+<p>There are various workarounds that may help if you encounter 崩溃 even after using the 正确 Proton version:
 </p>
-<div class="tabber tabber--init"><header class="tabber__header"><button class="tabber__header__prev" tabindex="-1" type="button" aria-hidden="true"></button><nav class="tabber__tabs" role="tablist"><a class="tabber__tab" role="tab" id="GPU_drivers-0-label" href="#GPU_drivers-0" aria-controls="GPU_drivers-0">GPU drivers</a><a class="tabber__tab" role="tab" id="Clear_Compatdata-0-label" href="#Clear_Compatdata-0" aria-controls="Clear_Compatdata-0">清楚 Compatdata</a><a class="tabber__tab" role="tab" id="Hiding_NVIDIA_GPUs-0-label" href="#Hiding_NVIDIA_GPUs-0" aria-controls="Hiding_NVIDIA_GPUs-0">Hiding NVIDIA GPUs</a></nav><button class="tabber__header__next" tabindex="-1" type="button" aria-hidden="true"></button></header><section class="tabber__section"><article class="tabber__panel" role="tabpanel" tabindex="0" id="GPU_drivers-0" aria-labelledby="GPU_drivers-0-label"><p>Please 检查 your GPU 驾驶员. A lot of users who 经验值 this 经常 use outdated GPU drivers. A 好 indicator for this is that you have been able to 游玩 previously, albeit with an older Proton version such as Proton 9.x and experienced 崩溃 with newer Proton versions.
-</p><ol><li>按下 <code>CTRL + ALT + T</code> to 打开 your 终端.</li>
-<li>进入 <code>vulkaninfo --summary</code> to 显示 your 星系 信息.</li>
-<li>检查 for: Vulkan Version, GPU information, 驾驶员 Version.</li></ol>
-<div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ 两者 your GPU and your 驾驶员 need to 支援 Vulkan 1.3. ⚠</b></div>
+<div class="tabber tabber--init"><header class="tabber__header"><button class="tabber__header__prev" tabindex="-1" type="button" aria-hidden="true"></button><nav class="tabber__tabs" role="tablist"><a class="tabber__tab" role="tab" id="GPU_drivers-0-label" href="#GPU_drivers-0" aria-controls="GPU_drivers-0">GPU drivers</a><a class="tabber__tab" role="tab" id="Clear_Compatdata-0-label" href="#Clear_Compatdata-0" aria-controls="Clear_Compatdata-0">Clear Compatdata</a><a class="tabber__tab" role="tab" id="Hiding_NVIDIA_GPUs-0-label" href="#Hiding_NVIDIA_GPUs-0" aria-controls="Hiding_NVIDIA_GPUs-0">Hiding NVIDIA GPUs</a></nav><button class="tabber__header__next" tabindex="-1" type="button" aria-hidden="true"></button></header><section class="tabber__section"><article class="tabber__panel" role="tabpanel" tabindex="0" id="GPU_drivers-0" aria-labelledby="GPU_drivers-0-label"><p>Please check your GPU driver. A lot of users who 经验值 this often use outdated GPU drivers. A good indicator for this is that you have been able to play previously, albeit with an older Proton version such as Proton 9.x and experienced 崩溃 with newer Proton versions.
+</p><ol><li>按下 <code>CTRL + ALT + T</code> to open your 终端.</li>
+<li>进入 <code>vulkaninfo --summary</code> to 显示 your system 信息.</li>
+<li>Check for: Vulkan Version, GPU information, Driver Version.</li></ol>
+<div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ Both your GPU and your Driver need to 支援 Vulkan 1.3. ⚠</b></div>
 <p>最小 recommended drivers:
 </p>
 <ul><li>AMD (RADV) &gt; 26.0+</li>
 <li>NVIDIA (Proprietary) &gt; 580.159.03+</li>
 <li>NVIDIA (NVK) &gt; 26.0+</li>
 <li>Intel (ANV) &gt; 26.0+</li></ul>
-<p>In 案例 that you encounter errors or outdated versions, please 更新 your 星系. These installation steps vary for 每个 distro, so it's 重要 to 检查 官员 文档.
+<p>In case that you encounter errors or outdated versions, please 更新 your system. These installation steps vary for every distro, so it's 重要 to check 官员 文档.
 </p>
-<b>Attention:</b> 一些 Distributions, such as Nobara Linux, 否 longer provide GPU 驾驶员 支援 for NVIDIA's Pascal GPUs (GTX 1080), so you might need to 切换 Distributions and use older GPU drivers for such GPUs.<p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Clear_Compatdata-0" aria-labelledby="Clear_Compatdata-0-label"><p>If the 问题 persists after updating your GPU drivers, please navigate to <code>/steamapps/compatdata/553850/</code> and 删除 the 目录 of this 文件夹. Steam 使用次数 this 文件夹 to place configuration files as well as 数据 to simulate a Windows 环境 on Linux. The 目录 will be refilled by Steam.</p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Hiding_NVIDIA_GPUs-0" aria-labelledby="Hiding_NVIDIA_GPUs-0-label"><p>Another possibility that can occur is that the 游戏 has 麻烦 running with a NVIDIA GPU. While rare in occurrence, you can attempt to "隐藏" is by adding the launch 指挥 <code>PROTON_隐藏_NVIDIA_GPU=1 %指挥%</code> to the 游戏. This will 之势 the NVIDIA GPU to 识别 itself as an AMD GPU. Please be aware that this masks your GPU ID and prevents the 游戏 from using NVIDIA-specific APIs (NVAPI). This means that NVIDIA-specific features such as DLSS can't be used when this workaround is utilized. Performance might also 增加 or 减少, depending on the 游戏.
-If you encounter problems even with this 指挥, 测试 if <code>PROTON_隐藏_NVIDIA_GPU=0 PROTON_ENABLE_NVAPI=1 %指挥%</code> can 解决 these issues.</p></article></section></div>
-<h2><span id="Graphics_.26_Performance"></span><span class="mw-headline" id="Graphics_&amp;_Performance">Graphics &amp; Performance</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Graphics &amp; Performance" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Graphics &amp; Performance"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
-<h3><span class="mw-headline" id="Black_Screen">Black Screen</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Black Screen" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Black Screen"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
-<p>If you screen stays black and the 游戏 doesn't 负载, you can 检查 different things:
+<b>Attention:</b> Some Distributions, such as Nobara Linux, no longer provide GPU driver 支援 for NVIDIA's Pascal GPUs (GTX 1080), so you might need to switch Distributions and use older GPU drivers for such GPUs.<p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Clear_Compatdata-0" aria-labelledby="Clear_Compatdata-0-label"><p>If the issue persists after updating your GPU drivers, please navigate to <code>/steamapps/compatdata/553850/</code> and delete the 目录 of this folder. Steam 使用次数 this folder to place configuration files as well as data to simulate a Windows 环境 on Linux. The 目录 will be refilled by Steam.</p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Hiding_NVIDIA_GPUs-0" aria-labelledby="Hiding_NVIDIA_GPUs-0-label"><p>Another possibility that can occur is that the game has 麻烦 running with a NVIDIA GPU. While rare in occurrence, you can attempt to "hide" is by adding the launch 指挥 <code>PROTON_HIDE_NVIDIA_GPU=1 %指挥%</code> to the game. This will force the NVIDIA GPU to 识别 itself as an AMD GPU. Please be aware that this masks your GPU ID and prevents the game from using NVIDIA-specific APIs (NVAPI). This means that NVIDIA-specific features such as DLSS can't be used when this workaround is utilized. Performance might also 增加 or 减少, depending on the game.
+If you encounter problems even with this 指挥, test if <code>PROTON_HIDE_NVIDIA_GPU=0 PROTON_ENABLE_NVAPI=1 %指挥%</code> can 解决 these issues.</p></article></section></div>
+<h2><span id="Graphics_.26_Performance"></span><span class="mw-headline" id="Graphics_&amp;_Performance">Graphics &amp; Performance</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Graphics &amp; Performance" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Graphics &amp; Performance"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Black_Screen">Black Screen</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Black Screen" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Black Screen"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>If you screen stays black and the game doesn't load, you can check different things:
 </p>
-<ul><li>任一 use <code>--use-d3d11</code> or 移除 this launch 指挥 from Steam. (The latter is recommended for AMD and Intel.)</li>
-<li>删除 your <code>compatdata/553850</code>-文件夹 in 案例 you have a corrupted config 文件 that tries to 套装 不正确 screen values.</li>
+<ul><li>Either use <code>--use-d3d11</code> or remove this launch 指挥 from Steam. (The latter is recommended for AMD and Intel.)</li>
+<li>Delete your <code>compatdata/553850</code>-folder in case you have a corrupted config file that tries to set 不正确 screen values.</li>
 <li>Try a different Proton Version if possible.</li></ul>
-<h3><span class="mw-headline" id="Graphical_Errors">Graphical Errors</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Graphical Errors" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Graphical Errors"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
-<p>Graphical errors can occur due to a 数字 of reasons. You can 关注 these steps to 检查 if they can 解决 the 问题.
+<h3><span class="mw-headline" id="Graphical_Errors">Graphical Errors</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Graphical Errors" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Graphical Errors"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Graphical errors can occur due to a number of reasons. You can follow these steps to check if they can 解决 the issue.
 </p>
-<ol><li><a href="Clearing_The_Shader_Cache.html" title="Clearing The Shader Cache">Clearing The Shader 缓存</a> (See the Linux 章节)</li>
-<li>通常 it is recommended to ensure your GPU drivers and Mesa3D graphics stack are kept up-to-日期.</li>
-<li>清楚 out your prefix by deleting the <code>/steamapps/compatdata/553850/</code> 文件夹.</li>
-<li>变化 your Proton version (if possible) to 检查 if the 问题 persists.</li>
-<li>Try and use the <code>--use-d3d11</code> launch 指挥 to 开始 the 游戏 in DX11 模式. Please be aware that this might 原因 issues or not work at 全部.</li></ol>
-<p>一些 更多 indepth graphical errors (such as glowing) can occur after a 崩溃 of KDE 等离子. It's advisable to 重新开始 your 电脑 first and 检查 if that is able to 解决 the 问题.
+<ol><li><a href="Clearing_The_Shader_Cache.html" title="Clearing The Shader Cache">Clearing The Shader Cache</a> (See the Linux 章节)</li>
+<li>通常 it is recommended to ensure your GPU drivers and Mesa3D graphics stack are kept up-to-date.</li>
+<li>Clear out your prefix by deleting the <code>/steamapps/compatdata/553850/</code> folder.</li>
+<li>Change your Proton version (if possible) to check if the issue persists.</li>
+<li>Try and use the <code>--use-d3d11</code> launch 指挥 to start the game in DX11 mode. Please be aware that this might cause issues or not work at all.</li></ol>
+<p>Some more indepth graphical errors (such as glowing) can occur after a crash of KDE Plasma. It's advisable to 重新开始 your 电脑 first and check if that is able to 解决 the 问题.
 </p>
-<h3><span id="Very_low_FPS_.2F_FPS_Stuck_at_30"></span><span class="mw-headline" id="Very_low_FPS_/_FPS_Stuck_at_30">非常 低 FPS / FPS Stuck at 30</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Very low FPS / FPS Stuck at 30" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Very low FPS / FPS Stuck at 30"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
-<p>There are cases when the 游戏 somehow stutters or seems to be stuck at 30 FPS, even though the hardware and settings should 允许 for 更多 FPS.
+<h3><span id="Very_low_FPS_.2F_FPS_Stuck_at_30"></span><span class="mw-headline" id="Very_low_FPS_/_FPS_Stuck_at_30">Very low FPS / FPS Stuck at 30</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Very low FPS / FPS Stuck at 30" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Very low FPS / FPS Stuck at 30"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>There are cases when the game somehow stutters or seems to be stuck at 30 FPS, even though the hardware and settings should allow for more FPS.
 </p>
-<ol><li>Make sure to 更新 your 星系 (GPU / Mesa3D / Kernel / Vulkan / other drivers).</li>
-<li>Make sure that 否 Vsync (or other synchronization methods) is active and 否 FPS 限制 is 套装.</li>
-<li>If the 问题 still persists, launch the 游戏 with <code>DXVK_车架_速率=120 %指挥%</code> - This will 告诉 the 游戏 that the upper 限制 of FPS is 120, which 5月 override 任何 issues in the 返回. You can 增加 or 减少 the 限制. Please note that this is not a FrameGen technology and will not generate additional frames.</li></ol>
-<h3><span class="mw-headline" id="HDR_is_not_working">HDR is not working</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: HDR is not working" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: HDR is not working"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
-<p>If you cannot activate HDR despite having HDR capable hardware, you might need to 添加 a launch 指挥 to activate it. 通常 it's recommended to use GE-Proton for 最佳 use.
+<ol><li>Make sure to 更新 your system (GPU / Mesa3D / Kernel / Vulkan / other drivers).</li>
+<li>Make sure that no Vsync (or other synchronization methods) is active and no FPS limit is set.</li>
+<li>If the issue still persists, launch the game with <code>DXVK_FRAME_RATE=120 %指挥%</code> - This will tell the game that the upper limit of FPS is 120, which may override any issues in the back. You can 增加 or 减少 the limit. Please note that this is not a FrameGen technology and will not generate additional frames.</li></ol>
+<h3><span class="mw-headline" id="HDR_is_not_working">HDR is not working</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: HDR is not working" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: HDR is not working"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>If you cannot activate HDR despite having HDR capable hardware, you might need to add a launch 指挥 to activate it. 通常 it's recommended to use GE-Proton for 最佳 use.
 </p>
-<div class="tabber tabber--init"><header class="tabber__header"><button class="tabber__header__prev" tabindex="-1" type="button" aria-hidden="true"></button><nav class="tabber__tabs" role="tablist"><a class="tabber__tab" role="tab" id="Proton-0-label" href="#Proton-0" aria-controls="Proton-0">Proton</a><a class="tabber__tab" role="tab" id="Gamescope-0-label" href="#Gamescope-0" aria-controls="Gamescope-0">Gamescope</a></nav><button class="tabber__header__next" tabindex="-1" type="button" aria-hidden="true"></button></header><section class="tabber__section"><article class="tabber__panel" role="tabpanel" tabindex="0" id="Proton-0" aria-labelledby="Proton-0-label"><p><code>PROTON_ENABLE_WAYLAND=1 PROTON_ENABLE_HDR=1 %指挥%</code> - Please note that the enabling of Wayland requires a Wayland compatible compositor such as KDE 6 or GNOME. Furthermore it can 原因 输入 emulation to 打破. If you encounter issues, it's worth trying Gamescope instead, as 长 as your 分布 supports it.
-</p><p>一些 users suggest using <code>DXVK_HDR=1</code> instead. While also a possibility, the difference is that the DXVK 指挥 is 更低 level and instructs the Vulkan to DirectX layer directly instead of going via Proton. Setting the Proton 指挥 to enable HDR will also 套装 DXVK_HDR to "1", therefore eliminating the need for the DXVK 指挥. However there are cases when HDR is only enabled by setting 两者 the Proton and DXVK 指挥.<sup id="cite&#95;ref-4" class="reference"><a href="#cite_note-4"><span class="cite-bracket">&#91;</span>4<span class="cite-bracket">&#93;</span></a></sup>
+<div class="tabber tabber--init"><header class="tabber__header"><button class="tabber__header__prev" tabindex="-1" type="button" aria-hidden="true"></button><nav class="tabber__tabs" role="tablist"><a class="tabber__tab" role="tab" id="Proton-0-label" href="#Proton-0" aria-controls="Proton-0">Proton</a><a class="tabber__tab" role="tab" id="Gamescope-0-label" href="#Gamescope-0" aria-controls="Gamescope-0">Gamescope</a></nav><button class="tabber__header__next" tabindex="-1" type="button" aria-hidden="true"></button></header><section class="tabber__section"><article class="tabber__panel" role="tabpanel" tabindex="0" id="Proton-0" aria-labelledby="Proton-0-label"><p><code>PROTON_ENABLE_WAYLAND=1 PROTON_ENABLE_HDR=1 %指挥%</code> - Please note that the enabling of Wayland requires a Wayland compatible compositor such as KDE 6 or GNOME. Furthermore it can cause input emulation to break. If you encounter issues, it's worth trying Gamescope instead, as long as your 分布 supports it.
+</p><p>Some users suggest using <code>DXVK_HDR=1</code> instead. While also a possibility, the difference is that the DXVK 指挥 is lower level and instructs the Vulkan to DirectX layer directly instead of going via Proton. Setting the Proton 指挥 to enable HDR will also set DXVK_HDR to "1", therefore eliminating the need for the DXVK 指挥. However there are cases when HDR is only enabled by setting both the Proton and DXVK 指挥.<sup id="cite&#95;ref-4" class="reference"><a href="#cite_note-4"><span class="cite-bracket">&#91;</span>4<span class="cite-bracket">&#93;</span></a></sup>
 </p>
-<code>PROTON_ENABLE_WAYLAND=1 PROTON_ENABLE_HDR=1 DXVK_HDR=1 %指挥%</code> can be tested in such scenarios.<p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Gamescope-0" aria-labelledby="Gamescope-0-label"><p><code>gamescope -w 1920 -h 1080 r 120 --hdr-enabled -- %指挥%</code> - You can replace the values in w, h and r to different resolutions or 刷新 rates. For 更多 information please consult the main 条款 关于 steam launch commands.
-</p><div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ If you do not 套装 a 分辨率, Gamescope will 默认 to 1280 x 720. In the 示例 above the 分辨率 has been 套装 to 1920 x 1080. ⚠</b></div>
+<code>PROTON_ENABLE_WAYLAND=1 PROTON_ENABLE_HDR=1 DXVK_HDR=1 %指挥%</code> can be tested in such scenarios.<p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Gamescope-0" aria-labelledby="Gamescope-0-label"><p><code>gamescope -w 1920 -h 1080 r 120 --hdr-enabled -- %指挥%</code> - You can replace the values in w, h and r to different resolutions or 刷新 rates. For more information please consult the main 条款 about steam launch commands.
+</p><div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ If you do not set a 分辨率, Gamescope will 默认 to 1280 x 720. In the 示例 above the 分辨率 has been set to 1920 x 1080. ⚠</b></div>
 Please note that Gamescope might disable your Steam Overlay.<p class="mw-empty-elt"></p></article></section></div>
-<h3><span class="mw-headline" id="White_border_around_the_screen">White border around the screen</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: White border around the screen" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: White border around the screen"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
-<p>If you encounter a 1 pixel 宽阔 border around your screen, you can try and launch the 游戏 with Gamescope instead. Please note that there are 一些 particularities and it 5月 原因 一些 issues. For 更多 information, please 检查 <a href="Steam_Launch_Commands.html#Gamescope" title="Steam Launch Commands">this 条款</a>.
-</p><p>变化 the launch commands of 绝地潜兵 2 to <code>gamescope -w 1920 -h 1080 -f --之势-grab-cursor -- %指挥%</code>
+<h3><span class="mw-headline" id="White_border_around_the_screen">White border around the screen</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: White border around the screen" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: White border around the screen"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>If you encounter a 1 pixel wide border around your screen, you can try and launch the game with Gamescope instead. Please note that there are some particularities and it may cause some issues. For more information, please check <a href="Steam_Launch_Commands.html#Gamescope" title="Steam Launch Commands">this 条款</a>.
+</p><p>Change the launch commands of 绝地潜兵 2 to <code>gamescope -w 1920 -h 1080 -f --force-grab-cursor -- %指挥%</code>
 </p>
-<h2><span class="mw-headline" id="Steam_Problems">Steam Problems</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Steam Problems" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Steam Problems"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
-<p>For 基本信息 Steam 故障排除, please 检查 <a href="Steam_Troubleshooting.html" title="Steam Troubleshooting">Steam 故障排除</a>.
+<h2><span class="mw-headline" id="Steam_Problems">Steam Problems</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Steam Problems" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Steam Problems"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>For 基本信息 Steam 故障排除, please check <a href="Steam_Troubleshooting.html" title="Steam Troubleshooting">Steam 故障排除</a>.
 </p>
-<h3><span class="mw-headline" id="Steam_and_Helldivers_Crash_simultaneously">Steam and 绝地潜兵 崩溃 simultaneously</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Steam and Helldivers Crash simultaneously" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Steam and Helldivers Crash simultaneously"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
-<p>If you are playing 绝地潜兵 2 and you 经验值 两者 Steam and the 游戏 crashing at the same 时间, then it's likely that you are running the Steam 客户端 测试版. It's a 已知问题 with the Steam 客户端 测试版 and unrelated to 绝地潜兵 2.
-</p><p><b>Please Note:</b> Steam will attempt to 更新 on 每个 launch, which is why the 问题 5月 appear suddenly.
-</p><p><b>How to 检查:</b>
+<h3><span class="mw-headline" id="Steam_and_Helldivers_Crash_simultaneously">Steam and 绝地潜兵 Crash simultaneously</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Steam and Helldivers Crash simultaneously" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Steam and Helldivers Crash simultaneously"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>If you are playing 绝地潜兵 2 and you 经验值 both Steam and the game crashing at the same time, then it's likely that you are running the Steam client beta. It's a 已知问题 with the Steam Client Beta and unrelated to 绝地潜兵 2.
+</p><p><b>Please Note:</b> Steam will attempt to 更新 on every launch, which is why the issue may appear suddenly.
+</p><p><b>How to check:</b>
 </p>
-<ul><li>打开 <code>~/.local/分享/Steam/logs</code> and 检查 if "publicbeta" can be found there.</li></ul>
-<p>In 命令 to 解决 the 问题, you will need to 切换 to the non-测试版 客户端. You can do that by following these steps:
+<ul><li>打开 <code>~/.local/share/Steam/logs</code> and check if "publicbeta" can be found there.</li></ul>
+<p>In order to 解决 the 问题, you will need to switch to the non-beta client. You can do that by following these steps:
 </p>
-<ol><li>打开 your 终端 (默认 <code>CTRL + ALT + T</code>).</li>
-<li>Run the following 指挥 to 切换 manually to the non-测试版 客户端: <code>rm -f ~/.local/分享/Steam/包/测试版</code></li></ol>
-<h3><span class="mw-headline" id="Steam_Overlay">Steam Overlay</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Steam Overlay" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Steam Overlay"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
-<p>If you wish to 排除故障 your Steam Overlay, please 检查 <a href="Steam_Troubleshooting.html#Steamoverlay_isn&#39;t_working" title="Steam Troubleshooting">Steam 故障排除</a>.
-</p><p>Please note: An older bug<sup id="cite&#95;ref-5" class="reference"><a href="#cite_note-5"><span class="cite-bracket">&#91;</span>5<span class="cite-bracket">&#93;</span></a></sup><sup id="cite&#95;ref-6" class="reference"><a href="#cite_note-6"><span class="cite-bracket">&#91;</span>6<span class="cite-bracket">&#93;</span></a></sup> that occurs on Linux caused games to lag / stutter badly after 一些 时间 with the disabled Overlay.
-</p><p>To 修复 this it's advisable to 任一 activate the Overlay or run the 游戏 with the Launch 指挥 <code>LD_PRELOAD=""</code> . This 指挥 will disable 一些 of steam's functionality.
+<ol><li>Open your 终端 (默认 <code>CTRL + ALT + T</code>).</li>
+<li>Run the following 指挥 to switch manually to the non-beta client: <code>rm -f ~/.local/share/Steam/包/beta</code></li></ol>
+<h3><span class="mw-headline" id="Steam_Overlay">Steam Overlay</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Steam Overlay" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Steam Overlay"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>If you wish to 排除故障 your Steam Overlay, please check <a href="Steam_Troubleshooting.html#Steamoverlay_isn&#39;t_working" title="Steam Troubleshooting">Steam 故障排除</a>.
+</p><p>Please note: An older bug<sup id="cite&#95;ref-5" class="reference"><a href="#cite_note-5"><span class="cite-bracket">&#91;</span>5<span class="cite-bracket">&#93;</span></a></sup><sup id="cite&#95;ref-6" class="reference"><a href="#cite_note-6"><span class="cite-bracket">&#91;</span>6<span class="cite-bracket">&#93;</span></a></sup> that occurs on Linux caused games to lag / stutter badly after some time with the disabled Overlay.
+</p><p>To fix this it's advisable to either activate the Overlay or run the game with the Launch 指挥 <code>LD_PRELOAD=""</code> . This 指挥 will disable some of steam's functionality.
 </p>
-<h3><span class="mw-headline" id="Shader_Pre-Caching_is_stuck">Shader Pre-Caching is stuck</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Shader Pre-Caching is stuck" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Shader Pre-Caching is stuck"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="Shader_Pre-Caching_is_stuck">Shader Pre-Caching is stuck</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Shader Pre-Caching is stuck" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Shader Pre-Caching is stuck"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
 <p>If you 经验值 your Shader Pre-Caching getting stuck during a 下载, simply 重新开始 Steam.
 </p>
-<h2><span class="mw-headline" id="GPU_Problems">GPU Problems</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: GPU Problems" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: GPU Problems"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
-<p>In 命令 to 之势 Proton to use the 正确 GPU, please 关注 <a href="User_Settings_Config_FPS_Optimization.html#Linux-0" title="User Settings Config FPS Optimization">this 引导</a>.
+<h2><span class="mw-headline" id="GPU_Problems">GPU Problems</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: GPU Problems" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: GPU Problems"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In order to force Proton to use the 正确 GPU, please follow <a href="User_Settings_Config_FPS_Optimization.html#Linux-0" title="User Settings Config FPS Optimization">this guide</a>.
 </p>
-<h3><span class="mw-headline" id="GPU_Autodetection_Failed">GPU Autodetection Failed</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: GPU Autodetection Failed" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: GPU Autodetection Failed"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
-<p>This error 通常 occurs with a message such as <code>Requires a graphics card that supports at 最少 指挥3D 特性 Level 12_0.</code>
+<h3><span class="mw-headline" id="GPU_Autodetection_Failed">GPU Autodetection Failed</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: GPU Autodetection Failed" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: GPU Autodetection Failed"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>This error 通常 occurs with a message such as <code>Requires a graphics card that supports at least Direct3D 特性 Level 12_0.</code>
 </p>
-<ol><li>检查 if your 星系 recognizes your GPU correctly.</li>
-<li>检查 if you have the latest GPU 驾驶员 / Vulkan / Mesa / Kernel installed.</li></ol>
-<p>If the error persists even after updating everything, you can use a 指挥 instead to 告诉 the 游戏 which DX12 特性 Level your GPU supports.
+<ol><li>Check if your system recognizes your GPU correctly.</li>
+<li>Check if you have the latest GPU driver / Vulkan / Mesa / Kernel installed.</li></ol>
+<p>If the error persists even after updating everything, you can use a 指挥 instead to tell the game which DX12 特性 Level your GPU supports.
 <br /><br />
 <code>VKD3D_特性_LEVEL=12_0 %指挥%</code>
 <br /><br />
-It's advisable to 比赛 the 特性 level in the Launch 指挥 with the actual 特性 level of your GPU to avoid 任何 unforeseen problems. If your GPU has 特性 Level 12_0 it should not be 套装 to 12_2 (as this might 原因 the 游戏 to activate features your GPU does not possess, causing instability and crashing) or to 套装 it below which then might not fully utilize your GPUs capabilities.
+It's advisable to match the 特性 level in the Launch 指挥 with the actual 特性 level of your GPU to avoid any unforeseen problems. If your GPU has 特性 Level 12_0 it should not be set to 12_2 (as this might cause the game to activate features your GPU does not possess, causing instability and crashing) or to set it below which then might not fully utilize your GPUs capabilities.
 </p>
-<h3><span class="mw-headline" id="GPU_Driver_Hang">GPU 驾驶员 Hang</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: GPU Driver Hang" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: GPU Driver Hang"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
-<p>This error is documented to occur when playing 绝地潜兵 2 on Linux with an AMD RX 7000-系列 GPU while in DX12 and the option "Async Compute" has been activated. What occurs is a random 驾驶员 hang which then is followed by a GPU 重置. The 游戏 will 崩溃 and 最多 likely the Desktop 环境 will do so as well.
-</p><p>While it's still being investigated, the 最多 likely culprit is a bug in the AMDGPU 驾驶员.<sup id="cite&#95;ref-7" class="reference"><a href="#cite_note-7"><span class="cite-bracket">&#91;</span>7<span class="cite-bracket">&#93;</span></a></sup>
+<h3><span class="mw-headline" id="GPU_Driver_Hang">GPU Driver Hang</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: GPU Driver Hang" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: GPU Driver Hang"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>This error is documented to occur when playing 绝地潜兵 2 on Linux with an AMD RX 7000-series GPU while in DX12 and the option "Async Compute" has been activated. What occurs is a random driver hang which then is followed by a GPU reset. The game will crash and most likely the Desktop 环境 will do so as well.
+</p><p>While it's still being investigated, the most likely culprit is a bug in the AMDGPU driver.<sup id="cite&#95;ref-7" class="reference"><a href="#cite_note-7"><span class="cite-bracket">&#91;</span>7<span class="cite-bracket">&#93;</span></a></sup>
 </p><p>What you can do:
 </p>
-<ul><li>Activate DX11 模式 (if it doesn't 原因 issues)</li>
+<ul><li>Activate DX11 mode (if it doesn't cause issues)</li>
 <li>Deactivate Async Compute while in DX12</li>
-<li>Underclocking the GPU with 软件 such as LACT is technically possible and might 帮助 stabilize the GPU, however it is recommended to just deactivate Async Compute instead.</li></ul>
-<h2><span class="mw-headline" id="Other_Problems">Other Problems</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Other Problems" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Other Problems"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
-<p>一些 problems are undefined and seemingly only occur on a 单个 machine. Outside of graphical errors this can also include 网络 problems and other issues, which 最多 likely comes from a 问题 with Proton. These 5月 include (but are not 有限 to):
+<li>Underclocking the GPU with 软件 such as LACT is technically possible and might help stabilize the GPU, however it is recommended to just deactivate Async Compute instead.</li></ul>
+<h2><span class="mw-headline" id="Other_Problems">Other Problems</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Other Problems" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Other Problems"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Some problems are undefined and seemingly only occur on a single machine. Outside of graphical errors this can also include 网络 problems and other issues, which most likely comes from a 问题 with Proton. These may include (but are not 有限 to):
 </p>
 <ul><li>Escape Key causes CTDs</li>
 <li>网络 issues (unable to 连接)</li>
 <li>GameGuard problems (Error 114)</li></ul>
-<p>The 解决方案 in this 案例 would be to 测试 a different Proton version first to 检查 if the error continues to occur before attempting 更多 indepth 故障排除 of the 问题 itself.
+<p>The 解决方案 in this case would be to test a different Proton version first to check if the error continues to occur before attempting more indepth 故障排除 of the 问题 itself.
 </p>
-<h3><span class="mw-headline" id="Mouse_problems">Mouse problems</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Mouse problems" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Mouse problems"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
-<p>The 游戏 might have 麻烦 with the mouse. This occurs when the user moves the mouse too far and it will get "out of bounds" so they access their desktop instead of the 游戏
+<h3><span class="mw-headline" id="Mouse_problems">Mouse problems</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Mouse problems" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Mouse problems"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The game might have 麻烦 with the mouse. This occurs when the user moves the mouse too far and it will get "out of bounds" so they access their desktop instead of the game
 </p>
-<ul><li>Use Protontricks to 打开 <code>winecfg</code>. There enable the "Automatically 占领 mouse in fullscreen" option in the Proton prefix. This is 经常 necessary, even in fullscreen 模式.</li>
-<li>Alternatively you can use Gamescope if your Distro supports it. The 指挥 is <code>gamescope -–之势-grab-cursor -- %指挥%</code> .</li></ul>
-<h2><span class="mw-headline" id="Steam_Deck">Steam 甲板</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Steam Deck" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Steam Deck"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
-<p>As it is using SteamOS, 最多 修复 for Linux can be applied to the Steam 甲板 as well.
-</p><p>The Steam 甲板 is available in different configurations. In 基本信息 the OLED versions have received a 少数 技术信息 升级.<sup id="cite&#95;ref-8" class="reference"><a href="#cite_note-8"><span class="cite-bracket">&#91;</span>8<span class="cite-bracket">&#93;</span></a></sup> These specs are listed here in 案例 you need to 排除故障 your device and 要求 to know the specifications. Please note that this 列表 is not exhaustive and focuses on 一些 of the 最多 重要 components.
+<ul><li>Use Protontricks to open <code>winecfg</code>. There enable the "Automatically 占领 mouse in fullscreen" option in the Proton prefix. This is often necessary, even in fullscreen mode.</li>
+<li>Alternatively you can use Gamescope if your Distro supports it. The 指挥 is <code>gamescope -–force-grab-cursor -- %指挥%</code> .</li></ul>
+<h2><span class="mw-headline" id="Steam_Deck">Steam Deck</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Steam Deck" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Steam Deck"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>As it is using SteamOS, most fixes for Linux can be applied to the Steam Deck as well.
+</p><p>The Steam Deck is available in different configurations. In 基本信息 the OLED versions have received a few 技术信息 升级.<sup id="cite&#95;ref-8" class="reference"><a href="#cite_note-8"><span class="cite-bracket">&#91;</span>8<span class="cite-bracket">&#93;</span></a></sup> These specs are listed here in case you need to 排除故障 your device and 要求 to know the specifications. Please note that this list is not exhaustive and focuses on some of the most 重要 components.
 </p>
-<ul><li>For 官员 支援 by Valve, please 检查 <a rel="nofollow" class="external text" href="https://help.steampowered.com/en/faqs/view/7DD4-C618-182E-0E49">Valves Steam 甲板 支援 页面</a>.</li></ul>
+<ul><li>For 官员 支援 by Valve, please check <a rel="nofollow" class="external text" href="https://help.steampowered.com/en/faqs/view/7DD4-C618-182E-0E49">Valves Steam Deck 支援 page</a>.</li></ul>
 <table class="wikitable">
 
 <tbody><tr>
 <th>Components</th>
-<th>Steam 甲板 LCD</th>
-<th>Steam 甲板 OLED
+<th>Steam Deck LCD</th>
+<th>Steam Deck OLED
 </th></tr>
 <tr>
 <td>APU</td>
@@ -388,8 +388,8 @@ It's advisable to 比赛 the 特性 level in the Launch 指挥 with the actual �
 </td></tr>
 <tr>
 <td>WiFi</td>
-<td>Dual-乐队 Wi-Fi 无线电, 2.4GHz and 5GHz, 2 x 2 MIMO, IEEE 802.11a/b/g/n/ac</td>
-<td>Tri-乐队 Wi-Fi 6E 无线电, 2.4GHz, 5GHz, and 6GHz 2 x 2 MIMO, IEEE 802.11a/b/g/n/ac/ax
+<td>Dual-band Wi-Fi radio, 2.4GHz and 5GHz, 2 x 2 MIMO, IEEE 802.11a/b/g/n/ac</td>
+<td>Tri-band Wi-Fi 6E radio, 2.4GHz, 5GHz, and 6GHz 2 x 2 MIMO, IEEE 802.11a/b/g/n/ac/ax
 </td></tr>
 <tr>
 <td>声音</td>
@@ -401,30 +401,30 @@ It's advisable to 比赛 the 特性 level in the Launch 指挥 with the actual �
 <td>50Whr 电池. 3 - 12 hours of 玩法
 </td></tr>
 <tr>
-<td>Operating 星系</td>
+<td>Operating System</td>
 <td>SteamOS3 (Arch-Based)</td>
 <td>SteamOS3 (Arch-Based)
 </td></tr></tbody></table>
-<ul><li>It is highly advised to keep your Steam 甲板 up-to-日期 to prevent errors and glitches and to 改进 基本信息 稳定性 of the 甲板.</li>
-<li>通常 it is recommended to use the "Steam 甲板" graphics preset in the ingame-菜单. If you wish to know 更多 关于 the 基本信息 FPS settings, 检查 out <a href="User_Settings_Config_FPS_Optimization.html" title="User Settings Config FPS Optimization">this FPS 优化 引导</a>.</li>
-<li>Please note that when using Steam 甲板 in Gamingmode, it will automatically 切换 over to use Gamescope.<sup id="cite&#95;ref-9" class="reference"><a href="#cite_note-9"><span class="cite-bracket">&#91;</span>9<span class="cite-bracket">&#93;</span></a></sup> For 更多 information, please 检查 the "Steam Launch Commands" 条款 (see beginning of this 页面).</li></ul>
-<h3><span class="mw-headline" id="Crackling_Audio">Crackling Audio</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Crackling Audio" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Crackling Audio"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
-<p>One of the older problems that the Steam 甲板 has is crackling audio, especially when the Steam 甲板 gets woken up after sleep 模式. 通常 speaking this 问题 should be 已修复 with SteamOS 3.5, however there have been reports that it 偶尔 occurs.
+<ul><li>It is highly advised to keep your Steam Deck up-to-date to prevent errors and glitches and to 改进 基本信息 稳定性 of the Deck.</li>
+<li>通常 it is recommended to use the "Steam Deck" graphics preset in the ingame-menu. If you wish to know more about the 基本信息 FPS settings, check out <a href="User_Settings_Config_FPS_Optimization.html" title="User Settings Config FPS Optimization">this FPS 优化 guide</a>.</li>
+<li>Please note that when using Steam Deck in Gamingmode, it will automatically switch over to use Gamescope.<sup id="cite&#95;ref-9" class="reference"><a href="#cite_note-9"><span class="cite-bracket">&#91;</span>9<span class="cite-bracket">&#93;</span></a></sup> For more information, please check the "Steam Launch Commands" 条款 (see beginning of this page).</li></ul>
+<h3><span class="mw-headline" id="Crackling_Audio">Crackling Audio</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Crackling Audio" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Crackling Audio"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>One of the older problems that the Steam Deck has is crackling audio, especially when the Steam Deck gets woken up after sleep mode. 通常 speaking this 问题 should be fixed with SteamOS 3.5, however there have been reports that it 偶尔 occurs.
 </p>
-<ol><li>Make sure your Steam 甲板 is updated.</li>
-<li>重新开始 the 甲板 if the error occurs.</li></ol>
-<h3><span class="mw-headline" id="Glitchy_Textures">Glitchy Textures</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Glitchy Textures" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Glitchy Textures"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
-<div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ Attention: As of 6月 2026 this should now be 已解决! Please 更新 your Steam 甲板 to SteamOS 3.8.10! ⚠</b></div>
-<p>If you are playing on a Steam 甲板 and utilize Proton Hotfix or Proton Experimental, you will 最多 likely encounter glitched textures (looking muddy / shiny). This is caused by the Steam 甲板's GPU 驾驶员 that's outdated (RADV 驾驶员 24.2) and interacting with 绝地潜兵 2 utilization of a newer VKD3D Proton version (3.0.1), which seems to use features that are currently not available in the 老 驾驶员.<sup id="cite&#95;ref-10" class="reference"><a href="#cite_note-10"><span class="cite-bracket">&#91;</span>10<span class="cite-bracket">&#93;</span></a></sup>
-</p><p>As a temporary workaround you can 开始 the 游戏 with the DirectX 11 launch 指挥. Be aware that DX11 is not officially supported and comes with it's own 分享 of problems, such as HDR and Upscaling not working and the new 控制 Panel experiencing 庞大 图形 issues.
+<ol><li>Make sure your Steam Deck is updated.</li>
+<li>重新开始 the Deck if the error occurs.</li></ol>
+<h3><span class="mw-headline" id="Glitchy_Textures">Glitchy Textures</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Glitchy Textures" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Glitchy Textures"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ Attention: As of June 2026 this should now be 已解决! Please 更新 your Steam Deck to SteamOS 3.8.10! ⚠</b></div>
+<p>If you are playing on a Steam Deck and utilize Proton Hotfix or Proton Experimental, you will most likely encounter glitched textures (looking muddy / shiny). This is caused by the Steam Deck's GPU driver that's outdated (RADV Driver 24.2) and interacting with 绝地潜兵 2 utilization of a newer VKD3D Proton version (3.0.1), which seems to use features that are currently not available in the old driver.<sup id="cite&#95;ref-10" class="reference"><a href="#cite_note-10"><span class="cite-bracket">&#91;</span>10<span class="cite-bracket">&#93;</span></a></sup>
+</p><p>As a temporary workaround you can start the game with the DirectX 11 launch 指挥. Be aware that DX11 is not officially supported and comes with it's own share of problems, such as HDR and Upscaling not working and the new 控制 Panel experiencing 庞大 图形 issues.
 </p>
-<ol><li>打开 your <b>Steam 图书馆</b>.</li>
-<li>正确-Click on "绝地潜兵 2".</li>
-<li>选择 "Properties..." from the 掉落-down 菜单.</li>
-<li>You are presented with the "基本信息" tab. On the 更低 部分 of this window there's a "Launch Options" 田野.</li>
+<ol><li>Open your <b>Steam 图书馆</b>.</li>
+<li>Right-Click on "绝地潜兵 2".</li>
+<li>Select "Properties..." from the 掉落-down menu.</li>
+<li>You are presented with the "基本信息" tab. On the lower part of this window there's a "Launch Options" field.</li>
 <li>Enter the launch 指挥 <code>--use-d3d11</code></li>
-<li>关闭 the window to 拯救 the changes and launch the 游戏.</li></ol>
-<h2><span class="mw-headline" id="References">参考</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: References" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: References"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<li>Close the window to save the changes and launch the game.</li></ol>
+<h2><span class="mw-headline" id="References">参考</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: References" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: References"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
 <div class="mw-references-wrap"><ol class="references">
 <li id="cite&#95;note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/valvesoftware/proton">GitHub - Proton</a></span>
 </li>
@@ -434,47 +434,47 @@ It's advisable to 比赛 the 特性 level in the Launch 指挥 with the actual �
 </li>
 <li id="cite&#95;note-4"><span class="mw-cite-backlink"><a href="#cite_ref-4">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://wiki.archlinux.org/title/HDR_monitor_support">Arch Linux - HDR 监控 支援</a></span>
 </li>
-<li id="cite&#95;note-5"><span class="mw-cite-backlink"><a href="#cite_ref-5">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/doitsujin/dxvk/issues/4436">Github - Unified DXVK/VKD3D lag timebomb in 最多 games </a>/</span>
+<li id="cite&#95;note-5"><span class="mw-cite-backlink"><a href="#cite_ref-5">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/doitsujin/dxvk/issues/4436">Github - Unified DXVK/VKD3D lag timebomb in most games </a>/</span>
 </li>
 <li id="cite&#95;note-6"><span class="mw-cite-backlink"><a href="#cite_ref-6">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/ValveSoftware/steam-for-linux/issues/11446">Github - lag spikes after 25-40 分钟 of playing on linux</a></span>
 </li>
-<li id="cite&#95;note-7"><span class="mw-cite-backlink"><a href="#cite_ref-7">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://gitlab.freedesktop.org/mesa/mesa/-/work_items/13369#note_2962408">GitLab - Mesa and extended GPU stress causes amdgpu: ring gfx_0.0.0 timeout and GPU 重置</a></span>
+<li id="cite&#95;note-7"><span class="mw-cite-backlink"><a href="#cite_ref-7">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://gitlab.freedesktop.org/mesa/mesa/-/work_items/13369#note_2962408">GitLab - Mesa and extended GPU stress causes amdgpu: ring gfx_0.0.0 timeout and GPU reset</a></span>
 </li>
-<li id="cite&#95;note-8"><span class="mw-cite-backlink"><a href="#cite_ref-8">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://www.steamdeck.com/en/tech">Steam 甲板 - Specs</a></span>
+<li id="cite&#95;note-8"><span class="mw-cite-backlink"><a href="#cite_ref-8">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://www.steamdeck.com/en/tech">Steam Deck - Specs</a></span>
 </li>
-<li id="cite&#95;note-9"><span class="mw-cite-backlink"><a href="#cite_ref-9">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://www.reddit.com/r/linux_gaming/comments/or1es7/gaming_sessions_on_steam_deck_are_run_via/">Reddit - Gaming Sessions on Steam 甲板 are run via Gamescope</a></span>
+<li id="cite&#95;note-9"><span class="mw-cite-backlink"><a href="#cite_ref-9">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://www.reddit.com/r/linux_gaming/comments/or1es7/gaming_sessions_on_steam_deck_are_run_via/">Reddit - Gaming Sessions on Steam Deck are run via Gamescope</a></span>
 </li>
 <li id="cite&#95;note-10"><span class="mw-cite-backlink"><a href="#cite_ref-10">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/HansKristian-Work/vkd3d-proton/issues/2993">Github - 绝地潜兵 2 Proton Hotfix and Experimental on SteamDeck have 纹理 issues #2993</a></span>
 </li>
 </ol></div>
-<div role="navigation" aria-label="Navbox" class="ranger-navbox navigation-not-searchable striped-even mw-collapsible"><div class="ranger-title"><div class="mw-collapsible-toggle-placeholder"></div><span class="ranger-meta"><span class="nv nv-view"><a href="../index.html" title="Template:Navbox Troubleshooting"><span title="View or edit this template">查看 or 编辑 this template</span></a></span></span><div class="ranger-title-text"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div></div><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:4"><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Tools</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist"><div class="ranger-list">
+<div role="navigation" aria-label="Navbox" class="ranger-navbox navigation-not-searchable striped-even mw-collapsible"><div class="ranger-title"><div class="mw-collapsible-toggle-placeholder"></div><span class="ranger-meta"><span class="nv nv-view"><a href="../index.html" title="Template:Navbox Troubleshooting"><span title="View or edit this template">View or edit this template</span></a></span></span><div class="ranger-title-text"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div></div><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:4"><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Tools</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist"><div class="ranger-list">
 <ul><li><a href="Hellbomb_Script.html" title="Hellbomb Script">Hellbomb Script</a></li>
 <li><a href="Steam_Launch_Commands.html" title="Steam Launch Commands">Steam Launch Commands</a></li></ul>
 </div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Platform</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist"><div class="ranger-list">
 <ul><li><a href="Laptop_Troubleshooting.html" title="Laptop Troubleshooting">Laptop 故障排除</a></li>
-<li><a class="mw-selflink selflink">Linux / Steam 甲板 故障排除</a></li>
+<li><a class="mw-selflink selflink">Linux / Steam Deck 故障排除</a></li>
 <li><a href="PlayStation_Troubleshooting.html" title="PlayStation Troubleshooting">PlayStation 故障排除</a></li>
 <li><a href="Steam_Troubleshooting.html" title="Steam Troubleshooting">Steam 故障排除</a></li>
 <li><a href="Xbox_Troubleshooting.html" title="Xbox Troubleshooting">Xbox 故障排除</a></li></ul>
 </div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Performance &amp; 稳定性</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist"><div class="ranger-list">
 <ul><li><a href="BIOS_Updates.html" title="BIOS Updates">BIOS Updates</a></li>
-<li><a href="Clearing_The_Shader_Cache.html" title="Clearing The Shader Cache">Clearing The Shader 缓存</a></li>
-<li><a href="GPU_Driver_Recommendation.html" title="GPU Driver Recommendation">GPU 驾驶员 Recommendation</a></li>
+<li><a href="Clearing_The_Shader_Cache.html" title="Clearing The Shader Cache">Clearing The Shader Cache</a></li>
+<li><a href="GPU_Driver_Recommendation.html" title="GPU Driver Recommendation">GPU Driver Recommendation</a></li>
 <li><a href="User_Settings_Config_FPS_Optimization.html" title="User Settings Config FPS Optimization">User Settings Config FPS 优化</a></li>
-<li><a href="Virtual_Memory.html" title="Virtual Memory">Virtual 内存</a></li></ul>
+<li><a href="Virtual_Memory.html" title="Virtual Memory">Virtual Memory</a></li></ul>
 </div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">崩溃 &amp; Issues</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist"><div class="ranger-list">
 <ul><li><a href="Audio_Problems.html" title="Audio Problems">Audio Problems</a></li>
 <li><a href="../index.html" title="Broken Mods">Broken Mods</a></li>
-<li><a href="Crash_On_Startup.html" title="Crash On Startup">崩溃 On Startup</a></li>
-<li><a href="Crash_To_Desktop.html" title="Crash To Desktop">崩溃 To Desktop</a></li>
-<li><a href="Error_Code_409.html" title="Error Code 409">Error 法典 409</a></li>
-<li><a href="In-Game_Problems.html" title="In-Game Problems">In-游戏 Problems</a></li>
-<li><a href="Input_Problems.html" title="Input Problems">输入 Problems</a></li>
+<li><a href="Crash_On_Startup.html" title="Crash On Startup">Crash On Startup</a></li>
+<li><a href="Crash_To_Desktop.html" title="Crash To Desktop">Crash To Desktop</a></li>
+<li><a href="Error_Code_409.html" title="Error Code 409">Error Code 409</a></li>
+<li><a href="In-Game_Problems.html" title="In-Game Problems">In-Game Problems</a></li>
+<li><a href="Input_Problems.html" title="Input Problems">Input Problems</a></li>
 <li><a href="Network_Troubleshooting.html" title="Network Troubleshooting">网络 故障排除</a></li>
 <li><a href="Reinstallation_of_GameGuard.html" title="Reinstallation of GameGuard">Reinstallation of GameGuard</a></li>
 <li><a href="Reinstallation_of_Visual_C++_Redistributables.html" title="Reinstallation of Visual C++ Redistributables">Reinstallation of Visual C++ Redistributables</a></li>
-<li><a href="Troubleshooting_System_Failure.html" title="Troubleshooting System Failure">故障排除 星系 Failure</a></li>
-<li><a href="Troubleshooting_Stutters_Short_Freezes.html" title="Troubleshooting Stutters/Short Freezes">故障排除 Stutters/短 Freezes</a></li></ul>
+<li><a href="Troubleshooting_System_Failure.html" title="Troubleshooting System Failure">故障排除 System Failure</a></li>
+<li><a href="Troubleshooting_Stutters_Short_Freezes.html" title="Troubleshooting Stutters/Short Freezes">故障排除 Stutters/Short Freezes</a></li></ul>
 </div></div></div></div></div></div></div>
 <!-- 
 NewPP limit report
