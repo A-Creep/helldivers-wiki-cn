@@ -423,11 +423,64 @@ class SiteBuilder:
         html = re.sub(r"<iframe\b[^>]*>.*?</iframe>", "", html, flags=re.I | re.S)
         html = re.sub(r"<video\b[^>]*>.*?</video>", "", html, flags=re.I | re.S)
         html = re.sub(r"<source\b[^>]*>", "", html, flags=re.I)
+        # 删除编辑按钮（[edit | edit 来源]），直接移除而不是靠 CSS 隐藏
+        def strip_span_blocks(html, open_re, test):
+            out = []
+            pos = 0
+            for m in re.finditer(open_re, html):
+                out.append(html[pos:m.start()])
+                start = m.start()
+                i = m.end()
+                depth = 1
+                while i < len(html) and depth:
+                    if html.startswith("<span", i):
+                        depth += 1
+                        i += 5
+                    elif html.startswith("</span>", i):
+                        depth -= 1
+                        i += 7
+                    else:
+                        i += 1
+                if depth > 0:
+                    # span 未闭合：保留整段到文件尾，防止吞掉整页
+                    out.append(html[start:])
+                    pos = len(html)
+                    break
+                block = html[start:i]
+                out.append("" if test(block) else block)
+                pos = i
+            out.append(html[pos:])
+            return "".join(out)
+
+        html = strip_span_blocks(
+            html,
+            r'<span[^>]*class="mw-editsection(?: [^"]*)?"[^>]*>',
+            lambda b: True)
+        # 删除教程视频类图库条目（不收录视频）
+        def drop_video_gallery(m):
+            return "" if re.search(
+                r"tutorial video|demonstrating use|教学视频|教程视频",
+                m.group(0), re.I) else m.group(0)
         html = re.sub(
-            r"<(p|div|span|li)[^>]*>[\s\S]*?Weapon not found[\s\S]*?</\1>",
-            "", html, flags=re.I)
+            r'<li class="gallerybox"[^>]*>[\s\S]*?</li>',
+            drop_video_gallery, html, flags=re.I)
+        # 跳转主页的超链接按文案判断：明显是"首页"语义才保留，否则去掉链接只留文字
+        def fix_home_links(m):
+            inner = m.group(1)
+            txt = re.sub(r"<[^>]+>", "", inner)
+            txt = re.sub(r"\s+", " ", txt).strip().lower()
+            if re.search(r"首页|主页|返回首页|回首页|back to home|^main page$|^home$",
+                         txt):
+                return m.group(0)
+            return inner
+
         html = re.sub(
-            r"<(p|div|span|li)[^>]*>[\s\S]*?No Passive found[\s\S]*?</\1>",
+            r'<a\b(?=[^>]*\bhref=["\'](?:\.\./)?index\.html(?:[?#][^"\']*)?["\'])[^>]*>([\s\S]*?)</a>',
+            fix_home_links, html, flags=re.I)
+        # 删除模板报错段（有界匹配，防止从页面顶部一路吞到报错处）
+        html = re.sub(
+            r"<(p|div|span|li)[^>]*>[\s\S]{0,300}?"
+            r"(?:Weapon not found|No Passive found)[\s\S]{0,600}?</\1>",
             "", html, flags=re.I)
         html = re.sub(r"Syntax Error\s*", "", html, flags=re.I)
         html = re.sub(r"(致命|庞大|小|中型|大型)\?", r"\1", html)
@@ -446,12 +499,68 @@ class SiteBuilder:
             drop_empty_table, html, flags=re.I)
         # 删除消歧义提示（This article is about / This 条款 is about ... For the ... see）
         html = re.sub(
-            r"<(i|p|td|div)[^>]*>[\s\S]*?(?:This\s+条款\s+is\s+about|This\s+article\s+is\s+about)"
-            r"[\s\S]*?</\1>", "", html, flags=re.I)
+            r"<(i|p|td|div)[^>]*>[\s\S]{0,300}?"
+            r"(?:This\s+条款\s+is\s+about|This\s+article\s+is\s+about)"
+            r"[\s\S]{0,600}?</\1>", "", html, flags=re.I)
         html = re.sub(r'\bhref=(["\'])index\.html\1', f'href="{index_rel}"', html)
+        # 图片超链接回退到首页时（无法确定对应词条页），去掉链接只保留图片
+        html = re.sub(
+            r'<a\b(?=[^>]*\bhref=["\'](?:\.\./)?index\.html["\'])[^>]*>\s*(<img\b[^>]*>)\s*</a>',
+            r"\1", html, flags=re.I)
         for i, u in enumerate(urls):
             html = html.replace(f"__IMG_{i}__",
                                 f"../images/{urllib.parse.quote(local_img(u))}")
+        # 删除 UNDERCONSTRUCTION 施工中提示（横幅图 + Work in Progress 文本框）
+        def strip_balanced_divs(html, open_re, test):
+            out = []
+            pos = 0
+            for m in re.finditer(open_re, html):
+                out.append(html[pos:m.start()])
+                start = m.start()
+                i = m.end()
+                depth = 1
+                while i < len(html) and depth:
+                    if html.startswith("<div", i):
+                        depth += 1
+                        i += 4
+                    elif html.startswith("</div>", i):
+                        depth -= 1
+                        i += 6
+                    else:
+                        i += 1
+                block = html[start:i]
+                out.append("" if test(block) else block)
+                pos = i
+            out.append(html[pos:])
+            return "".join(out)
+
+        html = strip_balanced_divs(
+            html, r'<div[^>]*class="[^"]*responsive-image[^"]*"[^>]*>',
+            lambda b: re.search(r"Construction_Tag", b, re.I) is not None)
+        html = strip_balanced_divs(
+            html, r'<div[^>]*class="[^"]*msgbox[^"]*"[^>]*>',
+            lambda b: "Work in Progress" in b)
+        # 删除视频缩略容器（海报图 + 图注），不收录视频
+        def drop_video_thumb(b):
+            low = b.lower()
+            return (".mp4" in low or "教学视频" in b
+                    or "教程视频" in b
+                    or "tutorial video" in low)
+        html = strip_balanced_divs(
+            html, r'<div[^>]*class="[^"]*\bthumb\b[^"]*"[^>]*>',
+            drop_video_thumb)
+        # 删除战略配备预览页里的视频占位文本（File:...mp4）
+        html = re.sub(
+            r'<div class="stratagem-video">[\s\S]*?</div>', "", html,
+            flags=re.I)
+        # 删除被清空后残留的空章节标题（如只剩报错/视频被移除的章节）
+        def drop_empty_section(m):
+            gap = m.group(2)
+            txt = re.sub(r"<[^>]+>|&#160;|&nbsp;|\s+", "", gap)
+            return "" if not txt else m.group(0)
+        html = re.sub(
+            r"(<h2[^>]*>[\s\S]*?</h2>)([\s\S]*?)(?=<h2|</div>\s*</main>|$)",
+            drop_empty_section, html, flags=re.I)
         return html
 
     def page_template(self, title, body, page_path=""):

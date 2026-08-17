@@ -66,6 +66,10 @@ def remove_navboxes(html):
             else:
                 depth -= 1
                 j = cl.end()
+        if depth > 0:
+            # 标签未闭合（解析异常）：跳过不删，防止截断整页
+            i = m.end()
+            continue
         end = i + j
         block = html[start:end]
         low = block.lower()
@@ -102,8 +106,9 @@ def remove_tabs(html):
 def remove_hd1_sections(html):
     """删除标题为 绝地潜兵1/Helldivers 1 的章节（到下一个同级/更高级标题）"""
     pat = re.compile(
-        r"<h([23])[^>]*>.*?(?:绝地潜兵\s*1|helldivers\s*1).*?</h\1>",
-        re.I | re.S)
+        r"<h([23])[^>]*>(?:(?!</h\1>)[\s\S])*?"
+        r"(?:绝地潜兵\s*1|helldivers\s*1)(?:(?!</h\1>)[\s\S])*?</h\1>",
+        re.I)
     out = []
     pos = 0
     changed = False
@@ -112,6 +117,10 @@ def remove_hd1_sections(html):
         start = m.start()
         nxt = re.compile(r"<h[1-" + str(lvl) + r"]\b", re.I).search(html, m.end())
         end = nxt.start() if nxt else len(html)
+        # 不能删掉页面模板尾部（正文容器 </main> 之后）
+        main_end = html.find("</main>", m.end())
+        if main_end != -1:
+            end = min(end, main_end)
         out.append(html[pos:start])
         pos = end
         changed = True

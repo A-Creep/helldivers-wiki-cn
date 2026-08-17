@@ -39,13 +39,33 @@ try:
                 base = urllib.parse.unquote(os.path.basename(path))
                 base = re.sub(r'[<>:"/\\|?*]', "_", base)
                 bl = base.lower()
-                if any(x in bl for x in ("disambig", "unknown", "placeholder",
+                if (any(x in bl for x in ("disambig", "unknown", "placeholder",
                                          "question", "missing", "noimage", "no-image",
-                                         "fallback")):
+                                         "fallback", "construction_tag", "construction tag"))
+                        or bl in ("construction_tag.png", "hd2_construction_tag.webp")):
                     continue
                 local = CONV.get(base, base)
                 IMGS[it["t"]] = "../images/" + urllib.parse.quote(local)
                 break
+except Exception:
+    pass
+
+# 个别词条缩略图覆盖（缓存首图不是战略图标）
+IMGS["GL-21 Grenade Launcher"] = "../images/Grenade_Launcher_Stratagem_Icon_Background.svg"
+
+# 从渲染缓存提取每页面包屑（原站分类路径）
+SUB = {}
+try:
+    for line in open(os.path.join(SITE, "zh_cache.jsonl"), encoding="utf-8"):
+        it = json.loads(line)
+        segs = []
+        for m in re.finditer(r'<div class="breadcrumb-item[^"]*"[^>]*>(.*?)</div>',
+                             it["h"], re.S):
+            seg = re.sub(r"<[^>]+>", "", m.group(1)).strip()
+            if seg:
+                segs.append(seg)
+        if len(segs) >= 2:
+            SUB[it["t"]] = " / ".join(segs[1:-1])
 except Exception:
     pass
 
@@ -182,19 +202,21 @@ def main():
                                r"berserker|devastator|scout|marauder|brawler|wraith|"
                                r"shredder|annihilator|barrager|factory|war strider|"
                                r"jet brigade|incineration|cyborg)", re.I)),
-        ("光能者", re.compile(r"(illuminate|voteless|wretch|crusher|gazer|harvester|"
-                               r"overseer|watcher|mindless|appropriate)", re.I)),
+        ("光能族", re.compile(r"(illuminate|voteless|wretch|crusher|gazer|harvester|"
+                               r"overseer|watcher|mindless|appropriator|vote snatcher)", re.I)),
         ("特殊变体", re.compile(r"(spore burst|rupture|predator strain)", re.I)),
     ]
     enemies = []
     for t in of_type("enemy"):
         fac = param(t, "faction").lower()
-        if "terminid" in fac:
+        if "terminid" in fac or "strain" in fac:
             enemies.append(("终结族", t))
         elif "automaton" in fac or "cyborg" in fac or "jet" in fac or "incineration" in fac:
             enemies.append(("机器人", t))
-        elif "illuminate" in fac or "appropriate" in fac:
-            enemies.append(("光能者", t))
+        elif "illuminate" in fac or "appropriator" in fac or "vote snatcher" in fac:
+            enemies.append(("光能族", t))
+        elif "super earth" in fac:
+            enemies.append(("超级地球", t))
         else:
             enemies.append(("其他", t))
     groups = {}
@@ -227,24 +249,35 @@ def main():
            for g, v in wb.items()],
           "主武器 / 副武器 / 支援武器 / 近战 / 手雷 / 配件")
 
-    # ---- 战略配备 ----
-    sb = {}
+    # ---- 战略配备（按原站分类树：许可类型 + 子分类）----
+    def strat_group(t):
+        s = SUB.get(t, "").lower()
+        if "轨道" in s or "orbital" in s:
+            return "进攻型 · 轨道打击"
+        if "鹰" in s or "eagle" in s:
+            return "进攻型 · 鹰击"
+        if "支援武器" in s or "support weapon" in s:
+            return "补给型 · 支援武器"
+        if "背包" in s or "backpack" in s:
+            return "补给型 · 背包"
+        if "载具" in s or "vehicle" in s:
+            return "补给型 · 载具"
+        if "哨戒" in s or "sentry" in s:
+            return "防御型 · 哨戒炮"
+        if "阵地" in s or "emplacement" in s:
+            return "防御型 · 炮台"
+        return "其他 · 任务战略配备"
+
+    order = ["进攻型 · 轨道打击", "进攻型 · 鹰击", "补给型 · 支援武器",
+             "补给型 · 背包", "补给型 · 载具", "防御型 · 哨戒炮",
+             "防御型 · 炮台", "其他 · 任务战略配备"]
+    sb = {g: [] for g in order}
     for t in of_type("stratagem", "support weapon"):
-        p = param(t, "permit_type").lower()
-        if "supply" in p:
-            sb.setdefault("补给型", []).append(t)
-        elif CATS[t]["type"] == "support weapon":
-            sb.setdefault("补给型", []).append(t)
-        elif "defens" in p:
-            sb.setdefault("防御型", []).append(t)
-        elif "offens" in p:
-            sb.setdefault("进攻型", []).append(t)
-        else:
-            sb.setdefault("其他", []).append(t)
+        sb[strat_group(t)].append(t)
     write("stratagems.html", "战略配备",
-          [(g, sorted(v, key=lambda x: (zh(x) or x).lower()))
-           for g, v in sb.items()],
-          "进攻 / 防御 / 补给")
+          [(g, sorted(sb[g], key=lambda x: (zh(x) or x).lower()))
+           for g in order if sb[g]],
+          "进攻 / 防御 / 补给 / 其他")
 
     # ---- 护甲 / 被动 ----
     armors = of_type("armor")

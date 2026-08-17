@@ -860,6 +860,17 @@ class ExtractEngine:
             parser.parse(row["content"], row["title"])
             for block in parser.blocks:
                 total_blocks += 1
+                # 模板控制参数（箭头/数字/标识符/文件名）直接锁定，不进待译队列
+                if block.context == "template_param":
+                    s = block.source_text.strip()
+                    ctrl_re = re.compile(
+                        r"^(?:down|up|right|left|[\d.,]+|[A-Za-z0-9_./%+-]{1,60})$")
+                    file_re = re.compile(
+                        r"^[A-Za-z0-9_ .()'&#;\-]{1,140}\."
+                        r"(?:png|svg|webp|jpg|jpeg|gif|ogg|mp4|webm)$", re.I)
+                    if ctrl_re.match(s) or file_re.match(s):
+                        self.db.upsert_translation(block, block.source_text, "locked")
+                        continue
                 existing = self.db.get_translation(block.block_id)
                 if not existing:
                     g = lookup_glossary(block.source_text)
@@ -934,11 +945,15 @@ class Builder:
         trans_map: Dict[str, str] = {}
         ctrl_re = re.compile(
             r"^(?:down|up|right|left|[\d.,]+|[A-Za-z0-9_./%+-]{1,60})$")
+        file_re = re.compile(
+            r"^[A-Za-z0-9_ .()'&#;\-]{1,140}\."
+            r"(?:png|svg|webp|jpg|jpeg|gif|ogg|mp4|webm)$", re.I)
         for block in parser.blocks:
             row = self.db.get_translation(block.block_id)
             if row and row["translated_text"]:
                 if block.context == "template_param" and \
-                        ctrl_re.match(block.source_text.strip()):
+                        (ctrl_re.match(block.source_text.strip()) or
+                         file_re.match(block.source_text.strip())):
                     # 模板控制参数（箭头方向/数字/文件名/代码）不能被翻译
                     trans_map[block.block_id] = block.source_text
                 else:

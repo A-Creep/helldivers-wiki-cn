@@ -156,6 +156,33 @@ TERMS = [
     ("Reinforce", "增援"), ("Rifle", "步枪"), ("Marksman Rifle", "射手步枪"),
     ("Energy-Based", "能量型"), ("Marksman", "射手"),
     ("Primary Weapons", "主武器"), ("Secondary Weapons", "副武器"),
+    # 画廊图注（高频）
+    ("Marketing image", "宣传图"), ("Marketing", "宣传图"), ("营销 image", "宣传图"),
+    ("Armor Set", "护甲套装"), ("Weapon Wheel", "武器轮盘"),
+    ("Aiming, Third-Person", "瞄准，第三人称"), ("Aiming, First-Person", "瞄准，第一人称"),
+    ("Reloading, Third-Person (full and partial)", "换弹，第三人称（完整与部分）"),
+    ("Reloading, First-Person (full and partial)", "换弹，第一人称（完整与部分）"),
+    ("Reloading, Third-Person", "换弹，第三人称"), ("Reloading, First-Person", "换弹，第一人称"),
+    ("Ditto, First-Person", "同上，第一人称"), ("Ditto, Third-Person", "同上，第三人称"),
+    ("Cover art", "封面图"), ("Title", "标题"), ("Daytime", "白天"),
+    ("Warbond overview", "战争债券概览"), ("Weapon Render", "武器渲染图"),
+    ("Backpack Render", "背包渲染图"), ("Image of Merga IV", "莫加 IV 的图像"),
+    ("Image of a colony on Penta", "彭塔殖民地的图像"),
+    ("Trivial Difficulty", "简单难度"), ("Easy Difficulty", "容易难度"),
+    ("Medium Difficulty", "中等难度"), ("Challenging Difficulty", "挑战难度"),
+    ("Hard Difficulty", "困难难度"), ("Extreme Difficulty", "极难难度"),
+    ("Suicide Mission Difficulty", "自杀任务难度"), ("Impossible Difficulty", "不可能难度"),
+    ("Helldive Difficulty", "绝地潜兵难度"), ("Super Helldive Difficulty", "超级绝地潜兵难度"),
+    ("Tutorial Video Demonstrating Use of the EAT-17 Expendable Anti-Tank Launcher",
+     "演示 EAT-17 消耗性反坦克发射器使用的教程视频"),
+    ("Image of EAT-17 From Tutorial Video", "教程视频中的 EAT-17 图像"),
+    ("Long-range holdover (aiming) guide for FPV (first-person-view)",
+     "第一人称视角（FPV）下的远距离弹道补偿（瞄准）指南"),
+    ("Tutorial Video Demonstrating Use of the EAT-411 Leveller",
+     "演示 EAT-411 夷平者使用的教程视频"),
+    ("Tutorial Video Demonstrating Use of the GL-52 De-Escalator",
+     "演示 GL-52 降级者使用的教程视频"),
+    ("……的启发", "启发，参考了"),
 ]
 
 # 从 glossary 补充短词条（仅 1-3 个英文词、中文 ≤ 6 字，避免误替换句子）
@@ -194,6 +221,12 @@ def repl_segment(seg):
             continue
         pat = re.compile(r"(?<![A-Za-z])" + re.escape(en) + r"(?![A-Za-z])", re.I)
         seg = pat.sub(zh, seg)
+    seg = re.sub(
+        r"Tutorial Video Demonstrating Use of the ([A-Z][A-Za-z0-9][A-Za-z0-9 -]{2,50}?)\b",
+        r"演示 \1 使用的教程视频", seg)
+    seg = re.sub(
+        r"\bImage of ([A-Z][A-Za-z0-9][A-Za-z0-9 '.-]{2,40}?)(?![A-Za-z])",
+        r"图像：\1", seg)
     seg = re.sub(r"([\u4e00-\u9fff])\?", r"\1", seg)
     return seg
 

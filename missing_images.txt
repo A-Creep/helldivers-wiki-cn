@@ -51,6 +51,8 @@
 128px-They_don%27t_call_it_Tacticool_for_nothin%27_Trophy_Unlocked_Icon.png
 128px-They_mostly_come_at_night%E2%80%A6_Trophy_Unlocked_Icon.png
 128px-You%27re_Next_Victory_Pose_Icon.png
+138px-Eruptor%2C_Weapon_Wheel.webp
+177px-AR-GL-21_One-Two%2C_Weapon_Wheel.webp
 182px-Freedom%27s_Beacon_paper_volume_191_number_30634.webp
 1920px-Freedom%27s_Flame_Premium_Warbond_Cover.webp
 197px-LAS-17_Double-Edge_Sickle%2C_First-Person%2825m%29.webp
@@ -102,6 +104,8 @@
 241px-Eruptor%2C_Aiming%2C_First-Person.webp
 245px-LAS-17_Double-Edge_Sickle%2C_Thirst-Person.webp
 250px-Edward%27s_Grave_Nest.png
+252px-Pacifier%2C_Weapon_Wheel.webp
+256px-AR-23_%281%29.webp
 256px-AR-23_%282%29.webp
 256px-AR-23_%283%29.webp
 256px-AR-23_%284%29.webp
@@ -131,6 +135,7 @@
 256px-N-EAT%2C_Aiming%2C_First-Person.webp
 256px-Pacifier%2C_Aiming%2C_First-Person.webp
 256px-Pacifier%2C_Aiming%2C_Third-Person.webp
+256px-SG-225SP_Breaker_Spray_%26_Pray.webp
 256px-SG-225SP_Breaker_Spray_%26_Pray_1st.webp
 256px-SG-225SP_Breaker_Spray_%26_Pray_3rd.webp
 256px-SG-97_Aiming%2C_First-Person.webp
@@ -202,6 +207,7 @@
 59px-GS-11_Democracy%27s_Deputy_Armor_Set_Image.png
 600px-Castellan%27s_Creed_Legendary_Warbond_Cover.webp
 600px-Freedom%27s_Flame_Premium_Warbond_Cover.webp
+600px-SG-225SP_Breaker_Spray%26Pray_Primary_Render.webp
 648px-Castellan%27s_Creed_Legendary_Warbond_Cover_Art.webp
 648px-Freedom%27s_Flame_Premium_Warbond_Cover_Art.webp
 683px-Angel%27s_Venture_Planet_Header.webp
@@ -216,6 +222,9 @@ CQC-9%2C_Wheapon_Wheel.png
 Castellan%27s_Creed_Legendary_Warbond_Cover.webp
 Cloak_of_Posterity%27s_Gratitude_Cape_Armory.webp
 Cloak_of_Posterity%27s_Gratitude_Player_Card_Icon.webp
+Crossbow%2C_Weapon_Wheel.png
+DS-42_Federation%27s_Blade_Armor_Render.webp
+DS-42_Federation%27s_Blade_Helmet_Render.webp
 De-Forester%27s_Sailcloth_Player_Card_Icon.webp
 Dissident%27s_Nightmare_Cape_Armory.webp
 Dissident%27s_Nightmare_Player_Card_Icon.webp

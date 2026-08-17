@@ -97,6 +97,7 @@ a:hover{text-decoration:underline}
 .mw-parser-output .druid-label{width:38%;color:#bbb}
 .mw-parser-output .druid-data{width:62%}
 .mw-parser-output .breadcrumb{color:#9a9a9a;font-size:13px;margin-bottom:8px}
+.mw-parser-output .breadcrumb-item-final{display:none}
 /* ---------- 首页分类 ---------- */
 .home-title{text-align:center;margin:34px 0 6px;font-family:var(--font-heading);
   font-size:32px;color:var(--wiki-content-heading-color)}
@@ -224,6 +225,9 @@ mark{background:var(--wiki-accent-color);color:#000;border-radius:2px;padding:0 
   border:1px solid #333;border-radius:8px;padding:10px 12px;background:#1c1c1c}
 .mw-parser-output .weapon-loadout img{max-width:180px;max-height:120px;object-fit:contain}
 .mw-parser-output .weapon-card img{max-width:180px;max-height:120px;object-fit:contain}
+/* 敌人页武器箱：武器图限宽 270px（原 538px 的约 50%） */
+.mw-parser-output .box.biome-box .thumbinner{max-width:270px}
+.mw-parser-output .box.biome-box .thumbinner img{max-width:100%;height:auto}
 .mw-parser-output .weapon-card table{width:100%;table-layout:fixed;font-size:12px}
 .mw-parser-output .weapon-card td{padding:2px 4px;line-height:1.3}
 /* 5. 导航模板 ranger / navbox：可折叠、金左边框、图标 20px、密集链接 */
