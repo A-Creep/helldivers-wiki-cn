@@ -1,5 +1,26 @@
 # 汉化进度（自动更新）
 
+## 2026-08-18 任务 D：增量验收 + 自动发布（15 页变更）
+- `sync_update.py` 真实增量：15 个新增/变更页（Campaigns、Deadlands、Desert Cliffs、PH-9 Predator、Missions、Difficulty 等）→ **只重渲染 14 页**（缓存命中其余）→ 校验 **176,707 链接全绿、1143 页 0 高危/0 中危/0 低危**
+- 补拉 13 张原站新图（PH-9 Predator 装甲/头盔、Hydrobius Void 行星系列、Senge 23 Void 等，wiki API imageinfo 解析 thumburl）
+- EXE：`dist\Helldivers2WikiCN.exe` 约 475MB（PyInstaller 48s）
+- 镜像：main **7f801d4 → 1c4b5d9**（15 页增量 + 13 图 + 站点文件）
+
+## 2026-08-18 任务 E：Kimi 第六轮复检 → 引导句全量复核（待机轮）
+- **Kimi 第六轮结果**：21 项中 16 项 ✅；5 项 ❌ 已全部处理：
+  - Jet_Brigade_Hulk_Bruiser / Drum_Magazine / Crashed_Ship 引导句残留 → 修复根因：LEAD_PAGE_FIXES 段落正则上限 900 字符不足（Jet_Brigade 引导句段 906 字符）→ 放宽至 2000；Drum 重跑完整管线后生效；Crashed 本地早已修复（Kimi 抓取旧缓存）。
+  - enemies.html / stratagems.html"截断" → 本地文件完整（4 组 / 8 组、`</html>` 收尾），系 Kimi 抓取工具渲染截断误判。
+- **复核**：18 页引导句全部通顺中文；H1 中文标题生效；三件套全绿（1143 页 0 高危、坏页 0、链接 176,681 全绿）；EXE 打包冒烟通过。
+- **镜像**：已推 `main` **7f801d4**。
+
+## 2026-08-18 任务 E：应用 A 补译标题 → 重建 → H1 中文化（待机轮）
+- 收到 A 协作说明：A 已补译 H1 纯英文标题（Seismic Probe→地震探测仪、Crashed Ship→坠毁飞船、AR-59 Suppressor→AR-59 消音器、Hangar→机库，另补 150 条空标题，持久化至 glossary.json）。
+- E 执行重建管线：build_site → strip_hd1 → apply_zh_terms → generate_index_pages → verify → validate。
+- **H1 已生效**：地震探测仪/坠毁飞船/AR-59 消音器/机库 4 页验证通过；Jet Brigade Hulk Bruiser 暂无中文标题（A 未补，留待 A 或用户决定）。
+- **验收**：1143 页 0 高危/0 中危/0 低危；坏页 0；链接 176,694 全绿。
+- **发布**：EXE 重新打包冒烟通过；镜像已推 `main` **fec1fd0**（应用 A 标题后的站点产物）。
+- 备注：打包时遇 EXE 被残留进程占用（WinError 5），taskkill 后重打成功；巡检频率已按协作约定改为每 1 分钟。
+
 ## 2026-08-18 任务 E：Kimi 第五轮复检 → 引导句残留收尾
 - **复检结果**：分类页/图集删除/术语表字段/链接健康全部 ✅；剩余问题为正文引导句半翻译残留（"the X 是"、"the X is a 中文"、"A X is" 等模式）。
 - **修复（`apply_zh_terms.py`，基于 D 增量后的最新产物）**：
