@@ -330,3 +330,15 @@ html,body{overflow-x:hidden}
 .thumb .wiki-icon,.druid-main-image .wiki-icon,.gallerybox .wiki-icon,
 .mw-parser-output .gallerybox img.wiki-icon{width:auto !important;height:auto !important;
   max-width:100%}
+/* CSS 兜底：按路径关键词限制功能图标尺寸（PNG/WebP 也生效） */
+.mw-parser-output img[src*="Penetration"],.mw-parser-output img[src*="Armor_Icon"],
+.mw-parser-output img[src*="Damage_"],.mw-parser-output img[src*="Faction_Icon"],
+.mw-parser-output img[src*="Difficulty_Icon"],.mw-parser-output img[src*="Stratagem_Arrow"],
+.mw-parser-output img[src*="Medal"],.mw-parser-output img[src*="Currency"],
+.mw-parser-output img[src*="Reward"],.mw-parser-output img[src*="Armor_Penetration"]{
+  width:16px !important;height:16px !important;vertical-align:middle}
+.thumb img[src*="Penetration"],.thumb img[src*="Armor_Icon"],.thumb img[src*="Damage_"],
+.druid-main-image img[src*="Penetration"],.druid-main-image img[src*="Armor_Icon"],
+.druid-main-image img[src*="Damage_"],.gallerybox img[src*="Penetration"],
+.gallerybox img[src*="Armor_Icon"],.gallerybox img[src*="Damage_"]{
+  width:auto !important;height:auto !important;max-width:100%}

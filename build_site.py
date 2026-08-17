@@ -350,11 +350,16 @@ class SiteBuilder:
                 u0 = srcm.group(1)
                 base0 = urllib.parse.unquote(
                     os.path.basename(urllib.parse.urlparse(u0).path))
-                if base0.lower().endswith(".svg") and re.search(
+                bl0 = base0.lower()
+                if re.search(
                         r"(?i)(damage|armor|penetrat|fire|reload|magazine|capacity|"
                         r"recoil|faction|difficulty|stratagem|medal|currency|reward|"
                         r"ballistic|explosive|electric|chemical|acid|gas|melee|"
-                        r"stagger|shield|arc|icon|arrow)", base0):
+                        r"stagger|shield|arc|icon|arrow)", bl0) \
+                        and not re.search(
+                            r"(render|header|banner|cover|preview|screenshot|photo|"
+                            r"wallpaper|background|landscape)", bl0) \
+                        and not re.match(r"^\d+px-", bl0):
                     add_icon = True
             if add_icon:
                 if re.search(r'\bclass="', attrs):
