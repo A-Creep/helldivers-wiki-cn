@@ -1,0 +1,315 @@
+/* 绝地潜兵2 离线百科 - 原站 Helldivers 主题配色 */
+:root{
+  --wiki-body-background-color:#171717;
+  --wiki-content-background-color:#202020;
+  --wiki-content-background-color--secondary:#2b2b2b;
+  --wiki-content-border-color:#991A51;
+  --wiki-content-text-color:#ededed;
+  --wiki-content-heading-color:#ffee33;
+  --wiki-content-link-color:#ffee33;
+  --wiki-accent-color:#ff1980;
+  --wiki-accent-color--hover:#D82073;
+  --wiki-accent-label-color:#000;
+  --wiki-alert-color:#FC3B2C;
+  --wiki-warning-color:#cf721c;
+  --wiki-success-color:#0c742f;
+  --wiki-custom-emphasis-color:#ffe900;
+  --font-heading:"Orbitron","Chakra Petch","Segoe UI","Microsoft YaHei",sans-serif;
+  --font-body:"Chakra Petch","Segoe UI","Microsoft YaHei",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--wiki-body-background-color);
+  color:var(--wiki-content-text-color);font:15px/1.7 var(--font-body)}
+a{color:var(--wiki-content-link-color);text-decoration:none}
+a:hover{text-decoration:underline}
+.site-header{position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:14px;
+  background:#101010;border-bottom:3px solid var(--wiki-accent-color);
+  padding:10px 18px;flex-wrap:wrap}
+.brand{font-family:var(--font-heading);font-weight:700;font-size:17px;
+  color:var(--wiki-content-heading-color);letter-spacing:1px}
+.header-right{margin-left:auto;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.search-input{min-width:280px;background:#121212;border:1px solid #3a3a3a;
+  color:var(--wiki-content-text-color);border-radius:4px;padding:7px 12px;outline:none}
+.search-input:focus{border-color:var(--wiki-accent-color)}
+.btn{background:#2b2b2b;border:1px solid #3a3a3a;color:var(--wiki-content-heading-color);
+  border-radius:4px;padding:7px 14px;font-family:var(--font-heading);font-size:13px}
+.btn:hover{text-decoration:none;border-color:var(--wiki-accent-color)}
+.content{max-width:1120px;margin:0 auto;padding:22px 20px 70px}
+.page-title{border-bottom:2px solid var(--wiki-accent-color);padding-bottom:8px;
+  font-family:var(--font-heading);font-size:26px;color:var(--wiki-content-heading-color)}
+.site-footer{text-align:center;color:#8a8a8a;font-size:12px;padding:16px;border-top:1px solid #2a2a2a}
+/* ---------- 文章正文（原站样式） ---------- */
+.mw-parser-output{font-size:15px}
+.mw-parser-output img{max-width:100%;height:auto;border-radius:3px}
+.mw-parser-output img{max-width:min(100%, 720px)}
+.mw-parser-output .druid-infobox img, .mw-parser-output .infobox img{max-width:280px}
+.mw-parser-output img[alt*="Stratagem Arrow"], .mw-parser-output .stratagem-code img{width:26px;height:26px}
+.mw-parser-output .mw-parser-output .thumb img, .mw-parser-output .thumbimage{max-width:100%}
+.mw-parser-output .error, .mw-parser-output .errorbox{display:none}
+.mw-parser-output .navbox{display:none}
+.mw-parser-output .ranger{display:none}
+.mw-parser-output h1,.mw-parser-output h2,.mw-parser-output h3,.mw-parser-output h4,
+.mw-parser-output h5{font-family:var(--font-heading);color:var(--wiki-content-heading-color);
+  border-bottom:1px solid #3a3a3a;padding-bottom:4px;margin:22px 0 10px}
+.mw-parser-output p{margin:10px 0}
+.mw-parser-output table{border-collapse:collapse;margin:12px 0;max-width:100%}
+.mw-parser-output table,.mw-parser-output th,.mw-parser-output td{border:1px solid #3a3a3a}
+.mw-parser-output th{background:#2b2b2b;color:var(--wiki-content-heading-color);padding:6px 10px}
+.mw-parser-output td{padding:5px 10px;background:#202020}
+.mw-parser-output tr:nth-child(2n) td{background:#232323}
+.mw-parser-output .infobox{float:right;margin:0 0 12px 16px;max-width:340px;width:340px;
+  background:#202020;border:2px solid var(--wiki-content-border-color);border-radius:6px;
+  padding:8px;font-size:13px}
+.mw-parser-output .infobox img{display:block;margin:0 auto}
+.mw-parser-output .infobox th,.mw-parser-output .infobox td{border:none;border-bottom:1px solid #3a3a3a;
+  background:transparent;padding:4px 6px}
+.mw-parser-output .infobox th{width:40%;color:#ccc}
+.mw-parser-output .infobox-title{font-family:var(--font-heading);font-size:16px;
+  color:var(--wiki-content-heading-color);text-align:center}
+.mw-parser-output .quote,.mw-parser-output blockquote{background:var(--wiki-content-background-color--secondary);
+  border-radius:5px;border:2px solid var(--wiki-content-border-color);margin:.5em 0;padding:.5em .8em}
+.mw-parser-output .quote .content{font-style:italic}
+.mw-parser-output .quote .title,.mw-parser-output .quote .author{font-weight:bold}
+.mw-parser-output .hatnote,.mw-parser-output .dablink,.mw-parser-output .mbox-small{color:#b8b8b8;font-size:13px}
+.mw-parser-output .thumb,.mw-parser-output .gallerybox{background:#1b1b1b;
+  border:1px solid #3a3a3a;border-radius:4px;padding:4px}
+.mw-parser-output .thumbcaption,.mw-parser-output .gallerytext{color:#b8b8b8;font-size:12px}
+.mw-parser-output .gallery{display:flex;flex-wrap:wrap;gap:10px}
+.mw-parser-output .gallerybox{width:auto;max-width:220px}
+.mw-parser-output code,.mw-parser-output pre{background:#101010;border:1px solid #3a3a3a;
+  border-radius:4px;padding:1px 5px;font-family:Consolas,monospace;font-size:13px}
+.mw-parser-output .navbox{background:#1e1e1e;border:2px solid #3a3a3a;border-radius:6px;margin:14px 0}
+.mw-parser-output .navbox th{background:#262626}
+.mw-parser-output .navbox .navbox-title{font-family:var(--font-heading);color:var(--wiki-content-heading-color)}
+.mw-parser-output ul,.mw-parser-output ol{padding-left:26px}
+.mw-parser-output .mw-collapsible-content{overflow:auto}
+.mw-parser-output .tabber{display:flex;flex-wrap:wrap}
+.mw-parser-output .tabber__tab{cursor:pointer;padding:6px 14px;border:1px solid #3a3a3a;
+  border-bottom:none;background:#1e1e1e;margin-right:4px;border-radius:4px 4px 0 0}
+.mw-parser-output .tabber__tab--selected{background:#2b2b2b;color:var(--wiki-content-heading-color)}
+.mw-parser-output .tabber__panel{padding:12px;border:1px solid #3a3a3a;border-radius:0 4px 4px 4px}
+.mw-parser-output .wikitable th{background:#2b2b2b}
+.mw-parser-output .druid-infobox{background:#202020;border:2px solid var(--wiki-content-border-color);
+  border-radius:6px;padding:10px;margin:0 0 14px 0}
+.mw-parser-output .druid-title{font-family:var(--font-heading);color:var(--wiki-content-heading-color);
+  font-size:20px;text-align:center}
+.mw-parser-output .druid-row{display:flex;border-bottom:1px solid #333;padding:4px 0}
+.mw-parser-output .druid-label{width:38%;color:#bbb}
+.mw-parser-output .druid-data{width:62%}
+.mw-parser-output .breadcrumb{color:#9a9a9a;font-size:13px;margin-bottom:8px}
+/* ---------- 首页分类 ---------- */
+.home-title{text-align:center;margin:34px 0 6px;font-family:var(--font-heading);
+  font-size:32px;color:var(--wiki-content-heading-color)}
+.home-sub{text-align:center;color:#b0b0b0;margin:0 0 24px}
+.home-search{display:block;margin:0 auto 28px;width:min(680px,92%);background:#121212;
+  border:2px solid #3a3a3a;color:var(--wiki-content-text-color);border-radius:6px;
+  padding:12px 16px;font-size:16px;font-family:var(--font-body)}
+.home-search:focus{border-color:var(--wiki-accent-color);outline:none;
+  box-shadow:0 0 12px rgba(255,0,128,.25)}
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;
+  max-width:1160px;margin:0 auto 30px;padding:0 16px}
+.cat-card{background:#1e1e1e;border:1px solid #333;border-left:2px solid var(--wiki-accent-color);
+  border-radius:8px;padding:14px 16px}
+.cat-card h2{margin:0 0 10px;font-family:var(--font-heading);font-size:17px;
+  color:var(--wiki-content-heading-color)}
+.cat-card ul{list-style:none;margin:0;padding:0}
+.cat-card li{margin:5px 0}
+.cat-card a{color:var(--wiki-content-text-color);font-size:14px}
+.cat-card a:hover{color:var(--wiki-content-heading-color)}
+.cat-card .en{color:#777;font-size:11px;margin-left:6px}
+.page-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:4px 16px;max-width:1200px;margin:0 auto;padding:0 16px}
+.page-list a{color:var(--wiki-content-text-color);padding:3px 8px;border-radius:4px;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.page-list a:hover{background:#2b2b2b;color:var(--wiki-content-heading-color);text-decoration:none}
+.stats{text-align:center;color:#9a9a9a;font-size:13px;margin-bottom:16px}
+/* ---------- 分类索引页卡片 ---------- */
+.cat-card-grid{display:grid;grid-template-columns:repeat(6,1fr);
+  gap:12px;margin:14px 0 26px}
+@media (max-width:1440px){.cat-card-grid{grid-template-columns:repeat(5,1fr)}}
+@media (max-width:1200px){.cat-card-grid{grid-template-columns:repeat(4,1fr)}}
+@media (max-width:900px){.cat-card-grid{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:640px){.cat-card-grid{grid-template-columns:repeat(2,1fr)}}
+.cat-item{display:flex;flex-direction:column;align-items:center;text-align:center;
+  background:#1c1c1c;border:1px solid #333;border-radius:8px;padding:10px 8px 8px;
+  min-height:150px;transition:border-color .12s,transform .12s}
+.cat-item:hover{border-color:var(--wiki-accent-color);transform:translateY(-2px);text-decoration:none}
+.cat-thumb{width:100%;height:110px;display:flex;align-items:center;justify-content:center;
+  margin-bottom:8px;overflow:hidden}
+.cat-thumb img{max-width:100%;max-height:110px;object-fit:contain;transition:transform .15s}
+.cat-item:hover .cat-thumb img{transform:scale(1.05)}
+.cat-name{color:var(--wiki-content-heading-color);font-size:13px;line-height:1.3;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.cat-en{color:#888;font-size:10px;margin-top:2px;word-break:break-all}
+.cat-nothumb{justify-content:flex-start;padding-top:14px}
+.cat-nothumb::before{content:attr(data-initial);display:flex;align-items:center;justify-content:center;
+  width:56px;height:56px;border-radius:8px;background:#2b2b2b;color:var(--wiki-content-heading-color);
+  font-family:var(--font-heading);font-size:22px;margin-bottom:8px}
+.cat-filters{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 4px}
+.cat-filter{background:#1e1e1e;border:1px solid #333;color:#ccc;border-radius:14px;
+  padding:5px 14px;font-size:13px;cursor:pointer}
+.cat-filter:hover{border-color:var(--wiki-accent-color);color:var(--wiki-content-heading-color)}
+.cat-filter.active{background:var(--wiki-accent-color);border-color:var(--wiki-accent-color);
+  color:var(--wiki-accent-label-color,#000);font-weight:600}
+.cat-group-title{font-size:19px;font-family:var(--font-heading);
+  color:var(--wiki-content-heading-color);border-bottom:1px solid #3a3a3a;padding-bottom:6px;margin-top:10px}
+.no-result{color:#bbb;text-align:center;padding:30px 0}
+/* ---------- 首页搜索结果列表 ---------- */
+.search-tabs{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:0 0 14px}
+.search-list{display:flex;flex-direction:column;max-width:860px;margin:0 auto;padding:0 16px}
+.sr{display:flex;align-items:center;gap:12px;padding:10px 14px;border-bottom:1px solid #333;
+  background:#1c1c1c;border-radius:6px;margin-bottom:6px}
+.sr:hover{background:#242424;text-decoration:none}
+.sr-text{display:flex;flex-direction:column;flex:1;min-width:0}
+.sr-name{color:var(--wiki-content-heading-color);font-weight:600}
+.sr-en{color:#999;font-size:12px;word-break:break-all;margin-top:2px}
+.sr-cat{background:#2b2b2b;color:#bbb;border-radius:10px;padding:2px 10px;font-size:11px;flex-shrink:0}
+mark{background:var(--wiki-accent-color);color:#000;border-radius:2px;padding:0 2px}
+/* ---------- 词条页 infobox / TOC ---------- */
+.mw-parser-output .druid-main-image img{max-width:300px;margin:0 auto;display:block}
+.mw-parser-output .druid-row{padding:3px 0}
+.mw-parser-output .druid-label{width:34%}
+.mw-parser-output .druid-data{line-height:1.35}
+.mw-parser-output .druid-title{display:none}
+.mw-parser-output .toc{background:#1c1c1c;border:1px solid #333;border-radius:6px;
+  padding:8px 14px;display:inline-block}
+.mw-parser-output .toc ul{list-style:none;padding-left:14px}
+.mw-parser-output .toc .toctitle{font-weight:600;color:var(--wiki-content-heading-color)}
+/* ---------- 补丁日志折叠 ---------- */
+.patch-group{border:1px solid #333;border-radius:6px;margin:8px 0;background:#1c1c1c}
+.patch-head{display:flex;align-items:center;gap:10px;padding:10px 14px;cursor:pointer;
+  font-family:var(--font-heading);color:var(--wiki-content-heading-color);font-size:15px}
+.patch-head:hover{background:#232323}
+.patch-head .arrow{transition:transform .15s;color:#888}
+.patch-summary{color:#9a9a9a;font-size:12px;padding:4px 16px 8px;border-top:1px solid #2a2a2a}
+.patch-body{display:none;padding:4px 16px 14px;border-top:1px solid #333}
+.patch-open .patch-body{display:block}
+.patch-open .arrow{transform:rotate(90deg)}
+
+/* ============ wiki.gg 风格词条页规范 ============ */
+/* 1. 双栏布局 */
+.content{max-width:1280px;margin:0 auto}
+.mw-parser-output .druid-infobox{float:right;width:300px;margin:0 0 14px 18px;
+  background:#1e1e1e;border:2px solid var(--wiki-content-border-color);border-radius:6px;
+  padding:0;font-size:13px}
+/* 2. Infobox 内部 */
+.mw-parser-output .druid-title{display:block;background:#d4a017;color:#000;
+  font-weight:700;text-align:center;padding:6px 8px;font-size:15px;
+  font-family:var(--font-heading);border-radius:4px 4px 0 0}
+.mw-parser-output .druid-section-container{padding:6px 8px}
+.mw-parser-output .druid-main-image{text-align:center;margin-bottom:6px}
+.mw-parser-output .druid-main-image img{max-width:150px;max-height:180px;
+  width:auto;height:auto;object-fit:contain;display:inline-block}
+.mw-parser-output .druid-section{font-size:12px;font-weight:700;color:#f0c040;
+  background:#2a2a2a;padding:3px 6px;margin:8px -8px 4px;border-left:3px solid #d4a017}
+.mw-parser-output .druid-row{padding:3px 0;line-height:1.4}
+.mw-parser-output .druid-label{width:42%;color:#bbb;font-size:12px}
+.mw-parser-output .druid-data{font-size:12.5px;color:#fff}
+/* 小图标统一 16px */
+.mw-parser-output .faction-icon img,.mw-parser-output .DamageIcons img{width:16px;height:16px;
+  vertical-align:middle}
+/* 3. 结构解析表 / 攻击统计 */
+.mw-parser-output table.enemy-attack-stats,.mw-parser-output .wikitable{width:100%;
+  table-layout:fixed;border-collapse:collapse;margin:10px 0}
+.mw-parser-output table.enemy-attack-stats th,.mw-parser-output .wikitable th{
+  background:#2a2a2a;color:#f0c040;font-size:12px;padding:4px 6px}
+.mw-parser-output table.enemy-attack-stats td,.mw-parser-output .wikitable td{
+  font-size:12px;padding:4px 6px;word-wrap:break-word}
+.mw-parser-output table.enemy-attack-stats img,.mw-parser-output table img.thumbimage{
+  max-width:70px;max-height:70px;object-fit:contain}
+/* 4. 武器配置区 */
+.mw-parser-output .weapon-loadout{display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(380px,1fr));gap:12px;margin:10px 0}
+.mw-parser-output .weapon-loadout .weapon-card,.mw-parser-output .weapon-card{
+  border:1px solid #333;border-radius:8px;padding:10px 12px;background:#1c1c1c}
+.mw-parser-output .weapon-loadout img{max-width:180px;max-height:120px;object-fit:contain}
+.mw-parser-output .weapon-card img{max-width:180px;max-height:120px;object-fit:contain}
+.mw-parser-output .weapon-card table{width:100%;table-layout:fixed;font-size:12px}
+.mw-parser-output .weapon-card td{padding:2px 4px;line-height:1.3}
+/* 5. 导航模板 ranger / navbox：可折叠、金左边框、图标 20px、密集链接 */
+.mw-parser-output .ranger{display:block;border:1px solid #333;border-left:4px solid #d4a017;
+  background:#1c1c1c;border-radius:6px;margin:14px 0;font-size:13px}
+.mw-parser-output .ranger-title{background:#262626;padding:6px 10px;font-weight:700;
+  color:#f0c040;cursor:pointer;border-bottom:1px solid #333}
+.mw-parser-output .ranger-listbox{display:flex;flex-wrap:wrap;gap:4px 14px;
+  padding:8px 10px;line-height:1.6}
+.mw-parser-output .ranger-listbox a{margin:0}
+.mw-parser-output .ranger img{max-width:20px;height:auto;vertical-align:middle}
+.mw-parser-output .navbox{display:block;border:1px solid #333;border-left:4px solid #d4a017;
+  background:#1c1c1c;border-radius:6px;margin:14px 0;font-size:13px}
+.mw-parser-output .navbox img{max-width:20px;height:auto}
+.mw-parser-output .navbox-title{background:#262626;color:#f0c040}
+.mw-parser-output .catlinks{font-size:12px;color:#888}
+/* 6. 全局图片兜底 */
+.mw-parser-output img{max-width:100%;height:auto}
+.mw-parser-output .druid-infobox img{max-width:150px}
+.mw-parser-output table.enemy-attack-stats img{max-width:70px}
+.mw-parser-output .weapon-loadout img{max-width:180px}
+.mw-parser-output .navbox img,.mw-parser-output .ranger img{max-width:20px}
+/* 7. 颜色字体 */
+.page-title{color:#f0c040;font-size:26px;border-bottom:2px solid #d4a017}
+.mw-parser-output h2,.mw-parser-output h3{color:#d4a017;font-size:19px;font-weight:700}
+.mw-parser-output{color:#e0e0e0;font-size:14px;line-height:1.6}
+.mw-parser-output a{color:#ffd700}
+.mw-parser-output blockquote,.mw-parser-output .quote{border-left:4px solid #d4a017;
+  background:#1c1c1c}
+/* 引用/提示框 */
+.mw-parser-output .mpheading,.mw-parser-output .box{border-left:4px solid #d4a017;
+  background:#1c1c1c;padding:6px 10px;border-radius:4px}
+/* 8. 无横向滚动兜底 */
+html,body{overflow-x:hidden}
+
+/* ============ 全站规范（举一反三） ============ */
+/* 敌人结构表部位图 60px */
+.mw-parser-output table.enemy-attack-stats img,
+.mw-parser-output .anatomy-table img{max-width:60px;max-height:60px;object-fit:contain;
+  display:block;margin:0 auto}
+/* 武器配置区：双栏卡片；单卡片不撑满 */
+.mw-parser-output .weapons-loadout,
+.mw-parser-output .weapon-loadout{display:grid;grid-template-columns:1fr 1fr;gap:12px;
+  margin:10px 0}
+.mw-parser-output .weapons-loadout:has(.weapon-card:only-child),
+.mw-parser-output .weapon-loadout:has(.weapon-card:only-child){grid-template-columns:1fr;
+  max-width:500px}
+.mw-parser-output .weapon-card{background:#1a1a1a;border:1px solid #333;border-radius:8px;
+  padding:10px 12px}
+.mw-parser-output .weapon-card img{max-width:180px;max-height:120px;object-fit:contain;
+  display:block;margin:0 auto 8px}
+/* 变更历史 / 补丁表图标 ≤24px */
+.mw-parser-output .change-history-table img,
+.mw-parser-output .patch-table img{max-width:24px;max-height:24px;vertical-align:middle}
+/* 画廊：网格化，禁止垂直堆叠 */
+.mw-parser-output .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+  gap:8px;margin:10px 0}
+.mw-parser-output .gallerybox{width:auto;max-width:100%;background:#1a1a1a;border:1px solid #333;
+  border-radius:6px;padding:6px}
+.mw-parser-output .gallerybox img{max-width:100%;max-height:150px;object-fit:cover}
+.mw-parser-output .gallerytext{font-size:11px;color:#888;text-align:center}
+/* 武器统计表图标 ≤20px */
+.mw-parser-output .table-weapon-stats img,
+.mw-parser-output .attack-data-table-weapon img{max-width:20px;max-height:20px;
+  vertical-align:middle}
+/* 战略配备：infobox 图标 ≤80px */
+.mw-parser-output .druid-container-stratagem .druid-main-image img{max-width:80px;
+  max-height:80px}
+/* 战略代码箭头：限高不撑爆 */
+.mw-parser-output .Stratagemcodeicon img,
+.mw-parser-output .stratagem-code img{max-height:60px;max-width:100%;width:auto;
+  vertical-align:middle}
+/* 战略配备统计表图标 ≤24px */
+.mw-parser-output .statistics-table img,
+.mw-parser-output .damage-table img{max-width:24px;max-height:24px;vertical-align:middle}
+/* 总览页：武器双栏、战略配备表紧凑 */
+.mw-parser-output .gallery.mw-gallery-nolines{grid-template-columns:repeat(2,1fr)}
+.mw-parser-output .wikitable.sortable td{font-size:12px;padding:3px 5px}
+.mw-parser-output .Stratagemcodeicon img{max-height:20px}
+.mw-parser-output .Medalicon img,.mw-parser-output .Currencyicons img{width:20px;height:20px;
+  vertical-align:middle}
+/* 分类折叠区 */
+.mw-parser-output .stratagem-category{background:#1e1e1e;padding:6px 10px;font-weight:700;
+  color:#d4a017;margin-top:12px;cursor:pointer;border-left:3px solid #d4a017}
+/* 单位/说明文字 */
+.mw-parser-output .disclaimer,.mw-parser-output .mw-content-text small{font-size:12px;
+  color:#888}
+/* 1366 与 1920 均无横向滚动 */
+@media (max-width:1366px){.content{max-width:1200px}}
