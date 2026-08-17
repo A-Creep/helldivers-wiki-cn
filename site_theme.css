@@ -321,6 +321,7 @@ html,body{overflow-x:hidden}
 }
 .cat-name + .cat-en{margin-left:6px}
 .cat-card .en{margin-left:6px}
+.cat-name + .cat-en{margin-left:0;margin-top:3px;display:block}
 .mw-parser-output img[alt*="Automaton_Icon"],
 .mw-parser-output img[alt*="Terminid_Icon"],
 .mw-parser-output img[alt*="Illuminate_Icon"],

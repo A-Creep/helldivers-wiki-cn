@@ -203,10 +203,10 @@ def apply_file(path):
     dt = re.search(r'(<div class="druid-title">).*?(</div>)', html, re.S)
     saved = dt.group(0) if dt else None
     if saved:
-        html = html.replace(saved, "__DRUID_TITLE_PLACEHOLDER__", 1)
+        html = html.replace(saved, "@@DT@@", 1)
     html = TEXT_RE.sub(lambda m: repl_segment(m.group(1)), html)
     if saved:
-        html = html.replace("__DRUID_TITLE_PLACEHOLDER__", saved, 1)
+        html = html.replace("@@DT@@", saved, 1)
     with open(path, "w", encoding="utf-8") as fp:
         fp.write(html)
 
