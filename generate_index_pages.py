@@ -32,8 +32,14 @@ try:
     for line in open(os.path.join(SITE, "zh_cache.jsonl"), encoding="utf-8"):
         it = json.loads(line)
         h = it["h"]
-        for m in re.finditer(r'<img[^>]+src="([^"]+)"', h):
-            src = m.group(1)
+        candidates = []
+        dm = re.search(
+            r'<div class="druid-main-image"[^>]*>[\s\S]*?<img[^>]+src="([^"]+)"',
+            h)
+        if dm:
+            candidates.append(dm.group(1))
+        candidates += [m.group(1) for m in re.finditer(r'<img[^>]+src="([^"]+)"', h)]
+        for src in candidates:
             if "/images/" in src:
                 path = urllib.parse.urlparse(src).path
                 base = urllib.parse.unquote(os.path.basename(path))
