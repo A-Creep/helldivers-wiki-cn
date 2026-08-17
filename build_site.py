@@ -210,6 +210,7 @@ def build_title_map(keep):
         "StA-52 Assault Rifle": "StA-52突击步枪",
         "40-K Meltagun": "40-K熔体枪",
         "A/AC-8 Autocannon Sentry": "A/AC-8机炮哨戒炮",
+        "FAF-14 Spear": "FAF-14飞矛",
         "Support Weapons": "支援武器",
         "Weapons": "武器",
         "Stratagems": "战略配备",
@@ -396,6 +397,18 @@ class SiteBuilder:
             "", html, flags=re.I)
         html = re.sub(r"Syntax Error\s*", "", html, flags=re.I)
         html = re.sub(r"(致命|庞大|小|中型|大型)\?", r"\1", html)
+        html = re.sub(r"<sup>\s*\?\s*</sup>", "", html, flags=re.I)
+        # 删除空表格（只有表头、无数据单元格）
+        def drop_empty_table(m):
+            block = m.group(0)
+            return "" if "<td" not in block else block
+        html = re.sub(
+            r"<table[^>]*>(?:(?!<table)[\s\S])*?</table>",
+            drop_empty_table, html, flags=re.I)
+        # 删除消歧义提示（This article is about / This 条款 is about ... For the ... see）
+        html = re.sub(
+            r"<(i|p|td|div)[^>]*>[\s\S]*?(?:This\s+条款\s+is\s+about|This\s+article\s+is\s+about)"
+            r"[\s\S]*?</\1>", "", html, flags=re.I)
         html = re.sub(r'\bhref=(["\'])index\.html\1', f'href="{index_rel}"', html)
         for i, u in enumerate(urls):
             html = html.replace(f"__IMG_{i}__", f"../images/{local_img(u)}")

@@ -316,3 +316,8 @@ html,body{overflow-x:hidden}
   color:#888}
 /* 1366 与 1920 均无横向滚动 */
 @media (max-width:1366px){.content{max-width:1200px}}
+@media (max-width:768px){
+  .mw-parser-output .druid-infobox{float:none;width:100%;margin:0 0 16px}
+}
+.cat-name + .cat-en{margin-left:6px}
+.cat-card .en{margin-left:6px}

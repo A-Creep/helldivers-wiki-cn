@@ -147,6 +147,8 @@ TERMS = [
     ("Overview", "概述"), ("Usage", "使用"), ("Tips", "技巧"),
     ("Example", "示例"), ("Gallery", "图库"), ("Footnotes", "脚注"),
     ("Change History", "变更历史"),
+    ("Overflow Cap", "溢出上限"), ("Small", "小型"), ("Lethal", "致命"),
+    ("Tactical Information", "战术信息"), ("Weapons Loadout", "武器配置"),
 ]
 
 # 从 glossary 补充短词条（仅 1-3 个英文词、中文 ≤ 6 字，避免误替换句子）
@@ -185,6 +187,7 @@ def repl_segment(seg):
             continue
         pat = re.compile(r"(?<![A-Za-z])" + re.escape(en) + r"(?![A-Za-z])", re.I)
         seg = pat.sub(zh, seg)
+    seg = re.sub(r"([\u4e00-\u9fff])\?", r"\1", seg)
     return seg
 
 
