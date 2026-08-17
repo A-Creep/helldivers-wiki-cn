@@ -19,6 +19,9 @@ import json
 import os
 import re
 import sqlite3
+import sys
+
+sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 SITE = os.path.join(ROOT, "output_zh", "site_final")
@@ -80,7 +83,8 @@ def main():
                              html):
             txt = re.sub(r"<[^>]+>", "", m.group(1))
             txt = re.sub(r"\s+", " ", txt).strip()
-            if txt and not re.search(r"首页|主页|返回首页|绝地潜兵2 离线百科", txt):
+            if txt and not re.search(
+                    r"首页|主页|返回首页|绝地潜兵2 中文百科|绝地潜兵2 离线百科", txt):
                 issues.append({
                     "severity": "low", "page": title, "type": "home_link",
                     "detail": f"跳主页链接文案: {txt[:40]}"})

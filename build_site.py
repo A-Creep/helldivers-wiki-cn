@@ -583,12 +583,12 @@ class SiteBuilder:
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{ed} - 绝地潜兵2 离线百科</title>
+<title>{ed} - 绝地潜兵2 中文百科</title>
 <link rel="stylesheet" href="{css_href}">
 </head>
 <body>
 <header class="site-header">
-  <a class="brand" href="{index_href}">🪖 绝地潜兵2 离线百科</a>
+  <a class="brand" href="{index_href}">🪖 绝地潜兵2 中文百科</a>
   <div class="header-right">
     <input id="q" class="search-input" type="search" placeholder="搜索中英文词条…"
            onkeydown="if(event.key==='Enter'){{location='{index_href}?q='+encodeURIComponent(this.value);}}">
@@ -600,7 +600,7 @@ class SiteBuilder:
   <h1 class="page-title">{ed}</h1>
   <div class="mw-parser-output">{body}</div>
 </main>
-<footer class="site-footer">离线汉化版 · 内容版权归 The Helldivers Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
+<footer class="site-footer">离线中文版 · 内容版权归 The Helldivers Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
 </body>
 </html>
 """
@@ -766,19 +766,19 @@ class SiteBuilder:
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>绝地潜兵2 离线百科（汉化版）</title>
+<title>绝地潜兵2 中文百科</title>
 <link rel="stylesheet" href="theme.css">
 </head>
 <body>
 <header class="site-header">
-  <span class="brand">🪖 绝地潜兵2 离线百科</span>
+  <span class="brand">🪖 绝地潜兵2 中文百科</span>
   <div class="header-right">
     <a class="btn" href="patch_notes.html">📜 更新日志</a>
     <a class="btn" href="index.html">首页</a>
   </div>
 </header>
 <main>
-  <h1 class="home-title">绝地潜兵2 离线百科</h1>
+  <h1 class="home-title">绝地潜兵2 中文百科</h1>
   <p class="home-sub">汉化版 · 离线可查 · 共 {n} 个词条 · 支持中英文搜索</p>
   <input id="q" class="home-search" type="search"
          placeholder="搜索：强袭虫 / Bile Titan / SG-225 / 战略配备…" autofocus>
@@ -788,7 +788,7 @@ class SiteBuilder:
   <div class="search-list" id="list" style="display:none"></div>
   <div class="no-result" id="noresult" style="display:none">未找到词条，试试英文名或部分关键词</div>
 </main>
-<footer class="site-footer">离线汉化版 · 内容版权归 The Helldivers Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
+<footer class="site-footer">离线中文版 · 内容版权归 The Helldivers Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
 <script>
 const PAGES = {data};
 const list = document.getElementById('list');

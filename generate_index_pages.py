@@ -123,12 +123,12 @@ def render(groups, title, desc=""):
 <html lang="zh-CN" class="theme-helldiver view-dark">
 <head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{esc} - 绝地潜兵2 离线百科</title>
+<title>{esc} - 绝地潜兵2 中文百科</title>
 <link rel="stylesheet" href="../theme.css">
 </head>
 <body>
 <header class="site-header">
-  <a class="brand" href="../index.html">🪖 绝地潜兵2 离线百科</a>
+  <a class="brand" href="../index.html">🪖 绝地潜兵2 中文百科</a>
   <div class="header-right">
     <input id="q" class="search-input" type="search" placeholder="搜索中英文词条…"
            onkeydown="if(event.key==='Enter'){{location='../index.html?q='+encodeURIComponent(this.value);}}">
@@ -158,7 +158,7 @@ def render(groups, title, desc=""):
   btns.forEach(b => b.addEventListener('click', () => apply(b.dataset.target)));
 }})();
 </script>
-<footer class="site-footer">离线汉化版 · 内容版权归 The Helldivers Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
+<footer class="site-footer">离线中文版 · 内容版权归 The Helldivers Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
 </body>
 </html>
 """
