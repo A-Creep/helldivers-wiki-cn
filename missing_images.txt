@@ -72,6 +72,7 @@
 240px-GS-11_Democracy%27s_Deputy_Helmet_Render.webp
 256px-N-EAT%2C_Aiming%2CThird-Person.webp
 256px-N-EAT%2C_Aiming%2C_First-Person.webp
+300px-Hydrobius_Planet_Icon_Void.png
 320px-BurningConvoy%2BMap.webp
 512px-City_Fighter%27s_Resolve_Cape_Icon.webp
 512px-City_Fighter%27s_Resolve_Player_Card.webp
@@ -116,6 +117,12 @@
 51px-Raider%27s_Cheer_Emote_Icon.png
 51px-Roll_%27Em_Victory_Pose_Icon.png
 51px-You%27re_Next_Victory_Pose_Icon.png
+534px-Hydrobius_Planet_Landscape_Void_Flat_Day.png
+534px-Hydrobius_Planet_Landscape_Void_Flat_Night.png
+534px-Hydrobius_Planet_Landscape_Void_Mountains_Day.png
+534px-Hydrobius_Planet_Landscape_Void_Springs_Night.png
+534px-Hydrobius_Planet_Void_Sky_Day.png
+534px-Hydrobius_Planet_Void_Sky_Night.png
 534px-Terminid_Control_System%2B_ACT_Extraction_site.webp
 534px-Terminid_Control_System%2B_Dispersing.webp
 534px-Terminid_Control_System%2B_Grand_Errant.webp
@@ -129,6 +136,7 @@
 600px-Castellan%27s_Creed_Legendary_Warbond_Cover.webp
 600px-Freedom%27s_Flame_Premium_Warbond_Cover.webp
 600px-SG-225SP_Breaker_Spray%26Pray_Primary_Render.webp
+627px-Hydrobius_Planet_Orbit_Void.png
 683px-Angel%27s_Venture_Planet_Header.webp
 91px-SG-225SP_Breaker_Spray%26Pray_Primary_Render.png
 96px-Level_190_Ranger%2C_Eagle_Class_Rank_Icon.png
@@ -152,11 +160,16 @@ Freedom%27s_Flame_Premium_Warbond_Banner.webp
 Freedom%27s_Tapestry_Player_Card_Icon.webp
 GS-11_Democracy%27s_Deputy_Armor_Render.webp
 GS-11_Democracy%27s_Deputy_Helmet_Render.webp
+Galactic_War_Campaigns_Header_Advancement.png
 Ivory_Conscript_Cannon_%28Icorp%29.png
 Liberty%27s_Herald_Player_Card_Icon.webp
 Miranda%27s_Legacy_Player_Card_Icon.webp
 Mother_Eagle%27s_Wings_Player_Card_Icon.webp
+PH-9_Predator_Armor_Render.png
+PH-9_Predator_Helmet_Render.png
 Raider%27s_Cheer_Emote_Icon.png
 Roll_%27Em_Victory_Pose_Icon.png
 SG-225SP_Breaker_Spray%26Pray_Primary_Render.webp
+Senge_23_Planet_Icon_Void.png
+Senge_23_Planet_Landscape_Void_Night.png
 You%27re_Next_Victory_Pose_Icon.png
