@@ -1,5 +1,13 @@
 # 汉化进度（自动更新）
 
+## 2026-08-18 任务 E：Kimi 第五轮复检 → 引导句残留收尾
+- **复检结果**：分类页/图集删除/术语表字段/链接健康全部 ✅；剩余问题为正文引导句半翻译残留（"the X 是"、"the X is a 中文"、"A X is" 等模式）。
+- **修复（`apply_zh_terms.py`，基于 D 增量后的最新产物）**：
+  - 通用规则：`the <b>X</b> 是`（111 页）、`the <b>X</b> is a/an 中文`（59 页）、`A <b>X</b> is`、`the X 在……的第N页解锁`（7 页）。
+  - `LEAD_PAGE_FIXES` 精确映射 17 页完整中文引导句：Hunter/Hulk 系、Drum Magazine、Hangar、Crashed Ship、Seismic Probe、FAF-14、EAT-17、APW-1、GR-8、MG-206、DSS、GATER、Bug Breach/Nest、Robotics Workshop。
+- **验收**：1143 页高危 0/中危 0/低危 0；坏页 0；链接 176,682 全绿；EXE 重新打包冒烟通过；镜像已推 `main` **c3fc0fe**（仅站点内容，未动 D 的文档文件）。
+- 说明：D 的 PROGRESS/README/指南/sync_update.py 由 D 维护；E 在 D 推送 689b11b 之后继续推送了 c3fc0fe，镜像仓库当前 main = c3fc0fe。
+
 ## 2026-08-18 任务 D：打包发布（自动执行，后续沿用）
 - EXE：`dist\Helldivers2WikiCN.exe` 约 463MB（PyInstaller 96s；基线 1143 页 0 高危，未重复 GUI 冒烟，沿用 E 已验证的打包流程）
 - 镜像推送：main **3667637 → 689b11b**（站点 1143 页 + 文档快照 + sync_update.py）
@@ -16,6 +24,7 @@
 - 会话管理：默认每次新开会话，成功后自动删除 Kimi 侧对话（保留 `--keep-conversation` 选项）
 - 给 Kimi 的镜像站链接必须完整 URL（`https://a-creep.github.io/helldivers-wiki-cn/...`），kimi_recheck3/4.txt 已改好
 - 其他任务可直接放心调用 `kimi_agent.py` / `kimi_help.py`
+- 已知坑：`kimi_agent.py --json` 在 Windows 控制台直接输出时，若回答含 emoji（如 ⚠️）会因 GBK 编码崩溃（回答已取回但未落盘）；规避：用 `--output 文件.json` 让脚本直接写文件
 
 ## 2026-08-18 任务 E：站点渲染质量巡检（全站修复轮）
 - **删除图集/媒体章节**：词条页"图集 / Gallery / Media"整节图库（h2/h3 级，含 gallery 网格）全站删除，保留"变体"小图库；删除边界不越过 `</main>`（修复过 Durgen_Battles 尾标签被吞的截断问题）。逻辑写入 `build_site.py` 与 `apply_zh_terms.py` 双保险。
