@@ -54,14 +54,14 @@
 <div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ 警告: Applying custom Launch Commands can introduce unforeseen instability, graphical anomalies, or launch 崩溃. Read the descriptions carefully and remove any parameters if you encounter issues. ⚠</b></div>
 <h2><span class="mw-headline" id="Instructions">Instructions</span></h2>
 <div class="floatright"><img alt="SteamLaunchCommands.png" src="../images/400px-SteamLaunchCommands.png" decoding="async" loading="lazy" width="400" height="286" data-file-width="1048" data-file-height="750" /></div>
-<p>Please note that these launch options are strictly game-specific; the parameters you set for 绝地潜兵 2 will not affect any other titles in your Steam 图书馆. However, it is crucial to remember that launch commands persist in the Steam Cloud even if you 卸载 the game. If you perform a fresh installation in the future, these arguments will still be active and must be 已移除 manually if they are no longer needed.
+<p>Please note that these launch options are strictly game-specific; the parameters you set for 绝地潜兵 2 will not affect any other titles in your Steam 图书馆. However, it is crucial to remember that launch commands persist in the Steam Cloud even if you 卸载 the game. If you perform a fresh installation in the future, these arguments will still be active and must be 已移除 manually if they are 否 longer needed.
 </p>
 <ol><li>Open your <b>Steam 图书馆</b>.</li>
 <li>Right-Click on "绝地潜兵 2".</li>
 <li>Select "Properties..." from the 掉落-down menu.</li>
 <li>You are presented with the "基本信息" tab. On the lower part of this window there's a "Launch Options" field.</li>
 <li>Enter the launch 指挥 you wish to apply (分离 多个 commands with a single space).</li>
-<li>Close the window to save the changes and launch the game.</li></ol>
+<li>Close the window to save the 变更 and launch the game.</li></ol>
 <div style="clear:both;"></div>
 <h2><span class="mw-headline" id="General_Launch_Commands">基本信息 Launch Commands</span></h2>
 <table style="width: 100%; max-width: 950px; border-collapse: collapse; font-size: 0.95em; border-bottom: 2px solid #ccc;">
@@ -106,14 +106,14 @@
 <tr>
 <td style="vertical-align: top; padding: 12px 4px;"><code>--toaster_mode</code>
 </td>
-<td style="padding: 12px 4px; line-height: 1.4;">Downgrades graphics to attain more FPS. On Linux this may just degrade graphics with no 受益 in performance.
+<td style="padding: 12px 4px; line-height: 1.4;">Downgrades graphics to attain more FPS. On Linux this may just degrade graphics with 否 受益 in performance.
 </td></tr></tbody></table>
 <h2><span class="mw-headline" id="Linux_Launch_Commands">Linux Launch Commands</span></h2>
 <p>For 基本信息 help with Linux specific problems, please check Linux 故障排除.
-</p><p>Linux users 通常 have access to a much wider array of launch parameters to 控制 how the game interacts with <b>Proton</b> or <b>Gamescope</b>. Please be aware that these are <b>Linux</b>-specific 环境 variables and do not have any 效果 on Windows because 绝地潜兵 2 runs natively on Windows. On Linux you'll have access to Proton, VKD3D, DXVK, etc. which Windows has no use for.
+</p><p>Linux users 通常 have access to a much wider array of launch parameters to 控制 how the game interacts with <b>Proton</b> or <b>Gamescope</b>. Please be aware that these are <b>Linux</b>-specific 环境 variables and do not have any 效果 on Windows because 绝地潜兵 2 runs natively on Windows. On Linux you'll have access to Proton, VKD3D, DXVK, etc. which Windows has 否 use for.
 </p>
 <h3><span class="mw-headline" id="Proton">Proton</span></h3>
-<p>Proton<sup id="cite&#95;ref-1" class="reference"><a href="#cite_note-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup> is a compatibility layer developed by Valve and is based on WINE. Unlike 标准 Windows arguments, Linux launch commands often act as "环境 variables" that dictate how Windows-native DirectX instructions are translated into Vulkan API calls that Linux can understand and 处决. When configured correctly, these variables can 改进 performance, fix 稳定性 issues and more. However it is recommended that you only apply them if your specific hardware configuration requires a fix.
+<p>Proton<sup id="cite&#95;ref-1" class="reference"><a href="#cite_note-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup> is a compatibility layer developed by Valve and is based on WINE. Unlike 标准 Windows arguments, Linux launch commands often act as "环境 variables" that dictate how Windows-native DirectX instructions are translated into Vulkan API calls that Linux can understand and 处决. When configured correctly, these variables can 改进 performance, 修复 稳定性 issues and more. However it is recommended that you only apply them if your specific hardware configuration requires a 修复.
 </p>
 <h4><span class="mw-headline" id="Syntax">Syntax</span></h4>
 <p>Linux launch options can look intimidating because they interact with 多个 软件 layers and system libraries simultaneously. It's 重要 to note that there's a bit of syntax, however in most cases you don't need to worry about it and if it's not done correctly, you might see that something isn't working and needs to be re-arranged.
@@ -125,7 +125,7 @@
 <li><code>DXVK_*</code>: Controls the 翻译 of DirectX 9, 10, and 11 hooks into Vulkan.</li>
 <li><code>VKD3D_*</code>: Controls the 翻译 of native DirectX 12 hooks into Vulkan.</li>
 <li><code>RADV_*</code>: Configures the open-来源 AMD Vulkan driver within the Mesa 管道.</li>
-<li><code>DRI_*</code>: Manages Direct Rendering 基础设施 parameters (e.g., forcing a secondary laptop GPU).</li>
+<li><code>DRI_*</code>: Manages 正面 Rendering 基础设施 parameters (e.g., forcing a secondary laptop GPU).</li>
 <li><i>示例:</i> <code>PROTON_LOG=1 DRI_PRIME=1</code> works exactly the same as <code>DRI_PRIME=1 PROTON_LOG=1</code>.</li></ul></li>
 <li><b>System Wrappers (The Tools):</b> Wrappers are standalone 优化 or monitoring programs, such as Feral's <code>gamemoderun</code> or the hardware overlay <code>mangohud</code>. They must <b>总是</b> be placed after the 环境 variables but before the execution placeholder.
 <ul><li><i>示例:</i> <code>PROTON_LOG=1 mangohud %指挥%</code></li></ul></li>
@@ -184,7 +184,7 @@
 <tr>
 <td style="vertical-align: top; padding: 12px 4px;"><code>DXVK_FRAME_RATE=180</code>
 </td>
-<td style="padding: 12px 4px; line-height: 1.4;">This manual setting overrides the games setting for 最大 FPS. In the event of 庞大 stuttering with no discernable cause it might be able to help. Please note that it overrides any upper limits that otherwise might be existent; it does not generate additional frames.
+<td style="padding: 12px 4px; line-height: 1.4;">This manual setting overrides the games setting for 最大 FPS. In the event of 庞大 stuttering with 否 discernable cause it might be able to help. Please note that it overrides any upper limits that otherwise might be existent; it does not generate additional frames.
 </td></tr>
 <tr style="border-bottom: 2px solid #333;">
 <th colspan="2" style="padding: 20px 4px 6px 4px; text-align: left; font-size: 0.95em; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">VKD3D Variables
@@ -229,11 +229,11 @@
 <td style="padding: 12px 4px; line-height: 1.4;">Deactivates the hierarchical Z-Buffer for the AMD Vulkan driver, can help 解决 issues with flickering shadows or other rendering problems.
 </td></tr></tbody></table>
 <h3><span class="mw-headline" id="Gamescope">Gamescope</span></h3>
-<p><b>Gamescope</b><sup id="cite&#95;ref-5" class="reference"><a href="#cite_note-5"><span class="cite-bracket">&#91;</span>5<span class="cite-bracket">&#93;</span></a></sup> is a specialized micro-compositor and window manager developed by Valve for SteamOS. In simple terms, it runs games inside an isolated, high-performance "kiosk mode" sandbox. This sandboxing bypasses your desktop 环境's 重型 window constraints, giving you direct, lower-latency access to features like hardware 分辨率 scaling, custom spatial upscaling (FSR), and strict 刷新 rate limiting.
+<p><b>Gamescope</b><sup id="cite&#95;ref-5" class="reference"><a href="#cite_note-5"><span class="cite-bracket">&#91;</span>5<span class="cite-bracket">&#93;</span></a></sup> is a specialized micro-compositor and window manager developed by Valve for SteamOS. In simple terms, it runs games inside an isolated, high-performance "kiosk mode" sandbox. This sandboxing bypasses your desktop 环境's 重型 window constraints, giving you 正面, lower-latency access to features like hardware 分辨率 scaling, custom spatial upscaling (FSR), and strict 刷新 rate limiting.
 </p><p><b>重要:</b> If you are playing 绝地潜兵 2 on a Steam Deck in <i>Gaming Mode</i>, Gamescope automatically runs in the background by 默认.<sup id="cite&#95;ref-6" class="reference"><a href="#cite_note-6"><span class="cite-bracket">&#91;</span>6<span class="cite-bracket">&#93;</span></a></sup> This means Steam Deck users do not explicitly need to 类型 in the <code>gamescope</code> launch 指挥 unless they want to override the 默认 行为.
 </p>
 <div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ Please be aware: If you do not set a 分辨率, Gamescope will 默认 to 1280 x 720 with an unlimited frame cap. ⚠</b></div>
-<p>It is also technically possible to upscale images using Gamescope. For 示例 <code>gamescope -w 1920 -h 1080 -W 3840 -H 2160 -F nis -- %指挥%</code> would Upscale a 1080p internal 分辨率 to a 4K 分辨率 using NVIDIA NIS. Please be aware that the game itself already has Upscaling options, so setting this on top of the in-game settings might yield no 效果 or cause additional problems.
+<p>It is also technically possible to upscale images using Gamescope. For 示例 <code>gamescope -w 1920 -h 1080 -W 3840 -H 2160 -F nis -- %指挥%</code> would Upscale a 1080p internal 分辨率 to a 4K 分辨率 using NVIDIA NIS. Please be aware that the game itself already has Upscaling options, so setting this on top of the in-game settings might yield 否 效果 or cause additional problems.
 </p><p><b>Please Note:</b> Gamescope 使用次数 FSR 1 and DLSS 1.0.3 which do not have any FrameGen capabilities.
 </p>
 <h4><span id="Requirements_.26_Syntax"></span><span class="mw-headline" id="Requirements_&amp;_Syntax">要求 &amp; Syntax</span></h4>
@@ -364,7 +364,7 @@
 <li id="cite&#95;note-7"><span class="mw-cite-backlink"><a href="#cite_ref-7">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://wiki.archlinux.org/title/Gamescope">ArchLinux - Gamescope</a></span>
 </li>
 </ol></div>
-<div role="navigation" aria-label="Navbox" class="ranger-navbox navigation-not-searchable striped-even mw-collapsible"><div class="ranger-title"><div class="mw-collapsible-toggle-placeholder"></div><span class="ranger-meta"><span class="nv nv-view"><span title="View or edit this template">View or edit this template</span></span></span><div class="ranger-title-text"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div></div><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:4"><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Tools</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist"><div class="ranger-list">
+<div role="navigation" aria-label="Navbox" class="ranger-navbox navigation-not-searchable striped-even mw-collapsible"><div class="ranger-title"><div class="mw-collapsible-toggle-placeholder"></div></span></span><div class="ranger-title-text"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div></div><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:4"><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Tools</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist"><div class="ranger-list">
 <ul><li><a href="Hellbomb_Script.html" title="Hellbomb Script">Hellbomb Script</a></li>
 <li><a class="mw-selflink selflink">Steam Launch Commands</a></li></ul>
 </div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Platform</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist"><div class="ranger-list">

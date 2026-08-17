@@ -50,14 +50,14 @@
 </p>
 <h2><span id="Why_Should_I_Clear_My_Shader_Cache.3F"></span><span class="mw-headline" id="Why_Should_I_Clear_My_Shader_Cache?">Why Should I Clear My Shader Cache?</span></h2>
 <p>Over time, your cached shader files can become outdated or corrupted, leading to performance drops, 崩溃, or missing/broken visual 效果 (such as purple 问题 marks or 崩溃 when using certain 武器 or 战略配备).
-</p><p>This is especially true after a new <a href="Game_Version.html" title="Game Version">Game 更新</a> or GPU driver 刷新 when the older cached files no longer match the new 软件 code. Therefore it is recommended to delete the cached files after a game 补丁 or driver 更新.
+</p><p>This is especially true after a new <a href="Game_Version.html" title="Game Version">Game 更新</a> or GPU driver 刷新 when the older cached files 否 longer match the new 软件 code. Therefore it is recommended to delete the cached files after a game 补丁 or driver 更新.
 </p><p>Corrupted shaders can cause a variety of problems, including:
 </p>
 <ul><li><b>Game 崩溃:</b> This can be either a crash to the desktop while playing or the game refusing to open at all and crashing upon trying to load into the 超级驱逐舰.</li>
 <li><b>Performance drops:</b> Unexplained stuttering or a loss of performance.</li>
 <li><b>Missing assets:</b> Missing assets are often depicted as purple 问题 marks in place of actual models.</li></ul>
 <h2><span id="Is_Deleting_The_Shader_Cache_Safe.3F"></span><span class="mw-headline" id="Is_Deleting_The_Shader_Cache_Safe?">Is Deleting The Shader Cache Safe?</span></h2>
-<p>Yes, this 流程 is entirely safe. Deleting the cached files has no influence on your character 流程, custom keybinds or other aspects of the game. Upon the 下一个 launch of 绝地潜兵 2, the engine will automatically resume compiling the files from scratch again and rebuild a clean cache.
+<p>是, this 流程 is entirely safe. Deleting the cached files has 否 influence on your character 流程, custom keybinds or other aspects of the game. Upon the 下一个 launch of 绝地潜兵 2, the engine will automatically resume compiling the files from scratch again and rebuild a clean cache.
 </p><p>It is 重要 to note that the 持续时间 of this initial compilation phase does depend on your hardware. Lower-end systems might 经验值 a <i>black screen</i> for extended periods of time during the 下一个 startup. Should this be the case for you, please be patient and allow the engine a few 分钟 to finish rebuilding the cache.
 </p><p><b>ATTENTION:</b> <b>从不</b> set your shader cache folder to "read only". Doing so prevents the game from saving or updating pre-compiled files and forces it to recalculate every single shader asset in real time during 玩法, resulting in stuttering and possibly out-of-memory 崩溃.<sup id="cite&#95;ref-nvidia&#95;shader&#95;cache&#95;1-1" class="reference"><a href="#cite_note-nvidia_shader_cache-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup>
 </p>
@@ -131,7 +131,7 @@ Community Driven Protons are:
 <li>Open the "NVIDIA Corporation" 目录.</li>
 <li>Open the "NV_Cache" folder and delete all its 目录.</li>
 <li>Reopen the NVIDIA 控制 Panel and set "Shader Cache" back to "Driver 默认". Larger sizes can provide 最佳 performance with larger game libraries.</li>
-<li>Click "Apply" to save the changes.</li>
+<li>Click "Apply" to save the 变更.</li>
 <li>重新开始 your PC once more to 完成 the 流程.</li></ol>
 <p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Linux_/_Steam_Deck-0" aria-labelledby="Linux_/_Steam_Deck-0-label"><p>Please note that Linux has 几个 caches for shaders to be stored - this also depends on your 分布 or if you are using a Steam Deck. You might need to empty 多个 locations. 绝地潜兵 folders will always have the ID number <code>553850</code>.
 </p><p>If you are unable to see them, please enable "Show Hidden Files". On most distributions you need to press <code>CTRL + H</code> to enable this in your file 浏览器.
@@ -162,7 +162,7 @@ Community Driven Protons are:
 </p>
 <ul><li>For Mesa it's located in <code>/home/$USER/.cache/mesa_shader_cache/</code></li>
 <li>NVIDIA’s proprietary drivers have their own cache in <code>~/.nv/GLCache/</code> or <code>~/.cache/nvidia/GLCache/</code><p class="mw-empty-elt"></p></li></ul></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Xbox_Series-0" aria-labelledby="Xbox_Series-0-label"><p class="mw-empty-elt">
-</p><ol><li>Press and hold the "Xbox button" on the front of the 控制台 for roughly 10 秒 until it shuts off completely.</li>
+</p><ol><li>Press and hold the "Xbox button" on the 正面 of the 控制台 for roughly 10 秒 until it shuts off completely.</li>
 <li>Unplug the power cable from the back.</li>
 <li>Press and hold the power button a few times while unplugged to fully 放电 the internal capacitors.</li>
 <li>Wait 1 minute, reconnect the cable, and turn the 控制台 back on.</li></ol>
@@ -188,7 +188,7 @@ Community Driven Protons are:
 <li id="cite&#95;note-5"><span class="mw-cite-backlink"><a href="#cite_ref-5">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://nvidia.custhelp.com/app/answers/detail/a_id/5735/">NVIDIA DX11 shader cache clear instructions</a> - Instructions from NVIDIA on how to clear the DX11 shader cache</span>
 </li>
 </ol></div>
-<div role="navigation" aria-label="Navbox" class="ranger-navbox navigation-not-searchable striped-even mw-collapsible"><div class="ranger-title"><div class="mw-collapsible-toggle-placeholder"></div><span class="ranger-meta"><span class="nv nv-view"><span title="View or edit this template">View or edit this template</span></span></span><div class="ranger-title-text"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div></div><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:4"><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Tools</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist"><div class="ranger-list">
+<div role="navigation" aria-label="Navbox" class="ranger-navbox navigation-not-searchable striped-even mw-collapsible"><div class="ranger-title"><div class="mw-collapsible-toggle-placeholder"></div></span></span><div class="ranger-title-text"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div></div><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:4"><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Tools</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist"><div class="ranger-list">
 <ul><li><a href="Hellbomb_Script.html" title="Hellbomb Script">Hellbomb Script</a></li>
 <li><a href="Steam_Launch_Commands.html" title="Steam Launch Commands">Steam Launch Commands</a></li></ul>
 </div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Platform</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist"><div class="ranger-list">

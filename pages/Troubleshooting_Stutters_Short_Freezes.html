@@ -56,7 +56,7 @@
 If this resolves the issue:
 </p>
 <ul><li>Check your device 制造商’s 网站 for <b>driver updates</b>.</li>
-<li>If no updated drivers are available, you may need to use a non-USB audio device instead until an updated driver is available.</li></ul>
+<li>If 否 updated drivers are available, you may need to use a non-USB audio device instead until an updated driver is available.</li></ul>
 <h2><span class="mw-headline" id="Modify_Audio_Engine_Settings">Modify Audio Engine Settings</span></h2>
 <p>Increasing the memory buffer size allows more audio data to be preloaded, reducing stutters and crackling from audio starvation.
 </p>
@@ -81,8 +81,8 @@ If this resolves the issue:
 </p><p>Player investigations have found that for some users <b>GameInput</b> can lead to degraded performance especially when using a controller. Disabling <b>GameInput</b> has been shown to 解决 a large majority of these issues for users with it still enabled.
 </p>
 <h3><span id="Is_Disabling_GameInput_Safe.3F"></span><span class="mw-headline" id="Is_Disabling_GameInput_Safe?">Is Disabling GameInput Safe?</span></h3>
-<p>Yes, disabling <b>GameInput</b> is 通常 safe for most users. Very few applications or games rely exclusively on <b>GameInput</b> for controller 支援; most modern games provide fallback input 操控性 mechanisms.  
-</p><p>If you disable <b>GameInput</b> and encounter issues with any other game or 应用程序, the change is fully reversible. Re-enabling <b>GameInput</b> restores normal functionality without impacting your system or installed 软件. Instructions to do so are provided along-side the instructions to disable <b>GameInput</b>.
+<p>是, disabling <b>GameInput</b> is 通常 safe for most users. Very few applications or games rely exclusively on <b>GameInput</b> for controller 支援; most modern games provide fallback input 操控性 mechanisms.  
+</p><p>If you disable <b>GameInput</b> and encounter issues with any other game or 应用程序, the change is fully reversible. Re-enabling <b>GameInput</b> restores normal functionality without impacting your system or installed 软件. Instructions to do so are provided along-侧面 the instructions to disable <b>GameInput</b>.
 </p>
 <h3><span class="mw-headline" id="Reinstalling_GameInput">Reinstalling GameInput</span></h3>
 <p>It is recommended to first try reinstalling <b>GameInput</b> before resorting to disabling it. The quickest and easiest method to do this would be the <a href="Hellbomb_Script.html" title="Hellbomb Script">Hellbomb Script</a>. If you want to do it manually, please follow the steps below:<br />
@@ -92,7 +92,7 @@ If this resolves the issue:
 <li>Open Windows PowerShell (Admin) using one of the following methods:
 <ol><li>按下 <code>⊞ Win</code> + <code>X</code>, then press <code>A</code> or select <code>Windows PowerShell (Admin)</code> from the menu.</li>
 <li>按下 <code>⊞ Win</code> + <code>R</code>, 类型 <code>powershell</code> into the <code>Run</code> dialog, then press <code>Ctrl</code> + <code>Shift</code> + <code>进入</code>.</li>
-<li>Search for <code>powershell</code> in the Windows search bar and select <code>Run as 管理员</code> from the panel on the right-hand side.</li></ol></li>
+<li>Search for <code>powershell</code> in the Windows search bar and select <code>Run as 管理员</code> from the panel on the right-hand 侧面.</li></ol></li>
 <li>Run the following commands, in order:
 <ol><li><code>winget 卸载 Microsoft.GameInput</code></li>
 <li><code>winget 安装 Microsoft.GameInput --accept-来源-agreements --accept-包-agreements</code></li></ol></li>
@@ -115,7 +115,7 @@ If this resolves the issue:
 <li>Open Windows PowerShell (Admin) using one of the following methods:
 <ol><li>按下 <code>⊞ Win</code> + <code>X</code>, then press <code>A</code> or select <code>Windows PowerShell (Admin)</code> from the menu.</li>
 <li>按下 <code>⊞ Win</code> + <code>R</code>, 类型 <code>powershell</code> into the <code>Run</code> dialog, then press <code>Ctrl</code> + <code>Shift</code> + <code>进入</code>.</li>
-<li>Search for <code>powershell</code> in the Windows search bar and select <code>Run as 管理员</code> from the panel on the right-hand side.</li></ol></li>
+<li>Search for <code>powershell</code> in the Windows search bar and select <code>Run as 管理员</code> from the panel on the right-hand 侧面.</li></ol></li>
 <li>Run the following 指挥: <code>Set-服务 "GameInputSvc" -StartupType Disabled -Status Stopped</code></li>
 <li><b>（可选）</b> Verify that the 服务 has been disabled and stopped:
 <ol><li>Run <code>Get-服务 "GameInputSvc" | Select-Object -Property Name, DisplayName, Status, StartType | Format-List</code>.</li>
@@ -142,7 +142,7 @@ If this resolves the issue:
 <li>Open Windows PowerShell (Admin) using one of the following methods:
 <ol><li>按下 <code>⊞ Win</code> + <code>X</code>, then press <code>A</code> or select <code>Windows PowerShell (Admin)</code> from the menu.</li>
 <li>按下 <code>⊞ Win</code> + <code>R</code>, 类型 <code>powershell</code> into the <code>Run</code> dialog, then press <code>Ctrl</code> + <code>Shift</code> + <code>进入</code>.</li>
-<li>Search for <code>powershell</code> in the Windows search bar and select <code>Run as 管理员</code> from the panel on the right-hand side.</li></ol></li>
+<li>Search for <code>powershell</code> in the Windows search bar and select <code>Run as 管理员</code> from the panel on the right-hand 侧面.</li></ol></li>
 <li>Run the following 指挥: <code>Set-服务 "GameInputSvc" -StartupType 全自动 -Status Running</code></li>
 <li><b>（可选）</b> 确认 that the 服务 has been disabled and stopped:
 <ol><li>Run <code>Get-服务 "GameInputSvc" | Select-Object -Property Name, DisplayName, Status, StartType | Format-List</code></li>
@@ -178,7 +178,7 @@ If this resolves the issue:
 <li id="cite&#95;note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://discord.com/channels/1102970375731691612/1218153537914273802">HD2 故障排除</a> 绝地潜兵 2 官员 Discord 故障排除 频道</span>
 </li>
 </ol></div>
-<div role="navigation" aria-label="Navbox" class="ranger-navbox navigation-not-searchable striped-even mw-collapsible"><div class="ranger-title"><div class="mw-collapsible-toggle-placeholder"></div><span class="ranger-meta"><span class="nv nv-view"><span title="View or edit this template">View or edit this template</span></span></span><div class="ranger-title-text"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div></div><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:4"><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Tools</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist"><div class="ranger-list">
+<div role="navigation" aria-label="Navbox" class="ranger-navbox navigation-not-searchable striped-even mw-collapsible"><div class="ranger-title"><div class="mw-collapsible-toggle-placeholder"></div></span></span><div class="ranger-title-text"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div></div><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:4"><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Tools</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist"><div class="ranger-list">
 <ul><li><a href="Hellbomb_Script.html" title="Hellbomb Script">Hellbomb Script</a></li>
 <li><a href="Steam_Launch_Commands.html" title="Steam Launch Commands">Steam Launch Commands</a></li></ul>
 </div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Platform</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist"><div class="ranger-list">

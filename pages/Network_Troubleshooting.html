@@ -61,17 +61,17 @@
 <h2><span class="mw-headline" id="Basics">Basics</span></h2>
 <p>绝地潜兵 2 is a multiplayer game on a hybridized P2P (Peer-to-Peer) 网络 architecture.<sup id="cite&#95;ref-1" class="reference"><a href="#cite_note-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup><sup id="cite&#95;ref-2" class="reference"><a href="#cite_note-2"><span class="cite-bracket">&#91;</span>2<span class="cite-bracket">&#93;</span></a></sup> In simple terms this means you are connecting both to a centralized server 网络 as well as to other 玩家 directly in order to play, 含义 your 电脑 will keep up two completely 分离 类型 of 网络 connections simultaneously:
 </p>
-<ul><li><b>Centralized 数据库 (Dedicated Server)</b>: This constant 连接 is used to communicate with Arrowhead's main servers. These handle your persistent player profile data (such as Player Level, unlocked 内容, 超级货币, etc.).</li>
-<li><b>玩法 Session (P2P 网络)</b>: A direct 连接 that is used for connecting to other 玩家 themselves. In such connections your 电脑 (or 控制台) acts both as server and client. The <b>Squadleader is the host of the game</b> in such connections, while other 玩家 are clients.</li></ul>
+<ul><li><b>Centralized 数据库 (Dedicated Server)</b>: This constant 连接 is used to communicate with Arrowhead's 主体 servers. These handle your persistent player profile data (such as Player Level, unlocked 内容, 超级货币, etc.).</li>
+<li><b>玩法 Session (P2P 网络)</b>: A 正面 连接 that is used for connecting to other 玩家 themselves. In such connections your 电脑 (or 控制台) acts both as server and client. The <b>Squadleader is the host of the game</b> in such connections, while other 玩家 are clients.</li></ul>
 <p>This hybrid approach can explain a very common 故障排除 paradox:
 </p>
 <ul><li>If you are able to 连接 to the game but can't join other 玩家, then that indicates a possible issue with your P2P 连接性.</li>
 <li>If you are not able to even log into the game, your 网络 issues might be more fundamental.</li></ul>
-<p>The first of those two is more common and might feel paradoxical because you might be able to play other multiplayer games with no problems - but if those do not rely on P2P, you will not notice that something is amiss.
+<p>The first of those two is more common and might feel paradoxical because you might be able to play other multiplayer games with 否 problems - but if those do not rely on P2P, you will not notice that something is amiss.
 </p>
 <h3><span id="VPNs_.26_other_Software"></span><span class="mw-headline" id="VPNs_&amp;_other_Software">VPNs &amp; other 软件</span></h3>
-<p>The 使用 of Virtual 列兵 Networks (VPNs) can be a double-edged sword when it comes to 绝地潜兵 2. Due to the vast differences between 互联网 服务 providers (ISPs), routing paths, local router settings, etc., there's no true one-size-fits-all 解决方案. A VPN configuration that breaks the game for one player might be the exact fix another player needs to 连接 at all.
-</p><p>If your ISP utilizes strict <a class="mw-selflink-fragment" href="#NAT">航母-Grade NAT</a> (CGNAT), a so-called "Dual NAT", or similar problematic configurations, your router can potentially struggle to 建立 direct P2P-connections with other 玩家. In such scenarios, a VPN can act as a bridge by routing your traffic and bypass your provider's local routing restrictions. However, many 标准 VPN protocols inject significant latency (ping) or actively block unprompted inbound P2P traffic for 安全 reasons, which then cause disconnects. One such 示例 would be <i>CloudFlare WARP</i>: While its 安全 protocol technically interferes with P2P data streams, there have been reports of 玩家 being able to bypass their ISP's restrictions by enabling iit.
+<p>The 使用 of Virtual 列兵 Networks (VPNs) can be a double-edged sword when it comes to 绝地潜兵 2. Due to the vast differences between 互联网 服务 providers (ISPs), routing paths, local router settings, etc., there's 否 true one-size-fits-all 解决方案. A VPN configuration that breaks the game for one player might be the exact 修复 another player needs to 连接 at all.
+</p><p>If your ISP utilizes strict <a class="mw-selflink-fragment" href="#NAT">航母-Grade NAT</a> (CGNAT), a so-called "Dual NAT", or similar problematic configurations, your router can potentially struggle to 建立 正面 P2P-connections with other 玩家. In such scenarios, a VPN can act as a bridge by routing your traffic and bypass your provider's local routing restrictions. However, many 标准 VPN protocols inject significant latency (ping) or actively block unprompted inbound P2P traffic for 安全 reasons, which then cause disconnects. One such 示例 would be <i>CloudFlare WARP</i>: While its 安全 protocol technically interferes with P2P data streams, there have been reports of 玩家 being able to bypass their ISP's restrictions by enabling iit.
 </p><p>As a rule of thumb it's 重要 that your VPN provider of choice explicitly supports and allows Peer-to-Peer (P2P) traffic. If P2P is blocked at the server level, you won't be able to join up with others. Please also be aware that Free VPN services almost always 限制 P2P traffic entirely or heavily throttle bandwidth and latency, making them poor choices for multiplayer games that 要求 low latency.
 </p>
 <h4><span class="mw-headline" id="Deep_Packet_Inspection">Deep Packet 检查</span></h4>
@@ -89,7 +89,7 @@
 <ul><li>Run the <a rel="nofollow" class="external text" href="https://speed.cloudflare.com/">CloudFlare Speedtest</a>. Particularly the Online Gaming Quality score will be 重要. Also pay close attention to the "Jitter/Packet Loss" values, as high jitter will disrupt P2P connections.</li></ul></li>
 <li><b>Check your Steam Profile Name.</b>
 <ul><li>Do not use non-标准 characters. 特殊 characters might not be parsed by the game 数据库 and prevent you from logging into the game.</li></ul></li>
-<li><b>Power Cycle your 网络 装备</b>
+<li><b>Power 循环 your 网络 装备</b>
 <ul><li>Unplug the power cables from both your modem and router (if you have 分离 devices) for 5 分钟 and then plug them back in. This will clear their internal routing memory tables.</li></ul></li>
 <li><b>Use the <a href="Hellbomb_Script.html" title="Hellbomb Script">Hellbomb Script</a></b>
 <ul><li>PC Users can use the script to quickly scan their system 环境 for DNS routing and NAT configuration problems.</li></ul></li></ul>
@@ -118,7 +118,7 @@ To flush your system's DNS caches, 处决 one of the following commands based on
 You can verify if the DNS cache has been flushed by typing in <code>sudo resolvectl 属性</code> . Some Distributions, such as CachyOS, allow the clearing of the cache via Apps such as "CachyOS Hello".<p class="mw-empty-elt"></p></article></section></div>
 <h2><span class="mw-headline" id="DNS">DNS</span></h2>
 <p>One of the most 有效 ways to 解决 连接性 problems is to check your DNS setup as a lot of 网络-相关 problems originate here.
-</p><p>"DNS" stands for "Domain Name System", which is a hierarchical, decentralized 目录 that acts as the phonebook of the 互联网. It translates human-readable domain names (such as <i>绝地潜兵.wiki.gg</i>) into numerical IP addresses that machines 要求 to locate and communicate with servers.<sup id="cite&#95;ref-3" class="reference"><a href="#cite_note-3"><span class="cite-bracket">&#91;</span>3<span class="cite-bracket">&#93;</span></a></sup>
+</p><p>"DNS" stands for "Domain Name System", which is a hierarchical, decentralized 目录 that 充当 the phonebook of the 互联网. It translates human-readable domain names (such as <i>绝地潜兵.wiki.gg</i>) into numerical IP addresses that machines 要求 to locate and communicate with servers.<sup id="cite&#95;ref-3" class="reference"><a href="#cite_note-3"><span class="cite-bracket">&#91;</span>3<span class="cite-bracket">&#93;</span></a></sup>
 </p><p>By 默认, your router automatically 使用次数 the DNS servers provided by your 互联网 服务 Provider (ISP). However, those ISP-run DNS servers are notoriously slow to 更新 their DNS records and quite 频繁 suffer from configuration errors. If a recent 绝地潜兵 2 server 更新 alters its 目标 IP addresses, an outdated ISP DNS will fail to 解决 the 连接, leading to all manners of 连接 problems.
 </p><p>If flushing your local DNS cache did not 解决 your 连接性 issues, the underlying 问题 is likely at the server level. In this scenario, the best course of action is to manually configure your 网络 settings to use a fast, reliable, third-party public DNS.
 </p>
@@ -165,7 +165,7 @@ You can verify if the DNS cache has been flushed by typing in <code>sudo resolve
 <li>Enter the addresses of your choice in their respective fields as "Preferred DNS Server" and "Alternate DNS Server" (see table below).</li>
 <li>Click "OK" to close the IPv4 properties window.</li>
 <li>Now select <code>互联网 Protocol Version 6</code> from the list and click on "Properties".</li>
-<li>Repeat steps 4 through 6, using the respective IPv6 addresses from the table on the right side, and then click "OK" and close the window when you are done to apply the changes.</li></ol>
+<li>Repeat steps 4 through 6, using the respective IPv6 addresses from the table on the right 侧面, and then click "OK" and close the window when you are done to apply the 变更.</li></ol>
 <p>Should the manual configuration of custom DNS servers not 解决 your 连接性 problems, there's a chance that your 互联网 服务 provider might be struggling with an unstable Dual-Stack Lite (DS-Lite) tunnel allocation. In such scenarios disabling IPv6 entirely will force your system to rely strictly on a stable IPv4 routing path. This can 解决 P2P 匹配 issues:
 </p>
 <ol><li>按下 <code>WIN + R</code>, 类型 <code>ncpa.cpl</code>, and click on "OK".</li>
@@ -216,7 +216,7 @@ You can verify if the DNS cache has been flushed by typing in <code>sudo resolve
 <li>Navigate to the "IPv4" tab. Turn off "全自动 (DHCP) DNS" and enter the chosen addresses separated by a comma (e.g., <code>1.1.1.1, 1.0.0.1</code>).</li>
 <li>Navigate to the "IPv6" tab, disable "全自动 DNS" here as well, and input the corresponding IPv6 strings (see 参考 table to the right).</li>
 <li>Click "Apply" and 重新开始 your 连接.</li></ol>
-<br /><p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Steam_Deck-0" aria-labelledby="Steam_Deck-0-label"><p>You do not need to switch to Desktop Mode to fix your DNS on the Steam Deck. You can alter these settings directly within SteamOS:
+<br /><p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Steam_Deck-0" aria-labelledby="Steam_Deck-0-label"><p>You do not need to switch to Desktop Mode to 修复 your DNS on the Steam Deck. You can alter these settings directly within SteamOS:
 </p><ol><li>Press the "Steam button" and navigate to "Settings" -&gt; "互联网".</li>
 <li>Select your active Wi-Fi 网络 and press the <i>A button</i> to open its options.</li>
 <li>Scroll down and select "Advanced Settings".</li>
@@ -294,7 +294,7 @@ You can verify if the DNS cache has been flushed by typing in <code>sudo resolve
 </p>
 <h3><span class="mw-headline" id="Carrier-Grade_NAT">航母-Grade NAT</span></h3>
 <p>One of the biggest hurdles that can interfere with 绝地潜兵 2's P2P networking is the presence of a so-called <b>航母 Grade NAT (CGNAT)</b>. It's used by 互联网 服务 Providers (ISPs) in order to mitigate IPv4 地址 exhaustion<sup id="cite&#95;ref-5" class="reference"><a href="#cite_note-5"><span class="cite-bracket">&#91;</span>5<span class="cite-bracket">&#93;</span></a></sup>.
-</p><p>While it exists as a necessary lifesaver for 互联网 基础设施<sup id="cite&#95;ref-6" class="reference"><a href="#cite_note-6"><span class="cite-bracket">&#91;</span>6<span class="cite-bracket">&#93;</span></a></sup>, this very technology creates a 屏障 for multiplayer games. As hundreds of households are 基本上 forced to share the exact same public IP 地址, incoming direct 连接 requests are then blocked at the ISP level before they even reach your home router. This interferes with games that 要求 P2P connections and can also cause problems with Remote Access or 标准 Port Forwarding.
+</p><p>While it exists as a necessary lifesaver for 互联网 基础设施<sup id="cite&#95;ref-6" class="reference"><a href="#cite_note-6"><span class="cite-bracket">&#91;</span>6<span class="cite-bracket">&#93;</span></a></sup>, this very technology creates a 屏障 for multiplayer games. As hundreds of households are 基本上 forced to share the exact same public IP 地址, incoming 正面 连接 requests are then blocked at the ISP level before they even reach your home router. This interferes with games that 要求 P2P connections and can also cause problems with Remote Access or 标准 Port Forwarding.
 </p><p>The issues below can also appear with Dual Stack Lite connections.
 </p>
 <h3><span class="mw-headline" id="Detection">Detection</span></h3>
@@ -332,11 +332,11 @@ Open your web 浏览器 and visit one of the following pages and note down your 
 </p>
 <ul><li><b>If the IP addresses MATCH:</b> You likely have a true public IPv4 地址. 继续 to Step 2 to 确认.</li>
 <li><b>If the IP addresses DO NOT MATCH:</b> Your router is receiving a 列兵 or intermediate IP from your ISP, 含义 you are definitely behind a CGNAT.</li></ul>
-<p>Additionally, check if your router's WAN IP falls into one of these specific 受限 blocks (see the table on the right side).
+<p>Additionally, check if your router's WAN IP falls into one of these specific 受限 blocks (see the table on the right 侧面).
 </p><p><b>Step 2: Traceroute verification:</b>
-Please be aware that these IP-addresses are just indicators. Just because your IP falls outside of that 射程 there is no guarantee that no CG-NAT is present. In order to verify this, you will have to check if your ISP is intercepting P2P packets by counting the "hops" (routing stations) it takes to reach the public IP 地址 found in Step 1.
+Please be aware that these IP-addresses are just indicators. Just because your IP falls outside of that 射程 there is 否 guarantee that 否 CG-NAT is present. In order to verify this, you will have to check if your ISP is intercepting P2P packets by counting the "hops" (routing stations) it takes to reach the public IP 地址 found in Step 1.
 </p>
-<ul><li><b>One hop:</b> You directly 解决 your public IP 地址 which means that there is no CG-NAT present.</li>
+<ul><li><b>One hop:</b> You directly 解决 your public IP 地址 which means that there is 否 CG-NAT present.</li>
 <li><b>Two or more hops:</b> Your traffic is being filtered through an external ISP 翻译 layer, 含义 that there's a CG-NAT present.</li></ul>
 <div class="tabber tabber--init"><header class="tabber__header"><button class="tabber__header__prev" tabindex="-1" type="button" aria-hidden="true"></button><nav class="tabber__tabs" role="tablist"><a class="tabber__tab" role="tab" id="Windows-2-label" href="#Windows-2" aria-controls="Windows-2">Windows</a><a class="tabber__tab" role="tab" id="Linux_/_MacOS-0-label" href="#Linux_/_MacOS-0" aria-controls="Linux_/_MacOS-0">Linux / MacOS</a></nav><button class="tabber__header__next" tabindex="-1" type="button" aria-hidden="true"></button></header><section class="tabber__section"><article class="tabber__panel" role="tabpanel" tabindex="0" id="Windows-2" aria-labelledby="Windows-2-label"><p class="mw-empty-elt">
 </p><ol><li>Open your Start menu, 类型 <code>cmd</code> or <code>powershell</code>, and launch it.</li>
@@ -360,8 +360,8 @@ Check the output list: If line #1 shows your home router and line #2 shows anoth
 <li><b>Double NAT detected:</b> If this explicit 警告 appears 下一个 to your NAT status, you might be looking at two home routers or an external 航母-Grade NAT preventing you from playing.</li></ul>
 <p>In order to 解决 this, you can try this:
 </p>
-<ol><li><b>Perform a Router Power Cycle:</b> Unplug your modem and router for 5 分钟 and then test the 连接 again.</li>
-<li><b>Enable UPnP (Universal Plug and Play):</b> Log into your home router's settings and toggle UPnP "On". This allows the Xbox to dynamically request the temporary ports it needs to 建立 the 连接. Please be aware that while UPnP is an 容易 automated fix, it does come with inherent local 网络 安全 risks.<p class="mw-empty-elt"></p></li></ol></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="PlayStation_5-1" aria-labelledby="PlayStation_5-1-label"><p class="mw-empty-elt"></p><table class="wikitable" style="width:500px; font-size:90%; float:right; margin-left: 40px">
+<ol><li><b>Perform a Router Power 循环:</b> Unplug your modem and router for 5 分钟 and then test the 连接 again.</li>
+<li><b>Enable UPnP (Universal Plug and Play):</b> Log into your home router's settings and toggle UPnP "On". This allows the Xbox to dynamically request the temporary ports it needs to 建立 the 连接. Please be aware that while UPnP is an 容易 automated 修复, it does come with inherent local 网络 安全 risks.<p class="mw-empty-elt"></p></li></ol></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="PlayStation_5-1" aria-labelledby="PlayStation_5-1-label"><p class="mw-empty-elt"></p><table class="wikitable" style="width:500px; font-size:90%; float:right; margin-left: 40px">
 <tbody><tr>
 <th>NAT</th>
 <th>Status</th>
@@ -369,7 +369,7 @@ Check the output list: If line #1 shows your home router and line #2 shows anoth
 </th></tr>
 <tr>
 <td>类型 1</td>
-<td>Open / Direct</td>
+<td>Open / 正面</td>
 <td>Your PS5 is connected directly to the 互联网 modem without a router filtering traffic. 完美 for games like 绝地潜兵 2 but leaves the 控制台 without any sort of 保护 that a router would provide. Such connections are highly uncommon.
 </td></tr>
 <tr>
@@ -403,7 +403,7 @@ Check the output list: If line #1 shows your home router and line #2 shows anoth
 <ol><li><b>联络 Your 互联网 服务 Provider:</b> In most cases, you can 解决 CGNAT entirely at the 来源. Call your ISP's 顾客 支援 hotline or open a ticket stating that you “要求 a public IPv4 地址 for remote work VPNs and peer-to-peer online gaming.” Many major providers will switch your 账户 from a shared CGNAT profile to a dedicated, dynamic public IPv4 地址, often for an additional fee or while changing your plan to a business plan. Be prepared for the additional one-time or recurring 费用 this may incur.</li>
 <li><b>Utilize a Premium VPN:</b> If your ISP refuses to grant a public IP, using a high-quality VPN with dedicated P2P 支援 is your best alternative. As <a class="mw-selflink-fragment" href="#VPNs_&amp;_other_Software">detailed above</a>, a paid VPN tunnels your traffic past the provider's restrictive 翻译 layers. Alternatively, you can rent a VPS or a root server (make sure it comes with a dedicated IPv4 地址) and build your own port forwarding VPN using Wireguard.</li>
 <li><b>消除 Internal Double NAT:</b> If your traceroute showed two hops but your external IPs matched, the 瓶颈 is inside your own house. This can happen in scenarios where you daisy-chain a gaming router into a modem/router combo supplied by your ISP. You can 解决 such setups by either disconnecting the second router or logging into it and change its 操作 mode from "Router" to "Access Point (AP Mode)". Alternatively you might have to enable "Bridge Mode / Passthrough" on your ISP's modem.</li>
-<li><b>Change Your 连接 类型:</b> If no other options are available, switching to a different 网络 基础设施 that offers native public routing (such as transitioning from a restrictive 5G home cube to a stable DSL 连接) will permanently 消除 the issue. Most cable (i.e. Vodafone) and fiber connections as well as mobile (i.e. 5G) and 卫星 connections (i.e. Starlink) make use of CGNAT or Dual Stack Lite.</li></ol>
+<li><b>Change Your 连接 类型:</b> If 否 other options are available, switching to a different 网络 基础设施 that offers native public routing (such as transitioning from a restrictive 5G home cube to a stable DSL 连接) will permanently 消除 the issue. Most cable (i.e. Vodafone) and fiber connections as well as mobile (i.e. 5G) and 卫星 connections (i.e. Starlink) make use of CGNAT or Dual Stack Lite.</li></ol>
 <h2><span class="mw-headline" id="Network_drivers">网络 drivers</span></h2>
 <p>There are prevalent link 掉落 issues with both <i>Intel i225v/i226v</i> 和 <i>Realtek RTL81\*\* 2.5Gb</i> 网络 adapters. These are common adapters shipping from 2019/2020. These issues result in random link drops with rapid reconnects. Often these can occur so quickly that Windows does not even notify the user, however the link drops are disruptive enough to cause a 断开 from the rest of the lobby. Please note that this specific issue does not only affect 绝地潜兵 2 but also other games.
 </p>
@@ -438,12 +438,12 @@ Check the output list: If line #1 shows your home router and line #2 shows anoth
 <p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Linux-2" aria-labelledby="Linux-2-label"><p>As your first step, please check if your time is desynchronized:
 </p><ol><li>Open your 终端 (<code>CTRL + ALT + T</code>).</li>
 <li>Check your 当前 synchronization metrics by running <code>timedatectl status</code></li>
-<li>Look at the line "System clock synchronized". If it says "no", your system time is drifted and blocking 安全 certificates.</li></ol>
+<li>Look at the line "System clock synchronized". If it says "否", your system time is drifted and blocking 安全 certificates.</li></ol>
 <p>If your time is indeed out of sync, you can force your system to immediately fetch a clean timestamp from public servers. Follow these commands one after the other:
 </p>
 <ol><li>Enable the 网络 time protocol daemon: <code>sudo timedatectl set-ntp true</code></li>
 <li>重新开始 the time synchronization 服务 to force an 瞬间 更新: <code>sudo systemctl 重新开始 systemd-timesyncd.服务</code></li>
-<li>Verify the fix by running <code>timedatectl status</code> again. The "System clock synchronized" value should now 显示 as "yes".<p class="mw-empty-elt"></p></li></ol></article></section></div>
+<li>Verify the 修复 by running <code>timedatectl status</code> again. The "System clock synchronized" value should now 显示 as "是".<p class="mw-empty-elt"></p></li></ol></article></section></div>
 <h3><span id="Status_Code_400_.2F_Error_Code_1600"></span><span class="mw-headline" id="Status_Code_400_/_Error_Code_1600">Status Code 400 / Error Code 1600</span></h3>
 <p>The error is caused by 不寻常 characters in your Steam username.
 </p><p>Switching it for an alphanumerical (a-Z and 0-9) username should solve the issue.
@@ -453,7 +453,7 @@ Check the output list: If line #1 shows your home router and line #2 shows anoth
 </p><p>You can attempt different methods to 解决 these issues:
 </p>
 <ol><li>If you are wired into a router that is then connected to the Starlink mode, set your router's IPv6 mode to "autoconfigure" instead of "autodetect".</li>
-<li>Play on wireless with no other changes.</li>
+<li>Play on wireless with 否 other 变更.</li>
 <li>Disable IPv6 on your 网络 adapter (Windows -&gt; Uncheck "互联网 Protocol Version 6") and see if that fixes it. If it does, you can just do this before you play the game, but it 通常 fixes other 连接 issues on other applications as well.</li></ol>
 <p>有时 it may also work with IPv6 enabled.
 </p>
@@ -472,7 +472,7 @@ Check the output list: If line #1 shows your home router and line #2 shows anoth
 <li id="cite&#95;note-6"><span class="mw-cite-backlink"><a href="#cite_ref-6">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://www.networkworld.com/article/757662/cisco-subnet-large-scale-nat-architectures.html">Networkworld - Large Scale NAT Architectures</a></span>
 </li>
 </ol></div>
-<div role="navigation" aria-label="Navbox" class="ranger-navbox navigation-not-searchable striped-even mw-collapsible"><div class="ranger-title"><div class="mw-collapsible-toggle-placeholder"></div><span class="ranger-meta"><span class="nv nv-view"><span title="View or edit this template">View or edit this template</span></span></span><div class="ranger-title-text"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div></div><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:4"><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Tools</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist"><div class="ranger-list">
+<div role="navigation" aria-label="Navbox" class="ranger-navbox navigation-not-searchable striped-even mw-collapsible"><div class="ranger-title"><div class="mw-collapsible-toggle-placeholder"></div></span></span><div class="ranger-title-text"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div></div><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:4"><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Tools</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist"><div class="ranger-list">
 <ul><li><a href="Hellbomb_Script.html" title="Hellbomb Script">Hellbomb Script</a></li>
 <li><a href="Steam_Launch_Commands.html" title="Steam Launch Commands">Steam Launch Commands</a></li></ul>
 </div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Platform</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist"><div class="ranger-list">
