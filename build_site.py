@@ -344,6 +344,26 @@ class SiteBuilder:
             attrs = m.group(0)
             urls_local = []
 
+            srcm = re.search(r'src="([^"]+)"', attrs)
+            add_icon = False
+            if srcm:
+                u0 = srcm.group(1)
+                base0 = urllib.parse.unquote(
+                    os.path.basename(urllib.parse.urlparse(u0).path))
+                if base0.lower().endswith(".svg") and re.search(
+                        r"(?i)(damage|armor|penetrat|fire|reload|magazine|capacity|"
+                        r"recoil|faction|difficulty|stratagem|medal|currency|reward|"
+                        r"ballistic|explosive|electric|chemical|acid|gas|melee|"
+                        r"stagger|shield|arc|icon|arrow)", base0):
+                    add_icon = True
+            if add_icon:
+                if re.search(r'\bclass="', attrs):
+                    attrs = re.sub(r'class="([^"]*)"',
+                                   lambda mm: 'class="wiki-icon ' + mm.group(1) + '"',
+                                   attrs, count=1)
+                else:
+                    attrs = attrs.replace("<img ", '<img class="wiki-icon" ', 1)
+
             def repl_src(mm):
                 u = mm.group(1)
                 if u.startswith("/images/") or "helldivers.wiki.gg/images/" in u:

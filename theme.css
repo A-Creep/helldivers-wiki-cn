@@ -326,3 +326,7 @@ html,body{overflow-x:hidden}
 .mw-parser-output img[alt*="Terminid_Icon"],
 .mw-parser-output img[alt*="Illuminate_Icon"],
 .mw-parser-output img[alt*="Super_Earth_Icon"]{width:16px;height:16px;vertical-align:middle}
+.wiki-icon{width:16px !important;height:16px !important;vertical-align:middle}
+.thumb .wiki-icon,.druid-main-image .wiki-icon,.gallerybox .wiki-icon,
+.mw-parser-output .gallerybox img.wiki-icon{width:auto !important;height:auto !important;
+  max-width:100%}
