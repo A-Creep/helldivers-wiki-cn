@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-552,-552)">
+        <g id="Level-25-Space-Chief-Prime-Rank-Icon" serif:id="Level 25 Space Chief Prime Rank Icon" transform="matrix(1,0,0,1,552,552)">
+            <rect x="0" y="0" width="512" height="512" style="fill:none;"/>
+            <path d="M410,197L410,370L256,456L102,370L102,197L256,164L410,197Z" style="fill:rgb(130,137,142);"/>
+            <path d="M410,197L410,370L264.073,455.282C259.086,458.197 252.914,458.197 247.927,455.282L102,370L102,197C102,197 159,164 256,164C353,164 410,197 410,197ZM256,432.202L386,356.228L386,212.098C365.704,203.461 320.384,188 256,188C191.616,188 146.296,203.461 126,212.099L126,356.228L256,432.202ZM204,274L247,306L204,338L161,306L204,274ZM308,274L351,306L308,338L265,306L308,274ZM102,175L102,108L410,108L410,175C410,175 353,142 256,142C159,142 102,175 102,175Z" style="fill:rgb(201,231,235);"/>
+        </g>
+    </g>
+</svg>

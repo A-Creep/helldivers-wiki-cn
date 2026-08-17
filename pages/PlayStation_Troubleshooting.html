@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="theme-helldiver view-dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PlayStation 故障排除 - 绝地潜兵2 离线百科</title>
+<link rel="stylesheet" href="../theme.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../index.html">🪖 绝地潜兵2 离线百科</a>
+  <div class="header-right">
+    <input id="q" class="search-input" type="search" placeholder="搜索中英文词条…"
+           onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
+    <a class="btn" href="../patch_notes.html">📜 更新日志</a>
+    <a class="btn" href="../index.html">首页</a>
+  </div>
+</header>
+<main class="content">
+  <h1 class="page-title">PlayStation 故障排除</h1>
+  <div class="breadcrumb">PlayStation 故障排除</div>
+  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div><div class="breadcrumb-item breadcrumb-item-final">PlayStation 故障排除</div></div>
+<p>This 故障排除 页面 is meant specifically for resolving problems with <b>PlayStation 5</b>.
+</p>
+<ul><li>If you 要求 更多 indepth 帮助, feel free to 检查 out Sony's <a rel="nofollow" class="external text" href="https://www.playstation.com/en-us/support/hardware/ps5/">在线 支援 for PlayStation 5</a>.</li>
+<li>Additionally if you encounter an error 法典 you can look them up in <a rel="nofollow" class="external text" href="https://www.playstation.com/en-us/support/error-codes/ps5/">Sony's 数据库</a>.</li></ul>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#概述"><span class="tocnumber">1</span> <span class="toctext">概述</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Upscaling"><span class="tocnumber">1.1</span> <span class="toctext">Upscaling</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#Basic_Performance_&amp;_Stability"><span class="tocnumber">2</span> <span class="toctext">Basic Performance &amp; 稳定性</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Updates"><span class="tocnumber">2.1</span> <span class="toctext">Updates</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Clear_System_Cache_&amp;_Rebuild_Database"><span class="tocnumber">2.2</span> <span class="toctext">清楚 星系 缓存 &amp; Rebuild 数据库</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Safe_Mode"><span class="tocnumber">2.3</span> <span class="toctext">安全 模式</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Clear_Game_Data"><span class="tocnumber">2.4</span> <span class="toctext">清楚 游戏 数据</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#稳定性"><span class="tocnumber">2.5</span> <span class="toctext">稳定性</span></a>
+<ul>
+<li class="toclevel-3 tocsection-9"><a href="#Network_issues"><span class="tocnumber">2.5.1</span> <span class="toctext">网络 issues</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="#Power_&amp;_Rest_Mode"><span class="tocnumber">2.5.2</span> <span class="toctext">之力 &amp; Rest 模式</span></a></li>
+<li class="toclevel-3 tocsection-11"><a href="#Temperatures"><span class="tocnumber">2.5.3</span> <span class="toctext">Temperatures</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="#Video_Settings"><span class="tocnumber">2.5.4</span> <span class="toctext">Video Settings</span></a></li>
+<li class="toclevel-3 tocsection-13"><a href="#Restore_Default_&amp;_Reinstallation"><span class="tocnumber">2.5.5</span> <span class="toctext">Restore 默认 &amp; Reinstallation</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-14"><a href="#Controllers"><span class="tocnumber">3</span> <span class="toctext">Controllers</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#Restore_Licenses"><span class="tocnumber">4</span> <span class="toctext">Restore Licenses</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">参考</span></a></li>
+</ul>
+</div>
+
+<h2><span id=".E6.A6.82.E8.BF.B0"></span><span class="mw-headline" id="概述">概述</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: 概述" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: 概述"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<table class="wikitable">
+
+<tbody><tr>
+<th>Hardware</th>
+<th>PlayStation 5</th>
+<th>PlayStation 5 Slim</th>
+<th>PlayStation 5 Pro
+</th></tr>
+<tr>
+<td>处理器 (CPU)</td>
+<td>8-核心 AMD Zen 2, variable 频率 up to 3.5 GHz</td>
+<td>8-核心 AMD Zen 2, variable 频率 up to 3.5 GHz</td>
+<td>8-核心 AMD Zen 2, variable 频率 up to 3.85 GHz
+</td></tr>
+<tr>
+<td>Graphics (GPU)</td>
+<td>RDNA-2 GPU, 36 Compute Units, 2,23 GHz<br />Performance: 10,28 TFLOPS</td>
+<td>RDNA-2 GPU, 36 Compute Units, 2,23 GHz<br />Performance: 10,28 TFLOPS</td>
+<td>RDNA-3 GPU, 60 Compute Units, 2,18 GHz<br />Performance: 33,5 TFLOPS
+</td></tr>
+<tr>
+<td>内存</td>
+<td>16GB GDDR6, &lt;18 Gbit/s, 448 GB/s Bandwidth</td>
+<td>16GB GDDR6, &lt;18 Gbit/s, 448 GB/s Bandwidth</td>
+<td>16GB GDDR6, &lt;18 Gbit/s, 576 GB/s Bandwidth
+</td></tr>
+<tr>
+<td>存储</td>
+<td>825 GB</td>
+<td>1 TB</td>
+<td>2 TB
+</td></tr>
+<tr>
+<td>W-LAN</td>
+<td>WiFi 6</td>
+<td>WiFi 6</td>
+<td>WiFi 7
+</td></tr></tbody></table>
+<p>Please be aware that with the release of the new PlayStation 5 Pro, the hardware has slightly 已更改; furthermore it's 重要 to note that Sony might 添加 features to the Pro which 5月 or 5月 not 成为 available to the regular PlayStation 5.
+</p>
+<h3><span class="mw-headline" id="Upscaling">Upscaling</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Upscaling" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Upscaling"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Only the PS5 Pro has access to PlayStation Spectral Super 分辨率 (PSSR). Other PlayStations use FSR 3.1 as upscalers instead.
+</p>
+<h2><span id="Basic_Performance_.26_Stability"></span><span class="mw-headline" id="Basic_Performance_&amp;_Stability">Basic Performance &amp; 稳定性</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Basic Performance &amp; Stability" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Basic Performance &amp; Stability"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>While the overall 故障排除 possibilities for a 控制台 are 许多 更多 有限 due to a 控制台 being a closed-off platform, there are basic steps that you can 关注 in 命令 to attempt resolving problems you encounter.
+</p>
+<h3><span class="mw-headline" id="Updates">Updates</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Updates" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Updates"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>通常 it is recommended to keep your 控制台 and your games updated at 全部 times.
+</p>
+<ul><li><b>PS5 星系 软件:</b> Outdated firmware can 原因 稳定性 problems.
+<ol><li>Go to "Settings".</li>
+<li>Go to "星系".</li>
+<li>选择 "星系 软件".</li>
+<li>Go to "星系 软件 更新 and Settings".</li>
+<li>选择 "更新 星系 软件".</li></ol></li></ul>
+<p><i>Note: Avoid using PlayStation 星系 测试版 Firmware, as it can introduce unforeseen instability in live-服务 titles. Please also 更新 your controller firmware if possible.</i>
+</p>
+<ul><li><b>游戏 Updates:</b>
+<ol><li>Highlight "绝地潜兵 2" on your PS5 home screen.</li>
+<li>Now press the "Options" button on your DualSense controller.</li>
+<li>选择 "检查更新".</li></ol></li></ul>
+<h3><span id="Clear_System_Cache_.26_Rebuild_Database"></span><span class="mw-headline" id="Clear_System_Cache_&amp;_Rebuild_Database">清楚 星系 缓存 &amp; Rebuild 数据库</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Clear System Cache &amp; Rebuild Database" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Clear System Cache &amp; Rebuild Database"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Just 点赞 computers are capable of <a href="Clearing_The_Shader_Cache.html" title="Clearing The Shader Cache">clearing their 缓存</a> so can the PS5. Especially after 大 游戏 patches there's 总是显示 a 几率 that corrupt temporary 数据 might still be present, which in 转变 can 原因 崩溃. Clearing the 缓存 and rebuilding the 数据库 can 帮助 in resolving these issues.
+</p>
+<ol><li>之力 off completely (do not use Rest 模式).</li>
+<li>Unplug the 控制台 for 2 分钟.</li>
+<li>Plug the 控制台 返回 in.</li>
+<li>开始 the 控制台 into 安全 模式 (for steps on how to do that, 检查 <a class="mw-selflink-fragment" href="#Safe_Mode">this 章节</a>).</li>
+<li>连接 your controller via USB cable and press the PS button.</li>
+<li>选择 "清楚 星系 软件 缓存" and rebuild 数据库.</li></ol>
+<h3><span class="mw-headline" id="Safe_Mode">安全 模式</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Safe Mode" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Safe Mode"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>You can engage the PS5 in a "安全 模式", which starts the 控制台 with only the 最多 basic functions active. It's designed to 帮助 in resolving problems by being able to rebuild the 控制台 存储 数据库, 变化 your 分辨率 or "困难" resetting it to 工厂 settings.<sup id="cite&#95;ref-1" class="reference"><a href="#cite_note-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup>
+</p>
+<div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ 一些 安全 模式 options will 结果 in the 亏损 of 数据! Make sure to 返回 up 数据 to a USB drive or 云 存储 if you want to keep it! ⚠</b></div>
+<p>How to engage 安全 模式:
+</p>
+<ol><li>转变 off your 控制台 by holding the 之力 button for three 秒. The 之力 indicator blinks for a 少数 moments before turning off.</li>
+<li>一次 the 控制台 is off, press and 按住 the 之力 button 再次.</li>
+<li>Release it after you hear the second beep — one beep sounds when you first press, and another seven 秒 later.</li>
+<li>连接 the controller with the USB cable and press the PS button on the controller.</li></ol>
+<h3><span class="mw-headline" id="Clear_Game_Data">清楚 游戏 数据</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Clear Game Data" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Clear Game Data"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Clearing the 游戏 数据 can 解决 startup 崩溃 and profile sync errors.
+</p>
+<ol><li>打开 the Settings.</li>
+<li>选择 "Saved 数据 and 游戏/App Settings".</li>
+<li>选择 "绝地潜兵 2".</li>
+<li>删除 the 拯救 文件.</li></ol>
+<div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ 绝地潜兵 2 progress re-syncs from servers. However, for other games, deleting local 数据 will 原因 permanent 亏损 if it hasn't been uploaded to PS Plus 云 存储. ⚠</b></div>
+<h3><span id=".E7.A8.B3.E5.AE.9A.E6.80.A7"></span><span class="mw-headline" id="稳定性">稳定性</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: 稳定性" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: 稳定性"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>If you encounter glitches, flickering screens or other problems, 关注 these basic steps:
+</p>
+<h4><span class="mw-headline" id="Network_issues">网络 issues</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Network issues" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Network issues"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>For 帮助 with 网络 problems, please 检查 the respective sections in <a href="Network_Troubleshooting.html" title="Network Troubleshooting">网络 故障排除</a>.
+</p><p><b>Please Note:</b> Wired (LAN) connections are 通常 更多 stable than Wireless (WiFi) connections.
+</p>
+<h4><span id="Power_.26_Rest_Mode"></span><span class="mw-headline" id="Power_&amp;_Rest_Mode">之力 &amp; Rest 模式</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Power &amp; Rest Mode" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Power &amp; Rest Mode"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>The PS5 does not throttle its hardware performance during active 玩法, but it is able to engage in a sleep 陈述. This can potentially 原因 内存 leaks.
+</p>
+<ol><li>选择 "Settings".</li>
+<li>选择 "星系".</li>
+<li>选择 "之力 Saving".</li>
+<li>调整 "Features Available in Rest 模式" and ensure that background tasks are not unexpectedly interrupting the 控制台's 陈述 while the 游戏 is suspended.</li>
+<li>If problems persist, you might want to 测试 avoiding Rest 模式 entirely and perform a <i>Full Shutdown</i> instead 一次 you are finished playing the 游戏.</li></ol>
+<h4><span class="mw-headline" id="Temperatures">Temperatures</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Temperatures" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Temperatures"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>If you encounter your 控制台 suddenly shutting off, then this can 表明 problems with 温度 or 之力 供给. It's worth observing this 行为; an 增加 in 频率 can 表明 that something is faulty. Also please 检查 if the 问题 only occurs under 重型 负载 or if it happens randomly as this can 表明 what's going on.
+</p><p>If you are still within the warranty 时期 and 经验值 shutoffs, you can 发送 it in to have it repaired. Outside of warranty there are shops who 优惠 such 修理 services albeit there's 否 guarantee that this will 修复 the 问题.
+</p>
+<div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ 致命 安全 警告: If you 嫌疑人 a hardware or 之力 供给 failure, DO NOT 打开 the 控制台's 之力 供给 单位 (PSU) yourself. This is 极其 危险! 之力 Supplies retain 致命 电力 voltage even when unplugged! Opening the 单位 can 原因 severe 受伤 or death and voids your warranty. 总是显示 consult a certified 专业 for 物理 repairs. ⚠</b></div>
+<ol><li>It's 重要 to place your 控制台 in a proper position so ventilation of the 控制台 can be ensured. 小, cramped places will interfere with airflow.</li>
+<li>You might also need to clean out the fans, especially if you are in a household with pets and smokers.</li>
+<li>Please note that the PS5 can also be placed on a cooling stand for additional cooling.</li></ol>
+<h4><span class="mw-headline" id="Video_Settings">Video Settings</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Video Settings" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Video Settings"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>While VRR (Variable 刷新 速率) and 高 刷新 rates 通常 改进 smoothness, they can 偶尔 原因 信号 dropouts or 崩溃 on certain TV/监控 firmware.
+</p>
+<ol><li>Go to "Settings".</li>
+<li>选择 "Screen and Video".</li>
+<li>选择 "Video 输出".</li>
+<li>转变 "OFF" 两者 <code>120 Hz 输出</code> and <code>VRR</code></li></ol>
+<ul><li>测试 switching between "Performance" and "Quality" presets to see if altering the 分辨率 目标 stabilizes your framerate.</li>
+<li>Additionally, 转变 off "HDMI Device 链接" in your 星系 settings to prevent accidental 之力-陈述 conflicts with your TV.</li></ul>
+<h4><span id="Restore_Default_.26_Reinstallation"></span><span class="mw-headline" id="Restore_Default_&amp;_Reinstallation">Restore 默认 &amp; Reinstallation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Restore Default &amp; Reinstallation" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Restore Default &amp; Reinstallation"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>If 全部 else fails, you can try these steps:
+</p>
+<ul><li><b>Restore 默认 settings:</b>
+<ol><li>Go to "Settings".</li>
+<li>Go to "星系".</li>
+<li>选择 "重置 Options".</li>
+<li>选择 "Restore 默认 Settings".</li></ol></li></ul>
+<ul><li><b>If 全部 else fails perform a clean installation.</b>
+<ol><li>Go to "Settings".</li>
+<li>Go to "存储".</li>
+<li>选择 "Games and Apps".</li>
+<li>选择 "绝地潜兵 2".</li>
+<li>选择 "删除".</li>
+<li>重新开始 your 控制台 before redownloading the 游戏 from your 图书馆.</li></ol></li></ul>
+<h2><span class="mw-headline" id="Controllers">Controllers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Controllers" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Controllers"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Make sure to use compatible cables; a controller won’t work with a 冲锋-only cable.
+</p>
+<h2><span class="mw-headline" id="Restore_Licenses">Restore Licenses</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Restore Licenses" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Restore Licenses"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>有时 restoring the licenses can 解决 一些 issues. One of the 更多 突出 examples is the error message "Received a 致命 alert message from the server".
+</p>
+<ol><li>Go to "Settings".</li>
+<li>挑选 "Users and Accounts"</li>
+<li>Go to "Other".</li>
+<li>Chose "Restore Licenses".</li></ol>
+<h2><span class="mw-headline" id="References">参考</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: References" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: References"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite&#95;note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://www.playstation.com/en-us/support/hardware/safe-mode-playstation/">PlayStation - 安全 模式</a></span>
+</li>
+</ol></div>
+<div role="navigation" aria-label="Navbox" class="ranger-navbox navigation-not-searchable striped-even mw-collapsible"><div class="ranger-title"><div class="mw-collapsible-toggle-placeholder"></div><span class="ranger-meta"><span class="nv nv-view"><a href="../index.html" title="Template:Navbox Troubleshooting"><span title="View or edit this template">查看 or 编辑 this template</span></a></span></span><div class="ranger-title-text"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div></div><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:4"><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Tools</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist"><div class="ranger-list">
+<ul><li><a href="Hellbomb_Script.html" title="Hellbomb Script">Hellbomb Script</a></li>
+<li><a href="Steam_Launch_Commands.html" title="Steam Launch Commands">Steam Launch Commands</a></li></ul>
+</div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Platform</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist"><div class="ranger-list">
+<ul><li><a href="Laptop_Troubleshooting.html" title="Laptop Troubleshooting">Laptop 故障排除</a></li>
+<li><a href="Linux_Steam_Deck_Troubleshooting.html" title="Linux / Steam Deck Troubleshooting">Linux / Steam 甲板 故障排除</a></li>
+<li><a class="mw-selflink selflink">PlayStation 故障排除</a></li>
+<li><a href="Steam_Troubleshooting.html" title="Steam Troubleshooting">Steam 故障排除</a></li>
+<li><a href="Xbox_Troubleshooting.html" title="Xbox Troubleshooting">Xbox 故障排除</a></li></ul>
+</div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Performance &amp; 稳定性</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist"><div class="ranger-list">
+<ul><li><a href="BIOS_Updates.html" title="BIOS Updates">BIOS Updates</a></li>
+<li><a href="Clearing_The_Shader_Cache.html" title="Clearing The Shader Cache">Clearing The Shader 缓存</a></li>
+<li><a href="GPU_Driver_Recommendation.html" title="GPU Driver Recommendation">GPU 驾驶员 Recommendation</a></li>
+<li><a href="User_Settings_Config_FPS_Optimization.html" title="User Settings Config FPS Optimization">User Settings Config FPS 优化</a></li>
+<li><a href="Virtual_Memory.html" title="Virtual Memory">Virtual 内存</a></li></ul>
+</div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">崩溃 &amp; Issues</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist"><div class="ranger-list">
+<ul><li><a href="Audio_Problems.html" title="Audio Problems">Audio Problems</a></li>
+<li><a href="../index.html" title="Broken Mods">Broken Mods</a></li>
+<li><a href="Crash_On_Startup.html" title="Crash On Startup">崩溃 On Startup</a></li>
+<li><a href="Crash_To_Desktop.html" title="Crash To Desktop">崩溃 To Desktop</a></li>
+<li><a href="Error_Code_409.html" title="Error Code 409">Error 法典 409</a></li>
+<li><a href="In-Game_Problems.html" title="In-Game Problems">In-游戏 Problems</a></li>
+<li><a href="Input_Problems.html" title="Input Problems">输入 Problems</a></li>
+<li><a href="Network_Troubleshooting.html" title="Network Troubleshooting">网络 故障排除</a></li>
+<li><a href="Reinstallation_of_GameGuard.html" title="Reinstallation of GameGuard">Reinstallation of GameGuard</a></li>
+<li><a href="Reinstallation_of_Visual_C++_Redistributables.html" title="Reinstallation of Visual C++ Redistributables">Reinstallation of Visual C++ Redistributables</a></li>
+<li><a href="Troubleshooting_System_Failure.html" title="Troubleshooting System Failure">故障排除 星系 Failure</a></li>
+<li><a href="Troubleshooting_Stutters_Short_Freezes.html" title="Troubleshooting Stutters/Short Freezes">故障排除 Stutters/短 Freezes</a></li></ul>
+</div></div></div></div></div></div></div>
+<!-- 
+NewPP limit report
+Cached time: 20260816171944
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.053 seconds
+Real time usage: 0.087 seconds
+Preprocessor visited node count: 213/1000000
+Revision size: 8513/4194304 bytes
+Post‐expand include size: 8671/4194304 bytes
+Template argument size: 744/4194304 bytes
+Highest expansion depth: 8/100
+Expensive parser function count: 2/500
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 506/10000000 bytes
+ExtLoops count: 0/5000
+Lua time usage: 0.010/15.000 seconds
+Lua memory usage: 664342/52428800 bytes
+Number of processed Cargo queries: 2
+Time spent processing Cargo queries: 0.013 s (avg. 0.006 s)
+Number of Cargo row insertion attempts: 1
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   59.532      1 -total
+ 69.51%   41.380      1 Template:Breadcrumb_Auto
+ 22.20%   13.216      1 Template:Navbox_Troubleshooting
+ 17.96%   10.689      1 Template:Navbox
+  5.89%    3.504      2 Template:Article_other
+  3.37%    2.006      3 Template:Crash_header
+-->
+</div></div>
+</main>
+<footer class="site-footer">离线汉化版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
+</body>
+</html>

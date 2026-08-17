@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="theme-helldiver view-dark">
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>环境危害 - 绝地潜兵2 离线百科</title>
+<link rel="stylesheet" href="../theme.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../index.html">🪖 绝地潜兵2 离线百科</a>
+  <div class="header-right">
+    <input id="q" class="search-input" type="search" placeholder="搜索中英文词条…"
+           onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
+    <a class="btn" href="../patch_notes.html">📜 更新日志</a>
+    <a class="btn" href="../index.html">首页</a>
+  </div>
+</header>
+<main class="content">
+  <h1 class="page-title">环境危害</h1>
+  <div class="mw-parser-output"><div class="cat-group" data-group="全部"><h2 class="cat-group-title">全部</h2><div class="cat-card-grid"><a class="cat-item" href="../pages/Automaton_Mine.html"><span class="cat-thumb"><img loading="lazy" src="../images/Automaton_Mine.webp" alt=""></span><span class="cat-name">Automaton Mine</span><span class="cat-en">Automaton Mine</span></a><a class="cat-item" href="../pages/Bug_Mine.html"><span class="cat-thumb"><img loading="lazy" src="../images/Bile_Flower.jpg" alt=""></span><span class="cat-name">Bug Mine</span><span class="cat-en">Bug Mine</span></a><a class="cat-item" href="../pages/Despotic_Explosive.html"><span class="cat-thumb"><img loading="lazy" src="../images/Despotic_Explosive_Structure.webp" alt=""></span><span class="cat-name">Despotic Explosive</span><span class="cat-en">Despotic Explosive</span></a><a class="cat-item" href="../pages/Lava_Geyser.html"><span class="cat-thumb"><img loading="lazy" src="../images/Lava_Geyser.webp" alt=""></span><span class="cat-name">Lava Geyser</span><span class="cat-en">Lava Geyser</span></a><a class="cat-item" href="../pages/Lava_Pits.html"><span class="cat-thumb"><img loading="lazy" src="../images/Lava_Pit.webp" alt=""></span><span class="cat-name">Lava Pits</span><span class="cat-en">Lava Pits</span></a><a class="cat-item" href="../pages/Barbed_Wire.html"><span class="cat-thumb"><img loading="lazy" src="../images/Barbed_Wire.webp" alt=""></span><span class="cat-name">倒刺铁丝网</span><span class="cat-en">Barbed Wire</span></a><a class="cat-item" href="../pages/Lava.html"><span class="cat-thumb"><img loading="lazy" src="../images/Lava_Lake.webp" alt=""></span><span class="cat-name">熔岩</span><span class="cat-en">Lava</span></a></div></div><div class="no-result" style="display:none">未找到词条，试试英文名或部分关键词</div></div>
+</main>
+<script>
+(function(){
+  const btns = Array.from(document.querySelectorAll('.cat-filter'));
+  const groups = Array.from(document.querySelectorAll('.cat-group'));
+  const no = document.querySelector('.no-result');
+  function apply(target){
+    let shown = 0;
+    groups.forEach(g => {
+      const ok = target === '__all__' || g.dataset.group === target;
+      g.style.display = ok ? '' : 'none';
+      if (ok) shown += 1;
+    });
+    if (no) no.style.display = shown ? 'none' : '';
+    btns.forEach(b => b.classList.toggle('active', b.dataset.target === target));
+  }
+  btns.forEach(b => b.addEventListener('click', () => apply(b.dataset.target)));
+})();
+</script>
+<footer class="site-footer">离线汉化版 · 内容版权归 The Helldivers Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
+</body>
+</html>

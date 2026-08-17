@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="theme-helldiver view-dark">
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>强化资源 - 绝地潜兵2 离线百科</title>
+<link rel="stylesheet" href="../theme.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../index.html">🪖 绝地潜兵2 离线百科</a>
+  <div class="header-right">
+    <input id="q" class="search-input" type="search" placeholder="搜索中英文词条…"
+           onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
+    <a class="btn" href="../patch_notes.html">📜 更新日志</a>
+    <a class="btn" href="../index.html">首页</a>
+  </div>
+</header>
+<main class="content">
+  <h1 class="page-title">强化资源</h1>
+  <div class="mw-parser-output"><div class="cat-group" data-group="全部"><h2 class="cat-group-title">全部</h2><div class="cat-card-grid"><a class="cat-item" href="../pages/UAV_Recon_Booster.html"><span class="cat-thumb"><img loading="lazy" src="../images/UAV_Recon_Booster_Booster_Icon.svg" alt=""></span><span class="cat-name">UAV侦察强化资源</span><span class="cat-en">UAV Recon Booster</span></a><a class="cat-item" href="../pages/Boosters.html"><span class="cat-thumb"><img loading="lazy" src="../images/Hellpod_Space_Optimization_Booster_Icon.svg" alt=""></span><span class="cat-name">强化资源</span><span class="cat-en">Boosters</span></a></div></div><div class="no-result" style="display:none">未找到词条，试试英文名或部分关键词</div></div>
+</main>
+<script>
+(function(){
+  const btns = Array.from(document.querySelectorAll('.cat-filter'));
+  const groups = Array.from(document.querySelectorAll('.cat-group'));
+  const no = document.querySelector('.no-result');
+  function apply(target){
+    let shown = 0;
+    groups.forEach(g => {
+      const ok = target === '__all__' || g.dataset.group === target;
+      g.style.display = ok ? '' : 'none';
+      if (ok) shown += 1;
+    });
+    if (no) no.style.display = shown ? 'none' : '';
+    btns.forEach(b => b.classList.toggle('active', b.dataset.target === target));
+  }
+  btns.forEach(b => b.addEventListener('click', () => apply(b.dataset.target)));
+})();
+</script>
+<footer class="site-footer">离线汉化版 · 内容版权归 The Helldivers Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
+</body>
+</html>

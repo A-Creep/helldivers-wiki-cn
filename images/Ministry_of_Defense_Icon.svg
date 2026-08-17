@@ -1,0 +1,13 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2">
+  <desc>Traced by Dogo314</desc>
+  <g transform="translate(-541)">
+    <path style="fill:none" d="M541 0h512v512H541z"/>
+    <clipPath id="a">
+      <path d="M541 0h512v512H541z"/>
+    </clipPath>
+    <g clip-path="url(#a)">
+      <path d="M822 58c101.652 7.188 182 92.038 182 195.507V450h-2c-17.567-10.445-49.109-18.861-77.397-36.486C893.31 394.016 866 363.249 866 306v-36h-26v36c0 72.55 8.224 106.446 32.131 135.251A154 154 0 0 0 880 450h-58V245.507h44v-100c0-25.801-23.402-45.75-44-60.898z" style="fill:#f84450" transform="translate(-258.347 -75.755)scale(1.30612)"/>
+      <path d="M612 450V253.507C612 150.038 692.348 65.188 794 58v26.609c-20.598 15.148-44 35.097-44 60.898v100h44V450h-60a153 153 0 0 0 8.319-9.294C765.879 412.018 774 378.093 774 306v-36h-26v36c0 56.586-26.681 87.3-57.517 106.832C661.92 430.923 629.792 439.421 612 450" style="fill:#b80030" transform="translate(-258.347 -75.755)scale(1.30612)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="theme-helldiver view-dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Steam 故障排除 - 绝地潜兵2 离线百科</title>
+<link rel="stylesheet" href="../theme.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../index.html">🪖 绝地潜兵2 离线百科</a>
+  <div class="header-right">
+    <input id="q" class="search-input" type="search" placeholder="搜索中英文词条…"
+           onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
+    <a class="btn" href="../patch_notes.html">📜 更新日志</a>
+    <a class="btn" href="../index.html">首页</a>
+  </div>
+</header>
+<main class="content">
+  <h1 class="page-title">Steam 故障排除</h1>
+  <div class="breadcrumb">Steam 故障排除</div>
+  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div><div class="breadcrumb-item breadcrumb-item-final">Steam 故障排除</div></div>
+<p>These 修复 are targeted at resolving 技术信息 issues originating from the <b>Steam</b> 客户端 itself.
+</p>
+<ul><li>If you want to launch <a href="Helldivers_2.html" title="Helldivers 2">绝地潜兵 2</a> with 习俗 parameters, please refer to the <a href="Steam_Launch_Commands.html" title="Steam Launch Commands">Steam Launch Commands</a> 章节.</li>
+<li>Linux users should also consult the dedicated <a href="../index.html" class="mw-redirect" title="Linux Troubleshooting">Linux 故障排除</a> 页面.</li>
+<li>For issues specific to the handheld 控制台, please 检查 out <a href="../index.html" class="mw-redirect" title="Steam Deck Troubleshooting">Steam 甲板 故障排除</a>.</li></ul>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Basics"><span class="tocnumber">1</span> <span class="toctext">Basics</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Verifying_Steam_Files"><span class="tocnumber">1.1</span> <span class="toctext">Verifying Steam Files</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#Compatibility_Tool_Configuration_Failed"><span class="tocnumber">2</span> <span class="toctext">Compatibility Tool Configuration Failed</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Corrupted_Runtime"><span class="tocnumber">2.1</span> <span class="toctext">Corrupted Runtime</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#In_case_of_manual_uninstall"><span class="tocnumber">2.2</span> <span class="toctext">In 案例 of 手册 卸载</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#File_Verification_Failure"><span class="tocnumber">3</span> <span class="toctext">文件 Verification Failure</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Slow_Updates"><span class="tocnumber">4</span> <span class="toctext">Slow Updates</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#Patch_Performance"><span class="tocnumber">4.1</span> <span class="toctext">补丁 Performance</span></a>
+<ul>
+<li class="toclevel-3 tocsection-9"><a href="#Storage_Drives"><span class="tocnumber">4.1.1</span> <span class="toctext">存储 Drives</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="#Download_Regions"><span class="tocnumber">4.1.2</span> <span class="toctext">下载 Regions</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#Steam_disk_write_error"><span class="tocnumber">5</span> <span class="toctext">Steam disk write error</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#未检测到STEAM"><span class="tocnumber">6</span> <span class="toctext">未检测到STEAM</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Steam_Overlay_isn&#39;t_working"><span class="tocnumber">7</span> <span class="toctext">Steam Overlay isn't working</span></a>
+<ul>
+<li class="toclevel-2 tocsection-14"><a href="#Deactivated_Overlay_causes_lags"><span class="tocnumber">7.1</span> <span class="toctext">Deactivated Overlay causes lags</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-15"><a href="#10002018_Steam_AppID_Error"><span class="tocnumber">8</span> <span class="toctext">10002018 Steam AppID Error</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#Third_Party_Keys"><span class="tocnumber">9</span> <span class="toctext">Third Party Keys</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="#References"><span class="tocnumber">10</span> <span class="toctext">参考</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Basics">Basics</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Basics" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Basics"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Verifying_Steam_Files">Verifying Steam Files</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Verifying Steam Files" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Verifying Steam Files"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ Please only 验证 the files of ONE 游戏 at a 时间. Running 多个 verifications simultaneously can overload your 存储 drive and 原因 errors. ⚠</b></div>
+<div class="floatright"><a href="../index.html" class="image"><img alt="SteamVerifyFiles.png" src="../images/400px-SteamVerifyFiles.png" decoding="async" loading="lazy" width="400" height="286" data-file-width="1047" data-file-height="749" /></a></div>
+<p>许多 common launch 崩溃, infinite loading screens, and missing textures can be 已解决 by validating your installed 游戏 files. During this 流程, Steam scans the digital 签名 of 每个 文件 in your 目录 against its 官员 servers. If it detects 任何 files that are missing, corrupted, or altered, Steam will automatically redownload and replace only the affected 数据, ensuring a clean installation without touching your 拯救 files. For deeper 技术信息 insights, you can read the <a rel="nofollow" class="external text" href="https://help.steampowered.com/en/faqs/view/0C48-FCBD-DA71-93EB">官员 Steam 支援 条款 on 文件 verification</a>.
+</p>
+<ol><li>正确-click on <b>绝地潜兵2</b> in your Steam 图书馆.</li>
+<li>选择 <b>Properties...</b> from the 掉落-down 菜单.</li>
+<li>Navigate to the <b>Installed Files</b> tab on the left.</li>
+<li>Click on <b>验证 正直 of 游戏 files</b>.</li>
+<li>Wait for the validation 酒吧 to reach 100% before launching the 游戏.</li></ol>
+<h2><span class="mw-headline" id="Compatibility_Tool_Configuration_Failed">Compatibility Tool Configuration Failed</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Compatibility Tool Configuration Failed" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Compatibility Tool Configuration Failed"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>If you are playing on Linux, you might encounter the error message "An error occurred while updating 'GAMENAME' (compatibility tool configuration failed)". This error can occur for a variety of reasons, which is why you should 检查 different things:
+</p>
+<ul><li>Make sure that your Steam Runtime 4.0 is installed.</li>
+<li>验证 全部 installed Steam Runtimes (1.0 - 4.0).</li>
+<li>Make sure the Proton version you want to use is 实际上 installed. (This can happen if you manage Proton via 软件 such as Proton Plus and then forget to 变化 the Proton version for 绝地潜兵 2.)</li>
+<li>验证 the Proton version you want to use.</li>
+<li>Please ensure you have sufficient 太空 on your drives to 安装 crucial updates for Proton and Steam Runtime.</li>
+<li>Reinstall the Steam Runtime 4.0.</li></ul>
+<p>If the issues persist despite verifying 全部 Runtimes and Proton Versions, please 检查 your <code>/.steam/steam/logs/compat_日志.txt</code> 文件. If you see something along the lines of <code>Failed to 负载 manifest for tool 4183110!</code> then this indicates that Steam has problems with Steam Runtime 4.0 (which has the ID of <code>4183110</code>).
+</p>
+<h3><span class="mw-headline" id="Corrupted_Runtime">Corrupted Runtime</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Corrupted Runtime" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Corrupted Runtime"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>If, for whatever 理性, your Steam Runtime has 成为 corrupted (which you can find out by checking Steam Logs and looking for the Runtime ID, as seen above) you'll find that simply uninstalling the Runtime isn't possible as Steam doesn't 优惠 an option.
+</p><p>You can 关注 one of these guides below. 手册 reinstall should work just fine in 最多 cases.
+</p>
+<div class="tabber tabber--init"><header class="tabber__header"><button class="tabber__header__prev" tabindex="-1" type="button" aria-hidden="true"></button><nav class="tabber__tabs" role="tablist"><a class="tabber__tab" role="tab" id="Manual_Reinstall-0-label" href="#Manual_Reinstall-0" aria-controls="Manual_Reinstall-0">手册 Reinstall</a><a class="tabber__tab" role="tab" id="Creating_a_duplicate_Runtime-0-label" href="#Creating_a_duplicate_Runtime-0" aria-controls="Creating_a_duplicate_Runtime-0">Creating a duplicate Runtime</a></nav><button class="tabber__header__next" tabindex="-1" type="button" aria-hidden="true"></button></header><section class="tabber__section"><article class="tabber__panel" role="tabpanel" tabindex="0" id="Manual_Reinstall-0" aria-labelledby="Manual_Reinstall-0-label"><p class="mw-empty-elt">
+</p><ol><li>Exit out of the Steam 客户端 completely (否 tray 图标).</li>
+<li>Find and 删除 the following folders and files:
+<ul><li>the <code>SteamLinuxRuntime_4</code> 文件夹 in <code>~/.local/分享/Steam/steamapps/common/</code></li>
+<li>the <code>SteamLinuxRuntime_4-arm64</code> 文件夹 in <code>~/.local/分享/Steam/steamapps/common/</code> (if it exists).</li>
+<li>the <code>appmanifest_4183110.acf</code> 文件 in <code>~/.local/分享/Steam/steamapps/</code>.</li>
+<li>the <code>appmanifest_4185400.acf</code> 文件 in <code>~/.local/分享/Steam/steamapps/</code> (if it exists).</li></ul></li>
+<li>Run / 打开 the Steam 客户端 and 搜索 the 图书馆 for "Runtime".</li>
+<li>选择 "Steam Linux Runtime 4" and click on "安装".</li></ol>
+<p><b>Please Note:</b> If you have 多个 Steam 图书馆 folders, the runtime might have been installed in one of the other libraries. 关注 the same steps above for 每个 图书馆.
+</p>
+<p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Creating_a_duplicate_Runtime-0" aria-labelledby="Creating_a_duplicate_Runtime-0-label"><p>With this approach you are not removing the installed Runtime but 创建 a healthy duplicate in the place of the corrupted one and follows a workaround as found in Valve's <a rel="nofollow" class="external text" href="https://github.com/ValveSoftware/steam-for-linux/issues/13248#issuecomment-4530551478">Github</a>.
+</p><ol><li>打开 the Steam 控制台.
+<ul><li>You can do this 任一 by launching Steam with <code>steam -控制台</code> or 打开 your 终端 and 类型 in <code>steam steam://打开/控制台</code> while Steam is already 打开.</li>
+<li>This will 打开 a new tab in the 客户端 called "控制台", allowing you to enter commands directly into the 客户端.</li></ul></li>
+<li>In the 控制台, 类型 in <code>下载_depot 4183110 4183111</code> .
+<ul><li>This 指挥 tells steam to 下载 the Steam Runtime 4.0 depot 再次 into a 文件夹 called <code>depot_4183111</code> .</li></ul></li>
+<li>Wait for the 下载 to 完成.
+<ul><li>It will 回报 something along the lines of <code>Depot 下载 完成&#160;: "/path/to/Steam/ubuntu12_32/steamapps/内容/app_4183110/depot_4183111"</code> .</li></ul></li>
+<li>创建 a new 文件夹: <code>~/.local/分享/Steam/steamapps/common/Steam Linux Runtime 4.0</code> .</li>
+<li>打开 <code>~/.local/分享/Steam/ubuntu12_32/steamapps/内容/app_4183110/</code> and 移动 the 目录 of <code>depot_4183111</code> to the newly created 文件夹.
+<ul><li>Now we have created a new Runtime 文件夹 with an intact Steam Runtime 4.0.</li></ul></li>
+<li>Finally we 创建 the appmanifest so Steam can find the new Runtime. 创建 a new 文件 in <code>~/.local/分享/Steam/steamapps/</code> called <code>appmanifest_4183110.acf</code></li>
+<li>添加 the 法典 below into the appmanifest.</li></ol>
+<pre>"AppState"
+{
+	"appid"		"4183110"
+	"宇宙"		"1"
+	"名称"		"Steam Linux Runtime 4.0"
+	"StateFlags"		"4"
+	"installdir"		"Steam Linux Runtime 4.0"
+	"SizeOnDisk"		"748703422"
+	"buildid"		"22818298"
+	"LastUpdated"		"1779282445"
+	"UpdateResult"		"0"
+	"BytesToDownload"		"0"
+	"BytesDownloaded"		"0"
+}
+</pre>
+<p>This information tells Steam everything it needs to know 关于 the new Runtime, where to find it, it's 尺寸, etc. 一次 you are done with this, 重新开始 Steam so it can integrate the new Runtime into it's 图书馆.
+</p><p>You can 检查 if it was successful by using your 终端 and typing in <code>cat ~/.local/分享/Steam/logs/compat_日志.txt | grep "4183110" | tail -5</code>.
+</p>
+<ul><li>It should 显示 <code>指挥 prefix for tool 4183110 套装 to:</code>.</li>
+<li>If it shows <code>unsupported version 0</code> this means something went 错误.<p class="mw-empty-elt"></p></li></ul></article></section></div>
+<h3><span class="mw-headline" id="In_case_of_manual_uninstall">In 案例 of 手册 卸载</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: In case of manual uninstall" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: In case of manual uninstall"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><b>Attention:</b> Do <b>not manually</b> 卸载 Proton or Steam Runtime by deleting their folders in <code>steamapps/common</code> and their respective .vdf-files! Doing so might prevent you from reinstalling them, resulting in this error.
+</p><p>If you happen to 移除 them this way, you need to also 变化 a third 文件 located within <code>userdata/USERID/config/compat.vdf</code>, which would prevent you from reinstalling them. 
+</p>
+<ol><li>关闭 Steam completely.</li>
+<li>打开 the <code>compat.vdf</code></li>
+<li>Find the corresponding 条目 associated with the tool's 游戏 ID (e.g. <code>1887720</code> for Proton 7.0).</li>
+<li>删除 the 条目.</li>
+<li>Relaunch Steam. You should now be able to reinstall the Proton or Steam Runtime version.</li></ol>
+<h2><span class="mw-headline" id="File_Verification_Failure">文件 Verification Failure</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: File Verification Failure" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: File Verification Failure"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>When verifying the 游戏 files for 绝地潜兵 2, Steam regularly flags a certain 数字 of files as corrupted and then requests them 再次. If you then run the verification 流程 再次, Steam reports the same 问题 with the same message. In this way, up to 16 files per verification 5月 be flagged as corrupted.
+</p><p>However, this is 否 原因 for concern, as it is caused by <i>nProtect GameGuard</i>, the 游戏’s anti-作弊 软件. GameGuard modifies, updates and encrypts these specific files as a 安全 measure 每个 时间 the 游戏 is launched. Steam’s 文件 verification, on the other hand, compares the files on the 硬盘 with an original 复制 from a fresh installation stored on its servers. Consequently, 全部 files modified by the anti-作弊 星系 are automatically marked as "corrupt" or "无效" and replaced. This creates a constant 返回-and-forth between Steam and GameGuard.
+</p><p>This is completely normal and cannot be 已修复. Furthermore, it is not an 迹象 that the installation is corrupted or that there is hardware 伤害. However, it is 好 practice to 验证 the files nonetheless:
+</p>
+<ul><li><b>Don’t ignore this 特性</b>: Even so, it is recommended that you 检查 the files if the 游戏 崩溃, you encounter endless loading screens, performance 空投, etc. It is a quick and 容易 first step to 规则 out 任何 <i>actual</i> 文件 corruption.</li>
+<li><b>It is an indicator</b>: You should be seriously concerned if 更多 than 16 files cannot be verified. If this happens, it 5月 平均值 that an 更新 was not carried out correctly or perhaps even that there is a 问题 with the 硬盘.</li></ul>
+<h2><span class="mw-headline" id="Slow_Updates">Slow Updates</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Slow Updates" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Slow Updates"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In 一些 cases, Steam 5月 take an exceptionally 长 时间 to 更新 绝地潜兵 2. Due to the 资源-intensive 自然 of patching, performing a fresh uninstallation and reinstallation from scratch can ironically be the 更快 解决方案. 
+</p><p>To understand why, it helps to look at Steam's 4-step 更新 管道:
+</p>
+<ol><li><b>下载</b>: Steam downloads heavily compressed 更新 files.</li>
+<li><b>Staging</b>: Steam creates a temporary 复制 of the affected multi-gigabyte 游戏 archives.</li>
+<li><b>Patching</b>: Your drive unpacks the archives, injects the new 数据, and repacks them.</li>
+<li><b>Deployment</b>: The newly updated archives replace the 老 files in your 游戏 目录.</li></ol>
+<p>Because games 点赞 绝地潜兵 2, "ARK", or "PayDay 2" 商店 数据 in 庞大, bundled 文件 structures, even a 极小 补丁 forces Steam to 移动, unpack, and rewrite tens of gigabytes. A fresh installation completely skips the staging and patching phases, writing the 数据 sequentially instead.
+</p>
+<h3><span class="mw-headline" id="Patch_Performance">补丁 Performance</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Patch Performance" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Patch Performance"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Please be aware that there's a significant difference between <i>downloading</i> and <i>updating</i>. Before Steam can 补丁 任何 files, it must first 下载 the new 数据 from the 互联网.
+</p><p>If the 下载 速度 is at 0 b/s but 存储 drive activity is 高, this does not 平均值 that the 更新 has been stopped – it simply means that Steam is not currently downloading 任何 additional files and is instead applying the files that have been downloaded to the 游戏.
+</p><p>However, as shown above, the 游戏 files have to go through additional steps when patching. If the 流程 is 非常 slow, then that's an indicator for the 存储 device to be causing a 瓶颈. Moving / copying files requires additional 太空 on your 存储. 通常 speaking the 补丁 requires at 最少 as 许多 free 存储 太空 as the 游戏 itself takes up. If there is insufficient free 存储 太空, Steam will 任一 abort the 下载 or offload the 流程 to another, possibly 更慢 存储 device on which a Steam 图书馆 is located.
+</p><p>As it also has to unpack heavily compressed files, this 流程 takes up considerable 负载 on your CPU for unpacking and organizing the 补丁. The unpacking is done in 真实-时间 which means 任何 other processes that are currently running might be interfering with your performance or 经验值 stuttering for the 持续时间 of the patching 流程, depending on your hardware.
+</p>
+<h4><span class="mw-headline" id="Storage_Drives">存储 Drives</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Storage Drives" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Storage Drives"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>It is possible to 经验值 slow patching speeds even with the 使用 of SSDs. A lot of 预算 solutions are particularly slow when updating the 游戏.
+</p><p>If you want to 检查 on your 存储 device
+</p>
+<ol><li>打开 the Task Manager</li>
+<li>Click on the "Performance" tab.</li>
+<li>检查 the active 时间 of your disk. If it's 100%, then you have the 确认 that the slow patching is 实际上 原因 by your 存储 device.</li></ol>
+<p>It's 重要 to note though that just a slow patching 流程 doesn't 平均值 that the drive itself is 差; such speeds can also be caused by other factors, such as:
+</p>
+<ul><li>Anti-病毒 软件 constantly scans during the patching 流程. This can be 已解决 by deactivating the Anti-病毒 for the 持续时间 of the 补丁.</li>
+<li>A nearly full 存储 device and a patching 流程 that needs appropriate 太空 to quickly 更新.
+<ul><li>While in the past this was approximated at ~110 GB, these days giving it 50+ GB is recommended. Additional 太空, especially on the drive that contains your Operating 星系 is 好 for the pagefile (see <a href="Virtual_Memory.html" title="Virtual Memory">Virtual 内存</a>) as well as files 点赞 <code>hiberfil.sys</code> and obviously 驾驶员 &amp; windows updates. Extra headroom is 正面 for a 星系's performance.</li>
+<li>Please note that having sufficient free 太空 does not 平均值 that the 补丁 is guaranteed to be done quickly, just that it will eventually 补丁. If your 固态硬盘 is filled over 50% of its 容量, you 5月 经验值 slow updates due to your 固态硬盘 encountering problems when being nearly full.</li></ul></li>
+<li>Steam can be slow if you have it installed on a slow 固态硬盘 or HDD, even if you moved 绝地潜兵 to different, fast, 存储.</li></ul>
+<p>In the 事件 of your 目标 device having insufficient 太空 for 绝地潜兵 2, Steam will opt to utilize other drives with existing Steam Libraries instead. Especially during larger updates, Steam prefers using the largest available 存储 device with an existing Steam 图书馆 on it to ensure a successful 更新.<br />
+In practical terms this means that even if your 绝地潜兵 2 installation is located on an 固态硬盘, if that 固态硬盘 has insufficient 太空, Steam might use a 更慢 HDD instead to 处理 the operations necessary to 补丁 the 游戏.<sup id="cite&#95;ref-1" class="reference"><a href="#cite_note-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup> It is possible to circumvent this by removing the larger drive from your 图书馆 before patching and then adding it 返回 in after the 补丁 is done.
+</p><p>If you wish to analyze whether Steam is using your 固态硬盘, 打开 up your Task Manager and 检查 which drive is currently in use. If you 确认 that the 错误 drive is used for the patching 流程, you can 关注 these steps:
+</p>
+<ol><li>Quit out of Steam</li>
+<li>打开 the 文件夹 where Steam is installed and 打开 the <code>/steamapps/</code>-文件夹. The 默认 installation 文件夹 is <code>C:\程序 Files (x86)\Steam\steamapps</code>.</li>
+<li>Look for the <code>libraryfolders.vdf</code>-文件 and 打开 it with Notepad.</li>
+<li>Then make note of the <code>C:/.../steam 数字</code> for your 固态硬盘. It is 通常 任一 <code>0</code> or <code>1</code> .</li>
+<li>Go 返回 into <code>/steamapps/</code> and look for the 文件 <code>appmanifest_553850</code>. This is the HD2 下载 instructions 文件, 打开 it with notepad.</li>
+<li>Look for the 法典 line <code>Stagingfolder</code> and 变化 the 数字 to your 固态硬盘. 一次 this has been 套装, 拯救 the 文件 and 关闭 it.</li>
+<li>Now 打开 Steam Settings via the button on the upper left corner of Steam.</li>
+<li>Navigate to <code>下载</code> and press <code>清楚 Caches</code>. This will 重新开始 Steam and you will have to 日志 in 再次. <b>Note</b>: clearing the caches WILL wipe 任何 下载 progress on the 补丁 so you have to 重新开始 it 再次.</li>
+<li>After Steam restarts and you are logged 返回 in it should now be using the 固态硬盘!</li></ol>
+<h4><span class="mw-headline" id="Download_Regions">下载 Regions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Download Regions" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Download Regions"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>If the 存储 device isn’t causing 任何 issues, the slow 速度 could be caused by Steam's  下载 regions.
+</p><p>Steam distributes 游戏 files via localised “内容 运送 Networks” (CDNs). When a popular 游戏 such as 绝地潜兵 2 receives a 少校 更新, the 下载 servers in regions with 高 玩家 counts can 有时 成为 heavily congested, which can bring 下载 speeds for 玩家 to a 爬行. If you’re having issues with 下载 performance, it can 有时 帮助 to 变化 the 下载 region to access a 网络 that’s 更少 congested – perhaps because 玩家 there are living in a different 时间 zone and there’s 更少 activity at that 时刻.
+</p><p>How to 变化 your Steam 下载 Region:
+</p>
+<ol><li>Click on <b>Steam</b> in the top-left corner of the 客户端 and 选择 <b>Settings</b>.</li>
+<li>Navigate to the <b>Downloads</b> tab on the left 侧边栏.</li>
+<li>定位 the <b>下载 Region</b> 掉落-down 菜单.</li>
+<li>选择 a different region (e.g., if you are in Europe, switching from Germany to Netherlands or a 更少 populated neighboring country can 帮助).</li>
+<li>Steam will prompt you to 重新开始 the 客户端 for the changes to take 效果.</li></ol>
+<h2><span class="mw-headline" id="Steam_disk_write_error">Steam disk write error</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Steam disk write error" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Steam disk write error"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>It's possible to encounter the "Disk Write Error" during installing or patching 绝地潜兵 2. Because Steam doesn't specify what exactly is causing it, this error might be caused by a 许可 冲突, a blocked 文件 or even an underlying drive instability.
+</p><p>Quick 重新开始:
+</p>
+<ol><li>Completely 关闭 Steam (via Task Manager or the taskbar 图标).</li>
+<li>重新开始 Steam.</li>
+<li>If this fails, please reboot your PC to release 任何 locked 星系 files.</li></ol>
+<p>Run Steam as 管理员 to elevate Steam's permissions to bypass restrictive Windows 文件夹 protections:
+</p>
+<ol><li>关闭 Steam completely.</li>
+<li>正确-click your Steam desktop shortcut and 选择 "Run as 管理员".</li></ol>
+<p>清楚 the 下载 缓存. This will flush temporary installation files and 之势 Steam to 刷新 the 下载 管道. Please be aware that this will 日志 you out of Steam temporarily and 重新开始 the 客户端:
+</p>
+<ol><li>Navigate to "Steam" (upper left corner).</li>
+<li>Click on "Settings".</li>
+<li>Navigate to "Downloads".</li>
+<li>Click the "清楚 缓存"-button 下一个 to "清楚 下载 缓存".</li></ol>
+<p>修理 the 存储 文件夹 to 修复 broken 文件夹 permissions within your Steam 目录:
+</p>
+<ol><li>Navigate to "Steam" (upper left corner).</li>
+<li>Click on "Settings".</li>
+<li>Navigate to "存储".</li>
+<li>Click the three dots "..." 下一个 to the drive breakdown 酒吧.</li>
+<li>选择 "修理 文件夹" from the 掉落-down 菜单.</li></ol>
+<p>Other Steps you can try:
+</p>
+<ul><li>Configure your Antivirus Exceptions. In 案例 you have an 激进 third-party antivirus 软件 or Windows 捍卫者 falsely flags 绝地潜兵 2 or its anti-作弊 files, locking the drive. 添加 your installation 文件夹 or the "绝地潜兵2.exe" to your antivirus exclusion 列表.</li>
+<li>Free Up 存储 太空. Ensure your drive has ample free 太空, which is especially 重要 for patches that 要求 庞大 temporary overhead.</li></ul>
+<p>检查 for Drive Errors (Windows chkdsk): If the error persists, Windows might be struggling with corrupted 文件 星系 星区.
+</p>
+<ol><li>打开 the Windows 搜索 酒吧, 类型 `cmd`, 正确-click "指挥 Prompt", and 选择 "Run as 管理员".</li>
+<li>类型 <code>chkdsk c: /f /r</code> (replace <code>c:</code> with the actual drive letter where your 游戏 is installed) and press "Enter".</li>
+<li>关注 the on-screen prompts to scan and 修理 your 存储 device.</li></ol>
+<h2><span id=".E6.9C.AA.E6.A3.80.E6.B5.8B.E5.88.B0STEAM"></span><span class="mw-headline" id="未检测到STEAM">未检测到STEAM</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: 未检测到STEAM" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: 未检测到STEAM"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>You 5月 encounter the error message "连接 error: Steam not detected". This can be 已解决 by restarting Steam or the 电脑.
+</p>
+<h2><span id="Steam_Overlay_isn.27t_working"></span><span class="mw-headline" id="Steam_Overlay_isn't_working">Steam Overlay isn't working</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Steam Overlay isn&#039;t working" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Steam Overlay isn&#039;t working"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<ol><li>Make sure Steam Overlay is activated globally.</li>
+<li>Make sure Steam Overlay is activated for 绝地潜兵 2.</li>
+<li>Make sure other Overlays are deactivated.</li>
+<li>Deactivate 任何 FrameGen 软件.</li>
+<li>验证 Steam Files.</li></ol>
+<p><b>Linux:</b>
+</p>
+<ol><li>The Launch 指挥 <code>PROTON_ENABLE_WAYLAND=1</code> can 打破 the Steamoverlay as it is not fully supported yet.</li>
+<li>Please note that Gamescope might deactivate the Steamoverlay. While you can activate steam integration with the <code>-e</code> parameter, it might 原因 GameGuard to block the 游戏 altogether.</li></ol>
+<p><b>Steam 甲板</b>
+</p>
+<ol><li>Make sure it's not in 码头 模式.</li></ol>
+<h3><span class="mw-headline" id="Deactivated_Overlay_causes_lags">Deactivated Overlay causes lags</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Deactivated Overlay causes lags" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Deactivated Overlay causes lags"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>An older bug<sup id="cite&#95;ref-2" class="reference"><a href="#cite_note-2"><span class="cite-bracket">&#91;</span>2<span class="cite-bracket">&#93;</span></a></sup><sup id="cite&#95;ref-3" class="reference"><a href="#cite_note-3"><span class="cite-bracket">&#91;</span>3<span class="cite-bracket">&#93;</span></a></sup> that occurs on Linux caused games to lag / stutter badly after 一些 时间 with the disabled Overlay.
+</p><p>To 修复 this it's advisable to 任一 activate the Overlay or run the 游戏 with the Launch 指挥 <code>LD_PRELOAD=""</code> . This 指挥 will disable 一些 of steam's functionality.
+</p>
+<h2><span class="mw-headline" id="10002018_Steam_AppID_Error">10002018 Steam AppID Error</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: 10002018 Steam AppID Error" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: 10002018 Steam AppID Error"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In the rare 事件 that you encounter a Steam AppID Error with the 数字 10002018, you can attempt these steps (not exhaustive):
+</p>
+<ul><li>清楚 the 下载 缓存 (might 删除 全部 progress for 当前 downloads)
+<ul><li>Steam &gt; Settings &gt; Downloads</li></ul></li>
+<li>Ensure that <code>绝地潜兵2.exe</code> and <code>gameguard.des</code> aren't blocked by 安全 软件 such as Avast, AVG, Norton, etc.</li>
+<li>Reinstall the 游戏 completely.</li>
+<li>更新 全部 apps as listed as installed in the Microsoft 商店. This also goes for 软件 such as "myHP".</li></ul>
+<h2><span class="mw-headline" id="Third_Party_Keys">Third Party Keys</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Third Party Keys" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Third Party Keys"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Please be aware that the 购买 of 游戏 Keys outside of Steam (aside from sources such as Humble 捆绑包) is 总是显示 at 风险 since criminals tend to use key marketplaces for their activities.
+</p><p>If a key was originally purchased using a stolen 信贷 card or fraudulent 付款 method, the publisher will eventually trigger a chargeback. The criminals will 接收 真实 money for selling those keys; eventually the keys are flagged and revoked, which in 转变 leads to the 游戏 disappearing from your Steam 图书馆 and you will lose the 能力 to 更新 or re-下载 the 游戏.
+</p><p><b>Please note that 任何 transactions on gray-市场 platforms are done entirely at your own 风险.</b> It's strongly recommended to use developer-approved storefronts (such as Humble 捆绑包) instead, to avoid purchasing keys that come from a potentially 罪犯 activity. If your key has been revoked you will <b>not</b> 接收 任何 reimbursement or compensation from Valve or 任何 other party and you cannot 声称 a refund through Steam 支援. 任何 dispute or refund requests must be handled entirely through the storefront where you bought the key, which 经常 提供 少量 to 否 买家 保护.
+</p>
+<h2><span class="mw-headline" id="References">参考</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: References" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: References"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite&#95;note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://steamcommunity.com/groups/SteamClientBeta/announcements/detail/1448325533555141580">Steam - Steam 客户端 测试版 - 8月 25th</a></span>
+</li>
+<li id="cite&#95;note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/doitsujin/dxvk/issues/4436">Github - Unified DXVK/VKD3D lag timebomb in 最多 games </a>/</span>
+</li>
+<li id="cite&#95;note-3"><span class="mw-cite-backlink"><a href="#cite_ref-3">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/ValveSoftware/steam-for-linux/issues/11446">Github - lag spikes after 25-40 分钟 of playing on linux</a></span>
+</li>
+</ol></div>
+<div role="navigation" aria-label="Navbox" class="ranger-navbox navigation-not-searchable striped-even mw-collapsible"><div class="ranger-title"><div class="mw-collapsible-toggle-placeholder"></div><span class="ranger-meta"><span class="nv nv-view"><a href="../index.html" title="Template:Navbox Troubleshooting"><span title="View or edit this template">查看 or 编辑 this template</span></a></span></span><div class="ranger-title-text"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div></div><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:4"><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Tools</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist"><div class="ranger-list">
+<ul><li><a href="Hellbomb_Script.html" title="Hellbomb Script">Hellbomb Script</a></li>
+<li><a href="Steam_Launch_Commands.html" title="Steam Launch Commands">Steam Launch Commands</a></li></ul>
+</div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Platform</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist"><div class="ranger-list">
+<ul><li><a href="Laptop_Troubleshooting.html" title="Laptop Troubleshooting">Laptop 故障排除</a></li>
+<li><a href="Linux_Steam_Deck_Troubleshooting.html" title="Linux / Steam Deck Troubleshooting">Linux / Steam 甲板 故障排除</a></li>
+<li><a href="PlayStation_Troubleshooting.html" title="PlayStation Troubleshooting">PlayStation 故障排除</a></li>
+<li><a class="mw-selflink selflink">Steam 故障排除</a></li>
+<li><a href="Xbox_Troubleshooting.html" title="Xbox Troubleshooting">Xbox 故障排除</a></li></ul>
+</div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Performance &amp; 稳定性</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist"><div class="ranger-list">
+<ul><li><a href="BIOS_Updates.html" title="BIOS Updates">BIOS Updates</a></li>
+<li><a href="Clearing_The_Shader_Cache.html" title="Clearing The Shader Cache">Clearing The Shader 缓存</a></li>
+<li><a href="GPU_Driver_Recommendation.html" title="GPU Driver Recommendation">GPU 驾驶员 Recommendation</a></li>
+<li><a href="User_Settings_Config_FPS_Optimization.html" title="User Settings Config FPS Optimization">User Settings Config FPS 优化</a></li>
+<li><a href="Virtual_Memory.html" title="Virtual Memory">Virtual 内存</a></li></ul>
+</div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">崩溃 &amp; Issues</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist"><div class="ranger-list">
+<ul><li><a href="Audio_Problems.html" title="Audio Problems">Audio Problems</a></li>
+<li><a href="../index.html" title="Broken Mods">Broken Mods</a></li>
+<li><a href="Crash_On_Startup.html" title="Crash On Startup">崩溃 On Startup</a></li>
+<li><a href="Crash_To_Desktop.html" title="Crash To Desktop">崩溃 To Desktop</a></li>
+<li><a href="Error_Code_409.html" title="Error Code 409">Error 法典 409</a></li>
+<li><a href="In-Game_Problems.html" title="In-Game Problems">In-游戏 Problems</a></li>
+<li><a href="Input_Problems.html" title="Input Problems">输入 Problems</a></li>
+<li><a href="Network_Troubleshooting.html" title="Network Troubleshooting">网络 故障排除</a></li>
+<li><a href="Reinstallation_of_GameGuard.html" title="Reinstallation of GameGuard">Reinstallation of GameGuard</a></li>
+<li><a href="Reinstallation_of_Visual_C++_Redistributables.html" title="Reinstallation of Visual C++ Redistributables">Reinstallation of Visual C++ Redistributables</a></li>
+<li><a href="Troubleshooting_System_Failure.html" title="Troubleshooting System Failure">故障排除 星系 Failure</a></li>
+<li><a href="Troubleshooting_Stutters_Short_Freezes.html" title="Troubleshooting Stutters/Short Freezes">故障排除 Stutters/短 Freezes</a></li></ul>
+</div></div></div></div></div></div></div>
+<!-- 
+NewPP limit report
+Cached time: 20260816171944
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.079 seconds
+Real time usage: 0.133 seconds
+Preprocessor visited node count: 240/1000000
+Revision size: 21641/4194304 bytes
+Post‐expand include size: 7818/4194304 bytes
+Template argument size: 199/4194304 bytes
+Highest expansion depth: 8/100
+Expensive parser function count: 2/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 5777/10000000 bytes
+ExtLoops count: 0/5000
+Lua time usage: 0.013/15.000 seconds
+Lua memory usage: 665342/52428800 bytes
+Number of processed Cargo queries: 2
+Time spent processing Cargo queries: 0.015 s (avg. 0.007 s)
+Number of Cargo row insertion attempts: 1
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   88.392      1 -total
+ 68.35%   60.418      1 Template:Breadcrumb_Auto
+ 18.59%   16.430      1 Template:Navbox_Troubleshooting
+ 15.12%   13.365      1 Template:Navbox
+  4.78%    4.221      2 Template:Article_other
+  2.19%    1.935      1 Template:Crash_header
+-->
+</div></div>
+</main>
+<footer class="site-footer">离线汉化版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
+</body>
+</html>

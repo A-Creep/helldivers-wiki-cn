@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 459 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-578.666667,-0)">
+        <g id="Requisition-Slip" serif:id="Requisition Slip" transform="matrix(1,0,0,1,552,0)">
+            <rect x="0" y="0" width="512" height="512" style="fill:none;"/>
+            <clipPath id="_clip1">
+                <rect x="0" y="0" width="512" height="512"/>
+            </clipPath>
+            <g clip-path="url(#_clip1)">
+                <g transform="matrix(1,0,0,0.875,0,0)">
+                    <rect x="26.667" y="0" width="458.667" height="512"/>
+                </g>
+                <g transform="matrix(6.615385,0,0,5.894737,-149.74359,-0)">
+                    <path d="M96,0L96,76L26.667,76L26.667,0L96,0ZM65.369,45.125L71.35,68.875L79.211,68.875L72.74,43.182C76.995,40.085 79.926,33.607 79.926,26.125C79.926,15.639 74.169,7.125 67.078,7.125L44.403,7.125L44.403,68.875L52.264,68.875L52.264,45.125L65.369,45.125ZM67.078,15.946C69.831,15.946 72.066,20.507 72.066,26.125C72.066,31.743 69.831,36.304 67.078,36.304L52.264,36.304L52.264,15.946L67.078,15.946ZM96,81.429L96,86.857L26.667,86.857L26.667,81.429L96,81.429Z" style="fill:rgb(255,255,95);"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

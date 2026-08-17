@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-2760,0)">
+        <g id="Super-Sample-Logo" serif:id="Super Sample Logo" transform="matrix(1,0,0,1,2760,0)">
+            <rect x="0" y="0" width="512" height="512" style="fill:none;"/>
+            <clipPath id="_clip1">
+                <rect x="0" y="0" width="512" height="512"/>
+            </clipPath>
+            <g clip-path="url(#_clip1)">
+                <g transform="matrix(1,0,0,1.005511,-2760,-2.821774)">
+                    <path d="M2760,215.633L2760,2.806L2974,2.806L2974,215.633L2760,215.633ZM3058,2.806L3272,2.806L3272,215.633L3058,215.633L3058,2.806ZM3272,299.173L3272,512L3058,512L3058,299.173L3272,299.173ZM2974,512L2760,512L2760,299.173L2974,299.173L2974,512Z" style="fill:rgb(255,90,199);"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

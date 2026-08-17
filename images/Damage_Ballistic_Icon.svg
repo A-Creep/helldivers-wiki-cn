@@ -1,0 +1,12 @@
+<svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2">
+  <desc>Made by Dogo314</desc>
+  <g transform="translate(-2987.294 -1367.53)scale(.94118)">
+    <path style="fill:none" d="M3174 1453h272v272h-272z"/>
+    <clipPath id="a">
+      <path d="M3174 1453h272v272h-272z"/>
+    </clipPath>
+    <g clip-path="url(#a)">
+      <path d="M2140 723v12h-40v-12zm-8-93 8 9v76h-40v-76l8-9v-59l12-24 12 24zm64 93v12h-40v-12zm-8-93 8 9v76h-40v-76l8-9v-59l12-24 12 24zm64 93v12h-40v-12zm-8-93 8 9v76h-40v-76l8-9v-59l12-24 12 24z" style="fill:#ffe" transform="translate(137.149 654.35)scale(1.45811)"/>
+    </g>
+  </g>
+</svg>

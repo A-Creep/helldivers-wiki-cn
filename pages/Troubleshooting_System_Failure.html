@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="theme-helldiver view-dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>故障排除 星系 Failure - 绝地潜兵2 离线百科</title>
+<link rel="stylesheet" href="../theme.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../index.html">🪖 绝地潜兵2 离线百科</a>
+  <div class="header-right">
+    <input id="q" class="search-input" type="search" placeholder="搜索中英文词条…"
+           onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
+    <a class="btn" href="../patch_notes.html">📜 更新日志</a>
+    <a class="btn" href="../index.html">首页</a>
+  </div>
+</header>
+<main class="content">
+  <h1 class="page-title">故障排除 星系 Failure</h1>
+  <div class="breadcrumb">故障排除 星系 Failure</div>
+  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div><div class="breadcrumb-item breadcrumb-item-final">故障排除 星系 Failure</div></div>
+<p>This 页面 is dedicated for severe 崩溃 that can 崩溃 your entire OS (Blue Screens) or your 电脑 as a whole, resulting 任一 in a <b>shutdown</b> or freezes that 要求 you to manually 之力 cycle your 电脑 which have been occurring ever since the <a href="../index.html" class="mw-redirect" title="Into the Unjust">Into the Unjust</a> 更新. This 页面 is structured by 稀有度; the 最多 common issues are found at the beginning of the 页面 while the 更多 uncommon occurrences are found further down.
+</p><p><b>Please note:</b> 全部 the steps presented here have been carefully prepared and with the 意图 to 帮助, but we have to point out that you 关注 每个 step at your own 风险. We 询问 that you 关注 your own judgement, read instructions with care and 继续 cautiously so you can understand 每个 step before applying it. Be aware that 任何 steps you take are your <i>own</i> responsibility.
+</p>
+<ul><li>If you are only experiencing stuttering, it might be worth checking <a href="Troubleshooting_Stutters_Short_Freezes.html" title="Troubleshooting Stutters/Short Freezes">故障排除 Stutters/短 Freezes</a> instead.</li>
+<li>It's recommended to use the <a href="Hellbomb_Script.html" title="Hellbomb Script">Hellbomb Script</a> to 援助 in checking your 电脑 for potential conflicts.</li></ul>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Black_Screen_of_Death"><span class="tocnumber">1</span> <span class="toctext">Black Screen of Death</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Windows_Event_Viewer"><span class="tocnumber">1.1</span> <span class="toctext">Windows 事件 Viewer</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#What_you_can_do"><span class="tocnumber">1.2</span> <span class="toctext">What you can do</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#System_Freeze"><span class="tocnumber">2</span> <span class="toctext">星系 Freeze</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Workarounds"><span class="tocnumber">2.1</span> <span class="toctext">Workarounds</span></a>
+<ul>
+<li class="toclevel-3 tocsection-6"><a href="#Limit_FPS"><span class="tocnumber">2.1.1</span> <span class="toctext">限制 FPS</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="#GPU_settings"><span class="tocnumber">2.1.2</span> <span class="toctext">GPU settings</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Unexpected_Shutdowns"><span class="tocnumber">3</span> <span class="toctext">Unexpected Shutdowns</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#Thermal_Emergency_Shutdowns"><span class="tocnumber">3.1</span> <span class="toctext">Thermal Emergency Shutdowns</span></a>
+<ul>
+<li class="toclevel-3 tocsection-10"><a href="#Overheating_GPUs"><span class="tocnumber">3.1.1</span> <span class="toctext">Overheating GPUs</span></a></li>
+<li class="toclevel-3 tocsection-11"><a href="#CPU_Limiting"><span class="tocnumber">3.1.2</span> <span class="toctext">CPU Limiting</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-12"><a href="#Power_Supply"><span class="tocnumber">3.2</span> <span class="toctext">之力 供给</span></a>
+<ul>
+<li class="toclevel-3 tocsection-13"><a href="#Transient_Spikes"><span class="tocnumber">3.2.1</span> <span class="toctext">Transient Spikes</span></a></li>
+<li class="toclevel-3 tocsection-14"><a href="#AVX"><span class="tocnumber">3.2.2</span> <span class="toctext">AVX</span></a></li>
+<li class="toclevel-3 tocsection-15"><a href="#The_Powerdraw"><span class="tocnumber">3.2.3</span> <span class="toctext">The Powerdraw</span></a></li>
+<li class="toclevel-3 tocsection-16"><a href="#The_Fix"><span class="tocnumber">3.2.4</span> <span class="toctext">The 修复</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-17"><a href="#DISM_/_SFC_Scannow"><span class="tocnumber">4</span> <span class="toctext">DISM / SFC Scannow</span></a>
+<ul>
+<li class="toclevel-2 tocsection-18"><a href="#How_to_use"><span class="tocnumber">4.1</span> <span class="toctext">How to use</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-19"><a href="#Overclocking_/_Undervolting"><span class="tocnumber">5</span> <span class="toctext">Overclocking / Undervolting</span></a>
+<ul>
+<li class="toclevel-2 tocsection-20"><a href="#Overclocking"><span class="tocnumber">5.1</span> <span class="toctext">Overclocking</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#Undervolting"><span class="tocnumber">5.2</span> <span class="toctext">Undervolting</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="#AMD_GPUs"><span class="tocnumber">5.3</span> <span class="toctext">AMD GPUs</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-23"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">参考</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Black_Screen_of_Death">Black Screen of Death</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Black Screen of Death" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Black Screen of Death"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Experiencing a "Black Screen of Death" (BSOD, Windows 11) - while playing 绝地潜兵 2 can be alarming. However, as startling as it can be, there are plenty of things that can potentially 原因 a BSOD; this can be an already unstable hardware configuration, a corrupted 驾驶员 and other things. In such scenarios it's 重要 to understand that 绝地潜兵 2 utilizes 许多 CPU architecture optimizations such as AVX (Advanced Vector Extensions) that can put 更高 负载 onto components. In an already unstable 星系 that is teetering on the edge of 稳定性 this can push it beyond the tipping point.
+</p><p>As a 基本信息 帮助, it's recommended to 检查 <a rel="nofollow" class="external text" href="https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/bug-checks--blue-screens-#troubleshoot-bug-checks-stop-code-errors">Microsoft's 制止 法典 error 列表</a>.
+</p>
+<h3><span class="mw-headline" id="Windows_Event_Viewer">Windows 事件 Viewer</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Windows Event Viewer" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Windows Event Viewer"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The 好 新闻 is that Windows 提供 users with the so-called "Windows 事件 Viewer", a tool that will 日志 任何 irregularities, such as sudden 星系 崩溃. The 问题 with this is that while it tells you that something has failed and can 法案 as an indicator, it unfortunately has not too 许多 information on the exact circumstances.
+</p>
+<ol><li>Press the <b>Windows Key</b>, 类型 <code>事件 Viewer</code> , and press <b>进入</b>.</li>
+<li>On the left-hand 侧边栏, 展开 the "Windows Logs" 文件夹 and click on "星系".</li>
+<li>Click on "筛选 当前 日志..." in the 正确-hand "Actions" panel.</li>
+<li>检查 the box 下一个 to "致命" and "Error", then click "OK".</li>
+<li>Look for a 致命 事件 timed precisely to your last 崩溃. It might be labeled as "Kernel-之力" (事件 ID 41).</li>
+<li>Click on the 事件 and 审查 the "基本信息" and "详情" tabs below.</li>
+<li>The specific capitalized error strings or referenced 驾驶员 files can 帮助 识别 the 问题 at hand (such as <code>驾驶员_IRQL_NOT_更少_OR_EQUAL</code> ).</li></ol>
+<p>While this can 帮助 you understand that something is going on, it doesn't 告诉 you why or what exactly. 一些 reports might 表明 驾驶员 problems but could theoretically also be an underlying hardware failure - the 事件 Viewer is unable to 告诉 you the exact 详情, it merely hints at the point of failure.
+</p>
+<h3><span class="mw-headline" id="What_you_can_do">What you can do</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: What you can do" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: What you can do"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul><li><b>Unstable RAM Overclocks (XMP / EXPO):</b> Another possible 原因 for BSODs could be overclocked 内存. Even if the RAM is healthy and passes 标准 合成 稳定性 tests, 工厂 overclocking profiles such as XMP and EXPO might not necessarily run entirely stable. This can be for a variety of reasons - such as a RAM 套件 that isn't fully optimized for the motherboard (being absent from their Qualified Vendor's 列表) or even mixing different RAM kits together can 原因 instability.
+<ul><li>Luckily this can be 已解决 by running the RAM at the 更慢 but 更多 stable JEDEC speeds.</li></ul></li>
+<li><b>Disable Directstorage:</b> Directstorage is a 内存 technology that was developed to dramatically 减少 loading times in video games and 消除 stuttering caused by 纹理 streaming for Windows 10 / 11 and in Xbox 系列 X|S. Instead of utilizing a lot of 少量 steps to 负载 数据 from a 存储 device into the VRAM, the GPU can just bypass 许多 of the steps which traditional sequential loading needs.
+<ul><li>If your hardware (that is your OS, 固态硬盘 and GPU) 支援 directstorage, then you 受益 from this technology. If it does not 支援 directstorage, you will just 负载 数据 normally.</li>
+<li>In the 事件 of a broken GPU 驾驶员 however, this technology can 原因 bluescreens.</li>
+<li>You can deactivate the 使用 of directstorage by navigating into <code>steamapps/common/绝地潜兵 2/bin/</code> and 重命名 <code>directstoragecore.dll</code> into something else 点赞 <code>directstoragecore_测试.dll</code> to 之势 the 游戏 to use the regular method of loading files.</li></ul></li>
+<li><b>BIOS Updates:</b>While not without 风险 <a href="BIOS_Updates.html" title="BIOS Updates">BIOS Updates</a> are 有时 necessary to fully 解决 blue screens. They are especially 重要 if you are using an Intel 13th / 14th Gen CPU or an AMD Ryzen 7000 or 9000 系列 CPU.
+<ul><li>Please read the 条款 <b>carefully</b> before you decide to 更新 your BIOS as such updates are not without serious 风险.</li></ul></li></ul>
+<h2><span class="mw-headline" id="System_Freeze">星系 Freeze</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: System Freeze" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: System Freeze"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A 星系 freeze is a situation in which the 星系 gets "stuck"; you are unable to enter commands, 移动 the mouse, 关闭 the 当前 window or conduct 任何 other operations without the 星系 returning a BSOD. If such a thing occurs, then the only option is to manually 重新开始 the 星系. 一些 of the steps you can take are already included in <a href="Troubleshooting_Stutters_Short_Freezes.html" title="Troubleshooting Stutters/Short Freezes">故障排除 Stutters/短 Freezes</a>, but we are listing them here in 案例 you have full-on 星系 lock-ups.
+</p><p><b>Please note:</b> This doesn't 平均值 your 电脑 is "bricked". Unfortunately it has 成为 标准 for 一些 users to inflationary use the 术语 "bricking" (which describes permanent 伤害 that turns your 电脑 into a 非常 expensive 砖) synonymous with 全部 manner of situations in which a 简单 重新开始 makes the 星系 operable 再次 (hence it cannot be "bricked" because it continues to work after restarting).
+</p><p>There are 许多 reasons to as to why a 星系 might freeze up:
+</p>
+<ul><li><b>Overheating:</b> A component runs too 炎热 and the cooling is insufficient. In such a situation you might 经验值 thermal throttling first (a 亏损 performance) but it can 带领 全部 the way up to a 星系 freeze.</li>
+<li><b>Defective RAM:</b> Defective 内存 might 原因 a sudden 亏损 of 数据 during 操作.</li>
+<li><b>Dying drives:</b> A dying HDD / 固态硬盘 could 原因 such a 问题 if Windows has to wait on defective 星区, which causes the 星系 to hang.
+<ul><li>This can be due to the NVMe / 固态硬盘 / HDD overheating or the controller being defective, resulting in the OS drive to 断开.</li></ul></li>
+<li><b>Unstable 之力 供给:</b> A dropping 当前 can 原因 components to cease functioning for milliseconds.</li></ul>
+<p>Please 关注 these steps below, one after another and 检查 after 每个 step if that resolves the 问题:
+</p>
+<ul><li>移除 全部 overclocking / undervolting (See <a href="#Overclocking_/_Undervolting">this 章节 below</a>)
+<ul><li>This also goes for XMP / EXPO</li></ul></li>
+<li><a href="GPU_Driver_Recommendation.html" title="GPU Driver Recommendation">A clean GPU 驾驶员 reinstallation</a> using the DDU might 帮助 as well.</li>
+<li>通常 it is recommended to perform a BIOS 更新 to 改进 overall 稳定性 and compatibility.
+<ul><li><b>Please be aware that BIOS Updates have 一些 inherent 风险, which is why you should only perform it if you know what you are doing!</b> Inform yourself before you attempt to do it yourself.</li>
+<li>If you are using an AMD chipset, please also 更新 the chipset drivers to avoid problems.</li></ul></li>
+<li>You can try and 限制 the GPU. If that can halt the 冰冻, then you 最多 likely have an 问题 with your PSU and transient spikes.</li></ul>
+<h3><span class="mw-headline" id="Workarounds">Workarounds</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Workarounds" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Workarounds"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>These following steps are meant as workarounds. If they 解决 your 冰冻, then you 最多 likely have an underlying 问题 (such as an aging PSU). These are temporary 修复 and are meant to prevent further problems down the 道路 - they are not permanent solutions.
+</p>
+<h4><span class="mw-headline" id="Limit_FPS">限制 FPS</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Limit FPS" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Limit FPS"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>It's recommended to 限制 FPS to 60 at the 显示 驾驶员 Level. This will provide a 非常 playable 经验值 and give you the 最多 performance headroom. You can do this via the NVIDIA 控制 Panel, AMD Adrenalin or other programs 点赞 MSI Afterburner.
+</p>
+<h4><span class="mw-headline" id="GPU_settings">GPU settings</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: GPU settings" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: GPU settings"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Make sure to correctly 套装 your dedicated GPU as 高 Performance in Windows. It's recommended to disable your iGPU / APU within your BIOS / UEFI for testing purposes to 之势 Windows to only use the dedicated GPU.
+</p><p>For 更多 information on how to 套装 your GPU, please 检查 <a href="User_Settings_Config_FPS_Optimization.html#Set_the_correct_GPU" title="User Settings Config FPS Optimization">this 条款</a>.
+</p>
+<h2><span class="mw-headline" id="Unexpected_Shutdowns">Unexpected Shutdowns</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Unexpected Shutdowns" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Unexpected Shutdowns"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>If your device suddenly shuts off (含义 it completely turns off without a 警告), this 通常 indicates one of two possibilities: It's 任一 相关 to <b>温度</b> or to <b>威力</b>. This is a <b>非常 致命</b> 事件 because it's a 困难 hardware-level 安全 measure when your components have actively stepped in to 保护 themselves from imminent 物理 伤害.
+</p>
+<h3><span class="mw-headline" id="Thermal_Emergency_Shutdowns">Thermal Emergency Shutdowns</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Thermal Emergency Shutdowns" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Thermal Emergency Shutdowns"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Thermals Emergency Shutdowns occur when your device's 温度 sensors find that one of the components is running too 炎热. 每个 现代 处理器 and graphics card has an embedded thermal 限制 (Tjunction) that acts as a 安全 net. If your 电脑 detects one of the built-in 温度 sensors exceeding a certain threshold, it will try to deploy countermeasures. At first you might 经验值 a sudden performance 掉落, the so-called "Thermal Throttling", which is designed to 减少 hardware performance to 减少 the 高温 世代 that is a byproduct of their computational tasks. However, in the 事件 that the throttling isn't sufficient, your hardware can enact a full-on shutdown when a 致命 上限 is reached (通常 around 100°C - 105°C). This acts as an emergency 制止 to prevent hardware 伤害.
+</p><p><b>Please Note:</b> An overheated device might not 开始 at 全部 after suddenly shutting off. That does not automatically equate to hardware 伤害 but could just be a 安全 measure to give the components 时间 to cool down.
+</p><p><b>The 修复:</b> It's imperative to ensure proper cooling and for that you have to take 多个 factors into 账户.
+</p>
+<ol><li><b>Airflow:</b> Regardless of whether you utilize air- or watercooling, you will need to 移动 cool air through the device's vents and exhaust the heated up air from the inside to the outside. Please note that 一些 devices (such as laptops and handhelds) run hotter by 自然 as their cooling elements have to be built 许多 更小 to fit into their cases. 正确 placement (such as consoles) is also beneficial for temperatures.</li>
+<li><b>Thermal 粘贴:</b> Another crucial 系数 is the 正确 使用 of Thermal 粘贴. Using too 许多 and too 少量 is possible, but 最多 importantly it might be necessary to re-粘贴 your components if the thermal 粘贴 gets 老 and dries out. <b>If you are not sure how to do that, please consult a certified 专业.</b></li>
+<li><b>Cleaning:</b> It's 重要 to regularly clean your 案例 from dust. This is even 更多 重要 if you are living in a household with smokers and / or pets.</li></ol>
+<h4><span class="mw-headline" id="Overheating_GPUs">Overheating GPUs</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Overheating GPUs" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Overheating GPUs"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>If you 嫌疑人 that your GPU might be overheating, you can utilize HWiNFO64 to 日志 the 温度 reading. For 示例: AMD's RX 7600 GPU (and 全部 of its variants, regardless of 制造商) is 臭名昭著 for experiencing 温度 problems.
+</p><p><b>Initial Setup:</b>
+</p>
+<ol><li>First, 安装 the Installer version of HWiNFO64 from <a rel="nofollow" class="external free" href="https://www.hwinfo.com/download/">https://www.hwinfo.com/下载/</a> .</li>
+<li>一次 installed, launch it and on the prompt 选择 "Sensors-only", <i>uncheck</i> "Summary", and click <b>开始</b>.</li>
+<li>下一个, on the bottom-正确, click the <b>装备 图标</b>, and in the "基本信息" tab 套装 the "Polling 时期" to <i>500ms</i> and click <b>套装</b>.</li>
+<li>一次 this is done, click <b>OK</b> to exit the 传感器 settings 菜单.</li>
+<li>下一个 click the 页面 with a <i>green plus 图标</i> in the bottom 正确 (下一个 to the 装备), and 套装 a 拯救 位置 for the logs (by 默认 this will be in your Documents 文件夹). 名称 the 文件 something along the lines of <code>HD2_传感器_Logs_[today's 日期],</code> eg. <code>HD2_传感器_Logs_01-01-2026</code> .</li></ol>
+<p><b>重要</b>: do not 打开 the CSV while it's logging — that can corrupt the 文件. Let it run during normal use, stress tests, or 玩法 to 占领 数据 around 崩溃 or freezes.
+</p><p><b>崩溃 logging:</b>
+一次 you have 套装 up HWiNFO64 and let it run in the background, please run the 游戏 任一 until your machine shuts down or the 游戏 崩溃.
+</p><p>一次 this happens, 打开 the 位置 where you saved the logs (by 默认 this will be in your Documents 文件夹), and look at the 传感器 数据 via one of these methods:
+</p>
+<ul><li>In Libre office</li>
+<li>In Microsoft Excel</li>
+<li>In Google Sheets</li></ul>
+<p>If the difference (the so-called "Delta") between the <code>GPU 温度</code> and the <code>GPU Hotspot 温度</code> is above 20°C then it indicates a severe overheating 风险. A regular delta is around 10°C - 15°C.
+</p>
+<h4><span class="mw-headline" id="CPU_Limiting">CPU Limiting</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: CPU Limiting" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: CPU Limiting"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>It's possible to 制止 the 星系 from shutting down by limiting your CPU's 最大 陈述, so it is recommended to at 最少 测试 this 一次. However this can only prevent 高温-相关 problems. <b>This is only a temporary 修复!</b> If you have underlying problems then these <b>have to</b> be 已修复!
+</p>
+<ol><li>按下 <code>赢得 + R</code> and 类型 <code>powercfg.cpl</code> to 打开 之力 Options.</li>
+<li>变化 "计划 Settings" for the active 之力 计划.</li>
+<li>Click "变化 advanced 之力 settings" to 打开 the "Advanced 之力 Options" dialogue.</li>
+<li>Scroll down to "处理器 之力 管理" and 展开 it with the <b>+</b> 征兆.</li>
+<li>展开 "最大 处理器 陈述" and 套装 it to <b>80%</b>.</li>
+<li>Click <b>应用</b> and then <b>OK</b>.</li></ol>
+<p><b>Note:</b> These changes take immediate 效果. To revert the 变化, just 关注 the steps 再次 and 套装 100% instead of 80%.
+</p>
+<h3><span class="mw-headline" id="Power_Supply">之力 供给</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Power Supply" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Power Supply"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The other big 系数 when it comes to sudden shutoffs (or even 星系 冰冻!) is 电击. This can occur when a "transient spike" triggers the 之力 供给's (PSU) <i>Over-当前 保护 (OCP)</i> or <i>Over-之力 保护 (OPP)</i>. What happens here is that the sudden draw of 之力 trips the 安全 mechanism of your PSU. Technically the 星系 does what it's supposed to do, however it shouldn't trigger such an 事件 simply because it is strained by a 游戏.
+</p>
+<h4><span class="mw-headline" id="Transient_Spikes">Transient Spikes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Transient Spikes" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Transient Spikes"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>In 命令 to understand how a transient spike trips the overcurrent 保护, let's take a look at that:<sup id="cite&#95;ref-1" class="reference"><a href="#cite_note-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup>
+</p><p>全部 hardware employs 一些 种类 of 能量 saving technology. This means your hardware will run 更少 之力-hungry and 许多 cooler during phases in which only 少量 performance is needed. However, when you 开始 up a 游戏, your hardware will suddenly have to kick up a 装备 and therefore 要求 a lot 更多 之力 in 命令 to reach certain speeds. When this happens, we are looking at a "transient spike" - a sudden, rapid microsecond 之力 demand that causes the wattage to spike. In a 少数 milliseconds the hardware will have to pull in a lot of 之力 to perform 许多 更快.
+</p><p>Now this is even 更多 pronounced if you are playing a 游戏. A 游戏 almost 从不显示 has a linear way of functioning. Loads differ from second to second. One 时刻 you run over an empty 沙漠 and the 下一个 时刻 an 轨道武器 弹幕 hammers down on the map, things 打破, 敌人 die, etc. The GPU has to 负载 in new textures or calculate 轻型 particles which were not in the 内存 before, a sudden surge of 敌人 requires 更多 CPU calculations and so on. 一对 this with 现代 提升 technologies which 要求 an 增加 in 核心 voltage in 命令 to perform well under 负载 and you will see that the 星系 has to draw in a lot 更多 之力 at times at a 非常 rapid pace. On the other hand you will see that the hardware will 时钟 down when things are idling, so as to 减少 之力 draw, 高温 世代 and noise.
+</p>
+<h4><span class="mw-headline" id="AVX">AVX</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: AVX" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: AVX"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>This is even 更多 of a stress-测试 for 任何 星系, as 绝地潜兵 2 utilizes AVX (Advanced Vector Extensions), a CPU 指示 套装 that is utilized to do a lot of 非常 复杂 math at a rapid pace. In 命令 to do 全部 of these mathematical calculations (as 绝地潜兵 2 simulates almost everything), the 电脑 will use a wider bus (256 bit or 512 bit) inside the CPU and 负载 heaps of 数据 straight from the RAM into the CPU. Such a 重型 负载 requires a lot of 之力, which requires a lot of 之力 and therefore 增加 the transient spikes even further (not as intense as GPUs but still noticeably).
+</p><p>When the CPU engages AVX, it first encounters a slight 减少 of internal voltage in the CPU. Such a 流程 is called "vDroop" and occurs whenever a CPU has to 变化 from idle to full 负载. During this 流程 the internal voltage in the CPU will slightly 减少, making the CPU 极其 unstable. If the PSU or the VRMs of the Motherboard aren't working properly, the CPU will simply 崩溃.
+</p><p>It's also 重要 to note that AVX will stay on during your 时间 playing. AVX draws a 庞大, sustained 当前 the entire 时间 it runs, heavily heating up the silicon and dropping the 安全 margin for 稳定性. 更小 issues therefore can quickly 原因 崩溃 when a 流程 使用次数 AVX opposed to 软件 that does not utilize it.
+</p><p>Furthermore motherboards employ something called an "AVX-Offset", which will 原因 the CPU to 减少 it's 时钟 速度 (e.g 200 - 300 MHz, maybe 更多 or 更少) when an AVX 指示 is used as the steep 之力 draw results in 庞大 高温 世代 (which is why your CPU runs hotter during 绝地潜兵 2 opposed to other video games). This combats potential overheating and 崩溃 from thermal / 当前 limits.
+</p>
+<h4><span class="mw-headline" id="The_Powerdraw">The Powerdraw</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: The Powerdraw" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: The Powerdraw"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>现代 GPUs can 原因 极其 高 transient spikes - 现代 NVIDIA RTX 50-系列 and AMD RX 9000-系列 GPUs can generate 150% of their rated TDP in transient spikes lasting 100 microseconds. As an 示例: A RTX 5090 rated at 575W can momentarily spike to 860W when a transient spike occurs during a scene transition or shader compilation step. Such a 变化 occurs in under a millisecond, requiring the PSU to 运送 this wattage without the 12V rail sagging. Older PSUs simply were not designed to 处理 such loads without shutting down.
+</p><p>Especially aging, underpowered or 预算 PSUs can 经验值 problems 相关 to transient spikes, resulting in emergency shutdowns to 保护 your components from an 电力 surge. Alternatively it's also possible that the 当前 for CPU, RAM or GPU 减少 just slightly below the 致命 最小, which immediately causes the hardware to lose 稳定性. As a 结果 you see that the 图像 freezes up and the PC suddenly stops reacting  altogether.
+</p><p>现代 PSUs of the ATX 3.0 and 3.1 规格 explicitly 要求 PSUs to 处理 200% transient excursions for 100 microseconds without triggering 任何 保护 mechanisms.
+</p>
+<h4><span class="mw-headline" id="The_Fix">The 修复</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: The Fix" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: The Fix"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ 致命 安全 警告: If you 嫌疑人 a hardware or 之力 供给 failure, DO NOT 打开 the device's 之力 供给 单位 (PSU) yourself. This is 极其 危险! 之力 Supplies retain 致命 电力 voltage even when unplugged! Opening the 单位 can 原因 severe 受伤 or death and voids your warranty. 总是显示 consult a certified 专业 for 物理 repairs. ⚠</b></div>
+<ul><li>Please ensure your PSU's rated wattage meets or exceeds your systems demands. As a 规则 of thumb it's 好 to give your PSU 1.4 to 1.5 times the demand in headroom.</li>
+<li>Your PSU should at 最少 be of the ATX 3.0 标准<sup id="cite&#95;ref-2" class="reference"><a href="#cite_note-2"><span class="cite-bracket">&#91;</span>2<span class="cite-bracket">&#93;</span></a></sup> as this 世代 has been built to absorb 高 负载 peaks above the nominal 之力, whereas older 2.x PSUs do not have this 设计 in 心智. ATX 3.0 PSUs are designed to 处理 transient spikes with two times their rating. (含义 a 700W PSU is able to 处理 a spike of up to 1400W.) This is 重要 for newer GPUs (such as the NVIDIA RTX-30 系列 and AMD RX 7000 系列) as those have been designed with 更高 transients than the generations before them.</li></ul>
+<p><b>Please be aware:</b> A surge 护卫 <b>cannot</b> prevent 之力 spike 崩溃 as such a device will only 保护 高-voltage transients from the mains. Your PSU has it's own 安全 mechanism which are not affected by a surge 护卫 when the hardware suddenly requires a steep 增加 in 之力. The 崩溃 is internal, so external hardware cannot 帮助 in such an 环境.
+</p>
+<h2><span id="DISM_.2F_SFC_Scannow"></span><span class="mw-headline" id="DISM_/_SFC_Scannow">DISM / SFC Scannow</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: DISM / SFC Scannow" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: DISM / SFC Scannow"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In 基本信息 it is recommended to use DISM / SFC Scannow as an early attempt at resolving BSODs or Freezes. 两者 of these terms refer to built-in Windows tools that can be used to 检查 受保护 星系 files for damages and corruption and can (to a 有限 degree) 修理 Windows files. Please note that these tools do not replace a full-on reinstall of your Operating 星系; Even if they are able to 解决 一些 issues, there are 有时 situations that warrant a full reinstall of Windows.
+</p><p>The 指挥 <code>sfc /scannow</code> is a diagnostic tool, called the "星系 文件 Checker", which will scan 全部 受保护 OS 星系 files for damages, changes or missing elements and will 修理 them.
+</p>
+<ol><li>按下 <code>赢得 + R</code> or Press "开始" and 打开 the "Run" dialog.</li>
+<li>类型 in <code>CMD</code>.</li>
+<li>正确 click on it and chose "Run as 管理员".</li>
+<li>Now 类型 <code>sfc /scannow</code> into the CMD box.</li>
+<li>一次 it's done, keep the CMD box 打开 for the 下一个 steps.</li></ol>
+<p>DISM (Deployment 图像 Servicing and 管理) is a Windows tool which can be used to 服务, prepare and 修理 Windows operating 星系 images (as in 受保护 星系 files).
+</p><p>It is capable of repairing files that SFC cannot 修理.
+</p><p>Make sure to run these one by one as written:
+</p>
+<ol><li>类型 in <code>dism /在线 /cleanup-图像 /scanhealth</code>. Wait until it is finished.</li>
+<li>类型 in <code>dism /在线 /cleanup-图像 /checkhealth</code>. 再次, wait until it is finished.</li>
+<li>Finally 类型 in <code>dism /在线 /cleanup-图像 /restorehealth</code>.</li></ol>
+<h3><span class="mw-headline" id="How_to_use">How to use</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: How to use" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: How to use"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>通常 it is recommended to try SFC / DISM at 最少 一次 early on if you 经验值 BSODs / Freezes. However, if you 继续 to 经验值 a 星系 freeze, then it's 最好 to 解决 the 冰冻 by trying other avenues. Use SFC / DISM 再次 一次 the 冰冻 has been 已解决 in the 事件 of a 星系 freeze corrupting Windows files.
+</p>
+<h2><span id="Overclocking_.2F_Undervolting"></span><span class="mw-headline" id="Overclocking_/_Undervolting">Overclocking / Undervolting</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Overclocking / Undervolting" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Overclocking / Undervolting"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Overclocking and undervolting can 创建 两者 Blue Screens and sudden shutoffs, which is why it's recommended to 转变 全部 overclocking and undervolting <b>关</b>. Especially 非常 激进 settings can easily trigger problems.
+</p><p>Overclocking and Undervolting includes (but is not 有限 to):
+</p>
+<ul><li>Precision 提升 Overdrive (PBO)</li>
+<li>Intel 200s 提升</li>
+<li>ASUS Multicore Enhancement</li>
+<li>XMP / EXPO / DOCP</li>
+<li>工厂 GPU overclocks.</li></ul>
+<p><b>Why this matters:</b>
+Whether you push the 时钟 speeds too 高 for your 当前 voltage, or keep the clocks identical while lowering the voltage, the physiological 冲击 on the 芯片 is the same: the 处理器 is effectively starved of 电力 能量.
+</p><p>In 技术信息 terms, digital processors consist of billions of microscopic 逻辑 gates that must 切换 states synchronously according to an internal 计时器. Overclocking and undervolting directly 改变 the 时间 it takes for these 逻辑 gates to 冲锋 and 放电 their 电力 signals. If the voltage is dropped too 低, the 电力 信号 takes slightly longer to build up. As a 结果, the 大门 attempts to read the 数据 before the 陈述 切换 has fully completed. In the hardware industry, this is formally known as a "Timing Violation" or a "逻辑 Race 条件".
+</p><p>When this happens, the 电脑 processes corrupted 数据 or mathematical nonsense. A Blue Screen of Death (BSOD) is simply the operating 星系's 软件 防御 mechanism responding to a catastrophic breakdown in the hardware's logical consistency shutting down the 星系 before these corrupted calculations can corrupt your OS configuration or other 数据.
+</p><p>Or to make it simpler: Imagine a 水 星系 that 使用次数 latches to 运输 水 (voltage) from A to B. In 命令 to 继续 you need to 打开 and 关闭 latches; you can only 打开 latches if the 水 压力 (电力 冲锋) is 高 enough. If you need 水 quickly but there's 低 压力 (undervolting) then the latch simply cannot be opened quickly enough so the 水 doesn't get where it needs to be in a timely fashion.
+</p>
+<h3><span class="mw-headline" id="Overclocking">Overclocking</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Overclocking" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Overclocking"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Overclocking requires 更多 voltage to 维护 更高 speeds. In 转变 this generates 更多 高温. An unstable overclock can 带领 to a BSOD. In simpler terms it fails to operate in a 安全 电力 or thermal window, trading lifespan and 稳定性 for 速度.
+</p>
+<h3><span class="mw-headline" id="Undervolting">Undervolting</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Undervolting" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Undervolting"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Undervolting too 许多 can potentially trigger 任一 a BSOD or an UVP (Undervoltage 保护)<sup id="cite&#95;ref-3" class="reference"><a href="#cite_note-3"><span class="cite-bracket">&#91;</span>3<span class="cite-bracket">&#93;</span></a></sup>.
+</p>
+<ul><li>A GPU is 很少 stressed during the initial 星系 boot or desktop idling. Therefore, an unstable GPU undervolt will almost 从不显示 prevent your PC from turning on. Instead, it will running fine on your desktop, only to instantly 崩溃 to desktop or freeze 一次 a 重型 3D 负载 点赞 绝地潜兵 2 is applied.</li>
+<li>A CPU manages the 低-level Windows kernel initialization, 驾驶员 sorting, and cryptographic checks from the 非常 first millisecond. An unstable CPU undervolt can trigger an immediate failure during startup, locking your 星系 in an infinite bootloop, 冰冻 before the desktop loads, or throwing early Blue Screens.</li></ul>
+<p><b>Be aware:</b>
+</p>
+<ul><li>If you 经验值 a sudden shutoff then that's the UVP of the 之力 供给 that has been triggered.</li>
+<li>If the CPU is starved for voltage you instead are presented with a BSOD with an error message such as <code>WHEA_UNCORRECTABLE_ERROR</code> or <code>DPC_看门狗_VIOLATION</code>.</li></ul>
+<h3><span class="mw-headline" id="AMD_GPUs">AMD GPUs</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: AMD GPUs" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: AMD GPUs"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>If you are using an AMD GPU, you might need to 减少 the 核心 时钟 values. 许多 of the 5000, 6000 and 7000 系列 GPUs are unstable due to their 高 核心 时钟 values.(Intel and NVIDIA GPU users can skip this step!)
+</p><p>Please 限制 your GPU 最大 核心 时钟 速度 by at 最少 200 MHz to 检查 if it 增加 稳定性:
+</p>
+<ol><li>打开 AMD Adrenalin.</li>
+<li>Click the "Performance" tab.</li>
+<li>Click the "Tuning" sub-tab.</li>
+<li>Agree to the terms of use. <b>重要:</b> This is a downclocking, <b>NOT</b> an overclocking.</li>
+<li>In the "GPU Tuning 控制" 章节, enable "习俗 tuning".</li>
+<li>Click the "GPU Tuning" 切换 to enable tuning.</li>
+<li>Click the "Advanced 控制" 切换 to enable full 控制.</li>
+<li><i>减少</i> the 最大 频率 (MHz) slider by 200mhz (not&#160;%).</li>
+<li>Click the Apply Settings button on the top 正确.</li></ol>
+<p>If you want to 测试 limiting 之力 draw for your GPU, you can 关注 these steps:
+</p>
+<ol><li>关注 Step 1 to 8 above.</li>
+<li>Click the "之力 Tuning" 切换 to enable 之力 控制.</li>
+<li>Drag the <i>之力 限制</i> (%)  slider to -20%.</li>
+<li>If your GPU does not 允许 you to 更低 the 之力 限制 by -20%, 套装 it as 低 as possible.</li>
+<li>Click the "Apply Settings" button on the top 正确.</li></ol>
+<h2><span class="mw-headline" id="References">参考</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: References" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: References"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite&#95;note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://evezone.evetech.co.za/quick-bytes/why-does-my-pc-crash-during-power-spikes-understanding-intelligent-voltage">Evezone - Why Does My PC 崩溃 During 之力 Spikes? Understanding Intelligent Voltage Stabilisation</a></span>
+</li>
+<li id="cite&#95;note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://www.bequiet.com/en/insidebequiet/3953">beQuiet! - ATX 3.0, PCI Express 5 and 12VHPWR</a></span>
+</li>
+<li id="cite&#95;note-3"><span class="mw-cite-backlink"><a href="#cite_ref-3">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://gamersnexus.net/Undervoltage%20Protection">GamersNexus - Undervoltage 保护</a></span>
+</li>
+</ol></div>
+<div role="navigation" aria-label="Navbox" class="ranger-navbox navigation-not-searchable striped-even mw-collapsible"><div class="ranger-title"><div class="mw-collapsible-toggle-placeholder"></div><span class="ranger-meta"><span class="nv nv-view"><a href="../index.html" title="Template:Navbox Troubleshooting"><span title="View or edit this template">查看 or 编辑 this template</span></a></span></span><div class="ranger-title-text"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div></div><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:4"><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Tools</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist"><div class="ranger-list">
+<ul><li><a href="Hellbomb_Script.html" title="Hellbomb Script">Hellbomb Script</a></li>
+<li><a href="Steam_Launch_Commands.html" title="Steam Launch Commands">Steam Launch Commands</a></li></ul>
+</div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Platform</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist"><div class="ranger-list">
+<ul><li><a href="Laptop_Troubleshooting.html" title="Laptop Troubleshooting">Laptop 故障排除</a></li>
+<li><a href="Linux_Steam_Deck_Troubleshooting.html" title="Linux / Steam Deck Troubleshooting">Linux / Steam 甲板 故障排除</a></li>
+<li><a href="PlayStation_Troubleshooting.html" title="PlayStation Troubleshooting">PlayStation 故障排除</a></li>
+<li><a href="Steam_Troubleshooting.html" title="Steam Troubleshooting">Steam 故障排除</a></li>
+<li><a href="Xbox_Troubleshooting.html" title="Xbox Troubleshooting">Xbox 故障排除</a></li></ul>
+</div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Performance &amp; 稳定性</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist"><div class="ranger-list">
+<ul><li><a href="BIOS_Updates.html" title="BIOS Updates">BIOS Updates</a></li>
+<li><a href="Clearing_The_Shader_Cache.html" title="Clearing The Shader Cache">Clearing The Shader 缓存</a></li>
+<li><a href="GPU_Driver_Recommendation.html" title="GPU Driver Recommendation">GPU 驾驶员 Recommendation</a></li>
+<li><a href="User_Settings_Config_FPS_Optimization.html" title="User Settings Config FPS Optimization">User Settings Config FPS 优化</a></li>
+<li><a href="Virtual_Memory.html" title="Virtual Memory">Virtual 内存</a></li></ul>
+</div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">崩溃 &amp; Issues</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist"><div class="ranger-list">
+<ul><li><a href="Audio_Problems.html" title="Audio Problems">Audio Problems</a></li>
+<li><a href="../index.html" title="Broken Mods">Broken Mods</a></li>
+<li><a href="Crash_On_Startup.html" title="Crash On Startup">崩溃 On Startup</a></li>
+<li><a href="Crash_To_Desktop.html" title="Crash To Desktop">崩溃 To Desktop</a></li>
+<li><a href="Error_Code_409.html" title="Error Code 409">Error 法典 409</a></li>
+<li><a href="In-Game_Problems.html" title="In-Game Problems">In-游戏 Problems</a></li>
+<li><a href="Input_Problems.html" title="Input Problems">输入 Problems</a></li>
+<li><a href="Network_Troubleshooting.html" title="Network Troubleshooting">网络 故障排除</a></li>
+<li><a href="Reinstallation_of_GameGuard.html" title="Reinstallation of GameGuard">Reinstallation of GameGuard</a></li>
+<li><a href="Reinstallation_of_Visual_C++_Redistributables.html" title="Reinstallation of Visual C++ Redistributables">Reinstallation of Visual C++ Redistributables</a></li>
+<li><a class="mw-selflink selflink">故障排除 星系 Failure</a></li>
+<li><a href="Troubleshooting_Stutters_Short_Freezes.html" title="Troubleshooting Stutters/Short Freezes">故障排除 Stutters/短 Freezes</a></li></ul>
+</div></div></div></div></div></div></div>
+<!-- 
+NewPP limit report
+Cached time: 20260816171947
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.062 seconds
+Real time usage: 0.088 seconds
+Preprocessor visited node count: 249/1000000
+Revision size: 27441/4194304 bytes
+Post‐expand include size: 8094/4194304 bytes
+Template argument size: 421/4194304 bytes
+Highest expansion depth: 8/100
+Expensive parser function count: 2/500
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 1487/10000000 bytes
+ExtLoops count: 0/5000
+Lua time usage: 0.011/15.000 seconds
+Lua memory usage: 665845/52428800 bytes
+Number of processed Cargo queries: 2
+Time spent processing Cargo queries: 0.009 s (avg. 0.005 s)
+Number of Cargo row insertion attempts: 1
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   55.577      1 -total
+ 67.37%   37.441      1 Template:Breadcrumb_Auto
+ 21.83%   12.135      1 Template:Navbox_Troubleshooting
+ 18.73%   10.410      1 Template:Navbox
+  6.20%    3.447      2 Template:Article_other
+  3.19%    1.774      1 Template:Crash_header
+-->
+</div></div>
+</main>
+<footer class="site-footer">离线汉化版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
+</body>
+</html>

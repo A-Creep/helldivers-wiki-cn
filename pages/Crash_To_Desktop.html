@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="theme-helldiver view-dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>崩溃 To Desktop - 绝地潜兵2 离线百科</title>
+<link rel="stylesheet" href="../theme.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../index.html">🪖 绝地潜兵2 离线百科</a>
+  <div class="header-right">
+    <input id="q" class="search-input" type="search" placeholder="搜索中英文词条…"
+           onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
+    <a class="btn" href="../patch_notes.html">📜 更新日志</a>
+    <a class="btn" href="../index.html">首页</a>
+  </div>
+</header>
+<main class="content">
+  <h1 class="page-title">崩溃 To Desktop</h1>
+  <div class="breadcrumb">崩溃 To Desktop</div>
+  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div><div class="breadcrumb-item breadcrumb-item-final">崩溃 To Desktop</div></div>
+<p>This 条款 focuses on 崩溃 that occur during the 游戏 and that throw 玩家 返回 onto their desktop 环境.
+</p>
+<h2><span class="mw-headline" id="Workflow">Workflow</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Workflow" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Workflow"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>通常 it is recommended to use the <a href="Hellbomb_Script.html" title="Hellbomb Script">Hellbomb Script</a> to 速度 up the 流程 and to 帮助 you 采集 information on your 星系. Please note that this 引导 was written with Windows in 心智. If you need 帮助 with Linux, please 检查 <a href="Linux_Steam_Deck_Troubleshooting.html" title="Linux / Steam Deck Troubleshooting">this Linux 条款</a>.
+</p><p>It is recommended to do them one by one, 含义 you try one of the steps first and then 测试 if the crashing continues. If it does, 继续 to the 下一个 step.
+</p>
+<ol><li>Ensure your Motherboard's UEFI / BIOS is up to 日期. (For 更多 information, please read up on <a href="BIOS_Updates.html" title="BIOS Updates">BIOS Updates</a>. Please read the information carefully.)
+<ol><li>This is absolutely necessary for Intel 13th and 14th Gen CPUs as those are suffering from a hardware flaw that can only be halted via microcode 0x12F.</li></ol></li>
+<li>Ensure Windows is fully up to 日期.</li>
+<li>移除 任何 and <b>所有</b> overclocking / undervolting.
+<ol><li>Disable Precision 提升 Overdrive, Intel 提升, ASUS MCE, XMP / EXPO / DOCP, 工厂 GPU OCs, etc.</li>
+<li>一些 AMD 5000 / 6000 / 7000 GPUs 5月 need a 负面 核心 offset. For 更多 information, please 检查 <a href="Troubleshooting_System_Failure.html#AMD_GPUs" title="Troubleshooting System Failure">故障排除 星系 Failure#AMD GPUs</a>.</li></ol></li>
+<li>Make sure your <a href="Virtual_Memory.html" title="Virtual Memory">Pagefile</a> is enabled and 套装 as "星系 Managed" on at 最少 one disk.
+<ol><li>This is an absolute MUST for 16GB or 更少 RAM.</li></ol></li>
+<li>移除 全部 mods - this is not optional.
+<ol><li>If you are using the Hellbomb Script -&gt; <code>清楚 数据 Options</code> 菜单 -&gt; 选择 "Quick Mod Removal".</li>
+<li>Then in the same 菜单, 选择 <code>清楚 Settings (Appdata)</code></li>
+<li>Go to the <code>重置/切换 Components</code> 菜单 -&gt; 选择 "Steam 重置".</li>
+<li>验证 the 游戏 files in Steam.</li></ol>
+<ul><li>For 手册 steps, 关注 this 引导: <a href="../index.html" title="Broken Mods">Broken Mods</a>.</li></ul></li>
+<li><a href="Clearing_The_Shader_Cache.html" title="Clearing The Shader Cache">清楚 your shader 缓存</a> (Click for 手册 Steps)
+<ul><li>Hellbomb Script: <code>清楚 数据 Options</code> 菜单. -&gt; 选择 "清楚 Only Shader Caches"</li>
+<li>Please be aware that if you are using DX11 you'll need to 清楚 the 驾驶员's shader 缓存 instead.</li></ul></li>
+<li><a href="Reinstallation_of_Visual_C++_Redistributables.html" title="Reinstallation of Visual C++ Redistributables">Reinstallation of Visual C++ Redistributables</a> (Click for 手册 steps)
+<ol><li>Hellbomb Script: <code>重置/切换 Components</code> 菜单 -&gt; 选择 "卸载 VC++".</li>
+<li>Reboot your PC.</li>
+<li>Hellbomb Script: <code>重置/切换 Components</code> 菜单 -&gt; 选择 "安装 VC++".</li></ol></li>
+<li>选择 the 正确 GPU in Windows:
+<ul><li>Hellbomb Script: <code>Graphics Options</code> 菜单 -&gt; "选择 正确 GPU".</li></ul></li>
+<li>Disable "Hardware Accelerated Graphics Scheduling" (HAGS)
+<ol><li>Go to "Windows Settings".</li>
+<li>选择 "星系".</li>
+<li>选择  "显示".</li>
+<li>Go to "Graphics Settings 链接".</li>
+<li>选择 "切换 off HAGS".</li>
+<li>重新开始 your PC.</li></ol></li></ol>
+<div role="navigation" aria-label="Navbox" class="ranger-navbox navigation-not-searchable striped-even mw-collapsible"><div class="ranger-title"><div class="mw-collapsible-toggle-placeholder"></div><span class="ranger-meta"><span class="nv nv-view"><a href="../index.html" title="Template:Navbox Troubleshooting"><span title="View or edit this template">查看 or 编辑 this template</span></a></span></span><div class="ranger-title-text"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div></div><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:4"><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Tools</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist"><div class="ranger-list">
+<ul><li><a href="Hellbomb_Script.html" title="Hellbomb Script">Hellbomb Script</a></li>
+<li><a href="Steam_Launch_Commands.html" title="Steam Launch Commands">Steam Launch Commands</a></li></ul>
+</div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Platform</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist"><div class="ranger-list">
+<ul><li><a href="Laptop_Troubleshooting.html" title="Laptop Troubleshooting">Laptop 故障排除</a></li>
+<li><a href="Linux_Steam_Deck_Troubleshooting.html" title="Linux / Steam Deck Troubleshooting">Linux / Steam 甲板 故障排除</a></li>
+<li><a href="PlayStation_Troubleshooting.html" title="PlayStation Troubleshooting">PlayStation 故障排除</a></li>
+<li><a href="Steam_Troubleshooting.html" title="Steam Troubleshooting">Steam 故障排除</a></li>
+<li><a href="Xbox_Troubleshooting.html" title="Xbox Troubleshooting">Xbox 故障排除</a></li></ul>
+</div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Performance &amp; 稳定性</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist"><div class="ranger-list">
+<ul><li><a href="BIOS_Updates.html" title="BIOS Updates">BIOS Updates</a></li>
+<li><a href="Clearing_The_Shader_Cache.html" title="Clearing The Shader Cache">Clearing The Shader 缓存</a></li>
+<li><a href="GPU_Driver_Recommendation.html" title="GPU Driver Recommendation">GPU 驾驶员 Recommendation</a></li>
+<li><a href="User_Settings_Config_FPS_Optimization.html" title="User Settings Config FPS Optimization">User Settings Config FPS 优化</a></li>
+<li><a href="Virtual_Memory.html" title="Virtual Memory">Virtual 内存</a></li></ul>
+</div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">崩溃 &amp; Issues</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist"><div class="ranger-list">
+<ul><li><a href="Audio_Problems.html" title="Audio Problems">Audio Problems</a></li>
+<li><a href="../index.html" title="Broken Mods">Broken Mods</a></li>
+<li><a href="Crash_On_Startup.html" title="Crash On Startup">崩溃 On Startup</a></li>
+<li><a class="mw-selflink selflink">崩溃 To Desktop</a></li>
+<li><a href="Error_Code_409.html" title="Error Code 409">Error 法典 409</a></li>
+<li><a href="In-Game_Problems.html" title="In-Game Problems">In-游戏 Problems</a></li>
+<li><a href="Input_Problems.html" title="Input Problems">输入 Problems</a></li>
+<li><a href="Network_Troubleshooting.html" title="Network Troubleshooting">网络 故障排除</a></li>
+<li><a href="Reinstallation_of_GameGuard.html" title="Reinstallation of GameGuard">Reinstallation of GameGuard</a></li>
+<li><a href="Reinstallation_of_Visual_C++_Redistributables.html" title="Reinstallation of Visual C++ Redistributables">Reinstallation of Visual C++ Redistributables</a></li>
+<li><a href="Troubleshooting_System_Failure.html" title="Troubleshooting System Failure">故障排除 星系 Failure</a></li>
+<li><a href="Troubleshooting_Stutters_Short_Freezes.html" title="Troubleshooting Stutters/Short Freezes">故障排除 Stutters/短 Freezes</a></li></ul>
+</div></div></div></div></div></div></div>
+<!-- 
+NewPP limit report
+Cached time: 20260816171949
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.044 seconds
+Real time usage: 0.065 seconds
+Preprocessor visited node count: 129/1000000
+Revision size: 2783/4194304 bytes
+Post‐expand include size: 7497/4194304 bytes
+Template argument size: 44/4194304 bytes
+Highest expansion depth: 8/100
+Expensive parser function count: 2/500
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/10000000 bytes
+ExtLoops count: 0/5000
+Lua time usage: 0.010/15.000 seconds
+Lua memory usage: 663239/52428800 bytes
+Number of processed Cargo queries: 2
+Time spent processing Cargo queries: 0.009 s (avg. 0.004 s)
+Number of Cargo row insertion attempts: 1
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   46.890      1 -total
+ 75.73%   35.511      1 Template:Breadcrumb_Auto
+ 23.95%   11.232      1 Template:Navbox_Troubleshooting
+ 19.51%    9.146      1 Template:Navbox
+  6.09%    2.857      2 Template:Article_other
+-->
+</div></div>
+</main>
+<footer class="site-footer">离线汉化版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
+</body>
+</html>

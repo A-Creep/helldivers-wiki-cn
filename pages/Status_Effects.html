@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="theme-helldiver view-dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>状态效果 - 绝地潜兵2 离线百科</title>
+<link rel="stylesheet" href="../theme.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../index.html">🪖 绝地潜兵2 离线百科</a>
+  <div class="header-right">
+    <input id="q" class="search-input" type="search" placeholder="搜索中英文词条…"
+           onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
+    <a class="btn" href="../patch_notes.html">📜 更新日志</a>
+    <a class="btn" href="../index.html">首页</a>
+  </div>
+</header>
+<main class="content">
+  <h1 class="page-title">状态效果</h1>
+  <div class="breadcrumb">状态效果</div>
+  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr">
+<div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Game_Mechanics.html" title="Game Mechanics">机制</a></div><div class="breadcrumb-item breadcrumb-item-final">状态效果</div></div>
+<p>There are various 状态效果 that can 改变 the <a href="Helldiver.html" title="Helldiver">绝地潜兵</a> or their <a href="../index.html" class="mw-redirect" title="Enemies">敌人</a>. The following 效果 exist in 绝地潜兵 2.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Stagger_and_Ragdoll"><span class="tocnumber">1</span> <span class="toctext">硬直 and Ragdoll</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#敌人"><span class="tocnumber">1.1</span> <span class="toctext">敌人</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Stagger_Force_vs._Enemies"><span class="tocnumber">1.2</span> <span class="toctext">硬直力度 vs. 敌人</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#绝地潜兵"><span class="tocnumber">1.3</span> <span class="toctext">绝地潜兵</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Acid_Splash"><span class="tocnumber">2</span> <span class="toctext">酸 溅射</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#流血"><span class="tocnumber">3</span> <span class="toctext">流血</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#火焰"><span class="tocnumber">4</span> <span class="toctext">火焰</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Burning_Heavy"><span class="tocnumber">5</span> <span class="toctext">燃烧 重型</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#毒气"><span class="tocnumber">6</span> <span class="toctext">毒气</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="#Gas_Mk1"><span class="tocnumber">6.1</span> <span class="toctext">毒气 Mk1</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Gas_Mk2"><span class="tocnumber">6.2</span> <span class="toctext">毒气 Mk2</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#Gas_Confusion"><span class="tocnumber">7</span> <span class="toctext">毒气 困惑</span></a>
+<ul>
+<li class="toclevel-2 tocsection-13"><a href="#Gas_Confusion_Mk1"><span class="tocnumber">7.1</span> <span class="toctext">毒气 困惑 Mk1</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Gas_Confusion_Mk2"><span class="tocnumber">7.2</span> <span class="toctext">毒气 困惑 Mk2</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-15"><a href="#眩晕弹"><span class="tocnumber">8</span> <span class="toctext">眩晕弹</span></a>
+<ul>
+<li class="toclevel-2 tocsection-16"><a href="#Stun_1_[Small]"><span class="tocnumber">8.1</span> <span class="toctext">Stun 1 [小]</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Stun_2_[Medium]"><span class="tocnumber">8.2</span> <span class="toctext">Stun 2 [中型]</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#Stun_3_[Large]"><span class="tocnumber">8.3</span> <span class="toctext">Stun 3 [大]</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#Stun_4_[Massive]"><span class="tocnumber">8.4</span> <span class="toctext">Stun 4 [庞大]</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#EMS_Stun"><span class="tocnumber">8.5</span> <span class="toctext">EMS Stun</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-21"><a href="#Change_History"><span class="tocnumber">9</span> <span class="toctext">变更历史</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Stagger_and_Ragdoll">硬直 and Ragdoll</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Stagger and Ragdoll" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Stagger and Ragdoll"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Staggering can 射程 from mere flinching to being knocked off your feet entirely. It is caused by dealing or taking 伤害 with sufficient 硬直力度 to meet an 敌人's 硬直 thresholds. 更高 thresholds impart 更强 效果, such as completely interrupting animations. Unlike other 状态效果, 硬直力度 does not build up over 多个 攻击.
+</p>
+<h4><span id=".E6.95.8C.E4.BA.BA"></span><span class="mw-headline" id="敌人">敌人</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: 敌人" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: 敌人"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<ul><li>Staggering will 原因 an 敌人 to be pushed 返回 and 通常 interrupts their movement, with the 距离 pushed scaling with 硬直力度.</li>
+<li>最多 敌人 have abilities that can be interrupted upon being attacked with sufficient 硬直力度.
+<ul><li>一些 值得注意 interruptable abilities include certain 攻击 and calling for 增援.</li>
+<li>硬直 thresholds listed on 敌人 pages will be the 数值 必需 to 原因 interrupting 硬直.</li></ul></li></ul>
+<ul><li>硬直力度 必需 to interrupt an 敌人 can vary wildely, from the lowely <a href="Scavenger.html" title="Scavenger">食腐虫's</a> 10 to the unyielding <a href="Fleshmob.html" title="Fleshmob">Fleshmob's</a> 45.</li>
+<li>武器 that 火焰 多个 projectiles (Such as the <a href="SG-8_Punisher.html" title="SG-8 Punisher">SG-8 Punisher</a>) will have 每个 投射物 apply full 硬直力度, allowing just a 单个 pellet to 硬直 an 敌人.</li></ul>
+<h4><span class="mw-headline" id="Stagger_Force_vs._Enemies">硬直力度 vs. 敌人</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Stagger Force vs. Enemies" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Stagger Force vs. Enemies"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<table class="wikitable sortable mw-collapsible mw-collapsed">
+<caption>硬直阈值 表格
+</caption>
+<tbody><tr>
+<th>阵营</th>
+<th>敌人</th>
+<th>硬直阈值
+</th></tr>
+<tr>
+<th rowspan="28"><span class="faction-icon icon-outline"><a href="Terminids.html" title="Terminids"><img alt="" src="../images/Terminid_Icon.svg" decoding="async" loading="lazy" width="512" height="512" data-file-width="512" data-file-height="512" /></a></span>
+</th>
+<td><a href="Bile_Spitter.html" title="Bile Spitter">胆汁吐沫虫</a></td>
+<td>1
+</td></tr>
+<tr>
+<td><a href="Pouncer.html" title="Pouncer">猛扑虫</a></td>
+<td>1
+</td></tr>
+<tr>
+<td><a href="Scavenger.html" title="Scavenger">食腐虫</a></td>
+<td>1
+</td></tr>
+<tr>
+<td><a href="Spore_Burst_Scavenger.html" title="Spore Burst Scavenger">孢裂食腐虫</a></td>
+<td>1
+</td></tr>
+<tr>
+<td><a href="Hunter.html" title="Hunter">追猎虫</a></td>
+<td>15
+</td></tr>
+<tr>
+<td><a href="Predator_Hunter.html" title="Predator Hunter">掠食追猎虫</a></td>
+<td>15
+</td></tr>
+<tr>
+<td><a href="Spore_Burst_Hunter.html" title="Spore Burst Hunter">孢裂追猎虫</a></td>
+<td>15
+</td></tr>
+<tr>
+<td><a href="Alpha_Warrior.html" title="Alpha Warrior">阿尔法武斗虫</a></td>
+<td>20
+</td></tr>
+<tr>
+<td><a href="Bile_Warrior.html" title="Bile Warrior">吐酸武斗虫</a></td>
+<td>20
+</td></tr>
+<tr>
+<td><a href="Hive_Guard.html" title="Hive Guard">虫窝护卫</a></td>
+<td>20
+</td></tr>
+<tr>
+<td><a href="Rupture_Warrior.html" title="Rupture Warrior">爆裂武斗虫</a></td>
+<td>20
+</td></tr>
+<tr>
+<td><a href="Spore_Burst_Warrior.html" title="Spore Burst Warrior">孢裂武斗虫</a></td>
+<td>20
+</td></tr>
+<tr>
+<td><a href="Warrior.html" title="Warrior">武斗虫</a></td>
+<td>20
+</td></tr>
+<tr>
+<td><a href="Alpha_Commander.html" title="Alpha Commander">阿尔法指挥官</a></td>
+<td>25
+</td></tr>
+<tr>
+<td><a href="Brood_Commander.html" title="Brood Commander">虫族指挥官</a></td>
+<td>25
+</td></tr>
+<tr>
+<td><a href="Bile_Spewer.html" title="Bile Spewer">胆汁喷涌虫</a></td>
+<td>30
+</td></tr>
+<tr>
+<td><a href="Nursing_Spewer.html" title="Nursing Spewer">抚育喷涌虫</a></td>
+<td>30
+</td></tr>
+<tr>
+<td><a href="Predator_Stalker.html" title="Predator Stalker">掠食追踪虫</a></td>
+<td>30
+</td></tr>
+<tr>
+<td><a href="Rupture_Spewer.html" title="Rupture Spewer">爆裂喷涌虫</a></td>
+<td>30
+</td></tr>
+<tr>
+<td><a href="Stalker.html" title="Stalker">追踪虫</a></td>
+<td>30
+</td></tr>
+<tr>
+<td><a href="Dragonroach.html" title="Dragonroach">蟑龙</a></td>
+<td>38
+</td></tr>
+<tr>
+<td><a href="Charger.html" title="Charger">强袭虫</a></td>
+<td>40
+</td></tr>
+<tr>
+<td><a href="Charger_Behemoth.html" title="Charger Behemoth">巨兽级强袭虫</a></td>
+<td>40
+</td></tr>
+<tr>
+<td><a href="Rupture_Charger.html" title="Rupture Charger">爆裂强袭虫</a></td>
+<td>40
+</td></tr>
+<tr>
+<td><a href="Spore_Charger.html" title="Spore Charger">孢子强袭虫</a></td>
+<td>40
+</td></tr>
+<tr>
+<td><a href="Impaler.html" title="Impaler">穿刺虫</a></td>
+<td>45
+</td></tr>
+<tr>
+<td><a href="Bile_Titan.html" title="Bile Titan">吐酸泰坦</a></td>
+<td>50
+</td></tr>
+<tr>
+<td><a href="Spore_Burst_Bile_Titan.html" title="Spore Burst Bile Titan">孢子 连射 吐酸泰坦</a></td>
+<td>50
+</td></tr>
+<tr>
+<th rowspan="30"><span class="faction-icon icon-outline"><a href="Automatons.html" title="Automatons"><img alt="" src="../images/Automaton_Icon.svg" decoding="async" loading="lazy" width="512" height="512" data-file-width="512" data-file-height="512" /></a></span>
+</th>
+<td><a href="Assault_Raider.html" title="Assault Raider">特攻奇袭者</a></td>
+<td>10
+</td></tr>
+<tr>
+<td><a href="Brawler.html" title="Brawler">乱斗者</a></td>
+<td>10
+</td></tr>
+<tr>
+<td><a href="Commissar.html" title="Commissar">机械统帅</a></td>
+<td>10
+</td></tr>
+<tr>
+<td><a href="Incendiary_Rocket_Raider.html" title="Incendiary Rocket Raider">燃烧弹 火箭 奇袭者</a></td>
+<td>10
+</td></tr>
+<tr>
+<td><a href="Jet_Brigade_Commissar.html" title="Jet Brigade Commissar">喷气旅机械统帅</a></td>
+<td>10
+</td></tr>
+<tr>
+<td><a href="Jet_Brigade_MG_Raider.html" title="Jet Brigade MG Raider">喷气 Brigade MG 奇袭者</a></td>
+<td>10
+</td></tr>
+<tr>
+<td><a href="Jet_Brigade_Trooper.html" title="Jet Brigade Trooper">喷气旅装甲兵</a></td>
+<td>10
+</td></tr>
+<tr>
+<td><a href="MG_Raider.html" title="MG Raider">机枪奇袭者</a></td>
+<td>10
+</td></tr>
+<tr>
+<td><a href="Marauder.html" title="Marauder">劫掠者</a></td>
+<td>10
+</td></tr>
+<tr>
+<td><a href="Pyro_Trooper.html" title="Pyro Trooper">炙焰装甲兵</a></td>
+<td>10
+</td></tr>
+<tr>
+<td><a href="Rocket_Raider.html" title="Rocket Raider">火箭奇袭者</a></td>
+<td>10
+</td></tr>
+<tr>
+<td><a href="Trooper.html" title="Trooper">装甲兵</a></td>
+<td>10
+</td></tr>
+<tr>
+<td><a href="../index.html" title="Agitator">惑乱者</a></td>
+<td>20
+</td></tr>
+<tr>
+<td><a href="Radical.html" title="Radical">激进先锋</a></td>
+<td>20
+</td></tr>
+<tr>
+<td><a href="Berserker.html" title="Berserker">狂暴者</a></td>
+<td>30
+</td></tr>
+<tr>
+<td><a href="Conflagration_Devastator.html" title="Conflagration Devastator">烈火蹂躏者</a></td>
+<td>30
+</td></tr>
+<tr>
+<td><a href="Devastator.html" title="Devastator">蹂躏者</a></td>
+<td>30
+</td></tr>
+<tr>
+<td><a href="Heavy_Devastator.html" title="Heavy Devastator">重型蹂躏者</a></td>
+<td>30
+</td></tr>
+<tr>
+<td><a href="Incendiary_MG_Devastator.html" title="Incendiary MG Devastator">燃烧机枪蹂躏者</a></td>
+<td>30
+</td></tr>
+<tr>
+<td><a href="Jet_Brigade_Devastator.html" title="Jet Brigade Devastator">喷气 Brigade 蹂躏者</a></td>
+<td>30
+</td></tr>
+<tr>
+<td><a href="Reinforced_Scout_Strider.html" title="Reinforced Scout Strider">强化侦察纵步者</a></td>
+<td>30
+</td></tr>
+<tr>
+<td><a href="Rocket_Devastator.html" title="Rocket Devastator">火箭蹂躏者</a></td>
+<td>30
+</td></tr>
+<tr>
+<td><a href="Scout_Strider.html" title="Scout Strider">侦察纵步者</a></td>
+<td>30
+</td></tr>
+<tr>
+<td><a href="Hulk_Bruiser.html" title="Hulk Bruiser">巨型碾压者</a></td>
+<td>40
+</td></tr>
+<tr>
+<td><a href="Hulk_Firebomber.html" title="Hulk Firebomber">巨型烈焰轰炸者</a></td>
+<td>40
+</td></tr>
+<tr>
+<td><a href="Hulk_Obliterator.html" title="Hulk Obliterator">巨型抹煞者</a></td>
+<td>40
+</td></tr>
+<tr>
+<td><a href="Hulk_Scorcher.html" title="Hulk Scorcher">巨型炙炎者</a></td>
+<td>40
+</td></tr>
+<tr>
+<td><a href="Jet_Brigade_Hulk_Bruiser.html" title="Jet Brigade Hulk Bruiser">喷气 Brigade 巨型者 Bruiser</a></td>
+<td>40
+</td></tr>
+<tr>
+<td><a href="Jet_Brigade_Hulk_Scorcher.html" title="Jet Brigade Hulk Scorcher">喷气 Brigade 巨型者 Scorcher</a></td>
+<td>40
+</td></tr>
+<tr>
+<td><a href="War_Strider.html" title="War Strider">战争纵步者</a></td>
+<td>40
+</td></tr>
+<tr>
+<th rowspan="8"><span class="faction-icon icon-outline"><a href="../index.html" title="The Illuminate"><img alt="" src="../images/Illuminate_Icon.svg" decoding="async" loading="lazy" width="512" height="512" data-file-width="512" data-file-height="512" /></a></span>
+</th>
+<td><a href="Voteless.html" title="Voteless">无票者</a></td>
+<td>1
+</td></tr>
+<tr>
+<td><a href="Elevated_Overseer.html" title="Elevated Overseer">崇高监视者</a></td>
+<td>30
+</td></tr>
+<tr>
+<td><a href="Crescent_Overseer.html" title="Crescent Overseer">新月监视者</a></td>
+<td>35
+</td></tr>
+<tr>
+<td><a href="Overseer.html" title="Overseer">监视者</a></td>
+<td>35
+</td></tr>
+<tr>
+<td><a href="Gatekeeper.html" title="Gatekeeper">御门者</a></td>
+<td>40
+</td></tr>
+<tr>
+<td><a href="Harvester.html" title="Harvester">猎杀器</a></td>
+<td>40
+</td></tr>
+<tr>
+<td><a href="Veracitor.html" title="Veracitor">证真者</a></td>
+<td>40
+</td></tr>
+<tr>
+<td><a href="Fleshmob.html" title="Fleshmob">肉瘤体</a></td>
+<td>45
+</td></tr>
+</tbody></table>
+<h4><span id=".E7.BB.9D.E5.9C.B0.E6.BD.9C.E5.85.B5"></span><span class="mw-headline" id="绝地潜兵">绝地潜兵</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: 绝地潜兵" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: 绝地潜兵"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<ul><li>绝地潜兵 that are hit by 任何 敌人 攻击 will flinch, causing their reticle to be thrown off the point of 目标 temporarily.</li>
+<li>绝地潜兵 that are hit by 敌人 攻击 with a 硬直 数值 of <b>10</b> or 更大 will be staggered. This will interrupt certain animations, such as stimming.</li>
+<li>绝地潜兵 that are hit by 敌人 攻击 with a 硬直 数值 of <b>25</b> or 更大 will be ragdolled. This throws the 玩家, interrupts 全部 animations, stops actions 点赞 typing on a 终端, and temporarily takes away 全部 玩家 控制. This does, however, have a plus of providing <b>90%</b> 爆炸伤害 reduction while in this 陈述.</li>
+<li>the <a href="Rock_Solid.html" title="Rock Solid">岩石 坚固</a> 盔甲被动加成 <b>降低</b> incoming 硬直 by <b>30%</b>. This enables you to avoid being ragdolled by 许多 攻击, such as <a href="Rocket_Devastator.html" title="Rocket Devastator">火箭 蹂躏者</a> rockets, 蹂躏者 punches, and <a href="Overseer.html" title="Overseer">监视者</a> staff swings, but not 更强 攻击 点赞 <a href="Cannon_Turret.html" title="Cannon Turret">加农炮 炮塔</a> shots or <a href="Reinforced_Scout_Strider.html" title="Reinforced Scout Strider">Reinforced 侦察纵步者</a> rockets.
+<ul><li>攻击 with 硬直力度 values of 36 or above can ragdoll you with the 岩石 坚固 被动.</li></ul></li></ul>
+<h2><span class="mw-headline" id="Acid_Splash">酸 溅射</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Acid Splash" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Acid Splash"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li>酸 covered targets will be slowed and 5月 additionally take 伤害 over 时间. This 效果 lasts 4 秒.</li>
+<li>Can be inflicted by the following <a href="Terminids.html" title="Terminids">终结族</a> 敌人: <a href="Bile_Spitter.html" title="Bile Spitter">胆汁吐沫虫</a>, <a href="Hunter.html" title="Hunter">追猎虫</a>, <a href="Bile_Warrior.html" title="Bile Warrior">吐酸武斗虫</a>, <a href="Bile_Spewer.html" title="Bile Spewer">胆汁喷涌虫</a>, <a href="Nursing_Spewer.html" title="Nursing Spewer">抚育喷涌虫</a>, <a href="Spore_Charger.html" title="Spore Charger">孢子强袭虫</a>, <a href="Bile_Titan.html" title="Bile Titan">吐酸泰坦</a>, <a href="Bug_Mine.html" title="Bug Mine">Bug Mines</a>, <a href="Predator_Hunter.html" title="Predator Hunter">掠食追猎虫</a>, and 全部 <a href="../index.html" title="Spore Burst Strain">孢子 连射 Strain 终结族</a>.</li></ul>
+<table class="wikitable tableleftjustified Secondcolumnright table-weapon-stats attack-data-table-status">
+<tbody><tr>
+<th colspan="2">酸 溅射
+</th></tr>
+<tr>
+<th colspan="2">Status
+</th></tr>
+<tr>
+<td>Status 持续时间</td>
+<td>4 sec
+</td></tr>
+<tr>
+<th colspan="2">伤害
+</th></tr>
+<tr>
+<td>Element</td>
+<td>酸
+</td></tr>
+<tr>
+<td>标准</td>
+<td><span class="DamageIcons icon-outline"><a href="Damage.html" title="Damage"><img alt="" src="../images/Damage_Acid_Icon.svg" decoding="async" loading="lazy" width="20" height="20" data-file-width="512" data-file-height="512" /></a></span>&#160;<span class="DamageIcons"><a href="Damage.html#Damage_Types" title="Damage"><span style="color: chartreuse;">3 酸</span></a></span>
+</td></tr>
+<tr>
+<td>vs. 耐久</td>
+<td><span class="DamageIcons icon-outline"><a href="Damage.html" title="Damage"><img alt="" src="../images/Damage_Acid_Icon.svg" decoding="async" loading="lazy" width="20" height="20" data-file-width="512" data-file-height="512" /></a></span>&#160;<span class="DamageIcons"><a href="Damage.html#Damage_Types" title="Damage"><span style="color: chartreuse;">0 酸</span></a></span>
+</td></tr>
+<tr>
+<th colspan="2">穿透
+</th></tr>
+<tr>
+<td>指挥</td>
+<td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img alt="" src="../images/Armor_AP1_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage">无护甲 II</a></span>
+</td></tr>
+<tr>
+<td>小角度</td>
+<td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img alt="" src="../images/Armor_AP1_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage">无护甲 II</a></span>
+</td></tr>
+<tr>
+<td>大角度</td>
+<td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img alt="" src="../images/Armor_AP1_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage">无护甲 II</a></span>
+</td></tr>
+<tr>
+<td>极难 Angle</td>
+<td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img alt="" src="../images/Armor_AP0_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage">无护甲 I</a></span>
+</td></tr>
+<tr>
+<th colspan="2">特殊 效果
+</th></tr>
+<tr>
+<td>爆破 之势</td>
+<td>0
+</td></tr>
+<tr>
+<td>硬直力度</td>
+<td>0
+</td></tr>
+<tr>
+<td>Push 之势</td>
+<td>0
+</td></tr>
+</tbody></table>
+<p><br />
+</p>
+<h2><span id=".E6.B5.81.E8.A1.80"></span><span class="mw-headline" id="流血">流血</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: 流血" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: 流血"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Inflicted on 绝地潜兵 from being injured in the 箱子 or from coming into 联络 with 任一 a <a href="../index.html" title="Spike Plant">Spike Plant</a> or a <a href="../index.html" class="mw-redirect" title="Automaton Barbed Wire">倒刺铁丝网</a>.  These 全部 counts as 分离 效果. Deals 伤害 over 时间.
+</p>
+<div class="flextablediv">
+<table class="wikitable tableleftjustified Secondcolumnright table-weapon-stats attack-data-table-status">
+<tbody><tr>
+<th colspan="2">Status
+</th></tr>
+</tbody></table>
+<p><br />
+</p>
+<table class="wikitable tableleftjustified Secondcolumnright table-weapon-stats attack-data-table-status">
+<tbody><tr>
+<th colspan="2">Thornbush
+</th></tr>
+<tr>
+<th colspan="2">Status
+</th></tr>
+<tr>
+<td>Status 持续时间</td>
+<td>0.1 sec
+</td></tr>
+<tr>
+<th colspan="2">伤害
+</th></tr>
+<tr>
+<td>Element</td>
+<td>流血
+</td></tr>
+<tr>
+<td>标准</td>
+<td><span class="DamageIcons icon-outline"><a href="Damage.html" title="Damage"><img alt="" src="../images/Damage_Bleed_Icon.svg" decoding="async" loading="lazy" width="20" height="20" data-file-width="512" data-file-height="512" /></a></span>&#160;<span class="DamageIcons"><a href="Damage.html#Damage_Types" title="Damage"><span style="color: firebrick;">5 流血</span></a></span>
+</td></tr>
+<tr>
+<td>vs. 耐久</td>
+<td><span class="DamageIcons icon-outline"><a href="Damage.html" title="Damage"><img alt="" src="../images/Damage_Bleed_Icon.svg" decoding="async" loading="lazy" width="20" height="20" data-file-width="512" data-file-height="512" /></a></span>&#160;<span class="DamageIcons"><a href="Damage.html#Damage_Types" title="Damage"><span style="color: firebrick;">0 流血</span></a></span>
+</td></tr>
+<tr>
+<th colspan="2">穿透
+</th></tr>
+<tr>
+<td>指挥</td>
+<td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img alt="" src="../images/Armor_AP1_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage">无护甲 II</a></span>
+</td></tr>
+<tr>
+<td>小角度</td>
+<td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img alt="" src="../images/Armor_AP1_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage">无护甲 II</a></span>
+</td></tr>
+<tr>
+<td>大角度</td>
+<td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img alt="" src="../images/Armor_AP1_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage">无护甲 II</a></span>
+</td></tr>
+<tr>
+<td>极难 Angle</td>
+<td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img alt="" src="../images/Armor_AP0_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage">无护甲 I</a></span>
+</td></tr>
+<tr>
+<th colspan="2">特殊 效果
+</th></tr>
+<tr>
+<td>爆破 之势</td>
+<td>0
+</td></tr>
+<tr>
+<td>硬直力度</td>
+<td>0
+</td></tr>
+<tr>
+<td>Push 之势</td>
+<td>0
+</td></tr>
+</tbody></table>
+<p><br />
+</p>
+<table class="wikitable tableleftjustified Secondcolumnright table-weapon-stats attack-data-table-status">
+<tbody><tr>
+<th colspan="2">Barbwire
+</th></tr>
+<tr>
+<th colspan="2">Status
+</th></tr>
+<tr>
+<td>Status 持续时间</td>
+<td>0.1 sec
+</td></tr>
+<tr>
+<th colspan="2">伤害
+</th></tr>
+<tr>
+<td>Element</td>
+<td>流血
+</td></tr>
+<tr>
+<td>标准</td>
+<td><span class="DamageIcons icon-outline"><a href="Damage.html" title="Damage"><img alt="" src="../images/Damage_Bleed_Icon.svg" decoding="async" loading="lazy" width="20" height="20" data-file-width="512" data-file-height="512" /></a></span>&#160;<span class="DamageIcons"><a href="Damage.html#Damage_Types" title="Damage"><span style="color: firebrick;">5 流血</span></a></span>
+</td></tr>
+<tr>
+<td>vs. 耐久</td>
+<td><span class="DamageIcons icon-outline"><a href="Damage.html" title="Damage"><img alt="" src="../images/Damage_Bleed_Icon.svg" decoding="async" loading="lazy" width="20" height="20" data-file-width="512" data-file-height="512" /></a></span>&#160;<span class="DamageIcons"><a href="Damage.html#Damage_Types" title="Damage"><span style="color: firebrick;">0 流血</span></a></span>
+</td></tr>
+<tr>
+<th colspan="2">穿透
+</th></tr>
+<tr>
+<td>指挥</td>
+<td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img alt="" src="../images/Armor_AP1_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage">无护甲 II</a></span>
+</td></tr>
+<tr>
+<td>小角度</td>
+<td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img alt="" src="../images/Armor_AP1_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage">无护甲 II</a></span>
+</td></tr>
+<tr>
+<td>大角度</td>
+<td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img alt="" src="../images/Armor_AP1_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage">无护甲 II</a></span>
+</td></tr>
+<tr>
+<td>极难 Angle</td>
+<td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img alt="" src="../images/Armor_AP0_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage">无护甲 I</a></span>
+</td></tr>
+<tr>
+<th colspan="2">特殊 效果
+</th></tr>
+<tr>
+<td>爆破 之势</td>
+<td>0
+</td></tr>
+<tr>
+<td>硬直力度</td>
+<td>0
+</td></tr>
+<tr>
+<td>Push 之势</td>
+<td>0
+</td></tr>
+</tbody></table>
+</div>
+<h2><span id=".E7.81.AB.E7.84.B0"></span><span class="mw-headline" id="火焰">火焰</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: 火焰" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: 火焰"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li>Can be inflicted by 最多 火焰-based 武器 and 战略配备;</li></ul>
+<div class="mw-collapsible mw-collapsed">
+<ul><li>火焰武器 and 战略配备)
+<ul><li><a href="A_FLAM-40_Flame_Sentry.html" title="A/FLAM-40 Flame Sentry">A/FLAM-40 火焰喷射哨戒炮</a></li>
+<li><a href="FLAM-40_Flamethrower.html" title="FLAM-40 Flamethrower">FLAM-40 火焰喷射器</a></li>
+<li><a href="FLAM-66_Torcher.html" title="FLAM-66 Torcher">FLAM-66 Torcher</a></li>
+<li><a href="P-72_Crisper.html" title="P-72 Crisper">P-72 Crisper</a></li>
+<li><a href="SG-225IE_Breaker_Incendiary.html" title="SG-225IE Breaker Incendiary">SG-225IE Breaker 燃烧弹</a></li>
+<li><a href="SG-451_Cookout.html" title="SG-451 Cookout">SG-451 Cookout</a></li>
+<li><a href="AR-2_Coyote.html" title="AR-2 Coyote">AR-2 Coyote</a></li>
+<li><a href="G-10_Incendiary.html" title="G-10 Incendiary">G-10 燃烧弹</a></li>
+<li><a href="G-13_Incendiary_Impact.html" title="G-13 Incendiary Impact">G-13 燃烧弹 冲击</a></li>
+<li><a href="Orbital_Napalm_Barrage.html" title="Orbital Napalm Barrage">轨道武器 凝固汽油弹 弹幕</a></li>
+<li><a href="Eagle_Napalm_Airstrike.html" title="Eagle Napalm Airstrike">飞鹰 凝固汽油弹 空袭</a></li>
+<li><a href="MD-I4_Incendiary_Mines.html" title="MD-I4 Incendiary Mines">MD-I4 燃烧地雷</a></li>
+<li><a href="SEAF_Artillery.html" title="SEAF Artillery">超级地球武装部队大炮：凝固汽油弹</a></li>
+<li><a href="../index.html" class="mw-redirect" title="Explosive Barrels">爆炸 Barrels</a>.</li></ul></li>
+<li>激光-光束 武器 can also 套装 targets on 火焰 when fired upon for 长 enough. The 武器 include:
+<ul><li><a href="LAS-5_Scythe.html" title="LAS-5 Scythe">LAS-5 Scythe</a></li>
+<li><a href="LAS-7_Dagger.html" title="LAS-7 Dagger">LAS-7 Dagger</a></li>
+<li><a href="LAS-98_Laser_Cannon.html" title="LAS-98 Laser Cannon">LAS-98 激光大炮</a></li>
+<li><a href="A_LAS-98_Laser_Sentry.html" title="A/LAS-98 Laser Sentry">A/LAS-98 激光 哨戒炮</a></li>
+<li><a href="../index.html" class="mw-redirect" title="AX/LAS-5 &quot;Guard Dog&quot; Rover">AX/LAS-5 "守卫 Dog" Rover</a></li>
+<li><a href="Orbital_Laser.html" title="Orbital Laser">轨道激光炮</a>.</li></ul></li>
+<li>Can be inflicted on 绝地潜兵 by the <a href="Automatons.html" title="Automatons">机器人</a> <a href="Hulk_Scorcher.html" title="Hulk Scorcher">巨型者 Scorcher</a>, <a href="MG_Raider.html" title="MG Raider">MG 奇袭者</a>, <a href="Assault_Raider.html" title="Assault Raider">特攻 奇袭者</a>, 全部 units of the <a href="../index.html" title="Incineration Corps">Incineration Corps</a>, the <a href="Illuminate.html" title="Illuminate">光能者</a> <a href="Harvester.html" title="Harvester">猎杀器</a>, and the <a href="Dragonroach.html" title="Dragonroach">Dragonroach</a>.</li></ul>
+</div>
+<p>火焰伤害 is <span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img alt="" src="../images/Armor_AP4_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage">重型</a></span> 护甲穿透 and has an unmodified 持续时间 of 3 秒.
+</p>
+<ul><li><ul><li><s>Has a slightly longer 持续时间 for 绝地潜兵 </s><sup>[<i><a href="https://en.wikipedia.org/wiki/Citation_needed" class="extiw" title="wikipedia:Citation needed"><span title="This claim needs references to reliable sources">引用&#160;needed</span></a>Unclear if this is still the 案例, testing 必需</i>]</sup>.</li></ul></li>
+<li>许多 entities have a 倍率 for the 数量 of elemental 伤害 they take, 火焰 included.  For instance, <a href="Bile_Spewer.html" title="Bile Spewer">胆汁 喷吐者</a> take the 标准 数量 of 火焰伤害, but <a href="Impaler.html" title="Impaler">Impalers</a> take 1.7x 火焰伤害.</li></ul>
+<table class="wikitable tableleftjustified Secondcolumnright table-weapon-stats attack-data-table-status">
+<tbody><tr>
+<th colspan="2">Status
+</th></tr>
+</tbody></table>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Burning_Heavy">燃烧 重型</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Burning Heavy" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Burning Heavy"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>An additional 火焰 每秒伤害 inflicted by <a href="Eagle_Napalm_Airstrike.html" title="Eagle Napalm Airstrike">飞鹰 凝固汽油弹 空袭</a> and <a href="Orbital_Napalm_Barrage.html" title="Orbital Napalm Barrage">轨道武器 凝固汽油弹 弹幕</a>, or shooting an 敌人 with the <a href="EAT-700_Expendable_Napalm.html" title="EAT-700 Expendable Napalm">消耗性凝固汽油弹</a>. It inflicts significantly 更多 伤害 than 标准 燃烧, but only lasts for 1 second after being inflicted on an 敌人 or 绝地潜兵. 
+</p><p><br />
+</p>
+<table class="wikitable tableleftjustified Secondcolumnright table-weapon-stats attack-data-table-status">
+<tbody><tr>
+<th colspan="2">BurningHeavy
+</th></tr>
+<tr>
+<th colspan="2">Status
+</th></tr>
+<tr>
+<td>Status 持续时间</td>
+<td>1 sec
+</td></tr>
+<tr>
+<th colspan="2">伤害
+</th></tr>
+<tr>
+<td>Element</td>
+<td>火焰
+</td></tr>
+<tr>
+<td>标准</td>
+<td><span class="DamageIcons icon-outline"><a href="Damage.html" title="Damage"><img alt="" src="../images/Damage_Fire_Icon.svg" decoding="async" loading="lazy" width="20" height="20" data-file-width="512" data-file-height="512" /></a></span>&#160;<span class="DamageIcons"><a href="Damage.html#Damage_Types" title="Damage"><span style="color: orangered;">200 火焰</span></a></span>
+</td></tr>
+<tr>
+<td>vs. 耐久</td>
+<td><span class="DamageIcons icon-outline"><a href="Damage.html" title="Damage"><img alt="" src="../images/Damage_Fire_Icon.svg" decoding="async" loading="lazy" width="20" height="20" data-file-width="512" data-file-height="512" /></a></span>&#160;<span class="DamageIcons"><a href="Damage.html#Damage_Types" title="Damage"><span style="color: orangered;">200 火焰</span></a></span>
+</td></tr>
+<tr>
+<th colspan="2">穿透
+</th></tr>
+<tr>
+<td>指挥</td>
+<td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img alt="" src="../images/Armor_AP4_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage">重型</a></span>
+</td></tr>
+<tr>
+<td>小角度</td>
+<td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img alt="" src="../images/Armor_AP4_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage">重型</a></span>
+</td></tr>
+<tr>
+<td>大角度</td>
+<td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img alt="" src="../images/Armor_AP4_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage">重型</a></span>
+</td></tr>
+<tr>
+<td>极难 Angle</td>
+<td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img alt="" src="../images/Armor_AP0_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage">无护甲 I</a></span>
+</td></tr>
+<tr>
+<th colspan="2">特殊 效果
+</th></tr>
+<tr>
+<td>爆破 之势</td>
+<td>0
+</td></tr>
+<tr>
+<td>硬直力度</td>
+<td>0
+</td></tr>
+<tr>
+<td>Push 之势</td>
+<td>0
+</td></tr>
+</tbody></table>
+<p><br />
+</p>
+<h2><span id=".E6.AF.92.E6.B0.94"></span><span class="mw-headline" id="毒气">毒气</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: 毒气" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: 毒气"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>敌人 and 绝地潜兵 afflicted by 毒气 will suffer 伤害 over 时间 only to the 主生命值 pool, as well as the 毒气 困惑 status 效果 on anything inside the 毒气 云. The disorientation 效果 is delayed if the affected 单位 was already engaged in an 攻击 motion (e.g. an <a href="Overseer.html" title="Overseer">监视者</a> chasing a 绝地潜兵).
+</p>
+<h4><span class="mw-headline" id="Gas_Mk1">毒气 Mk1</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Gas Mk1" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Gas Mk1"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<ul><li>持续时间: <b>6</b> 秒.
+<ul><li>Inflicted by: <a href="MD-8_Gas_Mines.html" title="MD-8 Gas Mines">MD-8 毒气 Mines</a>, <a href="G-4_Gas.html" title="G-4 Gas">G-4 毒气</a>, <a href="Orbital_Gas_Strike.html" title="Orbital Gas Strike">轨道武器 毒气 打击</a>, <a href="S-11_Speargun.html" title="S-11 Speargun">S-11 Speargun</a> and <a href="P-35_Re-Educator.html" title="P-35 Re-Educator">P-35 Re-Educator</a></li></ul></li></ul>
+<table class="wikitable tableleftjustified Secondcolumnright table-weapon-stats attack-data-table-status">
+<tbody><tr>
+<th colspan="2">Status
+</th></tr>
+</tbody></table>
+<p><br />
+</p>
+<h4><span class="mw-headline" id="Gas_Mk2">毒气 Mk2</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Gas Mk2" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Gas Mk2"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<ul><li>持续时间: <b>10</b> 秒.
+<ul><li>Inflicted by: <a href="TX-41_Sterilizer.html" title="TX-41 Sterilizer">TX-41 Sterilizer</a>, <a href="../index.html" class="mw-redirect" title="AX/TX-13 &quot;Guard Dog&quot; Dog Breath">AX/TX-13 "守卫 Dog" Dog Breath</a></li></ul></li></ul>
+<table class="wikitable tableleftjustified Secondcolumnright table-weapon-stats attack-data-table-status">
+<tbody><tr>
+<th colspan="2">毒气 Var2
+</th></tr>
+<tr>
+<th colspan="2">Status
+</th></tr>
+<tr>
+<td>Status 持续时间</td>
+<td>10 sec
+</td></tr>
+<tr>
+<th colspan="2">伤害
+</th></tr>
+<tr>
+<td>Element</td>
+<td>毒气
+</td></tr>
+<tr>
+<td>标准</td>
+<td><span class="DamageIcons icon-outline"><a href="Damage.html" title="Damage"><img alt="" src="../images/Damage_Gas_Icon.svg" decoding="async" loading="lazy" width="20" height="20" data-file-width="512" data-file-height="512" /></a></span>&#160;<span class="DamageIcons"><a href="Damage.html#Damage_Types" title="Damage"><span style="color: green;">25 毒气</span></a></span>
+</td></tr>
+<tr>
+<td>vs. 耐久</td>
+<td><span class="DamageIcons icon-outline"><a href="Damage.html" title="Damage"><img alt="" src="../images/Damage_Gas_Icon.svg" decoding="async" loading="lazy" width="20" height="20" data-file-width="512" data-file-height="512" /></a></span>&#160;<span class="DamageIcons"><a href="Damage.html#Damage_Types" title="Damage"><span style="color: green;">25 毒气</span></a></span>
+</td></tr>
+<tr>
+<th colspan="2">穿透
+</th></tr>
+<tr>
+<td>指挥</td>
+<td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img alt="" src="../images/Armor_AP6_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage">反坦克 II</a></span>
+</td></tr>
+<tr>
+<td>小角度</td>
+<td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img alt="" src="../images/Armor_AP6_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage">反坦克 II</a></span>
+</td></tr>
+<tr>
+<td>大角度</td>
+<td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img alt="" src="../images/Armor_AP6_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage">反坦克 II</a></span>
+</td></tr>
+<tr>
+<td>极难 Angle</td>
+<td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img alt="" src="../images/Armor_AP0_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage">无护甲 I</a></span>
+</td></tr>
+<tr>
+<th colspan="2">特殊 效果
+</th></tr>
+<tr>
+<td>爆破 之势</td>
+<td>0
+</td></tr>
+<tr>
+<td>硬直力度</td>
+<td>0
+</td></tr>
+<tr>
+<td>Push 之势</td>
+<td>0
+</td></tr>
+</tbody></table>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Gas_Confusion">毒气 困惑</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Gas Confusion" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Gas Confusion"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>After being afflicted by 毒气, 敌人 and 绝地潜兵 will enter a confused 陈述 which disrupts a 绝地潜兵's vision, and causes 敌人 to 移动 and 攻击 in random directions, 通常 away from 绝地潜兵. 全部 units afflicted by 毒气 are also slowed by 25%.
+</p>
+<h4><span class="mw-headline" id="Gas_Confusion_Mk1">毒气 困惑 Mk1</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Gas Confusion Mk1" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Gas Confusion Mk1"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<ul><li>持续时间: <b>5</b> 秒.
+<ul><li>Inflicted by: <a href="MD-8_Gas_Mines.html" title="MD-8 Gas Mines">MD-8 毒气 Mines</a>, <a href="G-4_Gas.html" title="G-4 Gas">G-4 毒气</a>, <a href="Orbital_Gas_Strike.html" title="Orbital Gas Strike">轨道武器 毒气 打击</a>, <a href="S-11_Speargun.html" title="S-11 Speargun">S-11 Speargun</a> and <a href="P-35_Re-Educator.html" title="P-35 Re-Educator">P-35 Re-Educator</a></li></ul></li></ul>
+<table class="wikitable tableleftjustified Secondcolumnright table-weapon-stats attack-data-table-status">
+<tbody><tr>
+<th colspan="2">毒气 困惑
+</th></tr>
+<tr>
+<th colspan="2">Status
+</th></tr>
+<tr>
+<td>Status 持续时间</td>
+<td>5 sec
+</td></tr>
+</tbody></table>
+<p><br />
+</p>
+<h4><span class="mw-headline" id="Gas_Confusion_Mk2">毒气 困惑 Mk2</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Gas Confusion Mk2" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Gas Confusion Mk2"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<ul><li>持续时间: <b>9</b> 秒.
+<ul><li>Inflicted by: <a href="TX-41_Sterilizer.html" title="TX-41 Sterilizer">TX-41 Sterilizer</a>, <a href="../index.html" class="mw-redirect" title="AX/TX-13 &quot;Guard Dog&quot; Dog Breath">AX/TX-13 "守卫 Dog" Dog Breath</a></li></ul></li></ul>
+<table class="wikitable tableleftjustified Secondcolumnright table-weapon-stats attack-data-table-status">
+<tbody><tr>
+<th colspan="2">毒气 困惑 Var2
+</th></tr>
+<tr>
+<th colspan="2">Status
+</th></tr>
+<tr>
+<td>Status 持续时间</td>
+<td>9 sec
+</td></tr>
+</tbody></table>
+<p><br />
+</p>
+<h2><span id=".E7.9C.A9.E6.99.95.E5.BC.B9"></span><span class="mw-headline" id="眩晕弹">眩晕弹</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: 眩晕弹" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: 眩晕弹"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>敌人 hit by stunning 攻击 will be unable to 移动 or 攻击 for a 短 时间. 绝地潜兵 成为 severely slowed down.
+</p>
+<h4><span id="Stun_1_.5BSmall.5D"></span><span class="mw-headline" id="Stun_1_[Small]">Stun 1 [小]</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Stun 1 [Small]" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Stun 1 [Small]"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<ul><li>持续时间: <b>1.5</b> 秒.
+<ul><li>Inflicted by: <a href="ARC-12_Blitzer.html" title="ARC-12 Blitzer">弧度-12 Blitzer</a>, <a href="ARC-3_Arc_Thrower.html" title="ARC-3 Arc Thrower">弧度-3 电弧发射器</a>, <a href="A_ARC-3_Tesla_Tower.html" title="A/ARC-3 Tesla Tower">A/弧度-3 特斯拉塔</a>, <a href="../index.html" class="mw-redirect" title="AX/ARC-3 &quot;Guard Dog&quot; K-9">AX/弧度-3 "守卫 Dog" K-9</a>, <a href="G-31_Arc.html" title="G-31 Arc">G-31 弧度 手榴弹</a>, <a href="GL-52_De-Escalator.html" title="GL-52 De-Escalator">GL-52 De-Escalator</a>, <a href="CQC-9_Defoliation_Tool.html" title="CQC-9 Defoliation Tool">CQC-9 Defoliation Tool</a></li></ul></li></ul>
+<table class="wikitable tableleftjustified Secondcolumnright table-weapon-stats attack-data-table-status">
+<tbody><tr>
+<th colspan="2">Stun 小
+</th></tr>
+<tr>
+<th colspan="2">Status
+</th></tr>
+<tr>
+<td>Status 持续时间</td>
+<td>1.5 sec
+</td></tr>
+</tbody></table>
+<h4><span id="Stun_2_.5BMedium.5D"></span><span class="mw-headline" id="Stun_2_[Medium]">Stun 2 [中型]</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Stun 2 [Medium]" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Stun 2 [Medium]"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<ul><li>持续时间: <b>3.0</b> 秒.
+<ul><li>Inflicted by: <a href="SMG-72_Pummeler.html" title="SMG-72 Pummeler">冲锋枪-72 Pummeler</a>, <a href="AR-32_Pacifier.html" title="AR-32 Pacifier">AR-32 Pacifier</a></li></ul></li></ul>
+<table class="wikitable tableleftjustified Secondcolumnright table-weapon-stats attack-data-table-status">
+<tbody><tr>
+<th colspan="2">Stun 中型
+</th></tr>
+<tr>
+<th colspan="2">Status
+</th></tr>
+<tr>
+<td>Status 持续时间</td>
+<td>3 sec
+</td></tr>
+</tbody></table>
+<h4><span id="Stun_3_.5BLarge.5D"></span><span class="mw-headline" id="Stun_3_[Large]">Stun 3 [大]</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Stun 3 [Large]" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Stun 3 [Large]"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<ul><li>持续时间: <b>5.0</b> 秒.
+<ul><li>Inflicted by: <a href="G-23_Stun.html" title="G-23 Stun">G-23 Stun</a>, <a href="G-109_Urchin.html" title="G-109 Urchin">G-109 Urchin</a>, <a href="SG-20_Halt.html" title="SG-20 Halt">SG-20 Halt</a>, <a href="CQC-19_Stun_Lance.html" title="CQC-19 Stun Lance">CQC-19 Stun Lance</a>, <a href="CQC-30_Stun_Baton.html" title="CQC-30 Stun Baton">CQC-30 Stun Baton</a>, <a href="CQC-1_One_True_Flag.html" title="CQC-1 One True Flag">CQC-1 One 是 旗帜</a></li></ul></li></ul>
+<table class="wikitable tableleftjustified Secondcolumnright table-weapon-stats attack-data-table-status">
+<tbody><tr>
+<th colspan="2">Stun 大
+</th></tr>
+<tr>
+<th colspan="2">Status
+</th></tr>
+<tr>
+<td>Status 持续时间</td>
+<td>5 sec
+</td></tr>
+</tbody></table>
+<h4><span id="Stun_4_.5BMassive.5D"></span><span class="mw-headline" id="Stun_4_[Massive]">Stun 4 [庞大]</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Stun 4 [Massive]" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Stun 4 [Massive]"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<ul><li>持续时间: <b>10.0</b> 秒.
+<ul><li>Inflicted by: <a href="Stun_Pods.html" title="Stun Pods">Stun Pods</a> 强化资源.</li></ul></li></ul>
+<table class="wikitable tableleftjustified Secondcolumnright table-weapon-stats attack-data-table-status">
+<tbody><tr>
+<th colspan="2">Stun 庞大
+</th></tr>
+<tr>
+<th colspan="2">Status
+</th></tr>
+<tr>
+<td>Status 持续时间</td>
+<td>10 sec
+</td></tr>
+</tbody></table>
+<p><br />
+</p>
+<h4><span class="mw-headline" id="EMS_Stun">EMS Stun</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: EMS Stun" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: EMS Stun"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>the <a href="Orbital_EMS_Strike.html" title="Orbital EMS Strike">轨道EMS打击</a> 战略配备， <a href="../index.html" class="mw-redirect" title="EMS Mortar Sentry">EMS迫击炮哨戒炮</a> 炮台，以及 <a href="SEAF_Artillery.html" title="SEAF Artillery">超级地球武装部队 大炮</a> 静电 田野 Shells inflict a 特殊 变体 of Stun which creates a <i>云 of 静电</i> that renders 最多 敌人 unable to 移动. 
+绝地潜兵 are severely slowed down and lose 耐力 while within EMS Stun clouds.
+</p>
+<h2><span class="mw-headline" id="Change_History">变更历史</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Change History" class="mw-editsection-visualeditor"><span>编辑</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Change History"><span>编辑 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
+<div style="display:flex; border: 1px solid; padding: 1px; border-radius: 5px; text-align:center; font-weight:bold;">
+<div style="flex: 0 0 119px; text-align: center; font-weight: bold;">补丁</div>
+<div style="flex: 1 1 auto; border-left: 1px solid;">描述</div>
+</div>
+<div style="display:flex; align-items:center; border-left:1px solid; border-right:1px solid; border-bottom:1px solid;">
+<div style="flex: 0 0 120px; text-align: center; font-weight: bold;"> 
+<p><a href="1.003.000.html" title="1.003.000">1.003.000</a><small><br />2025-05-13</small>
+</p>
+</div>
+<div style="border-left:1px solid; padding:4px 8px; min-height: 55px;">
+<div style="display: table; min-height: 55px;">
+<div style="display: table-cell; vertical-align: middle;"> 
+<p>变更
+</p>
+<ul><li>火焰 has been reworked to deal 伤害 based on the "尺寸" of the 敌人
+<ul><li>小 敌人 take 更少 燃烧 伤害 and Larger 敌人 take 更多 燃烧 伤害</li></ul></li>
+<li>大 and Robotic 敌人 要求 更多 燃烧 status buildup before being ignited</li></ul>
+<p>未记录变更
+</p>
+<ul><li>燃烧 伤害从50提升至100.</li>
+<li>重度灼烧护甲穿透从……提升至 <span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img alt="" src="../images/Armor_AP2_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage">轻型</a></span> to <span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img alt="" src="../images/Armor_AP4_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage">重型</a></span></li>
+<li>重型 燃烧 标准伤害从400降低至200</li>
+<li>重型 燃烧 耐久伤害从80提升至200</li></ul>
+</div>
+</div>
+</div>
+</div>
+<div style="display:flex; align-items:center; border-left:1px solid; border-right:1px solid; border-bottom:1px solid;">
+<div style="flex: 0 0 120px; text-align: center; font-weight: bold;"> 
+<p><a href="1.002.101.html" title="1.002.101">1.002.101</a><small><br />2025-02-04</small>
+</p>
+</div>
+<div style="border-left:1px solid; padding:4px 8px; min-height: 55px;">
+<div style="display: table; min-height: 55px;">
+<div style="display: table-cell; vertical-align: middle;"> 
+<p>变更
+</p>
+<ul><li>the <a href="TX-41_Sterilizer.html" title="TX-41 Sterilizer">TX-41 Sterilizer</a> &amp; <a href="../index.html" class="mw-redirect" title="AX/TX-13 &quot;Guard Dog&quot; Dog Breath">AX/TX-13 "守卫 Dog" Dog Breath</a> now Inflict "毒气 MKII", with a longer 效果 持续时间 (6s to 10s)</li></ul>
+</div>
+</div>
+</div>
+</div>
+<div style="display:flex; align-items:center; border-left:1px solid; border-right:1px solid; border-bottom:1px solid;">
+<div style="flex: 0 0 120px; text-align: center; font-weight: bold;"> 
+<p><a href="1.001.100.html" title="1.001.100">1.001.100</a><small><br />2024-09-17</small>
+</p>
+</div>
+<div style="border-left:1px solid; padding:4px 8px; min-height: 55px;">
+<div style="display: table; min-height: 55px;">
+<div style="display: table-cell; vertical-align: middle;"> 
+<p>变更
+</p>
+<ul><li>已降低 毒气伤害 from 50 to 25 毒气 每秒伤害</li>
+<li>已添加 困惑 to the 毒气 status 效果</li></ul>
+</div>
+</div>
+</div>
+</div>
+<div style="display:flex; align-items:center; border-left:1px solid; border-right:1px solid; border-bottom:1px solid;">
+<div style="flex: 0 0 120px; text-align: center; font-weight: bold;"> 
+<p><a href="1.000.400.html" title="1.000.400">1.000.400</a><small><br />2024-06-13</small>
+</p>
+</div>
+<div style="border-left:1px solid; padding:4px 8px; min-height: 55px;">
+<div style="display: table; min-height: 55px;">
+<div style="display: table-cell; vertical-align: middle;"> 
+<p>变更
+</p>
+<ul><li>胆汁吐沫虫等终结族施加的酸液效果现在允许你在效果持续期间疾跑。</li>
+<li>酸 now slows 移动速度 by 30% instead of 50%.</li>
+<li>酸液持续时间从3秒提升至4秒。</li>
+<li><a href="../index.html" title="Spike Plant">Spike Plants</a> 否 longer causes 流血 or 耐力 drain if hit by the plant 爆炸 or spikes.</li></ul>
+</div>
+</div>
+</div>
+</div>
+<div style="display:flex; align-items:center; border-left:1px solid; border-right:1px solid; border-bottom:1px solid;">
+<div style="flex: 0 0 120px; text-align: center; font-weight: bold;"> 
+<p><a href="1.000.300.html" title="1.000.300">1.000.300</a><small><br />2024-04-29</small>
+</p>
+</div>
+<div style="border-left:1px solid; padding:4px 8px; min-height: 55px;">
+<div style="display: table; min-height: 55px;">
+<div style="display: table-cell; vertical-align: middle;"> 
+<p>变化
+</p>
+<ul><li>燃烧 伤害降低15%。
+<ul><li>已降低 燃烧 伤害 from 60 to 50 火焰 每秒伤害</li></ul></li></ul>
+</div>
+</div>
+</div>
+</div>
+<div style="display:flex; align-items:center; border-left:1px solid; border-right:1px solid; border-bottom:1px solid;">
+<div style="flex: 0 0 120px; text-align: center; font-weight: bold;"> 
+<p><a href="1.000.200.html" title="1.000.200">1.000.200</a><small><br />2024-04-02</small>
+</p>
+</div>
+<div style="border-left:1px solid; padding:4px 8px; min-height: 55px;">
+<div style="display: table; min-height: 55px;">
+<div style="display: table-cell; vertical-align: middle;"> 
+<p>变化
+</p>
+<ul><li>火焰伤害 per tick 已增加 by 50% (from 全部 sources).
+<ul><li>已增加 燃烧 伤害 from 40 to 60 火焰 每秒伤害</li></ul></li></ul>
+</div>
+</div>
+</div>
+</div>
+<p><br />
+</p>
+<div role="navigation" aria-label="Navbox" class="ranger-navbox navigation-not-searchable mw-collapsible"><div class="ranger-title"><div class="mw-collapsible-toggle-placeholder"></div><span class="ranger-meta"><span class="nv nv-view"><a href="../index.html" title="Template:Nav Mechanic"><span title="View or edit this template">查看 or 编辑 this template</span></a></span></span><div class="ranger-title-text"><a href="Game_Mechanics.html" title="Game Mechanics">游戏 机制</a></div></div><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:3"><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">基本信息 机制</div></div><div class="ranger-listbox"><div class="ranger-sublist level-0"><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:2"><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">Non-Combat 机制</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Achievements.html" title="Achievements">Achievements</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Difficulty.html" title="Difficulty">难度</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Levels.html" title="Levels">Levels</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Second_Galactic_War_Mechanics.html" title="Second Galactic War Mechanics">Second 银河战争机制</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">Combat 机制</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span><a href="Combat.html" title="Combat">Combat</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Damage.html" title="Damage">伤害</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Damage_Comparison.html" title="Damage Comparison">伤害 Comparison</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Recoil.html" title="Recoil">后坐力</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Spawn_Mechanics.html" title="Spawn Mechanics">Spawn 机制</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a class="mw-selflink selflink">状态效果</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Stealth.html" title="Stealth">Stealth</a></span></div></div></div></div></div></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap"><a href="Environmental_Hazards.html" title="Environmental Hazards">环境危害</a></div></div><div class="ranger-listbox"><div class="ranger-sublist level-0"><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:4"><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">天气 效果</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Environmental_Conditions.html" title="Environmental Conditions">Environmental Conditions</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Acid_Storms.html" title="Acid Storms">酸雨风暴</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Blizzards.html" title="Blizzards">暴风雪</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Extreme_Cold.html" title="Extreme Cold">极寒</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Fire_Tornados.html" title="Fire Tornados">火焰 Tornados</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Intense_Heat.html" title="Intense Heat">极暑</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Ion_Storms.html" title="Ion Storms">离子风暴</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Meteor_Storms.html" title="Meteor Storms">Meteor Storms</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Rainstorms.html" title="Rainstorms">Rainstorms</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Sandstorms.html" title="Sandstorms">沙尘暴</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Thick_Fog.html" title="Thick Fog">厚 雾</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Tremors.html" title="Tremors">Tremors</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Volcanic_Activity.html" title="Volcanic Activity">火山 Activity</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">自然 Hazards</div></div><div class="ranger-listbox"><div class="ranger-sublist level-1"><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:2"><div class="ranger-row"><div class="ranger-group level-2 ranger-subgroup"><div class="ranger-wrap">植物群</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span><a href="../index.html" title="Acid Flower">酸 Flower</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Bug_Mine.html" title="Bug Mine">Bug 矿场</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="../index.html" title="Ice Plant">冰 Plant</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="../index.html" title="Moor Mushroom">Moor Mushroom</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="../index.html" title="Shrub">Shrub</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="../index.html" title="Spike Plant">Spike Plant</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="../index.html" title="Volcano Plant">火山 Plant</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-2 ranger-subgroup"><div class="ranger-wrap">地形</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Lava.html" title="Lava">熔岩</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Lava_Geyser.html" title="Lava Geyser">熔岩 Geyser</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Lava_Pits.html" title="Lava Pits">熔岩 Pits</a></span></div></div></div></div></div></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">Assorted Hazards</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span><a href="../index.html" title="Cars">Cars</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Damaged_Hellbomb.html" title="Damaged Hellbomb">Damaged Hellbomb</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="../index.html" title="Exploding Barrels">Exploding Barrels</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="../index.html" title="Forklift">Forklift</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap"><a href="Automaton_Hazards.html" title="Automaton Hazards">机器人 Hazards</a></div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Automaton_Mine.html" title="Automaton Mine">机器人 矿场</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Barbed_Wire.html" title="Barbed Wire">Barbed Wire</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Despotic_Explosive.html" title="Despotic Explosive">Despotic 爆炸</a></span></div></div></div></div></div></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap"><a href="../index.html" class="mw-redirect" title="Operation Modifiers">操作 Modifiers</a></div></div><div class="ranger-listbox"><div class="ranger-sublist level-0"><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:5"><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">基本信息</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span><a href="Civilians_and_SEAF_in_Area.html" title="Civilians and SEAF in Area">Civilians and 超级地球武装部队 in 范围</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Complex_Stratagem_Plotting.html" title="Complex Stratagem Plotting">复杂 战略配备 Plotting</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Orbital_Fluctuations.html" title="Orbital Fluctuations">轨道武器 Fluctuations</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Poor_Intel.html" title="Poor Intel">Poor Intel</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">终结族 Specific</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Atmospheric_Spores.html" title="Atmospheric Spores">Atmospheric Spores</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Roving_Shriekers.html" title="Roving Shriekers">漫游尖啸虫</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">机器人 Specific</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span><a href="Gunship_Patrols.html" title="Gunship Patrols">炮舰 Patrols</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">光能者 Specific</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Leviathan_Blockade.html" title="Leviathan Blockade">Leviathan Blockade</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">已移除</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span><a href="AA_Defenses.html" title="AA Defenses">AA Defenses</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="../index.html" title="Atmospheric Interference">Atmospheric Interference</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Electronic_Countermeasures.html" title="Electronic Countermeasures">电子对抗措施</a></span></div></div></div></div></div></div></div></div></div></div></div></div></div>
+<!-- 
+NewPP limit report
+Cached time: 20260816171301
+Cache expiry: 3600
+Reduced expiry: true
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.522 seconds
+Real time usage: 0.824 seconds
+Preprocessor visited node count: 2655/1000000
+Revision size: 13228/4194304 bytes
+Post‐expand include size: 69275/4194304 bytes
+Template argument size: 2344/4194304 bytes
+Highest expansion depth: 10/100
+Expensive parser function count: 6/500
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/10000000 bytes
+ExtLoops count: 0/5000
+Lua time usage: 0.131/15.000 seconds
+Lua memory usage: 5616518/52428800 bytes
+Number of processed Cargo queries: 2
+Time spent processing Cargo queries: 0.011 s (avg. 0.005 s)
+Number of Cargo row insertion attempts: 1
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  642.450      1 -total
+ 53.29%  342.355      1 Template:Nav_Mechanic
+ 52.80%  339.240      1 Template:Navbox
+ 24.02%  154.306     14 Template:Attack_Data/attack
+  9.08%   58.357      6 Template:Change_History_Update
+  4.66%   29.936      1 Template:Breadcrumb_Auto
+  4.53%   29.109      1 Template:Tabs
+  1.41%    9.031      1 Template:Terminids
+  1.06%    6.780      1 Template:Automatons
+  0.94%    6.008      2 Template:Article_other
+-->
+</div></div>
+</main>
+<footer class="site-footer">离线汉化版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
+</body>
+</html>
