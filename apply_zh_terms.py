@@ -233,6 +233,17 @@ def repl_segment(seg):
 
 def apply_file(path):
     html = open(path, encoding="utf-8").read()
+    # 修复分块翻译拼出的病句（EAT-411 / EXO-49 引言）
+    html = re.sub(
+        r"the <b>EAT-411 Leveller</b>\s*is a\s*战略配备\s*呼叫一具一次性大范围反坦克\s*"
+        r"<a[^>]*>支援武器</a>\.",
+        "EAT-411 夷平者是一项可呼叫一次性大范围反坦克支援武器的战略配备。",
+        html, flags=re.I)
+    html = re.sub(
+        r"the <b>EXO-49 Emancipator 外骨骼机甲</b>\s*是一个\s*外骨骼机甲\s*战略配备\s*，"
+        r"\s*配备两门双管机炮作为武器。",
+        "EXO-49 解放者外骨骼机甲是一项配备两门双管机炮的外骨骼机甲战略配备。",
+        html, flags=re.I)
     dt = re.search(r'(<div class="druid-title">).*?(</div>)', html, re.S)
     saved = dt.group(0) if dt else None
     if saved:

@@ -598,7 +598,6 @@ class SiteBuilder:
 </header>
 <main class="content">
   <h1 class="page-title">{ed}</h1>
-  <div class="breadcrumb">{esc}</div>
   <div class="mw-parser-output">{body}</div>
 </main>
 <footer class="site-footer">离线汉化版 · 内容版权归 The Helldivers Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
