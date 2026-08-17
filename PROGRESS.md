@@ -1,5 +1,11 @@
 # 汉化进度（自动更新）
 
+## 2026-08-18 任务 D：打包发布（自动执行，后续沿用）
+- EXE：`dist\Helldivers2WikiCN.exe` 约 463MB（PyInstaller 96s；基线 1143 页 0 高危，未重复 GUI 冒烟，沿用 E 已验证的打包流程）
+- 镜像推送：main **3667637 → 689b11b**（站点 1143 页 + 文档快照 + sync_update.py）
+- 修复 `sync_update.py`：git/taskkill 输出捕获改为 utf-8 + errors=replace，避免 GBK 解码告警
+- 用户约定：之后管线跑完**自动执行打包 + 推送**，不再逐次确认
+
 ## 2026-08-18 任务 D：最终验收（增量管线跑通）
 - 执行 `python sync_update.py`：真实增量发现 5 个新增/变更页（Biomes、Castellan's Creed Legendary Warbond、Gazer Spire、Hydrobius - Void、Illuminate）→ 只重渲染 5 页（缓存命中其余）→ 校验 **176,715 个链接全绿、1143 页 0 高危/0 中危/0 低危**
 - 补拉 3 张原站新图（Illuminate_Gazer_Spire 等，wiki API imageinfo 解析 thumburl）

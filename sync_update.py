@@ -242,7 +242,8 @@ def kill_running_exe():
     """打包前结束占用 dist EXE 的进程（best-effort）。"""
     proc = subprocess.run(
         ["taskkill", "/IM", "Helldivers2WikiCN.exe", "/F"],
-        capture_output=True, text=True)
+        capture_output=True, text=True,
+        encoding="utf-8", errors="replace")
     out = (proc.stdout or "") + (proc.stderr or "")
     if proc.returncode == 0:
         print("[Package] 已结束正在运行的 Helldivers2WikiCN.exe")
@@ -301,7 +302,8 @@ def sync_mirror(mirror):
 def ensure_git_identity(mirror):
     for key, value in (("user.name", GIT_NAME), ("user.email", GIT_EMAIL)):
         p = subprocess.run(["git", "config", "--get", key], cwd=str(mirror),
-                           capture_output=True, text=True)
+                           capture_output=True, text=True,
+                           encoding="utf-8", errors="replace")
         if p.returncode != 0:
             subprocess.run(["git", "config", key, value], cwd=str(mirror),
                            check=True)
@@ -316,7 +318,8 @@ def git_push(args, mirror, changed_note):
     message = args.message or f"站点{changed_note} {time.strftime('%Y-%m-%d')}"
     proc = subprocess.run(
         ["git", "commit", "-m", message], cwd=str(mirror),
-        capture_output=True, text=True)
+        capture_output=True, text=True,
+        encoding="utf-8", errors="replace")
     out = (proc.stdout or "") + (proc.stderr or "")
     if proc.returncode != 0 and "nothing to commit" in out.lower():
         print("[Git] 无内容可提交，跳过推送")
