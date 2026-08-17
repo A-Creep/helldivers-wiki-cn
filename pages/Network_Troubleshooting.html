@@ -157,7 +157,7 @@ You can verify if the DNS cache has been flushed by typing in <code>sudo resolve
 <td>2606:4700:4700::1001</td>
 <td>2001:4860:4860::8844
 </td></tr></tbody></table>
-<p>When modifying your DNS settings on Windows, it is highly recommended to configure both IPv4 <b>and</b> IPv6 to prevent fallback routing conflicts.
+<p>When modifying your DNS settings on Windows, it is highly recommended to configure both IPv4 <b>和</b> IPv6 to prevent fallback routing conflicts.
 </p>
 <ol><li>按下 <code>WIN + R</code> to open the "Run" dialog, then 类型 <code>ncpa.cpl</code>, and click "OK".</li>
 <li>Right-click on your 网络 adapter (e.g. "Ethernet" or "Wi-Fi") and select <code>Properties</code> .</li>
@@ -262,7 +262,7 @@ You can verify if the DNS cache has been flushed by typing in <code>sudo resolve
 <ol><li>Press the <b>Xbox button</b> to open the guide and select "Settings".</li>
 <li>Navigate to "基本信息" -&gt; "网络 settings" -&gt; "Advanced settings".</li>
 <li>Select "DNS settings" and choose <b>手册</b>.</li>
-<li>Input the IPv4 addresses of your choice from the table to the right for both the <i>主要</i> and <i>次要</i> fields.</li>
+<li>Input the IPv4 addresses of your choice from the table to the right for both the <i>主要</i> 和 <i>次要</i> fields.</li>
 <li>If your home 网络 utilizes IPv6, the 控制台 will automatically prompt you for IPv6 addresses 下一个. Input the corresponding addresses from the table.</li>
 <li>Once finished, press the <b>B button</b> to save and apply the configurations. The 控制台 will run a quick 连接 test to verify the setup.<p class="mw-empty-elt"></p></li></ol></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="PlayStation_5-0" aria-labelledby="PlayStation_5-0-label"><p class="mw-empty-elt"></p><table class="wikitable" style="width:400px; font-size:90%; float:right; margin-left: 40px">
 <caption style="text-align:center;">DNS Settings
@@ -406,7 +406,7 @@ Check the output list: If line #1 shows your home router and line #2 shows anoth
 <li><b>消除 Internal Double NAT:</b> If your traceroute showed two hops but your external IPs matched, the 瓶颈 is inside your own house. This can happen in scenarios where you daisy-chain a gaming router into a modem/router combo supplied by your ISP. You can 解决 such setups by either disconnecting the second router or logging into it and change its 操作 mode from "Router" to "Access Point (AP Mode)". Alternatively you might have to enable "Bridge Mode / Passthrough" on your ISP's modem.</li>
 <li><b>Change Your 连接 类型:</b> If no other options are available, switching to a different 网络 基础设施 that offers native public routing (such as transitioning from a restrictive 5G home cube to a stable DSL 连接) will permanently 消除 the issue. Most cable (i.e. Vodafone) and fiber connections as well as mobile (i.e. 5G) and 卫星 connections (i.e. Starlink) make use of CGNAT or Dual Stack Lite.</li></ol>
 <h2><span class="mw-headline" id="Network_drivers">网络 drivers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Network drivers" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Network drivers"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h2>
-<p>There are prevalent link 掉落 issues with both <i>Intel i225v/i226v</i> and <i>Realtek RTL81\*\* 2.5Gb</i> 网络 adapters. These are common adapters shipping from 2019/2020. These issues result in random link drops with rapid reconnects. Often these can occur so quickly that Windows does not even notify the user, however the link drops are disruptive enough to cause a 断开 from the rest of the lobby. Please note that this specific issue does not only affect 绝地潜兵 2 but also other games.
+<p>There are prevalent link 掉落 issues with both <i>Intel i225v/i226v</i> 和 <i>Realtek RTL81\*\* 2.5Gb</i> 网络 adapters. These are common adapters shipping from 2019/2020. These issues result in random link drops with rapid reconnects. Often these can occur so quickly that Windows does not even notify the user, however the link drops are disruptive enough to cause a 断开 from the rest of the lobby. Please note that this specific issue does not only affect 绝地潜兵 2 but also other games.
 </p>
 <h3><span class="mw-headline" id="Diagnosing_the_Link_Drops">Diagnosing the Link Drops</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Diagnosing the Link Drops" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Diagnosing the Link Drops"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
 <p>To 确认 if your 网络 adapter is actively dropping connections, you can check the Windows background logs:
@@ -504,16 +504,16 @@ Check the output list: If line #1 shows your home router and line #2 shows anoth
 </div></div></div></div></div></div></div>
 <!-- 
 NewPP limit report
-Cached time: 20260816171942
+Cached time: 20260817125530
 Cache expiry: 2592000
 Reduced expiry: false
 Complications: [vary‐revision‐sha1, show‐toc]
-CPU time usage: 0.085 seconds
-Real time usage: 0.127 seconds
+CPU time usage: 0.079 seconds
+Real time usage: 0.117 seconds
 Preprocessor visited node count: 310/1000000
-Revision size: 31102/4194304 bytes
+Revision size: 31105/4194304 bytes
 Post‐expand include size: 7611/4194304 bytes
-Template argument size: 44/4194304 bytes
+Template argument size: 47/4194304 bytes
 Highest expansion depth: 8/100
 Expensive parser function count: 2/500
 Unstrip recursion depth: 1/20
@@ -522,16 +522,16 @@ ExtLoops count: 0/5000
 Lua time usage: 0.011/15.000 seconds
 Lua memory usage: 664299/52428800 bytes
 Number of processed Cargo queries: 2
-Time spent processing Cargo queries: 0.010 s (avg. 0.005 s)
+Time spent processing Cargo queries: 0.009 s (avg. 0.005 s)
 Number of Cargo row insertion attempts: 1
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%   86.434      1 -total
- 45.48%   39.311      1 Template:Breadcrumb_Auto
- 15.10%   13.054      1 Template:Navbox_Troubleshooting
- 13.08%   11.308      1 Template:Navbox
-  4.17%    3.602      2 Template:Article_other
+100.00%   80.152      1 -total
+ 51.46%   41.243      1 Template:Breadcrumb_Auto
+ 14.32%   11.476      1 Template:Navbox_Troubleshooting
+ 11.99%    9.609      1 Template:Navbox
+  3.83%    3.072      2 Template:Article_other
 -->
 </div></div>
 </main>

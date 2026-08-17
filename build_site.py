@@ -41,6 +41,8 @@ CONV_MAP.setdefault("1007px-Penta_City_Planetside_2.png",
                     "1007px-Penta_City_Planetside_2.webp")
 CONV_MAP.setdefault("1000px-Terminids.webp.png",
                     "1000px-Terminids.webp.webp")
+CONV_MAP.setdefault("512px-Tyrant_Hunter_Cape_Armory.png",
+                    "Tyrant_Hunter_Cape_Armory.webp")
 
 WORKERS = 4
 _session = requests.Session()
@@ -210,6 +212,13 @@ def build_title_map(keep):
         "StA-52 Assault Rifle": "StA-52突击步枪",
         "40-K Meltagun": "40-K熔体枪",
         "A/AC-8 Autocannon Sentry": "A/AC-8机炮哨戒炮",
+        "FAF-14 Spear": "FAF-14飞矛",
+        "MG-206 Heavy Machine Gun": "MG-206重型机枪",
+        "MG-43 Machine Gun": "MG-43机枪",
+        "AC-8 Autocannon": "AC-8机炮",
+        "EAT-17 Expendable Anti-Tank": "EAT-17消耗性反坦克",
+        "MGX-42 Bullet Storm": "MGX-42弹幕风暴",
+        "MLS-4X Commando": "MLS-4X突击兵",
         "FAF-14 Spear": "FAF-14飞矛",
         "Support Weapons": "支援武器",
         "Weapons": "武器",
@@ -398,6 +407,11 @@ class SiteBuilder:
         html = re.sub(r"Syntax Error\s*", "", html, flags=re.I)
         html = re.sub(r"(致命|庞大|小|中型|大型)\?", r"\1", html)
         html = re.sub(r"<sup>\s*\?\s*</sup>", "", html, flags=re.I)
+        # infobox 金色标题栏显示英文词条名（页面 h1 已是中文，避免重复）
+        html = re.sub(
+            r'(<div class="druid-title">)[^<]*(</div>)',
+            lambda m: m.group(1) + html_lib.escape(title) + m.group(2),
+            html, count=1)
         # 删除空表格（只有表头、无数据单元格）
         def drop_empty_table(m):
             block = m.group(0)
@@ -411,7 +425,8 @@ class SiteBuilder:
             r"[\s\S]*?</\1>", "", html, flags=re.I)
         html = re.sub(r'\bhref=(["\'])index\.html\1', f'href="{index_rel}"', html)
         for i, u in enumerate(urls):
-            html = html.replace(f"__IMG_{i}__", f"../images/{local_img(u)}")
+            html = html.replace(f"__IMG_{i}__",
+                                f"../images/{urllib.parse.quote(local_img(u))}")
         return html
 
     def page_template(self, title, body, page_path=""):

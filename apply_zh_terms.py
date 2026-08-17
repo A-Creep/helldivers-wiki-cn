@@ -149,6 +149,13 @@ TERMS = [
     ("Change History", "变更历史"),
     ("Overflow Cap", "溢出上限"), ("Small", "小型"), ("Lethal", "致命"),
     ("Tactical Information", "战术信息"), ("Weapons Loadout", "武器配置"),
+    ("Variants", "变体"), ("Department", "部门"),
+    ("Available Targets", "可用目标"),
+    ("Supply (Blue)", "补给（蓝色）"), ("Backpacks", "背包"),
+    ("Sentries", "哨戒炮"), ("Emplacements", "炮台"),
+    ("Reinforce", "增援"), ("Rifle", "步枪"), ("Marksman Rifle", "射手步枪"),
+    ("Energy-Based", "能量型"), ("Marksman", "射手"),
+    ("Primary Weapons", "主武器"), ("Secondary Weapons", "副武器"),
 ]
 
 # 从 glossary 补充短词条（仅 1-3 个英文词、中文 ≤ 6 字，避免误替换句子）
@@ -193,7 +200,13 @@ def repl_segment(seg):
 
 def apply_file(path):
     html = open(path, encoding="utf-8").read()
+    dt = re.search(r'(<div class="druid-title">).*?(</div>)', html, re.S)
+    saved = dt.group(0) if dt else None
+    if saved:
+        html = html.replace(saved, "__DRUID_TITLE_PLACEHOLDER__", 1)
     html = TEXT_RE.sub(lambda m: repl_segment(m.group(1)), html)
+    if saved:
+        html = html.replace("__DRUID_TITLE_PLACEHOLDER__", saved, 1)
     with open(path, "w", encoding="utf-8") as fp:
         fp.write(html)
 

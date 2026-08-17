@@ -932,10 +932,17 @@ class Builder:
         parser = ContentParser()
         templated = parser.parse(page_row["content"], page_row["title"])
         trans_map: Dict[str, str] = {}
+        ctrl_re = re.compile(
+            r"^(?:down|up|right|left|[\d.,]+|[A-Za-z0-9_./%+-]{1,60})$")
         for block in parser.blocks:
             row = self.db.get_translation(block.block_id)
             if row and row["translated_text"]:
-                trans_map[block.block_id] = row["translated_text"]
+                if block.context == "template_param" and \
+                        ctrl_re.match(block.source_text.strip()):
+                    # 模板控制参数（箭头方向/数字/文件名/代码）不能被翻译
+                    trans_map[block.block_id] = block.source_text
+                else:
+                    trans_map[block.block_id] = row["translated_text"]
             else:
                 trans_map[block.block_id] = block.source_text
         return parser.restore(templated, trans_map)

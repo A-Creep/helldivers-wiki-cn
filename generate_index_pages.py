@@ -44,7 +44,7 @@ try:
                                          "fallback")):
                     continue
                 local = CONV.get(base, base)
-                IMGS[it["t"]] = "../images/" + local
+                IMGS[it["t"]] = "../images/" + urllib.parse.quote(local)
                 break
 except Exception:
     pass
@@ -209,8 +209,6 @@ def main():
     def wgroup(t):
         cat = param(t, "weapon_category").lower()
         wtype = param(t, "weapon_type").lower()
-        if CATS[t]["type"] == "support weapon":
-            return "支援武器"
         if CATS[t]["type"] == "throwable":
             return "手雷/投掷物"
         if CATS[t]["type"] == "attachment":
@@ -222,7 +220,7 @@ def main():
         return "主武器"
 
     wb = {}
-    for t in of_type("weapon", "support weapon", "throwable", "attachment"):
+    for t in of_type("weapon", "throwable", "attachment"):
         wb.setdefault(wgroup(t), []).append(t)
     write("weapons.html", "武器",
           [(g, sorted(v, key=lambda x: (zh(x) or x).lower()))
@@ -231,9 +229,11 @@ def main():
 
     # ---- 战略配备 ----
     sb = {}
-    for t in of_type("stratagem"):
+    for t in of_type("stratagem", "support weapon"):
         p = param(t, "permit_type").lower()
         if "supply" in p:
+            sb.setdefault("补给型", []).append(t)
+        elif CATS[t]["type"] == "support weapon":
             sb.setdefault("补给型", []).append(t)
         elif "defens" in p:
             sb.setdefault("防御型", []).append(t)

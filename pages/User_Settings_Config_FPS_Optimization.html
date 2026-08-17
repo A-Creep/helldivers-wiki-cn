@@ -194,7 +194,7 @@
 </p><p>You can activate it via <code>PROTON_ENABLE_WAYLAND=1 PROTON_ENABLE_HDR=1 %指挥%</code>
 <br />
 </p>
-<b>Gamescope:</b> If you want to use Gamescope instead, you can use the Launch 指挥 <code>gamescope -W 1920 -H 1080 r 120 --hdr-enabled -- %指挥%</code>. You can replace the values in <code>w</code>, <code>h</code> and <code>r</code> to different resolutions or 刷新 rates. For more information please consult the main 条款 about steam launch commands.<p class="mw-empty-elt"></p></article></section></div>
+<b>Gamescope:</b> If you want to use Gamescope instead, you can use the Launch 指挥 <code>gamescope -W 1920 -H 1080 r 120 --hdr-enabled -- %指挥%</code>. You can replace the values in <code>w</code>, <code>h</code> 和 <code>r</code> to different resolutions or 刷新 rates. For more information please consult the main 条款 about steam launch commands.<p class="mw-empty-elt"></p></article></section></div>
 <div style="clear:right"></div>
 <h4><span id=".E8.A7.A3.E5.86.B3.E6.96.B9.E6.A1.88"></span><span class="mw-headline" id="解决方案">解决方案</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: 解决方案" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: 解决方案"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
 <table class="mw-collapsible mw-collapsed wikitable" style="width:300px; font-size:90%; float:right; margin-left: 40px">
@@ -780,7 +780,7 @@ Especially users on Linux-based distributions (including the Steam Deck), managi
 </td></tr></tbody></table>
 <p><b>垂直同步</b>, which stands for "<b>Vertical Synchronization</b>" is a technology that will, as the name suggests, synchronize the FPS of the GPU with the 刷新 rate (Hz) of the 监控. This means that the GPU will wait at the end of the 当前 image 世代 of the 监控 before creating a new image. This 降低 <i>Screen Tearing</i>, which can happen when 多个 images are seen on the 监控, 基本上 overlapping with one another (which happens when the GPU produces more FPS than the 显示 can handle).
 </p><p>The main 问题 with the in-game V-Sync is that it's less than 最佳 and can cause performance issues. If the 电脑 is unable to 维护 the FPS 必需 to hit the 监控's 最大 刷新 rate it will progressively <b>HALVE</b> the 刷新 rate and therefore the framerate and lock it there (so-called "Double-Buffering"). In simpler terms: If your 显示's 刷新 rate is 60 Hz, your 目标 FPS is 60. If your FPS falls just slightly below 60 (含义 59 FPS is enough to trigger this!) then the FPS will automatically fall to 30 FPS (Because 60 FPS / 2 = 30 FPS) to keep the frame rate synchronized, resulting in 极难 stuttering!
-</p><p>通常 it is recommended to turn this setting <b>关</b>. Instead you should use <b>GSync</b>. <b>Adaptive Sync</b> and <b>FastSync</b>. Alternatively you can also limit your FPS via the Frame Limit; if you want to you can set an FPS cap to roughly 10% (or at least 3 FPS) below your 监控's 最大 刷新 rate to reduce screen tearing and circumvent any performance issues.
+</p><p>通常 it is recommended to turn this setting <b>关</b>. Instead you should use <b>GSync</b>. <b>Adaptive Sync</b> 和 <b>FastSync</b>. Alternatively you can also limit your FPS via the Frame Limit; if you want to you can set an FPS cap to roughly 10% (or at least 3 FPS) below your 监控's 最大 刷新 rate to reduce screen tearing and circumvent any performance issues.
 </p>
 <h3><span id=".E5.9B.BE.E5.83.8F"></span><span class="mw-headline" id="图像">图像</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: 图像" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: 图像"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h3>
 <h4><span id="Motion_Blur.2C_Depth_of_Field.2C_Bloom.2C_Sharpness"></span><span class="mw-headline" id="Motion_Blur,_Depth_of_Field,_Bloom,_Sharpness">Motion Blur, Depth of Field, Bloom, Sharpness</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="../index.html" title="Edit section: Motion Blur, Depth of Field, Bloom, Sharpness" class="mw-editsection-visualeditor"><span>edit</span></a><span class="mw-editsection-divider"> | </span><a href="../index.html" title="Edit section&#039;s source code: Motion Blur, Depth of Field, Bloom, Sharpness"><span>edit 来源</span></a><span class="mw-editsection-bracket">]</span></span></h4>
@@ -1362,7 +1362,7 @@ For the vast majority of mid-射程 to high-end desktop computers it is best to 
 <li>particles_tessellation = <b>否</b></li>
 <li>particles_接收_shadows = <b>是</b></li>
 <li>lens_quality_enabled = <b>否</b></li></ul>
-<p><code>particles_cast_shadows</code> and <code>particles_local_lighting</code> are of particular importance here; disabling the former prevents the game from rendering dynamic shadows for <i>每个</i> particle ingame, improving FPS, and disabling the latter lowers the amount the game stutters, particularly while fighting 机器人. 
+<p><code>particles_cast_shadows</code> 和 <code>particles_local_lighting</code> are of particular importance here; disabling the former prevents the game from rendering dynamic shadows for <i>每个</i> particle ingame, improving FPS, and disabling the latter lowers the amount the game stutters, particularly while fighting 机器人. 
 </p>
 <div class="tabber tabber--init"><header class="tabber__header"><button class="tabber__header__prev" tabindex="-1" type="button" aria-hidden="true"></button><nav class="tabber__tabs" role="tablist"><a class="tabber__tab" role="tab" id="Windows-1-label" href="#Windows-1" aria-controls="Windows-1">Windows</a><a class="tabber__tab" role="tab" id="Linux_/_Steam_Deck-1-label" href="#Linux_/_Steam_Deck-1" aria-controls="Linux_/_Steam_Deck-1">Linux / Steam Deck</a></nav><button class="tabber__header__next" tabindex="-1" type="button" aria-hidden="true"></button></header><section class="tabber__section"><article class="tabber__panel" role="tabpanel" tabindex="0" id="Windows-1" aria-labelledby="Windows-1-label"><p class="mw-empty-elt">
 </p><ol><li>按下 <code>Windows Key + R</code> to open the Run dialog.</li>
@@ -1548,37 +1548,37 @@ Currently, this is still rather young and not thoroughly tested and established,
 </div></div></div></div></div></div></div>
 <!-- 
 NewPP limit report
-Cached time: 20260816171759
+Cached time: 20260817125348
 Cache expiry: 2592000
 Reduced expiry: false
 Complications: [vary‐revision‐sha1, show‐toc]
-CPU time usage: 0.223 seconds
-Real time usage: 0.449 seconds
+CPU time usage: 0.210 seconds
+Real time usage: 0.298 seconds
 Preprocessor visited node count: 937/1000000
-Revision size: 122285/4194304 bytes
+Revision size: 122288/4194304 bytes
 Post‐expand include size: 10278/4194304 bytes
-Template argument size: 989/4194304 bytes
+Template argument size: 992/4194304 bytes
 Highest expansion depth: 8/100
 Expensive parser function count: 2/500
 Unstrip recursion depth: 1/20
 Unstrip post‐expand size: 26606/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.017/15.000 seconds
+Lua time usage: 0.016/15.000 seconds
 Lua memory usage: 787057/52428800 bytes
 Number of processed Cargo queries: 2
-Time spent processing Cargo queries: 0.019 s (avg. 0.009 s)
+Time spent processing Cargo queries: 0.008 s (avg. 0.004 s)
 Number of Cargo row insertion attempts: 1
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%  222.658      1 -total
- 28.95%   64.453      1 Template:Breadcrumb_Auto
- 11.58%   25.781      1 Template:Navbox_Troubleshooting
- 10.01%   22.293      1 Template:Navbox
-  5.84%   13.009      1 Template:Cite_discord
-  2.43%    5.412     19 Template:Clear
-  1.97%    4.391      2 Template:Article_other
-  1.40%    3.110      6 Template:Crash_header
+100.00%  146.480      1 -total
+ 31.02%   45.440      1 Template:Breadcrumb_Auto
+ 11.92%   17.459      1 Template:Navbox_Troubleshooting
+  9.93%   14.540      1 Template:Navbox
+  6.68%    9.781      1 Template:Cite_discord
+  3.04%    4.447      6 Template:Crash_header
+  2.98%    4.371      2 Template:Article_other
+  2.02%    2.953     19 Template:Clear
 -->
 </div></div>
 </main>
