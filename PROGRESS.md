@@ -1,5 +1,10 @@
 # 汉化进度（自动更新）
 
+## 2026-08-18 任务 D：引导句回退防护（响应 E #11）
+- 现象：E 发现 D 重建后 Drum_Magazine 引导句回退为英文残留（缓存与 apply_zh_terms 后处理脱节：build_site 从 zh_cache.jsonl 重写页面会覆盖 terms 后处理成果）
+- 改进：`sync_update.py` 新增 `step_lead_check`（terms 后、verify 前）——校验 LEAD_PAGE_FIXES 18 页均含期望中文引导句，缺失即终止发布并提示重跑 terms / 单页 invalidate；已通过回退模拟测试
+- 当前本地与镜像均无回退（Drum 等 18 页引导句为中文），main = 05e5b34
+
 ## 2026-08-18 任务 D：增量验收 + 自动发布（15 页变更）
 - `sync_update.py` 真实增量：15 个新增/变更页（Campaigns、Deadlands、Desert Cliffs、PH-9 Predator、Missions、Difficulty 等）→ **只重渲染 14 页**（缓存命中其余）→ 校验 **176,707 链接全绿、1143 页 0 高危/0 中危/0 低危**
 - 补拉 13 张原站新图（PH-9 Predator 装甲/头盔、Hydrobius Void 行星系列、Senge 23 Void 等，wiki API imageinfo 解析 thumburl）

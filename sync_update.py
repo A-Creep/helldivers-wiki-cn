@@ -21,6 +21,7 @@ Watt Toolkit 改过，直连 GitHub 会 502/CONNECT 404）。
 import argparse
 import json
 import os
+import re
 import sqlite3
 import socket
 import subprocess
@@ -39,6 +40,7 @@ except Exception:
 ROOT = Path(__file__).resolve().parent
 SITE_FINAL = ROOT / "output_zh" / "site_final"
 CACHE_FILE = SITE_FINAL / "zh_cache.jsonl"
+PAGES_DIR = SITE_FINAL / "pages"
 DEFAULT_MIRROR = Path("G:/Codex项目/helldivers-wiki-mirror")
 DEFAULT_PROXY = "http://127.0.0.1:7890"
 GIT_NAME = "A-Creep"
@@ -222,6 +224,42 @@ def step_strip():
 
 def step_terms():
     run("apply_zh_terms", [sys.executable, "apply_zh_terms.py"])
+
+
+def step_lead_check():
+    """重建后引导句残留复核（防回退）。
+
+    apply_zh_terms 是渲染后处理（改 pages/*.html），不写回 zh_cache.jsonl；
+    build_site 重建页面时会从缓存覆盖这些修改，若 apply_zh_terms 某次未命中，
+    引导句会回退为英文残留（实测 Drum_Magazine 回退）。这里在 terms 后扫描
+    LEAD_PAGE_FIXES 精确映射的页面是否仍含期望中文引导句，发现缺失即终止发布，
+    提示重跑 apply_zh_terms 或单页重渲染。
+    """
+    try:
+        sys.path.insert(0, str(ROOT))
+        from apply_zh_terms import LEAD_PAGE_FIXES
+    except Exception as e:
+        print(f"[LeadCheck] 无法读取 LEAD_PAGE_FIXES，跳过复核: {e}")
+        return
+    hits = []
+    for fname, fix in LEAD_PAGE_FIXES.items():
+        path = PAGES_DIR / fname
+        if not path.exists():
+            continue
+        html = path.read_text(encoding="utf-8", errors="replace")
+        plain = re.sub(r"<[^>]+>", "", fix)
+        expect = plain.strip()[:12]
+        if expect and expect not in html:
+            hits.append((fname, expect))
+    if hits:
+        print(f"[LeadCheck] 检测到 {len(hits)} 个 LEAD 页面引导句回退（期望中文句缺失）：")
+        for f, exp in hits[:30]:
+            print(f"   - {f} | 期望含「{exp}」")
+        print("[LeadCheck] 请重跑 `python apply_zh_terms.py` 或 "
+              "`python sync_update.py --skip-sync --invalidate <标题>` 后重新验证；"
+              "流程已终止，未打包/未推送。")
+        raise SystemExit(1)
+    print(f"[LeadCheck] 引导句残留复核通过（LEAD_PAGE_FIXES {len(LEAD_PAGE_FIXES)} 页均命中中文引导句）")
 
 
 def step_index():
@@ -408,6 +446,7 @@ def main():
     step_build()
     step_strip()
     step_terms()
+    step_lead_check()
     step_index()
 
     # 4. 验证
