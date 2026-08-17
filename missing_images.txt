@@ -32,7 +32,6 @@
 128px-They_don%27t_call_it_Tacticool_for_nothin%27_Trophy_Unlocked_Icon.png
 128px-They_mostly_come_at_night%E2%80%A6_Trophy_Unlocked_Icon.png
 128px-You%27re_Next_Victory_Pose_Icon.png
-150px-Illuminate_Warp_Gateway.png
 182px-Freedom%27s_Beacon_paper_volume_191_number_30634.webp
 1920px-Freedom%27s_Flame_Premium_Warbond_Cover.webp
 200px-City_Fighter%27s_Resolve_Cape_Icon.webp
@@ -131,7 +130,6 @@
 600px-Freedom%27s_Flame_Premium_Warbond_Cover.webp
 600px-SG-225SP_Breaker_Spray%26Pray_Primary_Render.webp
 683px-Angel%27s_Venture_Planet_Header.webp
-89px-Illuminate_Gazer_Spire.png
 91px-SG-225SP_Breaker_Spray%26Pray_Primary_Render.png
 96px-Level_190_Ranger%2C_Eagle_Class_Rank_Icon.png
 96px-Level_200_Ranger%2C_Bald_Eagle_Class_Rank_Icon.png
@@ -154,7 +152,6 @@ Freedom%27s_Flame_Premium_Warbond_Banner.webp
 Freedom%27s_Tapestry_Player_Card_Icon.webp
 GS-11_Democracy%27s_Deputy_Armor_Render.webp
 GS-11_Democracy%27s_Deputy_Helmet_Render.webp
-Illuminate_Gazer_Spire.png
 Ivory_Conscript_Cannon_%28Icorp%29.png
 Liberty%27s_Herald_Player_Card_Icon.webp
 Miranda%27s_Legacy_Player_Card_Icon.webp
