@@ -1,5 +1,10 @@
 # 汉化进度（自动更新）
 
+## 2026-08-19 任务 D：敌人分类页种族配色发布
+- S #90 派单：E 的敌人分类页种族配色（#81/#84，机器人 #ff6161 / 终结族 #ffb901 / 光能族 #cd8aea，仅 enemies 分类页生效）统一发布；D 执行 `python sync_update.py --skip-sync --all` 完整管线：
+  - 验收：177,304 链接全绿、1146 页 0 高危/0 中危/0 低危；enemies.html 含 faction-auto/termi/illum 三类阵营类、theme.css 三色号就位；LeadCheck 自动修复 1 页后 18 页引导句全部命中中文
+  - EXE 487MB（dist\Helldivers2WikiCN.exe，打包前 taskkill 结束占用实例）；镜像 main **fc1d28e6 → bb3c221d**
+
 ## 2026-08-18 任务 D：#76 双配色主题切换收尾发布
 - E 实现双主题（CSS 变量 + html.view-alt 切换，header 切换按钮 + localStorage，默认配色1 黄字/黑黄边框；配色2 紫红边框/蓝字）后，D 跑完整管线：
   - 验收：177,304 链接全绿、1146 页 0 高危/0 中危/0 低危；theme.css 双主题变量与词条页"切换配色"按钮/toggleTheme 验证通过
