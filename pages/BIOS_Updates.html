@@ -19,11 +19,11 @@
 <main class="content">
   <h1 class="page-title">BIOS Updates</h1>
   <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div><div class="breadcrumb-item breadcrumb-item-final">BIOS Updates</div></div>
-<p><b>Motherboard BIOS / UEFI Updates</b> are among the most impactful system 维护 routines you can perform. This 流程 updates your motherboard's core firmware, which dictates how your CPU, RAM, graphics card, and 存储 devices interact on a low hardware level.
+<p><b>主板BIOS / UEFI更新</b> are among the most impactful system 维护 routines you can perform. This 流程 updates your motherboard's core firmware, which dictates how your CPU, RAM, graphics card, and 存储 devices interact on a low hardware level.
 </p>
 <div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ 致命 警告: READ CAREFULLY BEFORE PROCEEDING ⚠</b>
-Flashing your BIOS is a low-level hardware modification that carries inherent risks. Unlike 标准 软件 installations, interrupting a BIOS 更新 (due to a power outage, system freeze, or accidentally pulling the USB drive) can <b>permanently brick your motherboard<i>., rendering your PC completely unbootable.</i></b><i></i></div>
-<p>Please <b>only</b> 继续 if you are confident in taking this risk. Any and all damages that may occur to your hardware or data during this 流程 are entirely your own responsibility. This guide is provided strictly for informational purposes; 否 liability or responsibility is assumed for any errors, hardware failures, or data loss encountered. If you feel inexperienced or uncomfortable with this 程序, please consult a certified hardware 技术员.
+Flashing your BIOS is a low-level hardware modification that carries inherent risks. Unlike 标准 软件 installations, interrupting a BIOS 更新 (due to a power outage, system freeze, or accidentally pulling the USB drive) can <b>永久损坏您的主板<i>., rendering your PC completely unbootable.</i></b><i></i></div>
+<p>Please <b>仅</b> 继续 if you are confident in taking this risk. Any and all damages that may occur to your hardware or data during this 流程 are entirely your own responsibility. This guide is provided strictly for informational purposes; 否 liability or responsibility is assumed for any errors, hardware failures, or data loss encountered. If you feel inexperienced or uncomfortable with this 程序, please consult a certified hardware 技术员.
 </p>
 <div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
@@ -51,15 +51,15 @@ Flashing your BIOS is a low-level hardware modification that carries inherent ri
 </div>
 
 <h2><span class="mw-headline" id="When_or_Why_you_should_update">When or Why you should 更新</span></h2>
-<p>As a 基本信息 rule of thumb, it is often best to only 更新 your BIOS if you encounter persistent 稳定性 problems that 标准 故障排除 methods cannot 解决. As per <a rel="nofollow" class="external text" href="https://www.intel.com/content/www/us/en/gaming/resources/how-to-update-bios.html">Intel's 官员 guidelines</a>: <i>"BIOS updates aren’t a routine 流程, and 通常 shouldn’t be performed on PCs that are working normally."</i> Or in simpler terms: <b>If it ain't broke, don't 修复 it.</b>
-</p><p>However, with modern hardware architectures, this paradigm has significantly shifted. 致命 稳定性 issues in existing hardware, voltage safety corrections for newer processors, memory compatibility fixes, and severe 安全 flaws often make these updates an absolute necessity rather than an optional choice. <b>BEWARE:</b> BIOS updates 通常 won't unlock any extra performance (not that it cannot be, it's just a very rare occurrence). For more information on this, you may want to read up on <a rel="nofollow" class="external text" href="https://www.xda-developers.com/when-to-update-bios/">XDA Developers</a>.
+<p>As a 基本信息 rule of thumb, it is often best to only 更新 your BIOS if you encounter persistent 稳定性 problems that 标准 故障排除 methods cannot 解决. As per <a rel="nofollow" class="external text" href="https://www.intel.com/content/www/us/en/gaming/resources/how-to-update-bios.html">Intel's 官员 guidelines</a>: <i>BIOS更新并非例行流程，通常不应在运行正常的PC上执行。</i> Or in simpler terms: <b>如果没坏，就别修。</b>
+</p><p>However, with modern hardware architectures, this paradigm has significantly shifted. 致命 稳定性 issues in existing hardware, voltage safety corrections for newer processors, memory compatibility fixes, and severe 安全 flaws often make these updates an absolute necessity rather than an optional choice. <b>注意：</b> BIOS updates 通常 won't unlock any extra performance (not that it cannot be, it's just a very rare occurrence). For more information on this, you may want to read up on <a rel="nofollow" class="external text" href="https://www.xda-developers.com/when-to-update-bios/">XDA Developers</a>.
 </p><p>If you decide to 继续 with a BIOS 更新, it is strongly advised that you thoroughly read the 官员 文档 provided by your exact motherboard (or laptop) 制造商 beforehand, ensuring you understand the precise, model-specific steps 必需.
 </p>
 <h3><span class="mw-headline" id="Known_hardware_flaws">Known hardware flaws</span></h3>
 <p>BIOS / UEFI updates are 极其 crucial on certain systems:
 </p>
 <ul><li>Intel's 13th and 14th 世代 CPUs are known to suffer from hardware instability issues known as "vMin Shift", caused by 高处 operating voltages which lead to rapid 物理 degradation of the 处理器. To mitigate this 问题, motherboard manufacturers released 致命 UEFI updates containing <i>microcode 0x12F</i> to prevent further degradation.
-<ul><li><i>⚠ Please be aware: If your CPU has already suffered 物理 degradation and is actively crashing, a BIOS 更新 cannot undo the hardware 伤害. In such cases, the 处理器 must be replaced via RMA.</i></li></ul></li></ul>
+<ul><li><i>⚠ 请注意：如果您的CPU已出现物理性退化且正在发生崩溃，BIOS更新无法逆转硬件损伤。在这种情况下，必须通过RMA更换处理器。</i></li></ul></li></ul>
 <p>But AMD also has their fair share of problems. While this doesn't mean that you will inevitably run into problems with your configuration, it's good practice to keep your system updated to avoid hardware failure.
 </p>
 <ul><li><b>AMD Ryzen 7000 series CPUs:</b> Particularly the 3D V-Cache models like the 7800X3D, suffered fom a devastating hardware flaw tied to outdated motherboard firmware.<sup id="cite&#95;ref-1" class="reference"><a href="#cite_note-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup>
@@ -80,13 +80,13 @@ Flashing your BIOS is a low-level hardware modification that carries inherent ri
 <ol><li>Your mainboards packaging should have the name of the 制造商 and model on it.</li>
 <li>The mainboards model is also printed onto the PCB of the mainboard.</li>
 <li>If you are on Windows, you can open the Windows Start Menu, 类型 in <code>msinfo32</code> (System Information), and look at the "BaseBoard 产品" line.</li></ol>
-<p><b>Please be aware:</b> If your board received a Revision, it's 重要 to 下载 BIOS updates for your exact revision and not for older / newer revisions.
+<p><b>请注意：</b> If your board received a Revision, it's 重要 to 下载 BIOS updates for your exact revision and not for older / newer revisions.
 </p><p>For pre-built computers it's recommended to check if the 制造商 of that 电脑 is providing their own UEFI versions.
 </p>
 <h3><span class="mw-headline" id="The_BitLocker_Data_Trap">The BitLocker Data Trap</span></h3>
-<p>If Windows BitLocker device encryption is active on your 存储 drives, <i>updating your BIOS will reset your Trusted Platform Module (TPM)</i>. Windows will interpret this as a 物理 安全 breach and trap you in a permanent boot loop demanding a BitLocker 恢复 Key. 
+<p>If Windows BitLocker device encryption is active on your 存储 drives, <i>更新BIOS将重置您的可信平台模块(TPM)</i>. Windows will interpret this as a 物理 安全 breach and trap you in a permanent boot loop demanding a BitLocker 恢复 Key. 
 </p>
-<ul><li>Temporarily <i>suspend BitLocker encryption</i> in Windows or locate your 官员 Microsoft 账户 恢复 Key <i>BEFORE</i> you reboot your PC to flash the firmware.</li></ul>
+<ul><li>Temporarily <i>暂停BitLocker加密</i> in Windows or locate your 官员 Microsoft 账户 恢复 Key <i>BEFORE</i> you reboot your PC to flash the firmware.</li></ul>
 <h3><span class="mw-headline" id="Prepare_a_Reliable_USB_Drive">Prepare a Reliable USB Drive</span></h3>
 <p>Use a high-quality, stable USB thumb drive.
 </p>
@@ -95,10 +95,10 @@ Flashing your BIOS is a low-level hardware modification that carries inherent ri
 <li>Unpack the ZIP archive, and place the bare ".CAP" or ".ROM" file onto the root 目录 of the drive.</li></ol>
 <h3><span class="mw-headline" id="Clear_the_Environment">Clear the 环境</span></h3>
 <p>Never attempt to flash your BIOS if your area is currently experiencing severe 天气 (storms, 重型 winds, other 极难 天气 phenomenon) that could cause a localized power failure. If you own an Uninterruptible Power Supply (UPS), ensure your PC and 监控 are plugged into it.
-</p><p>Keeping your power uninterrupted is doubly 重要 if you are playing on a Laptop! Only 更新 your BIOS when you are connected to a wall socket. <b>NEVER 更新 YOUR BIOS WITH 电池 ONLY.</b>
+</p><p>Keeping your power uninterrupted is doubly 重要 if you are playing on a Laptop! Only 更新 your BIOS when you are connected to a wall socket. <b>切勿仅在电池供电时更新BIOS。</b>
 </p>
 <h3><span class="mw-headline" id="Document_Your_Current_Custom_Settings">文档 Your 当前 Custom Settings</span></h3>
-<p>Flashing the BIOS will completely erase all your custom profiles and restore 工厂 defaults. If you previously enabled "XMP/EXPO" for your RAM, adjusted custom <i>Fan Curves</i> for an AIO liquid cooler, or configured "Resizable BAR", you will need to manually re-enable them after the system reboots successfully.
+<p>Flashing the BIOS will completely erase all your custom profiles and restore 工厂 defaults. If you previously enabled "XMP/EXPO" for your RAM, adjusted custom <i>风扇曲线</i> for an AIO liquid cooler, or configured "Resizable BAR", you will need to manually re-enable them after the system reboots successfully.
 </p>
 <h3><span class="mw-headline" id="Nvidia_Legacy_Black_Screen_Loop">Nvidia Legacy Black Screen Loop</span></h3>
 <p>Certain Graphics cards - most commonly the NVIDIA GeForce RTX 5000 series - suffer from a firmware-level incompatibility with specific motherboard BIOS versions if the system relies on legacy / CSM boot modes instead of the modern UEFI. This can result in a permanent black screen upon system reboot.
@@ -169,35 +169,35 @@ Flashing your BIOS is a low-level hardware modification that carries inherent ri
 </div></div></div></div></div></div></div>
 <!-- 
 NewPP limit report
-Cached time: 20260817125534
+Cached time: 20260818035744
 Cache expiry: 2592000
 Reduced expiry: false
 Complications: [vary‐revision‐sha1, show‐toc]
-CPU time usage: 0.057 seconds
-Real time usage: 0.083 seconds
+CPU time usage: 0.049 seconds
+Real time usage: 0.071 seconds
 Preprocessor visited node count: 226/1000000
-Revision size: 12625/4194304 bytes
-Post‐expand include size: 7984/4194304 bytes
-Template argument size: 422/4194304 bytes
+Revision size: 12507/4194304 bytes
+Post‐expand include size: 7974/4194304 bytes
+Template argument size: 412/4194304 bytes
 Highest expansion depth: 8/100
 Expensive parser function count: 1/500
 Unstrip recursion depth: 0/20
 Unstrip post‐expand size: 2240/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.011/15.000 seconds
+Lua time usage: 0.009/15.000 seconds
 Lua memory usage: 663675/52428800 bytes
 Number of processed Cargo queries: 2
-Time spent processing Cargo queries: 0.009 s (avg. 0.005 s)
+Time spent processing Cargo queries: 0.007 s (avg. 0.004 s)
 Number of Cargo row insertion attempts: 1
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%   59.694      1 -total
- 67.42%   40.246      1 Template:Breadcrumb_Auto
- 20.28%   12.105      1 Template:Navbox_Troubleshooting
- 16.69%    9.965      1 Template:Navbox
-  5.26%    3.143      2 Template:Article_other
-  3.31%    1.976      1 Template:Crash_header
+100.00%   50.760      1 -total
+ 63.56%   32.262      1 Template:Breadcrumb_Auto
+ 22.55%   11.449      1 Template:Navbox_Troubleshooting
+ 18.70%    9.492      1 Template:Navbox
+  6.61%    3.354      2 Template:Article_other
+  3.45%    1.750      1 Template:Crash_header
 -->
 </div></div>
 </main>

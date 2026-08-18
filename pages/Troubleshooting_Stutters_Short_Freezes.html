@@ -67,7 +67,7 @@ If this resolves the issue:
 <p><b>Optional</b>: Please only change these if your CPU has <b>16 or more</b> threads - otherwise you might lose performance!
 </p>
 <ul><li>Find <code>num_reserved_threads = 2</code> and replace it with <code>num_reserved_threads = 4</code></li></ul>
-<p><b>Attention:</b> You will most likely have to re-do these steps after a game 更新.
+<p><b>注意：</b> You will most likely have to re-do these steps after a game 更新.
 </p>
 <h2><span class="mw-headline" id="Microsoft_GameInput">Microsoft GameInput</span></h2>
 <p>It is recommended to first test a <b>reinstall</b> and if problems persist then to disable the 服务 completely.
@@ -90,39 +90,39 @@ If this resolves the issue:
 <h4><span class="mw-headline" id="Reinstalling_GameInput_2">Reinstalling GameInput</span></h4>
 <ol><li>Close the game.</li>
 <li>Open Windows PowerShell (Admin) using one of the following methods:
-<ol><li>按下 <code>⊞ Win</code> + <code>X</code>, then press <code>A</code> or select <code>Windows PowerShell (Admin)</code> from the menu.</li>
-<li>按下 <code>⊞ Win</code> + <code>R</code>, 类型 <code>powershell</code> into the <code>Run</code> dialog, then press <code>Ctrl</code> + <code>Shift</code> + <code>进入</code>.</li>
-<li>Search for <code>powershell</code> in the Windows search bar and select <code>Run as 管理员</code> from the panel on the right-hand 侧面.</li></ol></li>
+<ol><li>按下 <code>⊞ Win</code> + <code>X</code>，然后按下 <code>A</code> 或选择 <code>Windows PowerShell（管理员）</code> 从菜单中。</li>
+<li>按下 <code>⊞ Win</code> + <code>R</code>，输入 <code>powershell</code> 进入 <code>运行</code> 对话框，然后按 <code>Ctrl</code> + <code>Shift</code> + <code>进入</code>.</li>
+<li>Search for <code>powershell</code> 在 Windows 搜索栏中并选择 <code>以管理员身份运行</code> 从右侧的面板中。</li></ol></li>
 <li>Run the following commands, in order:
 <ol><li><code>winget 卸载 Microsoft.GameInput</code></li>
 <li><code>winget 安装 Microsoft.GameInput --accept-来源-agreements --accept-包-agreements</code></li></ol></li>
 <li><b>重新开始</b> your machine using one of the following methods:<br /> <div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ Ensure you have saved anything 重要 before doing this ⚠</b></div>
-<ol><li>按下 <code>⊞ Win</code> + <code>X</code>, then press <code>U</code>, then select <code>重新开始</code> from the open menu.</li>
+<ol><li>按下 <code>⊞ Win</code> + <code>X</code>，然后按下 <code>U</code>, then select <code>重新开始</code> from the open menu.</li>
 <li>Open the Windows Start menu, click the power icon, then select <code>重新开始</code> from the open menu.</li>
 <li>Run the 指挥: <code>shutdown -r -t 0</code>.</li></ol></li></ol>
 <h3><span id="Disabling.2FEnabling_GameInput"></span><span class="mw-headline" id="Disabling/Enabling_GameInput">Disabling/Enabling GameInput</span></h3>
 <h4><span class="mw-headline" id="Disabling_GameInput">Disabling GameInput</span></h4>
 <div class="tabber tabber--init"><header class="tabber__header"><button class="tabber__header__prev" tabindex="-1" type="button" aria-hidden="true"></button><nav class="tabber__tabs" role="tablist"><a class="tabber__tab" role="tab" id="Windows_(GUI)-0-label" href="#Windows_(GUI)-0" aria-controls="Windows_(GUI)-0">Windows (GUI)</a><a class="tabber__tab" role="tab" id="Windows_(CLI)-0-label" href="#Windows_(CLI)-0" aria-controls="Windows_(CLI)-0">Windows (CLI)</a></nav><button class="tabber__header__next" tabindex="-1" type="button" aria-hidden="true"></button></header><section class="tabber__section"><article class="tabber__panel" role="tabpanel" tabindex="0" id="Windows_(GUI)-0" aria-labelledby="Windows_(GUI)-0-label"><p class="mw-empty-elt">
 </p><ol><li>Close the game.</li>
-<li>按下 <code>⊞ Win</code> + <code>R</code> to open the <code>Run</code> dialog.</li>
-<li>类型 or paste <code>services.msc</code> into the <code>Run</code> dialog, then click <code>OK</code> or press <code>Enter ↩</code>.</li>
+<li>按下 <code>⊞ Win</code> + <code>R</code> to open the <code>运行</code> dialog.</li>
+<li>类型 or paste <code>services.msc</code> 进入 <code>运行</code> dialog, then click <code>OK</code> or press <code>Enter ↩</code>.</li>
 <li>In the Services window, locate <code>GameInput 服务</code>.</li>
-<li>Right-click the 服务 and select <code>Properties</code>.</li>
+<li>Right-click the 服务 and select <code>属性</code>.</li>
 <li>In the <code>Startup 类型</code> 掉落-down menu, select <code>禁用</code>.</li>
 <li>Click the <code>停止</code> button.</li></ol>
 <p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Windows_(CLI)-0" aria-labelledby="Windows_(CLI)-0-label"><p class="mw-empty-elt">
 </p><ol><li>Close the game.</li>
 <li>Open Windows PowerShell (Admin) using one of the following methods:
-<ol><li>按下 <code>⊞ Win</code> + <code>X</code>, then press <code>A</code> or select <code>Windows PowerShell (Admin)</code> from the menu.</li>
-<li>按下 <code>⊞ Win</code> + <code>R</code>, 类型 <code>powershell</code> into the <code>Run</code> dialog, then press <code>Ctrl</code> + <code>Shift</code> + <code>进入</code>.</li>
-<li>Search for <code>powershell</code> in the Windows search bar and select <code>Run as 管理员</code> from the panel on the right-hand 侧面.</li></ol></li>
+<ol><li>按下 <code>⊞ Win</code> + <code>X</code>，然后按下 <code>A</code> 或选择 <code>Windows PowerShell（管理员）</code> 从菜单中。</li>
+<li>按下 <code>⊞ Win</code> + <code>R</code>，输入 <code>powershell</code> 进入 <code>运行</code> 对话框，然后按 <code>Ctrl</code> + <code>Shift</code> + <code>进入</code>.</li>
+<li>Search for <code>powershell</code> 在 Windows 搜索栏中并选择 <code>以管理员身份运行</code> 从右侧的面板中。</li></ol></li>
 <li>Run the following 指挥: <code>Set-服务 "GameInputSvc" -StartupType Disabled -Status Stopped</code></li>
 <li><b>（可选）</b> Verify that the 服务 has been disabled and stopped:
-<ol><li>Run <code>Get-服务 "GameInputSvc" | Select-Object -Property Name, DisplayName, Status, StartType | Format-List</code>.</li>
+<ol><li>运行 <code>Get-服务 "GameInputSvc" | Select-Object -Property Name, DisplayName, Status, StartType | Format-List</code>.</li>
 <li>Ensure <code>StartType</code> is <code>禁用</code>.</li>
-<li>Ensure <code>Status</code> is <code>Stopped</code>.
+<li>Ensure <code>状态</code> is <code>Stopped</code>.
 <ol><li>If it is not, try one of the below:
-<ol><li>Run <code>Stop-服务 "GameInputSvc" -Force</code> and recheck.</li>
+<ol><li>运行 <code>Stop-服务 "GameInputSvc" -Force</code> and recheck.</li>
 <li><b>重新开始</b> your machine with <code>shutdown -r -t 0</code>. <div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ Ensure you have saved anything 重要 before running this 指挥! ⚠</b></div></li></ol></li></ol></li></ol></li></ol>
 <p class="mw-empty-elt"></p></article></section></div>
 <h4><span class="mw-headline" id="Enabling_GameInput">Enabling GameInput</span></h4>
@@ -130,24 +130,24 @@ If this resolves the issue:
 </p>
 <div class="tabber tabber--init"><header class="tabber__header"><button class="tabber__header__prev" tabindex="-1" type="button" aria-hidden="true"></button><nav class="tabber__tabs" role="tablist"><a class="tabber__tab" role="tab" id="Windows_(GUI)-1-label" href="#Windows_(GUI)-1" aria-controls="Windows_(GUI)-1">Windows (GUI)</a><a class="tabber__tab" role="tab" id="Windows_(CLI)-1-label" href="#Windows_(CLI)-1" aria-controls="Windows_(CLI)-1">Windows (CLI)</a></nav><button class="tabber__header__next" tabindex="-1" type="button" aria-hidden="true"></button></header><section class="tabber__section"><article class="tabber__panel" role="tabpanel" tabindex="0" id="Windows_(GUI)-1" aria-labelledby="Windows_(GUI)-1-label"><p class="mw-empty-elt">
 </p><ol><li>Close the game.</li>
-<li>按下 <code>⊞ Win</code> + <code>R</code> to open the <code>Run</code> dialog.</li>
-<li>类型 or paste <code>services.msc</code> into the <code>Run</code> dialog, then click <code>OK</code> or press <code>Enter ↩</code>.</li>
+<li>按下 <code>⊞ Win</code> + <code>R</code> to open the <code>运行</code> dialog.</li>
+<li>类型 or paste <code>services.msc</code> 进入 <code>运行</code> dialog, then click <code>OK</code> or press <code>Enter ↩</code>.</li>
 <li>In the Services window, locate <code>GameInput 服务</code>.</li>
-<li>Right-click the 服务 and select <code>Properties</code>.</li>
+<li>Right-click the 服务 and select <code>属性</code>.</li>
 <li>In the <code>Startup 类型</code> 掉落-down menu, select <code>全自动</code>.</li>
 <li>Click <code>应用</code></li>
 <li>Click the <code>开始</code> button.</li></ol>
 <p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Windows_(CLI)-1" aria-labelledby="Windows_(CLI)-1-label"><p class="mw-empty-elt">
 </p><ol><li>Close the game.</li>
 <li>Open Windows PowerShell (Admin) using one of the following methods:
-<ol><li>按下 <code>⊞ Win</code> + <code>X</code>, then press <code>A</code> or select <code>Windows PowerShell (Admin)</code> from the menu.</li>
-<li>按下 <code>⊞ Win</code> + <code>R</code>, 类型 <code>powershell</code> into the <code>Run</code> dialog, then press <code>Ctrl</code> + <code>Shift</code> + <code>进入</code>.</li>
-<li>Search for <code>powershell</code> in the Windows search bar and select <code>Run as 管理员</code> from the panel on the right-hand 侧面.</li></ol></li>
+<ol><li>按下 <code>⊞ Win</code> + <code>X</code>，然后按下 <code>A</code> 或选择 <code>Windows PowerShell（管理员）</code> 从菜单中。</li>
+<li>按下 <code>⊞ Win</code> + <code>R</code>，输入 <code>powershell</code> 进入 <code>运行</code> 对话框，然后按 <code>Ctrl</code> + <code>Shift</code> + <code>进入</code>.</li>
+<li>Search for <code>powershell</code> 在 Windows 搜索栏中并选择 <code>以管理员身份运行</code> 从右侧的面板中。</li></ol></li>
 <li>Run the following 指挥: <code>Set-服务 "GameInputSvc" -StartupType 全自动 -Status Running</code></li>
 <li><b>（可选）</b> 确认 that the 服务 has been disabled and stopped:
-<ol><li>Run <code>Get-服务 "GameInputSvc" | Select-Object -Property Name, DisplayName, Status, StartType | Format-List</code></li>
+<ol><li>运行 <code>Get-服务 "GameInputSvc" | Select-Object -Property Name, DisplayName, Status, StartType | Format-List</code></li>
 <li>Ensure <code>StartType</code> is <code>全自动</code>.</li>
-<li>Ensure <code>Status</code> is <code>Running</code>.
+<li>Ensure <code>状态</code> is <code>Running</code>.
 <ol><li>If it is not, <b>重新开始</b> your machine with <code>shutdown -r -t 0</code>. <div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ Ensure you have saved anything 重要 before running this 指挥! ⚠</b></div></li></ol></li></ol></li></ol>
 <p class="mw-empty-elt"></p></article></section></div>
 <h3><span class="mw-headline" id="Similar_Software">Similar 软件</span></h3>
@@ -209,35 +209,35 @@ If this resolves the issue:
 </div></div></div></div></div></div></div>
 <!-- 
 NewPP limit report
-Cached time: 20260817125349
+Cached time: 20260818035604
 Cache expiry: 2592000
 Reduced expiry: false
 Complications: [vary‐revision‐sha1, show‐toc]
-CPU time usage: 0.058 seconds
-Real time usage: 0.076 seconds
+CPU time usage: 0.061 seconds
+Real time usage: 0.106 seconds
 Preprocessor visited node count: 241/1000000
-Revision size: 11180/4194304 bytes
+Revision size: 11206/4194304 bytes
 Post‐expand include size: 8507/4194304 bytes
 Template argument size: 381/4194304 bytes
 Highest expansion depth: 8/100
 Expensive parser function count: 2/500
 Unstrip recursion depth: 0/20
-Unstrip post‐expand size: 6530/10000000 bytes
+Unstrip post‐expand size: 6549/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.010/15.000 seconds
+Lua time usage: 0.011/15.000 seconds
 Lua memory usage: 664166/52428800 bytes
 Number of processed Cargo queries: 2
-Time spent processing Cargo queries: 0.007 s (avg. 0.004 s)
+Time spent processing Cargo queries: 0.011 s (avg. 0.005 s)
 Number of Cargo row insertion attempts: 1
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%   51.445      1 -total
- 63.93%   32.888      1 Template:Breadcrumb_Auto
- 18.90%    9.725      1 Template:Navbox_Troubleshooting
- 15.65%    8.051      1 Template:Navbox
-  7.68%    3.951      2 Template:Article_other
-  3.11%    1.602      4 Template:Crash_header
+100.00%   75.856      1 -total
+ 71.53%   54.263      1 Template:Breadcrumb_Auto
+ 14.86%   11.275      1 Template:Navbox_Troubleshooting
+ 12.52%    9.499      1 Template:Navbox
+  5.10%    3.865      2 Template:Article_other
+  2.55%    1.934      4 Template:Crash_header
 -->
 </div></div>
 </main>

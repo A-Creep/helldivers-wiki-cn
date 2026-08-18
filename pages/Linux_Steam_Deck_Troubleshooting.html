@@ -94,22 +94,22 @@
 </div>
 
 <h2><span class="mw-headline" id="Basics">Basics</span></h2>
-<p><b>Please note:</b> Due to the decentralized nature of Linux, specific 终端 commands, 包 managers, and file paths may vary depending on your configuration (分布, FlatPak vs. Native Steam, individual 变更, etc.). It's always best to consult your 分布's 官员 manual if a generic 指挥 fails to 处决.
+<p><b>请注意：</b> Due to the decentralized nature of Linux, specific 终端 commands, 包 managers, and file paths may vary depending on your configuration (分布, FlatPak vs. Native Steam, individual 变更, etc.). It's always best to consult your 分布's 官员 manual if a generic 指挥 fails to 处决.
 </p><p>Due to 绝地潜兵 2 not having a native Linux build, the operating system instead relies on a compatibility layer. For Linux, this strictly involves two elements that are mandatory:
 </p>
 <ol><li><b>Proton:</b> A specialized compatibility layer developed by Valve (built upon WINE) that 充当 a real-time translator.</li>
-<li><b>Steam Runtimes:</b> A 合集 of standardized, isolated 容器 environments (a "faux Windows 环境").</li></ol>
+<li><b>Steam运行时：</b> A 合集 of standardized, isolated 容器 environments (a "faux Windows 环境").</li></ol>
 <h3><span class="mw-headline" id="Proton">Proton</span></h3>
 <p>The first and most 重要 element you most likely interact with is called "Proton", which is the compatibility tool (or 翻译 layer) that has been created by Valve to help games that are native to Windows but not Linux to run in a Linux 环境.<sup id="cite&#95;ref-1" class="reference"><a href="#cite_note-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup> It translates Windows API calls so that Linux understands what the game wants and can therefore interact with it.
-</p><p>It's 重要 to note that Proton is not <i>just</i> Proton and that Proton <b>is not</b> WINE (it's based on it). It has 多个 versions provided by Valve and there are also community-driven Proton versions that come with a few extra tweaks and additions for additional functionality or fixes for specific video games.
-</p><p><b>Please note:</b> Video Games that are native on Windows <b>总是</b> 要求 a 翻译 layer because Linux does not know how to handle Windows API calls without such. Therefore on Steam you will ALWAYS need a Proton version to run a game that is not programmed natively for Linux.
+</p><p>It's 重要 to note that Proton is not <i>just</i> Proton and that Proton <b>不是</b> WINE (it's based on it). It has 多个 versions provided by Valve and there are also community-driven Proton versions that come with a few extra tweaks and additions for additional functionality or fixes for specific video games.
+</p><p><b>请注意：</b> Video Games that are native on Windows <b>总是</b> 要求 a 翻译 layer because Linux does not know how to handle Windows API calls without such. Therefore on Steam you will ALWAYS need a Proton version to run a game that is not programmed natively for Linux.
 </p>
-<ul><li><b>Proton Stable (e.g. 11.0)</b>: Those are tested, reliable versions which are the 默认 for most games. It can occur that they might not work, especially with newer 软件 or patches that change things on a more fundamental level.</li>
+<ul><li><b>Proton稳定版（例如11.0）</b>: Those are tested, reliable versions which are the 默认 for most games. It can occur that they might not work, especially with newer 软件 or patches that change things on a more fundamental level.</li>
 <li><b>Proton Hotfix</b>: These are 特殊, short-lived versions that have been designed to 修复 specific new game launches.</li>
 <li><b>Proton Experimental</b>: These are untested versions that contain cutting-edge fixes and tweaks before they hit stable versions. They can be unstable and should only be used if nothing else is working.</li>
 <li><b>Proton Experimental (流血 Edge)</b>: You can activate 流血 Edge by setting Proton Experimental into the 流血 Edge Beta. This Proton version contains the absolute newest, untested code.</li>
 <li><b>Proton-GE / Proton-CachyOS</b>: These Proton versions are community-made and contain extra patches for video playback, enable HDR in some games or contain other specific game fixes that cannot be found in Valve's versions.</li></ul>
-<p><b>Please note</b>: Proton 11 (and so practically any version based on it like Proton-CachyOS) seems to have some detection issues and may report a wrong GPU; e.g. users with an AMD RX 570 or RX 580 might end up seeing that the game reports the existence of an RX 480 instead. This however, should not affect functionality or performance as those generations are nearly identical.
+<p><b>请注意</b>: Proton 11 (and so practically any version based on it like Proton-CachyOS) seems to have some detection issues and may report a wrong GPU; e.g. users with an AMD RX 570 or RX 580 might end up seeing that the game reports the existence of an RX 480 instead. This however, should not affect functionality or performance as those generations are nearly identical.
 <br />
 </p>
 <div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ 重要, recent 变更 make it unable to use older Proton Versions! ⚠</b></div>
@@ -127,15 +127,15 @@
 <p>You do not need a specific Linux 分布 to use specific Proton versions; Proton-CachyOS does not 要求 you to use CachyOS as your distro. 软件, such as Proton Plus, allows you to quickly 安装 and manage different Proton versions, which also include community versions.
 </p>
 <h4><span class="mw-headline" id="Community_Proton_Installation">Community Proton Installation</span></h4>
-<p><b>全自动 Installation:</b>
+<p><b>自动安装：</b>
 The quickest and easiest way to 安装 new community Proton versions (such as GE-Proton) is done via 软件 such as ProtonPlus or ProtonUp-Qt.
-</p><p><b>Manual Installation:</b>
+</p><p><b>手动安装：</b>
 Please get new Proton versions directly via their respective Githubs! There are unfortunately pages out in the open that claim to be legitimate but they are not. For 安全 reasons it is recommended that you verify your downloaded files before unpacking / installing / running the game.
 </p>
 <ol><li>下载 the Proton tarball (archive) from their respective Github repository.</li>
 <li>Also 下载 the respective SHA file (it should be named along the lines of <code>GE-Proton11-1.sha512sum</code>. Names of course will vary depending on what Proton version you 下载).</li>
 <li>Once you have downloaded both files, open your 终端 (<code>CTRL + ALT + T</code>).</li>
-<li>Run <code>sha512sum -c GE-Proton11-1.sha512sum</code> (Again, this might vary).
+<li>运行 <code>sha512sum -c GE-Proton11-1.sha512sum</code> (Again, this might vary).
 <ul><li>If SHA是正确, it should return <code>OK</code>.</li>
 <li>If not please check if you have downloaded from the 正确 repository before launching anything.</li></ul></li>
 <li>After verifying the files, please close Steam via the tray icon.</li>
@@ -157,7 +157,7 @@ Please get new Proton versions directly via their respective Githubs! There are 
 </p>
 <h3><span class="mw-headline" id="Steam_Runtime">Steam Runtime</span></h3>
 <p>The other big part about installing games on Linux focuses on a so-called "Steam Runtime" which Steam 通常 looks for itself if it is needed for video games. These runtimes will create a faux Windows partition / drive to 安装 the 必需 files, such as .NET, Virtual C++ Redistributables, etc. there so it can simulate a Windows 环境 for a game that has 否 native Linux 支援. Within this 容器 the game acts normally as it would on a Windows 电脑, while Proton 使用次数 it to 接收 all the API calls and translates them so Linux can then utilize it.
-</p><p><b>重要:</b> Depending on which Proton version you are using, you will necessarily need a different Runtime as each Runtime is built specifically for different Proton versions. Proton 9 will most likely use Steam Runtime 3.0 but Proton 11.0 could potentially crash with Runtime 3.0 because that Runtime doesn't have the libraries Proton 11.0 requires; instead you need a newer version. Luckily Steam will 安装 whatever Steam Runtime you need for your Proton version of choice, so there's 否 worries about not having the 正确 one. If you want to check for yourself, please ensure that <b>Steam Runtime 4.0 is installed</b>. This can help 修复 problems such as blackscreens / 崩溃 on startup. If you haven't installed it, please do so. If it is installed and you run into problems, it is good to at least once verify its files to ensure it's not corrupted.
+</p><p><b>重要：</b> Depending on which Proton version you are using, you will necessarily need a different Runtime as each Runtime is built specifically for different Proton versions. Proton 9 will most likely use Steam Runtime 3.0 but Proton 11.0 could potentially crash with Runtime 3.0 because that Runtime doesn't have the libraries Proton 11.0 requires; instead you need a newer version. Luckily Steam will 安装 whatever Steam Runtime you need for your Proton version of choice, so there's 否 worries about not having the 正确 one. If you want to check for yourself, please ensure that <b>已安装Steam Runtime 4.0</b>. This can help 修复 problems such as blackscreens / 崩溃 on startup. If you haven't installed it, please do so. If it is installed and you run into problems, it is good to at least once verify its files to ensure it's not corrupted.
 </p><p>There are also additional runtimes for Anticheat 软件 that Steam automatically downloads and installs if possible, such as BattleEye or 容易 Anticheat. However it is 重要 to note that if a game does not need them then there is 否 受益 in installing them. They simply help run the Anticheat 软件 better.
 </p>
 <h3><span class="mw-headline" id="File_System">File System</span></h3>
@@ -236,21 +236,21 @@ Please get new Proton versions directly via their respective Githubs! There are 
 <li>Proton-DW</li></ul>
 <p>There are various workarounds that may help if you encounter 崩溃 even after using the 正确 Proton version:
 </p>
-<div class="tabber tabber--init"><header class="tabber__header"><button class="tabber__header__prev" tabindex="-1" type="button" aria-hidden="true"></button><nav class="tabber__tabs" role="tablist"><a class="tabber__tab" role="tab" id="GPU_drivers-0-label" href="#GPU_drivers-0" aria-controls="GPU_drivers-0">GPU drivers</a><a class="tabber__tab" role="tab" id="Clear_Compatdata-0-label" href="#Clear_Compatdata-0" aria-controls="Clear_Compatdata-0">Clear Compatdata</a><a class="tabber__tab" role="tab" id="Hiding_NVIDIA_GPUs-0-label" href="#Hiding_NVIDIA_GPUs-0" aria-controls="Hiding_NVIDIA_GPUs-0">Hiding NVIDIA GPUs</a></nav><button class="tabber__header__next" tabindex="-1" type="button" aria-hidden="true"></button></header><section class="tabber__section"><article class="tabber__panel" role="tabpanel" tabindex="0" id="GPU_drivers-0" aria-labelledby="GPU_drivers-0-label"><p>Please check your GPU driver. A lot of users who 经验值 this often use outdated GPU drivers. A good indicator for this is that you have been able to play previously, albeit with an older Proton version such as Proton 9.x and experienced 崩溃 with newer Proton versions.
-</p><ol><li>按下 <code>CTRL + ALT + T</code> to open your 终端.</li>
-<li>进入 <code>vulkaninfo --summary</code> to 显示 your system 信息.</li>
+<div class="tabber tabber--init"><header class="tabber__header"><button class="tabber__header__prev" tabindex="-1" type="button" aria-hidden="true"></button><nav class="tabber__tabs" role="tablist"><a class="tabber__tab" role="tab" id="GPU_drivers-0-label" href="#GPU_drivers-0" aria-controls="GPU_drivers-0">GPU drivers</a><a class="tabber__tab" role="tab" id="清除Compatdata-0-label" href="#清除Compatdata-0" aria-controls="清除Compatdata-0">清除Compatdata</a><a class="tabber__tab" role="tab" id="隐藏NVIDIA_GPU-0-label" href="#隐藏NVIDIA_GPU-0" aria-controls="隐藏NVIDIA_GPU-0">隐藏NVIDIA GPU</a></nav><button class="tabber__header__next" tabindex="-1" type="button" aria-hidden="true"></button></header><section class="tabber__section"><article class="tabber__panel" role="tabpanel" tabindex="0" id="GPU_drivers-0" aria-labelledby="GPU_drivers-0-label"><p>请检查你的GPU驱动程序。许多遇到此问题的用户使用的都是过时的GPU驱动。一个很好的判断依据是，你之前能够正常游玩，尽管使用的是较旧的Proton版本（例如Proton 9.x），而在使用较新的Proton版本时则遇到了崩溃。
+</p><ol><li>按下 <code>CTRL + ALT + T</code> 打开终端。</li>
+<li>进入 <code>vulkaninfo --summary</code> 以显示您的系统信息。</li>
 <li>Check for: Vulkan Version, GPU information, Driver Version.</li></ol>
 <div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ Both your GPU and your Driver need to 支援 Vulkan 1.3. ⚠</b></div>
-<p>最小 recommended drivers:
+<p>最低推荐驱动程序：
 </p>
 <ul><li>AMD (RADV) &gt; 26.0+</li>
 <li>NVIDIA (Proprietary) &gt; 580.159.03+</li>
 <li>NVIDIA (NVK) &gt; 26.0+</li>
 <li>Intel (ANV) &gt; 26.0+</li></ul>
-<p>In case that you encounter errors or outdated versions, please 更新 your system. These installation steps vary for every distro, so it's 重要 to check 官员 文档.
+<p>如果你遇到错误或版本过旧，请更新你的系统。这些安装步骤因发行版而异，因此查阅官方文档非常重要。
 </p>
-<b>Attention:</b> Some Distributions, such as Nobara Linux, 否 longer provide GPU driver 支援 for NVIDIA's Pascal GPUs (GTX 1080), so you might need to switch Distributions and use older GPU drivers for such GPUs.<p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Clear_Compatdata-0" aria-labelledby="Clear_Compatdata-0-label"><p>If the issue persists after updating your GPU drivers, please navigate to <code>/steamapps/compatdata/553850/</code> and delete the 目录 of this folder. Steam 使用次数 this folder to place configuration files as well as data to simulate a Windows 环境 on Linux. The 目录 will be refilled by Steam.</p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Hiding_NVIDIA_GPUs-0" aria-labelledby="Hiding_NVIDIA_GPUs-0-label"><p>Another possibility that can occur is that the game has 麻烦 running with a NVIDIA GPU. While rare in occurrence, you can attempt to "hide" is by adding the launch 指挥 <code>PROTON_HIDE_NVIDIA_GPU=1 %指挥%</code> to the game. This will force the NVIDIA GPU to 识别 itself as an AMD GPU. Please be aware that this masks your GPU ID and prevents the game from using NVIDIA-specific APIs (NVAPI). This means that NVIDIA-specific features such as DLSS can't be used when this workaround is utilized. Performance might also 增加 or 减少, depending on the game.
-If you encounter problems even with this 指挥, test if <code>PROTON_HIDE_NVIDIA_GPU=0 PROTON_ENABLE_NVAPI=1 %指挥%</code> can 解决 these issues.</p></article></section></div>
+<b>注意：</b> 某些发行版（例如Nobara Linux）不再为NVIDIA的Pascal GPU（GTX 1080）提供驱动程序支持，因此你可能需要更换发行版，并为这类GPU使用较旧的驱动程序。<p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="清除Compatdata-0" aria-labelledby="清除Compatdata-0-label"><p>如果在更新GPU驱动后问题仍然存在，请导航至 <code>/steamapps/compatdata/553850/</code> 并删除此文件夹的内容。Steam使用此文件夹来存放配置文件以及用于在Linux上模拟Windows环境的数据。Steam会重新填充这些内容。</p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="隐藏NVIDIA_GPU-0" aria-labelledby="隐藏NVIDIA_GPU-0-label"><p>另一种可能出现的情况是游戏在NVIDIA GPU上运行困难。虽然这种情况很少见，但你可以尝试通过添加启动命令来"隐藏"它 <code>PROTON_HIDE_NVIDIA_GPU=1 %指挥%</code> 到游戏中。这将强制NVIDIA GPU将自己识别为AMD GPU。请注意，这会掩盖你的GPU ID，并阻止游戏使用NVIDIA专用API（NVAPI）。这意味着当使用此变通方法时，无法使用DLSS等NVIDIA专用功能。性能也可能提升或下降，具体取决于游戏。
+如果即使使用此命令也遇到问题，请测试是否 <code>PROTON_HIDE_NVIDIA_GPU=0 PROTON_ENABLE_NVAPI=1 %指挥%</code> 可以解决这些问题。</p></article></section></div>
 <h2><span id="Graphics_.26_Performance"></span><span class="mw-headline" id="Graphics_&amp;_Performance">Graphics &amp; Performance</span></h2>
 <h3><span class="mw-headline" id="Black_Screen">Black Screen</span></h3>
 <p>If you screen stays black and the game doesn't load, you can check different things:
@@ -277,12 +277,12 @@ If you encounter problems even with this 指挥, test if <code>PROTON_HIDE_NVIDI
 <h3><span class="mw-headline" id="HDR_is_not_working">HDR is not working</span></h3>
 <p>If you cannot activate HDR despite having HDR capable hardware, you might need to add a launch 指挥 to activate it. 通常 it's recommended to use GE-Proton for 最佳 use.
 </p>
-<div class="tabber tabber--init"><header class="tabber__header"><button class="tabber__header__prev" tabindex="-1" type="button" aria-hidden="true"></button><nav class="tabber__tabs" role="tablist"><a class="tabber__tab" role="tab" id="Proton-0-label" href="#Proton-0" aria-controls="Proton-0">Proton</a><a class="tabber__tab" role="tab" id="Gamescope-0-label" href="#Gamescope-0" aria-controls="Gamescope-0">Gamescope</a></nav><button class="tabber__header__next" tabindex="-1" type="button" aria-hidden="true"></button></header><section class="tabber__section"><article class="tabber__panel" role="tabpanel" tabindex="0" id="Proton-0" aria-labelledby="Proton-0-label"><p><code>PROTON_ENABLE_WAYLAND=1 PROTON_ENABLE_HDR=1 %指挥%</code> - Please note that the enabling of Wayland requires a Wayland compatible compositor such as KDE 6 or GNOME. Furthermore it can cause input emulation to break. If you encounter issues, it's worth trying Gamescope instead, as long as your 分布 supports it.
-</p><p>Some users suggest using <code>DXVK_HDR=1</code> instead. While also a possibility, the difference is that the DXVK 指挥 is lower level and instructs the Vulkan to DirectX layer directly instead of going via Proton. Setting the Proton 指挥 to enable HDR will also set DXVK_HDR to "1", therefore eliminating the need for the DXVK 指挥. However there are cases when HDR is only enabled by setting both the Proton and DXVK 指挥.<sup id="cite&#95;ref-4" class="reference"><a href="#cite_note-4"><span class="cite-bracket">&#91;</span>4<span class="cite-bracket">&#93;</span></a></sup>
+<div class="tabber tabber--init"><header class="tabber__header"><button class="tabber__header__prev" tabindex="-1" type="button" aria-hidden="true"></button><nav class="tabber__tabs" role="tablist"><a class="tabber__tab" role="tab" id="Proton-0-label" href="#Proton-0" aria-controls="Proton-0">Proton</a><a class="tabber__tab" role="tab" id="Gamescope-0-label" href="#Gamescope-0" aria-controls="Gamescope-0">Gamescope</a></nav><button class="tabber__header__next" tabindex="-1" type="button" aria-hidden="true"></button></header><section class="tabber__section"><article class="tabber__panel" role="tabpanel" tabindex="0" id="Proton-0" aria-labelledby="Proton-0-label"><p><code>PROTON_ENABLE_WAYLAND=1 PROTON_ENABLE_HDR=1 %指挥%</code> - 请注意，启用Wayland需要兼容Wayland的合成器，例如KDE 6或GNOME。此外，这可能导致输入模拟失效。如果你遇到问题，只要你的发行版支持，值得尝试改用Gamescope。
+</p><p>一些用户建议使用 <code>DXVK_HDR=1</code> 取而代之。虽然也是一种可能，但区别在于DXVK命令层级更低，可直接指示Vulkan至DirectX层，而无需经由Proton。设置Proton命令启用HDR也会将DXVK_HDR设为"1"，因此无需DXVK命令。但某些情况下，只有同时设置Proton和DXVK命令才能启用HDR。<sup id="cite&#95;ref-4" class="reference"><a href="#cite_note-4"><span class="cite-bracket">&#91;</span>4<span class="cite-bracket">&#93;</span></a></sup>
 </p>
-<code>PROTON_ENABLE_WAYLAND=1 PROTON_ENABLE_HDR=1 DXVK_HDR=1 %指挥%</code> can be tested in such scenarios.<p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Gamescope-0" aria-labelledby="Gamescope-0-label"><p><code>gamescope -w 1920 -h 1080 r 120 --hdr-enabled -- %指挥%</code> - You can replace the values in w, h and r to different resolutions or 刷新 rates. For more information please 请参阅 主体 条款 about steam launch commands.
+<code>PROTON_ENABLE_WAYLAND=1 PROTON_ENABLE_HDR=1 DXVK_HDR=1 %指挥%</code> 可在此类场景中进行测试。<p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Gamescope-0" aria-labelledby="Gamescope-0-label"><p><code>gamescope -w 1920 -h 1080 r 120 --hdr-enabled -- %指挥%</code> - 你可以将w、h和r的值替换为不同的分辨率或刷新率。有关更多信息，请参阅关于Steam启动命令的主文章。
 </p><div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ If you do not set a 分辨率, Gamescope will 默认 to 1280 x 720. In the 示例 above the 分辨率 has been set to 1920 x 1080. ⚠</b></div>
-Please note that Gamescope might disable your Steam Overlay.<p class="mw-empty-elt"></p></article></section></div>
+请注意，Gamescope可能会禁用你的Steam覆盖层。<p class="mw-empty-elt"></p></article></section></div>
 <h3><span class="mw-headline" id="White_border_around_the_screen">White border around the screen</span></h3>
 <p>If you encounter a 1 pixel wide border around your screen, you can try and launch the game with Gamescope instead. Please note that there are some particularities and it may cause some issues. For more information, please check <a href="Steam_Launch_Commands.html#Gamescope" title="Steam Launch Commands">this 条款</a>.
 </p><p>Change the launch commands of 绝地潜兵 2 to <code>gamescope -w 1920 -h 1080 -f --force-grab-cursor -- %指挥%</code>
@@ -292,8 +292,8 @@ Please note that Gamescope might disable your Steam Overlay.<p class="mw-empty-e
 </p>
 <h3><span class="mw-headline" id="Steam_and_Helldivers_Crash_simultaneously">Steam and 绝地潜兵 Crash simultaneously</span></h3>
 <p>If you are playing 绝地潜兵 2 and you 经验值 both Steam and the game crashing at the same time, then it's likely that you are running the Steam client beta. It's a 已知问题 with the Steam Client Beta and unrelated to 绝地潜兵 2.
-</p><p><b>Please Note:</b> Steam will attempt to 更新 on every launch, which is why the issue may appear suddenly.
-</p><p><b>How to check:</b>
+</p><p><b>请注意：</b> Steam will attempt to 更新 on every launch, which is why the issue may appear suddenly.
+</p><p><b>如何检查：</b>
 </p>
 <ul><li>打开 <code>~/.local/share/Steam/logs</code> and check if "publicbeta" can be found there.</li></ul>
 <p>In order to 解决 the 问题, you will need to switch to the non-beta client. You can do that by following these steps:
@@ -303,7 +303,7 @@ Please note that Gamescope might disable your Steam Overlay.<p class="mw-empty-e
 <h3><span class="mw-headline" id="Steam_Overlay">Steam Overlay</span></h3>
 <p>If you wish to 排除故障 your Steam Overlay, please check <a href="Steam_Troubleshooting.html#Steamoverlay_isn&#39;t_working" title="Steam Troubleshooting">Steam 故障排除</a>.
 </p><p>Please note: An older bug<sup id="cite&#95;ref-5" class="reference"><a href="#cite_note-5"><span class="cite-bracket">&#91;</span>5<span class="cite-bracket">&#93;</span></a></sup><sup id="cite&#95;ref-6" class="reference"><a href="#cite_note-6"><span class="cite-bracket">&#91;</span>6<span class="cite-bracket">&#93;</span></a></sup> that occurs on Linux caused games to lag / stutter badly after some time with the disabled Overlay.
-</p><p>To 修复 this it's advisable to either activate the Overlay or run the game with the Launch 指挥 <code>LD_PRELOAD=""</code> . This 指挥 will disable some of steam's functionality.
+</p><p>To 修复 this it's advisable to either activate the Overlay or run the game with the Launch 指挥 <code>LD_PRELOAD=</code> . This 指挥 will disable some of steam's functionality.
 </p>
 <h3><span class="mw-headline" id="Shader_Pre-Caching_is_stuck">Shader Pre-Caching is stuck</span></h3>
 <p>If you 经验值 your Shader Pre-Caching getting stuck during a 下载, simply 重新开始 Steam.
@@ -312,7 +312,7 @@ Please note that Gamescope might disable your Steam Overlay.<p class="mw-empty-e
 <p>In order to force Proton to use the 正确 GPU, please follow <a href="User_Settings_Config_FPS_Optimization.html#Linux-0" title="User Settings Config FPS Optimization">this guide</a>.
 </p>
 <h3><span class="mw-headline" id="GPU_Autodetection_Failed">GPU Autodetection Failed</span></h3>
-<p>This error 通常 occurs with a message such as <code>Requires a graphics card that supports at least 正面3D 特性 Level 12_0.</code>
+<p>This error 通常 occurs with a message such as <code>需要至少支持正面3D功能级别12_0的显卡。</code>
 </p>
 <ol><li>Check if your system recognizes your GPU correctly.</li>
 <li>Check if you have the latest GPU driver / Vulkan / Mesa / Kernel installed.</li></ol>
@@ -351,19 +351,19 @@ It's advisable to match the 特性 level in the Launch 指挥 with the actual �
 <table class="wikitable">
 
 <tbody><tr>
-<th>Components</th>
+<th>组件</th>
 <th>Steam Deck LCD</th>
 <th>Steam Deck OLED
 </th></tr>
 <tr>
 <td>APU</td>
-<td>7nm AMD Zen 2 4c/8t, 2.4-3.5GHz</td>
-<td>6nm AMD Zen 2 4c/8t, 2.4-3.5GHz
+<td>7nm AMD Zen 2 4核/8线程, 2.4-3.5GHz</td>
+<td>6nm AMD Zen 2 4核/8线程, 2.4-3.5GHz
 </td></tr>
 <tr>
 <td>GPU</td>
-<td>8 RDNA 2 CUs, 1.6GHz</td>
-<td>8 RDNA 2 CUs, 1.6GHz
+<td>8 RDNA 2 CU, 1.6GHz</td>
+<td>8 RDNA 2 CU, 1.6GHz
 </td></tr>
 <tr>
 <td>RAM</td>
@@ -377,13 +377,13 @@ It's advisable to match the 特性 level in the Launch 指挥 with the actual �
 </td></tr>
 <tr>
 <td>显示</td>
-<td>1280 x 800 x RGB IPS LCD 7" Screen</td>
-<td>1280 x 800 x RGB HDR OLED 7.4" Screen
+<td>1280 x 800 x RGB IPS LCD 7英寸屏幕</td>
+<td>1280 x 800 x RGB HDR OLED 7.4英寸屏幕
 </td></tr>
 <tr>
-<td>Bluetooth</td>
+<td>蓝牙</td>
 <td>5.0</td>
-<td>5.3 with dedicated bluetooth 天线
+<td>5.3，配备专用蓝牙天线
 </td></tr>
 <tr>
 <td>WiFi</td>
@@ -392,17 +392,17 @@ It's advisable to match the 特性 level in the Launch 指挥 with the actual �
 </td></tr>
 <tr>
 <td>声音</td>
-<td colspan="2">Stereo with embedded DSP for an immersive listening 经验值
+<td colspan="2">嵌入式DSP立体声，带来沉浸式聆听体验
 </td></tr>
 <tr>
 <td>电池</td>
-<td>40Whr 电池. 2 - 8 hours of 玩法</td>
-<td>50Whr 电池. 3 - 12 hours of 玩法
+<td>40Whr电池。2 - 8小时游戏时间</td>
+<td>50Whr电池。3 - 12小时游戏时间
 </td></tr>
 <tr>
-<td>Operating System</td>
-<td>SteamOS3 (Arch-Based)</td>
-<td>SteamOS3 (Arch-Based)
+<td>操作系统</td>
+<td>SteamOS3（基于Arch）</td>
+<td>SteamOS3（基于Arch）
 </td></tr></tbody></table>
 <ul><li>It is highly advised to keep your Steam Deck up-to-date to prevent errors and glitches and to 改进 基本信息 稳定性 of the Deck.</li>
 <li>通常 it is recommended to use the "Steam Deck" graphics preset in the ingame-menu. If you wish to know more about the 基本信息 FPS settings, check out <a href="User_Settings_Config_FPS_Optimization.html" title="User Settings Config FPS Optimization">this FPS 优化 guide</a>.</li>
@@ -417,7 +417,7 @@ It's advisable to match the 特性 level in the Launch 指挥 with the actual �
 <p>If you are playing on a Steam Deck and utilize Proton Hotfix or Proton Experimental, you will most likely encounter glitched textures (looking muddy / shiny). This is caused by the Steam Deck's GPU driver that's outdated (RADV Driver 24.2) and interacting with 绝地潜兵 2 utilization of a newer VKD3D Proton version (3.0.1), which seems to use features that are currently not available in the old driver.<sup id="cite&#95;ref-10" class="reference"><a href="#cite_note-10"><span class="cite-bracket">&#91;</span>10<span class="cite-bracket">&#93;</span></a></sup>
 </p><p>As a temporary workaround you can start the game with the DirectX 11 launch 指挥. Be aware that DX11 is not officially supported and comes with it's own share of problems, such as HDR and Upscaling not working and the new 控制 Panel experiencing 庞大 图形 issues.
 </p>
-<ol><li>Open your <b>Steam 图书馆</b>.</li>
+<ol><li>Open your <b>Steam库</b>.</li>
 <li>Right-Click on "绝地潜兵 2".</li>
 <li>Select "Properties..." from the 掉落-down menu.</li>
 <li>You are presented with the "基本信息" tab. On the lower part of this window there's a "Launch Options" field.</li>
@@ -477,35 +477,35 @@ It's advisable to match the 特性 level in the Launch 指挥 with the actual �
 </div></div></div></div></div></div></div>
 <!-- 
 NewPP limit report
-Cached time: 20260817125531
+Cached time: 20260818035741
 Cache expiry: 2592000
 Reduced expiry: false
 Complications: [vary‐revision‐sha1, show‐toc]
-CPU time usage: 0.108 seconds
-Real time usage: 0.172 seconds
+CPU time usage: 0.091 seconds
+Real time usage: 0.129 seconds
 Preprocessor visited node count: 421/1000000
-Revision size: 34185/4194304 bytes
+Revision size: 33822/4194304 bytes
 Post‐expand include size: 9039/4194304 bytes
 Template argument size: 665/4194304 bytes
 Highest expansion depth: 8/100
 Expensive parser function count: 2/500
 Unstrip recursion depth: 1/20
-Unstrip post‐expand size: 10280/10000000 bytes
+Unstrip post‐expand size: 9947/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.015/15.000 seconds
-Lua memory usage: 664872/52428800 bytes
+Lua time usage: 0.011/15.000 seconds
+Lua memory usage: 665737/52428800 bytes
 Number of processed Cargo queries: 2
-Time spent processing Cargo queries: 0.012 s (avg. 0.006 s)
+Time spent processing Cargo queries: 0.011 s (avg. 0.005 s)
 Number of Cargo row insertion attempts: 1
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%  108.413      1 -total
- 66.10%   71.661      1 Template:Breadcrumb_Auto
- 15.40%   16.692      1 Template:Navbox_Troubleshooting
- 12.48%   13.525      1 Template:Navbox
- 11.16%   12.102      2 Template:Article_other
-  2.85%    3.091      6 Template:Crash_header
+100.00%   75.426      1 -total
+ 56.13%   42.335      1 Template:Breadcrumb_Auto
+ 20.52%   15.480      1 Template:Navbox_Troubleshooting
+ 17.82%   13.443      1 Template:Navbox
+  5.07%    3.826      2 Template:Article_other
+  2.60%    1.964      6 Template:Crash_header
 -->
 </div></div>
 </main>

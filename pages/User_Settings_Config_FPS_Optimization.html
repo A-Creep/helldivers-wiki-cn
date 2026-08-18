@@ -186,7 +186,7 @@
 <p><b>High Dynamic 射程 (HDR)</b> is a 特性 that expands the game's color palette and contrast ratio. By increasing the 射程 between the darkest black and brightest white this results in finer contrast and an overall more 写实 color presentation across the board.
 </p><p>As it is an entirely 显示-driven technology, it does not 要求 additional raw rendering power from the 电脑's hardware. CPUs and GPUs do not need to compute extra geometry, physics or higher-分辨率 frames, which means the performance will not be affected by activating it. However, it slightly 增加 the memory footprint in your VRAM as altering the color bit-depth mappings requires a few more Megabytes.
 </p><p>According to player feedback the in-game HDR can 偶尔 lead to sub-最佳 results, such as washed-out colors or improper tone mapping on certain displays. In such cases it is recommended to enable HDR directly within your operating system before launching the game instead of relying on the native in-game settings.
-</p><p><b>Attention:</b> Please be aware that HDR cannot be activated when the game is running in DirectX 11 mode. Furthermore you have to use a HDR compatible 显示 as regular SDR displays cannot 显示 HDR output.
+</p><p><b>注意：</b> Please be aware that HDR cannot be activated when the game is running in DirectX 11 mode. Furthermore you have to use a HDR compatible 显示 as regular SDR displays cannot 显示 HDR output.
 </p>
 <div class="tabber tabber--init"><header class="tabber__header"><button class="tabber__header__prev" tabindex="-1" type="button" aria-hidden="true"></button><nav class="tabber__tabs" role="tablist"><a class="tabber__tab" role="tab" id="Windows_10_/_11-0-label" href="#Windows_10_/_11-0" aria-controls="Windows_10_/_11-0">Windows 10 / 11</a><a class="tabber__tab" role="tab" id="Linux_/_Steam_Deck-0-label" href="#Linux_/_Steam_Deck-0" aria-controls="Linux_/_Steam_Deck-0">Linux / Steam Deck</a></nav><button class="tabber__header__next" tabindex="-1" type="button" aria-hidden="true"></button></header><section class="tabber__section"><article class="tabber__panel" role="tabpanel" tabindex="0" id="Windows_10_/_11-0" aria-labelledby="Windows_10_/_11-0-label"><p>Ensure that HDR is turned on in your Windows 显示 Settings (or use the shortcut <i>Win + Alt + B</i>). It is highly recommended to run Microsoft's 官员 <i>Windows HDR Calibration App</i> beforehand to set your 监控's true 最大 brightness levels.</p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Linux_/_Steam_Deck-0" aria-labelledby="Linux_/_Steam_Deck-0-label"><p>Linux users might need to do a few things to activate HDR on top of needing an HDR capable 显示. You can activate HDR under Linux either via <i>Gamescope</i> or via <i>Proton</i>. Both have to be activated via certain <a href="Steam_Launch_Commands.html" title="Steam Launch Commands">Steam Launch Commands</a>.
 </p><p><b>Proton:</b> If you wish to use HDR via Proton, please be aware that you need to use certain community Protons (such as GE-Proton or CachyOS-Proton) as these are optimized for the 使用 of HDR. However it is 重要 to note that they 要求 to enable Wayland, which requires a Wayland compatible compositor (such as KDE 6 or GNOME) and can break game input emulation as well as the Steam Overlay. If you encounter problems, you might want to use Gamescope instead.
@@ -246,7 +246,7 @@
 <td colspan="2" style="padding:6px; text-align:center;"><span style="font-weight:bold; color: gold;">[NATIVE]</span><br />It's best set to the native 分辨率 of the 显示; 控制 the internal 分辨率 via "Render Scale".
 </td></tr></tbody></table>
 <p><b>解决方案</b> sets the output resolutions of the final image rendered onto your 显示. Theoretically it is the single most impactful setting for baseline graphics performance and overall image clarity.
-</p><p><b>Please be aware:</b>
+</p><p><b>请注意：</b>
 </p>
 <ul><li>If you change the "Render Scale" setting to anything but "native" you instead 控制 the internal 分辨率, which then has a bigger impact on performance and image quality.</li>
 <li>When running the game in "Windowed Mode", this setting directly dictates the 物理 size of the game window on your Desktop.</li></ul>
@@ -294,7 +294,7 @@
 <div style="clear:right"></div>
 <h4><span id=".E6.B8.B2.E6.9F.93.E6.AF.94.E4.BE.8B"></span><span class="mw-headline" id="渲染比例">渲染比例</span></h4>
 <p><b>渲染比例</b> 充当 the central 控制 mechanism to change the internal 分辨率 in which your game is rendered in, before it then gets stretched to fit your 显示 分辨率 (as seen in the 章节 above) via Temporal Anti-Aliasing (TAA) or an active hardware upscaler (as seen in the 章节 below).
-</p><p><b>Attention:</b> If "Dynamic 分辨率 Scaling" (DRS) is active, you will not be able to manually set the internal 分辨率 as DRS requires 控制 over render scale in order to 功能. Please deactivate DRS if you wish to manually set these parameters.
+</p><p><b>注意：</b> If "Dynamic 分辨率 Scaling" (DRS) is active, you will not be able to manually set the internal 分辨率 as DRS requires 控制 over render scale in order to 功能. Please deactivate DRS if you wish to manually set these parameters.
 </p><p>As explicitly documented in the 官员 in-game interface, decreasing this value may significantly 改进 system performance, while increasing it will heavily 改进 overall visual quality. Lowering this setting beyond "Native" will therefore 改进 your performance at the 费用 of image quality as you reduce the 物理 pixel 分辨率 that your graphics card has to compute every single frame. This will reduce core pixel-shading workload and shrink internal framebuffers. However it's 重要 to note that a GPU that has to work less for every frame will request simulation data from the CPU at a much faster rate. On setups with older CPUs this 激进 downscaling can push your CPU utilization directly into a CPU 瓶颈 in the worst of circumstances, which would then 费用 performance.
 </p><p>Please also note that Super Sampling is only available as long as you use either "Temporal Anti-Aliasing" (TAA) or have Anti-Aliasing set to "Off". Upscalers that run at a native 分辨率 will act as Anti-Aliasing as well.
 </p>
@@ -519,10 +519,10 @@ Please note that it is possible to override the Model that you are using. It's �
 </p><p>It's 重要 to note that these Upscalers <b>come completely without Frame 世代</b>.
 </p><p>Using Upscalers instead of native TAA will reduce the 使用 of VRAM because the game will render at a lower internal 分辨率; with a lower 分辨率 all temporary 图形 buffers (render targets, framebuffer, depth buffering) will be drastically 已降低 and free up space in VRAM. However it是重要 to note that this change in 分辨率 and subsequent 改进 in FPS can shift the overall load over to the CPU; while the GPU gets a reduce in load (and therefore be able to render more images) this shifts over to the CPU which now has to wait less on the GPU to render frames, overall increasing the CPU load. In a situation where the CPU is already struggling this can suddenly induce a CPU 瓶颈, which then can 生产 a worse performance than before.
 </p><p>Due to the latest hotfixes the image quality and performance of Upscalers has greatly 已改进 and they have become a more viable option now. However, there's still the real possibility that sticking with the game's TAA implementation holds up better. It's therefore strongly recommended to test whether upscaling or TAA is better suited for your individual configuration.
-</p><p><b>Please be aware:</b> There's a chance you might not see the new Upscaling options and can only choose between "TAA" and "Off". If that is the case, try these:
+</p><p><b>请注意：</b> There's a chance you might not see the new Upscaling options and can only choose between "TAA" and "Off". If that is the case, try these:
 </p>
 <ul><li>Make sure you are not using <code>--use-d3d11</code> as your launch arguments.</li>
-<li>Clear your <code>shader cache</code> folder in <code>%APPDATA%/Arrowhead/绝地潜兵2</code> .</li>
+<li>Clear your <code>着色器缓存</code> 文件夹于 <code>%APPDATA%/Arrowhead/绝地潜兵2</code> .</li>
 <li>Delete your <code>user_settings.config</code> in <code>%APPDATA%/Arrowhead/绝地潜兵2</code> .</li>
 <li>Properly remove your 当前 GPU driver using the 显示 Driver Uninstaller and then reinstall it clearly as outlined in <a href="GPU_Driver_Recommendation.html" title="GPU Driver Recommendation">GPU Driver Recommendation</a>.</li></ul>
 <p><b>警告:</b> Please do not change to DX11 mode with Upscaling options enabled for it might cause unforeseen issues!
@@ -552,7 +552,7 @@ Please note that it is possible to override the Model that you are using. It's �
 </p><p>FSR 4.1 was released for the RDNA 3 (RX 7000 series) in June 2026<sup id="cite&#95;ref-10" class="reference"><a href="#cite_note-10"><span class="cite-bracket">&#91;</span>10<span class="cite-bracket">&#93;</span></a></sup>. However this implementation currently causes crashing, which is why you should not use it it. If you have used it and are now crashing, it's recommended to delete your <a href="#Manual_configuration_of_user_settings.config">user_settings.config</a> in order to reset your settings back to 默认.
 </p>
 FSR 4 支援 is also slated for RDNA 2 (RX 6000 series) GPUs in early 2027.<p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Intel_XeSS-1" aria-labelledby="Intel_XeSS-1-label"><p>Intel's XeSS (Xe Super Sampling) is a hybrid approach to Upscaling that, just like FSR, can be used on most modern GPUs. However, it performs best when used with an Intel 弧度 GPU. Once activated, it will then check if an Intel 弧度 (A or B series) GPU is present, so it can utilize the XMX cores on those GPUs for best performance. If it detects any other GPU, it will then run using the DP4a 指示 set.</p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="NVIDIA_DLSS-1" aria-labelledby="NVIDIA_DLSS-1-label"><p>NVIDIA's DLSS (Deep Learning Super Sampling) is strictly 受限 to the 使用 of modern NVIDIA Hardware. It utilizes dedicated AI hardware cores (so-called "Tensor Cores") on the RTX series (RTX 20 and above) GPUs to reconstruct images.
-</p><p><b>Attention:</b>
+</p><p><b>注意：</b>
 </p>
 <ul><li>In such scenarios it's recommended to use FSR or XeSS instead.</li>
 <li>It is possible to override DLSS. NVIDIA recommends that users with RTX 20 and RTX 30 series GPUs should use <b>Model K</b> as they lack native FP8 支援, so Models M and L carry a heavier performance impact for these GPUs.<sup id="cite&#95;ref-Nvidia&#95;FP8&#95;7-1" class="reference"><a href="#cite_note-Nvidia_FP8-7"><span class="cite-bracket">&#91;</span>7<span class="cite-bracket">&#93;</span></a></sup></li></ul>
@@ -610,7 +610,7 @@ You can turn Anti-Aliasing completely off - this however is not recommended, as 
 </td></tr></tbody></table>
 <p><b>Dynamic 分辨率 Scaling (DRS)</b> is a technology that automatically lowers a game’s internal rendering 分辨率 during graphically intense scenes in order to 达成 stable frame rates and raises it back up after the action has calmed down. It's controlled by setting a 目标 framerate (such as 60 FPS).
 </p><p>Unlike fixed upscaling profiles, DRS 充当 an automated, real-time scaling tool that dynamically 变更 your system's rendering workload based on 当前 hardware stress. This is expressed by rendering at your full native 显示 分辨率 in calm moments, but will automatically reduce the internal 分辨率 based on the 当前 load; so in situations with a lot of 效果 and 敌人 the algorithm instantly lowers this 分辨率 to 维护 the 目标 FPS in order to relieve the Graphics Card. Lowering the render targets can also flatten 重型 frame pacing inconsistencies, which prevents the CPU from choking on delayed graphics queues.
-</p><p><b>Please Note:</b> Activating DRS automatically disables your 能力 to change Render Scale - this is by design because you are handing the 控制 of the render scale over to DRS. If you want to manually set Render Scale, you have to disable DRS by setting it to "0".
+</p><p><b>请注意：</b> Activating DRS automatically disables your 能力 to change Render Scale - this is by design because you are handing the 控制 of the render scale over to DRS. If you want to manually set Render Scale, you have to disable DRS by setting it to "0".
 </p><p>Testing has shown that DRS can 频繁 lead to very muddy pictures and a severe overall loss of image quality. Especially when the battlefield becomes chaotic, the engine will aggressively scale down the 分辨率 to 维护 your set 目标 FPS, leading to a blurry and pixelated image. Furthermore, setting the 目标 FPS above 60 can lead to catastrophic artefacts which are especially severe for people who are photosensitive.
 </p><p>Currently it's best to keep this setting <b>关</b> to avoid a loss of image quality and the severe artefacts. If you wish to enable it, it's recommended to <b>keep the 目标 FPS at 30 or 45</b> as this will cause less pixelation; maintaining higher FPS is only recommended if you have a powerful 电脑 that can keep up with this framerate. Lower end PCs will 受益 from setting lower thresholds, resulting in less pixelation.
 </p>
@@ -716,12 +716,12 @@ You can turn Anti-Aliasing completely off - this however is not recommended, as 
 <ul><li>Frametime Inconsistencies<sup id="cite&#95;ref-11" class="reference"><a href="#cite_note-11"><span class="cite-bracket">&#91;</span>11<span class="cite-bracket">&#93;</span></a></sup> -  On some system configurations, forcing the CPU to artificially wait can cause unstable frame timing and sudden micro-stuttering, which on other computers might not be present. This seems to be especially the 问题 when your system has a CPU 瓶颈.</li>
 <li>NVIDIA Reflex 神器<sup id="cite&#95;ref-12" class="reference"><a href="#cite_note-12"><span class="cite-bracket">&#91;</span>12<span class="cite-bracket">&#93;</span></a></sup> - A 已知问题 with Reflex can 有时 cause a static, random white square to pop up on the screen and stay there. It's 通常 a remnant of the integrated hardware latency analyzer (which was designed for Reflex-certified monitors) and fails to be cleared from the screen.</li>
 <li>AMD Anti-Lag Interface Quirks<sup id="cite&#95;ref-13" class="reference"><a href="#cite_note-13"><span class="cite-bracket">&#91;</span>13<span class="cite-bracket">&#93;</span></a></sup> - Activating AMD Anti-Lag 2 can 偶尔 trigger a bug where an uninvited, overlay-based FPS 反制 randomly appears on your screen.</li></ul>
-<p>If you encounter any problems it is highly recommended to <b>disable</b> the Low Latency Technologies.
+<p>If you encounter any problems it is highly recommended to <b>禁用</b> the Low Latency Technologies.
 </p><p>NVIDIA offers two settings for NVIDIA Reflex:
 </p>
 <ul><li>Reflex on - Synchronizes the CPU and GPU to 消除 the render queue that then 降低 input lag.</li>
 <li>Reflex on + Boost - This keeps the GPU clock speeds high in CPU-bound scenarios, which can push frames faster. This gives a slight extra reduction in latency. In CPU bound scenarios this can greatly 改进 responsiveness.</li></ul>
-<p><b>Please note:</b> These technologies 要求 the 使用 of certain GPU series. If you do not see any options for Low Latency Technologies it's 重要 to check first if your GPU is compatible! For more information, please check the Quick 信息 box on the right 侧面 of this 章节.
+<p><b>请注意：</b> These technologies 要求 the 使用 of certain GPU series. If you do not see any options for Low Latency Technologies it's 重要 to check first if your GPU is compatible! For more information, please check the Quick 信息 box on the right 侧面 of this 章节.
 </p>
 <div style="clear:right"></div>
 <h4><span id=".E6.98.BE.E7.A4.BA.E6.A8.A1.E5.BC.8F"></span><span class="mw-headline" id="显示模式">显示模式</span></h4>
@@ -1278,7 +1278,7 @@ For the vast majority of mid-射程 to high-end desktop computers it is best to 
 </p>
 <h4><span class="mw-headline" id="Set_the_correct_GPU">Set the 正确 GPU</span></h4>
 <div class="tabber tabber--init"><header class="tabber__header"><button class="tabber__header__prev" tabindex="-1" type="button" aria-hidden="true"></button><nav class="tabber__tabs" role="tablist"><a class="tabber__tab" role="tab" id="Windows-0-label" href="#Windows-0" aria-controls="Windows-0">Windows</a><a class="tabber__tab" role="tab" id="Linux-0-label" href="#Linux-0" aria-controls="Linux-0">Linux</a></nav><button class="tabber__header__next" tabindex="-1" type="button" aria-hidden="true"></button></header><section class="tabber__section"><article class="tabber__panel" role="tabpanel" tabindex="0" id="Windows-0" aria-labelledby="Windows-0-label"><p class="mw-empty-elt">
-</p><ul><li><a href="Hellbomb_Script.html" title="Hellbomb Script">Hellbomb Script</a>: Go to <code>Graphics Options Menu</code> and choose <code>Select 正确 GPU</code> .</li>
+</p><ul><li><a href="Hellbomb_Script.html" title="Hellbomb Script">Hellbomb Script</a>: Go to <code>Graphics Options Menu</code> and choose <code>选择正确的显卡</code> .</li>
 <li>You can also manually set it in the Windows Settings by going to <code>星系</code> -&gt; <code>显示</code> -&gt; <code>图像</code> and then set "绝地潜兵 2" to "High performance".</li></ul>
 <p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Linux-0" aria-labelledby="Linux-0-label"><p>If your system has both an integrated and dedicated GPU, please ensure that Proton is using the 正确 GPU.
 </p><ol><li>按下 <code>CTRL + ALT + T</code> (depends on your Distro) to open the <b>终端.</b></li>
@@ -1341,7 +1341,7 @@ For the vast majority of mid-射程 to high-end desktop computers it is best to 
 </p><p>If you encounter persistent performance drops, do not use DirectX 11 to mask the symptoms. It is highly recommended to perform proper 故障排除 to 解决 the underlying issues instead of bypassing the DX12 API.
 </p>
 <h4><span class="mw-headline" id="How_to_Enable">How to Enable</span></h4>
-<ol><li>Open your <b>Steam 图书馆</b>.</li>
+<ol><li>Open your <b>Steam库</b>.</li>
 <li>Right-Click on "绝地潜兵 2".</li>
 <li>Select "Properties..." from the 掉落-down menu.</li>
 <li>You are presented with the "基本信息" tab. On the lower part of this window there's a "Launch Options" field.</li>
@@ -1364,8 +1364,8 @@ For the vast majority of mid-射程 to high-end desktop computers it is best to 
 <p><code>particles_cast_shadows</code> 和 <code>particles_local_lighting</code> are of particular importance here; disabling the former prevents the game from rendering dynamic shadows for <i>每个</i> particle ingame, improving FPS, and disabling the latter lowers the amount the game stutters, particularly while fighting 机器人. 
 </p>
 <div class="tabber tabber--init"><header class="tabber__header"><button class="tabber__header__prev" tabindex="-1" type="button" aria-hidden="true"></button><nav class="tabber__tabs" role="tablist"><a class="tabber__tab" role="tab" id="Windows-1-label" href="#Windows-1" aria-controls="Windows-1">Windows</a><a class="tabber__tab" role="tab" id="Linux_/_Steam_Deck-1-label" href="#Linux_/_Steam_Deck-1" aria-controls="Linux_/_Steam_Deck-1">Linux / Steam Deck</a></nav><button class="tabber__header__next" tabindex="-1" type="button" aria-hidden="true"></button></header><section class="tabber__section"><article class="tabber__panel" role="tabpanel" tabindex="0" id="Windows-1" aria-labelledby="Windows-1-label"><p class="mw-empty-elt">
-</p><ol><li>按下 <code>Windows Key + R</code> to open the Run dialog.</li>
-<li>粘贴 <code>%APPDATA%/Arrowhead/绝地潜兵2</code> into the Run dialog and click OK.</li>
+</p><ol><li>按下 <code>Windows Key + R</code> 以打开"运行"对话框。</li>
+<li>粘贴 <code>%APPDATA%/Arrowhead/绝地潜兵2</code> 到"运行"对话框中，然后点击确定。</li>
 <li>打开 <code>user_settings.config</code> with notepad or any other text editor of your choice.</li>
 <li>Save the file after making your adjustments and close it.</li></ol>
 <p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Linux_/_Steam_Deck-1" aria-labelledby="Linux_/_Steam_Deck-1-label"><p class="mw-empty-elt">
@@ -1458,7 +1458,7 @@ For the vast majority of mid-射程 to high-end desktop computers it is best to 
 <br /><br />
 Currently, this is still rather young and not thoroughly tested and established, so not every 分布 utilizes it yet. What you need:
 </p>
-<ol><li>A dedicated AMD GPU. <b>Please Note:</b> If you have more than 8 GB of VRAM you do not really need this tweak as you most likely will not run out of VRAM easily.
+<ol><li>A dedicated AMD GPU. <b>请注意：</b> If you have more than 8 GB of VRAM you do not really need this tweak as you most likely will not run out of VRAM easily.
 <ul><li>Intel XE dGPUs are supposedly working with it as well, however there have been 否 tests as of yet.</li>
 <li>NVIDIA Nouveau drivers do not have this patched in yet.</li>
 <li>There's 否 say in whether APUs will profit from this technology as they don't have their own VRAM and instead share the system RAM.</li></ul></li>
@@ -1547,37 +1547,37 @@ Currently, this is still rather young and not thoroughly tested and established,
 </div></div></div></div></div></div></div>
 <!-- 
 NewPP limit report
-Cached time: 20260817125348
+Cached time: 20260818035603
 Cache expiry: 2592000
 Reduced expiry: false
 Complications: [vary‐revision‐sha1, show‐toc]
-CPU time usage: 0.210 seconds
-Real time usage: 0.298 seconds
+CPU time usage: 0.184 seconds
+Real time usage: 0.236 seconds
 Preprocessor visited node count: 937/1000000
-Revision size: 122288/4194304 bytes
+Revision size: 122300/4194304 bytes
 Post‐expand include size: 10278/4194304 bytes
 Template argument size: 992/4194304 bytes
 Highest expansion depth: 8/100
 Expensive parser function count: 2/500
 Unstrip recursion depth: 1/20
-Unstrip post‐expand size: 26606/10000000 bytes
+Unstrip post‐expand size: 26628/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.016/15.000 seconds
+Lua time usage: 0.014/15.000 seconds
 Lua memory usage: 787057/52428800 bytes
 Number of processed Cargo queries: 2
-Time spent processing Cargo queries: 0.008 s (avg. 0.004 s)
+Time spent processing Cargo queries: 0.012 s (avg. 0.006 s)
 Number of Cargo row insertion attempts: 1
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%  146.480      1 -total
- 31.02%   45.440      1 Template:Breadcrumb_Auto
- 11.92%   17.459      1 Template:Navbox_Troubleshooting
-  9.93%   14.540      1 Template:Navbox
-  6.68%    9.781      1 Template:Cite_discord
-  3.04%    4.447      6 Template:Crash_header
-  2.98%    4.371      2 Template:Article_other
-  2.02%    2.953     19 Template:Clear
+100.00%  117.754      1 -total
+ 36.69%   43.202      1 Template:Breadcrumb_Auto
+ 11.03%   12.985      1 Template:Navbox_Troubleshooting
+  8.97%   10.564      1 Template:Navbox
+  6.95%    8.182      1 Template:Cite_discord
+  2.54%    2.996      2 Template:Article_other
+  2.17%    2.561     19 Template:Clear
+  1.88%    2.216      6 Template:Crash_header
 -->
 </div></div>
 </main>

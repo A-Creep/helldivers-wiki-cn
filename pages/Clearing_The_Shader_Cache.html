@@ -19,7 +19,7 @@
 <main class="content">
   <h1 class="page-title">Clearing The Shader Cache</h1>
   <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div><div class="breadcrumb-item breadcrumb-item-final">Clearing The Shader Cache</div></div>
-<p>This page discusses how and why you might delete the <b>shader cache</b> for <a href="Helldivers_2.html" title="Helldivers 2">绝地潜兵 2</a>.
+<p>This page discusses how and why you might delete the <b>着色器缓存</b> for <a href="Helldivers_2.html" title="Helldivers 2">绝地潜兵 2</a>.
 </p>
 <div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
@@ -45,7 +45,7 @@
 </div>
 
 <h2><span id="What_Is_The_Shader_Cache.3F"></span><span class="mw-headline" id="What_Is_The_Shader_Cache?">What Is The Shader Cache?</span></h2>
-<p>the <b>shader cache</b> is a dedicated 存储 folder that saves the results of shader compilation for reuse in future sessions.
+<p>the <b>着色器缓存</b> is a dedicated 存储 folder that saves the results of shader compilation for reuse in future sessions.
 </p><p>Shaders are mini-programs executed directly by your graphics card (GPU) to calculate visual elements, such as lighting, shadows, particle 效果, etc. By caching the results on your 存储 drive, the game engine can then instantly fetch the ready-to-use data, instead of re-compiling shaders over and over again. This can prevent severe frame drops and ensuring a smooth 经验值.<sup id="cite&#95;ref-nvidia&#95;shader&#95;cache&#95;1-0" class="reference"><a href="#cite_note-nvidia_shader_cache-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup>
 </p>
 <h2><span id="Why_Should_I_Clear_My_Shader_Cache.3F"></span><span class="mw-headline" id="Why_Should_I_Clear_My_Shader_Cache?">Why Should I Clear My Shader Cache?</span></h2>
@@ -53,13 +53,13 @@
 </p><p>This is especially true after a new <a href="Game_Version.html" title="Game Version">Game 更新</a> or GPU driver 刷新 when the older cached files 否 longer match the new 软件 code. Therefore it is recommended to delete the cached files after a game 补丁 or driver 更新.
 </p><p>Corrupted shaders can cause a variety of problems, including:
 </p>
-<ul><li><b>Game 崩溃:</b> This can be either a crash to the desktop while playing or the game refusing to open at all and crashing upon trying to load into the 超级驱逐舰.</li>
-<li><b>Performance drops:</b> Unexplained stuttering or a loss of performance.</li>
-<li><b>Missing assets:</b> Missing assets are often depicted as purple 问题 marks in place of actual models.</li></ul>
+<ul><li><b>游戏崩溃：</b> This can be either a crash to the desktop while playing or the game refusing to open at all and crashing upon trying to load into the 超级驱逐舰.</li>
+<li><b>性能下降：</b> Unexplained stuttering or a loss of performance.</li>
+<li><b>资源缺失：</b> Missing assets are often depicted as purple 问题 marks in place of actual models.</li></ul>
 <h2><span id="Is_Deleting_The_Shader_Cache_Safe.3F"></span><span class="mw-headline" id="Is_Deleting_The_Shader_Cache_Safe?">Is Deleting The Shader Cache Safe?</span></h2>
 <p>是, this 流程 is entirely safe. Deleting the cached files has 否 influence on your character 流程, custom keybinds or other aspects of the game. Upon the 下一个 launch of 绝地潜兵 2, the engine will automatically resume compiling the files from scratch again and rebuild a clean cache.
-</p><p>It is 重要 to note that the 持续时间 of this initial compilation phase does depend on your hardware. Lower-end systems might 经验值 a <i>black screen</i> for extended periods of time during the 下一个 startup. Should this be the case for you, please be patient and allow the engine a few 分钟 to finish rebuilding the cache.
-</p><p><b>ATTENTION:</b> <b>从不</b> set your shader cache folder to "read only". Doing so prevents the game from saving or updating pre-compiled files and forces it to recalculate every single shader asset in real time during 玩法, resulting in stuttering and possibly out-of-memory 崩溃.<sup id="cite&#95;ref-nvidia&#95;shader&#95;cache&#95;1-1" class="reference"><a href="#cite_note-nvidia_shader_cache-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup>
+</p><p>It is 重要 to note that the 持续时间 of this initial compilation phase does depend on your hardware. Lower-end systems might 经验值 a <i>黑屏</i> for extended periods of time during the 下一个 startup. Should this be the case for you, please be patient and allow the engine a few 分钟 to finish rebuilding the cache.
+</p><p><b>注意：</b> <b>从不</b> set your shader cache folder to "read only". Doing so prevents the game from saving or updating pre-compiled files and forces it to recalculate every single shader asset in real time during 玩法, resulting in stuttering and possibly out-of-memory 崩溃.<sup id="cite&#95;ref-nvidia&#95;shader&#95;cache&#95;1-1" class="reference"><a href="#cite_note-nvidia_shader_cache-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup>
 </p>
 <h2><span class="mw-headline" id="DX12_vs_DX11_Difference">DX12 vs DX11 Difference</span></h2>
 <p>By 默认, <a href="Helldivers_2.html" title="Helldivers 2">绝地潜兵 2</a> 使用次数 DirectX 12 and therefore 使用次数 its own local shadercache folder in <code>%appdata%</code>.
@@ -86,7 +86,7 @@ Community Driven Protons are:
 <li>Proton-GE</li>
 <li>Proton-EM</li></ul>
 <p>Furthermore it's also 重要 to note that updating your driver or Mesa3D graphics stack will inevitably invalidate the existing cache, forcing a 完成 rebuild during the 下一个 launch.
-</p><p><b>Attention:</b> If you deactivate Shader Pre-Caching, your local shader cache for 绝地潜兵 2 will be empty and forces the game to conduct native shader compilation. For more Linux-specific 技巧, consult Linux 故障排除.
+</p><p><b>注意：</b> If you deactivate Shader Pre-Caching, your local shader cache for 绝地潜兵 2 will be empty and forces the game to conduct native shader compilation. For more Linux-specific 技巧, consult Linux 故障排除.
 </p>
 <h3><span class="mw-headline" id="How_to_deactivate_Shader_Pre-Caching">How to deactivate Shader Pre-Caching</span></h3>
 <p>If you want to deactivate Shader Pre-Caching, follow these steps:
@@ -106,11 +106,11 @@ Community Driven Protons are:
 <h2><span class="mw-headline" id="Instructions_to_clear_the_Cache">Instructions to clear the Cache</span></h2>
 <div class="tabber tabber--init"><header class="tabber__header"><button class="tabber__header__prev" tabindex="-1" type="button" aria-hidden="true"></button><nav class="tabber__tabs" role="tablist"><a class="tabber__tab" role="tab" id="Windows_(DX12)-0-label" href="#Windows_(DX12)-0" aria-controls="Windows_(DX12)-0">Windows (DX12)</a><a class="tabber__tab" role="tab" id="Windows_(DX11)-0-label" href="#Windows_(DX11)-0" aria-controls="Windows_(DX11)-0">Windows (DX11)</a><a class="tabber__tab" role="tab" id="Linux_/_Steam_Deck-0-label" href="#Linux_/_Steam_Deck-0" aria-controls="Linux_/_Steam_Deck-0">Linux / Steam Deck</a><a class="tabber__tab" role="tab" id="Xbox_Series-0-label" href="#Xbox_Series-0" aria-controls="Xbox_Series-0">Xbox Series</a><a class="tabber__tab" role="tab" id="PlayStation-0-label" href="#PlayStation-0" aria-controls="PlayStation-0">PlayStation</a></nav><button class="tabber__header__next" tabindex="-1" type="button" aria-hidden="true"></button></header><section class="tabber__section"><article class="tabber__panel" role="tabpanel" tabindex="0" id="Windows_(DX12)-0" aria-labelledby="Windows_(DX12)-0-label"><p class="mw-empty-elt">
 </p><ol><li>Close the game.</li>
-<li>按下 <code>⊞ Win</code> + <code>R</code> to open the Run dialog.</li>
-<li>粘贴 <code>%APPDATA%/Arrowhead/绝地潜兵2</code> into the Run dialog and click OK.</li>
-<li>Delete the shader_cache folder (use <code>SHIFT</code> + <code>删除</code> to skip the Recycle Bin).</li>
+<li>按下 <code>⊞ Win</code> + <code>R</code> 以打开"运行"对话框。</li>
+<li>粘贴 <code>%APPDATA%/Arrowhead/绝地潜兵2</code> 到"运行"对话框中，然后点击确定。</li>
+<li>Delete the shader_cache folder (use <code>SHIFT</code> + <code>删除</code> 以跳过回收站）。</li>
 <li>Start the game.</li></ol>
-<p><b>Note:</b> Deleting the entire <code>%APPDATA%/Arrowhead/绝地潜兵2</code> folder will also wipe your graphics settings and keybinds.
+<p><b>注意：</b> 删除整个 <code>%APPDATA%/Arrowhead/绝地潜兵2</code> 文件夹也会清除你的图形设置和按键绑定。
 </p>
 <table>
 <tbody><tr>
@@ -124,8 +124,8 @@ Community Driven Protons are:
 <li>On the right panel, search for "Shader Cache Size" and select "Off".</li>
 <li>Click "Apply" to save the setting.</li>
 <li>Reboot your PC.</li>
-<li>After the PC boots, open the "Run" dialog box (<code>WIN + R</code> or press the Start button).</li>
-<li>类型 the following into the Run dialog box or the File 探索者 地址 bar and hit Enter: <code>%USERPROFILE%\AppData\Local</code> or <code>%USERPROFILE%\AppData\LocalLow\NVIDIA\</code></li>
+<li>After the PC boots, open the "Run" dialog box (<code>WIN + R</code> 或按下开始键）。</li>
+<li>类型 the following into the Run dialog box or the File 探索者 地址 bar and hit Enter: <code>%USERPROFILE%\AppData\Local</code> or <code>%USERPROFILE%\AppData\LocalLow\NVIDIA</code></li>
 <li>In the "Local" folder, open the "NVIDIA" 目录, then open the "DXCache" folder, and delete all 目录.</li>
 <li>Return to the "Local" folder.</li>
 <li>Open the "NVIDIA Corporation" 目录.</li>
@@ -134,7 +134,7 @@ Community Driven Protons are:
 <li>Click "Apply" to save the 变更.</li>
 <li>重新开始 your PC once more to 完成 the 流程.</li></ol>
 <p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Linux_/_Steam_Deck-0" aria-labelledby="Linux_/_Steam_Deck-0-label"><p>Please note that Linux has 几个 caches for shaders to be stored - this also depends on your 分布 or if you are using a Steam Deck. You might need to empty 多个 locations. 绝地潜兵 folders will always have the ID number <code>553850</code>.
-</p><p>If you are unable to see them, please enable "Show Hidden Files". On most distributions you need to press <code>CTRL + H</code> to enable this in your file 浏览器.
+</p><p>如果你无法看到它们，请启用"显示隐藏文件"。在大多数发行版中，你需要按下 <code>CTRL + H</code> 以在文件浏览器中启用此功能。
 </p>
 <div class="tabber tabber--init"><header class="tabber__header"><button class="tabber__header__prev" tabindex="-1" type="button" aria-hidden="true"></button><nav class="tabber__tabs" role="tablist"><a class="tabber__tab" role="tab" id="Native-0-label" href="#Native-0" aria-controls="Native-0">Native</a><a class="tabber__tab" role="tab" id="Steam_Deck-0-label" href="#Steam_Deck-0" aria-controls="Steam_Deck-0">Steam Deck</a><a class="tabber__tab" role="tab" id="FlatPak-0-label" href="#FlatPak-0" aria-controls="FlatPak-0">FlatPak</a></nav><button class="tabber__header__next" tabindex="-1" type="button" aria-hidden="true"></button></header><section class="tabber__section"><article class="tabber__panel" role="tabpanel" tabindex="0" id="Native-0" aria-labelledby="Native-0-label"><p class="mw-empty-elt">
 </p><ul><li>Steam Shader Cache: <code>~/.local/share/Steam/steamapps/shadercache/</code></li></ul>
@@ -158,7 +158,7 @@ Community Driven Protons are:
 <li>The DXVK folder in the 绝地潜兵 prefix folder: <code>~/.var/app/com.valvesoftware.Steam/data/Steam/steamapps/compatdata/553850/pfx/drive_c/users/steamuser/AppData/Local/</code></li>
 <li>The shader_cache folder in the 绝地潜兵 prefix folder: <code>~/.var/app/com.valvesoftware.Steam/data/Steam/steamapps/compatdata/553850/pfx/drive_c/users/steamuser/Roaming/Arrowhead/绝地潜兵2/</code></li></ul>
 <p class="mw-empty-elt"></p></article></section></div>
-<p>Please note that your driver also has it's own Shadercache. These do not necessarily have to be cleaned out but are mentioned in case you are looking for them:
+<p>请注意，你的驱动程序也有自己的着色器缓存。这些不一定需要清理，但在此提及以防你在寻找它们：
 </p>
 <ul><li>For Mesa it's located in <code>/home/$USER/.cache/mesa_shader_cache/</code></li>
 <li>NVIDIA’s proprietary drivers have their own cache in <code>~/.nv/GLCache/</code> or <code>~/.cache/nvidia/GLCache/</code><p class="mw-empty-elt"></p></li></ul></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Xbox_Series-0" aria-labelledby="Xbox_Series-0-label"><p class="mw-empty-elt">
@@ -219,34 +219,34 @@ Community Driven Protons are:
 </div></div></div></div></div></div></div>
 <!-- 
 NewPP limit report
-Cached time: 20260817125341
+Cached time: 20260818035451
 Cache expiry: 2592000
 Reduced expiry: false
 Complications: [vary‐revision‐sha1, show‐toc]
-CPU time usage: 0.077 seconds
-Real time usage: 0.112 seconds
+CPU time usage: 0.068 seconds
+Real time usage: 0.097 seconds
 Preprocessor visited node count: 263/1000000
-Revision size: 11960/4194304 bytes
+Revision size: 11949/4194304 bytes
 Post‐expand include size: 7589/4194304 bytes
 Template argument size: 47/4194304 bytes
 Highest expansion depth: 8/100
 Expensive parser function count: 2/500
 Unstrip recursion depth: 1/20
-Unstrip post‐expand size: 11765/10000000 bytes
+Unstrip post‐expand size: 11757/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.014/15.000 seconds
+Lua time usage: 0.011/15.000 seconds
 Lua memory usage: 663608/52428800 bytes
 Number of processed Cargo queries: 2
-Time spent processing Cargo queries: 0.010 s (avg. 0.005 s)
+Time spent processing Cargo queries: 0.009 s (avg. 0.004 s)
 Number of Cargo row insertion attempts: 1
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%   82.637      1 -total
- 57.64%   47.629      1 Template:Breadcrumb_Auto
- 20.16%   16.660      1 Template:Navbox_Troubleshooting
- 15.58%   12.877      1 Template:Navbox
-  5.36%    4.429      2 Template:Article_other
+100.00%   65.520      1 -total
+ 56.88%   37.268      1 Template:Breadcrumb_Auto
+ 18.09%   11.853      1 Template:Navbox_Troubleshooting
+ 14.90%    9.765      1 Template:Navbox
+  4.79%    3.140      2 Template:Article_other
 -->
 </div></div>
 </main>

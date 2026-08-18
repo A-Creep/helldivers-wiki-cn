@@ -2069,12 +2069,12 @@
 
 <!-- 
 NewPP limit report
-Cached time: 20260817125141
+Cached time: 20260818035259
 Cache expiry: 2592000
 Reduced expiry: false
 Complications: [show‐toc]
-CPU time usage: 0.924 seconds
-Real time usage: 0.952 seconds
+CPU time usage: 1.746 seconds
+Real time usage: 1.980 seconds
 Preprocessor visited node count: 733/1000000
 Revision size: 165/4194304 bytes
 Post‐expand include size: 155400/4194304 bytes
@@ -2084,14 +2084,26 @@ Expensive parser function count: 0/500
 Unstrip recursion depth: 0/20
 Unstrip post‐expand size: 0/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.849/15.000 seconds
-Lua memory usage: 9488851/52428800 bytes
+Lua time usage: 1.591/15.000 seconds
+Lua memory usage: 9245769/52428800 bytes
+Lua Profile:
+    MediaWiki\Extension\Scribunto\Engines\LuaSandbox\LuaSandboxCallback::find      720 ms       46.2%
+    MediaWiki\Extension\Scribunto\Engines\LuaSandbox\LuaSandboxCallback::lc      520 ms       33.3%
+    MediaWiki\Extension\Scribunto\Engines\LuaSandbox\LuaSandboxCallback::match       80 ms        5.1%
+    <mw.language.lua:89>                                              60 ms        3.8%
+    MediaWiki\Extension\Scribunto\Engines\LuaSandbox\LuaSandboxCallback::jsonDecode       40 ms        2.6%
+    <Module:GalacticWarLog:30>                                        20 ms        1.3%
+    MediaWiki\Extension\Scribunto\Engines\LuaSandbox\LuaSandboxCallback::sub       20 ms        1.3%
+    find_substring_in_text <Module:GalacticWarLog:233>                20 ms        1.3%
+    find <mw.ustring.lua:80>                                          20 ms        1.3%
+    (for generator)                                                   20 ms        1.3%
+    [others]                                                          40 ms        2.6%
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%  878.152      1 Template:GalacticWarLogSearch
-100.00%  878.152      1 -total
-  0.23%    2.053      1 Template:Inline_Icon_Abstract
+100.00% 1835.445      1 Template:GalacticWarLogSearch
+100.00% 1835.445      1 -total
+  0.11%    1.959      1 Template:Inline_Icon_Abstract
 -->
 </div></div>
 </main>

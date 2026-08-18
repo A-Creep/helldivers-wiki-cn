@@ -31,9 +31,9 @@ Game 机制</div></div></div></div>
 <li class="toclevel-1 tocsection-3"><a href="#Mechanics_in_Detail"><span class="tocnumber">3</span> <span class="toctext">机制 in Detail</span></a>
 <ul>
 <li class="toclevel-2 tocsection-4"><a href="#The_Galactic_Map"><span class="tocnumber">3.1</span> <span class="toctext">The 银河地图</span></a></li>
-<li class="toclevel-2 tocsection-5"><a href="#Campaigns"><span class="tocnumber">3.2</span> <span class="toctext">Campaigns</span></a>
+<li class="toclevel-2 tocsection-5"><a href="#战役"><span class="tocnumber">3.2</span> <span class="toctext">战役</span></a>
 <ul>
-<li class="toclevel-3 tocsection-6"><a href="#Liberation_Campaigns"><span class="tocnumber">3.2.1</span> <span class="toctext">解放 Campaigns</span></a>
+<li class="toclevel-3 tocsection-6"><a href="#解放战役"><span class="tocnumber">3.2.1</span> <span class="toctext">解放战役</span></a>
 <ul>
 <li class="toclevel-4 tocsection-7"><a href="#星球生命值"><span class="tocnumber">3.2.1.1</span> <span class="toctext">星球生命值</span></a></li>
 <li class="toclevel-4 tocsection-8"><a href="#Decay_Rates"><span class="tocnumber">3.2.1.2</span> <span class="toctext">Decay Rates</span></a>
@@ -74,17 +74,17 @@ Game 机制</div></div></div></div>
 <h2><span class="mw-headline" id="Mechanics_Summarized">机制 Summarized</span></h2>
 <p>A quick summary of keywords and relevant 机制.
 </p>
-<ul><li><b>绝地潜兵 Impact:</b> At the end of each successful 任务, a certain amount of <i>影响</i> is generated depending on the 任务's 难度, higher generating more. Only the 主要目标's completion matters for <i>影响</i>.<sup id="cite&#95;ref-impact&#95;1-0" class="reference"><a href="#cite_note-impact-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup><sup id="cite&#95;ref-2" class="reference"><a href="#cite_note-2"><span class="cite-bracket">&#91;</span>2<span class="cite-bracket">&#93;</span></a></sup><sup id="cite&#95;ref-3" class="reference"><a href="#cite_note-3"><span class="cite-bracket">&#91;</span>3<span class="cite-bracket">&#93;</span></a></sup> This value is multiplied by the <i>Impact 修正</i> and then dealt to the 行星's 生命池 as 伤害.
-<ul><li><b>Impact 修正:</b> A value that scales inversely proportional to the number of missions completed (successful and failed) within a 30 minute window. Effectively this means that: Many active 绝地潜兵 = less impact 每次任务. Fewer active 绝地潜兵 = more impact 每次任务.</li></ul></li>
-<li><b>Planets:</b> 每颗星球 has an individual 生命池 -varying on a 行星-to-行星 and <i>Campaign</i> basis- which must be depleted in order to secure a successful 占领/防御 of the 行星.
-<ul><li><b>Warp Links:</b> Commonly known as "Supply Lines", connects planets together. In order for a <i>Campaign</i> to be launched or stay active, the 目标 行星 must be linked to at least one <span class="faction-icon icon-outline"><img class="wiki-icon" alt="" src="../images/Super_Earth_Icon.svg" decoding="async" loading="lazy" width="1024" height="1024" data-file-width="1024" data-file-height="1024" /></span> 超级地球-controlled 行星, or be under 超级地球 控制 itself if it is a <i>保卫战役</i>.</li></ul></li>
-<li><b>Campaigns:</b> In order to fight for a 行星, a campaign must be active on it. Different campaigns provide different 机制.
-<ul><li><b>解放 Campaigns:</b> Campaigns with 否 时间限制. 绝地潜兵 must 克服 <i>Enemy 抗性</i> in order to deplete the 行星's 生命池. Campaign will immediately end in loss if 否 <i>Warp Links</i> to 超级地球 held planets remain.
-<ul><li><b>Enemy 抗性:</b> Commonly known as "Decay". The&#160;% of 行星's 生命池 regenerated every hour. Due to 星球生命值 pools being different, the&#160;% may be misleading when comparing with other planets' 抗性.</li></ul></li>
-<li><b>防御 Campaign:</b> Campaigns with a 时间限制 and 否 <i>Enemy 抗性</i>. 绝地潜兵 must deplete the 行星's 生命池 before the timer expires.
-<ul><li><b>Gambit:</b> Capturing the 来源 of a <i>保卫战役</i> (indicated by arrows on the Warp Link) will immediately end the connected 防御 in the 绝地潜兵' favor.</li></ul></li>
-<li><b>High Priority Campaign (HPC):</b> Campaigns with their own exclusive 机制 and exclusive missions. 通常 utilized during key story points.</li></ul></li>
-<li><b><a href="Regions.html" title="Regions">Regions</a>:</b> Commonly known as "Mega City" or "City". Each region has its 各自的 生命池 AND <i>Enemy 抗性</i>, 分离 from the 行星's. Upon 占领, the 行星's 生命池 is dealt a significant amount of 伤害, varying with the Region's 生命值.</li></ul>
+<ul><li><b>绝地潜兵冲击：</b> At the end of each successful 任务, a certain amount of <i>影响</i> is generated depending on the 任务's 难度, higher generating more. Only the 主要目标's completion matters for <i>影响</i>.<sup id="cite&#95;ref-impact&#95;1-0" class="reference"><a href="#cite_note-impact-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup><sup id="cite&#95;ref-2" class="reference"><a href="#cite_note-2"><span class="cite-bracket">&#91;</span>2<span class="cite-bracket">&#93;</span></a></sup><sup id="cite&#95;ref-3" class="reference"><a href="#cite_note-3"><span class="cite-bracket">&#91;</span>3<span class="cite-bracket">&#93;</span></a></sup> This value is multiplied by the <i>冲击修正系数</i> and then dealt to the 行星's 生命池 as 伤害.
+<ul><li><b>冲击修正系数：</b> A value that scales inversely proportional to the number of missions completed (successful and failed) within a 30 minute window. Effectively this means that: Many active 绝地潜兵 = less impact 每次任务. Fewer active 绝地潜兵 = more impact 每次任务.</li></ul></li>
+<li><b>星球：</b> 每颗星球 has an individual 生命池 -varying on a 行星-to-行星 and <i>Campaign</i> basis- which must be depleted in order to secure a successful 占领/防御 of the 行星.
+<ul><li><b>跃迁连接：</b> Commonly known as "Supply Lines", connects planets together. In order for a <i>Campaign</i> to be launched or stay active, the 目标 行星 must be linked to at least one <span class="faction-icon icon-outline"><img class="wiki-icon" alt="" src="../images/Super_Earth_Icon.svg" decoding="async" loading="lazy" width="1024" height="1024" data-file-width="1024" data-file-height="1024" /></span> 超级地球-controlled 行星, or be under 超级地球 控制 itself if it is a <i>保卫战役</i>.</li></ul></li>
+<li><b>战役：</b> In order to fight for a 行星, a campaign must be active on it. Different campaigns provide different 机制.
+<ul><li><b>解放战役：</b> Campaigns with 否 时间限制. 绝地潜兵 must 克服 <i>敌人抵抗强度</i> in order to deplete the 行星's 生命池. Campaign will immediately end in loss if 否 <i>跃迁连接</i> to 超级地球 held planets remain.
+<ul><li><b>敌人抵抗强度：</b> Commonly known as "Decay". The&#160;% of 行星's 生命池 regenerated every hour. Due to 星球生命值 pools being different, the&#160;% may be misleading when comparing with other planets' 抗性.</li></ul></li>
+<li><b>防御战役：</b> Campaigns with a 时间限制 and 否 <i>敌人抵抗强度</i>. 绝地潜兵 must deplete the 行星's 生命池 before the timer expires.
+<ul><li><b>Gambit：</b> Capturing the 来源 of a <i>保卫战役</i> (indicated by arrows on the Warp Link) will immediately end the connected 防御 in the 绝地潜兵' favor.</li></ul></li>
+<li><b>首要战役 (HPC)：</b> Campaigns with their own exclusive 机制 and exclusive missions. 通常 utilized during key story points.</li></ul></li>
+<li><b><a href="Regions.html" title="Regions">Regions</a>:</b> Commonly known as "Mega City" or "City". Each region has its 各自的 生命池 AND <i>敌人抵抗强度</i>, 分离 from the 行星's. Upon 占领, the 行星's 生命池 is dealt a significant amount of 伤害, varying with the Region's 生命值.</li></ul>
 <p><br />
 </p>
 <h2><span class="mw-headline" id="Mechanics_in_Detail">机制 in Detail</span></h2>
@@ -105,7 +105,7 @@ Game 机制</div></div></div></div>
 </p>
 <h3><span class="mw-headline" id="The_Galactic_Map">The 银河地图</span></h3>
 <p>The available planets to play on in 绝地潜兵 2 are determined by the 阵营 that currently controls them, and which planets they are connected to via <a href="Warp_Links.html" title="Warp Links">Warp Links</a>. 
-</p><p>When two planets connected by a Warp Link are controlled by different 阵营, one 行星 can mount a <b>行星 攻击</b> on the other 行星 on said Warp Link, which will trigger a <b>战役。</b>
+</p><p>When two planets connected by a Warp Link are controlled by different 阵营, one 行星 can mount a <b>星球攻击</b> on the other 行星 on said Warp Link, which will trigger a <b>战役。</b>
 </p><p><br />
 </p>
 <div class="flextablediv" style="display: flex; justify-content: flex-start; gap: 2px;">
@@ -123,22 +123,22 @@ Game 机制</div></div></div></div>
 <th>解释
 </th></tr>
 <tr>
-<td>Animated 图表 of the Matar Bay 解放 Campaign and Martale 防御 from 2024-20-10.
-<p>When two Warp Link connected planets have different 阵营, one 行星 can mount a 行星 攻击 on the other 行星.
-</p><p>行星 攻击 are indicated by the red arrows. 机器人 planets have red nametags, 超级地球 planets have blue nametags.
+<td>玛塔解放战役与Martale防卫的动画示意图，日期为2024-20-10。
+<p>当两个由跃迁连接相连的行星属于不同阵营时，其中一个行星可以对另一个行星发动行星攻击。
+</p><p>星球攻击以红色箭头表示。 机器人 星球拥有红色名称标签， 超级地球 星球拥有蓝色名称标签。
 </p>
-<ul><li>Matar Bay is connected to 超级地球 Planets Martale, Meissa，以及 Marfark, allowing for a <i>解放 Campaign.</i></li></ul>
+<ul><li>Matar Bay 与超级地球星球相连 Martale, Meissa，以及 Marfark, allowing for a <i>解放战役。</i></li></ul>
 <ul><li>Martale is being attacked by Matar Bay, triggering a <i>防御 Campaign.</i></li></ul>
 <ul><li>If Martale, Meissa, and Marfark are taken by the 机器人, Matar Bay will become unreachable, ending the 解放 campaign.</li></ul>
 </td></tr></tbody></table>
 </div>
 <p>Whenever a 行星 is being liberated or defended, that is referred to as a <b>战役。</b>
 </p>
-<h3><span class="mw-headline" id="Campaigns">Campaigns</span></h3>
+<h3><span id=".E6.88.98.E5.BD.B9"></span><span class="mw-headline" id="战役">战役</span></h3>
 <p>In order for a 行星 to be playable, it needs to have a <b>Campaign</b> active. There are various 类型 of campaigns, each with their own intricacies.
 </p>
-<h4><span class="mw-headline" id="Liberation_Campaigns"><style data-mw-deduplicate="TemplateStyles:r121325">.mw-parser-output .inline-icon-容器{显示:inline-flex;align-items:center;white-space:nowrap;gap:0.25em;vertical-align:middle}.mw-parser-output .inline-icon-img-wrapper{显示:inline-flex;align-items:center;justify-内容:center;flex-shrink:0;line-height:0}.mw-parser-output .inline-icon-img-wrapper a{显示:inline-flex;align-items:center;height:100%}.mw-parser-output .inline-icon-img-wrapper img{height:100%!重要;width:auto!重要;object-fit:contain;显示:inline-block}.mw-parser-output .inline-icon-text{line-height:normal;显示:inline-block}.mw-parser-output .shadow-dark{filter:掉落-shadow(0 0 0.6em rgba(0,0,0,0.8))}.mw-parser-output .shadow-轻型{filter:掉落-shadow(0 0 0.6em rgba(255,255,255,0.8))}.mw-parser-output .shadow-glow{filter:掉落-shadow(0 0 0.6em rgba(255,255,255,1))}.mw-parser-output .shadow-grow{transition:transform 0.2s ease-in-out,filter 0.2s ease-in-out;filter:掉落-shadow(0 0 0em rgba(255,255,255,0))}.mw-parser-output .inline-icon-容器:hover .inline-icon-img-wrapper.shadow-grow{transform:scale(1.15);filter:掉落-shadow(0 0 0.6em rgba(255,255,255,0.8))}</style><span class="inline-icon-container"><span class="inline-icon-img-wrapper" style="height:2em"><img alt="Liberation Campaign Icon.svg" src="../images/Liberation_Campaign_Icon.svg" decoding="async" loading="lazy" width="512" height="512" class="wiki-icon inline-icon-img" data-file-width="512" data-file-height="512" /></span></span> 解放 Campaigns</span></h4>
-<p>In <b>解放 Campaigns</b> the 目标 is to liberate the 行星 from enemy 控制.  The 行星 has an internal value known as <b>星球生命值,</b> which is not to be confused with <b>解放 百分比,</b> the value shown in game.
+<h4><span id=".E8.A7.A3.E6.94.BE.E6.88.98.E5.BD.B9"></span><span class="mw-headline" id="解放战役"><style data-mw-deduplicate="TemplateStyles:r121325">.mw-parser-output .inline-icon-容器{显示:inline-flex;align-items:center;white-space:nowrap;gap:0.25em;vertical-align:middle}.mw-parser-output .inline-icon-img-wrapper{显示:inline-flex;align-items:center;justify-内容:center;flex-shrink:0;line-height:0}.mw-parser-output .inline-icon-img-wrapper a{显示:inline-flex;align-items:center;height:100%}.mw-parser-output .inline-icon-img-wrapper img{height:100%!重要;width:auto!重要;object-fit:contain;显示:inline-block}.mw-parser-output .inline-icon-text{line-height:normal;显示:inline-block}.mw-parser-output .shadow-dark{filter:掉落-shadow(0 0 0.6em rgba(0,0,0,0.8))}.mw-parser-output .shadow-轻型{filter:掉落-shadow(0 0 0.6em rgba(255,255,255,0.8))}.mw-parser-output .shadow-glow{filter:掉落-shadow(0 0 0.6em rgba(255,255,255,1))}.mw-parser-output .shadow-grow{transition:transform 0.2s ease-in-out,filter 0.2s ease-in-out;filter:掉落-shadow(0 0 0em rgba(255,255,255,0))}.mw-parser-output .inline-icon-容器:hover .inline-icon-img-wrapper.shadow-grow{transform:scale(1.15);filter:掉落-shadow(0 0 0.6em rgba(255,255,255,0.8))}</style><span class="inline-icon-container"><span class="inline-icon-img-wrapper" style="height:2em"><img alt="Liberation Campaign Icon.svg" src="../images/Liberation_Campaign_Icon.svg" decoding="async" loading="lazy" width="512" height="512" class="wiki-icon inline-icon-img" data-file-width="512" data-file-height="512" /></span></span> 解放战役</span></h4>
+<p>In <b>解放战役</b> the 目标 is to liberate the 行星 from enemy 控制.  The 行星 has an internal value known as <b>星球生命值，</b> which is not to be confused with <b>解放百分比，</b> the value shown in game.
 </p><p>For a 行星 to be liberated, 超级地球 has to mount a 行星 攻击 from one of the Supply Line connected planets under their 控制.
 </p><p>The 目标 is simple.  Reduce the 行星's <b>生命值</b> to 0.  Each successful 任务 and on completion of all missions in an 操作 the 操作 bonus chips away at the 行星's 生命值, with higher 难度 missions/operations dealing even more 伤害 to the 行星. Should the 行星 be liberated, then new campaigns will launch from the liberated world.
 </p><p>However, should 超级地球 lose all avenues of 攻击 to a 行星, then the 解放 Campaign will end in failure.
@@ -152,29 +152,29 @@ Game 机制</div></div></div></div>
 <li>每个 <b>城市</b> (★★★) adds an additional 400k Max HP</li>
 <li>每个 <b>特大城市</b> (★★★★) adds an additional 600k Max HP</li></ol>
 <h5><span class="mw-headline" id="Decay_Rates">Decay Rates</span></h5>
-<p>Of course, the 敌人 of 超级地球 are not going to just let the 绝地潜兵 walk over them. As such, they will actively <i>un</i>liberate the planets by a fixed amount every hour known as the <b>衰退速率.</b>  This value is shown as a 百分比 as Enemy 抗性 ingame, and can also be seen via third party applications such as 绝地潜兵 Companion.
-</p><p>Efforts to liberate a 行星 <b>are wasted</b>  if too 小型 a 百分比 of the 绝地潜兵 人口 is performing missions at sufficient <a href="Difficulty.html" title="Difficulty">Difficulties</a> on a 行星 to overtake the 衰退速率.   This 最小 number of <span style="cursor: help; text-decoration: underline; display: inline;" class="tooltip" title="Helldivers actively completing missions">active 绝地潜兵</span> varies <i>depending on how many 玩家 are online, their 比例 across 每颗星球, and how many of said 比例 is performing missions.</i>  
-</p><p><b>The 衰退速率 is not 相关 in any way to how 困难 每次任务 is on a 行星.  This is a common misconception.</b><sup id="cite&#95;ref-Spider&#95;Mod&#95;Discord&#95;4-0" class="reference"><a href="#cite_note-Spider_Mod_Discord-4"><span class="cite-bracket">&#91;</span>4<span class="cite-bracket">&#93;</span></a></sup>
+<p>Of course, the 敌人 of 超级地球 are not going to just let the 绝地潜兵 walk over them. As such, they will actively <i>un</i>liberate the planets by a fixed amount every hour known as the <b>衰减率。</b>  This value is shown as a 百分比 as Enemy 抗性 ingame, and can also be seen via third party applications such as 绝地潜兵 Companion.
+</p><p>Efforts to liberate a 行星 <b>被浪费</b>  if too 小型 a 百分比 of the 绝地潜兵 人口 is performing missions at sufficient <a href="Difficulty.html" title="Difficulty">Difficulties</a> on a 行星 to overtake the 衰退速率.   This 最小 number of <span style="cursor: help; text-decoration: underline; display: inline;" class="tooltip" title="Helldivers actively completing missions">active 绝地潜兵</span> varies <i>取决于有多少玩家在线、他们在各行星上的分布比例，以及该比例中有多少正在执行任务。</i>  
+</p><p><b>衰减率与每个任务的难度没有任何关系 任务 is on a 行星.  This is a common misconception.</b><sup id="cite&#95;ref-Spider&#95;Mod&#95;Discord&#95;4-0" class="reference"><a href="#cite_note-Spider_Mod_Discord-4"><span class="cite-bracket">&#91;</span>4<span class="cite-bracket">&#93;</span></a></sup>
 </p>
 <h6><span class="mw-headline" id="Sieging">Sieging</span></h6>
 <p>Should an enemy controlled 行星 be completely surrounded by 超级地球 controlled planets, the 衰退速率 of these planets will turn 负面, and will begin to self-liberate.  This is referred to as a <b>围城</b>.
 </p>
 <h5><span class="mw-headline" id="High-Priority_Campaigns"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r121325" /><span class="inline-icon-container"><span class="inline-icon-img-wrapper" style="height:2em"><img alt="High-Priority Campaign Icon.svg" src="../images/High-Priority_Campaign_Icon.svg" decoding="async" loading="lazy" width="512" height="512" class="wiki-icon inline-icon-img" data-file-width="512" data-file-height="512" /></span></span> High-Priority Campaigns</span></h5>
-<p>有时, a 行星 in game is marked as a <b>首要战役</b>, such as during 操作 Enduring Peace and the first gloom 远征.  <b>High Priority Campaigns</b> behave a bit differently from your regular 解放 Campaign.
-</p><p>These are 有时 called <i>Story Campaigns</i>  by the community.  Clearing these campaigns requires following along with the 当前 主要命令.
+<p>有时, a 行星 in game is marked as a <b>首要战役</b>, such as during 操作 Enduring Peace and the first gloom 远征.  <b>首要战役</b> behave a bit differently from your regular 解放 Campaign.
+</p><p>These are 有时 called <i>剧情战役</i>  by the community.  Clearing these campaigns requires following along with the 当前 主要命令.
 </p><p>通常, these are accompanied by an absurdly high 衰退速率. This 衰退速率 is lowered as 通常 未知 milestones are hit, provided a large majority of the playerbase actively participates in the 重要指令.
 </p>
 <h4><span class="mw-headline" id="Defense_Campaigns"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r121325" /><span class="inline-icon-container"><span class="inline-icon-img-wrapper" style="height:2em"><img alt="Defense Campaign Icon.svg" src="../images/Defense_Campaign_Icon.svg" decoding="async" loading="lazy" width="512" height="512" class="wiki-icon inline-icon-img" data-file-width="512" data-file-height="512" /></span></span> 防御 Campaigns</span></h4>
 <div class="thumb tright"><div class="thumbinner" style="width:117px;"><img alt="General percentage of active Helldivers needed to successfully defend a planet based on defense HP." src="../images/115px-Helldivers-Defense-Guide.png" decoding="async" loading="lazy" width="115" height="250" class="thumbimage" data-file-width="419" data-file-height="910" />  <div class="thumbcaption"><div class="magnify"></div>基本信息 百分比 of active 绝地潜兵 needed to successfully defend a 行星 based on 防御 HP.</div></div></div>
 <p>The Enemy <a href="Factions.html" title="Factions">阵营</a> can also mount 攻击 on 超级地球 worlds, triggering a <b>防御 Campaign.</b>  
-</p><p>Unlike 解放 Campaigns, 防御 Campaigns have their <i>own internal 生命值 value</i> that varies depending on the 力量 of the enemy force attacking the world.  <i>通常</i>, it's far less than a 解放 Campaign's usual 1,000,000 生命值, and there is 否 active 衰退速率 while the 防御 is active.  The 防御 Campaign also has a 截止日期. For the 平均 行星 this is 24 hours. If a Megacity or Megafactory is present this goes up to 48 hours, unless the 攻击 is lead by the Jet Brigade who will bring the 截止日期 back down to 24 hours. <a href="Magma_Desert.html" title="Magma Desert"> 岩浆</a>,<a href="Deciduous_Forest.html" title="Deciduous Forest"> Deciduous</a>/<a href="Autumn_Forest.html" title="Autumn Forest">秋季</a> Forest, and <a href="Desert_Oasis.html" title="Desert Oasis"> 绿洲</a> planets, despite not having Megacities or Megafactories, all have have their deadlines 已增加 to 48 hours. This includes 攻击 led by the Jet Brigade.
+</p><p>Unlike 解放 Campaigns, 防御 Campaigns have their <i>自身内部生命值</i> that varies depending on the 力量 of the enemy force attacking the world.  <i>通常</i>, it's far less than a 解放 Campaign's usual 1,000,000 生命值, and there is 否 active 衰退速率 while the 防御 is active.  The 防御 Campaign also has a 截止日期. For the 平均 行星 this is 24 hours. If a Megacity or Megafactory is present this goes up to 48 hours, unless the 攻击 is lead by the Jet Brigade who will bring the 截止日期 back down to 24 hours. <a href="Magma_Desert.html" title="Magma Desert"> 岩浆</a>,<a href="Deciduous_Forest.html" title="Deciduous Forest"> Deciduous</a>/<a href="Autumn_Forest.html" title="Autumn Forest">秋季</a> Forest, and <a href="Desert_Oasis.html" title="Desert Oasis"> 绿洲</a> planets, despite not having Megacities or Megafactories, all have have their deadlines 已增加 to 48 hours. This includes 攻击 led by the Jet Brigade.
 </p><p>The 目标 is to reduce the 防御's HP to 0 to repel the enemy 攻击.  Failure to completely liberate the 行星 by the 防御 Campaign's 截止日期 will result in the 行星 being lost to the enemy, and a new 解放 Campaign will launch for the fallen world should there still be a connected 行星. The fallen 行星 will begin at 0% 解放 after a 防御 Campaign 否 matter the progress achieved before the timer expires.
 </p><p>Missions played on planets undergoing a 防御 Campaign will never have any <a href="Effects.html#Operation_Modifiers" title="Effects">操作 Modifiers,</a> though <a href="Effects.html#Environmental_Conditions" title="Effects">Environmental Conditions</a> will still be present.
 </p>
 <h5><span class="mw-headline" id="Gambits">Gambits</span></h5>
 <p>Of course, that's not the only way to win a 防御 campaign. Since the Enemy 阵营 must mount 攻击 from a 行星 they own, <a href="The_Helldivers.html" title="The Helldivers">the 绝地潜兵</a> have the option to simply liberate that 行星 before the 防御 ends.  This is referred to as a <b>Gambit</b> by the community.
-</p><p>Gambits, while preferred to completing the 防御 normally, <b>are not always viable.</b>  If, for 示例, the attacking 行星 has too much 生命值 or a high 衰退速率, it becomes infeasible for the 绝地潜兵 to retake the 行星 before the 防御 战役结束.
-</p><p>It should be noted that the <a href="Democracy_Space_Station.html" title="Democracy Space Station">Democracy Space 车站</a>'s 轨道武器 Blockade does NOT auto-gambit attacking planets.  It can <b>only prevent 攻击</b> from being mounted from a specific 行星.
+</p><p>Gambits, while preferred to completing the 防御 normally, <b>并非始终可行。</b>  If, for 示例, the attacking 行星 has too much 生命值 or a high 衰退速率, it becomes infeasible for the 绝地潜兵 to retake the 行星 before the 防御 战役结束.
+</p><p>It should be noted that the <a href="Democracy_Space_Station.html" title="Democracy Space Station">Democracy Space 车站</a>'s 轨道武器 Blockade does NOT auto-gambit attacking planets.  It can <b>仅用于阻止攻击</b> from being mounted from a specific 行星.
 </p>
 <h5><span id=".E4.BA.9F.E5.BE.85.E8.A7.A3.E6.94.BE"></span><span class="mw-headline" id="亟待解放"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r121325" /><span class="inline-icon-container"><span class="inline-icon-img-wrapper" style="height:2em"><img alt="Urgent Liberation Campaign Icon.svg" src="../images/Urgent_Liberation_Campaign_Icon.svg" decoding="async" loading="lazy" width="512" height="512" class="wiki-icon inline-icon-img" data-file-width="512" data-file-height="512" /></span></span> 亟待解放</span></h5>
 <p>Urgent 解放 campaigns are 防御 Campaigns in reverse.  Instead of an enemy 阵营 attacking a 超级地球 controlled 行星, 超级地球 攻击 the enemy 行星.
@@ -206,7 +206,7 @@ Game 机制</div></div></div></div>
 <li>Modifiers can be tied to Regions, for 示例: The <a href="Illuminate.html" title="Illuminate">光能者</a> has the <a href="Leviathan_Blockade.html" title="Leviathan Blockade">利维坦封锁屏障</a> 修正 present in Regions under their 控制 starting at <a href="Difficulty.html" title="Difficulty"><img class="wiki-icon" alt="Impossible Difficulty Icon.svg" src="../images/Impossible_Difficulty_Icon.svg" decoding="async" loading="lazy" width="34" height="16" data-file-width="512" data-file-height="248" /></a> <span><a href="Difficulty.html" title="Difficulty">不可能</a></span> 难度.</li></ul>
 <h3><span id="Helldivers.27_Impact_on_the_War"></span><span class="mw-headline" id="Helldivers'_Impact_on_the_War">绝地潜兵' Impact on the War</span></h3>
 <table class="wikitable" style="float:left; margin:0em 1em 1em 1em;">
-<caption>任务 Influence Rewarded upon 任务 and 操作 Completion
+<caption>任务与行动完成后奖励的任务影响力
 </caption>
 <tbody><tr>
 <th>Diff
@@ -307,14 +307,14 @@ Game 机制</div></div></div></div>
 </td>
 <td>612
 </td></tr></tbody></table>
-<p>Whenever a squad successfully completes a 任务 on the 行星, a value known as <b>任务 influence</b> is calculated. See the table to the left. 
+<p>Whenever a squad successfully completes a 任务 on the 行星, a value known as <b>任务影响力</b> is calculated. See the table to the left. 
 </p><p>更高 <a href="Difficulty.html" title="Difficulty">难度</a> missions have much more influence than lower 难度 missions.  
-If an entire 操作 is completed, the <b>任务 Influence</b> for the final 任务 will be multiplied by four.<sup id="cite&#95;ref-5" class="reference"><a href="#cite_note-5"><span class="cite-bracket">&#91;</span>5<span class="cite-bracket">&#93;</span></a></sup>  
-</p><p>In both cases, it will then be multiplied by a changing value known as the <b>Galactic Impact 修正,</b> resulting in a value called <b>Impact.</b>  
+If an entire 操作 is completed, the <b>任务影响力</b> for the final 任务 will be multiplied by four.<sup id="cite&#95;ref-5" class="reference"><a href="#cite_note-5"><span class="cite-bracket">&#91;</span>5<span class="cite-bracket">&#93;</span></a></sup>  
+</p><p>In both cases, it will then be multiplied by a changing value known as the <b>银河冲击修正系数，</b> resulting in a value called <b>冲击。</b>  
 </p><p>Impact is then subtracted from the 当前 行星 or event 生命值.
-</p><p>The exact formula for the '<b>Galactic Impact 修正</b> is 未知.  It used to be said that it scaled based on how many <b>successful missions are completed</b> across a rolling 30-minute window, although this can be simplified to the 比例 of player online.
-</p><p><b>This means that 行星 伤害 is based on where the <i>比例 of 玩家</i> currently online and preforming missions are, not the <i>raw 玩家人数.</i></b>
-</p><p><b>Only missions started by a host will count towards 行星 解放.  Kicking 玩家 midway does not create new 伤害 instances.</b>
+</p><p>The exact formula for the '<b>银河冲击修正系数</b> is 未知.  It used to be said that it scaled based on how many <b>成功完成任务</b> across a rolling 30-minute window, although this can be simplified to the 比例 of player online.
+</p><p><b>This means that 行星 伤害 is based on where the <i>玩家比例</i> currently online and preforming missions are, not the <i>原始玩家数量。</i></b>
+</p><p><b>只有由主机开始的任务才会计入行星解放。中途踢出玩家不会产生新的伤害实例。</b>
 </p>
 <div style="clear:both"></div>
 <div class="thumb tright"><div class="thumbinner" style="width:258px;"><img src="../images/256px-Impact_Multipler_Against_Players_Graph.png" decoding="async" loading="lazy" width="256" height="256" class="thumbimage" data-file-width="1620" data-file-height="1620" />  <div class="thumbcaption"><div class="magnify"></div>Graph of the Impact 倍率 recorded for different player counts.  Observe how it's correlated to 玩家人数, but not exactly</div></div></div>
@@ -333,7 +333,7 @@ If an entire 操作 is completed, the <b>任务 Influence</b> for the final 任�
 <ul><li>否. Enemy 抗性 is another name for 衰退速率, and is unrelated to 任务 难度. This was clarified by Arrowhead 支援.<sup id="cite&#95;ref-Spider&#95;Mod&#95;Discord&#95;4-1" class="reference"><a href="#cite_note-Spider_Mod_Discord-4"><span class="cite-bracket">&#91;</span>4<span class="cite-bracket">&#93;</span></a></sup></li></ul>
 <p>Q: Do 防御 campaigns have decay rates?
 </p>
-<ul><li>否.  The enemy decay&#160;% per hour <i>seen in companion apps</i> is purely 装饰.</li></ul>
+<ul><li>否.  The enemy decay&#160;% per hour <i>在配套应用中可见</i> is purely 装饰.</li></ul>
 <p>Q: If we completely cut off a 行星's Warp Links, will we automatically win that 行星
 </p>
 <ul><li>否.</li></ul>
@@ -357,7 +357,7 @@ If an entire 操作 is completed, the <b>任务 Influence</b> for the final 任�
 <ul><li>Unfortunately, it's not a 写实 plan to get the entire playerbase to do something. There are simply too many people playing 绝地潜兵 2, and many are entirely uninterested or unable to engage with the game's community and/or the 星系战争, be it due to a 语言 屏障 or lack of time.<br />It's better to focus on plans that need only a reasonable majority of the playerbase or plans that have a 小型 amount of 玩家 贡献 a lot, like through DSS actions.</li></ul>
 <p>Q: If X 玩家 didn't exclusively dive on 终结族 planets, we wouldn't have lost Y!
 </p>
-<ul><li>The Game Master knows that there are large amounts of 玩家 who only play against certain 阵营, and accounts for that.<br /><b>Please don't blame other 玩家 for strategical mishaps.</b></li></ul>
+<ul><li>The Game Master knows that there are large amounts of 玩家 who only play against certain 阵营, and accounts for that.<br /><b>请不要因战略失误责怪其他玩家。</b></li></ul>
 <p>Q: Why doesn't Arrowhead split the 解放 cap by 阵营
 </p>
 <ul><li>This wouldn't change much, as we have never once reached any kind of upper 解放 cap. If we ever do reach said cap and encounter problems, perhaps then would be the time to discuss said system.</li></ul>
@@ -393,14 +393,14 @@ If an entire 操作 is completed, the <b>任务 Influence</b> for the final 任�
 </p>
 <!-- 
 NewPP limit report
-Cached time: 20260817124823
+Cached time: 20260818034942
 Cache expiry: 3600
 Reduced expiry: true
 Complications: [vary‐revision‐sha1, show‐toc]
-CPU time usage: 0.354 seconds
-Real time usage: 0.517 seconds
+CPU time usage: 0.301 seconds
+Real time usage: 0.482 seconds
 Preprocessor visited node count: 1550/1000000
-Revision size: 25954/4194304 bytes
+Revision size: 25822/4194304 bytes
 Post‐expand include size: 46161/4194304 bytes
 Template argument size: 5139/4194304 bytes
 Highest expansion depth: 11/100
@@ -408,24 +408,24 @@ Expensive parser function count: 3/500
 Unstrip recursion depth: 1/20
 Unstrip post‐expand size: 20450/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.033/15.000 seconds
+Lua time usage: 0.028/15.000 seconds
 Lua memory usage: 1462985/52428800 bytes
 Number of processed Cargo queries: 2
-Time spent processing Cargo queries: 0.012 s (avg. 0.006 s)
+Time spent processing Cargo queries: 0.009 s (avg. 0.004 s)
 Number of Cargo row insertion attempts: 2
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%  423.885      1 -total
- 61.36%  260.094      1 Template:Nav_Mechanic
- 60.65%  257.099      1 Template:Navbox
- 13.35%   56.571      1 Template:Infobox_Any
- 10.04%   42.561      1 Template:Breadcrumb_Auto
-  7.98%   33.828      6 Template:Inline_Icon
-  3.78%   16.023     13 Template:Difficulty
-  2.10%    8.917      2 Template:Cite_discord
-  1.70%    7.198      2 Template:Message_box
-  1.60%    6.769      1 Template:Cleanup
+100.00%  391.562      1 -total
+ 63.69%  249.380      1 Template:Nav_Mechanic
+ 63.08%  246.989      1 Template:Navbox
+ 12.19%   47.722      1 Template:Infobox_Any
+  8.88%   34.779      1 Template:Breadcrumb_Auto
+  7.46%   29.230      6 Template:Inline_Icon
+  3.92%   15.344     13 Template:Difficulty
+  1.95%    7.635      2 Template:Cite_discord
+  1.62%    6.341      2 Template:Message_box
+  1.44%    5.642      1 Template:Cleanup
 -->
 </div></div>
 </main>
