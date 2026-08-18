@@ -1,5 +1,10 @@
 # 汉化进度（自动更新）
 
+## 2026-08-18 任务 D：#69 附件段名术语生效收尾发布
+- E #67 新增术语（Optics→瞄准镜 / Underbarrel→下挂 / Muzzle→枪口 / Choke→喉缩）后，D 执行完整管线（--skip-sync）：
+  - 验收：177,304 链接全绿、1146 页 0 高危/0 中危/0 低危；10x_Sniper_Scope 面包屑实测"配件 → 瞄准镜 → 10倍狙击镜"，全站无 Optics 英文段名残留
+  - EXE 487MB；镜像 main **9e05d6f5 → ce0f21d1**
+
 ## 2026-08-18 任务 D：Kimi 审阅修复收尾发布（#57 串行管线）
 - D 修复：`build_site.py` drop_pat 表情词 `flex` → `\bflex\b`（消除 Reflex Sight / Reflex Sight Mk2 keep 误伤）；重跑 classify → page_cats 两附件补 type=attachment
 - E 完成页面修复 + UI/UX/样式改造（引导句/返回按钮/面包屑/筛选顺序/1100px/Infobox 320px/颜色中性化/Anatomy 自适应/武器卡片网格）后，D 统一跑完整管线：
