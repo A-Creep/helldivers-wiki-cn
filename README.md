@@ -32,8 +32,8 @@ python sync_update.py --all
 | `glossary.json` | 术语表：命中文本自动锁定翻译 |
 | `untranslated.json` / `untranslated.csv` | 待翻译文本（JSON / Excel 友好版） |
 | `output_zh/site` | 原站镜像（渲染 HTML + 原始图片，build_mirror.py 产物） |
-| `output_zh/site_final` | **离线中文站点**（约 1143 页 + 汉化缓存 `zh_cache.jsonl`） |
-| `dist/Helldivers2WikiCN.exe` | 离线阅读器（内置 WebView2 窗口，约 460MB） |
+| `output_zh/site_final` | **离线中文站点**（约 1146 页 + 汉化缓存 `zh_cache.jsonl`） |
+| `dist/Helldivers2WikiCN.exe` | 离线阅读器（内置 WebView2 窗口，约 487MB） |
 | `同步与打包指南.md` | 完整管线、增量流程、镜像推送、FAQ |
 | `PROGRESS.md` | 版本与进度记录 |
 
@@ -52,7 +52,7 @@ python wiki_extractor.py stats                       # 统计（页面/文本块
 python wiki_extractor.py update                      # 一键：增量同步+提取新增+构建
 
 # 站点构建管线（见 同步与打包指南.md）
-python build_site.py            # 汉化渲染约 1143 页（断点缓存 zh_cache.jsonl）
+python build_site.py            # 汉化渲染约 1146 页（断点缓存 zh_cache.jsonl）
 python strip_hd1.py             # 清除 HD1 残留块/navbox/章节
 python apply_zh_terms.py        # 渲染后术语/UI 英文替换
 python generate_index_pages.py  # 重建分类索引页 + 更新首页 NAV
@@ -93,7 +93,7 @@ translated.json 格式：
 
 - 数据：`output_zh/site_final`（汉化离线站点）
 - 打包：`python -m PyInstaller --noconfirm --clean Helldivers2WikiCN.spec`
-- 产物：`dist/Helldivers2WikiCN.exe`（约 460MB，双击即用；首次启动解压约 20~30 秒）
+- 产物：`dist/Helldivers2WikiCN.exe`（约 487MB，双击即用；首次启动解压约 20~30 秒）
 - 打包前若提示 EXE 被占用：`taskkill /IM Helldivers2WikiCN.exe /F`
 
 ## 发布镜像仓库

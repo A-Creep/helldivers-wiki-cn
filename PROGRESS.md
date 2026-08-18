@@ -1,5 +1,9 @@
 # 汉化进度（自动更新）
 
+## 2026-08-19 任务 D：工程文档补全（T-D-002）
+- 补全 README / PROGRESS / 同步与打包指南并刷新基线：site_final 1146 页、177,304 链接全绿、0 高危/0 中危/0 低危、EXE 487MB、missing_images 162 条
+- 同步更新本地与镜像仓文档副本；T-D-001 仍阻塞于 A 入库，未跑发布管线
+
 ## 2026-08-19 任务 D：敌人分类页种族配色发布
 - S #90 派单：E 的敌人分类页种族配色（#81/#84，机器人 #ff6161 / 终结族 #ffb901 / 光能族 #cd8aea，仅 enemies 分类页生效）统一发布；D 执行 `python sync_update.py --skip-sync --all` 完整管线：
   - 验收：177,304 链接全绿、1146 页 0 高危/0 中危/0 低危；enemies.html 含 faction-auto/termi/illum 三类阵营类、theme.css 三色号就位；LeadCheck 自动修复 1 页后 18 页引导句全部命中中文
@@ -164,15 +168,15 @@
 - **图片**：已压缩（大 PNG/GIF → WebP + 二次缩放 1280/q78），缺图 0
 - **构建流程**：build_site.py（汉化渲染+缓存）→ compress2.py → generate_index_pages.py → apply_zh_terms.py → PyInstaller
 
-## 当前统计（2026-08-18）
-- 页面总数：3,225（其中重定向 1,282）；site_final 保留子集：1,143 页
-- 总文本块：50,057；已翻译：13,319（锁定 901）；待翻译：35,837
-- site_final 页面：1,143；图片：8,169 张（missing_images.txt 记录 165 个缺失引用，随页面更新浮动）
-- 链接检查（E 图集/Media 删除后口径）：176,715 个全部正常（D 当天删除前实测为 353,723，口径不同属预期）
-- 上次同步：2026-08-18（增量更新 31 页）；上次操作：sync 增量
+## 当前统计（2026-08-19）
+- 页面总数：3,225（其中重定向 1,282）；site_final 保留子集：1,146 页
+- 总文本块：50,057；已翻译：19,075（锁定 901）；待翻译：30,081
+- site_final 页面：1,146；图片：8,169 张（missing_images.txt 记录 162 个缺失引用，随页面更新浮动）
+- 链接检查（E 图集/Media 删除后口径）：177,304 个全部正常
+- 上次发布：2026-08-19 敌人分类页种族配色（镜像 main bb3c221d，PROGRESS 57ee3fa2）；上次操作：sync_update.py --skip-sync --all
 - 已完页：敌人、武器、战略配备、护甲、近战、手雷、SEAF士兵、Major Orders of 2024（954）、Major Orders of 2025（全部）
-- 进行中：Major Orders 主页面（1,486 待译，已完成 75；批次文件 game_loc/mo_main_00.txt 起）
-- 下一步顺序：Major Orders 主页面 → Galactic War（1,231）→ 行星战史/Battle Log → 其余叙事页
+- 进行中：Major Orders 主页面（A 翻译驱动已暂停；批次文件 game_loc/mo_main_pending.txt 从第 75 行继续）
+- 下一步顺序：Major Orders 主页面 → Galactic War → 行星战史/Battle Log → 其余叙事页
 
 ## 已导入的翻译文件（本会话新增）
 - translated_mo25_013.json（150）
