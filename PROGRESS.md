@@ -1,5 +1,11 @@
 # 汉化进度（自动更新）
 
+## 2026-08-18 任务 D：Kimi 审阅修复收尾发布（#57 串行管线）
+- D 修复：`build_site.py` drop_pat 表情词 `flex` → `\bflex\b`（消除 Reflex Sight / Reflex Sight Mk2 keep 误伤）；重跑 classify → page_cats 两附件补 type=attachment
+- E 完成页面修复 + UI/UX/样式改造（引导句/返回按钮/面包屑/筛选顺序/1100px/Infobox 320px/颜色中性化/Anatomy 自适应/武器卡片网格）后，D 统一跑完整管线：
+  - 验收：**177,304 链接全绿、1146 页 0 高危/0 中危/0 低危**（Reflex Sight 2 页已入站点；Drum 回退被 lead_check 自动修复）
+  - EXE 486MB；镜像 main **c9249795 → c6af3614**
+
 ## 2026-08-18 任务 D：武器分类修复（S 派单 P0）+ 串行收尾发布
 - 排查（S #30 派单，只读）：原站 Weapons 三组 98 武器全部在 DB（无漏收录）；根因 `page_cats.json` 42 个武器 type 为空
 - P0 修复（D）：`classify_by_infobox.py` 正则支持下划线 `{{Infobox_Weapon` 与裸 `{{Weapon` 模板 → 重跑 page_cats.json → 原站 98 武器 0 空 type（weapon 36→78），params 补齐
