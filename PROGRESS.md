@@ -1,5 +1,12 @@
 # 汉化进度（自动更新）
 
+## 2026-08-18 任务 D：全量重建发布（A 今日翻译生效）
+- 背景：A 今日累计导入 +3,052 条翻译（translated 16,486 / pending 32,670），需重建站点生效；因导入未更新 updated_at，采用全量重建确保不漏
+- 执行：清空 `zh_cache.jsonl` → 全量重渲染 1143 页（886s）→ strip → terms（首次 Drum 引导句未命中，LeadCheck 拦截；单文件重跑 apply_zh_terms 修复后二次 terms 通过）→ index → verify → validate
+- 补拉 12 张全量重渲染后新引用图片（CE-64 Grenadier、PH-9 Predator 缩略图、Cape 系列、Obtruder、行星图等；直连 wiki.gg，代理当时未启动）
+- 验收：**177,057 链接全绿、1143 页 0 高危/0 中危/0 低危**；EXE 484MB；镜像 main **1ac7050 → 697ecff**
+- 期间发现：Clash 代理未运行（7890 不通）→ 已启动；wiki.gg 渲染/补图可直连，git push 需代理
+
 ## 2026-08-18 任务 D：引导句回退防护（响应 E #11）
 - 现象：E 发现 D 重建后 Drum_Magazine 引导句回退为英文残留（缓存与 apply_zh_terms 后处理脱节：build_site 从 zh_cache.jsonl 重写页面会覆盖 terms 后处理成果）
 - 改进：`sync_update.py` 新增 `step_lead_check`（terms 后、verify 前）——校验 LEAD_PAGE_FIXES 18 页均含期望中文引导句，缺失即终止发布并提示重跑 terms / 单页 invalidate；已通过回退模拟测试
