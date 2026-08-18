@@ -1,4574 +1,4574 @@
 {
-"AR-23 Liberator": {
-"file": "AR-23_Liberator.html",
-"zh": "AR-23 解放者"
-},
-"CQC-30 Stun Baton": {
-"file": "CQC-30_Stun_Baton.html",
-"zh": "CQC-30 眩晕短棍"
-},
-"Attachments": {
-"file": "Attachments.html",
-"zh": "配件"
-},
-"Eliminate Overseers": {
-"file": "Eliminate_Overseers.html",
-"zh": "消灭监视者"
-},
-"Maia/Battle Log": {
-"file": "Maia_Battle_Log.html",
-"zh": ""
-},
-"High-Quality Lubricant": {
-"file": "High-Quality_Lubricant.html",
-"zh": "优质润滑剂"
-},
-"1.002.104": {
-"file": "1.002.104.html",
-"zh": ""
-},
-"P/40-K Bolt Pistol": {
-"file": "P_40-K_Bolt_Pistol.html",
-"zh": "P/40-K 爆弹手枪"
-},
-"FLAM-40 Flamethrower": {
-"file": "FLAM-40_Flamethrower.html",
-"zh": "FLAM-40 火焰喷射器"
-},
-"1.002.001": {
-"file": "1.002.001.html",
-"zh": ""
-},
-"Launch ICBM": {
-"file": "Launch_ICBM.html",
-"zh": "发射洲际弹道导弹"
-},
-"Troubleshooting System Failure": {
-"file": "Troubleshooting_System_Failure.html",
-"zh": ""
-},
-"Eliminate Devastators": {
-"file": "Eliminate_Devastators.html",
-"zh": "消灭蹂躏者"
-},
-"Vehicle Repair Shop": {
-"file": "Vehicle_Repair_Shop.html",
-"zh": ""
-},
-"1.004.002": {
-"file": "1.004.002.html",
-"zh": ""
-},
-"Warbonds": {
-"file": "Warbonds.html",
-"zh": "战争债券"
-},
-"Missions": {
-"file": "Missions.html",
-"zh": "任务"
-},
-"Moon": {
-"file": "Moon.html",
-"zh": "月球"
-},
-"Illuminate": {
-"file": "Illuminate.html",
-"zh": "光能者"
-},
-"Advanced Automaton Backpack Stratagem Guide": {
-"file": "Advanced_Automaton_Backpack_Stratagem_Guide.html",
-"zh": ""
-},
-"Damage": {
-"file": "Damage.html",
-"zh": "伤害"
-},
-"Bile Spewer": {
-"file": "Bile_Spewer.html",
-"zh": "胆汁喷涌虫"
-},
-"Crashed Ship": {
-"file": "Crashed_Ship.html",
-"zh": "坠毁飞船"
-},
-"Grounded Warp Ship": {
-"file": "Grounded_Warp_Ship.html",
-"zh": ""
-},
-"Primordia/Battle Log": {
-"file": "Primordia_Battle_Log.html",
-"zh": ""
-},
-"CE-07 Demolition Specialist": {
-"file": "CE-07_Demolition_Specialist.html",
-"zh": "CE-07“拆除专家”"
-},
-"Retrieve Essential Personnel": {
-"file": "Retrieve_Essential_Personnel.html",
-"zh": "找回重要人员"
-},
-"Tarsh/Battle Log": {
-"file": "Tarsh_Battle_Log.html",
-"zh": ""
-},
-"Recover SSSD": {
-"file": "Recover_SSSD.html",
-"zh": "找回超级固态硬盘"
-},
-"Destroy Exospire": {
-"file": "Destroy_Exospire.html",
-"zh": "摧毁异界尖塔"
-},
-"Fractured Planet": {
-"file": "Fractured_Planet.html",
-"zh": "碎裂星球"
-},
-"AX/LAS-5 Rover": {
-"file": "AX_LAS-5_Rover.html",
-"zh": ""
-},
-"Oshaune/Battle Log": {
-"file": "Oshaune_Battle_Log.html",
-"zh": ""
-},
-"Game Mechanics": {
-"file": "Game_Mechanics.html",
-"zh": ""
-},
-"Lava Pits": {
-"file": "Lava_Pits.html",
-"zh": ""
-},
-"Seasse/Battle Log": {
-"file": "Seasse_Battle_Log.html",
-"zh": ""
-},
-"Nuke Nursery": {
-"file": "Nuke_Nursery.html",
-"zh": "用核武器炸毁繁育窝"
-},
-"Penta/Battles": {
-"file": "Penta_Battles.html",
-"zh": ""
-},
-"MLS-4X Commando": {
-"file": "MLS-4X_Commando.html",
-"zh": "MLS-4X突击兵"
-},
-"SG-88 Break-Action Shotgun": {
-"file": "SG-88_Break-Action_Shotgun.html",
-"zh": "SG-88 中折式霰弹枪"
-},
-"Streamlined Launch Process": {
-"file": "Streamlined_Launch_Process.html",
-"zh": "简化发射流程"
-},
-"Hammer": {
-"file": "Hammer.html",
-"zh": "之锤"
-},
-"Hellpod": {
-"file": "Hellpod.html",
-"zh": "绝地喷射舱"
-},
-"M90A Shotgun": {
-"file": "M90A_Shotgun.html",
-"zh": "M90A 霰弹枪"
-},
-"Data Center": {
-"file": "Data_Center.html",
-"zh": "数据中心"
-},
-"Activate TCS+ Station": {
-"file": "Activate_TCS+_Station.html",
-"zh": "启动TCS+站"
-},
-"Stalker": {
-"file": "Stalker.html",
-"zh": "追踪虫"
-},
-"EX-00 Prototype X": {
-"file": "EX-00_Prototype_X.html",
-"zh": "EX-00“原型X”"
-},
-"P-113 Verdict": {
-"file": "P-113_Verdict.html",
-"zh": "P-113 判决者"
-},
-"Orbital Airburst Strike": {
-"file": "Orbital_Airburst_Strike.html",
-"zh": "轨道空爆攻击"
-},
-"Ultramafic Mine": {
-"file": "Ultramafic_Mine.html",
-"zh": "超镁铁矿井"
-},
-"Illuminate Overship": {
-"file": "Illuminate_Overship.html",
-"zh": "光能者统御舰"
-},
-"1.004.102": {
-"file": "1.004.102.html",
-"zh": ""
-},
-"R-4 Hyena": {
-"file": "R-4_Hyena.html",
-"zh": "R-4 鬣狗"
-},
-"1.002.105": {
-"file": "1.002.105.html",
-"zh": ""
-},
-"Junkyard": {
-"file": "Junkyard.html",
-"zh": ""
-},
-"RE-824 Bearer of the Standard": {
-"file": "RE-824_Bearer_of_the_Standard.html",
-"zh": "RE-824“执旗手”"
-},
-"AX/TX-13 Dog Breath": {
-"file": "AX_TX-13_Dog_Breath.html",
-"zh": ""
-},
-"CQC-73 Entrenchment Tool": {
-"file": "CQC-73_Entrenchment_Tool.html",
-"zh": "CQC-73 堑壕工具"
-},
-"Radar Station": {
-"file": "Radar_Station.html",
-"zh": "雷达站"
-},
-"Places of Interest": {
-"file": "Places_of_Interest.html",
-"zh": ""
-},
-"AA Defenses": {
-"file": "AA_Defenses.html",
-"zh": "对空防御"
-},
-"CQC-72 Entrenchment Tool": {
-"file": "CQC-72_Entrenchment_Tool.html",
-"zh": "CQC-72 堑壕工具"
-},
-"W:en:Module talk:Protection banner": {
-"file": "W_en_Module_talk_Protection_banner.html",
-"zh": ""
-},
-"1.006.204": {
-"file": "1.006.204.html",
-"zh": ""
-},
-"Devastator": {
-"file": "Devastator.html",
-"zh": "蹂躏者"
-},
-"In-Game Problems": {
-"file": "In-Game_Problems.html",
-"zh": ""
-},
-"Meissa/Battle Log": {
-"file": "Meissa_Battle_Log.html",
-"zh": ""
-},
-"Colonies": {
-"file": "Colonies.html",
-"zh": ""
-},
-"Electrical Conduit": {
-"file": "Electrical_Conduit.html",
-"zh": "电路导管"
-},
-"P-92 Warrant": {
-"file": "P-92_Warrant.html",
-"zh": "P-92 法令"
-},
-"Shete/Battle Log": {
-"file": "Shete_Battle_Log.html",
-"zh": ""
-},
-"Troubleshooting Stutters/Short Freezes": {
-"file": "Troubleshooting_Stutters_Short_Freezes.html",
-"zh": ""
-},
-"Blitz: Suppress Toxic Pollination": {
-"file": "Blitz_Suppress_Toxic_Pollination.html",
-"zh": ""
-},
-"Democracy Space Station": {
-"file": "Democracy_Space_Station.html",
-"zh": "民主空间站"
-},
-"Krakatwo/Battle Log": {
-"file": "Krakatwo_Battle_Log.html",
-"zh": ""
-},
-"Kelvinor/Battle Log": {
-"file": "Kelvinor_Battle_Log.html",
-"zh": ""
-},
-"Intercept Convoy": {
-"file": "Intercept_Convoy.html",
-"zh": "拦截车队"
-},
-"RD-4/Battle Log": {
-"file": "RD-4_Battle_Log.html",
-"zh": ""
-},
-"Valley": {
-"file": "Valley.html",
-"zh": "山谷"
-},
-"1.000.202": {
-"file": "1.000.202.html",
-"zh": ""
-},
-"Super Earth Flag": {
-"file": "Super_Earth_Flag.html",
-"zh": "超级地球旗帜"
-},
-"AC-2 Obedient": {
-"file": "AC-2_Obedient.html",
-"zh": "AC-2“服从指挥”"
-},
-"B/MD C4 Pack": {
-"file": "B_MD_C4_Pack.html",
-"zh": "B/MD C4 炸药包"
-},
-"1.006.300": {
-"file": "1.006.300.html",
-"zh": ""
-},
-"Conventional Black Hole": {
-"file": "Conventional_Black_Hole.html",
-"zh": "常规黑洞"
-},
-"Angled Foregrip": {
-"file": "Angled_Foregrip.html",
-"zh": "直角前握把"
-},
-"Turing/Battle Log": {
-"file": "Turing_Battle_Log.html",
-"zh": ""
-},
-"P-4 Senator": {
-"file": "P-4_Senator.html",
-"zh": "P-4参议员"
-},
-"Solghast/Battle Log": {
-"file": "Solghast_Battle_Log.html",
-"zh": ""
-},
-"1.004.100": {
-"file": "1.004.100.html",
-"zh": ""
-},
-"Dragonroach": {
-"file": "Dragonroach.html",
-"zh": "蟑龙"
-},
-"High-Value Pickup": {
-"file": "High-Value_Pickup.html",
-"zh": ""
-},
-"Skaash/Battle Log": {
-"file": "Skaash_Battle_Log.html",
-"zh": ""
-},
-"Half Choke": {
-"file": "Half_Choke.html",
-"zh": "半喉缩"
-},
-"Partion/Battle Log": {
-"file": "Partion_Battle_Log.html",
-"zh": ""
-},
-"ARC-3 Arc Thrower": {
-"file": "ARC-3_Arc_Thrower.html",
-"zh": "ARC-3 电弧发射器"
-},
-"Reinforced Scout Strider": {
-"file": "Reinforced_Scout_Strider.html",
-"zh": "强化侦察纵步者"
-},
-"Orbital Precision Strike": {
-"file": "Orbital_Precision_Strike.html",
-"zh": "轨道精准打击"
-},
-"1.002.200": {
-"file": "1.002.200.html",
-"zh": ""
-},
-"Leviathan Blockade": {
-"file": "Leviathan_Blockade.html",
-"zh": "利维坦封锁屏障"
-},
-"Input Problems": {
-"file": "Input_Problems.html",
-"zh": ""
-},
-"P-2 Peacemaker": {
-"file": "P-2_Peacemaker.html",
-"zh": "P-2 和平使者"
-},
-"A-9 Helljumper": {
-"file": "A-9_Helljumper.html",
-"zh": "A-9“地狱伞兵”"
-},
-"Restart Pumps": {
-"file": "Restart_Pumps.html",
-"zh": "重启泵机"
-},
-"B-01 Tactical": {
-"file": "B-01_Tactical.html",
-"zh": "B-01战术"
-},
-"Osupsam/Battle Log": {
-"file": "Osupsam_Battle_Log.html",
-"zh": ""
-},
-"Charger": {
-"file": "Charger.html",
-"zh": "强袭虫"
-},
-"Extreme Cold": {
-"file": "Extreme_Cold.html",
-"zh": "极寒"
-},
-"SA-04 Combat Technician": {
-"file": "SA-04_Combat_Technician.html",
-"zh": "SA-04“技术兵”"
-},
-"CE-74 Breaker": {
-"file": "CE-74_Breaker.html",
-"zh": "CE-74“破裂者”"
-},
-"Vitality Enhancement": {
-"file": "Vitality_Enhancement.html",
-"zh": "生命力强化"
-},
-"Crimsica/Battles": {
-"file": "Crimsica_Battles.html",
-"zh": ""
-},
-"1.000.13": {
-"file": "1.000.13.html",
-"zh": ""
-},
-"LAS-58 Talon": {
-"file": "LAS-58_Talon.html",
-"zh": "LAS-58 猛爪"
-},
-"1.000.405": {
-"file": "1.000.405.html",
-"zh": ""
-},
-"Meridia/Battle Log": {
-"file": "Meridia_Battle_Log.html",
-"zh": ""
-},
-"NUX-223 Hellbomb": {
-"file": "NUX-223_Hellbomb.html",
-"zh": ""
-},
-"Assault Raider": {
-"file": "Assault_Raider.html",
-"zh": "特攻奇袭者"
-},
-"EAT-17 Expendable Anti-Tank": {
-"file": "EAT-17_Expendable_Anti-Tank.html",
-"zh": "EAT-17消耗性反坦克"
-},
-"Rapid Launch System": {
-"file": "Rapid_Launch_System.html",
-"zh": "疾速发射系统"
-},
-"Alpha Warrior": {
-"file": "Alpha_Warrior.html",
-"zh": ""
-},
-"Gunship": {
-"file": "Gunship.html",
-"zh": "炮舰"
-},
-"Demiurg/Battle Log": {
-"file": "Demiurg_Battle_Log.html",
-"zh": ""
-},
-"Bulk Fabricator": {
-"file": "Bulk_Fabricator.html",
-"zh": "巨型构筑者"
-},
-"Steeled Veterans Premium Warbond": {
-"file": "Steeled_Veterans_Premium_Warbond.html",
-"zh": ""
-},
-"Eradicate Automaton Forces": {
-"file": "Eradicate_Automaton_Forces.html",
-"zh": "彻底消灭机器人部队"
-},
-"TR-40 Gold Eagle": {
-"file": "TR-40_Gold_Eagle.html",
-"zh": "TR-40“金鹰”"
-},
-"Maximum Security City Construction Site": {
-"file": "Maximum_Security_City_Construction_Site.html",
-"zh": ""
-},
-"AC-1 Dutiful": {
-"file": "AC-1_Dutiful.html",
-"zh": "AC-1“恪尽职守”"
-},
-"M-105 Stalwart": {
-"file": "M-105_Stalwart.html",
-"zh": "M-105 盟友"
-},
-"Advanced Filtration": {
-"file": "Advanced_Filtration.html",
-"zh": "高级过滤能力"
-},
-"Hellpod Space Optimization": {
-"file": "Hellpod_Space_Optimization.html",
-"zh": "绝地喷射舱空间优化"
-},
-"DP-11 Champion of the People": {
-"file": "DP-11_Champion_of_the_People.html",
-"zh": "DP-11“人民捍卫者”"
-},
-"1.000.006": {
-"file": "1.000.006.html",
-"zh": ""
-},
-"Oasis/Battle Log": {
-"file": "Oasis_Battle_Log.html",
-"zh": ""
-},
-"1.003.001": {
-"file": "1.003.001.html",
-"zh": ""
-},
-"Volcanic Jungle": {
-"file": "Volcanic_Jungle.html",
-"zh": ""
-},
-"Jet Brigade Trooper": {
-"file": "Jet_Brigade_Trooper.html",
-"zh": "喷气旅装甲兵"
-},
-"Laser Sight Angled Foregrip": {
-"file": "Laser_Sight_Angled_Foregrip.html",
-"zh": "激光瞄准器与直角前握把"
-},
-"Mantes/Fanon": {
-"file": "Mantes_Fanon.html",
-"zh": ""
-},
-"Bug Hole": {
-"file": "Bug_Hole.html",
-"zh": "虫穴"
-},
-"Trandor/Battle Log": {
-"file": "Trandor_Battle_Log.html",
-"zh": ""
-},
-"Mog/Battle Log": {
-"file": "Mog_Battle_Log.html",
-"zh": ""
-},
-"Effects": {
-"file": "Effects.html",
-"zh": "效果"
-},
-"MG-206 Heavy Machine Gun": {
-"file": "MG-206_Heavy_Machine_Gun.html",
-"zh": "MG-206重型机枪"
-},
-"Activate Oil Pumps": {
-"file": "Activate_Oil_Pumps.html",
-"zh": "启动油泵"
-},
-"1.002.101": {
-"file": "1.002.101.html",
-"zh": ""
-},
-"Muzzle Brake": {
-"file": "Muzzle_Brake.html",
-"zh": "枪口制退器"
-},
-"Sandstorms": {
-"file": "Sandstorms.html",
-"zh": "沙暴"
-},
-"RL-77 Airburst Rocket Launcher": {
-"file": "RL-77_Airburst_Rocket_Launcher.html",
-"zh": "RL-77 空爆火箭弹发射器"
-},
-"Cleanse Infested District": {
-"file": "Cleanse_Infested_District.html",
-"zh": "净化侵染区域"
-},
-"EXO-49 Emancipator Exosuit": {
-"file": "EXO-49_Emancipator_Exosuit.html",
-"zh": ""
-},
-"Reaf/Battle Log": {
-"file": "Reaf_Battle_Log.html",
-"zh": ""
-},
-"Peacock/Battle Log": {
-"file": "Peacock_Battle_Log.html",
-"zh": ""
-},
-"G/40-K Melta Mine": {
-"file": "G_40-K_Melta_Mine.html",
-"zh": "G/40-K 熔解地雷"
-},
-"Karlia/Battle Log": {
-"file": "Karlia_Battle_Log.html",
-"zh": ""
-},
-"SG-20 Halt": {
-"file": "SG-20_Halt.html",
-"zh": "SG-20 止息"
-},
-"Last Great War": {
-"file": "Last_Great_War.html",
-"zh": ""
-},
-"Stratagem Jammer": {
-"file": "Stratagem_Jammer.html",
-"zh": "战略配备干扰装置"
-},
-"SA-32 Dynamo": {
-"file": "SA-32_Dynamo.html",
-"zh": "SA-32“精力充沛”"
-},
-"B-24 Enforcer": {
-"file": "B-24_Enforcer.html",
-"zh": "B-24“执行者”"
-},
-"SG-225 Breaker": {
-"file": "SG-225_Breaker.html",
-"zh": "SG-225 破裂者"
-},
-"Spore Spewer": {
-"file": "Spore_Spewer.html",
-"zh": "孢子喷涌虫"
-},
-"Flexible Reinforcement Budget": {
-"file": "Flexible_Reinforcement_Budget.html",
-"zh": "灵活增援预算"
-},
-"Med-Kit": {
-"file": "Med-Kit.html",
-"zh": "急救包"
-},
-"Penta/Battle Log": {
-"file": "Penta_Battle_Log.html",
-"zh": ""
-},
-"1.002.106": {
-"file": "1.002.106.html",
-"zh": ""
-},
-"Zefia/Battle Log": {
-"file": "Zefia_Battle_Log.html",
-"zh": ""
-},
-"CQC-2 Saber": {
-"file": "CQC-2_Saber.html",
-"zh": "CQC-2 军刀"
-},
-"Enhanced Combustion": {
-"file": "Enhanced_Combustion.html",
-"zh": "强化燃烧"
-},
-"No Choke": {
-"file": "No_Choke.html",
-"zh": "无喉缩"
-},
-"Ethereal Jungle": {
-"file": "Ethereal_Jungle.html",
-"zh": ""
-},
-"Choohe/Battle Log": {
-"file": "Choohe_Battle_Log.html",
-"zh": ""
-},
-"Claorell/Battle Log": {
-"file": "Claorell_Battle_Log.html",
-"zh": ""
-},
-"Estanu/Battle Log": {
-"file": "Estanu_Battle_Log.html",
-"zh": ""
-},
-"Achievements": {
-"file": "Achievements.html",
-"zh": ""
-},
-"Brilliance/Battle Log": {
-"file": "Brilliance_Battle_Log.html",
-"zh": ""
-},
-"Acidic Badlands": {
-"file": "Acidic_Badlands.html",
-"zh": ""
-},
-"Flora": {
-"file": "Flora.html",
-"zh": "植物群"
-},
-"SR-64 Cinderblock": {
-"file": "SR-64_Cinderblock.html",
-"zh": "SR-64“煤渣砖”"
-},
-"Full Choke": {
-"file": "Full_Choke.html",
-"zh": "全喉缩"
-},
-"DBS-2 Double Freedom": {
-"file": "DBS-2_Double_Freedom.html",
-"zh": "DBS-2 双重自由"
-},
-"Deciduous Forest": {
-"file": "Deciduous_Forest.html",
-"zh": ""
-},
-"Warrior": {
-"file": "Warrior.html",
-"zh": "武斗虫"
-},
-"GR-8 Recoilless Rifle": {
-"file": "GR-8_Recoilless_Rifle.html",
-"zh": "GR-8 无后坐力炮"
-},
-"Eagle Strafing Run": {
-"file": "Eagle_Strafing_Run.html",
-"zh": "“飞鹰”机枪扫射"
-},
-"Physical Conditions": {
-"file": "Physical_Conditions.html",
-"zh": ""
-},
-"Annex Untapped Mineral Sites": {
-"file": "Annex_Untapped_Mineral_Sites.html",
-"zh": "吞并未开发的矿点"
-},
-"TR-62 Knight": {
-"file": "TR-62_Knight.html",
-"zh": "TR-62“骑士”"
-},
-"Entrenchment": {
-"file": "Entrenchment.html",
-"zh": ""
-},
-"1.000.305": {
-"file": "1.000.305.html",
-"zh": ""
-},
-"SR-18 Roadblock": {
-"file": "SR-18_Roadblock.html",
-"zh": "SR-18“路障”"
-},
-"Volterra/Battle Log": {
-"file": "Volterra_Battle_Log.html",
-"zh": ""
-},
-"1.003.101": {
-"file": "1.003.101.html",
-"zh": ""
-},
-"Purge Hatcheries": {
-"file": "Purge_Hatcheries.html",
-"zh": "清除孵化点"
-},
-"Cross-Platform Compatibility": {
-"file": "Cross-Platform_Compatibility.html",
-"zh": "跨平台兼容"
-},
-"Helldivers Mobilize Warbond": {
-"file": "Helldivers_Mobilize_Warbond.html",
-"zh": ""
-},
-"Impaler": {
-"file": "Impaler.html",
-"zh": "穿刺虫"
-},
-"I-102 Draconaught": {
-"file": "I-102_Draconaught.html",
-"zh": "I-102“龙行者”"
-},
-"Siege-Ready": {
-"file": "Siege-Ready.html",
-"zh": "蓄势出击"
-},
-"Eagle Rearm": {
-"file": "Eagle_Rearm.html",
-"zh": "重新武装“飞鹰”"
-},
-"Recoil": {
-"file": "Recoil.html",
-"zh": "后坐力"
-},
-"Menkent/Battle Log": {
-"file": "Menkent_Battle_Log.html",
-"zh": ""
-},
-"StA-52 Assault Rifle": {
-"file": "StA-52_Assault_Rifle.html",
-"zh": "StA-52突击步枪"
-},
-"CPR-80 Bulwark": {
-"file": "CPR-80_Bulwark.html",
-"zh": "CPR-80 “壁垒”"
-},
-"Call In Super Destroyer": {
-"file": "Call_In_Super_Destroyer.html",
-"zh": "呼叫超级驱逐舰"
-},
-"Automaton Hazards": {
-"file": "Automaton_Hazards.html",
-"zh": ""
-},
-"Calypso/Battle Log": {
-"file": "Calypso_Battle_Log.html",
-"zh": ""
-},
-"1.001.003": {
-"file": "1.001.003.html",
-"zh": ""
-},
-"CE-27 Ground Breaker": {
-"file": "CE-27_Ground_Breaker.html",
-"zh": "CE-27“裂地者”"
-},
-"TED-63 Dynamite": {
-"file": "TED-63_Dynamite.html",
-"zh": "TED-63 炸药"
-},
-"BIOS Updates": {
-"file": "BIOS_Updates.html",
-"zh": ""
-},
-"Zero-G Breech Loading": {
-"file": "Zero-G_Breech_Loading.html",
-"zh": "零重力后膛装弹"
-},
-"The Helldivers": {
-"file": "The_Helldivers.html",
-"zh": ""
-},
-"Bile Spitter": {
-"file": "Bile_Spitter.html",
-"zh": "胆汁吐沫虫"
-},
-"Emeria/Battle Log": {
-"file": "Emeria_Battle_Log.html",
-"zh": ""
-},
-"Dynamic Tracking": {
-"file": "Dynamic_Tracking.html",
-"zh": "动态追踪"
-},
-"Raze Strategic Infrastructure": {
-"file": "Raze_Strategic_Infrastructure.html",
-"zh": "摧毁战略基础设施"
-},
-"Eliminate Automaton Hulks": {
-"file": "Eliminate_Automaton_Hulks.html",
-"zh": "消灭机器人巨型者"
-},
-"1.003.002": {
-"file": "1.003.002.html",
-"zh": ""
-},
-"RS-422 Railgun": {
-"file": "RS-422_Railgun.html",
-"zh": "RS-422 磁轨炮"
-},
-"Peak Physique": {
-"file": "Peak_Physique.html",
-"zh": "健壮体格"
-},
-"Warhammer": {
-"file": "Warhammer.html",
-"zh": ""
-},
-"Hive Breaker Drill": {
-"file": "Hive_Breaker_Drill.html",
-"zh": "“虫窝破裂者”钻机"
-},
-"Operation Swift Disassembly": {
-"file": "Operation_Swift_Disassembly.html",
-"zh": ""
-},
-"Crucible/Battle Log": {
-"file": "Crucible_Battle_Log.html",
-"zh": ""
-},
-"Exo Experts Premium Warbond": {
-"file": "Exo_Experts_Premium_Warbond.html",
-"zh": ""
-},
-"Chart Terminid Tunnels": {
-"file": "Chart_Terminid_Tunnels.html",
-"zh": "绘制终结族隧道网络"
-},
-"Jet Brigade Devastator": {
-"file": "Jet_Brigade_Devastator.html",
-"zh": ""
-},
-"Veld/Battles": {
-"file": "Veld_Battles.html",
-"zh": ""
-},
-"Redacted Regiment Premium Warbond": {
-"file": "Redacted_Regiment_Premium_Warbond.html",
-"zh": ""
-},
-"Ground Stash": {
-"file": "Ground_Stash.html",
-"zh": ""
-},
-"Collect Meteorological Data": {
-"file": "Collect_Meteorological_Data.html",
-"zh": "收集气象数据"
-},
-"Borderline Justice Premium Warbond": {
-"file": "Borderline_Justice_Premium_Warbond.html",
-"zh": ""
-},
-"Gatekeeper": {
-"file": "Gatekeeper.html",
-"zh": "御门者"
-},
-"Minor Locations": {
-"file": "Minor_Locations.html",
-"zh": ""
-},
-"Righteous Revenants Legendary Warbond": {
-"file": "Righteous_Revenants_Legendary_Warbond.html",
-"zh": ""
-},
-"Bile Warrior": {
-"file": "Bile_Warrior.html",
-"zh": "吐酸武斗虫"
-},
-"Crash To Desktop": {
-"file": "Crash_To_Desktop.html",
-"zh": ""
-},
-"1.000.000": {
-"file": "1.000.000.html",
-"zh": ""
-},
-"1.003.004": {
-"file": "1.003.004.html",
-"zh": ""
-},
-"1.003.202": {
-"file": "1.003.202.html",
-"zh": ""
-},
-"1.006.100": {
-"file": "1.006.100.html",
-"zh": ""
-},
-"Seize Industrial Complex": {
-"file": "Seize_Industrial_Complex.html",
-"zh": "占领工业联合体"
-},
-"TD-220 Bastion MK XVI": {
-"file": "TD-220_Bastion_MK_XVI.html",
-"zh": ""
-},
-"LAS-7 Dagger": {
-"file": "LAS-7_Dagger.html",
-"zh": "LAS-7 匕首"
-},
-"Alpha Commander": {
-"file": "Alpha_Commander.html",
-"zh": "阿尔法指挥官"
-},
-"MP-98 Knight": {
-"file": "MP-98_Knight.html",
-"zh": "MP-98 骑士"
-},
-"BP-77 Grand Juror": {
-"file": "BP-77_Grand_Juror.html",
-"zh": "BP-77“大陪审员”"
-},
-"Sprite/sandbox": {
-"file": "Sprite_sandbox.html",
-"zh": ""
-},
-"1.001.102": {
-"file": "1.001.102.html",
-"zh": ""
-},
-"Streamlined Request Process": {
-"file": "Streamlined_Request_Process.html",
-"zh": "简化申请流程"
-},
-"Ubanea/Battle Log": {
-"file": "Ubanea_Battle_Log.html",
-"zh": ""
-},
-"B/FLAM-80 Cremator": {
-"file": "B_FLAM-80_Cremator.html",
-"zh": "B/FLAM-80 焚燃者"
-},
-"Scratchpad/Weapons": {
-"file": "Scratchpad_Weapons.html",
-"zh": ""
-},
-"Control Center": {
-"file": "Control_Center.html",
-"zh": "控制中心"
-},
-"Cannon Turret": {
-"file": "Cannon_Turret.html",
-"zh": "加农炮台"
-},
-"Entrenched Division Premium Warbond": {
-"file": "Entrenched_Division_Premium_Warbond.html",
-"zh": ""
-},
-"GP-31 Grenade Pistol": {
-"file": "GP-31_Grenade_Pistol.html",
-"zh": "GP-31 榴弹手枪"
-},
-"SMG-203 Gallant": {
-"file": "SMG-203_Gallant.html",
-"zh": "SMG-203 英勇无畏"
-},
-"Fenmire/Battle Log": {
-"file": "Fenmire_Battle_Log.html",
-"zh": ""
-},
-"AR-23C Liberator Concussive": {
-"file": "AR-23C_Liberator_Concussive.html",
-"zh": "AR-23C 震荡解放者"
-},
-"M7S SMG": {
-"file": "M7S_SMG.html",
-"zh": "M7S 冲锋枪"
-},
-"Iridica/Battle Log": {
-"file": "Iridica_Battle_Log.html",
-"zh": ""
-},
-"1.006.003": {
-"file": "1.006.003.html",
-"zh": ""
-},
-"AD-49 Apollonian": {
-"file": "AD-49_Apollonian.html",
-"zh": "AD-49“阿波罗神”"
-},
-"Minchir/Battle Log": {
-"file": "Minchir_Battle_Log.html",
-"zh": ""
-},
-"Spore Burst Hunter": {
-"file": "Spore_Burst_Hunter.html",
-"zh": "孢裂追猎虫"
-},
-"Hydrobius/Battle Log": {
-"file": "Hydrobius_Battle_Log.html",
-"zh": ""
-},
-"Durgen/Battle Log": {
-"file": "Durgen_Battle_Log.html",
-"zh": ""
-},
-"1.006.203": {
-"file": "1.006.203.html",
-"zh": ""
-},
-"Structures": {
-"file": "Structures.html",
-"zh": ""
-},
-"E/GL-21 Grenadier Battlement": {
-"file": "E_GL-21_Grenadier_Battlement.html",
-"zh": ""
-},
-"Equipment Traits": {
-"file": "Equipment_Traits.html",
-"zh": ""
-},
-"1.004.000": {
-"file": "1.004.000.html",
-"zh": ""
-},
-"Masters of Ceremony Premium Warbond": {
-"file": "Masters_of_Ceremony_Premium_Warbond.html",
-"zh": ""
-},
-"4x Combat Scope": {
-"file": "4x_Combat_Scope.html",
-"zh": "4倍战斗瞄准镜"
-},
-"Automatons": {
-"file": "Automatons.html",
-"zh": "机器人"
-},
-"Status Effects": {
-"file": "Status_Effects.html",
-"zh": ""
-},
-"Fortified": {
-"file": "Fortified.html",
-"zh": "强化"
-},
-"SEAF SAM Site": {
-"file": "SEAF_SAM_Site.html",
-"zh": ""
-},
-"Mortar Emplacement": {
-"file": "Mortar_Emplacement.html",
-"zh": "迫击炮台"
-},
-"Eradicate": {
-"file": "Eradicate.html",
-"zh": "歼灭"
-},
-"Supply": {
-"file": "Supply.html",
-"zh": "补给"
-},
-"Cyberstan/Battle Log": {
-"file": "Cyberstan_Battle_Log.html",
-"zh": ""
-},
-"Complex Stratagem Plotting": {
-"file": "Complex_Stratagem_Plotting.html",
-"zh": "复杂的战略配备部署流程"
-},
-"GPU Driver Recommendation": {
-"file": "GPU_Driver_Recommendation.html",
-"zh": ""
-},
-"Training Manual Tips": {
-"file": "Training_Manual_Tips.html",
-"zh": "训练手册提示"
-},
-"Liquid-Ventilated Cockpit": {
-"file": "Liquid-Ventilated_Cockpit.html",
-"zh": "液态通风驾驶舱"
-},
-"Orbital Napalm Barrage": {
-"file": "Orbital_Napalm_Barrage.html",
-"zh": "轨道凝固汽油弹火力网"
-},
-"Electronic Countermeasures": {
-"file": "Electronic_Countermeasures.html",
-"zh": "电子对抗"
-},
-"Spore Burst Bile Titan": {
-"file": "Spore_Burst_Bile_Titan.html",
-"zh": ""
-},
-"1.000.001": {
-"file": "1.000.001.html",
-"zh": ""
-},
-"CE-35 Trench Engineer": {
-"file": "CE-35_Trench_Engineer.html",
-"zh": "CE-35“战壕工程师”"
-},
-"Robotics Workshop": {
-"file": "Robotics_Workshop.html",
-"zh": "机械工坊"
-},
-"EAT-411 Leveller": {
-"file": "EAT-411_Leveller.html",
-"zh": "EAT-411 荡平者"
-},
-"Destroy Spore Lung": {
-"file": "Destroy_Spore_Lung.html",
-"zh": "摧毁孢肺"
-},
-"MD-8 Gas Mines": {
-"file": "MD-8_Gas_Mines.html",
-"zh": ""
-},
-"Scavenger": {
-"file": "Scavenger.html",
-"zh": "食腐虫"
-},
-"Helldiver Training Facilities": {
-"file": "Helldiver_Training_Facilities.html",
-"zh": "绝地潜兵训练基地"
-},
-"Eliminate Chargers": {
-"file": "Eliminate_Chargers.html",
-"zh": "消灭强袭虫"
-},
-"Network Troubleshooting": {
-"file": "Network_Troubleshooting.html",
-"zh": ""
-},
-"Blistica/Battle Log": {
-"file": "Blistica_Battle_Log.html",
-"zh": ""
-},
-"FS-05 Marksman": {
-"file": "FS-05_Marksman.html",
-"zh": "FS-05“神射手”"
-},
-"Ground All-Terrain Extraction Rig (GATER)": {
-"file": "Ground_All-Terrain_Extraction_Rig_(GATER).html",
-"zh": ""
-},
-"M-1000 Maxigun": {
-"file": "M-1000_Maxigun.html",
-"zh": "M-1000 重装机枪"
-},
-"Seismic Probe": {
-"file": "Seismic_Probe.html",
-"zh": "地震探测仪"
-},
-"Stout/Battle Log": {
-"file": "Stout_Battle_Log.html",
-"zh": ""
-},
-"SoS Beacon": {
-"file": "SoS_Beacon.html",
-"zh": "S.O.S.求救信标"
-},
-"A/MG-43 Machine Gun Sentry": {
-"file": "A_MG-43_Machine_Gun_Sentry.html",
-"zh": ""
-},
-"Advanced Automaton Vehicle Guide": {
-"file": "Advanced_Automaton_Vehicle_Guide.html",
-"zh": ""
-},
-"Ionic Jungle": {
-"file": "Ionic_Jungle.html",
-"zh": ""
-},
-"1.006.251": {
-"file": "1.006.251.html",
-"zh": ""
-},
-"Adhara/Battle Log": {
-"file": "Adhara_Battle_Log.html",
-"zh": ""
-},
-"User Settings Config FPS Optimization": {
-"file": "User_Settings_Config_FPS_Optimization.html",
-"zh": ""
-},
-"Eukoria/Battle Log": {
-"file": "Eukoria_Battle_Log.html",
-"zh": ""
-},
-"Vox Engine": {
-"file": "Vox_Engine.html",
-"zh": "噪轰引擎"
-},
-"Advanced Crew Training": {
-"file": "Advanced_Crew_Training.html",
-"zh": "高级船员训练"
-},
-"Upload Data": {
-"file": "Upload_Data.html",
-"zh": "上传数据"
-},
-"SMG/FLAM-34 Stoker": {
-"file": "SMG_FLAM-34_Stoker.html",
-"zh": "SMG/FLAM-34 司炉者"
-},
-"Factory Strider": {
-"file": "Factory_Strider.html",
-"zh": "移动工厂"
-},
-"Desert Cliffs": {
-"file": "Desert_Cliffs.html",
-"zh": ""
-},
-"Propus/Battle Log": {
-"file": "Propus_Battle_Log.html",
-"zh": ""
-},
-"Heeth/Battle Log": {
-"file": "Heeth_Battle_Log.html",
-"zh": ""
-},
-"PH-56 Jaguar": {
-"file": "PH-56_Jaguar.html",
-"zh": "PH-56“捷豹”"
-},
-"Advanced Construction": {
-"file": "Advanced_Construction.html",
-"zh": "高级构造"
-},
-"1.006.101": {
-"file": "1.006.101.html",
-"zh": ""
-},
-"Heavy Devastator": {
-"file": "Heavy_Devastator.html",
-"zh": "重型蹂躏者"
-},
-"Lesath/Battle Log": {
-"file": "Lesath_Battle_Log.html",
-"zh": ""
-},
-"CQC-1 One True Flag": {
-"file": "CQC-1_One_True_Flag.html",
-"zh": "CQC-1 唯一真旗"
-},
-"Marauder": {
-"file": "Marauder.html",
-"zh": "劫掠者"
-},
-"Kuma/Battle Log": {
-"file": "Kuma_Battle_Log.html",
-"zh": ""
-},
-"Martale/Battles": {
-"file": "Martale_Battles.html",
-"zh": ""
-},
-"Hunter": {
-"file": "Hunter.html",
-"zh": "追猎虫"
-},
-"Eradicate Terminid Swarm": {
-"file": "Eradicate_Terminid_Swarm.html",
-"zh": "剿灭终结族虫群"
-},
-"Servo-Assisted": {
-"file": "Servo-Assisted.html",
-"zh": "伺服辅助"
-},
-"MD-6 Anti-Personnel Minefield": {
-"file": "MD-6_Anti-Personnel_Minefield.html",
-"zh": ""
-},
-"SG-451 Cookout": {
-"file": "SG-451_Cookout.html",
-"zh": "SG-451 野炊"
-},
-"M-103 Supply FRV": {
-"file": "M-103_Supply_FRV.html",
-"zh": ""
-},
-"CM-10 Clinician": {
-"file": "CM-10_Clinician.html",
-"zh": "CM-10“临床医师”"
-},
-"Elevated Overseer": {
-"file": "Elevated_Overseer.html",
-"zh": "崇高监视者"
-},
-"Pouncer": {
-"file": "Pouncer.html",
-"zh": "猛扑虫"
-},
-"SH-32 Shield Generator Pack": {
-"file": "SH-32_Shield_Generator_Pack.html",
-"zh": ""
-},
-"Stingray": {
-"file": "Stingray.html",
-"zh": "刺魟"
-},
-"Orbital 120mm HE Barrage": {
-"file": "Orbital_120mm_HE_Barrage.html",
-"zh": "轨道120mm高爆弹火力网"
-},
-"1.001.202": {
-"file": "1.001.202.html",
-"zh": ""
-},
-"Damaged Hellbomb": {
-"file": "Damaged_Hellbomb.html",
-"zh": ""
-},
-"VG-70 Variable": {
-"file": "VG-70_Variable.html",
-"zh": "VG-70 变数"
-},
-"Pit Crew Hazard Pay": {
-"file": "Pit_Crew_Hazard_Pay.html",
-"zh": "维修人员危险津贴"
-},
-"Democratize the Void": {
-"file": "Democratize_the_Void.html",
-"zh": "民主解放寂域"
-},
-"No Attachment": {
-"file": "No_Attachment.html",
-"zh": "无配件"
-},
-"1.001.203": {
-"file": "1.001.203.html",
-"zh": ""
-},
-"1.000.005": {
-"file": "1.000.005.html",
-"zh": ""
-},
-"A/FLAM-40 Flame Sentry": {
-"file": "A_FLAM-40_Flame_Sentry.html",
-"zh": ""
-},
-"FLAM-66 Torcher": {
-"file": "FLAM-66_Torcher.html",
-"zh": "FLAM-66 火炬手"
-},
-"40-K Meltagun": {
-"file": "40-K_Meltagun.html",
-"zh": "40-K熔体枪"
-},
-"Patriotic Administration Center": {
-"file": "Patriotic_Administration_Center.html",
-"zh": "爱国行政中心"
-},
-"CB-9 Exploding Crossbow": {
-"file": "CB-9_Exploding_Crossbow.html",
-"zh": "CB-9 爆炸弩"
-},
-"1.000.104": {
-"file": "1.000.104.html",
-"zh": ""
-},
-"Mort/Battle Log": {
-"file": "Mort_Battle_Log.html",
-"zh": ""
-},
-"Super Sample Rock": {
-"file": "Super_Sample_Rock.html",
-"zh": ""
-},
-"Irulta/Battle Log": {
-"file": "Irulta_Battle_Log.html",
-"zh": ""
-},
-"Siege Breakers Premium Warbond": {
-"file": "Siege_Breakers_Premium_Warbond.html",
-"zh": ""
-},
-"Ubanea/Battles": {
-"file": "Ubanea_Battles.html",
-"zh": ""
-},
-"Rocket Raider": {
-"file": "Rocket_Raider.html",
-"zh": "火箭奇袭者"
-},
-"Duckbill": {
-"file": "Duckbill.html",
-"zh": "鸭嘴枪口"
-},
-"Barabos/Battle Log": {
-"file": "Barabos_Battle_Log.html",
-"zh": ""
-},
-"GL-28 Belt-Fed Grenade Launcher": {
-"file": "GL-28_Belt-Fed_Grenade_Launcher.html",
-"zh": "GL-28 弹链式榴弹发射器"
-},
-"Maximum Security City": {
-"file": "Maximum_Security_City.html",
-"zh": ""
-},
-"CQC-20 Breaching Hammer": {
-"file": "CQC-20_Breaching_Hammer.html",
-"zh": "CQC-20 破门锤"
-},
-"Fronteria/Battle Log": {
-"file": "Fronteria_Battle_Log.html",
-"zh": ""
-},
-"SSSD Hard Drive": {
-"file": "SSSD_Hard_Drive.html",
-"zh": "超级固态硬盘"
-},
-"Gunslinger": {
-"file": "Gunslinger.html",
-"zh": "神枪手"
-},
-"Stratagems/Stratagem Previews": {
-"file": "Stratagems_Stratagem_Previews.html",
-"zh": ""
-},
-"Terminid Control System+": {
-"file": "Terminid_Control_System+.html",
-"zh": "终结族遏制体系+"
-},
-"Orbital Cannons": {
-"file": "Orbital_Cannons.html",
-"zh": "轨道加农炮"
-},
-"Fire Tornados": {
-"file": "Fire_Tornados.html",
-"zh": "烈焰龙卷"
-},
-"Cognitive Disruptor": {
-"file": "Cognitive_Disruptor.html",
-"zh": "感知干扰器"
-},
-"Wasat/Battle Log": {
-"file": "Wasat_Battle_Log.html",
-"zh": ""
-},
-"CQC-19 Stun Lance": {
-"file": "CQC-19_Stun_Lance.html",
-"zh": "CQC-19 眩晕长矛"
-},
-"R-63 Diligence": {
-"file": "R-63_Diligence.html",
-"zh": "R-63 勤奋者"
-},
-"Conduct Mobile E-711 Extraction": {
-"file": "Conduct_Mobile_E-711_Extraction.html",
-"zh": "移动式提取711元素"
-},
-"Inflammable": {
-"file": "Inflammable.html",
-"zh": "易燃易爆"
-},
-"Poor Intel": {
-"file": "Poor_Intel.html",
-"zh": "缺乏情报"
-},
-"Orbital Laser": {
-"file": "Orbital_Laser.html",
-"zh": "轨道激光炮"
-},
-"Basic Swamp": {
-"file": "Basic_Swamp.html",
-"zh": ""
-},
-"CM-14 Physician": {
-"file": "CM-14_Physician.html",
-"zh": "CM-14“医师”"
-},
-"Blitz Search And Destroy/Terminid": {
-"file": "Blitz_Search_And_Destroy_Terminid.html",
-"zh": ""
-},
-"Donation Access License": {
-"file": "Donation_Access_License.html",
-"zh": "捐赠物资使用许可"
-},
-"DS-42 Federation's Blade": {
-"file": "DS-42_Federation's_Blade.html",
-"zh": "DS-42“联邦之刃”"
-},
-"Despotic Explosive": {
-"file": "Despotic_Explosive.html",
-"zh": "专制炸药"
-},
-"RS-67 Null Cipher": {
-"file": "RS-67_Null_Cipher.html",
-"zh": "RS-67“空密码”"
-},
-"Hort/Battle Log": {
-"file": "Hort_Battle_Log.html",
-"zh": ""
-},
-"Mastia/Battle Log": {
-"file": "Mastia_Battle_Log.html",
-"zh": ""
-},
-"Pyro Trooper": {
-"file": "Pyro_Trooper.html",
-"zh": "炙焰装甲兵"
-},
-"Rocky Canyons": {
-"file": "Rocky_Canyons.html",
-"zh": ""
-},
-"Barbed Wire": {
-"file": "Barbed_Wire.html",
-"zh": "倒刺铁丝网"
-},
-"Jet Brigade Factories": {
-"file": "Jet_Brigade_Factories.html",
-"zh": "喷气旅孵化厂"
-},
-"Center of Science": {
-"file": "Center_of_Science.html",
-"zh": "科学中心"
-},
-"Tremors": {
-"file": "Tremors.html",
-"zh": "地震"
-},
-"TG-122 Demo-Trooper": {
-"file": "TG-122_Demo-Trooper.html",
-"zh": "TG-122“爆破兵”"
-},
-"BP-32 Jackboot": {
-"file": "BP-32_Jackboot.html",
-"zh": "BP-32“杰克军靴”"
-},
-"1.001.201": {
-"file": "1.001.201.html",
-"zh": ""
-},
-"Communications Array": {
-"file": "Communications_Array.html",
-"zh": "通信阵列"
-},
-"Laptop Troubleshooting": {
-"file": "Laptop_Troubleshooting.html",
-"zh": ""
-},
-"Azterra/Battle Log": {
-"file": "Azterra_Battle_Log.html",
-"zh": ""
-},
-"Destroy High-Value Target": {
-"file": "Destroy_High-Value_Target.html",
-"zh": ""
-},
-"PlayStation Troubleshooting": {
-"file": "PlayStation_Troubleshooting.html",
-"zh": ""
-},
-"Clearing The Shader Cache": {
-"file": "Clearing_The_Shader_Cache.html",
-"zh": ""
-},
-"Orbital EMS Strike": {
-"file": "Orbital_EMS_Strike.html",
-"zh": "轨道电磁冲击波攻击"
-},
-"1.002.005": {
-"file": "1.002.005.html",
-"zh": ""
-},
-"Concussive Padding, Grenadier": {
-"file": "Concussive_Padding,_Grenadier.html",
-"zh": "防震内衬（掷弹兵型）"
-},
-"JAR-5 Dominator": {
-"file": "JAR-5_Dominator.html",
-"zh": "JAR-5 主宰"
-},
-"CW-4 Arctic Ranger": {
-"file": "CW-4_Arctic_Ranger.html",
-"zh": "CW-4“极地游骑兵”"
-},
-"Rapid Acquisition": {
-"file": "Rapid_Acquisition.html",
-"zh": "快速夺取"
-},
-"Anti-Air Emplacement": {
-"file": "Anti-Air_Emplacement.html",
-"zh": "防空炮台"
-},
-"Stun Pods": {
-"file": "Stun_Pods.html",
-"zh": "眩晕喷射舱"
-},
-"Alaraph/Battle Log": {
-"file": "Alaraph_Battle_Log.html",
-"zh": ""
-},
-"Resupply": {
-"file": "Resupply.html",
-"zh": "重新补给"
-},
-"Hulk": {
-"file": "Hulk.html",
-"zh": "巨型者"
-},
-"PH-9 Predator": {
-"file": "PH-9_Predator.html",
-"zh": "PH-9“掠食者”"
-},
-"Midasburg/Battle Log": {
-"file": "Midasburg_Battle_Log.html",
-"zh": ""
-},
-"CQC-5 Combat Hatchet": {
-"file": "CQC-5_Combat_Hatchet.html",
-"zh": "CQC-5 战斗斧"
-},
-"SC-30 Trailblazer Scout": {
-"file": "SC-30_Trailblazer_Scout.html",
-"zh": "SC-30“开路侦察兵”"
-},
-"SG-22 Bushwhacker": {
-"file": "SG-22_Bushwhacker.html",
-"zh": "SG-22 游击兵"
-},
-"Audio Problems": {
-"file": "Audio_Problems.html",
-"zh": ""
-},
-"PH-202 Twigsnapper": {
-"file": "PH-202_Twigsnapper.html",
-"zh": "PH-202“折枝”"
-},
-"FS-55 Devastator": {
-"file": "FS-55_Devastator.html",
-"zh": "FS-55“蹂躏者”"
-},
-"SEAF Soldier": {
-"file": "SEAF_Soldier.html",
-"zh": "超级地球武装部队战士"
-},
-"Eliminate Automaton Factory Strider": {
-"file": "Eliminate_Automaton_Factory_Strider.html",
-"zh": "消灭机器人移动工厂"
-},
-"Bug Mine": {
-"file": "Bug_Mine.html",
-"zh": ""
-},
-"Exploding Shrapnel": {
-"file": "Exploding_Shrapnel.html",
-"zh": "高爆弹片"
-},
-"1.000.102": {
-"file": "1.000.102.html",
-"zh": ""
-},
-"Sirius/Battle Log": {
-"file": "Sirius_Battle_Log.html",
-"zh": ""
-},
-"Blast Absorption": {
-"file": "Blast_Absorption.html",
-"zh": "爆炸吸收"
-},
-"Arkturus/Battle Log": {
-"file": "Arkturus_Battle_Log.html",
-"zh": ""
-},
-"Troost/Battle Log": {
-"file": "Troost_Battle_Log.html",
-"zh": ""
-},
-"Shock Absorption Gel": {
-"file": "Shock_Absorption_Gel.html",
-"zh": "减震凝胶"
-},
-"Eagle Cluster Bomb": {
-"file": "Eagle_Cluster_Bomb.html",
-"zh": "“飞鹰”集束炸弹"
-},
-"Increased Reinforcement Budget": {
-"file": "Increased_Reinforcement_Budget.html",
-"zh": "提高增援预算"
-},
-"Orbital Illumination Flare": {
-"file": "Orbital_Illumination_Flare.html",
-"zh": "轨道照明弹"
-},
-"Tank (disambiguation)": {
-"file": "Tank_(disambiguation).html",
-"zh": ""
-},
-"Dark Fluid": {
-"file": "Dark_Fluid.html",
-"zh": ""
-},
-"Medal": {
-"file": "Medal.html",
-"zh": "奖章"
-},
-"Iro/Battle Log": {
-"file": "Iro_Battle_Log.html",
-"zh": ""
-},
-"Earn Your Helldiver Cape": {
-"file": "Earn_Your_Helldiver_Cape.html",
-"zh": "努力赢得绝地潜兵披肩"
-},
-"Morale Augmentation": {
-"file": "Morale_Augmentation.html",
-"zh": "提升士气"
-},
-"Commando: Secure Black Box": {
-"file": "Commando_Secure_Black_Box.html",
-"zh": ""
-},
-"1.000.103": {
-"file": "1.000.103.html",
-"zh": ""
-},
-"1.004.101": {
-"file": "1.004.101.html",
-"zh": ""
-},
-"Destroy Transmission Network": {
-"file": "Destroy_Transmission_Network.html",
-"zh": "摧毁传输网络"
-},
-"FS-23 Battle Master": {
-"file": "FS-23_Battle_Master.html",
-"zh": "FS-23“战斗大师”"
-},
-"Stratagem Hero": {
-"file": "Stratagem_Hero.html",
-"zh": "战略配备英雄"
-},
-"Ingmar/Battle Log": {
-"file": "Ingmar_Battle_Log.html",
-"zh": ""
-},
-"1.000.301": {
-"file": "1.000.301.html",
-"zh": ""
-},
-"X-45/Battles": {
-"file": "X-45_Battles.html",
-"zh": ""
-},
-"Rock Solid": {
-"file": "Rock_Solid.html",
-"zh": ""
-},
-"B-100 Portable Hellbomb": {
-"file": "B-100_Portable_Hellbomb.html",
-"zh": ""
-},
-"B-22 Model Citizen": {
-"file": "B-22_Model_Citizen.html",
-"zh": "B-22“模范公民”"
-},
-"1.003.201": {
-"file": "1.003.201.html",
-"zh": ""
-},
-"Lava": {
-"file": "Lava.html",
-"zh": "熔岩"
-},
-"Super Sample Solo Guide": {
-"file": "Super_Sample_Solo_Guide.html",
-"zh": ""
-},
-"Slif/Battle Log": {
-"file": "Slif_Battle_Log.html",
-"zh": ""
-},
-"RS-40 Beast of Prey": {
-"file": "RS-40_Beast_of_Prey.html",
-"zh": "RS-40“掠食凶兽”"
-},
-"Volcanic Activity": {
-"file": "Volcanic_Activity.html",
-"zh": "火山活动"
-},
-"DP-40 Hero of the Federation": {
-"file": "DP-40_Hero_of_the_Federation.html",
-"zh": "DP-40“联邦英雄”"
-},
-"Prasa/Battle Log": {
-"file": "Prasa_Battle_Log.html",
-"zh": ""
-},
-"Charger Behemoth": {
-"file": "Charger_Behemoth.html",
-"zh": "巨兽级强袭虫"
-},
-"LIFT-182 Warp Pack": {
-"file": "LIFT-182_Warp_Pack.html",
-"zh": ""
-},
-"P-11 Stim Pistol": {
-"file": "P-11_Stim_Pistol.html",
-"zh": "P-11 兴奋剂手枪"
-},
-"SA-25 Steel Trooper": {
-"file": "SA-25_Steel_Trooper.html",
-"zh": "SA-25“钢铁士兵”"
-},
-"Tibit/Battle Log": {
-"file": "Tibit_Battle_Log.html",
+"Emorath/Battle Log": {
+"file": "Emorath_Battle_Log.html",
 "zh": ""
 },
 "AD-11 Livewire": {
 "file": "AD-11_Livewire.html",
 "zh": "AD-11“生龙活虎”"
 },
-"Effluvia/Battle Log": {
-"file": "Effluvia_Battle_Log.html",
-"zh": ""
-},
-"Shrieker Nest": {
-"file": "Shrieker_Nest.html",
-"zh": "尖啸虫巢穴"
-},
-"Laser Sight W/ Flashlight": {
-"file": "Laser_Sight_W_Flashlight.html",
-"zh": "激光瞄准器带照明"
-},
-"Termadon/Battle Log": {
-"file": "Termadon_Battle_Log.html",
-"zh": ""
-},
-"Destroyed House": {
-"file": "Destroyed_House.html",
-"zh": ""
-},
-"G/SH-39 Shield": {
-"file": "G_SH-39_Shield.html",
-"zh": "G/SH-39 盾雷"
-},
-"Civilians and SEAF in Area": {
-"file": "Civilians_and_SEAF_in_Area.html",
-"zh": ""
-},
-"FS-38 Eradicator": {
-"file": "FS-38_Eradicator.html",
-"zh": "FS-38根除者"
-},
-"PLAS-1 Scorcher": {
-"file": "PLAS-1_Scorcher.html",
-"zh": "PLAS-1 灼烧者"
-},
-"Hellbomb Script": {
-"file": "Hellbomb_Script.html",
-"zh": ""
-},
-"Harvester": {
-"file": "Harvester.html",
-"zh": "猎杀器"
-},
-"Ratch/Battle Log": {
-"file": "Ratch_Battle_Log.html",
-"zh": ""
-},
-"PLAS-15 Loyalist": {
-"file": "PLAS-15_Loyalist.html",
-"zh": "PLAS-15 忠诚者"
-},
-"Crimson Forest": {
-"file": "Crimson_Forest.html",
-"zh": ""
-},
-"AX/ARC-3 K-9": {
-"file": "AX_ARC-3_K-9.html",
-"zh": ""
-},
-"Retrieve Mutant Larva": {
-"file": "Retrieve_Mutant_Larva.html",
-"zh": "取回变异幼虫"
-},
-"Planets and Sectors": {
-"file": "Planets_and_Sectors.html",
-"zh": ""
-},
-"Checkpoint": {
-"file": "Checkpoint.html",
-"zh": ""
-},
-"Keid/Battle Log": {
-"file": "Keid_Battle_Log.html",
-"zh": ""
-},
-"AR-2 Coyote": {
-"file": "AR-2_Coyote.html",
-"zh": ""
-},
-"Shrieker": {
-"file": "Shrieker.html",
-"zh": "尖啸虫"
-},
-"Restore Air Quality": {
-"file": "Restore_Air_Quality.html",
-"zh": "恢复空气质量"
-},
-"Arc": {
-"file": "Arc.html",
-"zh": "电弧"
-},
-"P-19 Redeemer": {
-"file": "P-19_Redeemer.html",
-"zh": "P-19 救赎者"
-},
-"Dropship": {
-"file": "Dropship.html",
-"zh": "运输舰"
-},
-"Jet Brigade Commissar": {
-"file": "Jet_Brigade_Commissar.html",
-"zh": "喷气旅机械统帅"
-},
-"Melee": {
-"file": "Melee.html",
-"zh": "近战"
-},
-"Lastofe/Battle Log": {
-"file": "Lastofe_Battle_Log.html",
-"zh": ""
-},
-"SH-20 Ballistic Shield Backpack": {
-"file": "SH-20_Ballistic_Shield_Backpack.html",
-"zh": ""
-},
-"DSS Logistics Hub": {
-"file": "DSS_Logistics_Hub.html",
-"zh": "DSS物流中心"
-},
-"1.000.009": {
-"file": "1.000.009.html",
-"zh": ""
-},
-"Lava Geyser": {
-"file": "Lava_Geyser.html",
-"zh": ""
-},
-"Scratchpad/Biome Names": {
-"file": "Scratchpad_Biome_Names.html",
-"zh": ""
-},
-"Repel Invasion Fleet": {
-"file": "Repel_Invasion_Fleet.html",
-"zh": "击退入侵舰队"
-},
-"Superstore/WIP": {
-"file": "Superstore_WIP.html",
-"zh": ""
-},
-"APW-1 Anti-Materiel Rifle": {
-"file": "APW-1_Anti-Materiel_Rifle.html",
-"zh": "APW-1反器材步枪"
-},
-"AR-32 Pacifier": {
-"file": "AR-32_Pacifier.html",
-"zh": ""
-},
-"Hive World": {
-"file": "Hive_World.html",
-"zh": "虫窝世界"
-},
-"Botein/Battle Log": {
-"file": "Botein_Battle_Log.html",
-"zh": ""
-},
-"Reinforced Epaulettes": {
-"file": "Reinforced_Epaulettes.html",
-"zh": "强化肩章"
-},
-"Stance": {
-"file": "Stance.html",
-"zh": ""
-},
-"Requisition Slips": {
-"file": "Requisition_Slips.html",
-"zh": ""
-},
-"Reflex Sight": {
-"file": "Reflex_Sight.html",
-"zh": "反射式瞄准镜"
-},
-"Lesath/Battles": {
-"file": "Lesath_Battles.html",
-"zh": ""
-},
-"CM-17 Butcher": {
-"file": "CM-17_Butcher.html",
-"zh": "CM-17“屠夫”"
-},
-"Rainstorms": {
-"file": "Rainstorms.html",
-"zh": "暴雨"
-},
-"Concussive Padding, Reinforced": {
-"file": "Concussive_Padding,_Reinforced.html",
-"zh": "防震内衬（强化型）"
-},
-"M-102 Gunner FRV": {
-"file": "M-102_Gunner_FRV.html",
-"zh": ""
-},
-"Sulfura/Battle Log": {
-"file": "Sulfura_Battle_Log.html",
-"zh": ""
-},
-"TG-8 Sharpshooter": {
-"file": "TG-8_Sharpshooter.html",
-"zh": "TG-8“神枪手”"
-},
-"1.000.203": {
-"file": "1.000.203.html",
-"zh": ""
-},
-"R-72 Censor": {
-"file": "R-72_Censor.html",
-"zh": "R-72 审查官"
-},
-"G-123 Thermite": {
-"file": "G-123_Thermite.html",
-"zh": "G-123 铝热剂手榴弹"
-},
-"Atrama/Battle Log": {
-"file": "Atrama_Battle_Log.html",
-"zh": ""
-},
-"1.002.202": {
-"file": "1.002.202.html",
-"zh": ""
-},
-"Fury/Battle Log": {
-"file": "Fury_Battle_Log.html",
-"zh": ""
-},
-"1.003.104": {
-"file": "1.003.104.html",
-"zh": ""
-},
-"CQC-42 Machete": {
-"file": "CQC-42_Machete.html",
-"zh": "CQC-42 砍刀"
-},
-"Super Citizen Edition": {
-"file": "Super_Citizen_Edition.html",
-"zh": ""
-},
-"Gunship Patrols": {
-"file": "Gunship_Patrols.html",
-"zh": "炮舰巡逻队"
-},
-"Ustotu/Battle Log": {
-"file": "Ustotu_Battle_Log.html",
-"zh": ""
-},
-"SA-7 Headfirst": {
-"file": "SA-7_Headfirst.html",
-"zh": "SA-7“冲锋者”"
-},
-"Deactivate Terminid Control System": {
-"file": "Deactivate_Terminid_Control_System.html",
-"zh": "关闭终结族遏制体系"
-},
-"Nuclear Radar": {
-"file": "Nuclear_Radar.html",
-"zh": "核动力雷达"
-},
-"Hellmire/Battle Log": {
-"file": "Hellmire_Battle_Log.html",
-"zh": ""
-},
-"Warp Gateway": {
-"file": "Warp_Gateway.html",
-"zh": "传送门"
-},
-"1.001.004": {
-"file": "1.001.004.html",
-"zh": ""
-},
-"EAT-700 Expendable Napalm": {
-"file": "EAT-700_Expendable_Napalm.html",
-"zh": "EAT-700 消耗性凝固汽油弹"
-},
-"Eagle 110mm Rocket Pods": {
-"file": "Eagle_110mm_Rocket_Pods.html",
-"zh": "“飞鹰”110mm火箭巢"
-},
-"AF-52 Lockdown": {
-"file": "AF-52_Lockdown.html",
-"zh": "AF-52“禁锢”"
-},
-"Guides": {
-"file": "Guides.html",
-"zh": ""
-},
-"GP-20 Ultimatum": {
-"file": "GP-20_Ultimatum.html",
-"zh": "GP-20 最后通牒"
-},
-"Cyberstan Megafactory": {
-"file": "Cyberstan_Megafactory.html",
-"zh": ""
-},
-"Difficulty": {
-"file": "Difficulty.html",
-"zh": "难度"
-},
-"Meridian Black Hole": {
-"file": "Meridian_Black_Hole.html",
-"zh": "默里迪恩黑洞"
-},
-"Orbital Railcannon Strike": {
-"file": "Orbital_Railcannon_Strike.html",
-"zh": "轨道炮攻击"
-},
-"I-44 Salamander": {
-"file": "I-44_Salamander.html",
-"zh": "I-44“火蜥”"
-},
-"Gemma/Battle Log": {
-"file": "Gemma_Battle_Log.html",
-"zh": ""
-},
-"BP-20 Correct Officer": {
-"file": "BP-20_Correct_Officer.html",
-"zh": "BP-20“思想矫正官”"
-},
-"Khandark/Battle Log": {
-"file": "Khandark_Battle_Log.html",
-"zh": ""
-},
-"Crescent Overseer": {
-"file": "Crescent_Overseer.html",
-"zh": "新月监视者"
-},
-"Jet Brigade Hulk Bruiser": {
-"file": "Jet_Brigade_Hulk_Bruiser.html",
-"zh": ""
-},
-"IE-57 Hell-Bent": {
-"file": "IE-57_Hell-Bent.html",
-"zh": "IE-57“奋不顾身”"
-},
-"Ballistic Padding": {
-"file": "Ballistic_Padding.html",
-"zh": "防弹内衬"
-},
-"Bunker Turret": {
-"file": "Bunker_Turret.html",
-"zh": "碉堡炮台"
-},
-"StA-11 SMG": {
-"file": "StA-11_SMG.html",
-"zh": "StA-11 冲锋枪"
-},
-"Cities": {
-"file": "Cities.html",
-"zh": ""
-},
-"Enemy Bio-Processors": {
-"file": "Enemy_Bio-Processors.html",
-"zh": "敌方生物处理器"
-},
-"Super Earth Vehicles": {
-"file": "Super_Earth_Vehicles.html",
-"zh": ""
-},
-"G-16 Impact": {
-"file": "G-16_Impact.html",
-"zh": "G-16 撞击手榴弹"
-},
-"Brood Commander": {
-"file": "Brood_Commander.html",
-"zh": "虫族指挥官"
-},
-"Engineering Kit": {
-"file": "Engineering_Kit.html",
-"zh": "工程包"
-},
-"Collect Gloom-Infused Oil": {
-"file": "Collect_Gloom-Infused_Oil.html",
-"zh": "采集“阴霾”污染的原油"
-},
-"Merak/Battle Log": {
-"file": "Merak_Battle_Log.html",
-"zh": ""
-},
-"AR-23P Liberator Penetrator": {
-"file": "AR-23P_Liberator_Penetrator.html",
-"zh": "AR-23P 穿甲解放者"
-},
-"AX/AR-23 Guard Dog": {
-"file": "AX_AR-23_Guard_Dog.html",
-"zh": ""
-},
-"1.006.202": {
-"file": "1.006.202.html",
-"zh": ""
-},
-"True Grit": {
-"file": "True_Grit.html",
-"zh": "坚韧不拔"
-},
-"1.000.008": {
-"file": "1.000.008.html",
-"zh": ""
-},
-"Xenoentomology Center": {
-"file": "Xenoentomology_Center.html",
-"zh": "异星昆虫学研究中心"
-},
-"Automaton Outpost": {
-"file": "Automaton_Outpost.html",
-"zh": "机器人哨站"
-},
-"MG Raider": {
-"file": "MG_Raider.html",
-"zh": "机枪奇袭者"
-},
-"Caramoor/Battle Log": {
-"file": "Caramoor_Battle_Log.html",
-"zh": ""
-},
-"Gatria/Battle Log": {
-"file": "Gatria_Battle_Log.html",
-"zh": ""
-},
-"G-6 Frag": {
-"file": "G-6_Frag.html",
-"zh": "G-6 破片手榴弹"
-},
-"TR-7 Ambassador of the Brand": {
-"file": "TR-7_Ambassador_of_the_Brand.html",
-"zh": "TR-7“形象大使”"
-},
-"Darrowsport/Battle Log": {
-"file": "Darrowsport_Battle_Log.html",
-"zh": ""
-},
-"Expert Extraction Pilot": {
-"file": "Expert_Extraction_Pilot.html",
-"zh": "专业撤离飞行员"
-},
-"Super Credits": {
-"file": "Super_Credits.html",
-"zh": "超级货币"
-},
-"KDM-500 Outrider": {
-"file": "KDM-500_Outrider.html",
-"zh": "KDM-500“先驱骑兵”"
-},
-"Upload Escape Pod Data": {
-"file": "Upload_Escape_Pod_Data.html",
-"zh": "上传逃生舱的数据"
-},
-"1.000.200": {
-"file": "1.000.200.html",
-"zh": ""
-},
-"Compromise Automaton Defenses": {
-"file": "Compromise_Automaton_Defenses.html",
-"zh": "破坏机器人的防御系统"
-},
-"Python Commandos Premium Warbond": {
-"file": "Python_Commandos_Premium_Warbond.html",
-"zh": ""
-},
-"SSSD Delivery": {
-"file": "SSSD_Delivery.html",
-"zh": "运送超级固态硬盘"
-},
-"Rupture Charger": {
-"file": "Rupture_Charger.html",
-"zh": "爆裂强袭虫"
-},
-"Elevated House": {
-"file": "Elevated_House.html",
-"zh": ""
-},
-"Terrek/Battle Log": {
-"file": "Terrek_Battle_Log.html",
-"zh": ""
-},
-"LAS-98 Laser Cannon": {
-"file": "LAS-98_Laser_Cannon.html",
-"zh": "LAS-98 激光大炮"
-},
-"TR-117 Alpha Commander": {
-"file": "TR-117_Alpha_Commander.html",
-"zh": "TR-117“阿尔法指挥官”"
-},
-"Truth Enforcers Premium Warbond": {
-"file": "Truth_Enforcers_Premium_Warbond.html",
-"zh": ""
-},
-"Circuit Expansion": {
-"file": "Circuit_Expansion.html",
-"zh": "扩建电路"
-},
-"Prospecting Drill": {
-"file": "Prospecting_Drill.html",
-"zh": "勘探钻机"
-},
-"Stim": {
-"file": "Stim.html",
-"zh": "治疗剂"
-},
-"1.000.302": {
-"file": "1.000.302.html",
-"zh": ""
-},
-"Xbox Troubleshooting": {
-"file": "Xbox_Troubleshooting.html",
-"zh": ""
-},
-"G-142 Pyrotech": {
-"file": "G-142_Pyrotech.html",
-"zh": "G-142 烟花术"
-},
-"Dead Sprint": {
-"file": "Dead_Sprint.html",
-"zh": "死亡冲刺"
-},
-"Predator Stalker": {
-"file": "Predator_Stalker.html",
-"zh": "掠食追踪虫"
-},
-"Jet Brigade MG Raider": {
-"file": "Jet_Brigade_MG_Raider.html",
-"zh": ""
-},
-"Iron Sight": {
-"file": "Iron_Sight.html",
-"zh": "机械瞄具"
-},
-"Ionic Crimson": {
-"file": "Ionic_Crimson.html",
-"zh": ""
-},
-"Deadlands": {
-"file": "Deadlands.html",
-"zh": ""
-},
-"Shelt/Battle Log": {
-"file": "Shelt_Battle_Log.html",
-"zh": ""
-},
-"Intense Heat": {
-"file": "Intense_Heat.html",
-"zh": "极暑"
-},
-"SG-8P Punisher Plasma": {
-"file": "SG-8P_Punisher_Plasma.html",
-"zh": "SG-8P 制裁者等离子"
-},
-"Gacrux/Battle Log": {
-"file": "Gacrux_Battle_Log.html",
-"zh": ""
-},
-"SEAF Artillery": {
-"file": "SEAF_Artillery.html",
-"zh": "超级地球武装部队大炮"
-},
-"Equipment": {
-"file": "Equipment.html",
-"zh": "装备"
-},
-"E-711 Extraction Facility": {
-"file": "E-711_Extraction_Facility.html",
-"zh": "711元素开采设施"
-},
-"Hadar/Battle Log": {
-"file": "Hadar_Battle_Log.html",
-"zh": ""
-},
-"Extended Magazine": {
-"file": "Extended_Magazine.html",
-"zh": "加长弹匣"
-},
-"EXO-51 Lumberer Exosuit": {
-"file": "EXO-51_Lumberer_Exosuit.html",
-"zh": ""
-},
-"Extract Research Probe Data": {
-"file": "Extract_Research_Probe_Data.html",
-"zh": "提取研究探测仪数据"
-},
-"1.002.203": {
-"file": "1.002.203.html",
-"zh": ""
-},
-"Deploy Dark Fluid": {
-"file": "Deploy_Dark_Fluid.html",
-"zh": "部署暗液体"
-},
-"Drum Magazine": {
-"file": "Drum_Magazine.html",
-"zh": "弹鼓"
-},
-"Jet Brigade Hulk Scorcher": {
-"file": "Jet_Brigade_Hulk_Scorcher.html",
-"zh": ""
-},
-"Atmospheric Spores": {
-"file": "Atmospheric_Spores.html",
-"zh": "孢子气体"
-},
-"Shredder Tank": {
-"file": "Shredder_Tank.html",
-"zh": "碎裂坦克"
-},
-"Enable Oil Extraction": {
-"file": "Enable_Oil_Extraction.html",
-"zh": "设法采油"
-},
-"1.007.000": {
-"file": "1.007.000.html",
-"zh": ""
-},
-"Expanded Weapons Bay": {
-"file": "Expanded_Weapons_Bay.html",
-"zh": "武器舱扩容"
-},
-"Conduct Geological Survey": {
-"file": "Conduct_Geological_Survey.html",
-"zh": "开展地质调查"
-},
-"Nursing Spewer": {
-"file": "Nursing_Spewer.html",
-"zh": "抚育喷涌虫"
-},
-"Super Earth Products": {
-"file": "Super_Earth_Products.html",
-"zh": ""
-},
-"1.000.100": {
-"file": "1.000.100.html",
-"zh": ""
-},
-"P-35 Re-Educator": {
-"file": "P-35_Re-Educator.html",
-"zh": "P-35 再教育者"
-},
-"SC-37 Legionnaire": {
-"file": "SC-37_Legionnaire.html",
-"zh": "SC-37“军团士兵”"
-},
-"Firebomb Hellpods": {
-"file": "Firebomb_Hellpods.html",
-"zh": "火焰炸弹绝地喷射舱"
-},
-"Desert Stormer": {
-"file": "Desert_Stormer.html",
-"zh": "沙漠突击者"
-},
-"Sample": {
-"file": "Sample.html",
-"zh": "样本"
-},
-"Metropolis": {
-"file": "Metropolis.html",
-"zh": ""
-},
-"CE-67 Titan": {
-"file": "CE-67_Titan.html",
-"zh": "CE-67“泰坦”"
-},
-"Mantes/Battle Log": {
-"file": "Mantes_Battle_Log.html",
-"zh": ""
-},
-"1.000.10": {
-"file": "1.000.10.html",
-"zh": ""
-},
-"DP-00 Tactical": {
-"file": "DP-00_Tactical.html",
-"zh": "DP-00“战术”"
-},
-"SG-225SP Breaker Spray&Pray": {
-"file": "SG-225SP_Breaker_Spray&Pray.html",
-"zh": "SG-225SP 破裂者 泼洒与祈祷"
-},
-"Armor Passives": {
-"file": "Armor_Passives.html",
-"zh": "护甲被动"
-},
-"High-Density Explosives": {
-"file": "High-Density_Explosives.html",
-"zh": "高密度炸药"
-},
-"Estanu/Battles": {
-"file": "Estanu_Battles.html",
-"zh": ""
-},
-"Stealth": {
-"file": "Stealth.html",
-"zh": ""
-},
-"R-2 Amendment": {
-"file": "R-2_Amendment.html",
-"zh": "R-2 修正"
-},
-"Stratagems": {
-"file": "Stratagems.html",
-"zh": "战略配备"
-},
-"FS-37 Ravager": {
-"file": "FS-37_Ravager.html",
-"zh": "FS-37“破坏者”"
-},
-"E/AT-12 Anti-Tank Emplacement": {
-"file": "E_AT-12_Anti-Tank_Emplacement.html",
-"zh": ""
-},
-"Smoke": {
-"file": "Smoke.html",
-"zh": "烟雾弹"
-},
-"Desert Oasis": {
-"file": "Desert_Oasis.html",
-"zh": ""
-},
-"Void Gateway": {
-"file": "Void_Gateway.html",
-"zh": "寂域通路"
-},
-"1.005.002": {
-"file": "1.005.002.html",
-"zh": ""
-},
-"DS-10 Big Game Hunter": {
-"file": "DS-10_Big_Game_Hunter.html",
-"zh": "DS-10“巨兽猎手”"
-},
-"Diluvia/Battle Log": {
-"file": "Diluvia_Battle_Log.html",
-"zh": ""
-},
-"Inari/Battle Log": {
-"file": "Inari_Battle_Log.html",
-"zh": ""
-},
-"R-36 Eruptor": {
-"file": "R-36_Eruptor.html",
-"zh": "R-36 喷发者"
-},
-"Blitz: Destroy Illuminate Warp Ships": {
-"file": "Blitz_Destroy_Illuminate_Warp_Ships.html",
-"zh": ""
-},
-"Lightning Spire": {
-"file": "Lightning_Spire.html",
-"zh": "闪电尖塔"
-},
-"1.004.001": {
-"file": "1.004.001.html",
-"zh": ""
-},
-"Currency": {
-"file": "Currency.html",
-"zh": "货币"
-},
-"M6C/SOCOM Pistol": {
-"file": "M6C_SOCOM_Pistol.html",
-"zh": "M6C/SOCOM 手枪"
-},
-"Underground Cache": {
-"file": "Underground_Cache.html",
-"zh": ""
-},
-"Hulk Scorcher": {
-"file": "Hulk_Scorcher.html",
-"zh": "巨型炙炎者"
-},
-"Commissar": {
-"file": "Commissar.html",
-"zh": "机械统帅"
-},
-"Magma Desert": {
-"file": "Magma_Desert.html",
-"zh": ""
-},
-"Extract E-711": {
-"file": "Extract_E-711.html",
-"zh": "提取711元素"
-},
-"Reinforce": {
-"file": "Reinforce.html",
-"zh": "增援"
-},
-"A/AC-8 Autocannon Sentry": {
-"file": "A_AC-8_Autocannon_Sentry.html",
-"zh": "A/AC-8机炮哨戒炮"
-},
-"Martale/Battle Log": {
-"file": "Martale_Battle_Log.html",
-"zh": ""
-},
-"Steam Troubleshooting": {
-"file": "Steam_Troubleshooting.html",
-"zh": ""
-},
-"Holographic Sight": {
-"file": "Holographic_Sight.html",
-"zh": "全息瞄准镜"
-},
-"1.006.102": {
-"file": "1.006.102.html",
-"zh": ""
-},
-"Brawler": {
-"file": "Brawler.html",
-"zh": "乱斗者"
-},
-"Bile Titan": {
-"file": "Bile_Titan.html",
-"zh": "吐酸泰坦"
-},
-"SG-225IE Breaker Incendiary": {
-"file": "SG-225IE_Breaker_Incendiary.html",
-"zh": "SG-225IE 燃烧破裂者"
-},
-"Rasp/Battle Log": {
-"file": "Rasp_Battle_Log.html",
-"zh": ""
-},
-"SC-15 Drone Master": {
-"file": "SC-15_Drone_Master.html",
-"zh": "SC-15“无人机大师”"
-},
-"MD-17 Anti-Tank Mines": {
-"file": "MD-17_Anti-Tank_Mines.html",
-"zh": ""
-},
-"Watcher": {
-"file": "Watcher.html",
-"zh": "守望者"
-},
-"Eagle Smoke Strike": {
-"file": "Eagle_Smoke_Strike.html",
-"zh": "“飞鹰”烟雾攻击"
-},
-"Curia/Battle Log": {
-"file": "Curia_Battle_Log.html",
-"zh": ""
-},
-"CE-81 Juggernaut": {
-"file": "CE-81_Juggernaut.html",
-"zh": "CE-81“巨人”"
-},
-"Enuliale/Battle Log": {
-"file": "Enuliale_Battle_Log.html",
-"zh": ""
-},
-"LAS-13 Trident": {
-"file": "LAS-13_Trident.html",
-"zh": "LAS-13“三叉戟”"
-},
-"Julheim/Battle Log": {
-"file": "Julheim_Battle_Log.html",
-"zh": ""
-},
-"Tibit/Battles": {
-"file": "Tibit_Battles.html",
-"zh": ""
-},
-"Helldivers x Killzone": {
-"file": "Helldivers_x_Killzone.html",
-"zh": ""
-},
-"Reflex Sight Mk2": {
-"file": "Reflex_Sight_Mk2.html",
-"zh": "反射式瞄准镜Mk2"
-},
-"CPG-48 Sapper": {
-"file": "CPG-48_Sapper.html",
-"zh": "CPG-48“工兵”"
-},
-"AF-02 Haz-Master": {
-"file": "AF-02_Haz-Master.html",
-"zh": "AF-02“危害大师”"
-},
-"1.002.003": {
-"file": "1.002.003.html",
-"zh": ""
-},
-"Wezen/Battle Log": {
-"file": "Wezen_Battle_Log.html",
-"zh": ""
-},
-"CPH-26 Commandant": {
-"file": "CPH-26_Commandant.html",
-"zh": "CPH-26“司令官”"
-},
-"Supplementary Adrenaline": {
-"file": "Supplementary_Adrenaline.html",
-"zh": ""
-},
-"SA-12 Servo Assisted": {
-"file": "SA-12_Servo_Assisted.html",
-"zh": "SA-12“伺服辅助”"
-},
-"Standard Heatsink": {
-"file": "Standard_Heatsink.html",
-"zh": "标准散热器"
-},
-"Igla/Battle Log": {
-"file": "Igla_Battle_Log.html",
-"zh": ""
-},
-"SC-34 Infiltrator": {
-"file": "SC-34_Infiltrator.html",
-"zh": "SC-34“深入敌阵”"
-},
-"1.001.103": {
-"file": "1.001.103.html",
-"zh": ""
-},
-"RS-100 Sanctioner": {
-"file": "RS-100_Sanctioner.html",
-"zh": "RS-100“制裁者”"
-},
-"Recover Scientific Specimen": {
-"file": "Recover_Scientific_Specimen.html",
-"zh": ""
-},
-"Hangar": {
-"file": "Hangar.html",
-"zh": "机库"
-},
-"Polar Patriots Premium Warbond": {
-"file": "Polar_Patriots_Premium_Warbond.html",
-"zh": ""
-},
-"Levels": {
-"file": "Levels.html",
-"zh": ""
-},
-"Evacuate High-Value Assets": {
-"file": "Evacuate_High-Value_Assets.html",
-"zh": "疏散高价值目标"
-},
-"Dark Fluid Vessel": {
-"file": "Dark_Fluid_Vessel.html",
-"zh": "暗液体容器"
-},
-"Helldivers 2": {
-"file": "Helldivers_2.html",
-"zh": "绝地潜兵2"
-},
-"Eradicate Illuminate Forces": {
-"file": "Eradicate_Illuminate_Forces.html",
-"zh": "彻底消灭光能者部队"
-},
-"Thick Fog": {
-"file": "Thick_Fog.html",
-"zh": "浓雾"
-},
-"Menkent/Battles": {
-"file": "Menkent_Battles.html",
-"zh": ""
-},
-"Blitz: Destroy Bio-Processors": {
-"file": "Blitz_Destroy_Bio-Processors.html",
-"zh": ""
-},
-"1.007.001": {
-"file": "1.007.001.html",
-"zh": ""
-},
-"1.000.12": {
-"file": "1.000.12.html",
-"zh": ""
-},
-"MG-43 Machine Gun": {
-"file": "MG-43_Machine_Gun.html",
-"zh": "MG-43机枪"
-},
-"Setia/Battle Log": {
-"file": "Setia_Battle_Log.html",
-"zh": ""
-},
-"CQC-9 Defoliation Tool": {
-"file": "CQC-9_Defoliation_Tool.html",
-"zh": "CQC-9 落叶工具"
-},
-"Automaton MG Emplacement": {
-"file": "Automaton_MG_Emplacement.html",
-"zh": ""
-},
-"1.005.000": {
-"file": "1.005.000.html",
-"zh": ""
-},
-"Predator Hunter": {
-"file": "Predator_Hunter.html",
-"zh": "掠食追猎虫"
-},
-"FAF-14 Spear": {
-"file": "FAF-14_Spear.html",
-"zh": "FAF-14飞矛"
-},
-"AF-50 Noxious Ranger": {
-"file": "AF-50_Noxious_Ranger.html",
-"zh": "AF-50“毒瘴游骑兵”"
-},
-"Terminid Research Preserve": {
-"file": "Terminid_Research_Preserve.html",
-"zh": "终结族研究保护区"
-},
-"Malevelon Creek/Battle Log": {
-"file": "Malevelon_Creek_Battle_Log.html",
-"zh": ""
-},
-"B-08 Light Gunner": {
-"file": "B-08_Light_Gunner.html",
-"zh": "B-08“轻装枪手”"
-},
-"Monolith": {
-"file": "Monolith.html",
-"zh": ""
-},
-"Environmental Hazards": {
-"file": "Environmental_Hazards.html",
-"zh": ""
-},
-"LAS-16 Sickle": {
-"file": "LAS-16_Sickle.html",
-"zh": "LAS-16 镰刃"
-},
-"Vertical Foregrip": {
-"file": "Vertical_Foregrip.html",
-"zh": "垂直前握把"
-},
-"Spore Charger": {
-"file": "Spore_Charger.html",
-"zh": "孢子强袭虫"
-},
-"Mort/Battles": {
-"file": "Mort_Battles.html",
+"Democratic Detonation Premium Warbond": {
+"file": "Democratic_Detonation_Premium_Warbond.html",
 "zh": ""
 },
 "Boosters": {
 "file": "Boosters.html",
 "zh": "强化资源"
 },
-"LAS-99 Quasar Cannon": {
-"file": "LAS-99_Quasar_Cannon.html",
-"zh": "LAS-99 类星体加农炮"
-},
-"Barrager Tank": {
-"file": "Barrager_Tank.html",
-"zh": "铁幕坦克"
-},
-"A/ARC-3 Tesla Tower": {
-"file": "A_ARC-3_Tesla_Tower.html",
-"zh": ""
-},
-"Commando: Extract Intel": {
-"file": "Commando_Extract_Intel.html",
-"zh": ""
-},
-"1.000.400": {
-"file": "1.000.400.html",
-"zh": ""
-},
-"Myrium/Battle Log": {
-"file": "Myrium_Battle_Log.html",
-"zh": ""
-},
-"P-72 Crisper": {
-"file": "P-72_Crisper.html",
-"zh": "P-72 迅击"
-},
-"Civilian": {
-"file": "Civilian.html",
-"zh": "平民"
-},
-"Extract Anomalous Material": {
-"file": "Extract_Anomalous_Material.html",
-"zh": "提取异常物质"
-},
-"EX-16 Prototype 16": {
-"file": "EX-16_Prototype_16.html",
-"zh": "EX-16“原型 16”"
-},
-"AR-61 Tenderizer": {
-"file": "AR-61_Tenderizer.html",
-"zh": "AR-61 软化者"
-},
-"Commando Missions": {
-"file": "Commando_Missions.html",
-"zh": ""
-},
-"G-23 Stun": {
-"file": "G-23_Stun.html",
-"zh": "G-23 眩晕手榴弹"
-},
-"Obari/Battle Log": {
-"file": "Obari_Battle_Log.html",
-"zh": ""
-},
-"Providence/Battle Log": {
-"file": "Providence_Battle_Log.html",
-"zh": ""
-},
-"SMG-32 Reprimand": {
-"file": "SMG-32_Reprimand.html",
-"zh": "SMG-32 训斥"
-},
-"CE-64 Grenadier": {
-"file": "CE-64_Grenadier.html",
-"zh": "CE-64“掷弹兵”"
-},
-"Supplies": {
-"file": "Supplies.html",
-"zh": "物资"
-},
-"1.001.002": {
-"file": "1.001.002.html",
-"zh": ""
-},
-"Start Fuel Pumps": {
-"file": "Start_Fuel_Pumps.html",
-"zh": "启动燃料泵"
-},
-"Negative Energy Laboratory": {
-"file": "Negative_Energy_Laboratory.html",
-"zh": "负能量实验室"
-},
-"Crimsica/Battle Log": {
-"file": "Crimsica_Battle_Log.html",
-"zh": ""
-},
-"Orbital Smoke Strike": {
-"file": "Orbital_Smoke_Strike.html",
-"zh": "轨道烟雾攻击"
-},
-"Spread Democracy": {
-"file": "Spread_Democracy.html",
-"zh": "传播民主"
-},
-"Orbital Gatling Barrage": {
-"file": "Orbital_Gatling_Barrage.html",
-"zh": "轨道加特林火力网"
-},
-"Acid Storms": {
-"file": "Acid_Storms.html",
-"zh": "酸雨风暴"
-},
-"1.001.100": {
-"file": "1.001.100.html",
-"zh": ""
-},
-"Skitter/Battle Log": {
-"file": "Skitter_Battle_Log.html",
-"zh": ""
-},
-"1.000.402": {
-"file": "1.000.402.html",
-"zh": ""
-},
-"Mox/Battle Log": {
-"file": "Mox_Battle_Log.html",
-"zh": ""
-},
-"Planet Warfronts": {
-"file": "Planet_Warfronts.html",
-"zh": ""
-},
-"Eagle 500kg Bomb": {
-"file": "Eagle_500kg_Bomb.html",
-"zh": "“飞鹰”500kg炸弹"
-},
-"Omicron/Battles": {
-"file": "Omicron_Battles.html",
-"zh": ""
-},
-"1.000.403": {
-"file": "1.000.403.html",
-"zh": ""
-},
-"AC-8 Autocannon": {
-"file": "AC-8_Autocannon.html",
-"zh": "AC-8机炮"
-},
-"O-2 Heavy Operator": {
-"file": "O-2_Heavy_Operator.html",
-"zh": "O-2“重装操作者”"
-},
-"B-27 Fortified Commando": {
-"file": "B-27_Fortified_Commando.html",
-"zh": "B-27“强化突击兵”"
-},
-"A/MLS-4X Rocket Sentry": {
-"file": "A_MLS-4X_Rocket_Sentry.html",
-"zh": ""
-},
-"G-3 Smoke": {
-"file": "G-3_Smoke.html",
-"zh": "G-3 烟雾弹"
-},
-"Veil/Battle Log": {
-"file": "Veil_Battle_Log.html",
-"zh": ""
-},
-"Spore Burst Scavenger": {
-"file": "Spore_Burst_Scavenger.html",
-"zh": "孢裂食腐虫"
-},
-"Personal Orders": {
-"file": "Personal_Orders.html",
-"zh": "个人指令"
-},
-"Autumn Forest": {
-"file": "Autumn_Forest.html",
-"zh": ""
-},
-"Terminate Illegal Broadcast/In Depth Guide": {
-"file": "Terminate_Illegal_Broadcast_In_Depth_Guide.html",
-"zh": ""
-},
-"G-13 Incendiary Impact": {
-"file": "G-13_Incendiary_Impact.html",
-"zh": "G-13 燃烧冲击弹"
-},
-"Imber/Battle Log": {
-"file": "Imber_Battle_Log.html",
-"zh": ""
-},
-"B-1 Supply Pack": {
-"file": "B-1_Supply_Pack.html",
-"zh": ""
-},
-"P-33 Missile Pistol": {
-"file": "P-33_Missile_Pistol.html",
-"zh": "P-33 制导手枪"
-},
-"CW-36 Winter Warrior": {
-"file": "CW-36_Winter_Warrior.html",
-"zh": "CW-36“冬日战兵”"
-},
-"Biomes": {
-"file": "Biomes.html",
-"zh": ""
-},
-"1.000.303": {
-"file": "1.000.303.html",
-"zh": ""
-},
-"BR-14 Adjudicator": {
-"file": "BR-14_Adjudicator.html",
-"zh": "BR-14 审判者"
-},
-"Blitz Search And Destroy": {
-"file": "Blitz_Search_And_Destroy.html",
-"zh": ""
-},
-"Neutralize Ground-to-Orbit Defenses": {
-"file": "Neutralize_Ground-to-Orbit_Defenses.html",
-"zh": "瘫痪地对轨道防御系统"
-},
-"Motivational Shocks": {
-"file": "Motivational_Shocks.html",
-"zh": "激励性冲击"
-},
-"Regions": {
-"file": "Regions.html",
-"zh": ""
-},
-"Knight": {
-"file": "Knight.html",
-"zh": "骑士"
-},
-"Destroy Harvesters": {
-"file": "Destroy_Harvesters.html",
-"zh": "摧毁猎杀器"
-},
-"StA-X3 W.A.S.P. Launcher": {
-"file": "StA-X3_W.A.S.P._Launcher.html",
-"zh": "StA-X3 黄蜂发射器"
-},
-"Desert Dunes": {
-"file": "Desert_Dunes.html",
-"zh": ""
-},
-"Flash Hider": {
-"file": "Flash_Hider.html",
-"zh": "消焰器"
-},
-"LAS-17 Double-Edge Sickle": {
-"file": "LAS-17_Double-Edge_Sickle.html",
-"zh": "LAS-17 双刃镰刀"
-},
-"1.003.000": {
-"file": "1.003.000.html",
-"zh": ""
-},
-"Haka/Battle Log": {
-"file": "Haka_Battle_Log.html",
-"zh": ""
-},
-"1.002.201": {
-"file": "1.002.201.html",
-"zh": ""
-},
-"Helldiver Training Facility": {
-"file": "Helldiver_Training_Facility.html",
-"zh": ""
-},
-"Bug Nest": {
-"file": "Bug_Nest.html",
-"zh": "虫巢"
-},
-"Troost/Battles": {
-"file": "Troost_Battles.html",
-"zh": ""
-},
-"Reinstallation of Visual C++ Redistributables": {
-"file": "Reinstallation_of_Visual_C++_Redistributables.html",
-"zh": ""
-},
-"Sabotage Supply Bases": {
-"file": "Sabotage_Supply_Bases.html",
-"zh": "破坏补给基地"
-},
-"Localization Confusion": {
-"file": "Localization_Confusion.html",
-"zh": "定位混淆"
-},
-"Cosmetics": {
-"file": "Cosmetics.html",
-"zh": ""
-},
-"Crusher": {
-"file": "Crusher.html",
-"zh": "粉碎者"
-},
-"Democracy Protects": {
-"file": "Democracy_Protects.html",
-"zh": "民主护佑"
-},
-"Icy Glaciers": {
-"file": "Icy_Glaciers.html",
-"zh": ""
-},
-"Free Colony": {
-"file": "Free_Colony.html",
-"zh": "解放拓殖地"
-},
-"S-11 Speargun": {
-"file": "S-11_Speargun.html",
-"zh": "S-11 矛枪"
-},
-"RS-20 Constrictor": {
-"file": "RS-20_Constrictor.html",
-"zh": "RS-20“绞杀者”"
-},
-"K-2 Throwing Knife": {
-"file": "K-2_Throwing_Knife.html",
-"zh": "K-2 飞刀"
-},
-"PLAS-101 Purifier": {
-"file": "PLAS-101_Purifier.html",
-"zh": "PLAS-101 净化者"
-},
-"High Dissipation Heatsink": {
-"file": "High_Dissipation_Heatsink.html",
-"zh": "高功率散热器"
-},
-"RS-6 Fiend Destroyer": {
-"file": "RS-6_Fiend_Destroyer.html",
-"zh": "RS-6“歼魔者”"
-},
-"UF-16 Inspector": {
-"file": "UF-16_Inspector.html",
-"zh": "UF-16“督察员”"
-},
-"Rupture Spewer": {
-"file": "Rupture_Spewer.html",
-"zh": "爆裂喷涌虫"
-},
-"Sangis/Battle Log": {
-"file": "Sangis_Battle_Log.html",
-"zh": ""
-},
-"Incendiary Rocket Raider": {
-"file": "Incendiary_Rocket_Raider.html",
-"zh": ""
-},
-"Sample Scanner": {
-"file": "Sample_Scanner.html",
-"zh": "样本扫描仪"
-},
-"1.006.301": {
-"file": "1.006.301.html",
-"zh": ""
-},
-"Emergency Evacuation": {
-"file": "Emergency_Evacuation.html",
-"zh": "紧急撤离"
-},
-"Veld/Battle Log": {
-"file": "Veld_Battle_Log.html",
-"zh": ""
-},
-"Ship Modules": {
-"file": "Ship_Modules.html",
-"zh": "舰船模块"
-},
-"PLAS-39 Accelerator Rifle": {
-"file": "PLAS-39_Accelerator_Rifle.html",
-"zh": "PLAS-39 加速步枪"
-},
-"Retrieve Valuable Data": {
-"file": "Retrieve_Valuable_Data.html",
-"zh": "检索有价值的数据"
-},
-"Detector Tower": {
-"file": "Detector_Tower.html",
-"zh": "探测塔"
-},
-"AD-26 Bleeding Edge": {
-"file": "AD-26_Bleeding_Edge.html",
-"zh": "AD-26“血刃科技”"
-},
-"AF-91 Field Chemist": {
-"file": "AF-91_Field_Chemist.html",
-"zh": "AF-91“实地化学家”"
-},
-"A/M-23 EMS Mortar Sentry": {
-"file": "A_M-23_EMS_Mortar_Sentry.html",
-"zh": ""
-},
-"Stores and Unlocks": {
-"file": "Stores_and_Unlocks.html",
-"zh": ""
-},
-"K/Battle Log": {
-"file": "K_Battle_Log.html",
-"zh": ""
-},
-"XXL Weapons Bay": {
-"file": "XXL_Weapons_Bay.html",
-"zh": "XXL号武器舱"
-},
-"Mountain Cache": {
-"file": "Mountain_Cache.html",
-"zh": ""
-},
-"G-48 Giga Grenade": {
-"file": "G-48_Giga_Grenade.html",
-"zh": "G-48 千兆级榴弹"
-},
-"PLAS-45 Epoch": {
-"file": "PLAS-45_Epoch.html",
-"zh": "PLAS-45 纪元"
-},
-"RS-89 Shadow Paragon": {
-"file": "RS-89_Shadow_Paragon.html",
-"zh": "RS-89“暗影典范”"
-},
-"Stamina Enhancement": {
-"file": "Stamina_Enhancement.html",
-"zh": "耐力强化"
-},
-"1.000.11": {
-"file": "1.000.11.html",
-"zh": ""
-},
-"Concussive Padding, Hazmat": {
-"file": "Concussive_Padding,_Hazmat.html",
-"zh": "防震内衬（防化型）"
-},
-"FS-11 Executioner": {
-"file": "FS-11_Executioner.html",
-"zh": "FS-11“行刑者”"
-},
-"SG-8 Punisher": {
-"file": "SG-8_Punisher.html",
-"zh": "SG-8 惩戒者"
-},
-"Automaton Megafactory": {
-"file": "Automaton_Megafactory.html",
-"zh": ""
-},
-"Armory": {
-"file": "Armory.html",
-"zh": "军械库"
-},
-"Moradesh/Battle Log": {
-"file": "Moradesh_Battle_Log.html",
-"zh": ""
-},
-"Environmental Conditions": {
-"file": "Environmental_Conditions.html",
-"zh": ""
-},
-"GS-66 Lawmaker": {
-"file": "GS-66_Lawmaker.html",
-"zh": "GS-66“立法者”"
-},
-"AR/GL-21 One-Two": {
-"file": "AR_GL-21_One-Two.html",
-"zh": ""
-},
-"1.000.007": {
-"file": "1.000.007.html",
-"zh": ""
-},
-"Urban Legends Premium Warbond": {
-"file": "Urban_Legends_Premium_Warbond.html",
-"zh": ""
-},
-"G-7 Pineapple": {
-"file": "G-7_Pineapple.html",
-"zh": "G-7 菠萝"
-},
-"Kuper/Battle Log": {
-"file": "Kuper_Battle_Log.html",
-"zh": ""
-},
-"Democratic Detonation Premium Warbond": {
-"file": "Democratic_Detonation_Premium_Warbond.html",
-"zh": ""
-},
-"Hulk Obliterator": {
-"file": "Hulk_Obliterator.html",
-"zh": "巨型抹煞者"
-},
-"Super Earth Metropolis": {
-"file": "Super_Earth_Metropolis.html",
-"zh": ""
-},
-"P-69 Veto": {
-"file": "P-69_Veto.html",
-"zh": "P-69 否决者"
-},
-"1.003.302": {
-"file": "1.003.302.html",
-"zh": ""
-},
-"Terminids": {
-"file": "Terminids.html",
-"zh": "终结族"
-},
-"Spawn Mechanics": {
-"file": "Spawn_Mechanics.html",
-"zh": ""
-},
-"SG-8S Slugger": {
-"file": "SG-8S_Slugger.html",
-"zh": "SG-8S 强击者"
-},
-"Valgaard/Battle Log": {
-"file": "Valgaard_Battle_Log.html",
-"zh": ""
-},
-"Bellatrix/Battle Log": {
-"file": "Bellatrix_Battle_Log.html",
-"zh": ""
-},
-"Automaton Fabricator": {
-"file": "Automaton_Fabricator.html",
-"zh": "机器人制造厂"
-},
-"Control Group Premium Warbond": {
-"file": "Control_Group_Premium_Warbond.html",
-"zh": ""
-},
-"MGX-42 Bullet Storm": {
-"file": "MGX-42_Bullet_Storm.html",
-"zh": "MGX-42弹幕风暴"
-},
-"R/40-K Hot-Shot Marksman Rifle": {
-"file": "R_40-K_Hot-Shot_Marksman_Rifle.html",
-"zh": "R/40-K 高能精确射手步枪"
-},
-"Overseer": {
-"file": "Overseer.html",
-"zh": "监视者"
-},
-"Scout": {
-"file": "Scout.html",
-"zh": "侦察"
-},
-"SMG-72 Pummeler": {
-"file": "SMG-72_Pummeler.html",
-"zh": "SMG-72 重锤者"
-},
-"G-89 Smokescreen": {
-"file": "G-89_Smokescreen.html",
-"zh": "G-89 烟幕"
-},
-"Maw/Battle Log": {
-"file": "Maw_Battle_Log.html",
-"zh": ""
-},
-"Laser Sight": {
-"file": "Laser_Sight.html",
-"zh": "激光瞄准器"
-},
-"AR-23A Liberator Carbine": {
-"file": "AR-23A_Liberator_Carbine.html",
-"zh": "AR-23A 卡宾解放者"
-},
-"Compensator": {
-"file": "Compensator.html",
-"zh": "补偿器"
-},
-"Eagle Napalm Airstrike": {
-"file": "Eagle_Napalm_Airstrike.html",
-"zh": "“飞鹰”凝固汽油弹空袭"
-},
-"A/GM-17 Gas Mortar Sentry": {
-"file": "A_GM-17_Gas_Mortar_Sentry.html",
-"zh": ""
-},
-"Meissa/Battles": {
-"file": "Meissa_Battles.html",
-"zh": ""
-},
-"1.003.303": {
-"file": "1.003.303.html",
-"zh": ""
-},
-"Reinstallation of GameGuard": {
-"file": "Reinstallation_of_GameGuard.html",
-"zh": ""
-},
-"Hulk Firebomber": {
-"file": "Hulk_Firebomber.html",
-"zh": "巨型烈焰轰炸者"
-},
-"DS-191 Scorpion": {
-"file": "DS-191_Scorpion.html",
-"zh": "DS-191“天蝎”"
-},
-"Crash On Startup": {
-"file": "Crash_On_Startup.html",
-"zh": ""
-},
-"Hulk Bruiser": {
-"file": "Hulk_Bruiser.html",
-"zh": "巨型碾压者"
-},
-"Warp Links": {
-"file": "Warp_Links.html",
-"zh": ""
-},
-"GS-17 Frontier Marshal": {
-"file": "GS-17_Frontier_Marshal.html",
-"zh": "GS-17“边境元帅”"
-},
-"Oxygenator": {
-"file": "Oxygenator.html",
-"zh": "供氧器"
-},
-"Steam Launch Commands": {
-"file": "Steam_Launch_Commands.html",
-"zh": ""
-},
-"Flashlight Vertical Foregrip": {
-"file": "Flashlight_Vertical_Foregrip.html",
-"zh": "手电筒垂直前握把"
-},
-"CM-09 Bonesnapper": {
-"file": "CM-09_Bonesnapper.html",
-"zh": "CM-09“碎骨杀手”"
-},
-"Factory Hub": {
-"file": "Factory_Hub.html",
-"zh": "工厂枢纽"
-},
-"1.006.250": {
-"file": "1.006.250.html",
-"zh": ""
-},
-"Grafmere/Battle Log": {
-"file": "Grafmere_Battle_Log.html",
+"Game Version": {
+"file": "Game_Version.html",
 "zh": ""
 },
-"Ivis/Battle Log": {
-"file": "Ivis_Battle_Log.html",
-"zh": ""
+"Chart Terminid Tunnels": {
+"file": "Chart_Terminid_Tunnels.html",
+"zh": "绘制终结族隧道网络"
 },
-"Caph/Battle Log": {
-"file": "Caph_Battle_Log.html",
+"1.002.202": {
+"file": "1.002.202.html",
 "zh": ""
 },
-"Orbital 380mm HE Barrage": {
-"file": "Orbital_380mm_HE_Barrage.html",
-"zh": "轨道380mm高爆弹火力网"
-},
-"A/LAS-98 Laser Sentry": {
-"file": "A_LAS-98_Laser_Sentry.html",
-"zh": ""
+"Automaton Outpost": {
+"file": "Automaton_Outpost.html",
+"zh": "机器人哨站"
 },
 "G-109 Urchin": {
 "file": "G-109_Urchin.html",
 "zh": "G-109 海胆"
 },
-"2x Tube Red Dot": {
-"file": "2x_Tube_Red_Dot.html",
-"zh": "2倍管状红点瞄准镜"
+"DP-8 Mountain-Scaled": {
+"file": "DP-8_Mountain-Scaled.html",
+"zh": "DP-8“山峦鳞甲”"
 },
-"Chemical Agents Premium Warbond": {
-"file": "Chemical_Agents_Premium_Warbond.html",
+"Commando: Extract Intel": {
+"file": "Commando_Extract_Intel.html",
 "zh": ""
 },
-"Extraction": {
-"file": "Extraction.html",
-"zh": "撤离"
+"G/SH-39 Shield": {
+"file": "G_SH-39_Shield.html",
+"zh": "G/SH-39 盾雷"
 },
-"Commando: Acquire Evidence": {
-"file": "Commando_Acquire_Evidence.html",
+"Eliminate Overseers": {
+"file": "Eliminate_Overseers.html",
+"zh": "消灭监视者"
+},
+"Steeled Veterans Premium Warbond": {
+"file": "Steeled_Veterans_Premium_Warbond.html",
 "zh": ""
 },
-"Conflagration Devastator": {
-"file": "Conflagration_Devastator.html",
-"zh": "烈火蹂躏者"
-},
-"1.006.001": {
-"file": "1.006.001.html",
+"Darrowsport/Battle Log": {
+"file": "Darrowsport_Battle_Log.html",
 "zh": ""
 },
-"Gazer Spire": {
-"file": "Gazer_Spire.html",
-"zh": ""
+"B-24 Enforcer": {
+"file": "B-24_Enforcer.html",
+"zh": "B-24“执行者”"
 },
-"Linux / Steam Deck Troubleshooting": {
-"file": "Linux_Steam_Deck_Troubleshooting.html",
-"zh": ""
-},
-"Orbital Gas Strike": {
-"file": "Orbital_Gas_Strike.html",
-"zh": "轨道毒气攻击"
-},
-"Short Magazine": {
-"file": "Short_Magazine.html",
-"zh": "短弹匣"
-},
-"Luxuriant/Battle Log": {
-"file": "Luxuriant_Battle_Log.html",
-"zh": ""
-},
-"MS-11 Solo Silo": {
-"file": "MS-11_Solo_Silo.html",
-"zh": "MS-11 单人发射井"
-},
-"Illuminate Encampment": {
-"file": "Illuminate_Encampment.html",
-"zh": "光能族营地"
-},
-"1.001.005": {
-"file": "1.001.005.html",
-"zh": ""
-},
-"EXO-55 Breakthrough Exosuit": {
-"file": "EXO-55_Breakthrough_Exosuit.html",
-"zh": ""
-},
-"Berserker": {
-"file": "Berserker.html",
-"zh": "狂暴者"
-},
-"Helldiver Contract of Employment": {
-"file": "Helldiver_Contract_of_Employment.html",
-"zh": ""
-},
-"AR-59 Suppressor": {
-"file": "AR-59_Suppressor.html",
-"zh": "AR-59 消音器"
-},
-"Gunship Facility": {
-"file": "Gunship_Facility.html",
-"zh": "炮舰设施"
-},
-"Destroy Gazer Spire": {
-"file": "Destroy_Gazer_Spire.html",
-"zh": "摧毁凝视者尖塔"
-},
-"Gazer": {
-"file": "Gazer.html",
-"zh": "凝视者"
-},
-"Draupnir/Battle Log": {
-"file": "Draupnir_Battle_Log.html",
-"zh": ""
-},
-"1.003.003": {
-"file": "1.003.003.html",
-"zh": ""
-},
-"ARC-12 Blitzer": {
-"file": "ARC-12_Blitzer.html",
-"zh": "ARC-12 雷霆"
-},
-"SG-97 Sweeper": {
-"file": "SG-97_Sweeper.html",
-"zh": "SG-97 扫荡者"
-},
-"FS-34 Exterminator": {
-"file": "FS-34_Exterminator.html",
-"zh": "FS-34“灭绝者”"
-},
-"UAV Recon Booster": {
-"file": "UAV_Recon_Booster.html",
-"zh": "UAV侦察强化资源"
-},
-"Experimental Infusion": {
-"file": "Experimental_Infusion.html",
-"zh": "试验性注射剂"
-},
-"Scout Strider": {
-"file": "Scout_Strider.html",
-"zh": "侦察纵步者"
-},
-"Cutting Edge Premium Warbond": {
-"file": "Cutting_Edge_Premium_Warbond.html",
-"zh": ""
-},
-"Advanced Automaton Support Weapon Guide": {
-"file": "Advanced_Automaton_Support_Weapon_Guide.html",
-"zh": ""
-},
-"Helldiver": {
-"file": "Helldiver.html",
-"zh": "绝地潜兵"
-},
-"R-6 Deadeye": {
-"file": "R-6_Deadeye.html",
-"zh": "R-6 鹰眼"
-},
-"More Guns": {
-"file": "More_Guns.html",
-"zh": "增强枪炮火力"
-},
-"CM-21 Trench Paramedic": {
-"file": "CM-21_Trench_Paramedic.html",
-"zh": "CM-21“战壕护理员”"
-},
-"A/G-16 Gatling Sentry": {
-"file": "A_G-16_Gatling_Sentry.html",
-"zh": ""
-},
-"UF-50 Bloodhound": {
-"file": "UF-50_Bloodhound.html",
-"zh": "UF-50“猎犬”"
-},
-"Extra Padding": {
-"file": "Extra_Padding.html",
-"zh": "额外垫料"
-},
-"Destroy Command Bunkers": {
-"file": "Destroy_Command_Bunkers.html",
-"zh": "摧毁指挥碉堡"
-},
-"GS-11 Democracy's Deputy": {
-"file": "GS-11_Democracy's_Deputy.html",
-"zh": "GS-11“民主代理人”"
-},
-"Canopus/Battle Log": {
-"file": "Canopus_Battle_Log.html",
-"zh": ""
-},
-"Incendiary MG Devastator": {
-"file": "Incendiary_MG_Devastator.html",
-"zh": "燃烧机枪蹂躏者"
-},
-"Reinforcement Pods": {
-"file": "Reinforcement_Pods.html",
-"zh": "增援太空舱"
-},
-"X-45/Battle Log": {
-"file": "X-45_Battle_Log.html",
-"zh": ""
-},
-"Blitz Search And Destroy/Automaton": {
-"file": "Blitz_Search_And_Destroy_Automaton.html",
-"zh": ""
-},
-"A/M-12 Mortar Sentry": {
-"file": "A_M-12_Mortar_Sentry.html",
-"zh": ""
-},
-"Warp Ship": {
-"file": "Warp_Ship.html",
-"zh": "穿梭舰"
-},
-"Blitz: Secure Research Site": {
-"file": "Blitz_Secure_Research_Site.html",
-"zh": ""
-},
-"1.000.300": {
-"file": "1.000.300.html",
-"zh": ""
+"Pandora Base": {
+"file": "Pandora_Base.html",
+"zh": "潘多拉基地"
 },
 "Trooper": {
 "file": "Trooper.html",
 "zh": "装甲兵"
 },
-"GL-52 De-Escalator": {
-"file": "GL-52_De-Escalator.html",
-"zh": "GL-52 降级者"
+"RS-40 Beast of Prey": {
+"file": "RS-40_Beast_of_Prey.html",
+"zh": "RS-40“掠食凶兽”"
 },
-"Minor Places of Interest": {
-"file": "Minor_Places_of_Interest.html",
+"In-Game Problems": {
+"file": "In-Game_Problems.html",
 "zh": ""
 },
-"Servants of Freedom Premium Warbond": {
-"file": "Servants_of_Freedom_Premium_Warbond.html",
+"Primordia/Battle Log": {
+"file": "Primordia_Battle_Log.html",
 "zh": ""
 },
-"Zygos/Battle Log": {
-"file": "Zygos_Battle_Log.html",
+"Cyberstan Megafactory": {
+"file": "Cyberstan_Megafactory.html",
 "zh": ""
 },
-"Heeth/Battles": {
-"file": "Heeth_Battles.html",
-"zh": ""
+"Short Magazine": {
+"file": "Short_Magazine.html",
+"zh": "短弹匣"
 },
-"Virtual Memory": {
-"file": "Virtual_Memory.html",
-"zh": ""
+"Raze Strategic Infrastructure": {
+"file": "Raze_Strategic_Infrastructure.html",
+"zh": "摧毁战略基础设施"
 },
-"UF-84 Doubt Killer": {
-"file": "UF-84_Doubt_Killer.html",
-"zh": "UF-84“疑虑克星”"
+"TG-8 Sharpshooter": {
+"file": "TG-8_Sharpshooter.html",
+"zh": "TG-8“神枪手”"
 },
-"SH-51 Directional Shield": {
-"file": "SH-51_Directional_Shield.html",
-"zh": ""
+"Inflammable": {
+"file": "Inflammable.html",
+"zh": "易燃易爆"
 },
-"1.000.404": {
-"file": "1.000.404.html",
-"zh": ""
+"Eagle Smoke Strike": {
+"file": "Eagle_Smoke_Strike.html",
+"zh": "“飞鹰”烟雾攻击"
 },
-"Castellan's Creed Legendary Warbond": {
-"file": "Castellan's_Creed_Legendary_Warbond.html",
-"zh": ""
+"Predator Stalker": {
+"file": "Predator_Stalker.html",
+"zh": "掠食追踪虫"
 },
-"LAS-5 Scythe": {
-"file": "LAS-5_Scythe.html",
-"zh": "LAS-5 镰刀"
+"G-12 High Explosive": {
+"file": "G-12_High_Explosive.html",
+"zh": "G-12 高爆手榴弹"
 },
-"Dust Devils Premium Warbond": {
-"file": "Dust_Devils_Premium_Warbond.html",
-"zh": ""
-},
-"Bug Breach": {
-"file": "Bug_Breach.html",
-"zh": "虫族入侵"
-},
-"Acclimated": {
-"file": "Acclimated.html",
-"zh": "应变自如"
-},
-"SA-8 Ram": {
-"file": "SA-8_Ram.html",
-"zh": "SA-8“蛮悍”"
-},
-"G-50 Seeker": {
-"file": "G-50_Seeker.html",
-"zh": "G-50 寻踪者"
-},
-"Obedient Democracy Support Troopers Legendary Warbond": {
-"file": "Obedient_Democracy_Support_Troopers_Legendary_Warbond.html",
-"zh": ""
-},
-"1.003.103": {
-"file": "1.003.103.html",
-"zh": ""
-},
-"Station-81": {
-"file": "Station-81.html",
-"zh": ""
-},
-"SMG-37 Defender": {
-"file": "SMG-37_Defender.html",
-"zh": "SMG-37 防卫者"
-},
-"1.003.200": {
-"file": "1.003.200.html",
-"zh": ""
-},
-"Hive Guard": {
-"file": "Hive_Guard.html",
-"zh": "虫窝护卫"
-},
-"Esker/Battles": {
-"file": "Esker_Battles.html",
-"zh": ""
-},
-"Myradesh/Battle Log": {
-"file": "Myradesh_Battle_Log.html",
-"zh": ""
-},
-"Retrieve Recon Craft Intel": {
-"file": "Retrieve_Recon_Craft_Intel.html",
-"zh": "取回侦察机情报"
-},
-"Wraith/Battle Log": {
-"file": "Wraith_Battle_Log.html",
-"zh": ""
-},
-"G-10 Incendiary": {
-"file": "G-10_Incendiary.html",
-"zh": "G-10 燃烧手榴弹"
-},
-"Blizzards": {
-"file": "Blizzards.html",
-"zh": "暴风雪"
-},
-"Mobile Radar": {
-"file": "Mobile_Radar.html",
-"zh": "移动雷达"
-},
-"E/MG-101 HMG Emplacement": {
-"file": "E_MG-101_HMG_Emplacement.html",
-"zh": ""
-},
-"Stalker Lair": {
-"file": "Stalker_Lair.html",
-"zh": "追踪虫巢穴"
-},
-"Viper Commandos Premium Warbond": {
-"file": "Viper_Commandos_Premium_Warbond.html",
-"zh": ""
-},
-"Regnus/Battle Log": {
-"file": "Regnus_Battle_Log.html",
-"zh": ""
-},
-"Tyranny Park 2": {
-"file": "Tyranny_Park_2.html",
-"zh": "第二代暴政公园"
-},
-"LIFT-860 Hover Pack": {
-"file": "LIFT-860_Hover_Pack.html",
-"zh": ""
-},
-"Force of Law Premium Warbond": {
-"file": "Force_of_Law_Premium_Warbond.html",
-"zh": ""
-},
-"Parsh/Battle Log": {
-"file": "Parsh_Battle_Log.html",
-"zh": ""
-},
-"Activate Terminid Control System": {
-"file": "Activate_Terminid_Control_System.html",
-"zh": "启动终结族遏制体系"
-},
-"IE-12 Righteous": {
-"file": "IE-12_Righteous.html",
-"zh": "IE-12“义士”"
-},
-"Haunted Swamp": {
-"file": "Haunted_Swamp.html",
-"zh": ""
-},
-"Error Code 409": {
-"file": "Error_Code_409.html",
+"SEAF SAM Site": {
+"file": "SEAF_SAM_Site.html",
 "zh": ""
 },
 "Map": {
 "file": "Map.html",
 "zh": "地图"
 },
-"Culture of Super Earth": {
-"file": "Culture_of_Super_Earth.html",
+"Blitz Search And Destroy/Automaton": {
+"file": "Blitz_Search_And_Destroy_Automaton.html",
 "zh": ""
 },
-"Rocket Devastator": {
-"file": "Rocket_Devastator.html",
-"zh": "火箭蹂躏者"
-},
-"SR-24 Street Scout": {
-"file": "SR-24_Street_Scout.html",
-"zh": "SR-24“街头侦察兵”"
-},
-"Terminate Illegal Broadcast": {
-"file": "Terminate_Illegal_Broadcast.html",
-"zh": "关停非法广播"
-},
-"Gaellivare/Battle Log": {
-"file": "Gaellivare_Battle_Log.html",
+"Mox/Battle Log": {
+"file": "Mox_Battle_Log.html",
 "zh": ""
 },
-"TM-1 Lure Mine": {
-"file": "TM-1_Lure_Mine.html",
-"zh": "TM-1 诱饵地雷"
+"AC-1 Dutiful": {
+"file": "AC-1_Dutiful.html",
+"zh": "AC-1“恪尽职守”"
 },
-"1.003.102": {
-"file": "1.003.102.html",
+"Rasp/Battle Log": {
+"file": "Rasp_Battle_Log.html",
 "zh": ""
 },
-"Concealed Insertion": {
-"file": "Concealed_Insertion.html",
-"zh": "隐蔽上阵"
-},
-"Adreno-Defibrillator": {
-"file": "Adreno-Defibrillator.html",
-"zh": "肾上腺素除颤器"
-},
-"Demolition": {
-"file": "Demolition.html",
+"Jet Brigade Hulk Scorcher": {
+"file": "Jet_Brigade_Hulk_Scorcher.html",
 "zh": ""
 },
-"Cirrus/Battle Log": {
-"file": "Cirrus_Battle_Log.html",
+"EXO-51 Lumberer Exosuit": {
+"file": "EXO-51_Lumberer_Exosuit.html",
 "zh": ""
 },
-"Unflinching": {
-"file": "Unflinching.html",
-"zh": "毫不畏缩"
-},
-"Heads-Up Display": {
-"file": "Heads-Up_Display.html",
+"Terminate Illegal Broadcast/In Depth Guide": {
+"file": "Terminate_Illegal_Broadcast_In_Depth_Guide.html",
 "zh": ""
-},
-"IE-3 Martyr": {
-"file": "IE-3_Martyr.html",
-"zh": "IE-3“烈士”"
-},
-"Super Destroyer": {
-"file": "Super_Destroyer.html",
-"zh": "超级驱逐舰"
-},
-"CW-9 White Wolf": {
-"file": "CW-9_White_Wolf.html",
-"zh": "CW-9“白狼”"
-},
-"Turing/Battles": {
-"file": "Turing_Battles.html",
-"zh": ""
-},
-"No Underbarrel": {
-"file": "No_Underbarrel.html",
-"zh": "无下挂"
-},
-"MD-I4 Incendiary Mines": {
-"file": "MD-I4_Incendiary_Mines.html",
-"zh": ""
-},
-"Muscle Enhancement": {
-"file": "Muscle_Enhancement.html",
-"zh": "肌肉强化"
-},
-"DP-53 Savior of the Free": {
-"file": "DP-53_Savior_of_the_Free.html",
-"zh": "DP-53“自由救星”"
-},
-"Bunker": {
-"file": "Bunker.html",
-"zh": "碉堡"
-},
-"Second Galactic War Mechanics": {
-"file": "Second_Galactic_War_Mechanics.html",
-"zh": ""
-},
-"Targeting Software Upgrade": {
-"file": "Targeting_Software_Upgrade.html",
-"zh": "目标瞄准软件升级"
-},
-"I-92 Fire Fighter": {
-"file": "I-92_Fire_Fighter.html",
-"zh": "I-92“消防队”"
-},
-"CW-22 Kodiak": {
-"file": "CW-22_Kodiak.html",
-"zh": "CW-22“科迪亚克”"
-},
-"Destroy Rogue Research Station": {
-"file": "Destroy_Rogue_Research_Station.html",
-"zh": "摧毁叛变科研站"
 },
 "Kinetic Displacement Mitigation": {
 "file": "Kinetic_Displacement_Mitigation.html",
 "zh": "动能位移减缓"
 },
-"Bashyr/Battle Log": {
-"file": "Bashyr_Battle_Log.html",
+"Advanced Automaton Support Weapon Guide": {
+"file": "Advanced_Automaton_Support_Weapon_Guide.html",
 "zh": ""
 },
-"Wretch": {
-"file": "Wretch.html",
-"zh": "悲怜体"
-},
-"Supercolony": {
-"file": "Supercolony.html",
+"B-100 Portable Hellbomb": {
+"file": "B-100_Portable_Hellbomb.html",
 "zh": ""
 },
-"1.000.004": {
-"file": "1.000.004.html",
+"CPH-26 Commandant": {
+"file": "CPH-26_Commandant.html",
+"zh": "CPH-26“司令官”"
+},
+"Crescent Overseer": {
+"file": "Crescent_Overseer.html",
+"zh": "新月监视者"
+},
+"Durgen/Battle Log": {
+"file": "Durgen_Battle_Log.html",
 "zh": ""
 },
-"Valmox/Battle Log": {
-"file": "Valmox_Battle_Log.html",
+"AX/TX-13 Dog Breath": {
+"file": "AX_TX-13_Dog_Breath.html",
 "zh": ""
-},
-"R-63CS Diligence Counter Sniper": {
-"file": "R-63CS_Diligence_Counter_Sniper.html",
-"zh": "R-63CS 反狙击勤奋者"
-},
-"Brink-2/Battle Log": {
-"file": "Brink-2_Battle_Log.html",
-"zh": ""
-},
-"Sample Extricator": {
-"file": "Sample_Extricator.html",
-"zh": "样本拯救者"
-},
-"Eliminate Brood Commanders": {
-"file": "Eliminate_Brood_Commanders.html",
-"zh": "消灭虫族指挥官"
-},
-"Sabotage Orgo-Plasma Synthesis": {
-"file": "Sabotage_Orgo-Plasma_Synthesis.html",
-"zh": "破坏有机等离子合成"
-},
-"CE-101 Guerilla Gorilla": {
-"file": "CE-101_Guerilla_Gorilla.html",
-"zh": "CE-101“游击猩猩”"
-},
-"Siemnot/Battle Log": {
-"file": "Siemnot_Battle_Log.html",
-"zh": ""
-},
-"Meridia/Battles": {
-"file": "Meridia_Battles.html",
-"zh": ""
-},
-"No Optics": {
-"file": "No_Optics.html",
-"zh": "无准镜"
-},
-"Emorath/Battle Log": {
-"file": "Emorath_Battle_Log.html",
-"zh": ""
-},
-"GL-21 Grenade Launcher": {
-"file": "GL-21_Grenade_Launcher.html",
-"zh": "GL-21 榴弹发射器"
-},
-"Evacuate Colonists": {
-"file": "Evacuate_Colonists.html",
-"zh": "撤离殖民者"
-},
-"Confiscate Assets": {
-"file": "Confiscate_Assets.html",
-"zh": "没收资产"
-},
-"FS-61 Dreadnought": {
-"file": "FS-61_Dreadnought.html",
-"zh": "FS-61“无畏”"
-},
-"Game Version": {
-"file": "Game_Version.html",
-"zh": ""
-},
-"Durgen/Battles": {
-"file": "Durgen_Battles.html",
-"zh": ""
-},
-"Spherion/Battle Log": {
-"file": "Spherion_Battle_Log.html",
-"zh": ""
-},
-"Meteor Storms": {
-"file": "Meteor_Storms.html",
-"zh": "流星风暴"
-},
-"M-104 Incinerator FRV": {
-"file": "M-104_Incinerator_FRV.html",
-"zh": ""
-},
-"Haldus/Battle Log": {
-"file": "Haldus_Battle_Log.html",
-"zh": ""
-},
-"Kirrik/Battle Log": {
-"file": "Kirrik_Battle_Log.html",
-"zh": ""
-},
-"Radical": {
-"file": "Radical.html",
-"zh": "激进先锋"
-},
-"Kraz/Battle Log": {
-"file": "Kraz_Battle_Log.html",
-"zh": ""
-},
-"1.000.201": {
-"file": "1.000.201.html",
-"zh": ""
-},
-"Power Steering": {
-"file": "Power_Steering.html",
-"zh": "电动转向"
-},
-"Acquisition Center": {
-"file": "Acquisition_Center.html",
-"zh": "采购中心"
-},
-"Ain-5/Battle Log": {
-"file": "Ain-5_Battle_Log.html",
-"zh": ""
-},
-"RE-2310 Honorary Guard": {
-"file": "RE-2310_Honorary_Guard.html",
-"zh": "RE-2310“荣誉卫队”"
-},
-"1.5x Tube Red Dot": {
-"file": "1.5x_Tube_Red_Dot.html",
-"zh": "1.5倍管状红点瞄准镜"
-},
-"A-35 Recon": {
-"file": "A-35_Recon.html",
-"zh": "A-35“侦察者”"
-},
-"Scratchpad/Weapons List DPL": {
-"file": "Scratchpad_Weapons_List_DPL.html",
-"zh": ""
-},
-"Tectonic Drill": {
-"file": "Tectonic_Drill.html",
-"zh": "地壳钻机"
-},
-"Dolph/Battle Log": {
-"file": "Dolph_Battle_Log.html",
-"zh": ""
-},
-"G-4 Gas": {
-"file": "G-4_Gas.html",
-"zh": "G-4 毒气手榴弹"
-},
-"MA5C Assault Rifle": {
-"file": "MA5C_Assault_Rifle.html",
-"zh": "MA5C 突击步枪"
-},
-"Mekbuda/Battle Log": {
-"file": "Mekbuda_Battle_Log.html",
-"zh": ""
-},
-"Spore Burst Warrior": {
-"file": "Spore_Burst_Warrior.html",
-"zh": "孢裂武斗虫"
-},
-"Armed Resupply Pods": {
-"file": "Armed_Resupply_Pods.html",
-"zh": "武装重新补给舱"
-},
-"Zosma/Battle Log": {
-"file": "Zosma_Battle_Log.html",
-"zh": ""
-},
-"Roving Shriekers": {
-"file": "Roving_Shriekers.html",
-"zh": "漫游尖啸虫"
-},
-"Freedom's Flame Premium Warbond": {
-"file": "Freedom's_Flame_Premium_Warbond.html",
-"zh": ""
-},
-"TX-41 Sterilizer": {
-"file": "TX-41_Sterilizer.html",
-"zh": "TX-41 灭菌器"
-},
-"Weapons": {
-"file": "Weapons.html",
-"zh": "武器"
 },
 "Rupture Warrior": {
 "file": "Rupture_Warrior.html",
 "zh": "爆裂武斗虫"
 },
-"1.001.101": {
-"file": "1.001.101.html",
+"G-16 Impact": {
+"file": "G-16_Impact.html",
+"zh": "G-16 撞击手榴弹"
+},
+"Ionic Jungle": {
+"file": "Ionic_Jungle.html",
 "zh": ""
 },
-"Damage Comparison": {
-"file": "Damage_Comparison.html",
+"Firebomb Hellpods": {
+"file": "Firebomb_Hellpods.html",
+"zh": "火焰炸弹绝地喷射舱"
+},
+"Leviathan": {
+"file": "Leviathan.html",
+"zh": "利维坦"
+},
+"Turing/Battles": {
+"file": "Turing_Battles.html",
 "zh": ""
 },
-"1.000.304": {
-"file": "1.000.304.html",
+"Shrieker": {
+"file": "Shrieker.html",
+"zh": "尖啸虫"
+},
+"Supplementary Adrenaline": {
+"file": "Supplementary_Adrenaline.html",
 "zh": ""
 },
-"Extraction Zone": {
-"file": "Extraction_Zone.html",
-"zh": "撤离区"
+"M-105 Stalwart": {
+"file": "M-105_Stalwart.html",
+"zh": "M-105 盟友"
 },
-"O-3 Free Spirit": {
-"file": "O-3_Free_Spirit.html",
-"zh": "O-3“自由之魂”"
+"E-711 Extraction Facility": {
+"file": "E-711_Extraction_Facility.html",
+"zh": "711元素开采设施"
 },
-"RE-1861 Parade Commander": {
-"file": "RE-1861_Parade_Commander.html",
-"zh": "RE-1861“阅兵指挥官”"
+"Standard Heatsink": {
+"file": "Standard_Heatsink.html",
+"zh": "标准散热器"
 },
-"Shallus/Battle Log": {
-"file": "Shallus_Battle_Log.html",
+"Ship Modules": {
+"file": "Ship_Modules.html",
+"zh": "舰船模块"
+},
+"Desert Oasis": {
+"file": "Desert_Oasis.html",
 "zh": ""
 },
-"Feet First": {
-"file": "Feet_First.html",
-"zh": "护腿为上"
-},
-"Integrated Explosives": {
-"file": "Integrated_Explosives.html",
-"zh": "集成炸药"
-},
-"Andar/Battle Log": {
-"file": "Andar_Battle_Log.html",
+"Gatria/Battle Log": {
+"file": "Gatria_Battle_Log.html",
 "zh": ""
 },
-"Orbital Walking Barrage": {
-"file": "Orbital_Walking_Barrage.html",
-"zh": "轨道游走火力网"
-},
-"Collect Gloom Spore Readings": {
-"file": "Collect_Gloom_Spore_Readings.html",
-"zh": "收集“阴霾”孢子数据"
-},
-"Factions": {
-"file": "Factions.html",
+"1.002.200": {
+"file": "1.002.200.html",
 "zh": ""
 },
-"1.002.103": {
-"file": "1.002.103.html",
+"Brood Commander": {
+"file": "Brood_Commander.html",
+"zh": "虫族指挥官"
+},
+"DS-10 Big Game Hunter": {
+"file": "DS-10_Big_Game_Hunter.html",
+"zh": "DS-10“巨兽猎手”"
+},
+"Physical Conditions": {
+"file": "Physical_Conditions.html",
 "zh": ""
 },
-"1.005.001": {
-"file": "1.005.001.html",
+"Solghast/Battle Log": {
+"file": "Solghast_Battle_Log.html",
 "zh": ""
 },
-"Plains": {
-"file": "Plains.html",
+"Marauder": {
+"file": "Marauder.html",
+"zh": "劫掠者"
+},
+"Guides": {
+"file": "Guides.html",
 "zh": ""
 },
-"TR-9 Cavalier of Democracy": {
-"file": "TR-9_Cavalier_of_Democracy.html",
-"zh": "TR-9“民主骑兵”"
-},
-"Orbital Fluctuations": {
-"file": "Orbital_Fluctuations.html",
-"zh": "轨道波动"
-},
-"Troubleshooting": {
-"file": "Troubleshooting.html",
-"zh": "故障排除"
-},
-"1.002.002": {
-"file": "1.002.002.html",
+"Maximum Security City Construction Site": {
+"file": "Maximum_Security_City_Construction_Site.html",
 "zh": ""
 },
-"Tundra": {
-"file": "Tundra.html",
+"Sulfura/Battle Log": {
+"file": "Sulfura_Battle_Log.html",
 "zh": ""
 },
-"Kharst/Battle Log": {
-"file": "Kharst_Battle_Log.html",
+"Concussive Padding, Reinforced": {
+"file": "Concussive_Padding,_Reinforced.html",
+"zh": "防震内衬（强化型）"
+},
+"Structures": {
+"file": "Structures.html",
 "zh": ""
 },
-"Marfark/Battle Log": {
-"file": "Marfark_Battle_Log.html",
-"zh": ""
+"Illuminate": {
+"file": "Illuminate.html",
+"zh": "光能者"
 },
-"Campaigns": {
-"file": "Campaigns.html",
-"zh": ""
-},
-"Borea/Battle Log": {
-"file": "Borea_Battle_Log.html",
-"zh": ""
-},
-"War Strider": {
-"file": "War_Strider.html",
-"zh": "战争纵步者"
-},
-"Supply Cache Pod": {
-"file": "Supply_Cache_Pod.html",
-"zh": ""
-},
-"Take Down Overship": {
-"file": "Take_Down_Overship.html",
-"zh": "击沉统御舰"
-},
-"Ion Storms": {
-"file": "Ion_Storms.html",
-"zh": "离子风暴"
-},
-"Weapons/zh-tw": {
-"file": "Weapons_zh-tw.html",
-"zh": ""
-},
-"Pandora Base": {
-"file": "Pandora_Base.html",
-"zh": "潘多拉基地"
-},
-"Clasa/Battle Log": {
-"file": "Clasa_Battle_Log.html",
-"zh": ""
-},
-"LIFT-850 Jump Pack": {
-"file": "LIFT-850_Jump_Pack.html",
-"zh": ""
-},
-"Annihilator Tank": {
-"file": "Annihilator_Tank.html",
-"zh": "湮灭坦克"
-},
-"Superstore": {
-"file": "Superstore.html",
-"zh": "超级商店"
-},
-"Eagle Airstrike": {
-"file": "Eagle_Airstrike.html",
-"zh": "飞鹰空袭"
-},
-"Voteless": {
-"file": "Voteless.html",
-"zh": "无票者"
-},
-"G-31 Arc": {
-"file": "G-31_Arc.html",
-"zh": "G-31 电弧"
-},
-"Superior Packing Methodology": {
-"file": "Superior_Packing_Methodology.html",
-"zh": "高级装填法"
-},
-"Castor/Battle Log": {
-"file": "Castor_Battle_Log.html",
-"zh": ""
-},
-"Obtruder": {
-"file": "Obtruder.html",
-"zh": "突入者"
-},
-"Halt Cyborg Production": {
-"file": "Halt_Cyborg_Production.html",
-"zh": "使生化人停产"
-},
-"R-2124 Constitution": {
-"file": "R-2124_Constitution.html",
-"zh": "R-2124 宪法"
-},
-"Reduced Signature": {
-"file": "Reduced_Signature.html",
-"zh": "隐迹潜踪"
-},
-"L Shaped House": {
-"file": "L_Shaped_House.html",
+"AR/GL-21 One-Two": {
+"file": "AR_GL-21_One-Two.html",
 "zh": ""
 },
 "Automaton Mine": {
 "file": "Automaton_Mine.html",
 "zh": ""
 },
+"Sirius/Battle Log": {
+"file": "Sirius_Battle_Log.html",
+"zh": ""
+},
+"MD-I4 Incendiary Mines": {
+"file": "MD-I4_Incendiary_Mines.html",
+"zh": ""
+},
+"TED-63 Dynamite": {
+"file": "TED-63_Dynamite.html",
+"zh": "TED-63 炸药"
+},
+"Conduct Geological Survey": {
+"file": "Conduct_Geological_Survey.html",
+"zh": "开展地质调查"
+},
+"Laser Sight W/ Flashlight": {
+"file": "Laser_Sight_W_Flashlight.html",
+"zh": "激光瞄准器带照明"
+},
+"Desert Dunes": {
+"file": "Desert_Dunes.html",
+"zh": ""
+},
+"Reinforced Epaulettes": {
+"file": "Reinforced_Epaulettes.html",
+"zh": "强化肩章"
+},
+"SG-225 Breaker": {
+"file": "SG-225_Breaker.html",
+"zh": "SG-225 破裂者"
+},
+"Retrieve Recon Craft Intel": {
+"file": "Retrieve_Recon_Craft_Intel.html",
+"zh": "取回侦察机情报"
+},
+"P-2 Peacemaker": {
+"file": "P-2_Peacemaker.html",
+"zh": "P-2 和平使者"
+},
+"Mort/Battle Log": {
+"file": "Mort_Battle_Log.html",
+"zh": ""
+},
+"Restart Pumps": {
+"file": "Restart_Pumps.html",
+"zh": "重启泵机"
+},
+"1.003.303": {
+"file": "1.003.303.html",
+"zh": ""
+},
+"Tibit/Battle Log": {
+"file": "Tibit_Battle_Log.html",
+"zh": ""
+},
+"Mantes/Battle Log": {
+"file": "Mantes_Battle_Log.html",
+"zh": ""
+},
 "Bleak Oasis": {
 "file": "Bleak_Oasis.html",
 "zh": ""
 },
-"FX-12 Shield Generator Relay": {
-"file": "FX-12_Shield_Generator_Relay.html",
+"Krakatwo/Battle Log": {
+"file": "Krakatwo_Battle_Log.html",
 "zh": ""
 },
-"EXO-45 Patriot Exosuit": {
-"file": "EXO-45_Patriot_Exosuit.html",
+"AR-61 Tenderizer": {
+"file": "AR-61_Tenderizer.html",
+"zh": "AR-61 软化者"
+},
+"B-1 Supply Pack": {
+"file": "B-1_Supply_Pack.html",
 "zh": ""
 },
-"Armor": {
-"file": "Armor.html",
-"zh": "护甲"
+"GL-28 Belt-Fed Grenade Launcher": {
+"file": "GL-28_Belt-Fed_Grenade_Launcher.html",
+"zh": "GL-28 弹链式榴弹发射器"
+},
+"Flexible Reinforcement Budget": {
+"file": "Flexible_Reinforcement_Budget.html",
+"zh": "灵活增援预算"
+},
+"Blitz: Suppress Toxic Pollination": {
+"file": "Blitz_Suppress_Toxic_Pollination.html",
+"zh": ""
+},
+"Hive Breaker Drill": {
+"file": "Hive_Breaker_Drill.html",
+"zh": "“虫窝破裂者”钻机"
 },
 "Super Earth Ministries": {
 "file": "Super_Earth_Ministries.html",
+"zh": ""
+},
+"MD-17 Anti-Tank Mines": {
+"file": "MD-17_Anti-Tank_Mines.html",
+"zh": ""
+},
+"Half Choke": {
+"file": "Half_Choke.html",
+"zh": "半喉缩"
+},
+"1.003.000": {
+"file": "1.003.000.html",
+"zh": ""
+},
+"Adhara/Battle Log": {
+"file": "Adhara_Battle_Log.html",
+"zh": ""
+},
+"Bug Hole": {
+"file": "Bug_Hole.html",
+"zh": "虫穴"
+},
+"Eliminate Impaler": {
+"file": "Eliminate_Impaler.html",
+"zh": "消灭穿刺虫"
+},
+"Commando: Secure Black Box": {
+"file": "Commando_Secure_Black_Box.html",
+"zh": ""
+},
+"Drum Magazine": {
+"file": "Drum_Magazine.html",
+"zh": "弹鼓"
+},
+"Penta/Battle Log": {
+"file": "Penta_Battle_Log.html",
+"zh": ""
+},
+"CQC-1 One True Flag": {
+"file": "CQC-1_One_True_Flag.html",
+"zh": "CQC-1 唯一真旗"
+},
+"Spread Democracy": {
+"file": "Spread_Democracy.html",
+"zh": "传播民主"
+},
+"SH-51 Directional Shield": {
+"file": "SH-51_Directional_Shield.html",
+"zh": ""
+},
+"Collect Meteorological Data": {
+"file": "Collect_Meteorological_Data.html",
+"zh": "收集气象数据"
+},
+"Eagle Rearm": {
+"file": "Eagle_Rearm.html",
+"zh": "重新武装“飞鹰”"
+},
+"Personal Orders": {
+"file": "Personal_Orders.html",
+"zh": "个人指令"
+},
+"Hellpod Space Optimization": {
+"file": "Hellpod_Space_Optimization.html",
+"zh": "绝地喷射舱空间优化"
+},
+"Helldivers x Killzone": {
+"file": "Helldivers_x_Killzone.html",
+"zh": ""
+},
+"Supply Cache Pod": {
+"file": "Supply_Cache_Pod.html",
+"zh": ""
+},
+"Void Gateway": {
+"file": "Void_Gateway.html",
+"zh": "寂域通路"
+},
+"K/Battle Log": {
+"file": "K_Battle_Log.html",
+"zh": ""
+},
+"Electronic Countermeasures": {
+"file": "Electronic_Countermeasures.html",
+"zh": "电子对抗"
+},
+"Levels": {
+"file": "Levels.html",
+"zh": ""
+},
+"Clasa/Battle Log": {
+"file": "Clasa_Battle_Log.html",
+"zh": ""
+},
+"Masters of Ceremony Premium Warbond": {
+"file": "Masters_of_Ceremony_Premium_Warbond.html",
+"zh": ""
+},
+"Draupnir/Battle Log": {
+"file": "Draupnir_Battle_Log.html",
+"zh": ""
+},
+"Tank (disambiguation)": {
+"file": "Tank_(disambiguation).html",
+"zh": ""
+},
+"Jet Brigade Hulk Bruiser": {
+"file": "Jet_Brigade_Hulk_Bruiser.html",
+"zh": ""
+},
+"Eradicate Terminid Swarm": {
+"file": "Eradicate_Terminid_Swarm.html",
+"zh": "剿灭终结族虫群"
+},
+"Kelvinor/Battle Log": {
+"file": "Kelvinor_Battle_Log.html",
+"zh": ""
+},
+"Kuper/Battle Log": {
+"file": "Kuper_Battle_Log.html",
+"zh": ""
+},
+"Xenoentomology Center": {
+"file": "Xenoentomology_Center.html",
+"zh": "异星昆虫学研究中心"
+},
+"G-13 Incendiary Impact": {
+"file": "G-13_Incendiary_Impact.html",
+"zh": "G-13 燃烧冲击弹"
+},
+"1.005.001": {
+"file": "1.005.001.html",
+"zh": ""
+},
+"Stores and Unlocks": {
+"file": "Stores_and_Unlocks.html",
+"zh": ""
+},
+"A/MG-43 Machine Gun Sentry": {
+"file": "A_MG-43_Machine_Gun_Sentry.html",
+"zh": ""
+},
+"Dead Sprint": {
+"file": "Dead_Sprint.html",
+"zh": "死亡冲刺"
+},
+"Moon": {
+"file": "Moon.html",
+"zh": "月球"
+},
+"Supercolony": {
+"file": "Supercolony.html",
+"zh": ""
+},
+"Upload Escape Pod Data": {
+"file": "Upload_Escape_Pod_Data.html",
+"zh": "上传逃生舱的数据"
+},
+"Gemma/Battle Log": {
+"file": "Gemma_Battle_Log.html",
+"zh": ""
+},
+"Lesath/Battles": {
+"file": "Lesath_Battles.html",
+"zh": ""
+},
+"Nursing Spewer": {
+"file": "Nursing_Spewer.html",
+"zh": "抚育喷涌虫"
+},
+"G-31 Arc": {
+"file": "G-31_Arc.html",
+"zh": "G-31 电弧"
+},
+"Brilliance/Battle Log": {
+"file": "Brilliance_Battle_Log.html",
+"zh": ""
+},
+"LAS-98 Laser Cannon": {
+"file": "LAS-98_Laser_Cannon.html",
+"zh": "LAS-98 激光大炮"
+},
+"AR-32 Pacifier": {
+"file": "AR-32_Pacifier.html",
+"zh": ""
+},
+"Localization Confusion": {
+"file": "Localization_Confusion.html",
+"zh": "定位混淆"
+},
+"Troubleshooting Stutters/Short Freezes": {
+"file": "Troubleshooting_Stutters_Short_Freezes.html",
+"zh": ""
+},
+"CQC-42 Machete": {
+"file": "CQC-42_Machete.html",
+"zh": "CQC-42 砍刀"
+},
+"1.000.001": {
+"file": "1.000.001.html",
+"zh": ""
+},
+"RS-67 Null Cipher": {
+"file": "RS-67_Null_Cipher.html",
+"zh": "RS-67“空密码”"
+},
+"Acclimated": {
+"file": "Acclimated.html",
+"zh": "应变自如"
+},
+"Shock Absorption Gel": {
+"file": "Shock_Absorption_Gel.html",
+"zh": "减震凝胶"
+},
+"1.006.300": {
+"file": "1.006.300.html",
+"zh": ""
+},
+"Barbed Wire": {
+"file": "Barbed_Wire.html",
+"zh": "倒刺铁丝网"
+},
+"Destroy Rogue Research Station": {
+"file": "Destroy_Rogue_Research_Station.html",
+"zh": "摧毁叛变科研站"
+},
+"Ustotu/Battles": {
+"file": "Ustotu_Battles.html",
+"zh": ""
+},
+"A/GM-17 Gas Mortar Sentry": {
+"file": "A_GM-17_Gas_Mortar_Sentry.html",
+"zh": ""
+},
+"Automaton Megafactory": {
+"file": "Automaton_Megafactory.html",
+"zh": ""
+},
+"Collect Gloom Spore Readings": {
+"file": "Collect_Gloom_Spore_Readings.html",
+"zh": "收集“阴霾”孢子数据"
+},
+"W:en:Module talk:Protection banner": {
+"file": "W_en_Module_talk_Protection_banner.html",
+"zh": ""
+},
+"Full Choke": {
+"file": "Full_Choke.html",
+"zh": "全喉缩"
+},
+"R-2124 Constitution": {
+"file": "R-2124_Constitution.html",
+"zh": "R-2124 宪法"
+},
+"R/40-K Hot-Shot Marksman Rifle": {
+"file": "R_40-K_Hot-Shot_Marksman_Rifle.html",
+"zh": "R/40-K 高能精确射手步枪"
+},
+"B-01 Tactical": {
+"file": "B-01_Tactical.html",
+"zh": "B-01战术"
+},
+"Skitter/Battle Log": {
+"file": "Skitter_Battle_Log.html",
+"zh": ""
+},
+"Crashed Ship": {
+"file": "Crashed_Ship.html",
+"zh": "坠毁飞船"
+},
+"Rocket Devastator": {
+"file": "Rocket_Devastator.html",
+"zh": "火箭蹂躏者"
+},
+"Bellatrix/Battle Log": {
+"file": "Bellatrix_Battle_Log.html",
+"zh": ""
+},
+"Destroy Command Bunkers": {
+"file": "Destroy_Command_Bunkers.html",
+"zh": "摧毁指挥碉堡"
+},
+"1.002.103": {
+"file": "1.002.103.html",
+"zh": ""
+},
+"Damaged Hellbomb": {
+"file": "Damaged_Hellbomb.html",
+"zh": ""
+},
+"M-104 Incinerator FRV": {
+"file": "M-104_Incinerator_FRV.html",
+"zh": ""
+},
+"R-6 Deadeye": {
+"file": "R-6_Deadeye.html",
+"zh": "R-6 鹰眼"
+},
+"Orbital Cannons": {
+"file": "Orbital_Cannons.html",
+"zh": "轨道加农炮"
+},
+"Hive World": {
+"file": "Hive_World.html",
+"zh": "虫窝世界"
+},
+"Armory": {
+"file": "Armory.html",
+"zh": "军械库"
+},
+"DP-40 Hero of the Federation": {
+"file": "DP-40_Hero_of_the_Federation.html",
+"zh": "DP-40“联邦英雄”"
+},
+"Medal": {
+"file": "Medal.html",
+"zh": "奖章"
+},
+"Canopus/Battle Log": {
+"file": "Canopus_Battle_Log.html",
+"zh": ""
+},
+"R-2 Amendment": {
+"file": "R-2_Amendment.html",
+"zh": "R-2 修正"
+},
+"Superstore/WIP": {
+"file": "Superstore_WIP.html",
+"zh": ""
+},
+"SR-24 Street Scout": {
+"file": "SR-24_Street_Scout.html",
+"zh": "SR-24“街头侦察兵”"
+},
+"Game Mechanics": {
+"file": "Game_Mechanics.html",
+"zh": ""
+},
+"CQC-72 Entrenchment Tool": {
+"file": "CQC-72_Entrenchment_Tool.html",
+"zh": "CQC-72 堑壕工具"
+},
+"Caramoor/Battle Log": {
+"file": "Caramoor_Battle_Log.html",
+"zh": ""
+},
+"Obedient Democracy Support Troopers Legendary Warbond": {
+"file": "Obedient_Democracy_Support_Troopers_Legendary_Warbond.html",
+"zh": ""
+},
+"Sample Scanner": {
+"file": "Sample_Scanner.html",
+"zh": "样本扫描仪"
+},
+"P-11 Stim Pistol": {
+"file": "P-11_Stim_Pistol.html",
+"zh": "P-11 兴奋剂手枪"
+},
+"Weapons/zh-tw": {
+"file": "Weapons_zh-tw.html",
+"zh": ""
+},
+"Pyro Trooper": {
+"file": "Pyro_Trooper.html",
+"zh": "炙焰装甲兵"
+},
+"CW-9 White Wolf": {
+"file": "CW-9_White_Wolf.html",
+"zh": "CW-9“白狼”"
+},
+"XXL Weapons Bay": {
+"file": "XXL_Weapons_Bay.html",
+"zh": "XXL号武器舱"
+},
+"A/MLS-4X Rocket Sentry": {
+"file": "A_MLS-4X_Rocket_Sentry.html",
+"zh": ""
+},
+"Veld/Battles": {
+"file": "Veld_Battles.html",
+"zh": ""
+},
+"EX-00 Prototype X": {
+"file": "EX-00_Prototype_X.html",
+"zh": "EX-00“原型X”"
+},
+"FLAM-66 Torcher": {
+"file": "FLAM-66_Torcher.html",
+"zh": "FLAM-66 火炬手"
+},
+"Terminid Research Preserve": {
+"file": "Terminid_Research_Preserve.html",
+"zh": "终结族研究保护区"
+},
+"No Attachment": {
+"file": "No_Attachment.html",
+"zh": "无配件"
+},
+"X-45/Battle Log": {
+"file": "X-45_Battle_Log.html",
+"zh": ""
+},
+"JAR-5 Dominator": {
+"file": "JAR-5_Dominator.html",
+"zh": "JAR-5 主宰"
+},
+"AD-26 Bleeding Edge": {
+"file": "AD-26_Bleeding_Edge.html",
+"zh": "AD-26“血刃科技”"
+},
+"Lightning Spire": {
+"file": "Lightning_Spire.html",
+"zh": "闪电尖塔"
+},
+"Network Troubleshooting": {
+"file": "Network_Troubleshooting.html",
+"zh": ""
+},
+"Superstore": {
+"file": "Superstore.html",
+"zh": "超级商店"
+},
+"Emergency Evacuation": {
+"file": "Emergency_Evacuation.html",
+"zh": "紧急撤离"
+},
+"Inari/Battle Log": {
+"file": "Inari_Battle_Log.html",
+"zh": ""
+},
+"Menkent/Battles": {
+"file": "Menkent_Battles.html",
+"zh": ""
+},
+"Freedom's Flame Premium Warbond": {
+"file": "Freedom's_Flame_Premium_Warbond.html",
+"zh": ""
+},
+"Roving Shriekers": {
+"file": "Roving_Shriekers.html",
+"zh": "漫游尖啸虫"
+},
+"Wasat/Battle Log": {
+"file": "Wasat_Battle_Log.html",
+"zh": ""
+},
+"Destroy Harvesters": {
+"file": "Destroy_Harvesters.html",
+"zh": "摧毁猎杀器"
+},
+"Feet First": {
+"file": "Feet_First.html",
+"zh": "护腿为上"
+},
+"Autumn Forest": {
+"file": "Autumn_Forest.html",
+"zh": ""
+},
+"Eukoria/Battle Log": {
+"file": "Eukoria_Battle_Log.html",
+"zh": ""
+},
+"Fractured Planet": {
+"file": "Fractured_Planet.html",
+"zh": "碎裂星球"
+},
+"Orbital Gas Strike": {
+"file": "Orbital_Gas_Strike.html",
+"zh": "轨道毒气攻击"
+},
+"Sabotage Air Base": {
+"file": "Sabotage_Air_Base.html",
+"zh": "破坏航空基地"
+},
+"MG-206 Heavy Machine Gun": {
+"file": "MG-206_Heavy_Machine_Gun.html",
+"zh": "MG-206重型机枪"
+},
+"SR-64 Cinderblock": {
+"file": "SR-64_Cinderblock.html",
+"zh": "SR-64“煤渣砖”"
+},
+"Incendiary MG Devastator": {
+"file": "Incendiary_MG_Devastator.html",
+"zh": "燃烧机枪蹂躏者"
+},
+"UAV Recon Booster": {
+"file": "UAV_Recon_Booster.html",
+"zh": "UAV侦察强化资源"
+},
+"SEAF Artillery": {
+"file": "SEAF_Artillery.html",
+"zh": "超级地球武装部队大炮"
+},
+"Destroy Spore Lung": {
+"file": "Destroy_Spore_Lung.html",
+"zh": "摧毁孢肺"
+},
+"G-10 Incendiary": {
+"file": "G-10_Incendiary.html",
+"zh": "G-10 燃烧手榴弹"
+},
+"Enemy Bio-Processors": {
+"file": "Enemy_Bio-Processors.html",
+"zh": "敌方生物处理器"
+},
+"1.001.101": {
+"file": "1.001.101.html",
+"zh": ""
+},
+"Achievements": {
+"file": "Achievements.html",
+"zh": ""
+},
+"G-123 Thermite": {
+"file": "G-123_Thermite.html",
+"zh": "G-123 铝热剂手榴弹"
+},
+"Muscle Enhancement": {
+"file": "Muscle_Enhancement.html",
+"zh": "肌肉强化"
+},
+"Advanced Automaton Backpack Stratagem Guide": {
+"file": "Advanced_Automaton_Backpack_Stratagem_Guide.html",
+"zh": ""
+},
+"AR-23P Liberator Penetrator": {
+"file": "AR-23P_Liberator_Penetrator.html",
+"zh": "AR-23P 穿甲解放者"
+},
+"Status Effects": {
+"file": "Status_Effects.html",
+"zh": ""
+},
+"ARC-12 Blitzer": {
+"file": "ARC-12_Blitzer.html",
+"zh": "ARC-12 雷霆"
+},
+"Concussive Padding, Hazmat": {
+"file": "Concussive_Padding,_Hazmat.html",
+"zh": "防震内衬（防化型）"
+},
+"Extra Padding": {
+"file": "Extra_Padding.html",
+"zh": "额外垫料"
+},
+"Super Citizen Edition": {
+"file": "Super_Citizen_Edition.html",
+"zh": ""
+},
+"Predator Hunter": {
+"file": "Predator_Hunter.html",
+"zh": "掠食追猎虫"
+},
+"BIOS Updates": {
+"file": "BIOS_Updates.html",
+"zh": ""
+},
+"IE-57 Hell-Bent": {
+"file": "IE-57_Hell-Bent.html",
+"zh": "IE-57“奋不顾身”"
+},
+"Lava": {
+"file": "Lava.html",
+"zh": "熔岩"
+},
+"Reinforce": {
+"file": "Reinforce.html",
+"zh": "增援"
+},
+"StA-11 SMG": {
+"file": "StA-11_SMG.html",
+"zh": "StA-11 冲锋枪"
+},
+"1.000.007": {
+"file": "1.000.007.html",
+"zh": ""
+},
+"Bunker Turret": {
+"file": "Bunker_Turret.html",
+"zh": "碉堡炮台"
+},
+"Super Earth Flag": {
+"file": "Super_Earth_Flag.html",
+"zh": "超级地球旗帜"
+},
+"SSSD Hard Drive": {
+"file": "SSSD_Hard_Drive.html",
+"zh": "超级固态硬盘"
+},
+"Sangis/Battle Log": {
+"file": "Sangis_Battle_Log.html",
+"zh": ""
+},
+"User Settings Config FPS Optimization": {
+"file": "User_Settings_Config_FPS_Optimization.html",
+"zh": ""
+},
+"Gunslinger": {
+"file": "Gunslinger.html",
+"zh": "神枪手"
+},
+"Ground Stash": {
+"file": "Ground_Stash.html",
+"zh": ""
+},
+"CW-36 Winter Warrior": {
+"file": "CW-36_Winter_Warrior.html",
+"zh": "CW-36“冬日战兵”"
+},
+"Elevated Overseer": {
+"file": "Elevated_Overseer.html",
+"zh": "崇高监视者"
+},
+"Entrenchment": {
+"file": "Entrenchment.html",
+"zh": ""
+},
+"Junkyard": {
+"file": "Junkyard.html",
+"zh": ""
+},
+"Last Great War": {
+"file": "Last_Great_War.html",
+"zh": ""
+},
+"StA-X3 W.A.S.P. Launcher": {
+"file": "StA-X3_W.A.S.P._Launcher.html",
+"zh": "StA-X3 黄蜂发射器"
+},
+"Underground Cache": {
+"file": "Underground_Cache.html",
+"zh": ""
+},
+"Jet Brigade Trooper": {
+"file": "Jet_Brigade_Trooper.html",
+"zh": "喷气旅装甲兵"
+},
+"1.000.12": {
+"file": "1.000.12.html",
+"zh": ""
+},
+"Fronteria/Battle Log": {
+"file": "Fronteria_Battle_Log.html",
+"zh": ""
+},
+"Damage": {
+"file": "Damage.html",
+"zh": "伤害"
+},
+"Detector Tower": {
+"file": "Detector_Tower.html",
+"zh": "探测塔"
+},
+"Helldivers 2": {
+"file": "Helldivers_2.html",
+"zh": "绝地潜兵2"
+},
+"SG-225IE Breaker Incendiary": {
+"file": "SG-225IE_Breaker_Incendiary.html",
+"zh": "SG-225IE 燃烧破裂者"
+},
+"Fire Tornados": {
+"file": "Fire_Tornados.html",
+"zh": "烈焰龙卷"
+},
+"Heeth/Battle Log": {
+"file": "Heeth_Battle_Log.html",
+"zh": ""
+},
+"Propus/Battle Log": {
+"file": "Propus_Battle_Log.html",
+"zh": ""
+},
+"Trandor/Battle Log": {
+"file": "Trandor_Battle_Log.html",
+"zh": ""
+},
+"Prospecting Drill": {
+"file": "Prospecting_Drill.html",
+"zh": "勘探钻机"
+},
+"Donation Access License": {
+"file": "Donation_Access_License.html",
+"zh": "捐赠物资使用许可"
+},
+"No Optics": {
+"file": "No_Optics.html",
+"zh": "无准镜"
+},
+"FS-34 Exterminator": {
+"file": "FS-34_Exterminator.html",
+"zh": "FS-34“灭绝者”"
+},
+"Extract Research Probe Data": {
+"file": "Extract_Research_Probe_Data.html",
+"zh": "提取研究探测仪数据"
+},
+"Cutting Edge Premium Warbond": {
+"file": "Cutting_Edge_Premium_Warbond.html",
+"zh": ""
+},
+"P-72 Crisper": {
+"file": "P-72_Crisper.html",
+"zh": "P-72 迅击"
+},
+"Desert Cliffs": {
+"file": "Desert_Cliffs.html",
+"zh": ""
+},
+"AD-49 Apollonian": {
+"file": "AD-49_Apollonian.html",
+"zh": "AD-49“阿波罗神”"
+},
+"Angled Foregrip": {
+"file": "Angled_Foregrip.html",
+"zh": "直角前握把"
+},
+"UF-16 Inspector": {
+"file": "UF-16_Inspector.html",
+"zh": "UF-16“督察员”"
+},
+"Deploy Dark Fluid": {
+"file": "Deploy_Dark_Fluid.html",
+"zh": "部署暗液体"
+},
+"Engineering Kit": {
+"file": "Engineering_Kit.html",
+"zh": "工程包"
+},
+"Polar Patriots Premium Warbond": {
+"file": "Polar_Patriots_Premium_Warbond.html",
 "zh": ""
 },
 "AX/FLAM-75 Hot Dog": {
 "file": "AX_FLAM-75_Hot_Dog.html",
 "zh": ""
 },
-"Omicron/Battle Log": {
-"file": "Omicron_Battle_Log.html",
+"Iro/Battle Log": {
+"file": "Iro_Battle_Log.html",
 "zh": ""
 },
-"Leviathan": {
-"file": "Leviathan.html",
-"zh": "利维坦"
-},
-"G-12 High Explosive": {
-"file": "G-12_High_Explosive.html",
-"zh": "G-12 高爆手榴弹"
-},
-"Fleshmob": {
-"file": "Fleshmob.html",
-"zh": "肉瘤体"
-},
-"Hive Lord": {
-"file": "Hive_Lord.html",
-"zh": "霸王虫"
-},
-"Galaxy Places of Interest": {
-"file": "Galaxy_Places_of_Interest.html",
+"Steam Troubleshooting": {
+"file": "Steam_Troubleshooting.html",
 "zh": ""
 },
-"1.001.104": {
-"file": "1.001.104.html",
+"Places of Interest": {
+"file": "Places_of_Interest.html",
 "zh": ""
 },
-"I-09 Heatseeker": {
-"file": "I-09_Heatseeker.html",
-"zh": "I-09“热力追踪”"
+"Siege-Ready": {
+"file": "Siege-Ready.html",
+"zh": "蓄势出击"
 },
-"10x Sniper Scope": {
-"file": "10x_Sniper_Scope.html",
-"zh": "10倍狙击镜"
+"Warp Ship": {
+"file": "Warp_Ship.html",
+"zh": "穿梭舰"
+},
+"Eradicate": {
+"file": "Eradicate.html",
+"zh": "歼灭"
+},
+"Merak/Battle Log": {
+"file": "Merak_Battle_Log.html",
+"zh": ""
+},
+"Spore Burst Scavenger": {
+"file": "Spore_Burst_Scavenger.html",
+"zh": "孢裂食腐虫"
+},
+"Conflagration Devastator": {
+"file": "Conflagration_Devastator.html",
+"zh": "烈火蹂躏者"
+},
+"G/40-K Melta Mine": {
+"file": "G_40-K_Melta_Mine.html",
+"zh": "G/40-K 熔解地雷"
+},
+"1.006.251": {
+"file": "1.006.251.html",
+"zh": ""
+},
+"Durgen/Battles": {
+"file": "Durgen_Battles.html",
+"zh": ""
+},
+"Luxuriant/Battle Log": {
+"file": "Luxuriant_Battle_Log.html",
+"zh": ""
+},
+"Peak Physique": {
+"file": "Peak_Physique.html",
+"zh": "健壮体格"
+},
+"BR-14 Adjudicator": {
+"file": "BR-14_Adjudicator.html",
+"zh": "BR-14 审判者"
+},
+"Veld/Battle Log": {
+"file": "Veld_Battle_Log.html",
+"zh": ""
+},
+"Liquid-Ventilated Cockpit": {
+"file": "Liquid-Ventilated_Cockpit.html",
+"zh": "液态通风驾驶舱"
+},
+"GS-17 Frontier Marshal": {
+"file": "GS-17_Frontier_Marshal.html",
+"zh": "GS-17“边境元帅”"
+},
+"Super Earth Vehicles": {
+"file": "Super_Earth_Vehicles.html",
+"zh": ""
+},
+"Recoil": {
+"file": "Recoil.html",
+"zh": "后坐力"
+},
+"Eliminate Chargers": {
+"file": "Eliminate_Chargers.html",
+"zh": "消灭强袭虫"
+},
+"E/AT-12 Anti-Tank Emplacement": {
+"file": "E_AT-12_Anti-Tank_Emplacement.html",
+"zh": ""
+},
+"Duckbill": {
+"file": "Duckbill.html",
+"zh": "鸭嘴枪口"
+},
+"Intercept Convoy": {
+"file": "Intercept_Convoy.html",
+"zh": "拦截车队"
+},
+"Scratchpad/Weapons List DPL": {
+"file": "Scratchpad_Weapons_List_DPL.html",
+"zh": ""
+},
+"Gunship Patrols": {
+"file": "Gunship_Patrols.html",
+"zh": "炮舰巡逻队"
+},
+"EXO-49 Emancipator Exosuit": {
+"file": "EXO-49_Emancipator_Exosuit.html",
+"zh": "EXO-49 \"解放者\"外骨骼装甲"
+},
+"Parsh/Battle Log": {
+"file": "Parsh_Battle_Log.html",
+"zh": ""
+},
+"Culture of Super Earth": {
+"file": "Culture_of_Super_Earth.html",
+"zh": ""
+},
+"FS-05 Marksman": {
+"file": "FS-05_Marksman.html",
+"zh": "FS-05“神射手”"
+},
+"1.003.101": {
+"file": "1.003.101.html",
+"zh": ""
+},
+"Deactivate Terminid Control System": {
+"file": "Deactivate_Terminid_Control_System.html",
+"zh": "关闭终结族遏制体系"
+},
+"Virtual Memory": {
+"file": "Virtual_Memory.html",
+"zh": ""
+},
+"Armed Resupply Pods": {
+"file": "Armed_Resupply_Pods.html",
+"zh": "武装重新补给舱"
+},
+"Gazer": {
+"file": "Gazer.html",
+"zh": "凝视者"
+},
+"B-27 Fortified Commando": {
+"file": "B-27_Fortified_Commando.html",
+"zh": "B-27“强化突击兵”"
+},
+"Cirrus/Battle Log": {
+"file": "Cirrus_Battle_Log.html",
+"zh": ""
+},
+"Extraction Zone": {
+"file": "Extraction_Zone.html",
+"zh": "撤离区"
+},
+"Democracy Space Station": {
+"file": "Democracy_Space_Station.html",
+"zh": "民主空间站"
+},
+"Myradesh/Battle Log": {
+"file": "Myradesh_Battle_Log.html",
+"zh": ""
+},
+"1.000.100": {
+"file": "1.000.100.html",
+"zh": ""
+},
+"1.001.201": {
+"file": "1.001.201.html",
+"zh": ""
 },
 "Enemy Classes": {
 "file": "Enemy_Classes.html",
 "zh": ""
 },
-"EX-03 Prototype 3": {
-"file": "EX-03_Prototype_3.html",
-"zh": "EX-03“原型 3”"
-},
-"Synthetic Supplementation": {
-"file": "Synthetic_Supplementation.html",
-"zh": "合成补给"
-},
-"Gunvald/Battle Log": {
-"file": "Gunvald_Battle_Log.html",
+"Input Problems": {
+"file": "Input_Problems.html",
 "zh": ""
 },
-"Veracitor": {
-"file": "Veracitor.html",
-"zh": "证真者"
-},
-"Ustotu/Battles": {
-"file": "Ustotu_Battles.html",
+"Troost/Battle Log": {
+"file": "Troost_Battle_Log.html",
 "zh": ""
+},
+"Hulk Scorcher": {
+"file": "Hulk_Scorcher.html",
+"zh": "巨型炙炎者"
+},
+"Zygos/Battle Log": {
+"file": "Zygos_Battle_Log.html",
+"zh": ""
+},
+"SMG-203 Gallant": {
+"file": "SMG-203_Gallant.html",
+"zh": "SMG-203 英勇无畏"
+},
+"Eagle Strafing Run": {
+"file": "Eagle_Strafing_Run.html",
+"zh": "“飞鹰”机枪扫射"
+},
+"Mortar Emplacement": {
+"file": "Mortar_Emplacement.html",
+"zh": "迫击炮台"
+},
+"G-50 Seeker": {
+"file": "G-50_Seeker.html",
+"zh": "G-50 寻踪者"
+},
+"R-63CS Diligence Counter Sniper": {
+"file": "R-63CS_Diligence_Counter_Sniper.html",
+"zh": "R-63CS 反狙击勤奋者"
+},
+"Communications Array": {
+"file": "Communications_Array.html",
+"zh": "通信阵列"
+},
+"PLAS-39 Accelerator Rifle": {
+"file": "PLAS-39_Accelerator_Rifle.html",
+"zh": "PLAS-39 加速步枪"
+},
+"StA-52 Assault Rifle": {
+"file": "StA-52_Assault_Rifle.html",
+"zh": "StA-52突击步枪"
+},
+"Currency": {
+"file": "Currency.html",
+"zh": "货币"
+},
+"Hulk Firebomber": {
+"file": "Hulk_Firebomber.html",
+"zh": "巨型烈焰轰炸者"
+},
+"Destroy High-Value Target": {
+"file": "Destroy_High-Value_Target.html",
+"zh": ""
+},
+"GPU Driver Recommendation": {
+"file": "GPU_Driver_Recommendation.html",
+"zh": ""
+},
+"I-44 Salamander": {
+"file": "I-44_Salamander.html",
+"zh": "I-44“火蜥”"
+},
+"Fury/Battle Log": {
+"file": "Fury_Battle_Log.html",
+"zh": ""
+},
+"Meridia/Battle Log": {
+"file": "Meridia_Battle_Log.html",
+"zh": ""
+},
+"Diluvia/Battle Log": {
+"file": "Diluvia_Battle_Log.html",
+"zh": ""
+},
+"Laser Sight": {
+"file": "Laser_Sight.html",
+"zh": "激光瞄准器"
+},
+"Grounded Warp Ship": {
+"file": "Grounded_Warp_Ship.html",
+"zh": ""
+},
+"Menkent/Battle Log": {
+"file": "Menkent_Battle_Log.html",
+"zh": ""
+},
+"Earn Your Helldiver Cape": {
+"file": "Earn_Your_Helldiver_Cape.html",
+"zh": "努力赢得绝地潜兵披肩"
+},
+"EAT-411 Leveller": {
+"file": "EAT-411_Leveller.html",
+"zh": "EAT-411 荡平者"
+},
+"SC-30 Trailblazer Scout": {
+"file": "SC-30_Trailblazer_Scout.html",
+"zh": "SC-30“开路侦察兵”"
+},
+"Alaraph/Battle Log": {
+"file": "Alaraph_Battle_Log.html",
+"zh": ""
+},
+"Orbital Airburst Strike": {
+"file": "Orbital_Airburst_Strike.html",
+"zh": "轨道空爆攻击"
+},
+"High Dissipation Heatsink": {
+"file": "High_Dissipation_Heatsink.html",
+"zh": "高功率散热器"
+},
+"Orbital Illumination Flare": {
+"file": "Orbital_Illumination_Flare.html",
+"zh": "轨道照明弹"
+},
+"Calypso/Battle Log": {
+"file": "Calypso_Battle_Log.html",
+"zh": ""
+},
+"MP-98 Knight": {
+"file": "MP-98_Knight.html",
+"zh": "MP-98 骑士"
+},
+"Stim": {
+"file": "Stim.html",
+"zh": "治疗剂"
+},
+"1.002.101": {
+"file": "1.002.101.html",
+"zh": ""
+},
+"Evacuate High-Value Assets": {
+"file": "Evacuate_High-Value_Assets.html",
+"zh": "疏散高价值目标"
+},
+"CW-4 Arctic Ranger": {
+"file": "CW-4_Arctic_Ranger.html",
+"zh": "CW-4“极地游骑兵”"
+},
+"Helldiver Training Facilities": {
+"file": "Helldiver_Training_Facilities.html",
+"zh": "绝地潜兵训练基地"
+},
+"Thick Fog": {
+"file": "Thick_Fog.html",
+"zh": "浓雾"
+},
+"Charger": {
+"file": "Charger.html",
+"zh": "强袭虫"
+},
+"Incendiary Rocket Raider": {
+"file": "Incendiary_Rocket_Raider.html",
+"zh": ""
+},
+"Eagle Cluster Bomb": {
+"file": "Eagle_Cluster_Bomb.html",
+"zh": "“飞鹰”集束炸弹"
+},
+"Truth Enforcers Premium Warbond": {
+"file": "Truth_Enforcers_Premium_Warbond.html",
+"zh": ""
+},
+"Fleshmob": {
+"file": "Fleshmob.html",
+"zh": "肉瘤体"
+},
+"Automaton Hazards": {
+"file": "Automaton_Hazards.html",
+"zh": ""
+},
+"1.000.402": {
+"file": "1.000.402.html",
+"zh": ""
+},
+"1.004.101": {
+"file": "1.004.101.html",
+"zh": ""
+},
+"DS-42 Federation's Blade": {
+"file": "DS-42_Federation's_Blade.html",
+"zh": "DS-42“联邦之刃”"
+},
+"1.003.200": {
+"file": "1.003.200.html",
+"zh": ""
+},
+"1.006.250": {
+"file": "1.006.250.html",
+"zh": ""
+},
+"DP-53 Savior of the Free": {
+"file": "DP-53_Savior_of_the_Free.html",
+"zh": "DP-53“自由救星”"
+},
+"Stratagem Jammer": {
+"file": "Stratagem_Jammer.html",
+"zh": "战略配备干扰装置"
+},
+"1.000.302": {
+"file": "1.000.302.html",
+"zh": ""
+},
+"Warp Links": {
+"file": "Warp_Links.html",
+"zh": ""
+},
+"Cyberstan/Battle Log": {
+"file": "Cyberstan_Battle_Log.html",
+"zh": ""
+},
+"Maximum Security City": {
+"file": "Maximum_Security_City.html",
+"zh": ""
+},
+"Hammer": {
+"file": "Hammer.html",
+"zh": "之锤"
+},
+"1.003.002": {
+"file": "1.003.002.html",
+"zh": ""
+},
+"Entrenched Division Premium Warbond": {
+"file": "Entrenched_Division_Premium_Warbond.html",
+"zh": ""
+},
+"Commando Missions": {
+"file": "Commando_Missions.html",
+"zh": ""
+},
+"Voteless": {
+"file": "Voteless.html",
+"zh": "无票者"
+},
+"Regnus/Battle Log": {
+"file": "Regnus_Battle_Log.html",
+"zh": ""
+},
+"Factions": {
+"file": "Factions.html",
+"zh": ""
+},
+"Spawn Mechanics": {
+"file": "Spawn_Mechanics.html",
+"zh": ""
+},
+"FS-37 Ravager": {
+"file": "FS-37_Ravager.html",
+"zh": "FS-37“破坏者”"
+},
+"1.003.001": {
+"file": "1.003.001.html",
+"zh": ""
+},
+"Ivis/Battle Log": {
+"file": "Ivis_Battle_Log.html",
+"zh": ""
+},
+"1.004.000": {
+"file": "1.004.000.html",
+"zh": ""
+},
+"LIFT-182 Warp Pack": {
+"file": "LIFT-182_Warp_Pack.html",
+"zh": ""
+},
+"M-103 Supply FRV": {
+"file": "M-103_Supply_FRV.html",
+"zh": ""
+},
+"1.000.103": {
+"file": "1.000.103.html",
+"zh": ""
+},
+"RE-824 Bearer of the Standard": {
+"file": "RE-824_Bearer_of_the_Standard.html",
+"zh": "RE-824“执旗手”"
+},
+"CM-09 Bonesnapper": {
+"file": "CM-09_Bonesnapper.html",
+"zh": "CM-09“碎骨杀手”"
+},
+"Choohe/Battle Log": {
+"file": "Choohe_Battle_Log.html",
+"zh": ""
+},
+"Effluvia/Battle Log": {
+"file": "Effluvia_Battle_Log.html",
+"zh": ""
+},
+"Environmental Conditions": {
+"file": "Environmental_Conditions.html",
+"zh": ""
+},
+"CB-9 Exploding Crossbow": {
+"file": "CB-9_Exploding_Crossbow.html",
+"zh": "CB-9 爆炸弩"
+},
+"Scout": {
+"file": "Scout.html",
+"zh": "侦察"
+},
+"SC-15 Drone Master": {
+"file": "SC-15_Drone_Master.html",
+"zh": "SC-15“无人机大师”"
+},
+"Monolith": {
+"file": "Monolith.html",
+"zh": ""
+},
+"Cities": {
+"file": "Cities.html",
+"zh": ""
+},
+"Wraith/Battle Log": {
+"file": "Wraith_Battle_Log.html",
+"zh": ""
+},
+"Orbital Precision Strike": {
+"file": "Orbital_Precision_Strike.html",
+"zh": "轨道精准打击"
+},
+"CM-10 Clinician": {
+"file": "CM-10_Clinician.html",
+"zh": "CM-10“临床医师”"
+},
+"1.003.003": {
+"file": "1.003.003.html",
+"zh": ""
+},
+"Stout/Battle Log": {
+"file": "Stout_Battle_Log.html",
+"zh": ""
+},
+"Imber/Battle Log": {
+"file": "Imber_Battle_Log.html",
+"zh": ""
+},
+"Bile Warrior": {
+"file": "Bile_Warrior.html",
+"zh": "吐酸武斗虫"
+},
+"Ballistic Padding": {
+"file": "Ballistic_Padding.html",
+"zh": "防弹内衬"
+},
+"Partion/Battle Log": {
+"file": "Partion_Battle_Log.html",
+"zh": ""
+},
+"Iridica/Battle Log": {
+"file": "Iridica_Battle_Log.html",
+"zh": ""
+},
+"Stingray": {
+"file": "Stingray.html",
+"zh": "刺魟"
+},
+"Advanced Construction": {
+"file": "Advanced_Construction.html",
+"zh": "高级构造"
+},
+"Charger Behemoth": {
+"file": "Charger_Behemoth.html",
+"zh": "巨兽级强袭虫"
+},
+"Mekbuda/Battle Log": {
+"file": "Mekbuda_Battle_Log.html",
+"zh": ""
+},
+"1.002.105": {
+"file": "1.002.105.html",
+"zh": ""
+},
+"SG-88 Break-Action Shotgun": {
+"file": "SG-88_Break-Action_Shotgun.html",
+"zh": "SG-88 中折式霰弹枪"
+},
+"P-33 Missile Pistol": {
+"file": "P-33_Missile_Pistol.html",
+"zh": "P-33 制导手枪"
+},
+"EAT-17 Expendable Anti-Tank": {
+"file": "EAT-17_Expendable_Anti-Tank.html",
+"zh": "EAT-17消耗性反坦克"
+},
+"CQC-20 Breaching Hammer": {
+"file": "CQC-20_Breaching_Hammer.html",
+"zh": "CQC-20 破门锤"
+},
+"1.001.103": {
+"file": "1.001.103.html",
+"zh": ""
+},
+"Destroyed House": {
+"file": "Destroyed_House.html",
+"zh": ""
+},
+"SC-34 Infiltrator": {
+"file": "SC-34_Infiltrator.html",
+"zh": "SC-34“深入敌阵”"
+},
+"G-7 Pineapple": {
+"file": "G-7_Pineapple.html",
+"zh": "G-7 菠萝"
+},
+"AX/LAS-5 Rover": {
+"file": "AX_LAS-5_Rover.html",
+"zh": ""
+},
+"Turing/Battle Log": {
+"file": "Turing_Battle_Log.html",
+"zh": ""
+},
+"Martale/Battle Log": {
+"file": "Martale_Battle_Log.html",
+"zh": ""
+},
+"K-2 Throwing Knife": {
+"file": "K-2_Throwing_Knife.html",
+"zh": "K-2 飞刀"
+},
+"Eagle Napalm Airstrike": {
+"file": "Eagle_Napalm_Airstrike.html",
+"zh": "“飞鹰”凝固汽油弹空袭"
+},
+"P-35 Re-Educator": {
+"file": "P-35_Re-Educator.html",
+"zh": "P-35 再教育者"
+},
+"Veil/Battle Log": {
+"file": "Veil_Battle_Log.html",
+"zh": ""
+},
+"1.000.13": {
+"file": "1.000.13.html",
+"zh": ""
+},
+"1.003.102": {
+"file": "1.003.102.html",
+"zh": ""
+},
+"1.003.103": {
+"file": "1.003.103.html",
+"zh": ""
+},
+"Attachments": {
+"file": "Attachments.html",
+"zh": "配件"
+},
+"Retrieve Mutant Larva": {
+"file": "Retrieve_Mutant_Larva.html",
+"zh": "取回变异幼虫"
+},
+"Vertical Foregrip": {
+"file": "Vertical_Foregrip.html",
+"zh": "垂直前握把"
+},
+"Galaxy Places of Interest": {
+"file": "Galaxy_Places_of_Interest.html",
+"zh": ""
+},
+"Desert Stormer": {
+"file": "Desert_Stormer.html",
+"zh": "沙漠突击者"
+},
+"Blitz: Secure Research Site": {
+"file": "Blitz_Secure_Research_Site.html",
+"zh": ""
+},
+"CM-14 Physician": {
+"file": "CM-14_Physician.html",
+"zh": "CM-14“医师”"
+},
+"1.004.102": {
+"file": "1.004.102.html",
+"zh": ""
+},
+"Recover Scientific Specimen": {
+"file": "Recover_Scientific_Specimen.html",
+"zh": ""
+},
+"Haunted Swamp": {
+"file": "Haunted_Swamp.html",
+"zh": ""
+},
+"MS-11 Solo Silo": {
+"file": "MS-11_Solo_Silo.html",
+"zh": "MS-11 单人发射井"
+},
+"Eliminate Brood Commanders": {
+"file": "Eliminate_Brood_Commanders.html",
+"zh": "消灭虫族指挥官"
+},
+"Stance": {
+"file": "Stance.html",
+"zh": ""
+},
+"Julheim/Battle Log": {
+"file": "Julheim_Battle_Log.html",
+"zh": ""
+},
+"Streamlined Request Process": {
+"file": "Streamlined_Request_Process.html",
+"zh": "简化申请流程"
+},
+"1.000.11": {
+"file": "1.000.11.html",
+"zh": ""
+},
+"Advanced Filtration": {
+"file": "Advanced_Filtration.html",
+"zh": "高级过滤能力"
+},
+"Tarsh/Battle Log": {
+"file": "Tarsh_Battle_Log.html",
+"zh": ""
+},
+"AF-91 Field Chemist": {
+"file": "AF-91_Field_Chemist.html",
+"zh": "AF-91“实地化学家”"
+},
+"RS-6 Fiend Destroyer": {
+"file": "RS-6_Fiend_Destroyer.html",
+"zh": "RS-6“歼魔者”"
+},
+"Democracy Protects": {
+"file": "Democracy_Protects.html",
+"zh": "民主护佑"
+},
+"1.001.104": {
+"file": "1.001.104.html",
+"zh": ""
+},
+"Midasburg/Battle Log": {
+"file": "Midasburg_Battle_Log.html",
+"zh": ""
+},
+"SR-18 Roadblock": {
+"file": "SR-18_Roadblock.html",
+"zh": "SR-18“路障”"
+},
+"Haldus/Battle Log": {
+"file": "Haldus_Battle_Log.html",
+"zh": ""
+},
+"Igla/Battle Log": {
+"file": "Igla_Battle_Log.html",
+"zh": ""
+},
+"Dragonroach": {
+"file": "Dragonroach.html",
+"zh": "蟑龙"
+},
+"Ain-5/Battle Log": {
+"file": "Ain-5_Battle_Log.html",
+"zh": ""
+},
+"Spore Charger": {
+"file": "Spore_Charger.html",
+"zh": "孢子强袭虫"
+},
+"PH-9 Predator": {
+"file": "PH-9_Predator.html",
+"zh": "PH-9“掠食者”"
+},
+"Orbital Smoke Strike": {
+"file": "Orbital_Smoke_Strike.html",
+"zh": "轨道烟雾攻击"
+},
+"Restore Air Quality": {
+"file": "Restore_Air_Quality.html",
+"zh": "恢复空气质量"
+},
+"2x Tube Red Dot": {
+"file": "2x_Tube_Red_Dot.html",
+"zh": "2倍管状红点瞄准镜"
+},
+"Reinstallation of Visual C++ Redistributables": {
+"file": "Reinstallation_of_Visual_C++_Redistributables.html",
+"zh": ""
+},
+"Wezen/Battle Log": {
+"file": "Wezen_Battle_Log.html",
+"zh": ""
+},
+"Hellbomb Script": {
+"file": "Hellbomb_Script.html",
+"zh": ""
+},
+"Alpha Commander": {
+"file": "Alpha_Commander.html",
+"zh": "阿尔法指挥官"
+},
+"DS-191 Scorpion": {
+"file": "DS-191_Scorpion.html",
+"zh": "DS-191“天蝎”"
+},
+"Eliminate Bile Titans": {
+"file": "Eliminate_Bile_Titans.html",
+"zh": "消灭吐酸泰坦"
+},
+"Steam Launch Commands": {
+"file": "Steam_Launch_Commands.html",
+"zh": ""
+},
+"Negative Energy Laboratory": {
+"file": "Negative_Energy_Laboratory.html",
+"zh": "负能量实验室"
+},
+"CE-67 Titan": {
+"file": "CE-67_Titan.html",
+"zh": "CE-67“泰坦”"
+},
+"Requisition Slips": {
+"file": "Requisition_Slips.html",
+"zh": ""
+},
+"B-22 Model Citizen": {
+"file": "B-22_Model_Citizen.html",
+"zh": "B-22“模范公民”"
+},
+"Targeting Software Upgrade": {
+"file": "Targeting_Software_Upgrade.html",
+"zh": "目标瞄准软件升级"
+},
+"Superior Packing Methodology": {
+"file": "Superior_Packing_Methodology.html",
+"zh": "高级装填法"
+},
+"Enhanced Combustion": {
+"file": "Enhanced_Combustion.html",
+"zh": "强化燃烧"
+},
+"Call In Super Destroyer": {
+"file": "Call_In_Super_Destroyer.html",
+"zh": "呼叫超级驱逐舰"
+},
+"Jet Brigade Commissar": {
+"file": "Jet_Brigade_Commissar.html",
+"zh": "喷气旅机械统帅"
+},
+"Reflex Sight Mk2": {
+"file": "Reflex_Sight_Mk2.html",
+"zh": "反射式瞄准镜Mk2"
+},
+"RS-20 Constrictor": {
+"file": "RS-20_Constrictor.html",
+"zh": "RS-20“绞杀者”"
+},
+"Orbital 380mm HE Barrage": {
+"file": "Orbital_380mm_HE_Barrage.html",
+"zh": "轨道380mm高爆弹火力网"
+},
+"Terminid Control System+": {
+"file": "Terminid_Control_System+.html",
+"zh": "终结族遏制体系+"
+},
+"Reduced Signature": {
+"file": "Reduced_Signature.html",
+"zh": "隐迹潜踪"
+},
+"Brink-2/Battle Log": {
+"file": "Brink-2_Battle_Log.html",
+"zh": ""
+},
+"PH-202 Twigsnapper": {
+"file": "PH-202_Twigsnapper.html",
+"zh": "PH-202“折枝”"
+},
+"Streamlined Launch Process": {
+"file": "Streamlined_Launch_Process.html",
+"zh": "简化发射流程"
+},
+"Tremors": {
+"file": "Tremors.html",
+"zh": "地震"
+},
+"Cleanse Infested District": {
+"file": "Cleanse_Infested_District.html",
+"zh": "净化侵染区域"
+},
+"UF-84 Doubt Killer": {
+"file": "UF-84_Doubt_Killer.html",
+"zh": "UF-84“疑虑克星”"
+},
+"Dolph/Battle Log": {
+"file": "Dolph_Battle_Log.html",
+"zh": ""
+},
+"Orbital Railcannon Strike": {
+"file": "Orbital_Railcannon_Strike.html",
+"zh": "轨道炮攻击"
+},
+"Hellpod": {
+"file": "Hellpod.html",
+"zh": "绝地喷射舱"
+},
+"Atrama/Battle Log": {
+"file": "Atrama_Battle_Log.html",
+"zh": ""
+},
+"Slif/Battle Log": {
+"file": "Slif_Battle_Log.html",
+"zh": ""
+},
+"High-Quality Lubricant": {
+"file": "High-Quality_Lubricant.html",
+"zh": "优质润滑剂"
+},
+"Start Fuel Pumps": {
+"file": "Start_Fuel_Pumps.html",
+"zh": "启动燃料泵"
+},
+"Laser Sight Angled Foregrip": {
+"file": "Laser_Sight_Angled_Foregrip.html",
+"zh": "激光瞄准器与直角前握把"
+},
+"FS-23 Battle Master": {
+"file": "FS-23_Battle_Master.html",
+"zh": "FS-23“战斗大师”"
+},
+"CQC-5 Combat Hatchet": {
+"file": "CQC-5_Combat_Hatchet.html",
+"zh": "CQC-5 战斗斧"
+},
+"Destroy Exospire": {
+"file": "Destroy_Exospire.html",
+"zh": "摧毁异界尖塔"
+},
+"War Strider": {
+"file": "War_Strider.html",
+"zh": "战争纵步者"
+},
+"Zero-G Breech Loading": {
+"file": "Zero-G_Breech_Loading.html",
+"zh": "零重力后膛装弹"
+},
+"I-09 Heatseeker": {
+"file": "I-09_Heatseeker.html",
+"zh": "I-09“热力追踪”"
+},
+"Force of Law Premium Warbond": {
+"file": "Force_of_Law_Premium_Warbond.html",
+"zh": ""
+},
+"Exo Experts Premium Warbond": {
+"file": "Exo_Experts_Premium_Warbond.html",
+"zh": ""
+},
+"Dark Fluid": {
+"file": "Dark_Fluid.html",
+"zh": ""
+},
+"Repel Invasion Fleet": {
+"file": "Repel_Invasion_Fleet.html",
+"zh": "击退入侵舰队"
+},
+"Volcanic Activity": {
+"file": "Volcanic_Activity.html",
+"zh": "火山活动"
+},
+"Borea/Battle Log": {
+"file": "Borea_Battle_Log.html",
+"zh": ""
+},
+"Cognitive Disruptor": {
+"file": "Cognitive_Disruptor.html",
+"zh": "感知干扰器"
+},
+"M7S SMG": {
+"file": "M7S_SMG.html",
+"zh": "M7S 冲锋枪"
+},
+"Bulk Fabricator": {
+"file": "Bulk_Fabricator.html",
+"zh": "巨型构筑者"
+},
+"Spore Burst Hunter": {
+"file": "Spore_Burst_Hunter.html",
+"zh": "孢裂追猎虫"
+},
+"1.003.302": {
+"file": "1.003.302.html",
+"zh": ""
+},
+"Servants of Freedom Premium Warbond": {
+"file": "Servants_of_Freedom_Premium_Warbond.html",
+"zh": ""
+},
+"SH-20 Ballistic Shield Backpack": {
+"file": "SH-20_Ballistic_Shield_Backpack.html",
+"zh": ""
+},
+"Commando: Acquire Evidence": {
+"file": "Commando_Acquire_Evidence.html",
+"zh": ""
+},
+"FX-12 Shield Generator Relay": {
+"file": "FX-12_Shield_Generator_Relay.html",
+"zh": ""
+},
+"Spore Burst Warrior": {
+"file": "Spore_Burst_Warrior.html",
+"zh": "孢裂武斗虫"
+},
+"Warrior": {
+"file": "Warrior.html",
+"zh": "武斗虫"
+},
+"Destroy Gazer Spire": {
+"file": "Destroy_Gazer_Spire.html",
+"zh": "摧毁凝视者尖塔"
+},
+"UF-50 Bloodhound": {
+"file": "UF-50_Bloodhound.html",
+"zh": "UF-50“猎犬”"
+},
+"A/FLAM-40 Flame Sentry": {
+"file": "A_FLAM-40_Flame_Sentry.html",
+"zh": ""
+},
+"Blitz Search And Destroy": {
+"file": "Blitz_Search_And_Destroy.html",
+"zh": ""
+},
+"1.000.006": {
+"file": "1.000.006.html",
+"zh": ""
+},
+"Eradicate Illuminate Forces": {
+"file": "Eradicate_Illuminate_Forces.html",
+"zh": "彻底消灭光能者部队"
+},
+"Eliminate Devastators": {
+"file": "Eliminate_Devastators.html",
+"zh": "消灭蹂躏者"
+},
+"Blistica/Battle Log": {
+"file": "Blistica_Battle_Log.html",
+"zh": ""
+},
+"Xbox Troubleshooting": {
+"file": "Xbox_Troubleshooting.html",
+"zh": ""
+},
+"IE-12 Righteous": {
+"file": "IE-12_Righteous.html",
+"zh": "IE-12“义士”"
+},
+"Free Colony": {
+"file": "Free_Colony.html",
+"zh": "解放拓殖地"
+},
+"Automaton MG Emplacement": {
+"file": "Automaton_MG_Emplacement.html",
+"zh": ""
+},
+"PLAS-15 Loyalist": {
+"file": "PLAS-15_Loyalist.html",
+"zh": "PLAS-15 忠诚者"
+},
+"A/M-12 Mortar Sentry": {
+"file": "A_M-12_Mortar_Sentry.html",
+"zh": ""
+},
+"LAS-16 Sickle": {
+"file": "LAS-16_Sickle.html",
+"zh": "LAS-16 镰刃"
+},
+"Omicron/Battle Log": {
+"file": "Omicron_Battle_Log.html",
+"zh": ""
+},
+"MLS-4X Commando": {
+"file": "MLS-4X_Commando.html",
+"zh": "MLS-4X突击兵"
+},
+"Icy Glaciers": {
+"file": "Icy_Glaciers.html",
+"zh": ""
+},
+"P/40-K Bolt Pistol": {
+"file": "P_40-K_Bolt_Pistol.html",
+"zh": "P/40-K 爆弹手枪"
+},
+"Scout Strider": {
+"file": "Scout_Strider.html",
+"zh": "侦察纵步者"
+},
+"Seasse/Battle Log": {
+"file": "Seasse_Battle_Log.html",
+"zh": ""
+},
+"1.000.104": {
+"file": "1.000.104.html",
+"zh": ""
+},
+"Conduct Mobile E-711 Extraction": {
+"file": "Conduct_Mobile_E-711_Extraction.html",
+"zh": "移动式提取711元素"
+},
+"Stalker": {
+"file": "Stalker.html",
+"zh": "追踪虫"
+},
+"Lesath/Battle Log": {
+"file": "Lesath_Battle_Log.html",
+"zh": ""
+},
+"Acquisition Center": {
+"file": "Acquisition_Center.html",
+"zh": "采购中心"
+},
+"10x Sniper Scope": {
+"file": "10x_Sniper_Scope.html",
+"zh": "10倍狙击镜"
+},
+"Integrated Explosives": {
+"file": "Integrated_Explosives.html",
+"zh": "集成炸药"
+},
+"PH-56 Jaguar": {
+"file": "PH-56_Jaguar.html",
+"zh": "PH-56“捷豹”"
+},
+"Keid/Battle Log": {
+"file": "Keid_Battle_Log.html",
+"zh": ""
+},
+"Rupture Spewer": {
+"file": "Rupture_Spewer.html",
+"zh": "爆裂喷涌虫"
+},
+"Termadon/Battle Log": {
+"file": "Termadon_Battle_Log.html",
+"zh": ""
+},
+"Meissa/Battles": {
+"file": "Meissa_Battles.html",
+"zh": ""
+},
+"Myrium/Battle Log": {
+"file": "Myrium_Battle_Log.html",
+"zh": ""
+},
+"1.000.300": {
+"file": "1.000.300.html",
+"zh": ""
+},
+"Center of Science": {
+"file": "Center_of_Science.html",
+"zh": "科学中心"
+},
+"Tundra": {
+"file": "Tundra.html",
+"zh": ""
+},
+"4x Combat Scope": {
+"file": "4x_Combat_Scope.html",
+"zh": "4倍战斗瞄准镜"
+},
+"DBS-2 Double Freedom": {
+"file": "DBS-2_Double_Freedom.html",
+"zh": "DBS-2 双重自由"
+},
+"1.000.305": {
+"file": "1.000.305.html",
+"zh": ""
+},
+"Lava Pits": {
+"file": "Lava_Pits.html",
+"zh": ""
+},
+"Crusher": {
+"file": "Crusher.html",
+"zh": "粉碎者"
+},
+"Mobile Radar": {
+"file": "Mobile_Radar.html",
+"zh": "移动雷达"
+},
+"Extreme Cold": {
+"file": "Extreme_Cold.html",
+"zh": "极寒"
+},
+"Shallus/Battle Log": {
+"file": "Shallus_Battle_Log.html",
+"zh": ""
+},
+"GL-21 Grenade Launcher": {
+"file": "GL-21_Grenade_Launcher.html",
+"zh": "GL-21 榴弹发射器"
+},
+"Blitz Search And Destroy/Terminid": {
+"file": "Blitz_Search_And_Destroy_Terminid.html",
+"zh": ""
+},
+"Oshaune/Battle Log": {
+"file": "Oshaune_Battle_Log.html",
+"zh": ""
+},
+"Equipment Traits": {
+"file": "Equipment_Traits.html",
+"zh": ""
+},
+"SoS Beacon": {
+"file": "SoS_Beacon.html",
+"zh": "S.O.S.求救信标"
+},
+"Irulta/Battle Log": {
+"file": "Irulta_Battle_Log.html",
+"zh": ""
+},
+"MG-43 Machine Gun": {
+"file": "MG-43_Machine_Gun.html",
+"zh": "MG-43机枪"
+},
+"Stun Pods": {
+"file": "Stun_Pods.html",
+"zh": "眩晕喷射舱"
+},
+"Castellan's Creed Legendary Warbond": {
+"file": "Castellan's_Creed_Legendary_Warbond.html",
+"zh": ""
+},
+"Rocket Raider": {
+"file": "Rocket_Raider.html",
+"zh": "火箭奇袭者"
+},
+"Shredder Tank": {
+"file": "Shredder_Tank.html",
+"zh": "碎裂坦克"
+},
+"MD-6 Anti-Personnel Minefield": {
+"file": "MD-6_Anti-Personnel_Minefield.html",
+"zh": ""
+},
+"Arkturus/Battle Log": {
+"file": "Arkturus_Battle_Log.html",
+"zh": ""
+},
+"O-3 Free Spirit": {
+"file": "O-3_Free_Spirit.html",
+"zh": "O-3“自由之魂”"
+},
+"Democratize the Void": {
+"file": "Democratize_the_Void.html",
+"zh": "民主解放寂域"
+},
+"Complex Stratagem Plotting": {
+"file": "Complex_Stratagem_Plotting.html",
+"zh": "复杂的战略配备部署流程"
+},
+"Iron Sight": {
+"file": "Iron_Sight.html",
+"zh": "机械瞄具"
+},
+"Wretch": {
+"file": "Wretch.html",
+"zh": "悲怜体"
+},
+"Dynamic Tracking": {
+"file": "Dynamic_Tracking.html",
+"zh": "动态追踪"
+},
+"TM-1 Lure Mine": {
+"file": "TM-1_Lure_Mine.html",
+"zh": "TM-1 诱饵地雷"
+},
+"1.003.201": {
+"file": "1.003.201.html",
+"zh": ""
+},
+"AX/AR-23 Guard Dog": {
+"file": "AX_AR-23_Guard_Dog.html",
+"zh": ""
+},
+"Blitz: Destroy Illuminate Warp Ships": {
+"file": "Blitz_Destroy_Illuminate_Warp_Ships.html",
+"zh": ""
+},
+"RE-1861 Parade Commander": {
+"file": "RE-1861_Parade_Commander.html",
+"zh": "RE-1861“阅兵指挥官”"
+},
+"E/MG-101 HMG Emplacement": {
+"file": "E_MG-101_HMG_Emplacement.html",
+"zh": ""
+},
+"Acid Storms": {
+"file": "Acid_Storms.html",
+"zh": "酸雨风暴"
+},
+"R-72 Censor": {
+"file": "R-72_Censor.html",
+"zh": "R-72 审查官"
+},
+"1.5x Tube Red Dot": {
+"file": "1.5x_Tube_Red_Dot.html",
+"zh": "1.5倍管状红点瞄准镜"
+},
+"DP-11 Champion of the People": {
+"file": "DP-11_Champion_of_the_People.html",
+"zh": "DP-11“人民捍卫者”"
+},
+"AR-59 Suppressor": {
+"file": "AR-59_Suppressor.html",
+"zh": "AR-59 消音器"
+},
+"Halt Cyborg Production": {
+"file": "Halt_Cyborg_Production.html",
+"zh": "使生化人停产"
+},
+"CQC-19 Stun Lance": {
+"file": "CQC-19_Stun_Lance.html",
+"zh": "CQC-19 眩晕长矛"
+},
+"1.002.201": {
+"file": "1.002.201.html",
+"zh": ""
+},
+"1.006.203": {
+"file": "1.006.203.html",
+"zh": ""
+},
+"FAF-14 Spear": {
+"file": "FAF-14_Spear.html",
+"zh": "FAF-14飞矛"
+},
+"Volterra/Battle Log": {
+"file": "Volterra_Battle_Log.html",
+"zh": ""
+},
+"1.006.003": {
+"file": "1.006.003.html",
+"zh": ""
+},
+"SA-04 Combat Technician": {
+"file": "SA-04_Combat_Technician.html",
+"zh": "SA-04“技术兵”"
+},
+"CE-07 Demolition Specialist": {
+"file": "CE-07_Demolition_Specialist.html",
+"zh": "CE-07“拆除专家”"
+},
+"Colonies": {
+"file": "Colonies.html",
+"zh": ""
+},
+"Conventional Black Hole": {
+"file": "Conventional_Black_Hole.html",
+"zh": "常规黑洞"
+},
+"Ethereal Jungle": {
+"file": "Ethereal_Jungle.html",
+"zh": ""
+},
+"1.001.202": {
+"file": "1.001.202.html",
+"zh": ""
+},
+"Chemical Agents Premium Warbond": {
+"file": "Chemical_Agents_Premium_Warbond.html",
+"zh": ""
+},
+"Hulk Obliterator": {
+"file": "Hulk_Obliterator.html",
+"zh": "巨型抹煞者"
+},
+"Adreno-Defibrillator": {
+"file": "Adreno-Defibrillator.html",
+"zh": "肾上腺素除颤器"
+},
+"Haka/Battle Log": {
+"file": "Haka_Battle_Log.html",
+"zh": ""
+},
+"1.002.106": {
+"file": "1.002.106.html",
+"zh": ""
+},
+"Weapons": {
+"file": "Weapons.html",
+"zh": "武器"
+},
+"Stealth": {
+"file": "Stealth.html",
+"zh": ""
+},
+"AA Defenses": {
+"file": "AA_Defenses.html",
+"zh": "对空防御"
 },
 "Krakabos/Battle Log": {
 "file": "Krakabos_Battle_Log.html",
 "zh": ""
 },
-"High Capacity Heatsink": {
-"file": "High_Capacity_Heatsink.html",
-"zh": "高容量散热器"
+"1.001.203": {
+"file": "1.001.203.html",
+"zh": ""
+},
+"Sample Extricator": {
+"file": "Sample_Extricator.html",
+"zh": "样本拯救者"
+},
+"1.000.10": {
+"file": "1.000.10.html",
+"zh": ""
+},
+"Marfark/Battle Log": {
+"file": "Marfark_Battle_Log.html",
+"zh": ""
+},
+"CPR-80 Bulwark": {
+"file": "CPR-80_Bulwark.html",
+"zh": "CPR-80 “壁垒”"
+},
+"PlayStation Troubleshooting": {
+"file": "PlayStation_Troubleshooting.html",
+"zh": ""
+},
+"Take Down Overship": {
+"file": "Take_Down_Overship.html",
+"zh": "击沉统御舰"
+},
+"Hulk": {
+"file": "Hulk.html",
+"zh": "巨型者"
+},
+"SG-451 Cookout": {
+"file": "SG-451_Cookout.html",
+"zh": "SG-451 野炊"
+},
+"Shelt/Battle Log": {
+"file": "Shelt_Battle_Log.html",
+"zh": ""
+},
+"Super Sample Solo Guide": {
+"file": "Super_Sample_Solo_Guide.html",
+"zh": ""
+},
+"FS-55 Devastator": {
+"file": "FS-55_Devastator.html",
+"zh": "FS-55“蹂躏者”"
+},
+"Heeth/Battles": {
+"file": "Heeth_Battles.html",
+"zh": ""
+},
+"Kharst/Battle Log": {
+"file": "Kharst_Battle_Log.html",
+"zh": ""
+},
+"1.006.301": {
+"file": "1.006.301.html",
+"zh": ""
+},
+"AR-23A Liberator Carbine": {
+"file": "AR-23A_Liberator_Carbine.html",
+"zh": "AR-23A 卡宾解放者"
+},
+"Hellmire/Battle Log": {
+"file": "Hellmire_Battle_Log.html",
+"zh": ""
+},
+"G-89 Smokescreen": {
+"file": "G-89_Smokescreen.html",
+"zh": "G-89 烟幕"
+},
+"Troubleshooting System Failure": {
+"file": "Troubleshooting_System_Failure.html",
+"zh": ""
+},
+"Peacock/Battle Log": {
+"file": "Peacock_Battle_Log.html",
+"zh": ""
+},
+"TR-9 Cavalier of Democracy": {
+"file": "TR-9_Cavalier_of_Democracy.html",
+"zh": "TR-9“民主骑兵”"
+},
+"Castor/Battle Log": {
+"file": "Castor_Battle_Log.html",
+"zh": ""
+},
+"Helldiver Training Facility": {
+"file": "Helldiver_Training_Facility.html",
+"zh": ""
+},
+"Oasis/Battle Log": {
+"file": "Oasis_Battle_Log.html",
+"zh": ""
+},
+"Training Manual Tips": {
+"file": "Training_Manual_Tips.html",
+"zh": "训练手册提示"
+},
+"Rapid Launch System": {
+"file": "Rapid_Launch_System.html",
+"zh": "疾速发射系统"
+},
+"1.000.203": {
+"file": "1.000.203.html",
+"zh": ""
+},
+"Planet Warfronts": {
+"file": "Planet_Warfronts.html",
+"zh": ""
+},
+"Activate Terminid Control System": {
+"file": "Activate_Terminid_Control_System.html",
+"zh": "启动终结族遏制体系"
+},
+"Tyranny Park 2": {
+"file": "Tyranny_Park_2.html",
+"zh": "第二代暴政公园"
+},
+"Basic Swamp": {
+"file": "Basic_Swamp.html",
+"zh": ""
+},
+"Retrieve Essential Personnel": {
+"file": "Retrieve_Essential_Personnel.html",
+"zh": "找回重要人员"
+},
+"AF-02 Haz-Master": {
+"file": "AF-02_Haz-Master.html",
+"zh": "AF-02“危害大师”"
+},
+"Kirrik/Battle Log": {
+"file": "Kirrik_Battle_Log.html",
+"zh": ""
+},
+"1.000.201": {
+"file": "1.000.201.html",
+"zh": ""
+},
+"Deadlands": {
+"file": "Deadlands.html",
+"zh": ""
+},
+"Kraz/Battle Log": {
+"file": "Kraz_Battle_Log.html",
+"zh": ""
+},
+"CE-74 Breaker": {
+"file": "CE-74_Breaker.html",
+"zh": "CE-74“破裂者”"
+},
+"Siemnot/Battle Log": {
+"file": "Siemnot_Battle_Log.html",
+"zh": ""
+},
+"True Grit": {
+"file": "True_Grit.html",
+"zh": "坚韧不拔"
+},
+"1.000.404": {
+"file": "1.000.404.html",
+"zh": ""
+},
+"Anti-Air Emplacement": {
+"file": "Anti-Air_Emplacement.html",
+"zh": "防空炮台"
+},
+"Concealed Insertion": {
+"file": "Concealed_Insertion.html",
+"zh": "隐蔽上阵"
+},
+"Destroy Transmission Network": {
+"file": "Destroy_Transmission_Network.html",
+"zh": "摧毁传输网络"
+},
+"Rocky Canyons": {
+"file": "Rocky_Canyons.html",
+"zh": ""
+},
+"More Guns": {
+"file": "More_Guns.html",
+"zh": "增强枪炮火力"
+},
+"LAS-13 Trident": {
+"file": "LAS-13_Trident.html",
+"zh": "LAS-13“三叉戟”"
+},
+"1.000.301": {
+"file": "1.000.301.html",
+"zh": ""
+},
+"Orbital EMS Strike": {
+"file": "Orbital_EMS_Strike.html",
+"zh": "轨道电磁冲击波攻击"
+},
+"1.006.100": {
+"file": "1.006.100.html",
+"zh": ""
+},
+"R-63 Diligence": {
+"file": "R-63_Diligence.html",
+"zh": "R-63 勤奋者"
+},
+"Laptop Troubleshooting": {
+"file": "Laptop_Troubleshooting.html",
+"zh": ""
+},
+"Zefia/Battle Log": {
+"file": "Zefia_Battle_Log.html",
+"zh": ""
+},
+"AX/ARC-3 K-9": {
+"file": "AX_ARC-3_K-9.html",
+"zh": ""
+},
+"Caph/Battle Log": {
+"file": "Caph_Battle_Log.html",
+"zh": ""
+},
+"Alpha Warrior": {
+"file": "Alpha_Warrior.html",
+"zh": ""
+},
+"Plains": {
+"file": "Plains.html",
+"zh": ""
+},
+"SG-8 Punisher": {
+"file": "SG-8_Punisher.html",
+"zh": "SG-8 惩戒者"
+},
+"GL-52 De-Escalator": {
+"file": "GL-52_De-Escalator.html",
+"zh": "GL-52 降级者"
+},
+"Equipment": {
+"file": "Equipment.html",
+"zh": "装备"
+},
+"Vehicle Repair Shop": {
+"file": "Vehicle_Repair_Shop.html",
+"zh": ""
+},
+"G-23 Stun": {
+"file": "G-23_Stun.html",
+"zh": "G-23 眩晕手榴弹"
+},
+"CE-81 Juggernaut": {
+"file": "CE-81_Juggernaut.html",
+"zh": "CE-81“巨人”"
+},
+"1.005.002": {
+"file": "1.005.002.html",
+"zh": ""
+},
+"TD-220 Bastion MK XVI": {
+"file": "TD-220_Bastion_MK_XVI.html",
+"zh": ""
+},
+"GP-31 Grenade Pistol": {
+"file": "GP-31_Grenade_Pistol.html",
+"zh": "GP-31 榴弹手枪"
+},
+"Sandstorms": {
+"file": "Sandstorms.html",
+"zh": "沙暴"
+},
+"Viper Commandos Premium Warbond": {
+"file": "Viper_Commandos_Premium_Warbond.html",
+"zh": ""
+},
+"MGX-42 Bullet Storm": {
+"file": "MGX-42_Bullet_Storm.html",
+"zh": "MGX-42弹幕风暴"
+},
+"TG-122 Demo-Trooper": {
+"file": "TG-122_Demo-Trooper.html",
+"zh": "TG-122“爆破兵”"
+},
+"Cannon Turret": {
+"file": "Cannon_Turret.html",
+"zh": "加农炮台"
+},
+"Blast Absorption": {
+"file": "Blast_Absorption.html",
+"zh": "爆炸吸收"
+},
+"SG-8P Punisher Plasma": {
+"file": "SG-8P_Punisher_Plasma.html",
+"zh": "SG-8P 制裁者等离子"
+},
+"AF-52 Lockdown": {
+"file": "AF-52_Lockdown.html",
+"zh": "AF-52“禁锢”"
+},
+"Compensator": {
+"file": "Compensator.html",
+"zh": "补偿器"
+},
+"Illuminate Overship": {
+"file": "Illuminate_Overship.html",
+"zh": "光能者统御舰"
+},
+"Minor Places of Interest": {
+"file": "Minor_Places_of_Interest.html",
+"zh": ""
+},
+"Heavy Devastator": {
+"file": "Heavy_Devastator.html",
+"zh": "重型蹂躏者"
+},
+"Stamina Enhancement": {
+"file": "Stamina_Enhancement.html",
+"zh": "耐力强化"
+},
+"Bashyr/Battle Log": {
+"file": "Bashyr_Battle_Log.html",
+"zh": ""
+},
+"BP-20 Correct Officer": {
+"file": "BP-20_Correct_Officer.html",
+"zh": "BP-20“思想矫正官”"
+},
+"Extract E-711": {
+"file": "Extract_E-711.html",
+"zh": "提取711元素"
+},
+"Hydrobius/Battle Log": {
+"file": "Hydrobius_Battle_Log.html",
+"zh": ""
+},
+"Hive Lord": {
+"file": "Hive_Lord.html",
+"zh": "霸王虫"
+},
+"Holographic Sight": {
+"file": "Holographic_Sight.html",
+"zh": "全息瞄准镜"
+},
+"Hadar/Battle Log": {
+"file": "Hadar_Battle_Log.html",
+"zh": ""
+},
+"Dust Devils Premium Warbond": {
+"file": "Dust_Devils_Premium_Warbond.html",
+"zh": ""
+},
+"Despotic Explosive": {
+"file": "Despotic_Explosive.html",
+"zh": "专制炸药"
 },
 "Esker/Battle Log": {
 "file": "Esker_Battle_Log.html",
+"zh": ""
+},
+"SA-8 Ram": {
+"file": "SA-8_Ram.html",
+"zh": "SA-8“蛮悍”"
+},
+"Brawler": {
+"file": "Brawler.html",
+"zh": "乱斗者"
+},
+"Regions": {
+"file": "Regions.html",
+"zh": ""
+},
+"1.000.005": {
+"file": "1.000.005.html",
+"zh": ""
+},
+"Tibit/Battles": {
+"file": "Tibit_Battles.html",
+"zh": ""
+},
+"Lastofe/Battle Log": {
+"file": "Lastofe_Battle_Log.html",
+"zh": ""
+},
+"Meissa/Battle Log": {
+"file": "Meissa_Battle_Log.html",
+"zh": ""
+},
+"Vitality Enhancement": {
+"file": "Vitality_Enhancement.html",
+"zh": "生命力强化"
+},
+"SG-22 Bushwhacker": {
+"file": "SG-22_Bushwhacker.html",
+"zh": "SG-22 游击兵"
+},
+"E/GL-21 Grenadier Battlement": {
+"file": "E_GL-21_Grenadier_Battlement.html",
+"zh": ""
+},
+"Claorell/Battle Log": {
+"file": "Claorell_Battle_Log.html",
+"zh": ""
+},
+"CM-17 Butcher": {
+"file": "CM-17_Butcher.html",
+"zh": "CM-17“屠夫”"
+},
+"Annex Untapped Mineral Sites": {
+"file": "Annex_Untapped_Mineral_Sites.html",
+"zh": "吞并未开发的矿点"
+},
+"Helldiver": {
+"file": "Helldiver.html",
+"zh": "绝地潜兵"
+},
+"Botein/Battle Log": {
+"file": "Botein_Battle_Log.html",
+"zh": ""
+},
+"Error Code 409": {
+"file": "Error_Code_409.html",
+"zh": ""
+},
+"Hunter": {
+"file": "Hunter.html",
+"zh": "追猎虫"
+},
+"1.000.200": {
+"file": "1.000.200.html",
+"zh": ""
+},
+"LAS-7 Dagger": {
+"file": "LAS-7_Dagger.html",
+"zh": "LAS-7 匕首"
+},
+"CQC-9 Defoliation Tool": {
+"file": "CQC-9_Defoliation_Tool.html",
+"zh": "CQC-9 落叶工具"
+},
+"Expert Extraction Pilot": {
+"file": "Expert_Extraction_Pilot.html",
+"zh": "专业撤离飞行员"
+},
+"Knight": {
+"file": "Knight.html",
+"zh": "骑士"
+},
+"Ground All-Terrain Extraction Rig (GATER)": {
+"file": "Ground_All-Terrain_Extraction_Rig_(GATER).html",
+"zh": ""
+},
+"Shrieker Nest": {
+"file": "Shrieker_Nest.html",
+"zh": "尖啸虫巢穴"
+},
+"Retrieve Valuable Data": {
+"file": "Retrieve_Valuable_Data.html",
+"zh": "检索有价值的数据"
+},
+"Ingmar/Battle Log": {
+"file": "Ingmar_Battle_Log.html",
+"zh": ""
+},
+"Spore Spewer": {
+"file": "Spore_Spewer.html",
+"zh": "孢子喷涌虫"
+},
+"Scavenger": {
+"file": "Scavenger.html",
+"zh": "食腐虫"
+},
+"Crash To Desktop": {
+"file": "Crash_To_Desktop.html",
+"zh": ""
+},
+"GR-8 Recoilless Rifle": {
+"file": "GR-8_Recoilless_Rifle.html",
+"zh": "GR-8 无后坐力炮"
+},
+"Sabotage Supply Bases": {
+"file": "Sabotage_Supply_Bases.html",
+"zh": "破坏补给基地"
+},
+"TR-62 Knight": {
+"file": "TR-62_Knight.html",
+"zh": "TR-62“骑士”"
+},
+"EXO-45 Patriot Exosuit": {
+"file": "EXO-45_Patriot_Exosuit.html",
+"zh": "EXO-45 \"爱国者\"外骨骼装甲"
+},
+"Automaton Fabricator": {
+"file": "Automaton_Fabricator.html",
+"zh": "机器人制造厂"
+},
+"Barrager Tank": {
+"file": "Barrager_Tank.html",
+"zh": "铁幕坦克"
+},
+"MD-8 Gas Mines": {
+"file": "MD-8_Gas_Mines.html",
+"zh": ""
+},
+"Mantes/Fanon": {
+"file": "Mantes_Fanon.html",
+"zh": ""
+},
+"B/MD C4 Pack": {
+"file": "B_MD_C4_Pack.html",
+"zh": "B/MD C4 炸药包"
+},
+"S-11 Speargun": {
+"file": "S-11_Speargun.html",
+"zh": "S-11 矛枪"
+},
+"Gacrux/Battle Log": {
+"file": "Gacrux_Battle_Log.html",
+"zh": ""
+},
+"SMG/FLAM-34 Stoker": {
+"file": "SMG_FLAM-34_Stoker.html",
+"zh": "SMG/FLAM-34 司炉者"
+},
+"DP-00 Tactical": {
+"file": "DP-00_Tactical.html",
+"zh": "DP-00“战术”"
+},
+"SMG-72 Pummeler": {
+"file": "SMG-72_Pummeler.html",
+"zh": "SMG-72 重锤者"
+},
+"Warbonds": {
+"file": "Warbonds.html",
+"zh": "战争债券"
+},
+"Troubleshooting": {
+"file": "Troubleshooting.html",
+"zh": "故障排除"
+},
+"Eagle 500kg Bomb": {
+"file": "Eagle_500kg_Bomb.html",
+"zh": "“飞鹰”500kg炸弹"
+},
+"Reinforcement Pods": {
+"file": "Reinforcement_Pods.html",
+"zh": "增援太空舱"
+},
+"Seize Industrial Complex": {
+"file": "Seize_Industrial_Complex.html",
+"zh": "占领工业联合体"
+},
+"Emeria/Battle Log": {
+"file": "Emeria_Battle_Log.html",
+"zh": ""
+},
+"B-08 Light Gunner": {
+"file": "B-08_Light_Gunner.html",
+"zh": "B-08“轻装枪手”"
+},
+"Robotics Workshop": {
+"file": "Robotics_Workshop.html",
+"zh": "机械工坊"
+},
+"G-48 Giga Grenade": {
+"file": "G-48_Giga_Grenade.html",
+"zh": "G-48 千兆级榴弹"
+},
+"Gazer Spire": {
+"file": "Gazer_Spire.html",
+"zh": ""
+},
+"Gatekeeper": {
+"file": "Gatekeeper.html",
+"zh": "御门者"
+},
+"1.002.002": {
+"file": "1.002.002.html",
+"zh": ""
+},
+"Gunvald/Battle Log": {
+"file": "Gunvald_Battle_Log.html",
+"zh": ""
+},
+"Crimson Forest": {
+"file": "Crimson_Forest.html",
+"zh": ""
+},
+"Second Galactic War Mechanics": {
+"file": "Second_Galactic_War_Mechanics.html",
+"zh": ""
+},
+"Shete/Battle Log": {
+"file": "Shete_Battle_Log.html",
+"zh": ""
+},
+"1.000.202": {
+"file": "1.000.202.html",
+"zh": ""
+},
+"AF-50 Noxious Ranger": {
+"file": "AF-50_Noxious_Ranger.html",
+"zh": "AF-50“毒瘴游骑兵”"
+},
+"Reflex Sight": {
+"file": "Reflex_Sight.html",
+"zh": "反射式瞄准镜"
+},
+"1.006.101": {
+"file": "1.006.101.html",
+"zh": ""
+},
+"Stratagem Hero": {
+"file": "Stratagem_Hero.html",
+"zh": "战略配备英雄"
+},
+"Meridian Black Hole": {
+"file": "Meridian_Black_Hole.html",
+"zh": "默里迪恩黑洞"
+},
+"Demiurg/Battle Log": {
+"file": "Demiurg_Battle_Log.html",
+"zh": ""
+},
+"Factory Strider": {
+"file": "Factory_Strider.html",
+"zh": "移动工厂"
+},
+"P-113 Verdict": {
+"file": "P-113_Verdict.html",
+"zh": "P-113 判决者"
+},
+"Mort/Battles": {
+"file": "Mort_Battles.html",
 "zh": ""
 },
 "O-44 Bonded Pilot": {
 "file": "O-44_Bonded_Pilot.html",
 "zh": "O-44“契约驾驶员”"
 },
-"DP-8 Mountain-Scaled": {
-"file": "DP-8_Mountain-Scaled.html",
-"zh": "DP-8“山峦鳞甲”"
+"SH-32 Shield Generator Pack": {
+"file": "SH-32_Shield_Generator_Pack.html",
+"zh": ""
 },
-"Sabotage Air Base": {
-"file": "Sabotage_Air_Base.html",
-"zh": "破坏航空基地"
+"M-1000 Maxigun": {
+"file": "M-1000_Maxigun.html",
+"zh": "M-1000 重装机枪"
 },
-"Eliminate Impaler": {
-"file": "Eliminate_Impaler.html",
-"zh": "消灭穿刺虫"
+"Radar Station": {
+"file": "Radar_Station.html",
+"zh": "雷达站"
+},
+"Scratchpad/Biome Names": {
+"file": "Scratchpad_Biome_Names.html",
+"zh": ""
+},
+"A/ARC-3 Tesla Tower": {
+"file": "A_ARC-3_Tesla_Tower.html",
+"zh": ""
+},
+"Collect Gloom-Infused Oil": {
+"file": "Collect_Gloom-Infused_Oil.html",
+"zh": "采集“阴霾”污染的原油"
+},
+"Smoke": {
+"file": "Smoke.html",
+"zh": "烟雾弹"
+},
+"RD-4/Battle Log": {
+"file": "RD-4_Battle_Log.html",
+"zh": ""
+},
+"Electrical Conduit": {
+"file": "Electrical_Conduit.html",
+"zh": "电路导管"
+},
+"Super Earth Metropolis": {
+"file": "Super_Earth_Metropolis.html",
+"zh": ""
+},
+"Righteous Revenants Legendary Warbond": {
+"file": "Righteous_Revenants_Legendary_Warbond.html",
+"zh": ""
+},
+"The Helldivers": {
+"file": "The_Helldivers.html",
+"zh": ""
+},
+"Stalker Lair": {
+"file": "Stalker_Lair.html",
+"zh": "追踪虫巢穴"
+},
+"Harvester": {
+"file": "Harvester.html",
+"zh": "猎杀器"
+},
+"Melee": {
+"file": "Melee.html",
+"zh": "近战"
+},
+"SA-12 Servo Assisted": {
+"file": "SA-12_Servo_Assisted.html",
+"zh": "SA-12“伺服辅助”"
+},
+"1.000.009": {
+"file": "1.000.009.html",
+"zh": ""
+},
+"Magma Desert": {
+"file": "Magma_Desert.html",
+"zh": ""
+},
+"Upload Data": {
+"file": "Upload_Data.html",
+"zh": "上传数据"
+},
+"CE-64 Grenadier": {
+"file": "CE-64_Grenadier.html",
+"zh": "CE-64“掷弹兵”"
+},
+"Jet Brigade MG Raider": {
+"file": "Jet_Brigade_MG_Raider.html",
+"zh": ""
+},
+"AR-23C Liberator Concussive": {
+"file": "AR-23C_Liberator_Concussive.html",
+"zh": "AR-23C 震荡解放者"
+},
+"Barabos/Battle Log": {
+"file": "Barabos_Battle_Log.html",
+"zh": ""
+},
+"Orbital Napalm Barrage": {
+"file": "Orbital_Napalm_Barrage.html",
+"zh": "轨道凝固汽油弹火力网"
+},
+"Urban Legends Premium Warbond": {
+"file": "Urban_Legends_Premium_Warbond.html",
+"zh": ""
+},
+"Setia/Battle Log": {
+"file": "Setia_Battle_Log.html",
+"zh": ""
+},
+"ARC-3 Arc Thrower": {
+"file": "ARC-3_Arc_Thrower.html",
+"zh": "ARC-3 电弧发射器"
+},
+"Reaf/Battle Log": {
+"file": "Reaf_Battle_Log.html",
+"zh": ""
+},
+"Civilians and SEAF in Area": {
+"file": "Civilians_and_SEAF_in_Area.html",
+"zh": ""
+},
+"LAS-17 Double-Edge Sickle": {
+"file": "LAS-17_Double-Edge_Sickle.html",
+"zh": "LAS-17 双刃镰刀"
+},
+"Crucible/Battle Log": {
+"file": "Crucible_Battle_Log.html",
+"zh": ""
+},
+"Armor Passives": {
+"file": "Armor_Passives.html",
+"zh": "护甲被动"
+},
+"EX-03 Prototype 3": {
+"file": "EX-03_Prototype_3.html",
+"zh": "EX-03“原型 3”"
+},
+"High Capacity Heatsink": {
+"file": "High_Capacity_Heatsink.html",
+"zh": "高容量散热器"
+},
+"Scratchpad/Weapons": {
+"file": "Scratchpad_Weapons.html",
+"zh": ""
+},
+"Morale Augmentation": {
+"file": "Morale_Augmentation.html",
+"zh": "提升士气"
+},
+"Rupture Charger": {
+"file": "Rupture_Charger.html",
+"zh": "爆裂强袭虫"
+},
+"Hort/Battle Log": {
+"file": "Hort_Battle_Log.html",
+"zh": ""
+},
+"TR-7 Ambassador of the Brand": {
+"file": "TR-7_Ambassador_of_the_Brand.html",
+"zh": "TR-7“形象大使”"
+},
+"SG-225SP Breaker Spray&Pray": {
+"file": "SG-225SP_Breaker_Spray&Pray.html",
+"zh": "SG-225SP 破裂者 泼洒与祈祷"
+},
+"GS-66 Lawmaker": {
+"file": "GS-66_Lawmaker.html",
+"zh": "GS-66“立法者”"
+},
+"Bug Mine": {
+"file": "Bug_Mine.html",
+"zh": ""
+},
+"Valmox/Battle Log": {
+"file": "Valmox_Battle_Log.html",
+"zh": ""
+},
+"1.000.403": {
+"file": "1.000.403.html",
+"zh": ""
+},
+"G-4 Gas": {
+"file": "G-4_Gas.html",
+"zh": "G-4 毒气手榴弹"
+},
+"A/AC-8 Autocannon Sentry": {
+"file": "A_AC-8_Autocannon_Sentry.html",
+"zh": "A/AC-8机炮哨戒炮"
+},
+"Campaigns": {
+"file": "Campaigns.html",
+"zh": ""
+},
+"1.001.004": {
+"file": "1.001.004.html",
+"zh": ""
+},
+"FS-38 Eradicator": {
+"file": "FS-38_Eradicator.html",
+"zh": "FS-38根除者"
+},
+"AC-2 Obedient": {
+"file": "AC-2_Obedient.html",
+"zh": "AC-2“服从指挥”"
+},
+"Obari/Battle Log": {
+"file": "Obari_Battle_Log.html",
+"zh": ""
+},
+"Heads-Up Display": {
+"file": "Heads-Up_Display.html",
+"zh": ""
+},
+"SC-37 Legionnaire": {
+"file": "SC-37_Legionnaire.html",
+"zh": "SC-37“军团士兵”"
+},
+"Environmental Hazards": {
+"file": "Environmental_Hazards.html",
+"zh": ""
+},
+"Deciduous Forest": {
+"file": "Deciduous_Forest.html",
+"zh": ""
+},
+"Eagle Airstrike": {
+"file": "Eagle_Airstrike.html",
+"zh": "飞鹰空袭"
+},
+"EXO-55 Breakthrough Exosuit": {
+"file": "EXO-55_Breakthrough_Exosuit.html",
+"zh": ""
+},
+"Commissar": {
+"file": "Commissar.html",
+"zh": "机械统帅"
+},
+"TX-41 Sterilizer": {
+"file": "TX-41_Sterilizer.html",
+"zh": "TX-41 灭菌器"
+},
+"Flash Hider": {
+"file": "Flash_Hider.html",
+"zh": "消焰器"
+},
+"Cosmetics": {
+"file": "Cosmetics.html",
+"zh": ""
+},
+"CQC-2 Saber": {
+"file": "CQC-2_Saber.html",
+"zh": "CQC-2 军刀"
+},
+"SA-7 Headfirst": {
+"file": "SA-7_Headfirst.html",
+"zh": "SA-7“冲锋者”"
+},
+"Orbital Gatling Barrage": {
+"file": "Orbital_Gatling_Barrage.html",
+"zh": "轨道加特林火力网"
+},
+"Overseer": {
+"file": "Overseer.html",
+"zh": "监视者"
+},
+"Python Commandos Premium Warbond": {
+"file": "Python_Commandos_Premium_Warbond.html",
+"zh": ""
+},
+"Advanced Automaton Vehicle Guide": {
+"file": "Advanced_Automaton_Vehicle_Guide.html",
+"zh": ""
+},
+"A/LAS-98 Laser Sentry": {
+"file": "A_LAS-98_Laser_Sentry.html",
+"zh": ""
+},
+"Karlia/Battle Log": {
+"file": "Karlia_Battle_Log.html",
+"zh": ""
+},
+"Ultramafic Mine": {
+"file": "Ultramafic_Mine.html",
+"zh": "超镁铁矿井"
+},
+"CQC-30 Stun Baton": {
+"file": "CQC-30_Stun_Baton.html",
+"zh": "CQC-30 眩晕短棍"
+},
+"Mountain Cache": {
+"file": "Mountain_Cache.html",
+"zh": ""
+},
+"RE-2310 Honorary Guard": {
+"file": "RE-2310_Honorary_Guard.html",
+"zh": "RE-2310“荣誉卫队”"
+},
+"Pit Crew Hazard Pay": {
+"file": "Pit_Crew_Hazard_Pay.html",
+"zh": "维修人员危险津贴"
+},
+"Audio Problems": {
+"file": "Audio_Problems.html",
+"zh": ""
+},
+"CM-21 Trench Paramedic": {
+"file": "CM-21_Trench_Paramedic.html",
+"zh": "CM-21“战壕护理员”"
+},
+"Hangar": {
+"file": "Hangar.html",
+"zh": "机库"
+},
+"Hulk Bruiser": {
+"file": "Hulk_Bruiser.html",
+"zh": "巨型碾压者"
+},
+"Helldivers Mobilize Warbond": {
+"file": "Helldivers_Mobilize_Warbond.html",
+"zh": ""
+},
+"Gunship Facility": {
+"file": "Gunship_Facility.html",
+"zh": "炮舰设施"
+},
+"1.001.002": {
+"file": "1.001.002.html",
+"zh": ""
+},
+"Control Center": {
+"file": "Control_Center.html",
+"zh": "控制中心"
+},
+"Valley": {
+"file": "Valley.html",
+"zh": "山谷"
+},
+"FS-11 Executioner": {
+"file": "FS-11_Executioner.html",
+"zh": "FS-11“行刑者”"
+},
+"Cross-Platform Compatibility": {
+"file": "Cross-Platform_Compatibility.html",
+"zh": "跨平台兼容"
+},
+"Borderline Justice Premium Warbond": {
+"file": "Borderline_Justice_Premium_Warbond.html",
+"zh": ""
+},
+"Difficulty": {
+"file": "Difficulty.html",
+"zh": "难度"
+},
+"AC-8 Autocannon": {
+"file": "AC-8_Autocannon.html",
+"zh": "AC-8机炮"
+},
+"SG-97 Sweeper": {
+"file": "SG-97_Sweeper.html",
+"zh": "SG-97 扫荡者"
+},
+"O-2 Heavy Operator": {
+"file": "O-2_Heavy_Operator.html",
+"zh": "O-2“重装操作者”"
+},
+"Sprite/sandbox": {
+"file": "Sprite_sandbox.html",
+"zh": ""
+},
+"Enuliale/Battle Log": {
+"file": "Enuliale_Battle_Log.html",
+"zh": ""
+},
+"Purge Hatcheries": {
+"file": "Purge_Hatcheries.html",
+"zh": "清除孵化点"
+},
+"Terminids": {
+"file": "Terminids.html",
+"zh": "终结族"
+},
+"No Choke": {
+"file": "No_Choke.html",
+"zh": "无喉缩"
+},
+"Spore Burst Bile Titan": {
+"file": "Spore_Burst_Bile_Titan.html",
+"zh": ""
+},
+"Automatons": {
+"file": "Automatons.html",
+"zh": "机器人"
+},
+"Med-Kit": {
+"file": "Med-Kit.html",
+"zh": "急救包"
+},
+"1.006.204": {
+"file": "1.006.204.html",
+"zh": ""
+},
+"Planets and Sectors": {
+"file": "Planets_and_Sectors.html",
+"zh": ""
+},
+"1.001.005": {
+"file": "1.001.005.html",
+"zh": ""
+},
+"Meridia/Battles": {
+"file": "Meridia_Battles.html",
+"zh": ""
+},
+"1.000.303": {
+"file": "1.000.303.html",
+"zh": ""
+},
+"Operation Swift Disassembly": {
+"file": "Operation_Swift_Disassembly.html",
+"zh": ""
+},
+"1.000.102": {
+"file": "1.000.102.html",
+"zh": ""
+},
+"1.003.104": {
+"file": "1.003.104.html",
+"zh": ""
+},
+"Volcanic Jungle": {
+"file": "Volcanic_Jungle.html",
+"zh": ""
+},
+"SA-32 Dynamo": {
+"file": "SA-32_Dynamo.html",
+"zh": "SA-32“精力充沛”"
+},
+"Illuminate Encampment": {
+"file": "Illuminate_Encampment.html",
+"zh": "光能族营地"
+},
+"P-19 Redeemer": {
+"file": "P-19_Redeemer.html",
+"zh": "P-19 救赎者"
+},
+"Terminate Illegal Broadcast": {
+"file": "Terminate_Illegal_Broadcast.html",
+"zh": "关停非法广播"
+},
+"Bunker": {
+"file": "Bunker.html",
+"zh": "碉堡"
+},
+"Ubanea/Battles": {
+"file": "Ubanea_Battles.html",
+"zh": ""
+},
+"Redacted Regiment Premium Warbond": {
+"file": "Redacted_Regiment_Premium_Warbond.html",
+"zh": ""
+},
+"Blitz: Destroy Bio-Processors": {
+"file": "Blitz_Destroy_Bio-Processors.html",
+"zh": ""
+},
+"Malevelon Creek/Battle Log": {
+"file": "Malevelon_Creek_Battle_Log.html",
+"zh": ""
+},
+"Power Steering": {
+"file": "Power_Steering.html",
+"zh": "电动转向"
+},
+"Atmospheric Spores": {
+"file": "Atmospheric_Spores.html",
+"zh": "孢子气体"
+},
+"1.001.102": {
+"file": "1.001.102.html",
+"zh": ""
+},
+"Dark Fluid Vessel": {
+"file": "Dark_Fluid_Vessel.html",
+"zh": "暗液体容器"
+},
+"Rainstorms": {
+"file": "Rainstorms.html",
+"zh": "暴雨"
+},
+"AR-2 Coyote": {
+"file": "AR-2_Coyote.html",
+"zh": ""
+},
+"Fenmire/Battle Log": {
+"file": "Fenmire_Battle_Log.html",
+"zh": ""
+},
+"Armor": {
+"file": "Armor.html",
+"zh": "护甲"
+},
+"Confiscate Assets": {
+"file": "Confiscate_Assets.html",
+"zh": "没收资产"
+},
+"Veracitor": {
+"file": "Veracitor.html",
+"zh": "证真者"
+},
+"Motivational Shocks": {
+"file": "Motivational_Shocks.html",
+"zh": "激励性冲击"
+},
+"DSS Logistics Hub": {
+"file": "DSS_Logistics_Hub.html",
+"zh": "DSS物流中心"
+},
+"1.006.001": {
+"file": "1.006.001.html",
+"zh": ""
+},
+"AR-23 Liberator": {
+"file": "AR-23_Liberator.html",
+"zh": "AR-23 解放者"
+},
+"Acidic Badlands": {
+"file": "Acidic_Badlands.html",
+"zh": ""
+},
+"Esker/Battles": {
+"file": "Esker_Battles.html",
+"zh": ""
+},
+"Stratagems": {
+"file": "Stratagems.html",
+"zh": "战略配备"
+},
+"Gaellivare/Battle Log": {
+"file": "Gaellivare_Battle_Log.html",
+"zh": ""
+},
+"Supplies": {
+"file": "Supplies.html",
+"zh": "物资"
+},
+"Jet Brigade Factories": {
+"file": "Jet_Brigade_Factories.html",
+"zh": "喷气旅孵化厂"
+},
+"Blizzards": {
+"file": "Blizzards.html",
+"zh": "暴风雪"
+},
+"Concussive Padding, Grenadier": {
+"file": "Concussive_Padding,_Grenadier.html",
+"zh": "防震内衬（掷弹兵型）"
+},
+"GP-20 Ultimatum": {
+"file": "GP-20_Ultimatum.html",
+"zh": "GP-20 最后通牒"
+},
+"PLAS-45 Epoch": {
+"file": "PLAS-45_Epoch.html",
+"zh": "PLAS-45 纪元"
+},
+"Vox Engine": {
+"file": "Vox_Engine.html",
+"zh": "噪轰引擎"
+},
+"A/M-23 EMS Mortar Sentry": {
+"file": "A_M-23_EMS_Mortar_Sentry.html",
+"zh": ""
+},
+"Elevated House": {
+"file": "Elevated_House.html",
+"zh": ""
+},
+"Rapid Acquisition": {
+"file": "Rapid_Acquisition.html",
+"zh": "快速夺取"
+},
+"PLAS-1 Scorcher": {
+"file": "PLAS-1_Scorcher.html",
+"zh": "PLAS-1 灼烧者"
+},
+"SA-25 Steel Trooper": {
+"file": "SA-25_Steel_Trooper.html",
+"zh": "SA-25“钢铁士兵”"
+},
+"Super Credits": {
+"file": "Super_Credits.html",
+"zh": "超级货币"
+},
+"1.004.001": {
+"file": "1.004.001.html",
+"zh": ""
+},
+"Activate Oil Pumps": {
+"file": "Activate_Oil_Pumps.html",
+"zh": "启动油泵"
+},
+"Mintoria/Battle Log": {
+"file": "Mintoria_Battle_Log.html",
+"zh": ""
+},
+"1.002.005": {
+"file": "1.002.005.html",
+"zh": ""
+},
+"1.004.100": {
+"file": "1.004.100.html",
+"zh": ""
+},
+"Crimsica/Battle Log": {
+"file": "Crimsica_Battle_Log.html",
+"zh": ""
+},
+"CE-27 Ground Breaker": {
+"file": "CE-27_Ground_Breaker.html",
+"zh": "CE-27“裂地者”"
+},
+"G-6 Frag": {
+"file": "G-6_Frag.html",
+"zh": "G-6 破片手榴弹"
+},
+"No Underbarrel": {
+"file": "No_Underbarrel.html",
+"zh": "无下挂"
+},
+"Obtruder": {
+"file": "Obtruder.html",
+"zh": "突入者"
+},
+"Neutralize Ground-to-Orbit Defenses": {
+"file": "Neutralize_Ground-to-Orbit_Defenses.html",
+"zh": "瘫痪地对轨道防御系统"
+},
+"Penta/Battles": {
+"file": "Penta_Battles.html",
+"zh": ""
+},
+"Providence/Battle Log": {
+"file": "Providence_Battle_Log.html",
+"zh": ""
+},
+"Assault Raider": {
+"file": "Assault_Raider.html",
+"zh": "特攻奇袭者"
+},
+"Bile Titan": {
+"file": "Bile_Titan.html",
+"zh": "吐酸泰坦"
+},
+"Unflinching": {
+"file": "Unflinching.html",
+"zh": "毫不畏缩"
+},
+"Recover SSSD": {
+"file": "Recover_SSSD.html",
+"zh": "找回超级固态硬盘"
+},
+"1.001.003": {
+"file": "1.001.003.html",
+"zh": ""
+},
+"Extract Anomalous Material": {
+"file": "Extract_Anomalous_Material.html",
+"zh": "提取异常物质"
+},
+"Reinforced Scout Strider": {
+"file": "Reinforced_Scout_Strider.html",
+"zh": "强化侦察纵步者"
+},
+"Andar/Battle Log": {
+"file": "Andar_Battle_Log.html",
+"zh": ""
+},
+"Extended Magazine": {
+"file": "Extended_Magazine.html",
+"zh": "加长弹匣"
+},
+"Arc": {
+"file": "Arc.html",
+"zh": "电弧"
+},
+"Expanded Weapons Bay": {
+"file": "Expanded_Weapons_Bay.html",
+"zh": "武器舱扩容"
+},
+"BP-77 Grand Juror": {
+"file": "BP-77_Grand_Juror.html",
+"zh": "BP-77“大陪审员”"
+},
+"Oxygenator": {
+"file": "Oxygenator.html",
+"zh": "供氧器"
+},
+"I-102 Draconaught": {
+"file": "I-102_Draconaught.html",
+"zh": "I-102“龙行者”"
+},
+"MG Raider": {
+"file": "MG_Raider.html",
+"zh": "机枪奇袭者"
+},
+"RS-89 Shadow Paragon": {
+"file": "RS-89_Shadow_Paragon.html",
+"zh": "RS-89“暗影典范”"
+},
+"Radical": {
+"file": "Radical.html",
+"zh": "激进先锋"
+},
+"1.000.405": {
+"file": "1.000.405.html",
+"zh": ""
+},
+"Servo-Assisted": {
+"file": "Servo-Assisted.html",
+"zh": "伺服辅助"
+},
+"Khandark/Battle Log": {
+"file": "Khandark_Battle_Log.html",
+"zh": ""
+},
+"1.000.008": {
+"file": "1.000.008.html",
+"zh": ""
+},
+"Leviathan Blockade": {
+"file": "Leviathan_Blockade.html",
+"zh": "利维坦封锁屏障"
+},
+"High-Value Pickup": {
+"file": "High-Value_Pickup.html",
+"zh": ""
+},
+"Spherion/Battle Log": {
+"file": "Spherion_Battle_Log.html",
+"zh": ""
+},
+"SSSD Delivery": {
+"file": "SSSD_Delivery.html",
+"zh": "运送超级固态硬盘"
+},
+"Muzzle Brake": {
+"file": "Muzzle_Brake.html",
+"zh": "枪口制退器"
+},
+"Effects": {
+"file": "Effects.html",
+"zh": "效果"
+},
+"Nuke Nursery": {
+"file": "Nuke_Nursery.html",
+"zh": "用核武器炸毁繁育窝"
+},
+"Minchir/Battle Log": {
+"file": "Minchir_Battle_Log.html",
+"zh": ""
+},
+"A-35 Recon": {
+"file": "A-35_Recon.html",
+"zh": "A-35“侦察者”"
+},
+"LIFT-850 Jump Pack": {
+"file": "LIFT-850_Jump_Pack.html",
+"zh": ""
+},
+"RL-77 Airburst Rocket Launcher": {
+"file": "RL-77_Airburst_Rocket_Launcher.html",
+"zh": "RL-77 空爆火箭弹发射器"
+},
+"1.005.000": {
+"file": "1.005.000.html",
+"zh": ""
+},
+"Devastator": {
+"file": "Devastator.html",
+"zh": "蹂躏者"
+},
+"RS-100 Sanctioner": {
+"file": "RS-100_Sanctioner.html",
+"zh": "RS-100“制裁者”"
+},
+"Ustotu/Battle Log": {
+"file": "Ustotu_Battle_Log.html",
+"zh": ""
+},
+"SG-8S Slugger": {
+"file": "SG-8S_Slugger.html",
+"zh": "SG-8S 强击者"
+},
+"Impaler": {
+"file": "Impaler.html",
+"zh": "穿刺虫"
+},
+"1.007.001": {
+"file": "1.007.001.html",
+"zh": ""
+},
+"Azterra/Battle Log": {
+"file": "Azterra_Battle_Log.html",
+"zh": ""
+},
+"EAT-700 Expendable Napalm": {
+"file": "EAT-700_Expendable_Napalm.html",
+"zh": "EAT-700 消耗性凝固汽油弹"
+},
+"Omicron/Battles": {
+"file": "Omicron_Battles.html",
+"zh": ""
+},
+"Intense Heat": {
+"file": "Intense_Heat.html",
+"zh": "极暑"
+},
+"Advanced Crew Training": {
+"file": "Advanced_Crew_Training.html",
+"zh": "高级船员训练"
+},
+"Ubanea/Battle Log": {
+"file": "Ubanea_Battle_Log.html",
+"zh": ""
+},
+"VG-70 Variable": {
+"file": "VG-70_Variable.html",
+"zh": "VG-70 变数"
+},
+"Minor Locations": {
+"file": "Minor_Locations.html",
+"zh": ""
+},
+"Estanu/Battle Log": {
+"file": "Estanu_Battle_Log.html",
+"zh": ""
+},
+"IE-3 Martyr": {
+"file": "IE-3_Martyr.html",
+"zh": "IE-3“烈士”"
+},
+"Terrek/Battle Log": {
+"file": "Terrek_Battle_Log.html",
+"zh": ""
+},
+"Poor Intel": {
+"file": "Poor_Intel.html",
+"zh": "缺乏情报"
+},
+"Berserker": {
+"file": "Berserker.html",
+"zh": "狂暴者"
+},
+"Fortified": {
+"file": "Fortified.html",
+"zh": "强化"
+},
+"Orbital Laser": {
+"file": "Orbital_Laser.html",
+"zh": "轨道激光炮"
+},
+"40-K Meltagun": {
+"file": "40-K_Meltagun.html",
+"zh": "40-K熔体枪"
+},
+"Orbital 120mm HE Barrage": {
+"file": "Orbital_120mm_HE_Barrage.html",
+"zh": "轨道120mm高爆弹火力网"
+},
+"1.002.104": {
+"file": "1.002.104.html",
+"zh": ""
+},
+"Super Destroyer": {
+"file": "Super_Destroyer.html",
+"zh": "超级驱逐舰"
+},
+"R-4 Hyena": {
+"file": "R-4_Hyena.html",
+"zh": "R-4 鬣狗"
+},
+"Jet Brigade Devastator": {
+"file": "Jet_Brigade_Devastator.html",
+"zh": ""
+},
+"EX-16 Prototype 16": {
+"file": "EX-16_Prototype_16.html",
+"zh": "EX-16“原型 16”"
+},
+"Orbital Walking Barrage": {
+"file": "Orbital_Walking_Barrage.html",
+"zh": "轨道游走火力网"
+},
+"Biomes": {
+"file": "Biomes.html",
+"zh": ""
+},
+"LAS-99 Quasar Cannon": {
+"file": "LAS-99_Quasar_Cannon.html",
+"zh": "LAS-99 类星体加农炮"
+},
+"Crimsica/Battles": {
+"file": "Crimsica_Battles.html",
+"zh": ""
+},
+"1.006.102": {
+"file": "1.006.102.html",
+"zh": ""
+},
+"M-102 Gunner FRV": {
+"file": "M-102_Gunner_FRV.html",
+"zh": ""
+},
+"Flora": {
+"file": "Flora.html",
+"zh": "植物群"
+},
+"Annihilator Tank": {
+"file": "Annihilator_Tank.html",
+"zh": "湮灭坦克"
+},
+"RS-422 Railgun": {
+"file": "RS-422_Railgun.html",
+"zh": "RS-422 磁轨炮"
+},
+"1.007.000": {
+"file": "1.007.000.html",
+"zh": ""
+},
+"Patriotic Administration Center": {
+"file": "Patriotic_Administration_Center.html",
+"zh": "爱国行政中心"
+},
+"Sabotage Orgo-Plasma Synthesis": {
+"file": "Sabotage_Orgo-Plasma_Synthesis.html",
+"zh": "破坏有机等离子合成"
+},
+"Martale/Battles": {
+"file": "Martale_Battles.html",
+"zh": ""
+},
+"P-69 Veto": {
+"file": "P-69_Veto.html",
+"zh": "P-69 否决者"
+},
+"Eagle 110mm Rocket Pods": {
+"file": "Eagle_110mm_Rocket_Pods.html",
+"zh": "“飞鹰”110mm火箭巢"
+},
+"Nuclear Radar": {
+"file": "Nuclear_Radar.html",
+"zh": "核动力雷达"
+},
+"R-36 Eruptor": {
+"file": "R-36_Eruptor.html",
+"zh": "R-36 喷发者"
+},
+"KDM-500 Outrider": {
+"file": "KDM-500_Outrider.html",
+"zh": "KDM-500“先驱骑兵”"
+},
+"1.000.400": {
+"file": "1.000.400.html",
+"zh": ""
+},
+"Supply": {
+"file": "Supply.html",
+"zh": "补给"
+},
+"Watcher": {
+"file": "Watcher.html",
+"zh": "守望者"
+},
+"Moradesh/Battle Log": {
+"file": "Moradesh_Battle_Log.html",
+"zh": ""
+},
+"Ion Storms": {
+"file": "Ion_Storms.html",
+"zh": "离子风暴"
+},
+"Bile Spewer": {
+"file": "Bile_Spewer.html",
+"zh": "胆汁喷涌虫"
+},
+"Extraction": {
+"file": "Extraction.html",
+"zh": "撤离"
+},
+"Linux / Steam Deck Troubleshooting": {
+"file": "Linux_Steam_Deck_Troubleshooting.html",
+"zh": ""
+},
+"Tectonic Drill": {
+"file": "Tectonic_Drill.html",
+"zh": "地壳钻机"
+},
+"Activate TCS+ Station": {
+"file": "Activate_TCS+_Station.html",
+"zh": "启动TCS+站"
+},
+"M90A Shotgun": {
+"file": "M90A_Shotgun.html",
+"zh": "M90A 霰弹枪"
+},
+"I-92 Fire Fighter": {
+"file": "I-92_Fire_Fighter.html",
+"zh": "I-92“消防队”"
+},
+"Flashlight Vertical Foregrip": {
+"file": "Flashlight_Vertical_Foregrip.html",
+"zh": "手电筒垂直前握把"
+},
+"Damage Comparison": {
+"file": "Damage_Comparison.html",
+"zh": ""
+},
+"SG-20 Halt": {
+"file": "SG-20_Halt.html",
+"zh": "SG-20 止息"
+},
+"Super Sample Rock": {
+"file": "Super_Sample_Rock.html",
+"zh": ""
+},
+"Launch ICBM": {
+"file": "Launch_ICBM.html",
+"zh": "发射洲际弹道导弹"
+},
+"Demolition": {
+"file": "Demolition.html",
+"zh": ""
+},
+"Ionic Crimson": {
+"file": "Ionic_Crimson.html",
+"zh": ""
+},
+"Increased Reinforcement Budget": {
+"file": "Increased_Reinforcement_Budget.html",
+"zh": "提高增援预算"
+},
+"1.002.003": {
+"file": "1.002.003.html",
+"zh": ""
+},
+"A/G-16 Gatling Sentry": {
+"file": "A_G-16_Gatling_Sentry.html",
+"zh": ""
+},
+"A-9 Helljumper": {
+"file": "A-9_Helljumper.html",
+"zh": "A-9“地狱伞兵”"
+},
+"LIFT-860 Hover Pack": {
+"file": "LIFT-860_Hover_Pack.html",
+"zh": ""
+},
+"Mastia/Battle Log": {
+"file": "Mastia_Battle_Log.html",
+"zh": ""
+},
+"1.002.203": {
+"file": "1.002.203.html",
+"zh": ""
+},
+"Zosma/Battle Log": {
+"file": "Zosma_Battle_Log.html",
+"zh": ""
+},
+"Lava Geyser": {
+"file": "Lava_Geyser.html",
+"zh": ""
+},
+"Meteor Storms": {
+"file": "Meteor_Storms.html",
+"zh": "流星风暴"
+},
+"Mog/Battle Log": {
+"file": "Mog_Battle_Log.html",
+"zh": ""
+},
+"1.004.002": {
+"file": "1.004.002.html",
+"zh": ""
+},
+"Checkpoint": {
+"file": "Checkpoint.html",
+"zh": ""
+},
+"L Shaped House": {
+"file": "L_Shaped_House.html",
+"zh": ""
+},
+"Reinstallation of GameGuard": {
+"file": "Reinstallation_of_GameGuard.html",
+"zh": ""
+},
+"TR-117 Alpha Commander": {
+"file": "TR-117_Alpha_Commander.html",
+"zh": "TR-117“阿尔法指挥官”"
+},
+"Prasa/Battle Log": {
+"file": "Prasa_Battle_Log.html",
+"zh": ""
+},
+"SMG-37 Defender": {
+"file": "SMG-37_Defender.html",
+"zh": "SMG-37 防卫者"
+},
+"Eliminate Automaton Hulks": {
+"file": "Eliminate_Automaton_Hulks.html",
+"zh": "消灭机器人巨型者"
+},
+"Missions": {
+"file": "Missions.html",
+"zh": "任务"
+},
+"M6C/SOCOM Pistol": {
+"file": "M6C_SOCOM_Pistol.html",
+"zh": "M6C/SOCOM 手枪"
+},
+"Warhammer": {
+"file": "Warhammer.html",
+"zh": ""
+},
+"Bile Spitter": {
+"file": "Bile_Spitter.html",
+"zh": "胆汁吐沫虫"
+},
+"Resupply": {
+"file": "Resupply.html",
+"zh": "重新补给"
+},
+"Bug Breach": {
+"file": "Bug_Breach.html",
+"zh": "虫族入侵"
+},
+"TR-40 Gold Eagle": {
+"file": "TR-40_Gold_Eagle.html",
+"zh": "TR-40“金鹰”"
+},
+"1.003.202": {
+"file": "1.003.202.html",
+"zh": ""
+},
+"APW-1 Anti-Materiel Rifle": {
+"file": "APW-1_Anti-Materiel_Rifle.html",
+"zh": "APW-1反器材步枪"
+},
+"FLAM-40 Flamethrower": {
+"file": "FLAM-40_Flamethrower.html",
+"zh": "FLAM-40 火焰喷射器"
+},
+"Sample": {
+"file": "Sample.html",
+"zh": "样本"
+},
+"Troost/Battles": {
+"file": "Troost_Battles.html",
+"zh": ""
+},
+"Station-81": {
+"file": "Station-81.html",
+"zh": ""
+},
+"CE-101 Guerilla Gorilla": {
+"file": "CE-101_Guerilla_Gorilla.html",
+"zh": "CE-101“游击猩猩”"
+},
+"G-3 Smoke": {
+"file": "G-3_Smoke.html",
+"zh": "G-3 烟雾弹"
+},
+"Super Earth Products": {
+"file": "Super_Earth_Products.html",
+"zh": ""
+},
+"Metropolis": {
+"file": "Metropolis.html",
+"zh": ""
+},
+"Evacuate Colonists": {
+"file": "Evacuate_Colonists.html",
+"zh": "撤离殖民者"
+},
+"Orbital Fluctuations": {
+"file": "Orbital_Fluctuations.html",
+"zh": "轨道波动"
+},
+"Helldiver Contract of Employment": {
+"file": "Helldiver_Contract_of_Employment.html",
+"zh": ""
+},
+"Osupsam/Battle Log": {
+"file": "Osupsam_Battle_Log.html",
+"zh": ""
+},
+"B/FLAM-80 Cremator": {
+"file": "B_FLAM-80_Cremator.html",
+"zh": "B/FLAM-80 焚燃者"
+},
+"PLAS-101 Purifier": {
+"file": "PLAS-101_Purifier.html",
+"zh": "PLAS-101 净化者"
+},
+"Clearing The Shader Cache": {
+"file": "Clearing_The_Shader_Cache.html",
+"zh": ""
+},
+"MA5C Assault Rifle": {
+"file": "MA5C_Assault_Rifle.html",
+"zh": "MA5C 突击步枪"
+},
+"P-92 Warrant": {
+"file": "P-92_Warrant.html",
+"zh": "P-92 法令"
+},
+"1.001.100": {
+"file": "1.001.100.html",
+"zh": ""
+},
+"Estanu/Battles": {
+"file": "Estanu_Battles.html",
+"zh": ""
+},
+"Factory Hub": {
+"file": "Factory_Hub.html",
+"zh": "工厂枢纽"
+},
+"CE-35 Trench Engineer": {
+"file": "CE-35_Trench_Engineer.html",
+"zh": "CE-35“战壕工程师”"
+},
+"1.000.004": {
+"file": "1.000.004.html",
+"zh": ""
+},
+"Seismic Probe": {
+"file": "Seismic_Probe.html",
+"zh": "地震探测仪"
+},
+"Circuit Expansion": {
+"file": "Circuit_Expansion.html",
+"zh": "扩建电路"
+},
+"CQC-73 Entrenchment Tool": {
+"file": "CQC-73_Entrenchment_Tool.html",
+"zh": "CQC-73 堑壕工具"
+},
+"LAS-58 Talon": {
+"file": "LAS-58_Talon.html",
+"zh": "LAS-58 猛爪"
+},
+"High-Density Explosives": {
+"file": "High-Density_Explosives.html",
+"zh": "高密度炸药"
+},
+"Rock Solid": {
+"file": "Rock_Solid.html",
+"zh": ""
+},
+"Crash On Startup": {
+"file": "Crash_On_Startup.html",
+"zh": ""
+},
+"Curia/Battle Log": {
+"file": "Curia_Battle_Log.html",
+"zh": ""
+},
+"Valgaard/Battle Log": {
+"file": "Valgaard_Battle_Log.html",
+"zh": ""
+},
+"LAS-5 Scythe": {
+"file": "LAS-5_Scythe.html",
+"zh": "LAS-5 镰刀"
+},
+"Skaash/Battle Log": {
+"file": "Skaash_Battle_Log.html",
+"zh": ""
+},
+"1.006.202": {
+"file": "1.006.202.html",
+"zh": ""
+},
+"Maw/Battle Log": {
+"file": "Maw_Battle_Log.html",
+"zh": ""
+},
+"Dropship": {
+"file": "Dropship.html",
+"zh": "运输舰"
+},
+"Enable Oil Extraction": {
+"file": "Enable_Oil_Extraction.html",
+"zh": "设法采油"
+},
+"CW-22 Kodiak": {
+"file": "CW-22_Kodiak.html",
+"zh": "CW-22“科迪亚克”"
+},
+"Synthetic Supplementation": {
+"file": "Synthetic_Supplementation.html",
+"zh": "合成补给"
+},
+"NUX-223 Hellbomb": {
+"file": "NUX-223_Hellbomb.html",
+"zh": ""
+},
+"Civilian": {
+"file": "Civilian.html",
+"zh": "平民"
+},
+"Eradicate Automaton Forces": {
+"file": "Eradicate_Automaton_Forces.html",
+"zh": "彻底消灭机器人部队"
+},
+"FS-61 Dreadnought": {
+"file": "FS-61_Dreadnought.html",
+"zh": "FS-61“无畏”"
+},
+"X-45/Battles": {
+"file": "X-45_Battles.html",
+"zh": ""
+},
+"Pouncer": {
+"file": "Pouncer.html",
+"zh": "猛扑虫"
+},
+"SMG-32 Reprimand": {
+"file": "SMG-32_Reprimand.html",
+"zh": "SMG-32 训斥"
+},
+"Compromise Automaton Defenses": {
+"file": "Compromise_Automaton_Defenses.html",
+"zh": "破坏机器人的防御系统"
+},
+"1.000.000": {
+"file": "1.000.000.html",
+"zh": ""
+},
+"Ratch/Battle Log": {
+"file": "Ratch_Battle_Log.html",
+"zh": ""
+},
+"BP-32 Jackboot": {
+"file": "BP-32_Jackboot.html",
+"zh": "BP-32“杰克军靴”"
+},
+"Data Center": {
+"file": "Data_Center.html",
+"zh": "数据中心"
+},
+"Stratagems/Stratagem Previews": {
+"file": "Stratagems_Stratagem_Previews.html",
+"zh": ""
+},
+"Exploding Shrapnel": {
+"file": "Exploding_Shrapnel.html",
+"zh": "高爆弹片"
+},
+"Bug Nest": {
+"file": "Bug_Nest.html",
+"zh": "虫巢"
+},
+"Experimental Infusion": {
+"file": "Experimental_Infusion.html",
+"zh": "试验性注射剂"
+},
+"Hive Guard": {
+"file": "Hive_Guard.html",
+"zh": "虫窝护卫"
 },
 "Combat": {
 "file": "Combat.html",
 "zh": "战斗"
 },
-"Eliminate Bile Titans": {
-"file": "Eliminate_Bile_Titans.html",
-"zh": "消灭吐酸泰坦"
-},
-"Mintoria/Battle Log": {
-"file": "Mintoria_Battle_Log.html",
+"Siege Breakers Premium Warbond": {
+"file": "Siege_Breakers_Premium_Warbond.html",
 "zh": ""
+},
+"Control Group Premium Warbond": {
+"file": "Control_Group_Premium_Warbond.html",
+"zh": ""
+},
+"G-142 Pyrotech": {
+"file": "G-142_Pyrotech.html",
+"zh": "G-142 烟花术"
+},
+"P-4 Senator": {
+"file": "P-4_Senator.html",
+"zh": "P-4参议员"
+},
+"Grafmere/Battle Log": {
+"file": "Grafmere_Battle_Log.html",
+"zh": ""
+},
+"1.003.004": {
+"file": "1.003.004.html",
+"zh": ""
+},
+"Kuma/Battle Log": {
+"file": "Kuma_Battle_Log.html",
+"zh": ""
+},
+"Gunship": {
+"file": "Gunship.html",
+"zh": "炮舰"
+},
+"Maia/Battle Log": {
+"file": "Maia_Battle_Log.html",
+"zh": ""
+},
+"1.000.304": {
+"file": "1.000.304.html",
+"zh": ""
+},
+"1.002.001": {
+"file": "1.002.001.html",
+"zh": ""
+},
+"Eliminate Automaton Factory Strider": {
+"file": "Eliminate_Automaton_Factory_Strider.html",
+"zh": "消灭机器人移动工厂"
+},
+"GS-11 Democracy's Deputy": {
+"file": "GS-11_Democracy's_Deputy.html",
+"zh": "GS-11“民主代理人”"
+},
+"SEAF Soldier": {
+"file": "SEAF_Soldier.html",
+"zh": "超级地球武装部队战士"
+},
+"Warp Gateway": {
+"file": "Warp_Gateway.html",
+"zh": "传送门"
+},
+"CPG-48 Sapper": {
+"file": "CPG-48_Sapper.html",
+"zh": "CPG-48“工兵”"
 }
 }

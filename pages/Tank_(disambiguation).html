@@ -14,6 +14,7 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
+    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
@@ -38,5 +39,17 @@ Heavily 有护甲 units</div></div></div></div>
 <li><b><a href="TD-220_Bastion_MK_XVI.html" title="TD-220 Bastion MK XVI">TD-220 Bastion MK XVI</a>:</b> <span class="faction-icon icon-outline"><img class="wiki-icon" alt="" src="../images/Super_Earth_Icon.svg" decoding="async" loading="lazy" width="1024" height="1024" data-file-width="1024" data-file-height="1024" /></span> 超级地球 tank 驱逐舰 with a 120mm 主体 cannon.</li></ul>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
+<script>
+功能 toggleTheme(){
+  var h = 文档.documentElement;
+  var alt = h.classList.toggle('view-alt');
+  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
+}
+try {
+  if (localStorage.getItem('hd2theme') === 'alt') {
+    文档.documentElement.classList.add('view-alt');
+  }
+} catch(e) {}
+</script>
 </body>
 </html>

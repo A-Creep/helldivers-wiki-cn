@@ -395,3 +395,45 @@ html,body{overflow-x:hidden}
 }
 .mw-parser-output .weapon-card{padding:8px 10px}
 .mw-parser-output .weapon-card table{font-size:11.5px}
+
+/* ============ E #76 双配色主题切换 ============ */
+/* 配色1（默认）：黄色文字 + 黑黄边框 */
+:root{
+  --e-border:#000000;
+  --e-border-accent:#ffd700;
+  --e-head-text:#ffd700;
+  --e-link:#ffd700;
+  --e-title-bg:#2e2e2e;
+  --e-title-text:#ffd700;
+  --e-table-head-text:#ffd700;
+  --e-table-head-bg:#2a2a2a;
+  --e-btn-bg:#232323;
+  --e-btn-border:#555;
+}
+/* 配色2：紫红边框 + 蓝字（当前版本） */
+html.view-alt{
+  --e-border:#991A51;
+  --e-border-accent:#991A51;
+  --e-head-text:#e8e8e8;
+  --e-link:#7db4ff;
+  --e-title-bg:#3a3a3a;
+  --e-title-text:#fff;
+  --e-table-head-text:#fff;
+  --e-table-head-bg:#2c2c2c;
+  --e-btn-bg:#232323;
+  --e-btn-border:#444;
+}
+/* 应用双主题变量 */
+.mw-parser-output a{color:var(--e-link)}
+.page-title{color:var(--e-head-text);border-bottom:2px solid var(--e-border-accent)}
+.mw-parser-output h2,.mw-parser-output h3,.mw-parser-output h4{color:var(--e-head-text)}
+.mw-parser-output .druid-infobox{border:2px solid var(--e-border)}
+.mw-parser-output .infobox{border:2px solid var(--e-border)}
+.mw-parser-output .druid-title{background:var(--e-title-bg);color:var(--e-title-text)}
+.mw-parser-output .wikitable th,.mw-parser-output table.enemy-attack-stats th{
+  background:var(--e-table-head-bg);color:var(--e-table-head-text)}
+.back-btn{background:var(--e-btn-bg);border:1px solid var(--e-btn-border);color:#ccc}
+.theme-toggle{background:var(--e-btn-bg);border:1px solid var(--e-btn-border);
+  color:var(--e-link);border-radius:4px;padding:6px 12px;font-size:13px;cursor:pointer;
+  margin-left:8px}
+.theme-toggle:hover{border-color:var(--e-link)}
