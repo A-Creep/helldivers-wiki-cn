@@ -1,5 +1,13 @@
 # 汉化进度（自动更新）
 
+## 2026-08-18 任务 D：武器分类修复（S 派单 P0）+ 串行收尾发布
+- 排查（S #30 派单，只读）：原站 Weapons 三组 98 武器全部在 DB（无漏收录）；根因 `page_cats.json` 42 个武器 type 为空
+- P0 修复（D）：`classify_by_infobox.py` 正则支持下划线 `{{Infobox_Weapon` 与裸 `{{Weapon` 模板 → 重跑 page_cats.json → 原站 98 武器 0 空 type（weapon 36→78），params 补齐
+- E P2 二级分组 + A P1 标题/词表就绪后，D 执行串行完整管线并发布：
+  - 验收：177,123 链接全绿、1144 页 0 高危；weapons 分类页主要武器 53 / 次要武器 25 / 投掷武器 21 / 配件 28（子分类二级分组、官方组名）
+  - EXE 485MB；镜像 main **a8004470 → 9c0acd1e**
+- 加固：`sync_update.py` `step_lead_check` 支持回退自动单文件修复（Drum 回退自动修复，模拟测试通过）
+
 ## 2026-08-18 任务 D：全量重建发布（A 今日翻译生效）
 - 背景：A 今日累计导入 +3,052 条翻译（translated 16,486 / pending 32,670），需重建站点生效；因导入未更新 updated_at，采用全量重建确保不漏
 - 执行：清空 `zh_cache.jsonl` → 全量重渲染 1143 页（886s）→ strip → terms（首次 Drum 引导句未命中，LeadCheck 拦截；单文件重跑 apply_zh_terms 修复后二次 terms 通过）→ index → verify → validate

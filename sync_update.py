@@ -232,25 +232,42 @@ def step_lead_check():
     apply_zh_terms 是渲染后处理（改 pages/*.html），不写回 zh_cache.jsonl；
     build_site 重建页面时会从缓存覆盖这些修改，若 apply_zh_terms 某次未命中，
     引导句会回退为英文残留（实测 Drum_Magazine 回退）。这里在 terms 后扫描
-    LEAD_PAGE_FIXES 精确映射的页面是否仍含期望中文引导句，发现缺失即终止发布，
-    提示重跑 apply_zh_terms 或单页重渲染。
+    LEAD_PAGE_FIXES 精确映射的页面是否仍含期望中文引导句；发现缺失先尝试
+    单文件重跑 apply_zh_terms 自动修复（全量 terms 偶发未命中的兜底），
+    修复后复核仍缺失才终止发布。
     """
     try:
         sys.path.insert(0, str(ROOT))
-        from apply_zh_terms import LEAD_PAGE_FIXES
+        from apply_zh_terms import LEAD_PAGE_FIXES, apply_file
     except Exception as e:
         print(f"[LeadCheck] 无法读取 LEAD_PAGE_FIXES，跳过复核: {e}")
         return
-    hits = []
-    for fname, fix in LEAD_PAGE_FIXES.items():
-        path = PAGES_DIR / fname
-        if not path.exists():
-            continue
-        html = path.read_text(encoding="utf-8", errors="replace")
-        plain = re.sub(r"<[^>]+>", "", fix)
-        expect = plain.strip()[:12]
-        if expect and expect not in html:
-            hits.append((fname, expect))
+
+    def detect():
+        out = []
+        for fname, fix in LEAD_PAGE_FIXES.items():
+            path = PAGES_DIR / fname
+            if not path.exists():
+                continue
+            html = path.read_text(encoding="utf-8", errors="replace")
+            plain = re.sub(r"<[^>]+>", "", fix)
+            expect = plain.strip()[:12]
+            if expect and expect not in html:
+                out.append((fname, expect))
+        return out
+
+    hits = detect()
+    if hits:
+        print(f"[LeadCheck] 检测到 {len(hits)} 个 LEAD 页面引导句回退，"
+              "尝试单文件重跑 apply_zh_terms 自动修复 ...")
+        for fname, _ in hits:
+            path = PAGES_DIR / fname
+            if path.exists():
+                try:
+                    apply_file(str(path))
+                except Exception as e:
+                    print(f"[LeadCheck] 单文件修复失败 {fname}: {e}")
+        hits = detect()
     if hits:
         print(f"[LeadCheck] 检测到 {len(hits)} 个 LEAD 页面引导句回退（期望中文句缺失）：")
         for f, exp in hits[:30]:
