@@ -437,3 +437,19 @@ html.view-alt{
   color:var(--e-link);border-radius:4px;padding:6px 12px;font-size:13px;cursor:pointer;
   margin-left:8px}
 .theme-toggle:hover{border-color:var(--e-link)}
+
+/* ============ E #80/#81 敌人分类页种族配色 ============ */
+:root{
+  --faction-auto:#ff6161;
+  --faction-termi:#ffb901;
+  --faction-illum:#cd8aea;
+}
+.cat-group.faction-auto .cat-group-title,
+.cat-group.faction-auto .cat-name,
+.cat-group.faction-auto .cat-en{color:var(--faction-auto)}
+.cat-group.faction-termi .cat-group-title,
+.cat-group.faction-termi .cat-name,
+.cat-group.faction-termi .cat-en{color:var(--faction-termi)}
+.cat-group.faction-illum .cat-group-title,
+.cat-group.faction-illum .cat-name,
+.cat-group.faction-illum .cat-en{color:var(--faction-illum)}
