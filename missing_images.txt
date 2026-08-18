@@ -156,7 +156,6 @@ Ivory_Conscript_Cannon_%28Icorp%29.png
 Liberty%27s_Herald_Player_Card_Icon.webp
 Miranda%27s_Legacy_Player_Card_Icon.webp
 Mother_Eagle%27s_Wings_Player_Card_Icon.webp
-Obtruder.png
 Raider%27s_Cheer_Emote_Icon.png
 Roll_%27Em_Victory_Pose_Icon.png
 SG-225SP_Breaker_Spray%26Pray_Primary_Render.webp

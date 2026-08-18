@@ -348,3 +348,50 @@ html,body{overflow-x:hidden}
 .druid-main-image img[src*="Damage_"],.gallerybox img[src*="Penetration"],
 .gallerybox img[src*="Armor_Icon"],.gallerybox img[src*="Damage_"]{
   width:auto !important;height:auto !important;max-width:100%}
+
+/* ============ E #57 UI/UX 样式改造（第二批） ============ */
+/* 返回按钮 */
+.back-btn{display:inline-block;margin:0 0 10px;background:#232323;border:1px solid #444;
+  color:#ccc;border-radius:4px;padding:5px 12px;font-size:13px;cursor:pointer}
+.back-btn:hover{color:#fff;border-color:#888}
+/* 11. 信息密度：内容区 1100px、正文 14px、标题 16px、模块间距 */
+.content{max-width:1100px}
+.mw-parser-output h2{font-size:17px;margin:24px 0 10px}
+.mw-parser-output h3{font-size:15px;margin:18px 0 8px}
+.mw-parser-output h4{font-size:14px}
+.mw-parser-output p,.mw-parser-output blockquote{margin:0 0 14px}
+.mw-parser-output .box,.mw-parser-output .ranger,.mw-parser-output .navbox,
+.mw-parser-output .mpheading{margin-bottom:24px}
+/* 12. Infobox 固定 320px、紧凑列表 */
+.mw-parser-output .druid-infobox{width:320px}
+.mw-parser-output .druid-row{padding:2px 0;line-height:1.45}
+.mw-parser-output .druid-section-container{padding:4px 8px}
+/* 13. 颜色层级：中性化，金色仅保留关键强调 */
+.page-title{color:#e8e8e8;border-bottom:2px solid #555}
+.mw-parser-output h2,.mw-parser-output h3,.mw-parser-output h4{color:#e8e8e8}
+.mw-parser-output a{color:#7db4ff}
+.mw-parser-output table,.mw-parser-output th,.mw-parser-output td{border:1px solid #444}
+.mw-parser-output .wikitable th,.mw-parser-output table.enemy-attack-stats th{
+  background:#2c2c2c;color:#fff;font-weight:600}
+.mw-parser-output .druid-title{background:#3a3a3a;color:#fff;border-bottom:1px solid #555}
+.mw-parser-output .druid-section{color:#d4a017;background:#232323;
+  border-left:3px solid #d4a017}
+.mw-parser-output .ranger-title,.mw-parser-output .navbox-title{color:#e8e8e8}
+.mw-parser-output .ranger,.mw-parser-output .navbox{border-left:3px solid #d4a017}
+/* 10. Anatomy 结构解析表：自适应列宽、行高压缩、图片缩略 */
+.mw-parser-output table.enemy-attack-stats,.mw-parser-output .wikitable{
+  table-layout:auto}
+.mw-parser-output table.enemy-attack-stats th,.mw-parser-output .wikitable th,
+.mw-parser-output table.enemy-attack-stats td,.mw-parser-output .wikitable td{
+  line-height:1.4;padding:3px 6px}
+.mw-parser-output .anatomy-table img,.mw-parser-output table.enemy-attack-stats img{
+  max-width:48px;max-height:48px}
+/* 9. 武器配置卡片：双列网格、紧凑属性表 */
+.mw-parser-output .weapon-loadout,.mw-parser-output .weapons-loadout{
+  grid-template-columns:repeat(2,1fr)}
+@media (max-width:720px){
+  .mw-parser-output .weapon-loadout,.mw-parser-output .weapons-loadout{
+    grid-template-columns:1fr}
+}
+.mw-parser-output .weapon-card{padding:8px 10px}
+.mw-parser-output .weapon-card table{font-size:11.5px}
