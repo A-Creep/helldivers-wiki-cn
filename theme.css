@@ -154,6 +154,8 @@ a:hover{text-decoration:underline}
   color:var(--wiki-accent-label-color,#000);font-weight:600}
 .cat-group-title{font-size:19px;font-family:var(--font-heading);
   color:var(--wiki-content-heading-color);border-bottom:1px solid #3a3a3a;padding-bottom:6px;margin-top:10px}
+.cat-subgroup-title{font-size:14px;font-family:var(--font-heading);
+  color:#d4a017;margin:14px 0 6px;padding-left:8px;border-left:3px solid #d4a017}
 .no-result{color:#bbb;text-align:center;padding:30px 0}
 /* ---------- 首页搜索结果列表 ---------- */
 .search-tabs{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:0 0 14px}

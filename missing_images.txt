@@ -3,14 +3,9 @@
 120px-ICMB%26RVD_Generator_Sub-OBJ_Transformer.png
 120px-Super_Earth%27s_Finest_Fruit_Mix_Image.png
 123px-Angel%27s_Venture_Planet_Landscape_Header.png
-123px-CE-64_Grenadier_Armor_Render.png
 123px-DS-42_Federation%27s_Blade_Armor_Render.png
 123px-GS-11_Democracy%27s_Deputy_Armor_Render.png
-123px-Hydrobius_Planet_Landscape_Void_Springs_Night.png
-123px-Obtruder.png
 123px-P%C3%B6pli_IX_Planet_Landscape_Header.png
-123px-PH-9_Predator_Armor_Render.png
-123px-Senge_23_Planet_Landscape_Void_Night.png
 128px-Caught_them_by_Supplies%21_Trophy_Unlocked_Icon.png
 128px-Cool_guys_don%27t_loo-_AAAAH%21_Trophy_Unlocked_Icon.png
 128px-Democracy_ain%27t_done_with_you_yet_Trophy_Unlocked_Icon.png
@@ -39,7 +34,6 @@
 128px-You%27re_Next_Victory_Pose_Icon.png
 182px-Freedom%27s_Beacon_paper_volume_191_number_30634.webp
 1920px-Freedom%27s_Flame_Premium_Warbond_Cover.webp
-200px-CE-64_Grenadier_Helmet_Render.png
 200px-City_Fighter%27s_Resolve_Cape_Render.png
 200px-City_Fighter%27s_Resolve_Player_Card.webp
 200px-Cloak_of_Posterity%27s_Gratitude_Cape_Armory.png
@@ -68,7 +62,6 @@
 200px-Miranda%27s_Legacy_Player_Card_Icon.webp
 200px-Mother_Eagle%27s_Wings_Cape_Render.png
 200px-Mother_Eagle%27s_Wings_Player_Card_Icon.webp
-200px-PH-9_Predator_Helmet_Render.png
 200px-Patient_Zero%27s_Remembrance_Cape_Render.png
 200px-Patient_Zero%27s_Remembrance_Player_Card_Icon.webp
 200px-Reckoning%27s_Cheer_Cape_Render.png
@@ -92,7 +85,6 @@
 512px-GS-11_Democracy%27s_Deputy_Armor_Render.webp
 512px-GS-11_Democracy%27s_Deputy_Helmet_Render.webp
 512px-Liberty%27s_Herald_Cape_Render.webp
-512px-Mark_of_the_Crimson_Fang_Cape_Armory.png
 512px-Miranda%27s_Legacy_Cape_Render.webp
 512px-Mother_Eagle%27s_Wings_Cape_Render.webp
 512px-Patient_Zero%27s_Remembrance_Cape_Render.webp
@@ -144,8 +136,6 @@
 96px-Level_200_Ranger%2C_Bald_Eagle_Class_Rank_Icon.png
 96px-Level_290_Max_Rank_Infinity_%2B1_Rank_Icon.png
 Brilliance_Terminid_Control_System%2B_Planet_Icon.webp
-CE-64_Grenadier_Armor_Render.png
-CE-64_Grenadier_Helmet_Render.png
 Castellan%27s_Creed_Legendary_Warbond_Cover.webp
 Cloak_of_Posterity%27s_Gratitude_Cape_Armory.webp
 Cloak_of_Posterity%27s_Gratitude_Player_Card_Icon.webp
@@ -166,6 +156,7 @@ Ivory_Conscript_Cannon_%28Icorp%29.png
 Liberty%27s_Herald_Player_Card_Icon.webp
 Miranda%27s_Legacy_Player_Card_Icon.webp
 Mother_Eagle%27s_Wings_Player_Card_Icon.webp
+Obtruder.png
 Raider%27s_Cheer_Emote_Icon.png
 Roll_%27Em_Victory_Pose_Icon.png
 SG-225SP_Breaker_Spray%26Pray_Primary_Render.webp
