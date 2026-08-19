@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-helldiver view-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,135 +14,134 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
-    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
   <button class="back-btn" type="button" onclick="history.back()">← 返回</button>
   <h1 class="page-title">Audio Problems</h1>
-  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div><div class="breadcrumb-item breadcrumb-item-final">Audio Problems</div></div>
-<p>This page is dedicated to help with <b>音频问题</b> in 绝地潜兵 2.
+  <div class="mw-parser-output"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div><div class="breadcrumb-item breadcrumb-item-final">Audio Problems</div></div>
+<p>本页面旨在帮助解决 <b>音频问题</b> 在《绝地潜兵2》中。
 </p>
 <div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="#Setting_your_audio_devices"><span class="tocnumber">1</span> <span class="toctext">Setting your audio devices</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="#Audio_Latency"><span class="tocnumber">2</span> <span class="toctext">Audio Latency</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="#Bluetooth_Audio_is_broken"><span class="tocnumber">3</span> <span class="toctext">Bluetooth Audio is broken</span></a>
+<li class="toclevel-1 tocsection-1"><a href="#设置你的音频设备"><span class="tocnumber">1</span> <span class="toctext">设置你的音频设备</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#音频延迟"><span class="tocnumber">2</span> <span class="toctext">音频延迟</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#蓝牙音频损坏"><span class="tocnumber">3</span> <span class="toctext">蓝牙音频损坏</span></a>
 <ul>
-<li class="toclevel-2 tocsection-4"><a href="#Hands_Free_Telephony_Mode"><span class="tocnumber">3.1</span> <span class="toctext">Hands Free Telephony Mode</span></a>
+<li class="toclevel-2 tocsection-4"><a href="#免提电话模式"><span class="tocnumber">3.1</span> <span class="toctext">免提电话模式</span></a>
 <ul>
-<li class="toclevel-3 tocsection-5"><a href="#Bluetooth_Audio_Gateway_Service"><span class="tocnumber">3.1.1</span> <span class="toctext">Bluetooth Audio Gateway 服务</span></a></li>
+<li class="toclevel-3 tocsection-5"><a href="#蓝牙音频网关服务"><span class="tocnumber">3.1.1</span> <span class="toctext">蓝牙音频网关服务</span></a></li>
 </ul>
 </li>
-<li class="toclevel-2 tocsection-6"><a href="#Bluetooth_microphone_receives_no_input"><span class="tocnumber">3.2</span> <span class="toctext">Bluetooth 麦克风 receives 否 input</span></a></li>
-<li class="toclevel-2 tocsection-7"><a href="#Other_Bluetooth_interference"><span class="tocnumber">3.3</span> <span class="toctext">Other Bluetooth interference</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#蓝牙麦克风无法接收输入"><span class="tocnumber">3.2</span> <span class="toctext">蓝牙麦克风无法接收输入</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#其他蓝牙干扰"><span class="tocnumber">3.3</span> <span class="toctext">其他蓝牙干扰</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-8"><a href="#Static_Noise"><span class="tocnumber">4</span> <span class="toctext">Static Noise</span></a></li>
-<li class="toclevel-1 tocsection-9"><a href="#System_Input_Volume_goes_down"><span class="tocnumber">5</span> <span class="toctext">System Input Volume goes down</span></a>
+<li class="toclevel-1 tocsection-8"><a href="#静电噪音"><span class="tocnumber">4</span> <span class="toctext">静电噪音</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#系统输入音量降低"><span class="tocnumber">5</span> <span class="toctext">系统输入音量降低</span></a>
 <ul>
-<li class="toclevel-2 tocsection-10"><a href="#Aux_vs._USB"><span class="tocnumber">5.1</span> <span class="toctext">Aux vs. USB</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Aux与USB"><span class="tocnumber">5.1</span> <span class="toctext">Aux与USB</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-11"><a href="#Third-Party_Software"><span class="tocnumber">6</span> <span class="toctext">Third-Party 软件</span></a>
+<li class="toclevel-1 tocsection-11"><a href="#第三方软件"><span class="tocnumber">6</span> <span class="toctext">第三方软件</span></a>
 <ul>
 <li class="toclevel-2 tocsection-12"><a href="#Logitech_&amp;_Blue"><span class="tocnumber">6.1</span> <span class="toctext">Logitech &amp; Blue</span></a></li>
 <li class="toclevel-2 tocsection-13"><a href="#Steelseries"><span class="tocnumber">6.2</span> <span class="toctext">Steelseries</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-14"><a href="#Voice_Chat_doesn&#39;t_work"><span class="tocnumber">7</span> <span class="toctext">Voice Chat doesn't work</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#语音聊天无法使用"><span class="tocnumber">7</span> <span class="toctext">语音聊天无法使用</span></a></li>
 </ul>
 </div>
 
-<h2><span class="mw-headline" id="Setting_your_audio_devices">Setting your audio devices</span></h2>
-<p>If you are on Windows the easiest method to set your 麦克风 and headphones for 绝地潜兵 2 is to use the Xbox Gamebar. You can set them as 默认 Communications Input/Output on the "Voice"-tab by pressing <code>WIN + G</code>. 
+<h2><span id=".E8.AE.BE.E7.BD.AE.E4.BD.A0.E7.9A.84.E9.9F.B3.E9.A2.91.E8.AE.BE.E5.A4.87"></span><span class="mw-headline" id="设置你的音频设备">设置你的音频设备</span></h2>
+<p>如果你使用Windows，为绝地潜兵 2设置麦克风和耳机的最简单方法是使用Xbox Gamebar。你可以在"语音"选项卡中将它们设为默认通信输入/输出，方法是按下 <code>WIN + G</code>. 
 </p>
-<h2><span class="mw-headline" id="Audio_Latency">Audio Latency</span></h2>
-<p>If you 经验值 audio popping / cutting out, then this can have 几个 reasons.
+<h2><span id=".E9.9F.B3.E9.A2.91.E5.BB.B6.E8.BF.9F"></span><span class="mw-headline" id="音频延迟">音频延迟</span></h2>
+<p>如果你遇到音频爆音/中断的情况，这可能是由多种原因造成的。
 </p>
-<ol><li>Disable any and all mods to ensure they are not interfering.</li>
-<li>安装 <a rel="nofollow" class="external text" href="https://www.resplendence.com/latencymon">Latencymon</a> to check if your system might be struggling. This 软件 has been 目的 built for these exact issues. It's recommended to follow the <a rel="nofollow" class="external text" href="https://www.resplendence.com/latencymon_using">userguide</a> to diagnose your system.</li></ol>
-<p>In the case that Latencymon can't find problems, you might want to look at <a href="Troubleshooting_Stutters_Short_Freezes.html" title="Troubleshooting Stutters/Short Freezes">故障排除 Stutters/Short Freezes</a>.
+<ol><li>禁用所有模组以确保它们没有造成干扰。</li>
+<li>安装 <a rel="nofollow" class="external text" href="https://www.resplendence.com/latencymon">Latencymon</a> 以检查你的系统是否可能在吃力运行。该软件正是为这些问题而专门构建的。建议按照 <a rel="nofollow" class="external text" href="https://www.resplendence.com/latencymon_using">用户指南</a> 来诊断你的系统。</li></ol>
+<p>如果 Latencymon 无法发现问题，你可能需要查看 <a href="Troubleshooting_Stutters_Short_Freezes.html" title="Troubleshooting Stutters/Short Freezes">故障排除 Stutters/Short Freezes</a>.
 </p>
-<h2><span class="mw-headline" id="Bluetooth_Audio_is_broken">Bluetooth Audio is broken</span></h2>
-<p>It's not uncommon to encounter problems when using Bluetooth headsets, resulting in bad audio quality. Bluetooth itself is 有限 to two 频道 audio. That means if you turn on the 麦克风, you get one 频道 for audio (which downgrades your audio to mono, so you cannot tell left from right), and the second 频道 is dedicated to your 麦克风. This is a very widely 已知问题 with bluetooth, and affects everything, not just 绝地潜兵 2.
-</p><p>This is also why if you look at all the "gaming wireless" headphones that are bluetooth they ALWAYS also come with a usb plug, which allows them to switch to NON bluetooth 2.4ghz and get all three channels.
+<h2><span id=".E8.93.9D.E7.89.99.E9.9F.B3.E9.A2.91.E6.8D.9F.E5.9D.8F"></span><span class="mw-headline" id="蓝牙音频损坏">蓝牙音频损坏</span></h2>
+<p>使用蓝牙耳机时遇到导致音质不佳的问题并不罕见。蓝牙本身仅限于双通道音频。这意味着如果你开启麦克风，一个通道用于音频（这会将音频降级为单声道，因此你无法分辨左右），第二个通道则专用于麦克风。这是蓝牙非常普遍的问题，影响所有设备，不仅仅是《绝地潜兵2》。
+</p><p>这也是为什么如果你查看所有蓝牙"游戏无线"耳机，它们总是还附带一个USB插头，使其能够切换到非蓝牙2.4GHz并获得全部三个通道。
 </p>
-<h3><span class="mw-headline" id="Hands_Free_Telephony_Mode">Hands Free Telephony Mode</span></h3>
-<p>The issue of bad audio stems from the "Hands Free Telephony Mode". This is part of a lot of systems like Windows and can drastically impact audio quality.
+<h3><span id=".E5.85.8D.E6.8F.90.E7.94.B5.E8.AF.9D.E6.A8.A1.E5.BC.8F"></span><span class="mw-headline" id="免提电话模式">免提电话模式</span></h3>
+<p>音频质量差的问题源于"Hands Free Telephony Mode"。这是许多系统（如Windows）的一部分，会严重影响音频质量。
 </p><p><b>Windows：</b>
 </p>
-<ol><li>Open Settings &amp; Click On <code>蓝牙和其他设备</code>.</li>
-<li>Click on <code>查看更多设备</code>.</li>
-<li>Scroll Down To Find Option <code>更多设备和打印机设置</code>.</li>
-<li>Click On <code>更多设备和打印机设置</code>.</li>
-<li>Double Click on the audio device that you are using.</li>
-<li>Click on the <code>服务</code>-Tab.</li>
-<li>Uncheck the <code>免提电话</code></li>
-<li>Click on apply, then Turn Off and Turn On Bluetooth.</li></ol>
-<h4><span class="mw-headline" id="Bluetooth_Audio_Gateway_Service">Bluetooth Audio Gateway 服务</span></h4>
-<p>There are cases where the hands-free telephony mode gets re-enabled after restarting the 电脑. If that is the case, it can be 已解决 by disabling the "Bluetooth Audio Gateway 服务". The Bluetooth Audio Gateway 服务 (BTAGService) is a Windows 服务  which supports the audio gateway role of the Bluetooth Handsfree Profile.
-</p><p>If you are on PC and use the <a href="Hellbomb_Script.html" title="Hellbomb Script">Hellbomb Script</a> you can go to "Audio Options" and then choose "Bluetooth Telephony 服务", which will disable Windows' telephony 服务.
-</p><p>If you want to turn it off manually, you can do it this way:
+<ol><li>打开设置并点击 <code>蓝牙和其他设备</code>.</li>
+<li>点击 <code>查看更多设备</code>.</li>
+<li>向下滚动以查找选项 <code>更多设备和打印机设置</code>.</li>
+<li>点击 <code>更多设备和打印机设置</code>.</li>
+<li>双击你正在使用的音频设备。</li>
+<li>点击 <code>服务</code>-选项卡。</li>
+<li>取消勾选 <code>免提电话</code></li>
+<li>点击应用，然后关闭并重新打开蓝牙。</li></ol>
+<h4><span id=".E8.93.9D.E7.89.99.E9.9F.B3.E9.A2.91.E7.BD.91.E5.85.B3.E6.9C.8D.E5.8A.A1"></span><span class="mw-headline" id="蓝牙音频网关服务">蓝牙音频网关服务</span></h4>
+<p>存在重启计算机后免提电话模式被重新启用的情况。如果是这种情况，可以通过禁用"Bluetooth Audio Gateway 服务"来解决。Bluetooth Audio Gateway 服务（BTAGService）是一项Windows服务，支持蓝牙免提配置文件的音频网关角色。
+</p><p>如果你在 PC 上使用 <a href="Hellbomb_Script.html" title="Hellbomb Script">Hellbomb Script</a> 你可以前往"Audio Options"，然后选择"Bluetooth Telephony 服务"，这将禁用Windows的电话服务。
+</p><p>如果你想手动关闭它，可以按以下方式操作：
 </p>
-<ol><li>Open the search bar.</li>
-<li>类型 <code>services</code> in and open the "Services" app.</li>
-<li>Find "Bluetooth Audio Gateway 服务".</li>
-<li>Stop the 服务.</li>
-<li>Right click and go to "Properties".</li>
-<li>Change the "Startup 类型" to "Disabled".</li></ol>
-<p>Now the 服务 will remain disabled when restarting the PC. This will however, <b>全部关闭</b> Handsfree Telephony for the PC.
+<ol><li>打开搜索栏。</li>
+<li>类型 <code>services</code> 中并打开"服务"应用程序。</li>
+<li>找到"蓝牙音频网关服务"。</li>
+<li>停止该服务。</li>
+<li>右键单击并选择"属性"。</li>
+<li>将"启动类型"更改为"已禁用"。</li></ol>
+<p>现在重启电脑后该服务将保持禁用状态。然而，这 <b>全部关闭</b> PC 的免提电话功能。
 </p>
-<h3><span class="mw-headline" id="Bluetooth_microphone_receives_no_input">Bluetooth 麦克风 receives 否 input</span></h3>
-<p>There can also be the case of the 耳机 not giving out any input by the 麦克风. If that is the case, follow these steps:
+<h3><span id=".E8.93.9D.E7.89.99.E9.BA.A6.E5.85.8B.E9.A3.8E.E6.97.A0.E6.B3.95.E6.8E.A5.E6.94.B6.E8.BE.93.E5.85.A5"></span><span class="mw-headline" id="蓝牙麦克风无法接收输入">蓝牙麦克风无法接收输入</span></h3>
+<p>也可能出现耳机麦克风没有任何输入的情况。如果是这种情况，请按照以下步骤操作：
 </p>
 <ol><li>按下 <code>WIN + R</code>.</li>
-<li>类型 in <code>mmsys.cpl</code> and press Enter</li>
-<li>Go to the "playback" tab.</li>
-<li>Choose the BT audio 耳机, select it and press "Set as 默认" if it isn’t set there already.</li>
-<li>If a 分离 麦克风 is present, set that as the 默认 in the recording tab.</li></ol>
-<h3><span class="mw-headline" id="Other_Bluetooth_interference">Other Bluetooth interference</span></h3>
-<p>There have been reports where Xbox controllers that were connected via bluetooth caused choppy audio. When 故障排除 audio problems it is therefore advised to turn other Bluetooth hardware off to avoid any interference. If you are unsure if your Controller causes problems, you can also 购买 a WiFi-Dongle for it to use 2.4GHz instead.
+<li>输入 <code>mmsys.cpl</code> 然后按 Enter</li>
+<li>转到"播放"选项卡。</li>
+<li>选择BT音频耳机，选中它并按下"Set as 默认"（如果尚未设置）。</li>
+<li>如果存在独立的麦克风，请在录音选项卡中将其设为默认。</li></ol>
+<h3><span id=".E5.85.B6.E4.BB.96.E8.93.9D.E7.89.99.E5.B9.B2.E6.89.B0"></span><span class="mw-headline" id="其他蓝牙干扰">其他蓝牙干扰</span></h3>
+<p>有报告称，通过蓝牙连接的Xbox手柄会导致音频断断续续。因此在排查音频问题时，建议关闭其他蓝牙硬件以避免任何干扰。如果你不确定手柄是否导致问题，也可以为其购买WiFi-Dongle以改用2.4GHz。
 </p>
-<h2><span class="mw-headline" id="Static_Noise">Static Noise</span></h2>
-<p>If you 经验值 static noise, there's a number of things you can try:
+<h2><span id=".E9.9D.99.E7.94.B5.E5.99.AA.E9.9F.B3"></span><span class="mw-headline" id="静电噪音">静电噪音</span></h2>
+<p>如果你遇到静电噪音，可以尝试以下几种方法：
 </p>
-<ol><li>Make sure to use the latest audio drivers.</li>
-<li>更新 any third party 软件 that relates to audio to the latest version.</li>
-<li>Test if sound improves by disabling or removing said third party 软件.</li></ol>
-<p>Some headphones also 显示 hissing sounds on higher audio levels when 否 sound is playing. This is only abnormal when it's still audible while playing sounds. In such scenarios you can try and mute the 麦克风 in case the 耳机 is configured to play back what the 麦克风 is picking up, which therefore creates a constant background noise. You can check input and output in your task bar.
+<ol><li>确保使用最新的音频驱动程序。</li>
+<li>将所有与音频相关的第三方软件更新到最新版本。</li>
+<li>尝试禁用或移除上述第三方软件，测试声音是否改善。</li></ol>
+<p>部分耳机在没有声音播放时，也会在较高的音频级别下出现嘶嘶声。这只有在播放声音时仍然听得见才属于异常。在这种情况下，你可以尝试将麦克风静音，以防耳机被配置为回传麦克风拾取的内容，从而产生持续的背景噪音。你可以在任务栏中检查输入和输出。
 </p><p><b>USB有线外设：</b>
 </p>
-<ul><li>If you have a wired USB 麦克风 it's worth trying out a different USB port in case the currently used one has a grounding 问题.</li>
-<li>If all USB ports 显示 buzzing sound, an AC to USB converter may be necessary.</li>
-<li>Laptops have a slightly louder buzzing sound due to the internal 连接 of USB ports.</li>
-<li>If other USB devices are connected to the PC it’s recommended to 断开 them and see if the issue persists.</li></ul>
-<h2><span class="mw-headline" id="System_Input_Volume_goes_down">System Input Volume goes down</span></h2>
-<p>Some systems show that during 绝地潜兵 2 any audio input automatically causes the audio input volume to lower itself.
-</p><p>You can try and disable Audio Enhancements first which should get rid of any auto gain 控制:
+<ul><li>如果你使用的是有线USB麦克风，值得尝试换一个USB端口，以防当前使用的端口存在接地问题。</li>
+<li>如果所有USB端口都发出嗡嗡声，可能需要一个交流转USB转换器。</li>
+<li>由于USB端口的内部连接，笔记本电脑的嗡嗡声会稍微大一些。</li>
+<li>如果PC连接了其他USB设备，建议断开它们并查看问题是否仍然存在。</li></ul>
+<h2><span id=".E7.B3.BB.E7.BB.9F.E8.BE.93.E5.85.A5.E9.9F.B3.E9.87.8F.E9.99.8D.E4.BD.8E"></span><span class="mw-headline" id="系统输入音量降低">系统输入音量降低</span></h2>
+<p>部分系统显示，在绝地潜兵 2运行期间，任何音频输入都会自动导致音频输入音量自行降低。
+</p><p>你可以先尝试禁用Audio Enhancements，这应该能消除任何自动增益控制：
 </p>
-<ol><li>Open your "Sound Settings" in Windows.</li>
-<li>Go to "More Sound Settings".</li>
-<li>Choose "Recording".</li>
-<li>Double click on your input device (the 麦克风 you are using).</li>
-<li>Go to "Advanced".</li>
-<li>Uncheck "Enable Audio Enhancements".</li>
-<li>Click "Apply".</li></ol>
-<h3><span class="mw-headline" id="Aux_vs._USB">Aux vs. USB</span></h3>
-<p>According to <a rel="nofollow" class="external text" href="https://steamcommunity.com/app/553850/discussions/1/632295528254676931/">this Steam post</a> it seems that this 问题 is rooted in the USB driver, which automatically 降低 input gain for USB microphones. You can circumvent the 问题 by connecting an AUX 麦克风 and setting it as your 默认 input device, preventing the USB driver from automatically lowering system input volume. Some 软件, such as "Virtual Audio Cables" can create virtual AUX inputs and therefore 达成 the same 效果 by tricking Windows into assuming an analog 麦克风 is present.
+<ol><li>在 Windows 中打开你的"声音设置"。</li>
+<li>转到"更多声音设置"。</li>
+<li>选择"录音"。</li>
+<li>双击你的输入设备（你正在使用的麦克风）。</li>
+<li>转到"高级"。</li>
+<li>取消勾选"启用音频增强"。</li>
+<li>点击"应用"。</li></ol>
+<h3><span id="Aux.E4.B8.8EUSB"></span><span class="mw-headline" id="Aux与USB">Aux与USB</span></h3>
+<p>根据 <a rel="nofollow" class="external text" href="https://steamcommunity.com/app/553850/discussions/1/632295528254676931/">这篇Steam帖子</a> 此问题似乎源于 USB 驱动程序，它会自动降低 USB 麦克风的输入增益。你可以通过连接 AUX 麦克风并将其设为默认输入设备来规避此问题，从而阻止 USB 驱动程序自动降低系统输入音量。某些软件（如"Virtual Audio Cables"）可以创建虚拟 AUX 输入，通过欺骗 Windows 使其认为存在模拟麦克风，从而实现相同效果。
 </p>
-<h2><span class="mw-headline" id="Third-Party_Software">Third-Party 软件</span></h2>
+<h2><span id=".E7.AC.AC.E4.B8.89.E6.96.B9.E8.BD.AF.E4.BB.B6"></span><span class="mw-headline" id="第三方软件">第三方软件</span></h2>
 <h3><span id="Logitech_.26_Blue"></span><span class="mw-headline" id="Logitech_&amp;_Blue">Logitech &amp; Blue</span></h3>
-<p>If you are using peripherals made by Logitech or Blue (which was purchased by Logitech) you might need to 安装 G-Hub or Blue 控制 to properly set them up. The 主体 issue is caused by a limiter option that is selected in the 控制 软件. However if that 软件 is not installed, the 耳机 might behave as if these options are enabled. 
-</p><p>You can try to uncheck the options for "Exclusive Mode" in <code>mmsys.cpl</code> to stop this 行为 but that does not always work. In such cases you can only 安装 the 软件 and disable the 特性.
+<p>如果你使用的是罗技或Blue（已被罗技收购）制造的外设，你可能需要安装G-Hub或Blue 控制来正确设置它们。主要问题是由控制软件中选中的限制器选项引起的。然而，如果该软件未安装，耳机可能会表现得如同这些选项已启用一般。 
+</p><p>你可以尝试取消勾选"独占模式"选项，在 <code>mmsys.cpl</code> 以阻止此行为，但这并不总是有效。在这种情况下，你只能安装该软件并禁用该功能。
 </p>
 <h3><span class="mw-headline" id="Steelseries">Steelseries</span></h3>
-<p>If you use peripherals made by SteelSeries, you have to set them up using the SteelSeries GG app. 突出 problems are microphones not picking up audio input.
+<p>如果你使用的是赛睿制造的外设，你必须使用SteelSeries GG应用进行设置。突出的问题是麦克风无法拾取音频输入。
 </p>
-<ol><li>安装 Steelseries GG app or 更新 it if necessary.</li>
-<li>Enable Sonar. You open the "Mixer" tab and select the 正确 devices there (such as Headphones or 麦克风).</li></ol>
-<h2><span id="Voice_Chat_doesn.27t_work"></span><span class="mw-headline" id="Voice_Chat_doesn't_work">Voice Chat doesn't work</span></h2>
-<p>There's currently an issue which causes the voice chat to not work properly. The 当前 workaround is to leave the game and join back in.
+<ol><li>安装 Steelseries GG 应用程序，或在必要时更新它。</li>
+<li>启用Sonar。你打开"Mixer"选项卡并在那里选择正确的设备（例如Headphones或麦克风）。</li></ol>
+<h2><span id=".E8.AF.AD.E9.9F.B3.E8.81.8A.E5.A4.A9.E6.97.A0.E6.B3.95.E4.BD.BF.E7.94.A8"></span><span class="mw-headline" id="语音聊天无法使用">语音聊天无法使用</span></h2>
+<p>目前存在一个导致语音聊天无法正常工作的问题。当前的解决方法是退出游戏并重新加入。
 </p>
 <div role="navigation" aria-label="Navbox" class="ranger-navbox navigation-not-searchable striped-even mw-collapsible"><div class="ranger-title"><div class="mw-collapsible-toggle-placeholder"></div></span></span><div class="ranger-title-text"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div></div><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:4"><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Tools</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist"><div class="ranger-list">
 <ul><li><a href="Hellbomb_Script.html" title="Hellbomb Script">Hellbomb Script</a></li>
@@ -175,14 +174,14 @@
 </div></div></div></div></div></div></div>
 <!-- 
 NewPP limit report
-Cached time: 20260818035742
+Cached time: 20260819055455
 Cache expiry: 2592000
 Reduced expiry: false
 Complications: [vary‐revision‐sha1, show‐toc]
-CPU time usage: 0.045 seconds
-Real time usage: 0.080 seconds
+CPU time usage: 0.030 seconds
+Real time usage: 0.058 seconds
 Preprocessor visited node count: 170/1000000
-Revision size: 7549/4194304 bytes
+Revision size: 6837/4194304 bytes
 Post‐expand include size: 7485/4194304 bytes
 Template argument size: 47/4194304 bytes
 Highest expansion depth: 8/100
@@ -190,34 +189,22 @@ Expensive parser function count: 2/500
 Unstrip recursion depth: 0/20
 Unstrip post‐expand size: 0/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.010/15.000 seconds
+Lua time usage: 0.008/15.000 seconds
 Lua memory usage: 665097/52428800 bytes
 Number of processed Cargo queries: 2
-Time spent processing Cargo queries: 0.013 s (avg. 0.006 s)
+Time spent processing Cargo queries: 0.009 s (avg. 0.005 s)
 Number of Cargo row insertion attempts: 1
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%   57.382      1 -total
- 76.08%   43.655      1 Template:Breadcrumb_Auto
- 23.51%   13.490      1 Template:Navbox_Troubleshooting
- 20.02%   11.486      1 Template:Navbox
-  7.24%    4.154      2 Template:Article_other
+100.00%   44.864      1 -total
+ 75.23%   33.749      1 Template:Breadcrumb_Auto
+ 24.44%   10.963      1 Template:Navbox_Troubleshooting
+ 19.92%    8.938      1 Template:Navbox
+  7.32%    3.283      2 Template:Article_other
 -->
-</div></div>
+</div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
-<script>
-功能 toggleTheme(){
-  var h = 文档.documentElement;
-  var alt = h.classList.toggle('view-alt');
-  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
-}
-try {
-  if (localStorage.getItem('hd2theme') === 'alt') {
-    文档.documentElement.classList.add('view-alt');
-  }
-} catch(e) {}
-</script>
 </body>
 </html>

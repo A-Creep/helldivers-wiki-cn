@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-helldiver view-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,54 +14,43 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
-    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
   <button class="back-btn" type="button" onclick="history.back()">← 返回</button>
   <h1 class="page-title">绝地潜兵</h1>
-  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><table style="padding-bottom:5px;padding-left:25px">
-<tbody><tr>
-</tr></tbody></table>
+  <div class="mw-parser-output"><div class="page-container"><div class="page-main"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#生成"><span class="tocnumber">1</span> <span class="toctext">生成</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#行为"><span class="tocnumber">2</span> <span class="toctext">行为</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#结构解析"><span class="tocnumber">3</span> <span class="toctext">结构解析</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#护甲伤害减免"><span class="tocnumber">3.1</span> <span class="toctext">护甲伤害减免</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#攻击数据"><span class="tocnumber">4</span> <span class="toctext">攻击数据</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#战术信息"><span class="tocnumber">5</span> <span class="toctext">战术信息</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#语音台词"><span class="tocnumber">6</span> <span class="toctext">语音台词</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#琐事"><span class="tocnumber">7</span> <span class="toctext">琐事</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#变更历史"><span class="tocnumber">8</span> <span class="toctext">变更历史</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#参考资料"><span class="tocnumber">9</span> <span class="toctext">参考资料</span></a></li>
+</ul>
+</div>
 <div class="noexcerpt" style="border: 1px solid var(--wiki-content-border-color); padding: 0; background-color: var(--wiki-content-background-color--secondary); color: var(--wiki-content-text-color); width: 50%; max-width: 250px; margin: 10px 10px 10px auto; float: right; text-align: center;">	最后更新: <b><a href="1.007.000.html" title="1.007.000">1.007.000</a></b><br /> 当前补丁: <b><a href="1.007.001.html" title="1.007.001">1.007.001</a></b>
 </div>
 <div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Factions.html" title="Factions">阵营</a></div><div class="breadcrumb-item">超级地球 联邦</div><div class="breadcrumb-item breadcrumb-item-final">绝地潜兵</div></div>
-<div class="druid-infobox druid-container noexcerpt Light druid-container-enemy" id="druid-container-1"><div><div class="druid-title">Helldiver</div></div><div class="druid-section-container"><div class="druid-main-image"><img class="wiki-icon" alt="Helldiver Enemy Icon.png" src="../images/Helldiver_Enemy_Icon.webp" decoding="async" loading="lazy" width="1600" height="876" data-file-width="1600" data-file-height="876" /></div></div><div class="druid-section-container"><div data-druid-section="General"><div class="druid-section druid-section-General">基本信息</div></div><div class="druid-row druid-row-description" data-druid-section-row="General"><div class="druid-label druid-label-description">描述</div><div class="druid-data druid-data-description druid-data-nonempty">
-超级地球's elite fighting force, these units can be equipped with a variety of 武器, 战略配备, and employ a variety of 战术.</div></div><div class="druid-row druid-row-faction&#95;display" data-druid-section-row="General"><div class="druid-label druid-label-faction&#95;display">阵营</div><div class="druid-data druid-data-faction&#95;display druid-data-nonempty">
-<span class="faction-icon icon-outline"><img class="wiki-icon" alt="" src="../images/Super_Earth_Icon.svg" decoding="async" loading="lazy" width="1024" height="1024" data-file-width="1024" data-file-height="1024" />&#160;超级地球 联邦</span></div></div><div class="druid-row druid-row-min&#95;difficulty" data-druid-section-row="General"><div class="druid-label druid-label-min&#95;difficulty">最低难度</div><div class="druid-data druid-data-min&#95;difficulty druid-data-nonempty">
-<a href="Difficulty.html" title="Difficulty"><img class="wiki-icon" alt="Trivial Difficulty Icon.svg" src="../images/Trivial_Difficulty_Icon.svg" decoding="async" loading="lazy" width="34" height="16" data-file-width="512" data-file-height="248" /></a> <span><a href="Difficulty.html" title="Difficulty">简单</a></span></div></div><div class="druid-row druid-row-size" data-druid-section-row="General"><div class="druid-label druid-label-size">体型级别</div><div class="druid-data druid-data-size druid-data-nonempty"><b><span class="explain" title="Enemy Size 0 Small">小型</span></b></div></div></div><div class="druid-section-container"><div data-druid-section="Stats"><div class="druid-section druid-section-Stats">属性</div></div><div class="druid-row druid-row-health" data-druid-section-row="Stats"><div class="druid-label druid-label-health">生命值</div><div class="druid-data druid-data-health druid-data-nonempty">
-125</div></div><div class="druid-row druid-row-damage&#95;type" data-druid-section-row="Stats"><div class="druid-label druid-label-damage&#95;type">伤害类型</div><div class="druid-data druid-data-damage&#95;type druid-data-nonempty">
-Everything</div></div><div class="druid-row druid-row-fire&#95;mult" data-druid-section-row="Stats"><div class="druid-label druid-label-fire&#95;mult">火焰伤害倍率</div><div class="druid-data druid-data-fire&#95;mult druid-data-nonempty">
-<span class="DamageIcons icon-outline"><a href="Damage.html" title="Damage"><img class="wiki-icon" alt="" src="../images/Damage_Fire_Icon.svg" decoding="async" loading="lazy" width="20" height="20" data-file-width="512" data-file-height="512" /></a></span>&#160;<span class="DamageIcons"><a href="Damage.html#Damage_Types" title="Damage"><span style="color: orangered;">0.5x 火焰</span></a></span></div></div><div class="druid-row druid-row-gas&#95;mult" data-druid-section-row="Stats"><div class="druid-label druid-label-gas&#95;mult">毒气伤害 倍率</div><div class="druid-data druid-data-gas&#95;mult druid-data-nonempty">
-<span class="DamageIcons icon-outline"><a href="Damage.html" title="Damage"><img class="wiki-icon" alt="" src="../images/Damage_Gas_Icon.svg" decoding="async" loading="lazy" width="20" height="20" data-file-width="512" data-file-height="512" /></a></span>&#160;<span class="DamageIcons"><a href="Damage.html#Damage_Types" title="Damage"><span style="color: green;">1.3x 毒气</span></a></span></div></div></div><div class="druid-section-container"><div data-druid-section="Technical"><div class="druid-section druid-section-Technical">技术信息</div></div><div class="druid-row druid-row-game" data-druid-section-row="Technical"><div class="druid-label druid-label-game">游戏版本</div><div class="druid-data druid-data-game druid-data-nonempty">
-<a href="Helldivers_2.html" title="Helldivers 2">绝地潜兵 2</a></div></div></div></div>
+
 <p><b>绝地潜兵</b> are <span class="faction-icon icon-outline"><img class="wiki-icon" alt="" src="../images/Super_Earth_Icon.svg" decoding="async" loading="lazy" width="1024" height="1024" data-file-width="1024" data-file-height="1024" />&#160;超级地球 联邦</span> elite infantry units that serve as the player character in <a href="Helldivers_2.html" title="Helldivers 2">绝地潜兵 2</a>. 
 </p>
-<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
-<ul>
-<li class="toclevel-1 tocsection-1"><a href="#Spawning"><span class="tocnumber">1</span> <span class="toctext">生成</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="#Behavior"><span class="tocnumber">2</span> <span class="toctext">行为</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="#结构解析"><span class="tocnumber">3</span> <span class="toctext">结构解析</span></a>
-<ul>
-<li class="toclevel-2 tocsection-4"><a href="#Armor_Damage_Reduction"><span class="tocnumber">3.1</span> <span class="toctext">护甲 伤害减免</span></a></li>
-</ul>
-</li>
-<li class="toclevel-1 tocsection-5"><a href="#Attack_Data"><span class="tocnumber">4</span> <span class="toctext">攻击 Data</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="#Tactical_Information"><span class="tocnumber">5</span> <span class="toctext">战术信息</span></a></li>
-<li class="toclevel-1 tocsection-7"><a href="#Voice_Lines"><span class="tocnumber">6</span> <span class="toctext">Voice Lines</span></a></li>
-<li class="toclevel-1 tocsection-8"><a href="#琐事"><span class="tocnumber">7</span> <span class="toctext">琐事</span></a></li>
-<li class="toclevel-1 tocsection-9"><a href="#Change_History"><span class="tocnumber">8</span> <span class="toctext">变更历史</span></a></li>
-<li class="toclevel-1 tocsection-10"><a href="#References"><span class="tocnumber">9</span> <span class="toctext">参考</span></a></li>
-</ul>
-</div>
 
-<h2><span class="mw-headline" id="Spawning">生成</span></h2>
-<ul><li>绝地潜兵 deploy from <a href="Hellpod.html" title="Hellpod">Hellpods</a> during the start of a 任务, when a 增援 is called by an ally, or when an entire 绝地潜兵 squad is wiped out.
+
+<h2><span id=".E7.94.9F.E6.88.90"></span><span class="mw-headline" id="生成">生成</span></h2>
+<ul><li>绝地潜兵 deploy from <a href="Hellpod.html" title="Hellpod">绝地喷射舱</a> during the start of a 任务, when a 增援 is called by an ally, or when an entire 绝地潜兵 squad is wiped out.
 <ul><li>During <a href="Commando_Missions.html" title="Commando Missions">突击兵 Missions</a>, 绝地潜兵 will deploy from 特殊 <a href="Reinforcement_Pods.html" title="Reinforcement Pods">增援太空舱</a> that have been pre-placed in the surrounding area.</li></ul></li>
 <li>Aside from the first deployment during a 任务, 绝地潜兵 have a 有限 number of respawns, amounting to 5 per squad member, pooling together for a total of 20 if there are 4 绝地潜兵 present.
 <ul><li>This can be 已增加 to 6 per squad member if one 绝地潜兵 is using the <a href="Increased_Reinforcement_Budget.html" title="Increased Reinforcement Budget">已增加 增援预算</a> 增益。</li>
 <li>If all 增援 are depleted, then they will slowly 充能 to a 最大 of one on a timer of 120 秒, 已降低 to 90 秒 with the <a href="Flexible_Reinforcement_Budget.html" title="Flexible Reinforcement Budget">灵活增援预算</a> 增益。</li></ul></li></ul>
-<h2><span class="mw-headline" id="Behavior">行为</span></h2>
+<h2><span id=".E8.A1.8C.E4.B8.BA"></span><span class="mw-headline" id="行为">行为</span></h2>
 <ul><li>绝地潜兵 will often work together in groups of up to 4, focusing on achieving their 当前 任务 目标 by any means necessary.</li>
 <li>绝地潜兵 are player-controlled and can be unpredictable, caution is advised when approaching.</li>
 <li>通常, 绝地潜兵 are 通常 cooperative with one another, and will relay 兴趣点 in order to 完成 their 任务 as efficiently as possible.</li>
@@ -212,7 +201,7 @@ Everything</div></div><div class="druid-row druid-row-fire&#95;mult" data-druid-
 </div>
 <p><br />
 </p>
-<h3><span class="mw-headline" id="Armor_Damage_Reduction">护甲 伤害减免</span></h3>
+<h3><span id=".E6.8A.A4.E7.94.B2.E4.BC.A4.E5.AE.B3.E5.87.8F.E5.85.8D"></span><span class="mw-headline" id="护甲伤害减免">护甲伤害减免</span></h3>
 <div style="display:flex; flex-wrap:wrap; max-width:100%;"><div style="flex: 1; margin-right:1em;">Factors 
 <table class="wikitable">
 <tbody><tr>
@@ -736,7 +725,7 @@ Everything</div></div><div class="druid-row druid-row-fire&#95;mult" data-druid-
 </tbody></table></div></div>
 <p><br />
 </p>
-<h2><span class="mw-headline" id="Attack_Data">攻击 Data</span></h2>
+<h2><span id=".E6.94.BB.E5.87.BB.E6.95.B0.E6.8D.AE"></span><span class="mw-headline" id="攻击数据">攻击数据</span></h2>
 <div class="flextablediv">
 <table class="wikitable tableleftjustified Secondcolumnright table-weapon-stats attack-data-table-damage">
 <tbody><tr>
@@ -793,7 +782,7 @@ Everything</div></div><div class="druid-row druid-row-fire&#95;mult" data-druid-
 </td></tr>
 </tbody></table>
 </div>
-<h2><span class="mw-headline" id="Tactical_Information">战术信息</span></h2>
+<h2><span id=".E6.88.98.E6.9C.AF.E4.BF.A1.E6.81.AF"></span><span class="mw-headline" id="战术信息">战术信息</span></h2>
 <ul><li>When any limb reaches 0 生命值, it will break, causing the following 效果:
 <ul><li>Head: Death</li>
 <li>Chest: 10 每秒伤害 of 流血 伤害 until death or healed by a <a href="Stim.html" title="Stim">兴奋剂</a></li>
@@ -806,7 +795,7 @@ Everything</div></div><div class="druid-row druid-row-fire&#95;mult" data-druid-
 <ul><li>This is counteracted by the unique 属性 of 护甲 to resist 伤害 and availability of Stims to heal, granting them fully restored 生命值 and 耐力 along with a temporary <b>10%</b> 伤害抗性 if using the <a href="Experimental_Infusion.html" title="Experimental Infusion">试验性注射剂</a> 强化资源 in Stim state or 被动 additional <b>10%</b> 伤害抗性 with the Vitality Enhancement 强化资源.</li></ul></li>
 <li>绝地潜兵 have a vast arsenal at their disposal, consisting of 几个 different <a href="Weapons.html" title="Weapons">武器</a> 和 <a href="Stratagems.html" title="Stratagems">战略配备</a> designed to supplement their operations and 摧毁 their 敌人.</li>
 <li>绝地潜兵 can be easily knocked over with enough force, throwing them to the ground, rendering them unable to move, heal, or 攻击 for a short time.</li></ul>
-<h2><span class="mw-headline" id="Voice_Lines">Voice Lines</span></h2>
+<h2><span id=".E8.AF.AD.E9.9F.B3.E5.8F.B0.E8.AF.8D"></span><span class="mw-headline" id="语音台词">语音台词</span></h2>
 <table class="wikitable">
 <caption>
 </caption>
@@ -1050,8 +1039,8 @@ Everything</div></div><div class="druid-row druid-row-fire&#95;mult" data-druid-
 <li>The 绝地潜兵 training 程序 has 大约 a 21.3% survival rate.</li>
 <li>According to Arrowhead's Chief Creative 军官, 绝地潜兵 have a  2-minute life-expectancy following combat deployment. <sup id="cite&#95;ref-2" class="reference"><a href="#cite_note-2"><span class="cite-bracket">&#91;</span>2<span class="cite-bracket">&#93;</span></a></sup> Albeit the actual life-expectancy varies greatly on an individual level.</li>
 <li>The 平均 新兵's combat readiness is estimated at 27.1%.</li>
-<li>根据一份 <a rel="nofollow" class="external text" href="https://www.facebook.com/photo?fbid=1335575641901582&amp;set=pb.100063474763574.-2207520000">官员 Facebook post</a> "Becoming a 绝地潜兵 - What to expect", 绝地潜兵 接收 unrivaled healthcare benefits.</li></ul>
-<h2><span class="mw-headline" id="Change_History">变更历史</span></h2>
+<li>根据一份 <a rel="nofollow" class="external text" href="https://www.facebook.com/photo?fbid=1335575641901582&amp;set=pb.100063474763574.-2207520000">官方 Facebook 帖子</a> "Becoming a 绝地潜兵 - What to expect", 绝地潜兵 接收 unrivaled healthcare benefits.</li></ul>
+<h2><span id=".E5.8F.98.E6.9B.B4.E5.8E.86.E5.8F.B2"></span><span class="mw-headline" id="变更历史">变更历史</span></h2>
 <div style="display:flex; border: 1px solid; padding: 1px; border-radius: 5px; text-align:center; font-weight:bold;">
 <div style="flex: 0 0 119px; text-align: center; font-weight: bold;">补丁</div>
 <div style="flex: 1 1 auto; border-left: 1px solid;">描述</div>
@@ -1067,12 +1056,12 @@ Everything</div></div><div class="druid-row druid-row-fire&#95;mult" data-druid-
 <p>变更
 </p>
 <ul><li>已减少 持续时间 for the 重型 landing 动画 by around 40%.
-<ul><li>已减少 the 绝地潜兵 重型 land 动画 from 1.32 sec to 0.8 sec</li></ul></li>
+<ul><li>将绝地潜兵的重型着陆动画从1.32秒缩短至0.8秒</li></ul></li>
 <li>已更改 stim input to be remembered for a short 持续时间 when the action is not allowed and will be executed if the stim action is allowed within that 持续时间.
 <ul><li>If the 绝地潜兵 cannot stim at the exact moment when the stim button is pressed, they will automatically stim as soon as they are able to (Up to 2 秒 later)</li></ul></li></ul>
 <p>修复
 </p>
-<ul><li>Fixed an issue with ragdolling causing invisible collision issues</li></ul>
+<ul><li>修复了布娃娃物理效果导致隐形碰撞问题</li></ul>
 </div>
 </div>
 </div>
@@ -1136,12 +1125,12 @@ Everything</div></div><div class="druid-row druid-row-fire&#95;mult" data-druid-
 <div style="display: table-cell; vertical-align: middle;"> 
 <p>变更
 </p>
-<ul><li>绝地潜兵 护甲 tweaks
-<ul><li>Both 重型 and 轻型护甲 are now more 有效,</li>
-<li>重型护甲 降低 受到伤害 by 25%, up from 20%
-<ul><li>5% more 伤害减免</li></ul></li></ul></li>
-<li>轻型护甲 增加 受到伤害 by 25%, down from 33%
-<ul><li>8% less 受到伤害</li></ul></li></ul>
+<ul><li>绝地潜兵护甲调整
+<ul><li>重型和轻型护甲现在都更加有效，</li>
+<li>重型护甲受到的伤害减少 25%，从 20% 上调。
+<ul><li>伤害减免提高5%</li></ul></li></ul></li>
+<li>轻型护甲受到的伤害增加 25%，从 33% 下调。
+<ul><li>受到的伤害降低8%</li></ul></li></ul>
 </div>
 </div>
 </div>
@@ -1156,7 +1145,7 @@ Everything</div></div><div class="druid-row druid-row-fire&#95;mult" data-druid-
 <div style="display: table-cell; vertical-align: middle;"> 
 <p>Change
 </p>
-<ul><li>Armors with 护甲值 above 100 now also reduce 伤害 on headshots.</li></ul>
+<ul><li>护甲评级超过100的护甲现在也会减少爆头伤害。</li></ul>
 </div>
 </div>
 </div>
@@ -1171,11 +1160,11 @@ Everything</div></div><div class="druid-row druid-row-fire&#95;mult" data-druid-
 <div style="display: table-cell; vertical-align: middle;"> 
 <p>变更
 </p>
-<ul><li>重型 and 中型护甲 protects better and you now take about 10% less 伤害 than before while wearing 重型 and about 5% less when wearing 中型护甲. 强化 突击兵 and 轻型护甲 is unchanged.</li>
-<li>绝地潜兵 limbs 爆炸伤害 reduction 已增加 from 0% to 100%.</li></ul>
+<ul><li>重型和中型护甲防护效果更好，现在穿戴重型护甲时受到的伤害比以前减少约10%，穿戴中型护甲时减少约5%。强化突击兵和轻型护甲保持不变。</li>
+<li>绝地潜兵四肢爆炸伤害减免从0%提升至100%。</li></ul>
 <p>未记录变更
 </p>
-<ul><li>绝地潜兵 chest 爆炸伤害 reduction 已增加 to 50%.</li></ul>
+<ul><li>绝地潜兵胸部爆炸伤害减免提升至50%。</li></ul>
 </div>
 </div>
 </div>
@@ -1196,7 +1185,7 @@ Everything</div></div><div class="druid-row druid-row-fire&#95;mult" data-druid-
 </div>
 </div>
 </div>
-<h2><span class="mw-headline" id="References">参考</span></h2>
+<h2><span id=".E5.8F.82.E8.80.83.E8.B5.84.E6.96.99"></span><span class="mw-headline" id="参考资料">参考资料</span></h2>
 <div class="mw-references-wrap"><ol class="references">
 <li id="cite&#95;note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://www.reddit.com/r/Helldivers/comments/1kbr7km/comment/mpwys5s">What are these circles on the helmets?</a>..
 </span>
@@ -1209,54 +1198,50 @@ Everything</div></div><div class="druid-row druid-row-fire&#95;mult" data-druid-
 
 <!-- 
 NewPP limit report
-Cached time: 20260818034631
+Cached time: 20260819054343
 Cache expiry: 3600
 Reduced expiry: true
 Complications: [vary‐revision‐sha1, show‐toc]
-CPU time usage: 0.433 seconds
-Real time usage: 0.635 seconds
-Preprocessor visited node count: 3552/1000000
-Revision size: 12347/4194304 bytes
-Post‐expand include size: 90984/4194304 bytes
-Template argument size: 6838/4194304 bytes
+CPU time usage: 0.419 seconds
+Real time usage: 0.606 seconds
+Preprocessor visited node count: 3513/1000000
+Revision size: 12274/4194304 bytes
+Post‐expand include size: 89775/4194304 bytes
+Template argument size: 6636/4194304 bytes
 Highest expansion depth: 11/100
 Expensive parser function count: 7/500
 Unstrip recursion depth: 0/20
 Unstrip post‐expand size: 9192/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.146/15.000 seconds
-Lua memory usage: 6126678/52428800 bytes
+Lua time usage: 0.142/15.000 seconds
+Lua memory usage: 6127193/52428800 bytes
 Number of processed Cargo queries: 15
 Time spent processing Cargo queries: 0.032 s (avg. 0.002 s)
 Number of Cargo row insertion attempts: 4
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%  522.319      1 -total
- 39.21%  204.813      1 Template:Nav_Enemy
- 38.74%  202.347      1 Template:Navbox
- 17.45%   91.126      1 Template:Attack_Data/attack
- 13.49%   70.477      1 Template:Infobox_Enemy
- 10.16%   53.087      8 Template:Change_History_Update
-  8.14%   42.521      1 Template:Anatomy_Table
-  7.11%   37.160      5 Template:Anatomy_Row
-  5.67%   29.607      1 Template:Armor_Ratings
-  5.54%   28.937      7 Template:Article_other
+100.00%  499.382      1 -total
+ 41.13%  205.407      1 Template:Nav_Enemy
+ 40.67%  203.090      1 Template:Navbox
+ 15.69%   78.361      1 Template:Attack_Data/attack
+ 14.11%   70.449      1 Template:Infobox_Enemy
+ 10.69%   53.371      8 Template:Change_History_Update
+  7.91%   39.501      1 Template:Anatomy_Table
+  6.93%   34.628      5 Template:Anatomy_Row
+  6.42%   32.080      7 Template:Article_other
+  4.65%   23.211      1 Template:Difficulty
 -->
-</div></div>
+</div><aside class="page-side"><div class="druid-infobox druid-container noexcerpt Light druid-container-enemy" id="druid-container-1"><div><div class="druid-title">Helldiver</div></div><div class="druid-section-container"><div class="druid-main-image"><img class="wiki-icon" alt="Helldiver Enemy Icon.png" src="../images/Helldiver_Enemy_Icon.webp" decoding="async" loading="lazy" width="1600" height="876" data-file-width="1600" data-file-height="876" /></div></div><div class="druid-section-container"><div data-druid-section="General"><div class="druid-section druid-section-General">基本信息</div></div><div class="druid-row druid-row-description" data-druid-section-row="General"><div class="druid-label druid-label-description">描述</div><div class="druid-data druid-data-description druid-data-nonempty">
+超级地球's elite fighting force, these units can be equipped with a variety of 武器, 战略配备, and employ a variety of 战术.</div></div><div class="druid-row druid-row-faction&#95;display" data-druid-section-row="General"><div class="druid-label druid-label-faction&#95;display">阵营</div><div class="druid-data druid-data-faction&#95;display druid-data-nonempty">
+超级地球联邦</div></div><div class="druid-row druid-row-min&#95;difficulty" data-druid-section-row="General"><div class="druid-label druid-label-min&#95;difficulty">最低难度</div><div class="druid-data druid-data-min&#95;difficulty druid-data-nonempty">
+<a href="Difficulty.html" title="Difficulty"><img class="wiki-icon" alt="Trivial Difficulty Icon.svg" src="../images/Trivial_Difficulty_Icon.svg" decoding="async" loading="lazy" width="34" height="16" data-file-width="512" data-file-height="248" /></a> <span><a href="Difficulty.html" title="Difficulty">简单</a></span></div></div><div class="druid-row druid-row-size" data-druid-section-row="General"><div class="druid-label druid-label-size">体型级别</div><div class="druid-data druid-data-size druid-data-nonempty"><b><span class="explain" title="Enemy Size 0 Small">小型</span></b></div></div></div><div class="druid-section-container"><div data-druid-section="Stats"><div class="druid-section druid-section-Stats">属性</div></div><div class="druid-row druid-row-health" data-druid-section-row="Stats"><div class="druid-label druid-label-health">生命值</div><div class="druid-data druid-data-health druid-data-nonempty">
+125</div></div><div class="druid-row druid-row-damage&#95;type" data-druid-section-row="Stats"><div class="druid-label druid-label-damage&#95;type">伤害类型</div><div class="druid-data druid-data-damage&#95;type druid-data-nonempty">
+Everything</div></div><div class="druid-row druid-row-fire&#95;mult" data-druid-section-row="Stats"><div class="druid-label druid-label-fire&#95;mult">火焰伤害倍率</div><div class="druid-data druid-data-fire&#95;mult druid-data-nonempty">
+<span class="DamageIcons icon-outline"><a href="Damage.html" title="Damage"><img class="wiki-icon" alt="" src="../images/Damage_Fire_Icon.svg" decoding="async" loading="lazy" width="20" height="20" data-file-width="512" data-file-height="512" /></a></span>&#160;<span class="DamageIcons"><a href="Damage.html#Damage_Types" title="Damage"><span style="color: orangered;">0.5x 火焰</span></a></span></div></div><div class="druid-row druid-row-gas&#95;mult" data-druid-section-row="Stats"><div class="druid-label druid-label-gas&#95;mult">毒气伤害 倍率</div><div class="druid-data druid-data-gas&#95;mult druid-data-nonempty">
+<span class="DamageIcons icon-outline"><a href="Damage.html" title="Damage"><img class="wiki-icon" alt="" src="../images/Damage_Gas_Icon.svg" decoding="async" loading="lazy" width="20" height="20" data-file-width="512" data-file-height="512" /></a></span>&#160;<span class="DamageIcons"><a href="Damage.html#Damage_Types" title="Damage"><span style="color: green;">1.3x 毒气</span></a></span></div></div></div><div class="druid-section-container"><div data-druid-section="Technical"><div class="druid-section druid-section-Technical">技术信息</div></div><div class="druid-row druid-row-game" data-druid-section-row="Technical"><div class="druid-label druid-label-game">游戏版本</div><div class="druid-data druid-data-game druid-data-nonempty">
+<a href="Helldivers_2.html" title="Helldivers 2">绝地潜兵 2</a></div></div></div></div></aside></div></div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
-<script>
-功能 toggleTheme(){
-  var h = 文档.documentElement;
-  var alt = h.classList.toggle('view-alt');
-  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
-}
-try {
-  if (localStorage.getItem('hd2theme') === 'alt') {
-    文档.documentElement.classList.add('view-alt');
-  }
-} catch(e) {}
-</script>
 </body>
 </html>

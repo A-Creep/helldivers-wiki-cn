@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-helldiver view-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,13 +14,12 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
-    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
   <button class="back-btn" type="button" onclick="history.back()">← 返回</button>
   <h1 class="page-title">货币</h1>
-  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item breadcrumb-item-final">货币</div></div>
+  <div class="mw-parser-output"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item breadcrumb-item-final">货币</div></div>
 <div class="msgbox noexcerpt searchaux msgbox-orange" style="max-width: 90%;">
 <div id="msgbox-icon"> <div id="msgbox-image" class="nomobile" style=""> <img alt="Reinforce Stratagem Icon Background.svg" src="../images/Reinforce_Stratagem_Icon_Background.svg" decoding="async" loading="lazy" width="45" height="45" style="vertical-align: text-top" data-file-width="512" data-file-height="512" /></div>
 </div>
@@ -46,11 +45,11 @@
 <tr>
 <td><span class="Currencyicons"><span style="white-space:nowrap"><a href="Requisition_Slips.html" title="Requisition Slips"><img alt="" src="../images/Requisition_Slip.svg" decoding="async" loading="lazy" width="512" height="571" data-file-width="512" data-file-height="571" /></a> </span> <a href="Requisition_Slips.html" title="Requisition Slips">申购点 Slips</a></span>
 </td>
-<td><a href="Stratagems.html" title="Stratagems">战略配备</a> <i>(sufficient <a href="Levels.html#Unlocks" title="Levels">等级</a> 必需),</i><br /><a href="Ship_Modules.html" title="Ship Modules">舰船模块</a> (starting at tier 4),<br /><a href="Attachments.html" title="Attachments">Weapon 配件</a> 和 <a href="Cosmetics.html#Weapon-0" title="Cosmetics">Weapon Patterns</a>.
+<td><a href="Stratagems.html" title="Stratagems">战略配备</a> <i>(sufficient <a href="Levels.html#Unlocks" title="Levels">等级</a> 必需),</i><br /><a href="Ship_Modules.html" title="Ship Modules">舰船模块</a> (starting at tier 4),<br /><a href="Attachments.html" title="Attachments">武器配件</a> 和 <a href="Cosmetics.html#Weapon-0" title="Cosmetics">武器涂装</a>.
 </td>
 <td>
 <ul><li>Found at 次要兴趣点</li>
-<li>Completing <a href="Missions.html#Main_Objectives" title="Missions">主体</a> 和 <a href="Missions.html#Optional_Objectives" title="Missions">Optional</a> 任务 目标</li>
+<li>Completing <a href="Missions.html#Main_Objectives" title="Missions">主体</a> 和 <a href="Missions.html#Optional_Objectives" title="Missions">可选</a> 任务目标</li>
 <li><a href="Extraction.html" title="Extraction">撤离</a> successfully and quickly</li></ul>
 </td>
 <td>50,000
@@ -110,14 +109,14 @@
 
 <!-- 
 NewPP limit report
-Cached time: 20260818034628
+Cached time: 20260819054341
 Cache expiry: 2592000
 Reduced expiry: false
 Complications: [vary‐revision‐sha1]
-CPU time usage: 0.056 seconds
-Real time usage: 0.082 seconds
+CPU time usage: 0.058 seconds
+Real time usage: 0.085 seconds
 Preprocessor visited node count: 475/1000000
-Revision size: 2098/4194304 bytes
+Revision size: 2081/4194304 bytes
 Post‐expand include size: 3718/4194304 bytes
 Template argument size: 801/4194304 bytes
 Highest expansion depth: 7/100
@@ -125,36 +124,24 @@ Expensive parser function count: 0/500
 Unstrip recursion depth: 0/20
 Unstrip post‐expand size: 0/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.009/15.000 seconds
+Lua time usage: 0.010/15.000 seconds
 Lua memory usage: 666348/52428800 bytes
 Number of processed Cargo queries: 1
-Time spent processing Cargo queries: 0.007 s (avg. 0.007 s)
+Time spent processing Cargo queries: 0.006 s (avg. 0.006 s)
 Number of Cargo row insertion attempts: 1
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%   53.598      1 -total
- 61.05%   32.723      1 Template:Breadcrumb_Auto
- 16.16%    8.662      3 Template:Difficulty
- 13.11%    7.024      1 Template:Stub
-  9.23%    4.949      1 Template:Msgbox
-  8.32%    4.459      6 Template:Currency
-  6.02%    3.225      1 Template:Article_other
+100.00%   55.091      1 -total
+ 59.12%   32.570      1 Template:Breadcrumb_Auto
+ 16.91%    9.317      3 Template:Difficulty
+ 14.06%    7.745      1 Template:Stub
+ 10.02%    5.520      1 Template:Msgbox
+  8.48%    4.672      6 Template:Currency
+  5.44%    2.997      1 Template:Article_other
 -->
-</div></div>
+</div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
-<script>
-功能 toggleTheme(){
-  var h = 文档.documentElement;
-  var alt = h.classList.toggle('view-alt');
-  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
-}
-try {
-  if (localStorage.getItem('hd2theme') === 'alt') {
-    文档.documentElement.classList.add('view-alt');
-  }
-} catch(e) {}
-</script>
 </body>
 </html>

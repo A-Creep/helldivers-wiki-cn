@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-helldiver view-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,21 +14,20 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
-    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
   <button class="back-btn" type="button" onclick="history.back()">← 返回</button>
   <h1 class="page-title">Regnus/Battle Log</h1>
-  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><p>Everything that ever happened on Regnus.
+  <div class="mw-parser-output"><p>Everything that ever happened on Regnus.
 </p>
 <div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="#All_Related_Events"><span class="tocnumber">1</span> <span class="toctext">All 相关 Events</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="#所有相关事件"><span class="tocnumber">1</span> <span class="toctext">所有相关事件</span></a></li>
 </ul>
 </div>
 
-<h2><span class="mw-headline" id="All_Related_Events">All 相关 Events</span></h2>
+<h2><span id=".E6.89.80.E6.9C.89.E7.9B.B8.E5.85.B3.E4.BA.8B.E4.BB.B6"></span><span class="mw-headline" id="所有相关事件">所有相关事件</span></h2>
 <div class="flextablediv">
 <div class="box" style="display:flex;max-height:500px; max-width:720px;width:100%;overflow-y:auto;border:1px solid var(--wiki-content-border-color);">
 <table class="wikitable" style="text-align:left;max-width:720;width:100%;">
@@ -298,11 +297,11 @@
 
 <!-- 
 NewPP limit report
-Cached time: 20260818035305
+Cached time: 20260819055015
 Cache expiry: 2592000
 Reduced expiry: false
 Complications: [show‐toc]
-CPU time usage: 0.325 seconds
+CPU time usage: 0.322 seconds
 Real time usage: 0.344 seconds
 Preprocessor visited node count: 176/1000000
 Revision size: 163/4194304 bytes
@@ -313,28 +312,16 @@ Expensive parser function count: 0/500
 Unstrip recursion depth: 0/20
 Unstrip post‐expand size: 0/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.304/15.000 seconds
-Lua memory usage: 8778649/52428800 bytes
+Lua time usage: 0.302/15.000 seconds
+Lua memory usage: 8801283/52428800 bytes
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%  330.655      1 Template:GalacticWarLogSearch
-100.00%  330.655      1 -total
+100.00%  330.126      1 Template:GalacticWarLogSearch
+100.00%  330.126      1 -total
 -->
-</div></div>
+</div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
-<script>
-功能 toggleTheme(){
-  var h = 文档.documentElement;
-  var alt = h.classList.toggle('view-alt');
-  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
-}
-try {
-  if (localStorage.getItem('hd2theme') === 'alt') {
-    文档.documentElement.classList.add('view-alt');
-  }
-} catch(e) {}
-</script>
 </body>
 </html>

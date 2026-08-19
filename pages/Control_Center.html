@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-helldiver view-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,28 +14,27 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
-    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
   <button class="back-btn" type="button" onclick="history.back()">← 返回</button>
   <h1 class="page-title">控制中心</h1>
-  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr">
+  <div class="mw-parser-output">
 <div style="text-align:center;">
 
 </div>
-<p>The 控制 center is a part of the <a href="Super_Destroyer.html" title="Super Destroyer">超级驱逐舰</a> in 绝地潜兵 2.
+<p>The 控制 center is a part of the <a href="Super_Destroyer.html" title="Super Destroyer">超级驱逐舰</a> 在《绝地潜兵2》中。
 </p>
 <!-- 
 NewPP limit report
-Cached time: 20260818035746
+Cached time: 20260819055500
 Cache expiry: 2592000
 Reduced expiry: false
 Complications: []
-CPU time usage: 0.011 seconds
-Real time usage: 0.017 seconds
+CPU time usage: 0.013 seconds
+Real time usage: 0.023 seconds
 Preprocessor visited node count: 112/1000000
-Revision size: 80/4194304 bytes
+Revision size: 92/4194304 bytes
 Post‐expand include size: 1050/4194304 bytes
 Template argument size: 116/4194304 bytes
 Highest expansion depth: 7/100
@@ -46,24 +45,12 @@ ExtLoops count: 0/5000
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%    6.039      1 Template:WIP
-100.00%    6.039      1 -total
- 52.87%    3.193      1 Template:Message_box
+100.00%    8.104      1 Template:WIP
+100.00%    8.104      1 -total
+ 50.00%    4.052      1 Template:Message_box
 -->
-</div></div>
+</div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
-<script>
-功能 toggleTheme(){
-  var h = 文档.documentElement;
-  var alt = h.classList.toggle('view-alt');
-  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
-}
-try {
-  if (localStorage.getItem('hd2theme') === 'alt') {
-    文档.documentElement.classList.add('view-alt');
-  }
-} catch(e) {}
-</script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-helldiver view-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,88 +14,87 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
-    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
   <button class="back-btn" type="button" onclick="history.back()">← 返回</button>
   <h1 class="page-title">Linux / Steam Deck 故障排除</h1>
-  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div><div class="breadcrumb-item breadcrumb-item-final">Linux / Steam Deck 故障排除</div></div>
+  <div class="mw-parser-output"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div><div class="breadcrumb-item breadcrumb-item-final">Linux / Steam Deck 故障排除</div></div>
 <p>These 故障排除 技巧 are meant for users who use <b>Linux</b> distributions and the <b>Steam Deck</b>.
 </p>
 <ul><li>If you encounter 网络-相关 errors and problems, please check <a href="Network_Troubleshooting.html" title="Network Troubleshooting">网络 故障排除</a>.</li>
-<li>For Performance 技巧, please check <a href="User_Settings_Config_FPS_Optimization.html#Linux_/_Steam_Deck" title="User Settings Config FPS Optimization">the Performance Guide</a>.<br /><br /></li></ul>
+<li>For Performance 技巧, please check <a href="User_Settings_Config_FPS_Optimization.html#Linux_/_Steam_Deck" title="User Settings Config FPS Optimization">性能指南</a>.<br /><br /></li></ul>
 <div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="#Basics"><span class="tocnumber">1</span> <span class="toctext">Basics</span></a>
+<li class="toclevel-1 tocsection-1"><a href="#基础"><span class="tocnumber">1</span> <span class="toctext">基础</span></a>
 <ul>
 <li class="toclevel-2 tocsection-2"><a href="#Proton"><span class="tocnumber">1.1</span> <span class="toctext">Proton</span></a>
 <ul>
-<li class="toclevel-3 tocsection-3"><a href="#Community_Proton_Installation"><span class="tocnumber">1.1.1</span> <span class="toctext">Community Proton Installation</span></a></li>
-<li class="toclevel-3 tocsection-4"><a href="#How_to_change_Proton_versions"><span class="tocnumber">1.1.2</span> <span class="toctext">How to change Proton versions</span></a></li>
-<li class="toclevel-3 tocsection-5"><a href="#Steam_Launch_Commands"><span class="tocnumber">1.1.3</span> <span class="toctext">Steam Launch Commands</span></a></li>
+<li class="toclevel-3 tocsection-3"><a href="#社区Proton安装"><span class="tocnumber">1.1.1</span> <span class="toctext">社区Proton安装</span></a></li>
+<li class="toclevel-3 tocsection-4"><a href="#如何更换Proton版本"><span class="tocnumber">1.1.2</span> <span class="toctext">如何更换Proton版本</span></a></li>
+<li class="toclevel-3 tocsection-5"><a href="#Steam_启动命令"><span class="tocnumber">1.1.3</span> <span class="toctext">Steam 启动命令</span></a></li>
 </ul>
 </li>
 <li class="toclevel-2 tocsection-6"><a href="#Steam_Runtime"><span class="tocnumber">1.2</span> <span class="toctext">Steam Runtime</span></a></li>
-<li class="toclevel-2 tocsection-7"><a href="#File_System"><span class="tocnumber">1.3</span> <span class="toctext">File System</span></a>
+<li class="toclevel-2 tocsection-7"><a href="#文件系统"><span class="tocnumber">1.3</span> <span class="toctext">文件系统</span></a>
 <ul>
-<li class="toclevel-3 tocsection-8"><a href="#User_Rights_Management"><span class="tocnumber">1.3.1</span> <span class="toctext">User Rights 管理</span></a></li>
-<li class="toclevel-3 tocsection-9"><a href="#NTFS_corruption"><span class="tocnumber">1.3.2</span> <span class="toctext">NTFS corruption</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="#用户权限管理"><span class="tocnumber">1.3.1</span> <span class="toctext">用户权限管理</span></a></li>
+<li class="toclevel-3 tocsection-9"><a href="#NTFS_损坏"><span class="tocnumber">1.3.2</span> <span class="toctext">NTFS 损坏</span></a></li>
 </ul>
 </li>
-<li class="toclevel-2 tocsection-10"><a href="#Additional_information"><span class="tocnumber">1.4</span> <span class="toctext">Additional information</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#附加信息"><span class="tocnumber">1.4</span> <span class="toctext">附加信息</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-11"><a href="#Proton_Logs"><span class="tocnumber">2</span> <span class="toctext">Proton Logs</span></a></li>
-<li class="toclevel-1 tocsection-12"><a href="#Crash_upon_Start"><span class="tocnumber">3</span> <span class="toctext">Crash upon Start</span></a>
+<li class="toclevel-1 tocsection-11"><a href="#Proton_日志"><span class="tocnumber">2</span> <span class="toctext">Proton 日志</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#启动时崩溃"><span class="tocnumber">3</span> <span class="toctext">启动时崩溃</span></a>
 <ul>
-<li class="toclevel-2 tocsection-13"><a href="#GameGuard_doesn&#39;t_load"><span class="tocnumber">3.1</span> <span class="toctext">GameGuard doesn't load</span></a></li>
-<li class="toclevel-2 tocsection-14"><a href="#User_Rights_Problems"><span class="tocnumber">3.2</span> <span class="toctext">User Rights Problems</span></a>
+<li class="toclevel-2 tocsection-13"><a href="#GameGuard无法加载"><span class="tocnumber">3.1</span> <span class="toctext">GameGuard无法加载</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#用户权限问题"><span class="tocnumber">3.2</span> <span class="toctext">用户权限问题</span></a>
 <ul>
-<li class="toclevel-3 tocsection-15"><a href="#Sandbox_vs._Native"><span class="tocnumber">3.2.1</span> <span class="toctext">Sandbox vs. Native</span></a></li>
+<li class="toclevel-3 tocsection-15"><a href="#Sandbox_与_Native"><span class="tocnumber">3.2.1</span> <span class="toctext">Sandbox 与 Native</span></a></li>
 </ul>
 </li>
-<li class="toclevel-2 tocsection-16"><a href="#Sony_Crashhandler_appears"><span class="tocnumber">3.3</span> <span class="toctext">Sony Crashhandler appears</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#出现Sony_Crashhandler"><span class="tocnumber">3.3</span> <span class="toctext">出现Sony Crashhandler</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-17"><a href="#Graphics_&amp;_Performance"><span class="tocnumber">4</span> <span class="toctext">Graphics &amp; Performance</span></a>
+<li class="toclevel-1 tocsection-17"><a href="#图像与性能"><span class="tocnumber">4</span> <span class="toctext">图像与性能</span></a>
 <ul>
-<li class="toclevel-2 tocsection-18"><a href="#Black_Screen"><span class="tocnumber">4.1</span> <span class="toctext">Black Screen</span></a></li>
-<li class="toclevel-2 tocsection-19"><a href="#Graphical_Errors"><span class="tocnumber">4.2</span> <span class="toctext">Graphical Errors</span></a></li>
-<li class="toclevel-2 tocsection-20"><a href="#Very_low_FPS_/_FPS_Stuck_at_30"><span class="tocnumber">4.3</span> <span class="toctext">Very low FPS / FPS Stuck at 30</span></a></li>
-<li class="toclevel-2 tocsection-21"><a href="#HDR_is_not_working"><span class="tocnumber">4.4</span> <span class="toctext">HDR is not working</span></a></li>
-<li class="toclevel-2 tocsection-22"><a href="#White_border_around_the_screen"><span class="tocnumber">4.5</span> <span class="toctext">White border around the screen</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#黑屏"><span class="tocnumber">4.1</span> <span class="toctext">黑屏</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#图形错误"><span class="tocnumber">4.2</span> <span class="toctext">图形错误</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#FPS极低_/_FPS卡在30"><span class="tocnumber">4.3</span> <span class="toctext">FPS极低 / FPS卡在30</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#HDR_无法正常工作"><span class="tocnumber">4.4</span> <span class="toctext">HDR 无法正常工作</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="#屏幕周围白边"><span class="tocnumber">4.5</span> <span class="toctext">屏幕周围白边</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-23"><a href="#Steam_Problems"><span class="tocnumber">5</span> <span class="toctext">Steam Problems</span></a>
+<li class="toclevel-1 tocsection-23"><a href="#Steam_问题"><span class="tocnumber">5</span> <span class="toctext">Steam 问题</span></a>
 <ul>
-<li class="toclevel-2 tocsection-24"><a href="#Steam_and_Helldivers_Crash_simultaneously"><span class="tocnumber">5.1</span> <span class="toctext">Steam and 绝地潜兵 Crash simultaneously</span></a></li>
-<li class="toclevel-2 tocsection-25"><a href="#Steam_Overlay"><span class="tocnumber">5.2</span> <span class="toctext">Steam Overlay</span></a></li>
-<li class="toclevel-2 tocsection-26"><a href="#Shader_Pre-Caching_is_stuck"><span class="tocnumber">5.3</span> <span class="toctext">Shader Pre-Caching is stuck</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="#Steam与绝地潜兵同时崩溃"><span class="tocnumber">5.1</span> <span class="toctext">Steam与绝地潜兵同时崩溃</span></a></li>
+<li class="toclevel-2 tocsection-25"><a href="#Steam_叠加层"><span class="tocnumber">5.2</span> <span class="toctext">Steam 叠加层</span></a></li>
+<li class="toclevel-2 tocsection-26"><a href="#着色器预缓存卡住"><span class="tocnumber">5.3</span> <span class="toctext">着色器预缓存卡住</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-27"><a href="#GPU_Problems"><span class="tocnumber">6</span> <span class="toctext">GPU Problems</span></a>
+<li class="toclevel-1 tocsection-27"><a href="#GPU_问题"><span class="tocnumber">6</span> <span class="toctext">GPU 问题</span></a>
 <ul>
-<li class="toclevel-2 tocsection-28"><a href="#GPU_Autodetection_Failed"><span class="tocnumber">6.1</span> <span class="toctext">GPU Autodetection Failed</span></a></li>
-<li class="toclevel-2 tocsection-29"><a href="#GPU_Driver_Hang"><span class="tocnumber">6.2</span> <span class="toctext">GPU Driver Hang</span></a></li>
+<li class="toclevel-2 tocsection-28"><a href="#GPU自动检测失败"><span class="tocnumber">6.1</span> <span class="toctext">GPU自动检测失败</span></a></li>
+<li class="toclevel-2 tocsection-29"><a href="#GPU_驱动程序挂起"><span class="tocnumber">6.2</span> <span class="toctext">GPU 驱动程序挂起</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-30"><a href="#Other_Problems"><span class="tocnumber">7</span> <span class="toctext">Other Problems</span></a>
+<li class="toclevel-1 tocsection-30"><a href="#其他问题"><span class="tocnumber">7</span> <span class="toctext">其他问题</span></a>
 <ul>
-<li class="toclevel-2 tocsection-31"><a href="#Mouse_problems"><span class="tocnumber">7.1</span> <span class="toctext">Mouse problems</span></a></li>
+<li class="toclevel-2 tocsection-31"><a href="#鼠标问题"><span class="tocnumber">7.1</span> <span class="toctext">鼠标问题</span></a></li>
 </ul>
 </li>
 <li class="toclevel-1 tocsection-32"><a href="#Steam_Deck"><span class="tocnumber">8</span> <span class="toctext">Steam Deck</span></a>
 <ul>
-<li class="toclevel-2 tocsection-33"><a href="#Crackling_Audio"><span class="tocnumber">8.1</span> <span class="toctext">Crackling Audio</span></a></li>
-<li class="toclevel-2 tocsection-34"><a href="#Glitchy_Textures"><span class="tocnumber">8.2</span> <span class="toctext">Glitchy Textures</span></a></li>
+<li class="toclevel-2 tocsection-33"><a href="#音频爆裂声"><span class="tocnumber">8.1</span> <span class="toctext">音频爆裂声</span></a></li>
+<li class="toclevel-2 tocsection-34"><a href="#纹理故障"><span class="tocnumber">8.2</span> <span class="toctext">纹理故障</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-35"><a href="#References"><span class="tocnumber">9</span> <span class="toctext">参考</span></a></li>
+<li class="toclevel-1 tocsection-35"><a href="#参考资料"><span class="tocnumber">9</span> <span class="toctext">参考资料</span></a></li>
 </ul>
 </div>
 
-<h2><span class="mw-headline" id="Basics">Basics</span></h2>
+<h2><span id=".E5.9F.BA.E7.A1.80"></span><span class="mw-headline" id="基础">基础</span></h2>
 <p><b>请注意：</b> Due to the decentralized nature of Linux, specific 终端 commands, 包 managers, and file paths may vary depending on your configuration (分布, FlatPak vs. Native Steam, individual 变更, etc.). It's always best to consult your 分布's 官员 manual if a generic 指挥 fails to 处决.
 </p><p>Due to 绝地潜兵 2 not having a native Linux build, the operating system instead relies on a compatibility layer. For Linux, this strictly involves two elements that are mandatory:
 </p>
@@ -128,7 +127,7 @@
 <li><a rel="nofollow" class="external text" href="https://github.com/GloriousEggroll/proton-ge-custom">GE-Proton 11-1+</a></li></ul></li></ul>
 <p>You do not need a specific Linux 分布 to use specific Proton versions; Proton-CachyOS does not 要求 you to use CachyOS as your distro. 软件, such as Proton Plus, allows you to quickly 安装 and manage different Proton versions, which also include community versions.
 </p>
-<h4><span class="mw-headline" id="Community_Proton_Installation">Community Proton Installation</span></h4>
+<h4><span id=".E7.A4.BE.E5.8C.BAProton.E5.AE.89.E8.A3.85"></span><span class="mw-headline" id="社区Proton安装">社区Proton安装</span></h4>
 <p><b>自动安装：</b>
 The quickest and easiest way to 安装 new community Proton versions (such as GE-Proton) is done via 软件 such as ProtonPlus or ProtonUp-Qt.
 </p><p><b>手动安装：</b>
@@ -145,7 +144,7 @@ Please get new Proton versions directly via their respective Githubs! There are 
 <li>Start Steam again.</li></ol>
 <p>You should now be able to select the new community Proton (See 下一个 章节).
 </p>
-<h4><span class="mw-headline" id="How_to_change_Proton_versions">How to change Proton versions</span></h4>
+<h4><span id=".E5.A6.82.E4.BD.95.E6.9B.B4.E6.8D.A2Proton.E7.89.88.E6.9C.AC"></span><span class="mw-headline" id="如何更换Proton版本">如何更换Proton版本</span></h4>
 <div class="floatright"><img alt="SteamCompatibilityProton.png" src="../images/400px-SteamCompatibilityProton.png" decoding="async" loading="lazy" width="400" height="287" data-file-width="1035" data-file-height="742" /></div>
 <p>In order to set / change Proton versions without the 使用 of Proton Plus,follow these simple steps:
 </p>
@@ -154,7 +153,7 @@ Please get new Proton versions directly via their respective Githubs! There are 
 <li>Go to "Compatibility".</li>
 <li>Make sure that the box left of "Force the use of a specific Steam Play compatibility tool" is checked.</li>
 <li>Now you can choose your preferred version of Proton out of that dialog box below.</li></ol>
-<h4><span class="mw-headline" id="Steam_Launch_Commands">Steam Launch Commands</span></h4>
+<h4><span id="Steam_.E5.90.AF.E5.8A.A8.E5.91.BD.E4.BB.A4"></span><span class="mw-headline" id="Steam_启动命令">Steam 启动命令</span></h4>
 <p>More than regular Windows, Linux allows for the 使用 of additional <a href="Steam_Launch_Commands.html" title="Steam Launch Commands">Steam Launch Commands</a>. You can set various variables and can 修复 a variety of issues that might occur with individual configurations in case they run into 麻烦. These commands allow you to set environmental variables by accessing different layers of your system and change parts to 修复 issues and make things compatible.
 </p>
 <h3><span class="mw-headline" id="Steam_Runtime">Steam Runtime</span></h3>
@@ -162,25 +161,25 @@ Please get new Proton versions directly via their respective Githubs! There are 
 </p><p><b>重要：</b> Depending on which Proton version you are using, you will necessarily need a different Runtime as each Runtime is built specifically for different Proton versions. Proton 9 will most likely use Steam Runtime 3.0 but Proton 11.0 could potentially crash with Runtime 3.0 because that Runtime doesn't have the libraries Proton 11.0 requires; instead you need a newer version. Luckily Steam will 安装 whatever Steam Runtime you need for your Proton version of choice, so there's 否 worries about not having the 正确 one. If you want to check for yourself, please ensure that <b>已安装Steam Runtime 4.0</b>. This can help 修复 problems such as blackscreens / 崩溃 on startup. If you haven't installed it, please do so. If it is installed and you run into problems, it is good to at least once verify its files to ensure it's not corrupted.
 </p><p>There are also additional runtimes for Anticheat 软件 that Steam automatically downloads and installs if possible, such as BattleEye or 容易 Anticheat. However it is 重要 to note that if a game does not need them then there is 否 受益 in installing them. They simply help run the Anticheat 软件 better.
 </p>
-<h3><span class="mw-headline" id="File_System">File System</span></h3>
+<h3><span id=".E6.96.87.E4.BB.B6.E7.B3.BB.E7.BB.9F"></span><span class="mw-headline" id="文件系统">文件系统</span></h3>
 <p>It is not recommended to use Linux with a NTFS file system. NTFS is a proprietary system developed by Microsoft. Since the code was never made publicly available, developers had to reverse-工程师 to create some compatibility. As with the nature of these things, this doesn't work 100% correctly and can cause many issues in of itself.
 </p>
-<h4><span class="mw-headline" id="User_Rights_Management">User Rights 管理</span></h4>
+<h4><span id=".E7.94.A8.E6.88.B7.E6.9D.83.E9.99.90.E7.AE.A1.E7.90.86"></span><span class="mw-headline" id="用户权限管理">用户权限管理</span></h4>
 <p>One of the most fundamental problems is user rights 管理. NTFS relies on ACL (Access 控制 Lists), whereas Linux file systems, such as ext4 or btrfs, rely on POSIX (Portable Operating System Interface). If an NTFS partition is mounted incorrectly, it can possibly lead to you being unable to 安装 or run any programs that are on that partition.
 </p><p>For games to be run within Linux on a NTFS partition, you will have to create a symlink outside of the NTFS partition. Another issue is that older games tend to write their saves to a local folder at the game's .exe-位置, completely ignoring a possible WINE prefix sitting outside of the NTFS drive.
 </p>
-<h4><span class="mw-headline" id="NTFS_corruption">NTFS corruption</span></h4>
+<h4><span id="NTFS_.E6.8D.9F.E5.9D.8F"></span><span class="mw-headline" id="NTFS_损坏">NTFS 损坏</span></h4>
 <p>Another possible issue that can occur is when you try to share a NTFS partition between Linux and Windows. There's a high chance that it will lead to data corruption as NTFS Linux drivers are less than 完美 and 频繁 corrupt the 期刊, which means you would have to reboot into Windows to check the filesystem there.
 </p><p>While the newer ntfs3-plus driver is more reliable and is getting 频繁 updated, it will still 要求 considerable work to ensure data safety.
 </p>
-<h3><span class="mw-headline" id="Additional_information">Additional information</span></h3>
+<h3><span id=".E9.99.84.E5.8A.A0.E4.BF.A1.E6.81.AF"></span><span class="mw-headline" id="附加信息">附加信息</span></h3>
 <p>While this topic is rather large, there are a few more things you might need to know to help understand how games work on Linux. Please note that these points are meant to help those who want to get a better understanding of their own 分布 and how things work. Feel free to skip to the 下一个 part if you are not interested in 技术信息 explanations.
 </p>
 <ul><li>Vulkan: Just like DirectX 12 "Vulkan" is a low-level graphics API. While DirectX12 is dominant on Windows and Xbox, Vulkan can be found on 多个 platforms such as 机器人 and Linux. Where DX12 is developed by Microsoft, the development of Vulkan is done by the Khronos Group. Since DirectX 12 is not natively supported on Linux by Microsoft, it therefore needs a 翻译 layer so DX12 calls can be answered by Vulkan. (This is one of the reasons why you use a 翻译 layer on Linux for non-native games!)</li>
 <li>VKD3D:<sup id="cite&#95;ref-2" class="reference"><a href="#cite_note-2"><span class="cite-bracket">&#91;</span>2<span class="cite-bracket">&#93;</span></a></sup> In order to translate DirectX12 API calls into Vulkan you need a 图书馆 that tells the system how to do that. VKD3D is a Valve-developed open-来源 3D graphics 图书馆 which does exactly that. Proton utilizes VKD3D in order to handle DX12 API calls (Proton does of course more than just that, but it helps to understand in which constellation VKD3D and Proton stand.)</li>
 <li>DXVK: Just like VKD3D translates DX12 API calls, DXVK handles older DirectX calls, such as DX8 to DX11. It's 重要 to keep in mind that both DXVK and VKD3D share components within Proton; VKD3D relies on DXVK's implementation of the so-called "DXGI" (DirectX Graphics 基础设施). To make a long and 复杂 answer short: DXVK 提供 some of the most 重要 parts and VKD3D can be "hands off" for certain 显示 tasks, such as HDR. This may help in understanding why 有时 certain environmental variables are set with DXVK instead of VKD3D, even if you are playing a DX12 game.</li>
 <li>Mesa:<sup id="cite&#95;ref-3" class="reference"><a href="#cite_note-3"><span class="cite-bracket">&#91;</span>3<span class="cite-bracket">&#93;</span></a></sup> "Mesa" or "Mesa3D" is an open-来源 graphics 图书馆. It's often mistaken as the GPU driver when in actuality the open-来源 drivers are just part of it. It's more commonly referred to as the "Linux graphics stack" and acts also as a translator for standardized graphics API-calls with OpenGL, Vulkan and OpenCL. Keeping it up to date is highly recommended, not only for GPU drivers (such as the AMDGPU driver that is part of it) but also to keep your Vulkan up-to-date.</li></ul>
-<h2><span class="mw-headline" id="Proton_Logs">Proton Logs</span></h2>
+<h2><span id="Proton_.E6.97.A5.E5.BF.97"></span><span class="mw-headline" id="Proton_日志">Proton 日志</span></h2>
 <p>If you encounter any kind of problems while playing on Linux, you are able to create a so-called <b>Proton Log</b>. This is a logfile that will detail what exactly went wrong (e.g. "DXVK failed to initialize"). These files can be opened with text editors.
 </p><p>In order to get Steam to log the data, please follow these steps:
 </p>
@@ -196,7 +195,7 @@ Please get new Proton versions directly via their respective Githubs! There are 
 <li>FlatPak: <code>~/.var/app/com.valvesoftware.Steam/</code></li></ul>
 <p>If it is not there you might need to look in other folders, such as in <code>/snap/</code> or similar, especially when you are using a FlatPak version of Steam.
 </p>
-<h2><span class="mw-headline" id="Crash_upon_Start">Crash upon Start</span></h2>
+<h2><span id=".E5.90.AF.E5.8A.A8.E6.97.B6.E5.B4.A9.E6.BA.83"></span><span class="mw-headline" id="启动时崩溃">启动时崩溃</span></h2>
 <p>This error 描述 is a bit vague and can be caused by many things. 通常 this kind of 问题 shows itself by pressing "Play" and after a short moment Steam will show the "Play" button again.
 </p>
 <ul><li>If you recently uninstalled a Proton version, it's advisable to check if Proton is still correctly set for 绝地潜兵 2 in Steam. Deinstalling an older Proton version which the game was configured to would inevitably prevent the game from starting as there's 否 翻译 layer present that could 处决 the game.</li>
@@ -212,24 +211,24 @@ Please get new Proton versions directly via their respective Githubs! There are 
 <li>Verify the files of your Proton version (e.g. Stable or Hotfix. Community-driven Proton versions like Proton-CachyOS will not show up in the 图书馆 and you can skip that step).</li>
 <li>Once Proton has been verified, look for "Steam Runtime" in your 图书馆 and verify all installed Runtimes.</li>
 <li>Attempt to start the game.</li></ol>
-<h3><span id="GameGuard_doesn.27t_load"></span><span class="mw-headline" id="GameGuard_doesn't_load">GameGuard doesn't load</span></h3>
+<h3><span id="GameGuard.E6.97.A0.E6.B3.95.E5.8A.A0.E8.BD.BD"></span><span class="mw-headline" id="GameGuard无法加载">GameGuard无法加载</span></h3>
 <div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ This error should be fixed by now with newer Proton versions. This listing here is meant in case it resurfaces. ⚠</b></div>
 <p>An old issue that occurred in the past was that GameGuard may hang and doesn't start the game. The Anticheat would be stuck on loading and would not progress. In the early days of the freshly released NTSync the addition of the NTSync 指挥 would cause GameGuard to hang, requiring the launch 指挥 <code>PROTON_USE_NTSYNC=1 PROTON_USE_WOW64=1 %指挥%</code> so GameGuard as a 32-bit 应用程序 could be run in a 64-bit 环境.
 </p><p>The issue has been fixed by now and shouldn't occur anymore.
 </p>
-<h3><span class="mw-headline" id="User_Rights_Problems">User Rights Problems</span></h3>
+<h3><span id=".E7.94.A8.E6.88.B7.E6.9D.83.E9.99.90.E9.97.AE.E9.A2.98"></span><span class="mw-headline" id="用户权限问题">用户权限问题</span></h3>
 <p>If a Proton log returns something like <code>SteamLibrary/steamapps/compatdata/553850/pfx is not owned by you.</code>. This means that the folder where 绝地潜兵 2 is located is probably owned by <b>root</b> and not the user - and since the user doesn’t have the appropriate rights to write and modify files, the game will refuse to start.
 </p><p>It's 重要 to check first which file system the disc utilizes that 绝地潜兵 2 is located on. The most 突出 examples would be ext4 or NTFS. As mentioned further above, it is not advisable to run Proton on a Windows formatted drive as those cause ownership problems among other issues.
 </p>
 <ul><li><b>ext4:</b> If the disc was formatted in ext4, you can change ownership via <code>sudo chown -R $USER /path/to/compatdata</code>.</li>
-<li><b>NTFS:</b> If the disc was formatted in NTFS, this could cause problems because such drives need to be configured for ownership when they are mounted into Linux. The 问题 is that NTFS lacks Linux permissions, which then causes WINE to fail. It's possible to do systems links, but that's a workaround that is not guaranteed to work. For a guide to mount NTFS drives onto Linux, check <a rel="nofollow" class="external text" href="https://linuxconfig.org/changing-file-permissions-on-ntfs-partitions-in-linux">this link by Linuxconfig</a>.</li></ul>
+<li><b>NTFS:</b> If the disc was formatted in NTFS, this could cause problems because such drives need to be configured for ownership when they are mounted into Linux. The 问题 is that NTFS lacks Linux permissions, which then causes WINE to fail. It's possible to do systems links, but that's a workaround that is not guaranteed to work. For a guide to mount NTFS drives onto Linux, check <a rel="nofollow" class="external text" href="https://linuxconfig.org/changing-file-permissions-on-ntfs-partitions-in-linux">此Linuxconfig链接</a>.</li></ul>
 <p><b>exFAT:</b> It's 不可能 to start a game in Linux on a drive that 使用次数 exFAT as this doesn't even 支援 symlinks.
 </p>
-<h4><span class="mw-headline" id="Sandbox_vs._Native">Sandbox vs. Native</span></h4>
+<h4><span id="Sandbox_.E4.B8.8E_Native"></span><span class="mw-headline" id="Sandbox_与_Native">Sandbox 与 Native</span></h4>
 <p>The game might still refuse to start, even if file system是正确. This can be the case when Steam is sandboxed in and not installed natively. Sandboxed means that Steam has been installed either as a FlatPak or a Snap version. 软件 installed in such a format is heavily 受限 and works in an isolated 环境 to avoid potential 安全 issues. In most cases the 软件 might be 受限 to just the bare 最小 of rights so it can operate within the partition its installed in but will fail when it tries to communicate with other parts of the system (e.g. a game would try to access Vulkan to 显示 graphics).
 </p><p>通常 speaking it is recommended to use FlatPak opposed to Snap as FlatPak has been designed with the idea of video games in mind so some variables are already set by 默认. Furthermore you can use 软件 such as "FlatSeal" to expand the rights of sandboxed 软件 on a manual basis, allowing you to get around the issues caused by the sandbox.
 </p>
-<h3><span class="mw-headline" id="Sony_Crashhandler_appears">Sony Crashhandler appears</span></h3>
+<h3><span id=".E5.87.BA.E7.8E.B0Sony_Crashhandler"></span><span class="mw-headline" id="出现Sony_Crashhandler">出现Sony Crashhandler</span></h3>
 <p>As of Version 1.006.202 the newly integrated driver checks seem to have 已更改 something and make it so that older Proton Versions do not work anymore. Currently the known working versions for 绝地潜兵 2 are:
 </p>
 <ul><li>Proton Experimental (流血 Edge) - Activate the "流血 Edge" beta in Steam. Search for "Proton Experimental" in your 图书馆, Right Click on "Properties" and then go under the tab "Betas". There you can activate it.</li>
@@ -253,14 +252,14 @@ Please get new Proton versions directly via their respective Githubs! There are 
 </p>
 <b>注意：</b> 某些发行版（例如Nobara Linux）不再为NVIDIA的Pascal GPU（GTX 1080）提供驱动程序支持，因此你可能需要更换发行版，并为这类GPU使用较旧的驱动程序。<p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="清除Compatdata-0" aria-labelledby="清除Compatdata-0-label"><p>如果在更新GPU驱动后问题仍然存在，请导航至 <code>/steamapps/compatdata/553850/</code> 并删除此文件夹的内容。Steam使用此文件夹来存放配置文件以及用于在Linux上模拟Windows环境的数据。Steam会重新填充这些内容。</p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="隐藏NVIDIA_GPU-0" aria-labelledby="隐藏NVIDIA_GPU-0-label"><p>另一种可能出现的情况是游戏在NVIDIA GPU上运行困难。虽然这种情况很少见，但你可以尝试通过添加启动命令来"隐藏"它 <code>PROTON_HIDE_NVIDIA_GPU=1 %指挥%</code> 到游戏中。这将强制NVIDIA GPU将自己识别为AMD GPU。请注意，这会掩盖你的GPU ID，并阻止游戏使用NVIDIA专用API（NVAPI）。这意味着当使用此变通方法时，无法使用DLSS等NVIDIA专用功能。性能也可能提升或下降，具体取决于游戏。
 如果即使使用此命令也遇到问题，请测试是否 <code>PROTON_HIDE_NVIDIA_GPU=0 PROTON_ENABLE_NVAPI=1 %指挥%</code> 可以解决这些问题。</p></article></section></div>
-<h2><span id="Graphics_.26_Performance"></span><span class="mw-headline" id="Graphics_&amp;_Performance">Graphics &amp; Performance</span></h2>
-<h3><span class="mw-headline" id="Black_Screen">Black Screen</span></h3>
+<h2><span id=".E5.9B.BE.E5.83.8F.E4.B8.8E.E6.80.A7.E8.83.BD"></span><span class="mw-headline" id="图像与性能">图像与性能</span></h2>
+<h3><span id=".E9.BB.91.E5.B1.8F"></span><span class="mw-headline" id="黑屏">黑屏</span></h3>
 <p>If you screen stays black and the game doesn't load, you can check different things:
 </p>
 <ul><li>Either use <code>--use-d3d11</code> or remove this launch 指挥 from Steam. (The latter is recommended for AMD and Intel.)</li>
 <li>Delete your <code>compatdata/553850</code>-folder in case you have a corrupted config file that tries to set 不正确 screen values.</li>
 <li>Try a different Proton Version if possible.</li></ul>
-<h3><span class="mw-headline" id="Graphical_Errors">Graphical Errors</span></h3>
+<h3><span id=".E5.9B.BE.E5.BD.A2.E9.94.99.E8.AF.AF"></span><span class="mw-headline" id="图形错误">图形错误</span></h3>
 <p>Graphical errors can occur due to a number of reasons. You can follow these steps to check if they can 解决 the issue.
 </p>
 <ol><li><a href="Clearing_The_Shader_Cache.html" title="Clearing The Shader Cache">Clearing The Shader Cache</a> (See the Linux 章节)</li>
@@ -270,13 +269,13 @@ Please get new Proton versions directly via their respective Githubs! There are 
 <li>Try and use the <code>--use-d3d11</code> launch 指挥 to start the game in DX11 mode. Please be aware that this might cause issues or not work at all.</li></ol>
 <p>Some more indepth graphical errors (such as glowing) can occur after a crash of KDE Plasma. It's advisable to 重新开始 your 电脑 first and check if that is able to 解决 the 问题.
 </p>
-<h3><span id="Very_low_FPS_.2F_FPS_Stuck_at_30"></span><span class="mw-headline" id="Very_low_FPS_/_FPS_Stuck_at_30">Very low FPS / FPS Stuck at 30</span></h3>
+<h3><span id="FPS.E6.9E.81.E4.BD.8E_.2F_FPS.E5.8D.A1.E5.9C.A830"></span><span class="mw-headline" id="FPS极低_/_FPS卡在30">FPS极低 / FPS卡在30</span></h3>
 <p>There are cases when the game somehow stutters or seems to be stuck at 30 FPS, even though the hardware and settings should allow for more FPS.
 </p>
 <ol><li>Make sure to 更新 your system (GPU / Mesa3D / Kernel / Vulkan / other drivers).</li>
 <li>Make sure that 否 Vsync (or other synchronization methods) is active and 否 FPS limit is set.</li>
 <li>If the issue still persists, launch the game with <code>DXVK_FRAME_RATE=120 %指挥%</code> - This will tell the game that the upper limit of FPS is 120, which may override any issues in the back. You can 增加 or 减少 the limit. Please note that this is not a FrameGen technology and will not generate additional frames.</li></ol>
-<h3><span class="mw-headline" id="HDR_is_not_working">HDR is not working</span></h3>
+<h3><span id="HDR_.E6.97.A0.E6.B3.95.E6.AD.A3.E5.B8.B8.E5.B7.A5.E4.BD.9C"></span><span class="mw-headline" id="HDR_无法正常工作">HDR 无法正常工作</span></h3>
 <p>If you cannot activate HDR despite having HDR capable hardware, you might need to add a launch 指挥 to activate it. 通常 it's recommended to use GE-Proton for 最佳 use.
 </p>
 <div class="tabber tabber--init"><header class="tabber__header"><button class="tabber__header__prev" tabindex="-1" type="button" aria-hidden="true"></button><nav class="tabber__tabs" role="tablist"><a class="tabber__tab" role="tab" id="Proton-0-label" href="#Proton-0" aria-controls="Proton-0">Proton</a><a class="tabber__tab" role="tab" id="Gamescope-0-label" href="#Gamescope-0" aria-controls="Gamescope-0">Gamescope</a></nav><button class="tabber__header__next" tabindex="-1" type="button" aria-hidden="true"></button></header><section class="tabber__section"><article class="tabber__panel" role="tabpanel" tabindex="0" id="Proton-0" aria-labelledby="Proton-0-label"><p><code>PROTON_ENABLE_WAYLAND=1 PROTON_ENABLE_HDR=1 %指挥%</code> - 请注意，启用Wayland需要兼容Wayland的合成器，例如KDE 6或GNOME。此外，这可能导致输入模拟失效。如果你遇到问题，只要你的发行版支持，值得尝试改用Gamescope。
@@ -285,14 +284,14 @@ Please get new Proton versions directly via their respective Githubs! There are 
 <code>PROTON_ENABLE_WAYLAND=1 PROTON_ENABLE_HDR=1 DXVK_HDR=1 %指挥%</code> 可在此类场景中进行测试。<p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Gamescope-0" aria-labelledby="Gamescope-0-label"><p><code>gamescope -w 1920 -h 1080 r 120 --hdr-enabled -- %指挥%</code> - 你可以将w、h和r的值替换为不同的分辨率或刷新率。有关更多信息，请参阅关于Steam启动命令的主文章。
 </p><div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ If you do not set a 分辨率, Gamescope will 默认 to 1280 x 720. In the 示例 above the 分辨率 has been set to 1920 x 1080. ⚠</b></div>
 请注意，Gamescope可能会禁用你的Steam覆盖层。<p class="mw-empty-elt"></p></article></section></div>
-<h3><span class="mw-headline" id="White_border_around_the_screen">White border around the screen</span></h3>
-<p>If you encounter a 1 pixel wide border around your screen, you can try and launch the game with Gamescope instead. Please note that there are some particularities and it may cause some issues. For more information, please check <a href="Steam_Launch_Commands.html#Gamescope" title="Steam Launch Commands">this 条款</a>.
+<h3><span id=".E5.B1.8F.E5.B9.95.E5.91.A8.E5.9B.B4.E7.99.BD.E8.BE.B9"></span><span class="mw-headline" id="屏幕周围白边">屏幕周围白边</span></h3>
+<p>If you encounter a 1 pixel wide border around your screen, you can try and launch the game with Gamescope instead. Please note that there are some particularities and it may cause some issues. For more information, please check <a href="Steam_Launch_Commands.html#Gamescope" title="Steam Launch Commands">本文</a>.
 </p><p>Change the launch commands of 绝地潜兵 2 to <code>gamescope -w 1920 -h 1080 -f --force-grab-cursor -- %指挥%</code>
 </p>
-<h2><span class="mw-headline" id="Steam_Problems">Steam Problems</span></h2>
+<h2><span id="Steam_.E9.97.AE.E9.A2.98"></span><span class="mw-headline" id="Steam_问题">Steam 问题</span></h2>
 <p>For 基本信息 Steam 故障排除, please check <a href="Steam_Troubleshooting.html" title="Steam Troubleshooting">Steam 故障排除</a>.
 </p>
-<h3><span class="mw-headline" id="Steam_and_Helldivers_Crash_simultaneously">Steam and 绝地潜兵 Crash simultaneously</span></h3>
+<h3><span id="Steam.E4.B8.8E.E7.BB.9D.E5.9C.B0.E6.BD.9C.E5.85.B5.E5.90.8C.E6.97.B6.E5.B4.A9.E6.BA.83"></span><span class="mw-headline" id="Steam与绝地潜兵同时崩溃">Steam与绝地潜兵同时崩溃</span></h3>
 <p>If you are playing 绝地潜兵 2 and you 经验值 both Steam and the game crashing at the same time, then it's likely that you are running the Steam client beta. It's a 已知问题 with the Steam Client Beta and unrelated to 绝地潜兵 2.
 </p><p><b>请注意：</b> Steam will attempt to 更新 on every launch, which is why the issue may appear suddenly.
 </p><p><b>如何检查：</b>
@@ -302,18 +301,18 @@ Please get new Proton versions directly via their respective Githubs! There are 
 </p>
 <ol><li>Open your 终端 (默认 <code>CTRL + ALT + T</code>).</li>
 <li>Run the following 指挥 to switch manually to the non-beta client: <code>rm -f ~/.local/share/Steam/包/beta</code></li></ol>
-<h3><span class="mw-headline" id="Steam_Overlay">Steam Overlay</span></h3>
+<h3><span id="Steam_.E5.8F.A0.E5.8A.A0.E5.B1.82"></span><span class="mw-headline" id="Steam_叠加层">Steam 叠加层</span></h3>
 <p>If you wish to 排除故障 your Steam Overlay, please check <a href="Steam_Troubleshooting.html#Steamoverlay_isn&#39;t_working" title="Steam Troubleshooting">Steam 故障排除</a>.
 </p><p>Please note: An older bug<sup id="cite&#95;ref-5" class="reference"><a href="#cite_note-5"><span class="cite-bracket">&#91;</span>5<span class="cite-bracket">&#93;</span></a></sup><sup id="cite&#95;ref-6" class="reference"><a href="#cite_note-6"><span class="cite-bracket">&#91;</span>6<span class="cite-bracket">&#93;</span></a></sup> that occurs on Linux caused games to lag / stutter badly after some time with the disabled Overlay.
 </p><p>To 修复 this it's advisable to either activate the Overlay or run the game with the Launch 指挥 <code>LD_PRELOAD=</code> . This 指挥 will disable some of steam's functionality.
 </p>
-<h3><span class="mw-headline" id="Shader_Pre-Caching_is_stuck">Shader Pre-Caching is stuck</span></h3>
+<h3><span id=".E7.9D.80.E8.89.B2.E5.99.A8.E9.A2.84.E7.BC.93.E5.AD.98.E5.8D.A1.E4.BD.8F"></span><span class="mw-headline" id="着色器预缓存卡住">着色器预缓存卡住</span></h3>
 <p>If you 经验值 your Shader Pre-Caching getting stuck during a 下载, simply 重新开始 Steam.
 </p>
-<h2><span class="mw-headline" id="GPU_Problems">GPU Problems</span></h2>
-<p>In order to force Proton to use the 正确 GPU, please follow <a href="User_Settings_Config_FPS_Optimization.html#Linux-0" title="User Settings Config FPS Optimization">this guide</a>.
+<h2><span id="GPU_.E9.97.AE.E9.A2.98"></span><span class="mw-headline" id="GPU_问题">GPU 问题</span></h2>
+<p>In order to force Proton to use the 正确 GPU, please follow <a href="User_Settings_Config_FPS_Optimization.html#Linux-0" title="User Settings Config FPS Optimization">本指南</a>.
 </p>
-<h3><span class="mw-headline" id="GPU_Autodetection_Failed">GPU Autodetection Failed</span></h3>
+<h3><span id="GPU.E8.87.AA.E5.8A.A8.E6.A3.80.E6.B5.8B.E5.A4.B1.E8.B4.A5"></span><span class="mw-headline" id="GPU自动检测失败">GPU自动检测失败</span></h3>
 <p>This error 通常 occurs with a message such as <code>需要至少支持正面3D功能级别12_0的显卡。</code>
 </p>
 <ol><li>Check if your system recognizes your GPU correctly.</li>
@@ -324,7 +323,7 @@ Please get new Proton versions directly via their respective Githubs! There are 
 <br /><br />
 It's advisable to match the 特性 level in the Launch 指挥 with the actual 特性 level of your GPU to avoid any unforeseen problems. If your GPU has 特性 Level 12_0 it should not be set to 12_2 (as this might cause the game to activate features your GPU does not possess, causing instability and crashing) or to set it below which then might not fully utilize your GPUs capabilities.
 </p>
-<h3><span class="mw-headline" id="GPU_Driver_Hang">GPU Driver Hang</span></h3>
+<h3><span id="GPU_.E9.A9.B1.E5.8A.A8.E7.A8.8B.E5.BA.8F.E6.8C.82.E8.B5.B7"></span><span class="mw-headline" id="GPU_驱动程序挂起">GPU 驱动程序挂起</span></h3>
 <p>This error is documented to occur when playing 绝地潜兵 2 on Linux with an AMD RX 7000-series GPU while in DX12 and the option "Async Compute" has been activated. What occurs is a random driver hang which then is followed by a GPU reset. The game will crash and most likely the Desktop 环境 will do so as well.
 </p><p>While it's still being investigated, the most likely culprit is a bug in the AMDGPU driver.<sup id="cite&#95;ref-7" class="reference"><a href="#cite_note-7"><span class="cite-bracket">&#91;</span>7<span class="cite-bracket">&#93;</span></a></sup>
 </p><p>What you can do:
@@ -332,7 +331,7 @@ It's advisable to match the 特性 level in the Launch 指挥 with the actual �
 <ul><li>Activate DX11 mode (if it doesn't cause issues)</li>
 <li>Deactivate Async Compute while in DX12</li>
 <li>Underclocking the GPU with 软件 such as LACT is technically possible and might help stabilize the GPU, however it is recommended to just deactivate Async Compute instead.</li></ul>
-<h2><span class="mw-headline" id="Other_Problems">Other Problems</span></h2>
+<h2><span id=".E5.85.B6.E4.BB.96.E9.97.AE.E9.A2.98"></span><span class="mw-headline" id="其他问题">其他问题</span></h2>
 <p>Some problems are undefined and seemingly only occur on a single machine. Outside of graphical errors this can also include 网络 problems and other issues, which most likely comes from a 问题 with Proton. These may include (but are not 有限 to):
 </p>
 <ul><li>Escape Key causes CTDs</li>
@@ -340,7 +339,7 @@ It's advisable to match the 特性 level in the Launch 指挥 with the actual �
 <li>GameGuard problems (Error 114)</li></ul>
 <p>The 解决方案 in this case would be to test a different Proton version first to check if the error continues to occur before attempting more indepth 故障排除 of the 问题 itself.
 </p>
-<h3><span class="mw-headline" id="Mouse_problems">Mouse problems</span></h3>
+<h3><span id=".E9.BC.A0.E6.A0.87.E9.97.AE.E9.A2.98"></span><span class="mw-headline" id="鼠标问题">鼠标问题</span></h3>
 <p>The game might have 麻烦 with the mouse. This occurs when the user moves the mouse too far and it will get "out of bounds" so they access their desktop instead of the game
 </p>
 <ul><li>Use Protontricks to open <code>winecfg</code>. There enable the "Automatically 占领 mouse in fullscreen" option in the Proton prefix. This is often necessary, even in fullscreen mode.</li>
@@ -349,7 +348,7 @@ It's advisable to match the 特性 level in the Launch 指挥 with the actual �
 <p>As it is using SteamOS, most fixes for Linux can be applied to the Steam Deck as well.
 </p><p>The Steam Deck is available in different configurations. In 基本信息 the OLED versions have received a few 技术信息 升级.<sup id="cite&#95;ref-8" class="reference"><a href="#cite_note-8"><span class="cite-bracket">&#91;</span>8<span class="cite-bracket">&#93;</span></a></sup> These specs are listed here in case you need to 排除故障 your device and 要求 to know the specifications. Please note that this list is not exhaustive and focuses on some of the most 重要 components.
 </p>
-<ul><li>For 官员 支援 by Valve, please check <a rel="nofollow" class="external text" href="https://help.steampowered.com/en/faqs/view/7DD4-C618-182E-0E49">Valves Steam Deck 支援 page</a>.</li></ul>
+<ul><li>For 官员 支援 by Valve, please check <a rel="nofollow" class="external text" href="https://help.steampowered.com/en/faqs/view/7DD4-C618-182E-0E49">Valve Steam Deck支持页面</a>.</li></ul>
 <table class="wikitable">
 
 <tbody><tr>
@@ -407,14 +406,14 @@ It's advisable to match the 特性 level in the Launch 指挥 with the actual �
 <td>SteamOS3（基于Arch）
 </td></tr></tbody></table>
 <ul><li>It is highly advised to keep your Steam Deck up-to-date to prevent errors and glitches and to 改进 基本信息 稳定性 of the Deck.</li>
-<li>通常 it is recommended to use the "Steam Deck" graphics preset in the ingame-menu. If you wish to know more about the 基本信息 FPS settings, check out <a href="User_Settings_Config_FPS_Optimization.html" title="User Settings Config FPS Optimization">this FPS 优化 guide</a>.</li>
+<li>通常 it is recommended to use the "Steam Deck" graphics preset in the ingame-menu. If you wish to know more about the 基本信息 FPS settings, check out <a href="User_Settings_Config_FPS_Optimization.html" title="User Settings Config FPS Optimization">本FPS优化指南</a>.</li>
 <li>Please note that when using Steam Deck in Gamingmode, it will automatically switch over to use Gamescope.<sup id="cite&#95;ref-9" class="reference"><a href="#cite_note-9"><span class="cite-bracket">&#91;</span>9<span class="cite-bracket">&#93;</span></a></sup> For more information, please check the "Steam Launch Commands" 条款 (see beginning of this page).</li></ul>
-<h3><span class="mw-headline" id="Crackling_Audio">Crackling Audio</span></h3>
+<h3><span id=".E9.9F.B3.E9.A2.91.E7.88.86.E8.A3.82.E5.A3.B0"></span><span class="mw-headline" id="音频爆裂声">音频爆裂声</span></h3>
 <p>One of the older problems that the Steam Deck has is crackling audio, especially when the Steam Deck gets woken up after sleep mode. 通常 speaking this 问题 should be fixed with SteamOS 3.5, however there have been reports that it 偶尔 occurs.
 </p>
 <ol><li>Make sure your Steam Deck is updated.</li>
 <li>重新开始 the Deck if the error occurs.</li></ol>
-<h3><span class="mw-headline" id="Glitchy_Textures">Glitchy Textures</span></h3>
+<h3><span id=".E7.BA.B9.E7.90.86.E6.95.85.E9.9A.9C"></span><span class="mw-headline" id="纹理故障">纹理故障</span></h3>
 <div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ Attention: As of June 2026 this should now be 已解决! Please 更新 your Steam Deck to SteamOS 3.8.10! ⚠</b></div>
 <p>If you are playing on a Steam Deck and utilize Proton Hotfix or Proton Experimental, you will most likely encounter glitched textures (looking muddy / shiny). This is caused by the Steam Deck's GPU driver that's outdated (RADV Driver 24.2) and interacting with 绝地潜兵 2 utilization of a newer VKD3D Proton version (3.0.1), which seems to use features that are currently not available in the old driver.<sup id="cite&#95;ref-10" class="reference"><a href="#cite_note-10"><span class="cite-bracket">&#91;</span>10<span class="cite-bracket">&#93;</span></a></sup>
 </p><p>As a temporary workaround you can start the game with the DirectX 11 launch 指挥. Be aware that DX11 is not officially supported and comes with it's own share of problems, such as HDR and Upscaling not working and the new 控制 Panel experiencing 庞大 图形 issues.
@@ -425,7 +424,7 @@ It's advisable to match the 特性 level in the Launch 指挥 with the actual �
 <li>You are presented with the "基本信息" tab. On the lower part of this window there's a "Launch Options" field.</li>
 <li>Enter the launch 指挥 <code>--use-d3d11</code></li>
 <li>Close the window to save the 变更 and launch the game.</li></ol>
-<h2><span class="mw-headline" id="References">参考</span></h2>
+<h2><span id=".E5.8F.82.E8.80.83.E8.B5.84.E6.96.99"></span><span class="mw-headline" id="参考资料">参考资料</span></h2>
 <div class="mw-references-wrap"><ol class="references">
 <li id="cite&#95;note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://github.com/valvesoftware/proton">GitHub - Proton</a></span>
 </li>
@@ -479,14 +478,14 @@ It's advisable to match the 特性 level in the Launch 指挥 with the actual �
 </div></div></div></div></div></div></div>
 <!-- 
 NewPP limit report
-Cached time: 20260818035741
+Cached time: 20260819055454
 Cache expiry: 2592000
 Reduced expiry: false
 Complications: [vary‐revision‐sha1, show‐toc]
-CPU time usage: 0.091 seconds
-Real time usage: 0.129 seconds
+CPU time usage: 0.092 seconds
+Real time usage: 0.126 seconds
 Preprocessor visited node count: 421/1000000
-Revision size: 33822/4194304 bytes
+Revision size: 33700/4194304 bytes
 Post‐expand include size: 9039/4194304 bytes
 Template argument size: 665/4194304 bytes
 Highest expansion depth: 8/100
@@ -494,35 +493,23 @@ Expensive parser function count: 2/500
 Unstrip recursion depth: 1/20
 Unstrip post‐expand size: 9947/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.011/15.000 seconds
+Lua time usage: 0.012/15.000 seconds
 Lua memory usage: 665737/52428800 bytes
 Number of processed Cargo queries: 2
-Time spent processing Cargo queries: 0.011 s (avg. 0.005 s)
+Time spent processing Cargo queries: 0.014 s (avg. 0.007 s)
 Number of Cargo row insertion attempts: 1
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%   75.426      1 -total
- 56.13%   42.335      1 Template:Breadcrumb_Auto
- 20.52%   15.480      1 Template:Navbox_Troubleshooting
- 17.82%   13.443      1 Template:Navbox
-  5.07%    3.826      2 Template:Article_other
-  2.60%    1.964      6 Template:Crash_header
+100.00%   77.041      1 -total
+ 57.36%   44.187      1 Template:Breadcrumb_Auto
+ 18.47%   14.231      1 Template:Navbox_Troubleshooting
+ 15.16%   11.676      1 Template:Navbox
+  4.21%    3.245      2 Template:Article_other
+  3.22%    2.484      6 Template:Crash_header
 -->
-</div></div>
+</div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
-<script>
-功能 toggleTheme(){
-  var h = 文档.documentElement;
-  var alt = h.classList.toggle('view-alt');
-  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
-}
-try {
-  if (localStorage.getItem('hd2theme') === 'alt') {
-    文档.documentElement.classList.add('view-alt');
-  }
-} catch(e) {}
-</script>
 </body>
 </html>

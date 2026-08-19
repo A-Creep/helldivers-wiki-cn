@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-helldiver view-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,43 +14,33 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
-    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
   <button class="back-btn" type="button" onclick="history.back()">← 返回</button>
   <h1 class="page-title">G-89 烟幕</h1>
-  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="noexcerpt" style="border: 1px solid var(--wiki-content-border-color); padding: 0; background-color: var(--wiki-content-background-color--secondary); color: var(--wiki-content-text-color); width: 50%; max-width: 250px; margin: 10px 10px 10px auto; float: right; text-align: center;">	最后更新: <b><a href="1.005.002.html" title="1.005.002">1.005.002</a></b><br /> 当前补丁: <b><a href="1.007.001.html" title="1.007.001">1.007.001</a></b>
+  <div class="mw-parser-output"><div class="page-container"><div class="page-main"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#采购"><span class="tocnumber">1</span> <span class="toctext">采购</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#详细武器数据"><span class="tocnumber">2</span> <span class="toctext">详细武器数据</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#战术信息"><span class="tocnumber">3</span> <span class="toctext">战术信息</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#媒体"><span class="tocnumber">4</span> <span class="toctext">媒体</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#变更历史"><span class="tocnumber">5</span> <span class="toctext">变更历史</span></a></li>
+</ul>
+</div><div class="noexcerpt" style="border: 1px solid var(--wiki-content-border-color); padding: 0; background-color: var(--wiki-content-background-color--secondary); color: var(--wiki-content-text-color); width: 50%; max-width: 250px; margin: 10px 10px 10px auto; float: right; text-align: center;">	最后更新: <b><a href="1.005.002.html" title="1.005.002">1.005.002</a></b><br /> 当前补丁: <b><a href="1.007.001.html" title="1.007.001">1.007.001</a></b>
 </div>
 <p><span class="noexcerpt" style="display:none"></span>
 </p>
-<div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Weapons.html" title="Weapons">武器</a></div><div class="breadcrumb-item"><a href="Weapons.html#Throwables" title="Weapons">Throwables</a></div><div class="breadcrumb-item"><a href="Weapons.html#Weapons#Special-3" title="Weapons">特殊</a></div><div class="breadcrumb-item breadcrumb-item-final">G-89 烟幕</div></div><div class="druid-infobox druid-container noexcerpt druid-container-throwable" id="druid-container-1"><div><div class="druid-title">G-89 Smokescreen</div></div><div class="druid-section-container"><div class="druid-main-image"><img alt="G-89 Smokescreen Throwable Render.png" src="../images/G-89_Smokescreen_Throwable_Render.webp" decoding="async" loading="lazy" width="2160" height="2160" data-file-width="2160" data-file-height="2160" /></div></div><div class="druid-section-container"><div data-druid-section="ThrowableDetails"><div class="druid-section druid-section-ThrowableDetails">投掷物 详情</div></div><div class="druid-row druid-row-damage" data-druid-section-row="ThrowableDetails"><div class="druid-label druid-label-damage">伤害</div><div class="druid-data druid-data-damage druid-data-nonempty">
-0</div></div><div class="druid-row druid-row-penetration" data-druid-section-row="ThrowableDetails"><div class="druid-label druid-label-penetration">穿透</div><div class="druid-data druid-data-penetration druid-data-nonempty">
-<span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AP-1_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage">否 Hitbox</a></span></div></div><div class="druid-row druid-row-radius" data-druid-section-row="ThrowableDetails"><div class="druid-label druid-label-radius">外圈半径</div><div class="druid-data druid-data-radius druid-data-nonempty">
-5m</div></div><div class="druid-row druid-row-cookable" data-druid-section-row="ThrowableDetails"><div class="druid-label druid-label-cookable">Cookable</div><div class="druid-data druid-data-cookable druid-data-nonempty">
-否</div></div><div class="druid-row druid-row-fuse" data-druid-section-row="ThrowableDetails"><div class="druid-label druid-label-fuse">Fuse Time</div><div class="druid-data druid-data-fuse druid-data-nonempty">
-Impact</div></div><div class="druid-row druid-row-capacity" data-druid-section-row="ThrowableDetails"><div class="druid-label druid-label-capacity">容量</div><div class="druid-data druid-data-capacity druid-data-nonempty">
-5</div></div><div class="druid-row druid-row-throwable&#95;traits" data-druid-section-row="ThrowableDetails"><div class="druid-label druid-label-throwable&#95;traits">Trait(s)</div><div class="druid-data druid-data-throwable&#95;traits druid-data-nonempty">
-<a href="Equipment_Traits.html#Explosive" title="Equipment Traits">爆炸</a></div></div></div><div class="druid-section-container"><div data-druid-section="Procurement"><div class="druid-section druid-section-Procurement">获取途径</div></div><div class="druid-row druid-row-source" data-druid-section-row="Procurement"><div class="druid-label druid-label-source">来源</div><div class="druid-data druid-data-source druid-data-nonempty">
-<a href="Superstore.html" title="Superstore">超级商店</a></div></div><div class="druid-row druid-row-cost" data-druid-section-row="Procurement"><div class="druid-label druid-label-cost">费用</div><div class="druid-data druid-data-cost druid-data-nonempty">
-<span class="Currencyicons"><span style="white-space:nowrap"><a href="Super_Credits.html" title="Super Credits"><img alt="" src="../images/Super_Credit.svg" decoding="async" loading="lazy" width="512" height="571" data-file-width="512" data-file-height="571" /></a> 300</span> <a href="Super_Credits.html" title="Super Credits">超级货币</a></span></div></div></div></div>
-<style data-mw-deduplicate="TemplateStyles:r101811">.mw-parser-output .引文{background:var(--wiki-内容-background-color--secondary);border-radius:5px;border:2px solid var(--wiki-内容-border-color);margin:.5em 0;padding:.5em}.mw-parser-output .引文 .block{显示:block}.mw-parser-output .引文 .标题{font-size:large;font-重量:bold}.mw-parser-output .引文 .内容{font-style:italic}.mw-parser-output .引文 .作者{font-重量:bold;text-align:end}.mw-parser-output .引文 .marks-wrapper{显示:flex;gap:5px}.mw-parser-output .引文 .marks-wrapper::before,.mw-parser-output .引文 .marks-wrapper::after{font-size:100px;line-height:0px}.mw-parser-output .引文 .marks-wrapper::before{内容:"“";margin-top:40px}.mw-parser-output .引文 .marks-wrapper::after{内容:"”";align-self:end;margin-bottom:-10px}</style><blockquote class="noexcerpt" style="border-left: 0; margin: 20px 0; display: flex;"><div style="position: absolute; font-weight: 700; font-size: 5em; line-height: 1em;">“</div><div style="border-left: 2px solid white; margin-left: 3.5em; position: relative; padding: 0.5em 1em; display: inline-block"><p style="margin: 0">快速在小范围内释放高密度烟雾的烟雾弹。有助于隐蔽个人行踪和掩护撤离行动。</p><p>— 军械库 描述</p></div></blockquote>
-<p>the <b>G-89 Smokescreen</b> is a <a href="Weapons.html#Special-2" title="Weapons">特殊投掷武器</a> 用于制造临时烟幕以遮蔽 <a href="Helldiver.html" title="Helldiver">绝地潜兵</a> 命中时。
+<div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Weapons.html" title="Weapons">武器</a></div><div class="breadcrumb-item"><a href="Weapons.html#Throwables" title="Weapons">Throwables</a></div><div class="breadcrumb-item"><a href="Weapons.html#Weapons#Special-3" title="Weapons">特殊</a></div><div class="breadcrumb-item breadcrumb-item-final">G-89 烟幕</div></div>
+<style data-mw-deduplicate="TemplateStyles:r101811">.mw-parser-output .引文{background:var(--wiki-内容-background-color--secondary);border-radius:5px;border:2px solid var(--wiki-内容-border-color);margin:.5em 0;padding:.5em}.mw-parser-output .引文 .block{显示:block}.mw-parser-output .引文 .标题{font-size:large;font-重量:bold}.mw-parser-output .引文 .内容{font-style:italic}.mw-parser-output .引文 .作者{font-重量:bold;text-align:end}.mw-parser-output .引文 .marks-wrapper{显示:flex;gap:5px}.mw-parser-output .引文 .marks-wrapper::before,.mw-parser-output .引文 .marks-wrapper::after{font-size:100px;line-height:0px}.mw-parser-output .引文 .marks-wrapper::before{内容:"“";margin-top:40px}.mw-parser-output .引文 .marks-wrapper::after{内容:"”";align-self:end;margin-bottom:-10px}</style><blockquote class="noexcerpt" style="border-left: 0; margin: 20px 0; display: flex;"><div style="position: absolute; font-weight: 700; font-size: 5em; line-height: 1em;">“</div><div style="border-left: 2px solid white; margin-left: 3.5em; position: relative; padding: 0.5em 1em; display: inline-block"><p style="margin: 0">快速在小范围内释放高密度烟雾的烟雾弹。有助于隐蔽个人行踪和掩护撤离行动。</p><p>— 军械库描述</p></div></blockquote>
+<p><b>G-89 Smokescreen</b> 是一个 <a href="Weapons.html#Special-2" title="Weapons">特殊投掷武器</a> 用于制造临时烟幕以遮蔽 <a href="Helldiver.html" title="Helldiver">绝地潜兵</a> 命中时。
 </p>
-<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
-<ul>
-<li class="toclevel-1 tocsection-1"><a href="#Procurement"><span class="tocnumber">1</span> <span class="toctext">获取途径</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="#Detailed_Weapon_Statistics"><span class="tocnumber">2</span> <span class="toctext">详细武器数据</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="#Tactical_Information"><span class="tocnumber">3</span> <span class="toctext">战术信息</span></a></li>
 
-<li class="toclevel-1 tocsection-5"><a href="#Change_History"><span class="tocnumber">5</span> <span class="toctext">变更历史</span></a></li>
-</ul>
-</div>
 
-<h2><span class="mw-headline" id="Procurement">获取途径</span></h2>
-<p>the G-89 Smokescreen 可以从……购买 <a href="Redacted_Regiment_Premium_Warbond.html" title="Redacted Regiment Premium Warbond">绝密军团</a> 页面，位于 <a href="Superstore.html" title="Superstore">超级商店</a> for <span class="Currencyicons"><span style="white-space:nowrap"><a href="Super_Credits.html" title="Super Credits"><img alt="" src="../images/Super_Credit.svg" decoding="async" loading="lazy" width="512" height="571" data-file-width="512" data-file-height="571" /></a> 300</span> <a href="Super_Credits.html" title="Super Credits">超级货币</a></span>.
+<h2><span id=".E9.87.87.E8.B4.AD"></span><span class="mw-headline" id="采购">采购</span></h2>
+<p>the G-89 Smokescreen 可以从……购买 <a href="Redacted_Regiment_Premium_Warbond.html" title="Redacted Regiment Premium Warbond">绝密军团</a> 页面，位于 <a href="Superstore.html" title="Superstore">超级商店</a> 用于 <span class="Currencyicons"><span style="white-space:nowrap"><a href="Super_Credits.html" title="Super Credits"><img alt="" src="../images/Super_Credit.svg" decoding="async" loading="lazy" width="512" height="571" data-file-width="512" data-file-height="571" /></a> 300</span> <a href="Super_Credits.html" title="Super Credits">超级货币</a></span>.
 </p>
-<h2><span class="mw-headline" id="Detailed_Weapon_Statistics">详细武器数据</span></h2>
+<h2><span id=".E8.AF.A6.E7.BB.86.E6.AD.A6.E5.99.A8.E6.95.B0.E6.8D.AE"></span><span class="mw-headline" id="详细武器数据">详细武器数据</span></h2>
 <div class="flextablediv">
 <table class="wikitable tableleftjustified Secondcolumnright table-weapon-stats attack-data-table-weapon" data-parent="first">
 <tbody><tr>
@@ -101,9 +91,9 @@ Impact</div></div><div class="druid-row druid-row-capacity" data-druid-section-r
 </td></tr>
 </tbody></table>
 </div>
-<h2><span class="mw-headline" id="Tactical_Information">战术信息</span></h2>
+<h2><span id=".E6.88.98.E6.9C.AF.E4.BF.A1.E6.81.AF"></span><span class="mw-headline" id="战术信息">战术信息</span></h2>
 <ul><li>与其造成 伤害，这枚手雷会制造三团各持续30秒的小型烟雾云。这些烟雾云通常会汇聚成一块烟雾，能够遮挡……双方的视线 <a href="Helldiver.html" title="Helldiver">绝地潜兵</a> 以及任何 <a href="Factions.html" title="Factions">敌人</a>.
-<ul><li>由于它没有伤害（也因此没有拆除力），G-89烟幕弹无法摧毁 <a href="Bug_Hole.html" title="Bug Hole">虫洞</a>, <a href="Automaton_Fabricator.html" title="Automaton Fabricator">机器人 Fabricators</a>，或 <a href="Grounded_Warp_Ship.html" title="Grounded Warp Ship">停靠的跃迁舰</a>.</li></ul></li>
+<ul><li>由于它没有伤害（也因此没有拆除力），G-89烟幕弹无法摧毁 <a href="Bug_Hole.html" title="Bug Hole">虫洞</a>, <a href="Automaton_Fabricator.html" title="Automaton Fabricator">机器人构筑者</a>，或 <a href="Grounded_Warp_Ship.html" title="Grounded Warp Ship">停靠的跃迁舰</a>.</li></ul></li>
 <li>与……相比 <a href="G-3_Smoke.html" title="G-3 Smoke">G-3 Smoke</a>，G-89烟幕弹没有引信时间，而是在命中时制造烟雾云。这一特性避免了它可能不可预测地弹跳并在不希望的位置制造烟雾云的情况，也允许更即时的部署。
 <ul><li>作为交换，G-89烟幕弹制造的烟雾半径明显小于其同类。</li></ul></li>
 <li>失去进入烟雾的绝地潜兵视线的敌人，仍会接近他们最后出现的位置。绝地潜兵应继续远离烟雾撤退，以更好地摆脱敌人的注意。
@@ -113,7 +103,14 @@ Impact</div></div><div class="druid-row druid-row-capacity" data-druid-section-r
 <li>与终结族类似， <span class="faction-icon icon-outline"><img class="wiki-icon" alt="" src="../images/Illuminate_Icon.svg" decoding="async" loading="lazy" width="512" height="512" data-file-width="512" data-file-height="512" /></span><a href="Illuminate.html" title="Illuminate">光能者</a> 受G-89烟幕弹的影响也较小，因为……的冲锋特性 <a href="Voteless.html" title="Voteless">无票者</a> 和 <a href="Fleshmob.html" title="Fleshmob">肉瘤体</a>.
 <ul><li>G-89烟幕弹可以更有效地用于阻碍……的远程攻击 <a href="Harvester.html" title="Harvester">猎杀器</a>, <a href="Overseer.html" title="Overseer">监视者</a>, <a href="Elevated_Overseer.html" title="Elevated Overseer">崇高监视者</a>，以及 <a href="Crescent_Overseer.html" title="Crescent Overseer">新月监视者</a>.</li></ul></li>
 <li>G-89烟幕弹也可以用来谨慎地完成高风险 <a href="Missions.html" title="Missions">任务</a> 目标，例如 <a href="Prospecting_Drill.html" title="Prospecting Drill">勘探钻机</a> for the <a href="Conduct_Geological_Survey.html" title="Conduct Geological Survey">进行地质勘测</a>。被遮挡的 <a href="Helldiver.html" title="Helldiver">绝地潜兵</a> 操作钻机的人可以避免被推进任务目标的敌人瞄准。</li></ul>
-<h2><span class="mw-headline" id="Change_History">变更历史</span></h2>
+<h2><span id=".E5.AA.92.E4.BD.93"></span><span class="mw-headline" id="媒体">媒体</span></h2>
+<ul class="gallery mw-gallery-traditional">
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:15px auto;"><img alt="In game model" src="../images/120px-G-89_Smokescreen_Throwable_Render.png" decoding="async" loading="lazy" width="120" height="120" data-file-width="2160" data-file-height="2160" /></div></div>
+			<div class="gallerytext">In game model</div>
+		</div></li>
+</ul>
+<h2><span id=".E5.8F.98.E6.9B.B4.E5.8E.86.E5.8F.B2"></span><span class="mw-headline" id="变更历史">变更历史</span></h2>
 <div style="display:flex; border: 1px solid; padding: 1px; border-radius: 5px; text-align:center; font-weight:bold;">
 <div style="flex: 0 0 119px; text-align: center; font-weight: bold;">补丁</div>
 <div style="flex: 1 1 auto; border-left: 1px solid;">描述</div>
@@ -128,7 +125,7 @@ Impact</div></div><div class="druid-row druid-row-capacity" data-druid-section-r
 <div style="display: table-cell; vertical-align: middle;"> 
 <p>Addition
 </p>
-<ul><li>Added to the game.</li></ul>
+<ul><li>已加入游戏。</li></ul>
 </div>
 </div>
 </div>
@@ -137,54 +134,51 @@ Impact</div></div><div class="druid-row druid-row-capacity" data-druid-section-r
 
 <!-- 
 NewPP limit report
-Cached time: 20260818035616
+Cached time: 20260819055329
 Cache expiry: 3600
 Reduced expiry: true
 Complications: [vary‐revision‐sha1, show‐toc]
-CPU time usage: 0.246 seconds
-Real time usage: 0.523 seconds
+CPU time usage: 0.217 seconds
+Real time usage: 0.295 seconds
 Preprocessor visited node count: 922/1000000
-Revision size: 3237/4194304 bytes
-Post‐expand include size: 42787/4194304 bytes
-Template argument size: 1228/4194304 bytes
+Revision size: 3217/4194304 bytes
+Post‐expand include size: 42781/4194304 bytes
+Template argument size: 1222/4194304 bytes
 Highest expansion depth: 13/100
 Expensive parser function count: 3/500
 Unstrip recursion depth: 0/20
 Unstrip post‐expand size: 1514/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.114/15.000 seconds
-Lua memory usage: 5767574/52428800 bytes
+Lua time usage: 0.103/15.000 seconds
+Lua memory usage: 5768046/52428800 bytes
 Number of processed Cargo queries: 1
-Time spent processing Cargo queries: 0.015 s (avg. 0.015 s)
+Time spent processing Cargo queries: 0.008 s (avg. 0.008 s)
 Number of Cargo row insertion attempts: 3
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%  444.713      1 -total
- 33.68%  149.783      1 Template:Attack_Data_Weapon
- 24.34%  108.249      1 Template:Nav_Weapon
- 24.20%  107.604      5 Template:Article_other
- 22.01%   97.889      1 Template:Infobox_Throwable
- 11.50%   51.132      1 Template:Equipment_Store
-  5.61%   24.954      1 Template:Quote
-  4.90%   21.793      1 Template:Change_History_Update
-  3.80%   16.912      1 Template:Last_Updated
-  2.74%   12.176      2 Template:Newest_Update
+100.00%  242.430      1 -total
+ 31.57%   76.538      1 Template:Attack_Data_Weapon
+ 24.45%   59.262      1 Template:Nav_Weapon
+ 23.35%   56.614      1 Template:Infobox_Throwable
+ 22.91%   55.551      5 Template:Article_other
+ 10.52%   25.508      1 Template:Equipment_Store
+  6.69%   16.210      1 Template:Quote
+  4.43%   10.736      1 Template:Last_Updated
+  3.90%    9.464      1 Template:Change_History_Update
+  3.35%    8.118      1 Template:Breadcrumbs
 -->
-</div></div>
+</div><aside class="page-side"><div class="druid-infobox druid-container noexcerpt druid-container-throwable" id="druid-container-1"><div><div class="druid-title">G-89 Smokescreen</div></div><div class="druid-section-container"><div class="druid-main-image"><img alt="G-89 Smokescreen Throwable Render.png" src="../images/G-89_Smokescreen_Throwable_Render.webp" decoding="async" loading="lazy" width="2160" height="2160" data-file-width="2160" data-file-height="2160" /></div></div><div class="druid-section-container"><div data-druid-section="ThrowableDetails"><div class="druid-section druid-section-ThrowableDetails">投掷物 详情</div></div><div class="druid-row druid-row-damage" data-druid-section-row="ThrowableDetails"><div class="druid-label druid-label-damage">伤害</div><div class="druid-data druid-data-damage druid-data-nonempty">
+0</div></div><div class="druid-row druid-row-penetration" data-druid-section-row="ThrowableDetails"><div class="druid-label druid-label-penetration">穿透</div><div class="druid-data druid-data-penetration druid-data-nonempty">
+<span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AP-1_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage">否 Hitbox</a></span></div></div><div class="druid-row druid-row-radius" data-druid-section-row="ThrowableDetails"><div class="druid-label druid-label-radius">外圈半径</div><div class="druid-data druid-data-radius druid-data-nonempty">
+5m</div></div><div class="druid-row druid-row-cookable" data-druid-section-row="ThrowableDetails"><div class="druid-label druid-label-cookable">Cookable</div><div class="druid-data druid-data-cookable druid-data-nonempty">
+否</div></div><div class="druid-row druid-row-fuse" data-druid-section-row="ThrowableDetails"><div class="druid-label druid-label-fuse">Fuse Time</div><div class="druid-data druid-data-fuse druid-data-nonempty">
+Impact</div></div><div class="druid-row druid-row-capacity" data-druid-section-row="ThrowableDetails"><div class="druid-label druid-label-capacity">容量</div><div class="druid-data druid-data-capacity druid-data-nonempty">
+5</div></div><div class="druid-row druid-row-throwable&#95;traits" data-druid-section-row="ThrowableDetails"><div class="druid-label druid-label-throwable&#95;traits">Trait(s)</div><div class="druid-data druid-data-throwable&#95;traits druid-data-nonempty">
+<a href="Equipment_Traits.html#Explosive" title="Equipment Traits">爆炸</a></div></div></div><div class="druid-section-container"><div data-druid-section="Procurement"><div class="druid-section druid-section-Procurement">获取途径</div></div><div class="druid-row druid-row-source" data-druid-section-row="Procurement"><div class="druid-label druid-label-source">来源</div><div class="druid-data druid-data-source druid-data-nonempty">
+<a href="Superstore.html" title="Superstore">超级商店</a></div></div><div class="druid-row druid-row-cost" data-druid-section-row="Procurement"><div class="druid-label druid-label-cost">费用</div><div class="druid-data druid-data-cost druid-data-nonempty">
+<span class="Currencyicons"><span style="white-space:nowrap"><a href="Super_Credits.html" title="Super Credits"><img alt="" src="../images/Super_Credit.svg" decoding="async" loading="lazy" width="512" height="571" data-file-width="512" data-file-height="571" /></a> 300</span> <a href="Super_Credits.html" title="Super Credits">超级货币</a></span></div></div></div></div></aside></div></div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
-<script>
-功能 toggleTheme(){
-  var h = 文档.documentElement;
-  var alt = h.classList.toggle('view-alt');
-  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
-}
-try {
-  if (localStorage.getItem('hd2theme') === 'alt') {
-    文档.documentElement.classList.add('view-alt');
-  }
-} catch(e) {}
-</script>
 </body>
 </html>

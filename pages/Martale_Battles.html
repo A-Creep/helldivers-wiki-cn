@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-helldiver view-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,45 +14,44 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
-    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
   <button class="back-btn" type="button" onclick="history.back()">← 返回</button>
   <h1 class="page-title">Martale/Battles</h1>
-  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+  <div class="mw-parser-output"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="#First_Battle_of_Martale"><span class="tocnumber">1</span> <span class="toctext">First Battle of Martale</span></a>
+<li class="toclevel-1 tocsection-1"><a href="#第一次玛塔尔战役"><span class="tocnumber">1</span> <span class="toctext">第一次玛塔尔战役</span></a>
 <ul>
-<li class="toclevel-2 tocsection-2"><a href="#Background"><span class="tocnumber">1.1</span> <span class="toctext">Background</span></a></li>
-<li class="toclevel-2 tocsection-3"><a href="#Strategy_and_importance"><span class="tocnumber">1.2</span> <span class="toctext">策略 and importance</span></a></li>
+<li class="toclevel-2 tocsection-2"><a href="#背景"><span class="tocnumber">1.1</span> <span class="toctext">背景</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#战略与重要性"><span class="tocnumber">1.2</span> <span class="toctext">战略与重要性</span></a></li>
 <li class="toclevel-2 tocsection-4"><a href="#战斗"><span class="tocnumber">1.3</span> <span class="toctext">战斗</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-5"><a href="#Second_Battle_of_Martale"><span class="tocnumber">2</span> <span class="toctext">Second Battle of Martale</span></a>
+<li class="toclevel-1 tocsection-5"><a href="#第二次玛塔尔战役"><span class="tocnumber">2</span> <span class="toctext">第二次玛塔尔战役</span></a>
 <ul>
-<li class="toclevel-2 tocsection-6"><a href="#Background_2"><span class="tocnumber">2.1</span> <span class="toctext">Background</span></a></li>
-<li class="toclevel-2 tocsection-7"><a href="#Strategy_and_importance_2"><span class="tocnumber">2.2</span> <span class="toctext">策略 and importance</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#背景_2"><span class="tocnumber">2.1</span> <span class="toctext">背景</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#战略与重要性_2"><span class="tocnumber">2.2</span> <span class="toctext">战略与重要性</span></a></li>
 <li class="toclevel-2 tocsection-8"><a href="#战斗_2"><span class="tocnumber">2.3</span> <span class="toctext">战斗</span></a></li>
-<li class="toclevel-2 tocsection-9"><a href="#Memorial_Gallery"><span class="tocnumber">2.4</span> <span class="toctext">纪念馆 图库</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#纪念画廊"><span class="tocnumber">2.4</span> <span class="toctext">纪念画廊</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-10"><a href="#Martale_Gambit"><span class="tocnumber">3</span> <span class="toctext">Martale Gambit</span></a>
+<li class="toclevel-1 tocsection-10"><a href="#玛塔尔Gambit"><span class="tocnumber">3</span> <span class="toctext">玛塔尔Gambit</span></a>
 <ul>
-<li class="toclevel-2 tocsection-11"><a href="#Background_3"><span class="tocnumber">3.1</span> <span class="toctext">Background</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#背景_3"><span class="tocnumber">3.1</span> <span class="toctext">背景</span></a></li>
 <li class="toclevel-2 tocsection-12"><a href="#战斗_3"><span class="tocnumber">3.2</span> <span class="toctext">战斗</span></a></li>
-<li class="toclevel-2 tocsection-13"><a href="#Official_Discord_Support"><span class="tocnumber">3.3</span> <span class="toctext">官员 Discord 支援</span></a></li>
-<li class="toclevel-2 tocsection-14"><a href="#Martale_Gambit_Gallery"><span class="tocnumber">3.4</span> <span class="toctext">Martale Gambit 图库</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#官方Discord支持"><span class="tocnumber">3.3</span> <span class="toctext">官方Discord支持</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#玛塔尔Gambit画廊"><span class="tocnumber">3.4</span> <span class="toctext">玛塔尔Gambit画廊</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-15"><a href="#Fourth_Battle_of_Martale"><span class="tocnumber">4</span> <span class="toctext">Fourth Battle of Martale</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#第四次玛塔尔战役"><span class="tocnumber">4</span> <span class="toctext">第四次玛塔尔战役</span></a></li>
 </ul>
 </div>
 
-<h2><span class="mw-headline" id="First_Battle_of_Martale">First Battle of Martale</span></h2>
+<h2><span id=".E7.AC.AC.E4.B8.80.E6.AC.A1.E7.8E.9B.E5.A1.94.E5.B0.94.E6.88.98.E5.BD.B9"></span><span class="mw-headline" id="第一次玛塔尔战役">第一次玛塔尔战役</span></h2>
 <table class="wikitable" style="font-size:smaller">
 <tbody><tr>
-<th colspan="2"><b>First Battle of Martale</b>
+<th colspan="2"><b>第一次玛塔尔战役</b>
 </th></tr>
 <tr>
 <th><b>阵营</b>
@@ -102,20 +101,20 @@
 </tbody></table>
 <p><br />
 </p>
-<h3><span class="mw-headline" id="Background">Background</span></h3>
+<h3><span id=".E8.83.8C.E6.99.AF"></span><span class="mw-headline" id="背景">背景</span></h3>
 <p>The 机器人 brutally conquered Matar Bay and launched an 入侵 on Martale and Marfark. 
 </p>
-<h3><span class="mw-headline" id="Strategy_and_importance">策略 and importance</span></h3>
+<h3><span id=".E6.88.98.E7.95.A5.E4.B8.8E.E9.87.8D.E8.A6.81.E6.80.A7"></span><span class="mw-headline" id="战略与重要性">战略与重要性</span></h3>
 <p>The first battle of Martale wasn't particularly 重要. The only significant aspect of this battle was the 重要指令, as a successful 防御 would 贡献 to the 重要指令's success.
 </p>
 <h3><span id=".E6.88.98.E6.96.97"></span><span class="mw-headline" id="战斗">战斗</span></h3>
 <p>The battle started on April 11th with the fall of Matar Bay. 
 </p><p>Around 5 million 绝地潜兵 died during this battle. Martale was lost.
 </p>
-<h2><span class="mw-headline" id="Second_Battle_of_Martale">Second Battle of Martale</span></h2>
+<h2><span id=".E7.AC.AC.E4.BA.8C.E6.AC.A1.E7.8E.9B.E5.A1.94.E5.B0.94.E6.88.98.E5.BD.B9"></span><span class="mw-headline" id="第二次玛塔尔战役">第二次玛塔尔战役</span></h2>
 <table class="wikitable" style="font-size:smaller">
 <tbody><tr>
-<th colspan="2"><b>Second Battle of Martale</b>
+<th colspan="2"><b>第二次玛塔尔战役</b>
 </th></tr>
 <tr>
 <th><b>阵营</b>
@@ -165,22 +164,22 @@
 </tbody></table>
 <p><br />
 </p>
-<h3><span class="mw-headline" id="Background_2">Background</span></h3>
+<h3><span id=".E8.83.8C.E6.99.AF_2"></span><span class="mw-headline" id="背景_2">背景</span></h3>
 <p>On April 12th 机器人 captured Martale. This once beautiful had to be liberated. 
 </p>
-<h3><span class="mw-headline" id="Strategy_and_importance_2">策略 and importance</span></h3>
+<h3><span id=".E6.88.98.E7.95.A5.E4.B8.8E.E9.87.8D.E8.A6.81.E6.80.A7_2"></span><span class="mw-headline" id="战略与重要性_2">战略与重要性</span></h3>
 <p>Second Battle of Martale was a key battle, as liberating Martale would help in further 进攻型 in Andromeda 分区. 
 </p>
 <h3><span id=".E6.88.98.E6.96.97_2"></span><span class="mw-headline" id="战斗_2">战斗</span></h3>
 <p>The battle started on April 12th, when Martale was captured by 机器人.  
 </p><p>The battle ended on Apr. 19th, when Martale Gambit started.
 </p>
-<h3><span class="mw-headline" id="Memorial_Gallery">纪念馆 图库</span></h3>
+<h3><span id=".E7.BA.AA.E5.BF.B5.E7.94.BB.E5.BB.8A"></span><span class="mw-headline" id="纪念画廊">纪念画廊</span></h3>
 <div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:671px;"><img alt="Second Battle of Martale.png" src="../images/Second_Battle_of_Martale.webp" decoding="async" loading="lazy" width="669" height="328" class="thumbimage" data-file-width="669" data-file-height="328" />  <div class="thumbcaption"></div></div></div></div>
-<h2><span class="mw-headline" id="Martale_Gambit">Martale Gambit</span></h2>
+<h2><span id=".E7.8E.9B.E5.A1.94.E5.B0.94Gambit"></span><span class="mw-headline" id="玛塔尔Gambit">玛塔尔Gambit</span></h2>
 <table class="wikitable" style="font-size:smaller">
 <tbody><tr>
-<th colspan="2"><b>Martale Gambit</b>
+<th colspan="2"><b>玛塔尔Gambit</b>
 </th></tr>
 <tr>
 <th><b>阵营</b>
@@ -215,7 +214,7 @@
 <tr>
 <th><b>Casualties</b>
 </th>
-<td>Around 3 million 绝地潜兵 K.I.A.
+<td>约300万绝地潜兵阵亡。
 </td></tr>
 <tr>
 <th><b>重要指令</b>
@@ -231,19 +230,19 @@
 <p><br />
 The Martale Gambit was a battle 策略 created by the community during the 防御 on Two Fronts 重要指令.
 </p>
-<h3><span class="mw-headline" id="Background_3">Background</span></h3>
+<h3><span id=".E8.83.8C.E6.99.AF_3"></span><span class="mw-headline" id="背景_3">背景</span></h3>
 <p>the <b>防御 on Two Fronts</b> 重要指令 instructed the 绝地潜兵 to defend planets on both the <a href="Terminids.html" title="Terminids">终结族</a> 和 <a href="Automatons.html" title="Automatons">机器人</a> 正面, successfully defending a total of 10 of them over the five day span of the order. The moment the order began, the 终结族 sent a large scale attacking force to Estanu 和 Oshaune. At the same time, the 机器人 sent 攻击 forces to Charon Prime, Marfark, and Lesath.
-</p><p>The community immediately realized that there was 否 way they were going to be able to successfully defend five planets at the same time, so they devised what is now known as the <b>Martale Gambit</b> to 增加 their chances of success. It was determined that the only Supply Line to Charon Prime able to be utilized by the 机器人 was from Martale, which was close to 解放 when the 重要指令 began. The community decided that instead of trying to defend Charon prime as well as the other four planets, they would cut off the enemy from their 物资 by capturing Martale.
+</p><p>The community immediately realized that there was 否 way they were going to be able to successfully defend five planets at the same time, so they devised what is now known as the <b>玛塔尔Gambit</b> to 增加 their chances of success. It was determined that the only 补给线 to Charon Prime able to be utilized by the 机器人 was from Martale, which was close to 解放 when the 重要指令 began. The community decided that instead of trying to defend Charon prime as well as the other four planets, they would cut off the enemy from their 物资 by capturing Martale.
 </p>
 <h3><span id=".E6.88.98.E6.96.97_3"></span><span class="mw-headline" id="战斗_3">战斗</span></h3>
 <p>Battle started on April 19th, the Gambit also marked an end to the Second Battle of Martale.
 </p><p>Around 3 million 绝地潜兵 died during Martale Gambit. The gambit ended with a devastating defeat, Martale was cut off, Charon Prime was captured by 机器人 and the whole Andromeda 分区 was captured by 机器人.
 </p>
-<h3><span class="mw-headline" id="Official_Discord_Support">官员 Discord 支援</span></h3>
+<h3><span id=".E5.AE.98.E6.96.B9Discord.E6.94.AF.E6.8C.81"></span><span class="mw-headline" id="官方Discord支持">官方Discord支持</span></h3>
 <p>The Martale Gambit caused the discovery of an interesting flaw in the 当前 version of 绝地潜兵 2. It was stated by the 官员 Discord that in its 当前 state, cutting off a 行星 from its 物资 doesn't 实际上 cause that 行星 to be secured. However, The developers have stated that this functionality is something they intend to add in the near future, and for the time being are willing to perform the 机械师 manually when it comes into play.
 </p><p>This notice was given to the player base in the form of a Discord post within the 官员 绝地潜兵 Discord <b>星系战争</b> 频道. This notice also gave 玩家 another avenue of discovering that the Martale Gambit existed, and resulted in a larger playerbase aiding the effort. This is one of the first instances of the 官员 Discord taking note and officially acknowledging a community-created effort.
 </p>
-<h3><span class="mw-headline" id="Martale_Gambit_Gallery">Martale Gambit 图库</span></h3>
+<h3><span id=".E7.8E.9B.E5.A1.94.E5.B0.94Gambit.E7.94.BB.E5.BB.8A"></span><span class="mw-headline" id="玛塔尔Gambit画廊">玛塔尔Gambit画廊</span></h3>
 <ul class="gallery mw-gallery-traditional">
 		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
 			<div class="thumb" style="width: 150px;"><div style="margin:62.5px auto;"><img alt="Announcement addressing the Martale Gambit from the official Helldivers discord server" src="../images/120px-Martale_Gambit_Official_Discord_Announcement.png" decoding="async" loading="lazy" width="120" height="25" data-file-width="1117" data-file-height="237" /></div></div>
@@ -266,58 +265,46 @@ The Martale Gambit was a battle 策略 created by the community during the 防�
 			<div class="gallerytext">Initial state of the Lacaille 分区</div>
 		</div></li>
 </ul>
-<h2><span class="mw-headline" id="Fourth_Battle_of_Martale">Fourth Battle of Martale</span></h2>
+<h2><span id=".E7.AC.AC.E5.9B.9B.E6.AC.A1.E7.8E.9B.E5.A1.94.E5.B0.94.E6.88.98.E5.BD.B9"></span><span class="mw-headline" id="第四次玛塔尔战役">第四次玛塔尔战役</span></h2>
 <p>WIP
 </p>
 
 
 <!-- 
 NewPP limit report
-Cached time: 20260818034803
+Cached time: 20260819054514
 Cache expiry: 3600
 Reduced expiry: true
 Complications: [show‐toc]
-CPU time usage: 0.357 seconds
-Real time usage: 0.574 seconds
+CPU time usage: 0.334 seconds
+Real time usage: 0.584 seconds
 Preprocessor visited node count: 934/1000000
-Revision size: 5133/4194304 bytes
-Post‐expand include size: 58840/4194304 bytes
-Template argument size: 1762/4194304 bytes
+Revision size: 5100/4194304 bytes
+Post‐expand include size: 59108/4194304 bytes
+Template argument size: 1760/4194304 bytes
 Highest expansion depth: 11/100
 Expensive parser function count: 1/500
 Unstrip recursion depth: 0/20
 Unstrip post‐expand size: 3590/10000000 bytes
 ExtLoops count: 0/5000
 Lua time usage: 0.008/15.000 seconds
-Lua memory usage: 894879/52428800 bytes
+Lua memory usage: 895329/52428800 bytes
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%  469.169      1 -total
- 92.87%  435.739      1 Template:Navbox_Lore
- 92.28%  432.949      1 Template:Navbox
-  3.33%   15.600      1 Template:MajorOrderLink
-  1.55%    7.280      3 Template:Battle
-  0.80%    3.746      3 Template:Automaton
-  0.79%    3.696      1 Template:Terminids
-  0.74%    3.460      6 Template:Inline_Icon_Abstract
-  0.63%    2.953      1 Template:Article_other
-  0.49%    2.287      2 Template:Automatons
+100.00%  494.558      1 -total
+ 93.89%  464.343      1 Template:Navbox_Lore
+ 93.29%  461.386      1 Template:Navbox
+  3.18%   15.721      1 Template:MajorOrderLink
+  1.66%    8.222      3 Template:Battle
+  1.04%    5.148      1 Template:Terminids
+  0.87%    4.304      3 Template:Automaton
+  0.85%    4.196      1 Template:Illuminate
+  0.82%    4.064      2 Template:Automatons
+  0.80%    3.954      6 Template:Inline_Icon_Abstract
 -->
-</div></div>
+</div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
-<script>
-功能 toggleTheme(){
-  var h = 文档.documentElement;
-  var alt = h.classList.toggle('view-alt');
-  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
-}
-try {
-  if (localStorage.getItem('hd2theme') === 'alt') {
-    文档.documentElement.classList.add('view-alt');
-  }
-} catch(e) {}
-</script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-helldiver view-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,17 +14,16 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
-    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
   <button class="back-btn" type="button" onclick="history.back()">← 返回</button>
   <h1 class="page-title">Crash To Desktop</h1>
-  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div><div class="breadcrumb-item breadcrumb-item-final">Crash To Desktop</div></div>
+  <div class="mw-parser-output"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div><div class="breadcrumb-item breadcrumb-item-final">Crash To Desktop</div></div>
 <p>This 条款 focuses on 崩溃 that occur during the game and that throw 玩家 back onto their desktop 环境.
 </p>
-<h2><span class="mw-headline" id="Workflow">Workflow</span></h2>
-<p>通常 it is recommended to use the <a href="Hellbomb_Script.html" title="Hellbomb Script">Hellbomb Script</a> to 速度 up the 流程 and to help you gather information on your system. Please note that this guide was written with Windows in mind. If you need help with Linux, please check <a href="Linux_Steam_Deck_Troubleshooting.html" title="Linux / Steam Deck Troubleshooting">this Linux 条款</a>.
+<h2><span id=".E5.B7.A5.E4.BD.9C.E6.B5.81"></span><span class="mw-headline" id="工作流">工作流</span></h2>
+<p>通常 it is recommended to use the <a href="Hellbomb_Script.html" title="Hellbomb Script">Hellbomb Script</a> to 速度 up the 流程 and to help you gather information on your system. Please note that this guide was written with Windows in mind. If you need help with Linux, please check <a href="Linux_Steam_Deck_Troubleshooting.html" title="Linux / Steam Deck Troubleshooting">这篇Linux文章</a>.
 </p><p>It is recommended to do them one by one, 含义 you try one of the steps first and then test if the crashing continues. If it does, 继续 to the 下一个 step.
 </p>
 <ol><li>Ensure your Motherboard's UEFI / BIOS is up to date. (For more information, please read up on <a href="BIOS_Updates.html" title="BIOS Updates">BIOS Updates</a>. Please read the information carefully.)
@@ -33,7 +32,7 @@
 <li>Remove any and <b>所有</b> overclocking / undervolting.
 <ol><li>Disable Precision Boost Overdrive, Intel Boost, ASUS MCE, XMP / EXPO / DOCP, 工厂 GPU OCs, etc.</li>
 <li>Some AMD 5000 / 6000 / 7000 GPUs may need a 负面 core offset. For more information, please check <a href="Troubleshooting_System_Failure.html#AMD_GPUs" title="Troubleshooting System Failure">故障排除 System Failure#AMD GPUs</a>.</li></ol></li>
-<li>Make sure your <a href="Virtual_Memory.html" title="Virtual Memory">Pagefile</a> is enabled and set as "System Managed" on at least one disk.
+<li>Make sure your <a href="Virtual_Memory.html" title="Virtual Memory">页面文件</a> is enabled and set as "System Managed" on at least one disk.
 <ol><li>This is an absolute MUST for 16GB or less RAM.</li></ol></li>
 <li>Remove all mods - this is not optional.
 <ol><li>If you are using the Hellbomb Script -&gt; <code>清除数据选项</code> Menu -&gt; Select "Quick Mod Removal".</li>
@@ -41,7 +40,7 @@
 <li>Go to the <code>重置/切换组件</code> Menu -&gt; Select "Steam Reset".</li>
 <li>Verify the game files in Steam.</li></ol>
 <ul><li>For manual steps, follow this guide: Broken Mods.</li></ul></li>
-<li><a href="Clearing_The_Shader_Cache.html" title="Clearing The Shader Cache">Clear your shader cache</a> (Click for Manual Steps)
+<li><a href="Clearing_The_Shader_Cache.html" title="Clearing The Shader Cache">清除着色器缓存</a> (Click for Manual Steps)
 <ul><li>Hellbomb Script: <code>清除数据选项</code> menu. -&gt; Select "Clear Only Shader Caches"</li>
 <li>Please be aware that if you are using DX11 you'll need to clear the driver's shader cache instead.</li></ul></li>
 <li><a href="Reinstallation_of_Visual_C++_Redistributables.html" title="Reinstallation of Visual C++ Redistributables">Reinstallation of Visual C++ Redistributables</a> (Click for manual steps)
@@ -88,14 +87,14 @@
 </div></div></div></div></div></div></div>
 <!-- 
 NewPP limit report
-Cached time: 20260818035747
+Cached time: 20260819055501
 Cache expiry: 2592000
 Reduced expiry: false
 Complications: [vary‐revision‐sha1]
-CPU time usage: 0.028 seconds
-Real time usage: 0.055 seconds
+CPU time usage: 0.047 seconds
+Real time usage: 0.086 seconds
 Preprocessor visited node count: 129/1000000
-Revision size: 2771/4194304 bytes
+Revision size: 2773/4194304 bytes
 Post‐expand include size: 7497/4194304 bytes
 Template argument size: 47/4194304 bytes
 Highest expansion depth: 8/100
@@ -103,34 +102,22 @@ Expensive parser function count: 2/500
 Unstrip recursion depth: 0/20
 Unstrip post‐expand size: 0/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.007/15.000 seconds
+Lua time usage: 0.011/15.000 seconds
 Lua memory usage: 663239/52428800 bytes
 Number of processed Cargo queries: 2
-Time spent processing Cargo queries: 0.009 s (avg. 0.004 s)
+Time spent processing Cargo queries: 0.011 s (avg. 0.006 s)
 Number of Cargo row insertion attempts: 1
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%   43.185      1 -total
- 71.77%   30.995      1 Template:Breadcrumb_Auto
- 28.01%   12.097      1 Template:Navbox_Troubleshooting
- 23.71%   10.237      1 Template:Navbox
-  6.18%    2.671      2 Template:Article_other
+100.00%   63.309      1 -total
+ 74.54%   47.188      1 Template:Breadcrumb_Auto
+ 25.28%   16.002      1 Template:Navbox_Troubleshooting
+ 21.58%   13.662      1 Template:Navbox
+  4.25%    2.688      2 Template:Article_other
 -->
-</div></div>
+</div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
-<script>
-功能 toggleTheme(){
-  var h = 文档.documentElement;
-  var alt = h.classList.toggle('view-alt');
-  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
-}
-try {
-  if (localStorage.getItem('hd2theme') === 'alt') {
-    文档.documentElement.classList.add('view-alt');
-  }
-} catch(e) {}
-</script>
 </body>
 </html>

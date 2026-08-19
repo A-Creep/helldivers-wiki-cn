@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-helldiver view-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,13 +14,12 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
-    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
   <button class="back-btn" type="button" onclick="history.back()">← 返回</button>
   <h1 class="page-title">Places of Interest</h1>
-  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item breadcrumb-item-final">Places of Interest</div></div>
+  <div class="mw-parser-output"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item breadcrumb-item-final">Places of Interest</div></div>
 <hr />
 <table>
 <tbody><tr>
@@ -37,12 +36,12 @@
 
 <!-- 
 NewPP limit report
-Cached time: 20260818035315
+Cached time: 20260819055024
 Cache expiry: 3600
 Reduced expiry: true
 Complications: [vary‐revision‐sha1]
-CPU time usage: 0.135 seconds
-Real time usage: 0.228 seconds
+CPU time usage: 0.120 seconds
+Real time usage: 0.190 seconds
 Preprocessor visited node count: 140/1000000
 Revision size: 252/4194304 bytes
 Post‐expand include size: 16571/4194304 bytes
@@ -52,36 +51,24 @@ Expensive parser function count: 1/500
 Unstrip recursion depth: 0/20
 Unstrip post‐expand size: 0/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.010/15.000 seconds
+Lua time usage: 0.009/15.000 seconds
 Lua memory usage: 666270/52428800 bytes
 Number of processed Cargo queries: 1
-Time spent processing Cargo queries: 0.008 s (avg. 0.008 s)
+Time spent processing Cargo queries: 0.006 s (avg. 0.006 s)
 Number of Cargo row insertion attempts: 1
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%  204.746      1 -total
- 79.66%  163.091      1 Template:Nav_POI
- 78.56%  160.840      1 Template:Navbox
- 19.29%   39.504      1 Template:Breadcrumb_Auto
-  2.38%    4.877      2 Template:Article_other
-  0.95%    1.955      1 Template:Disambig
-  0.84%    1.712      4 Template:*
+100.00%  171.958      1 -total
+ 80.42%  138.295      1 Template:Nav_POI
+ 79.18%  136.158      1 Template:Navbox
+ 18.31%   31.493      1 Template:Breadcrumb_Auto
+  2.02%    3.471      2 Template:Article_other
+  1.16%    1.999      1 Template:Disambig
+  0.98%    1.677      4 Template:*
 -->
-</div></div>
+</div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
-<script>
-功能 toggleTheme(){
-  var h = 文档.documentElement;
-  var alt = h.classList.toggle('view-alt');
-  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
-}
-try {
-  if (localStorage.getItem('hd2theme') === 'alt') {
-    文档.documentElement.classList.add('view-alt');
-  }
-} catch(e) {}
-</script>
 </body>
 </html>

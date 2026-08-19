@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-helldiver view-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +14,6 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
-    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
@@ -24,24 +23,12 @@
 <p><span class="faction-icon"><img alt="Generic Effect Icon.png" src="../images/50px-Generic_Effect_Icon.png" decoding="async" loading="lazy" width="50" height="50" data-file-width="64" data-file-height="64" /> 浓雾</span>
 </p>
 <h2><span id=".E8.AF.A6.E6.83.85"></span><span class="mw-headline" id="详情">详情</span></h2>
-<ul><li>降低 visibility to around 50 meters. Enemy <a href="Stealth.html#Enemy_Behavior" title="Stealth">detection</a> 已降低 from 50 to 30 meters</li></ul>
-<h2><span class="mw-headline" id="Affected_Biomes">Affected Biomes</span></h2>
+<ul><li>降低 visibility to around 50 meters. Enemy <a href="Stealth.html#Enemy_Behavior" title="Stealth">探测</a> 已降低 from 50 to 30 meters</li></ul>
+<h2><span id=".E5.8F.97.E5.BD.B1.E5.93.8D.E7.94.9F.E7.89.A9.E7.BE.A4.E8.90.BD"></span><span class="mw-headline" id="受影响生物群落">受影响生物群落</span></h2>
 <ul><li><a href="Deadlands.html" title="Deadlands">Deadlands</a></li>
 <li><a href="Haunted_Swamp.html" title="Haunted Swamp">Haunted Swamp</a></li></ul>
 </div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
-<script>
-功能 toggleTheme(){
-  var h = 文档.documentElement;
-  var alt = h.classList.toggle('view-alt');
-  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
-}
-try {
-  if (localStorage.getItem('hd2theme') === 'alt') {
-    文档.documentElement.classList.add('view-alt');
-  }
-} catch(e) {}
-</script>
 </body>
 </html>

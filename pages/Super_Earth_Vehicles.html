@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-helldiver view-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,69 +14,56 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
-    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
   <button class="back-btn" type="button" onclick="history.back()">← 返回</button>
   <h1 class="page-title">超级地球 载具</h1>
-  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Factions.html" title="Factions">阵营</a></div><div class="breadcrumb-item">超级地球 联邦</div><div class="breadcrumb-item breadcrumb-item-final">超级地球 载具</div></div>
+  <div class="mw-parser-output"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Factions.html" title="Factions">阵营</a></div><div class="breadcrumb-item">超级地球 联邦</div><div class="breadcrumb-item breadcrumb-item-final">超级地球 载具</div></div>
 <p><br />
 </p>
-<h2><span class="mw-headline" id="List_of_Vehicles">List of 载具</span></h2>
+<h2><span id=".E8.BD.BD.E5.85.B7.E5.88.97.E8.A1.A8"></span><span class="mw-headline" id="载具列表">载具列表</span></h2>
 <div><span>Eagle</span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Super_Destroyer.html" title="Super Destroyer">超级驱逐舰</a></span>&#32;&#160;&#8226;&#160;&#32;<span>Forklift</span>&#32;&#160;&#8226;&#160;&#32;<span>鹈鹕 运输船</span>&#32;&#160;&#8226;&#160;&#32;<span>撤离 运输船</span>&#32;&#160;&#8226;&#160;&#32;<span>BT-1317</span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Democracy_Space_Station.html" title="Democracy Space Station">Democracy Space 车站</a></span>&#32;&#160;&#8226;&#160;&#32;<span>Unnamed 超级地球 Fighter Craft</span></div>
 
 
 <!-- 
 NewPP limit report
-Cached time: 20260818035441
+Cached time: 20260819055146
 Cache expiry: 3600
 Reduced expiry: true
 Complications: [vary‐revision‐sha1]
-CPU time usage: 0.227 seconds
-Real time usage: 0.504 seconds
+CPU time usage: 0.207 seconds
+Real time usage: 0.573 seconds
 Preprocessor visited node count: 765/1000000
-Revision size: 333/4194304 bytes
-Post‐expand include size: 56939/4194304 bytes
-Template argument size: 490/4194304 bytes
+Revision size: 325/4194304 bytes
+Post‐expand include size: 57209/4194304 bytes
+Template argument size: 486/4194304 bytes
 Highest expansion depth: 11/100
 Expensive parser function count: 2/500
 Unstrip recursion depth: 0/20
 Unstrip post‐expand size: 0/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.010/15.000 seconds
-Lua memory usage: 928138/52428800 bytes
+Lua time usage: 0.009/15.000 seconds
+Lua memory usage: 928588/52428800 bytes
 Number of processed Cargo queries: 3
-Time spent processing Cargo queries: 0.010 s (avg. 0.003 s)
+Time spent processing Cargo queries: 0.011 s (avg. 0.004 s)
 Number of Cargo row insertion attempts: 1
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%  464.690      1 -total
- 85.90%  399.172      1 Template:Navbox_Lore
- 85.17%  395.756      1 Template:Navbox
-  7.72%   35.896      1 Template:Breadcrumb_Auto
-  1.01%    4.716      1 Template:Super_Earth
-  1.01%    4.701      1 Template:Terminids
-  1.00%    4.642      2 Template:Automatons
-  0.75%    3.498      2 Template:Article_other
-  0.69%    3.213      5 Template:Inline_Icon_Abstract
-  0.57%    2.664     37 Template:*
+100.00%  532.048      1 -total
+ 85.44%  454.580      1 Template:Navbox_Lore
+ 84.97%  452.106      1 Template:Navbox
+  7.82%   41.615      1 Template:Breadcrumb_Auto
+  0.91%    4.835      2 Template:Article_other
+  0.76%    4.065      2 Template:Automatons
+  0.69%    3.682      1 Template:Super_Earth
+  0.61%    3.240      1 Template:Terminids
+  0.53%    2.820      5 Template:Inline_Icon_Abstract
+  0.51%    2.726      1 Template:Illuminate
 -->
-</div></div>
+</div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
-<script>
-功能 toggleTheme(){
-  var h = 文档.documentElement;
-  var alt = h.classList.toggle('view-alt');
-  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
-}
-try {
-  if (localStorage.getItem('hd2theme') === 'alt') {
-    文档.documentElement.classList.add('view-alt');
-  }
-} catch(e) {}
-</script>
 </body>
 </html>

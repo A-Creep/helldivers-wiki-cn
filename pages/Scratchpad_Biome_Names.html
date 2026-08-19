@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-helldiver view-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,13 +14,12 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
-    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
   <button class="back-btn" type="button" onclick="history.back()">← 返回</button>
   <h1 class="page-title">Scratchpad/生物群系 Names</h1>
-  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><h2><span class="mw-headline" id="General_rules">基本信息 rules</span></h2>
+  <div class="mw-parser-output"><h2><span id=".E9.80.9A.E7.94.A8.E8.A7.84.E5.88.99"></span><span class="mw-headline" id="通用规则">通用规则</span></h2>
 <ul><li>离子风暴 = Ionic</li>
 <li>已增加 Hellbombs = Wasteland</li>
 <li>火山活动 = 火山</li>
@@ -28,7 +27,7 @@
 <li>暴雨: Jungle/湿地</li>
 <li>极暑 = Scorched/Badlands</li>
 <li>地震 = Broken</li></ul>
-<h2><span class="mw-headline" id="Proposed_Final_List">Proposed Final List</span></h2>
+<h2><span id=".E6.8B.9F.E5.AE.9A.E7.9A.84.E6.9C.80.E7.BB.88.E5.88.97.E8.A1.A8"></span><span class="mw-headline" id="拟定的最终列表">拟定的最终列表</span></h2>
 <table class="wikitable sortable mw-collapsible">
 <caption>
 </caption>
@@ -41,7 +40,7 @@
 </th>
 <th>描述
 </th>
-<th>Environmental Conditions
+<th>环境条件
 </th>
 <th>具有此生物群系的行星
 </th></tr>
@@ -250,7 +249,7 @@
 </td>
 <td><img alt="Moor tundra Landscape.png" src="../images/Moor_tundra_Landscape.webp" decoding="async" loading="lazy" width="600" height="193" data-file-width="460" data-file-height="148" />
 </td>
-<td><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r101811" /><blockquote class="noexcerpt" style="border-left: 0; margin: 20px 0; display: flex;"><div style="position: absolute; font-weight: 700; font-size: 5em; line-height: 1em;">“</div><div style="border-left: 2px solid white; margin-left: 3.5em; position: relative; padding: 0.5em 1em; display: inline-block"><p style="margin: 0">A perennially chilly 气候 has allowed short, colorful shrubs to flourish across this 行星's 浮出地面.</p><p>— 描述</p></div></blockquote>
+<td><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r101811" /><blockquote class="noexcerpt" style="border-left: 0; margin: 20px 0; display: flex;"><div style="position: absolute; font-weight: 700; font-size: 5em; line-height: 1em;">“</div><div style="border-left: 2px solid white; margin-left: 3.5em; position: relative; padding: 0.5em 1em; display: inline-block"><p style="margin: 0">常年寒冷的气候让矮小多彩的灌木丛在该行星表面繁茂生长。</p><p>— 描述</p></div></blockquote>
 </td>
 <td>
 <ul><li><span class="faction-icon"><img alt="Generic Effect Icon.png" src="../images/50px-Generic_Effect_Icon.png" decoding="async" loading="lazy" width="50" height="50" data-file-width="64" data-file-height="64" /> <b>无</b></span><br /></li></ul>
@@ -369,44 +368,32 @@
 </tbody></table>
 <!-- 
 NewPP limit report
-Cached time: 20260818034803
+Cached time: 20260819054514
 Cache expiry: 2592000
 Reduced expiry: false
 Complications: []
-CPU time usage: 0.176 seconds
-Real time usage: 0.227 seconds
+CPU time usage: 0.165 seconds
+Real time usage: 0.208 seconds
 Preprocessor visited node count: 762/1000000
-Revision size: 9888/4194304 bytes
-Post‐expand include size: 18788/4194304 bytes
-Template argument size: 2698/4194304 bytes
+Revision size: 9853/4194304 bytes
+Post‐expand include size: 18764/4194304 bytes
+Template argument size: 2674/4194304 bytes
 Highest expansion depth: 5/100
 Expensive parser function count: 0/500
 Unstrip recursion depth: 0/20
 Unstrip post‐expand size: 17420/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.018/15.000 seconds
+Lua time usage: 0.017/15.000 seconds
 Lua memory usage: 986875/52428800 bytes
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%   70.160      1 -total
- 58.79%   41.249     28 Template:Environmental_Conditions
- 35.59%   24.969     20 Template:Quote
+100.00%   66.158      1 -total
+ 57.90%   38.305     28 Template:Environmental_Conditions
+ 36.35%   24.046     20 Template:Quote
 -->
-</div></div>
+</div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
-<script>
-功能 toggleTheme(){
-  var h = 文档.documentElement;
-  var alt = h.classList.toggle('view-alt');
-  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
-}
-try {
-  if (localStorage.getItem('hd2theme') === 'alt') {
-    文档.documentElement.classList.add('view-alt');
-  }
-} catch(e) {}
-</script>
 </body>
 </html>

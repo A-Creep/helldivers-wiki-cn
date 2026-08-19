@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-helldiver view-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,28 +14,18 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
-    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
   <button class="back-btn" type="button" onclick="history.back()">← 返回</button>
   <h1 class="page-title">1.003.101</h1>
-  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Game_Version.html" title="Game Version">游戏版本</a></div><div class="breadcrumb-item breadcrumb-item-final">1.003.101</div></div>
-<div class="druid-infobox druid-container noexcerpt" id="druid-container-1"><div><div class="druid-title">1.003.101</div></div><div class="druid-section-container"><div class="druid-main-image"><img alt="HD2 Construction Tag.png" src="../images/HD2_Construction_Tag.webp" decoding="async" loading="lazy" width="1920" height="622" data-file-width="1920" data-file-height="622" /></div></div><div class="druid-section-container"><div class="druid-row druid-row-release&#95;date" data-druid-section-row="Info"><div class="druid-label druid-label-release&#95;date">发布日期</div><div class="druid-data druid-data-release&#95;date druid-data-nonempty">
-2025-06-10</div></div><div class="druid-row druid-row-release&#95;time" data-druid-section-row="Info"><div class="druid-label druid-label-release&#95;time">Release time</div><div class="druid-data druid-data-release&#95;time druid-data-nonempty">
-9:00 UTC</div></div><div class="druid-row druid-row-size" data-druid-section-row="Info"><div class="druid-label druid-label-size">更新 Size</div><div class="druid-data druid-data-size druid-data-nonempty">
-3.5 GB</div></div><div class="druid-row druid-row-versions" data-druid-section-row="Info"><div class="druid-label druid-label-versions">Versions</div><div class="druid-data druid-data-versions druid-data-nonempty">
-<a href="Game_Version.html" title="Game Version">1.003.101</a></div></div><div class="druid-row druid-row-blog" data-druid-section-row="Info"><div class="druid-label druid-label-blog">博客文章</div><div class="druid-data druid-data-blog druid-data-nonempty">
-<a rel="nofollow" class="external free" href="https://steamcommunity.com/games/553850/announcements/detail/516337874624317891?snr=2___">https://steamcommunity.com/games/553850/announcements/detail/516337874624317891?snr=2___</a></div></div></div><div class="druid-section-container"><div data-druid-section="Chronology"><div class="druid-section druid-section-Chronology">时间线</div></div><div class="druid-row druid-row-previous" data-druid-section-row="Chronology"><div class="druid-label druid-label-previous">上一个</div><div class="druid-data druid-data-previous druid-data-nonempty">
-<a href="1.003.004.html" title="1.003.004">1.003.004</a></div></div><div class="druid-row druid-row-next" data-druid-section-row="Chronology"><div class="druid-label druid-label-next">下一个</div><div class="druid-data druid-data-next druid-data-nonempty">
-<a href="1.003.102.html" title="1.003.102">1.003.102</a></div></div></div></div>
-<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+  <div class="mw-parser-output"><div class="page-container"><div class="page-main"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#概述"><span class="tocnumber">1</span> <span class="toctext">概述</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="#Balancing"><span class="tocnumber">2</span> <span class="toctext">Balancing</span></a>
+<li class="toclevel-1 tocsection-2"><a href="#平衡性调整"><span class="tocnumber">2</span> <span class="toctext">平衡性调整</span></a>
 <ul>
 <li class="toclevel-2 tocsection-3"><a href="#将军"><span class="tocnumber">2.1</span> <span class="toctext">将军</span></a></li>
-<li class="toclevel-2 tocsection-4"><a href="#Primary_weapons"><span class="tocnumber">2.2</span> <span class="toctext">主武器</span></a>
+<li class="toclevel-2 tocsection-4"><a href="#主要武器"><span class="tocnumber">2.2</span> <span class="toctext">主要武器</span></a>
 <ul>
 <li class="toclevel-3 tocsection-5"><a href="#R-2_Amendment"><span class="tocnumber">2.2.1</span> <span class="toctext">R-2 修正</span></a></li>
 </ul>
@@ -76,94 +66,96 @@
 </li>
 <li class="toclevel-1 tocsection-20"><a href="#修复"><span class="tocnumber">3</span> <span class="toctext">修复</span></a>
 <ul>
-<li class="toclevel-2 tocsection-21"><a href="#Weapons_and_Stratagems"><span class="tocnumber">3.1</span> <span class="toctext">武器 and 战略配备</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#武器与战略配备"><span class="tocnumber">3.1</span> <span class="toctext">武器与战略配备</span></a></li>
 <li class="toclevel-2 tocsection-22"><a href="#敌人_2"><span class="tocnumber">3.2</span> <span class="toctext">敌人</span></a></li>
 <li class="toclevel-2 tocsection-23"><a href="#任务"><span class="tocnumber">3.3</span> <span class="toctext">任务</span></a></li>
-<li class="toclevel-2 tocsection-24"><a href="#Miscellaneous_Fixes"><span class="tocnumber">3.4</span> <span class="toctext">Miscellaneous Fixes</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="#杂项修复"><span class="tocnumber">3.4</span> <span class="toctext">杂项修复</span></a></li>
 </ul>
 </li>
 </ul>
-</div>
+</div><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Game_Version.html" title="Game Version">游戏版本</a></div><div class="breadcrumb-item breadcrumb-item-final">1.003.101</div></div>
+
+
 
 <h1><span id=".E6.A6.82.E8.BF.B0"></span><span class="mw-headline" id="概述">概述</span></h1>
-<ul><li>Stealth Detection 更新</li>
+<ul><li>隐身侦测更新</li>
 <li>崩溃修复</li>
-<li>Balancing</li>
-<li>任务 fixes</li>
-<li>Miscellaneous fixes</li></ul>
-<h1><span class="mw-headline" id="Balancing">Balancing</span></h1>
+<li>平衡性调整</li>
+<li>任务修复</li>
+<li>其他修复</li></ul>
+<h1><span id=".E5.B9.B3.E8.A1.A1.E6.80.A7.E8.B0.83.E6.95.B4"></span><span class="mw-headline" id="平衡性调整">平衡性调整</span></h1>
 <h2><span id=".E5.B0.86.E5.86.9B"></span><span class="mw-headline" id="将军">将军</span></h2>
-<ul><li>The Ministry of 人类 has issued an 修正 to its Combat Mobility Safety Guidelines, now permitting 绝地潜兵 to self-administer stims while in mid-dive, an act previously categorized in the same risk zone as “running with scissors” and “juggling live grenades”</li></ul>
-<h2><span class="mw-headline" id="Primary_weapons">主武器</span></h2>
+<ul><li>人道部已发布对其战斗机动安全指南的修正，现允许绝地潜兵在半空俯冲时自行注射兴奋剂，该行为此前被归类为与"拿着剪刀奔跑"和"抛接活手雷"同等风险等级</li></ul>
+<h2><span id=".E4.B8.BB.E8.A6.81.E6.AD.A6.E5.99.A8"></span><span class="mw-headline" id="主要武器">主要武器</span></h2>
 <h3><span class="mw-headline" id="R-2_Amendment"><a href="R-2_Amendment.html" title="R-2 Amendment">R-2 修正</a></span></h3>
-<ul><li>已增加 人体工学 from 35 to 50</li></ul>
+<ul><li>人体工学性能从35增加到50</li></ul>
 <h2><span class="mw-headline" id="Sidearms">Sidearms</span></h2>
 <h3><span class="mw-headline" id="P-2_Peacemaker"><a href="P-2_Peacemaker.html" title="P-2 Peacemaker">P-2 Peacemaker</a></span></h3>
-<ul><li>已增加 初始弹匣 from 4 to 5</li>
-<li>已增加 max 备用弹匣 from 6 to 8</li>
-<li>已增加 伤害 from 75 to 85</li>
-<li>已增加 耐久伤害 from 15 to 25</li></ul>
+<ul><li>初始弹匣数量从4增加到5</li>
+<li>最大备用弹匣数量从6增加到8</li>
+<li>伤害从75增加到85</li>
+<li>耐久伤害从15增加到25</li></ul>
 <h2><span id=".E6.8A.A4.E7.94.B2.E8.A2.AB.E5.8A.A8"></span><span class="mw-headline" id="护甲被动">护甲被动</span></h2>
 <h3><span class="mw-headline" id="Integrated_Explosives"><a href="Integrated_Explosives.html" title="Integrated Explosives">集成炸药</a></span></h3>
-<ul><li>Now also 增加 initial 库存 and holding 容量 of grenades by +2</li></ul>
+<ul><li>现在还使手雷的初始库存和持有容量增加+2</li></ul>
 <h3><span class="mw-headline" id="Unflinching"><a href="Unflinching.html" title="Unflinching">毫不畏缩</a></span></h3>
-<ul><li>This 被动 has been adjusted to better reflect the core doctrine of the <a href="Truth_Enforcers_Premium_Warbond.html" title="Truth Enforcers Premium Warbond">真相执法者</a> 战争债券—relentless pursuit, battlefield awareness, and overwhelming presence</li>
-<li>Now also 增加 护甲值 by 25</li>
-<li>Markers placed on the map will generate a radar scan every 2.0s, revealing nearby hostiles</li></ul>
+<ul><li>This 被动 has been adjusted to better reflect the core doctrine of the <a href="Truth_Enforcers_Premium_Warbond.html" title="Truth Enforcers Premium Warbond">真相执法者</a> 战争债券——无情追击、战场感知和压倒性存在</li>
+<li>现在还增加25点护甲等级</li>
+<li>放置在地图上的标记将每2.0秒生成一次雷达扫描，揭示附近的敌对目标</li></ul>
 <h2><span id=".E6.95.8C.E4.BA.BA"></span><span class="mw-headline" id="敌人">敌人</span></h2>
-<ul><li>Stealth Detection 更新:
-<ul><li>敌人 will 否 longer automatically detect you when you're near 终结族 spawners or spawners that generate flying 敌人. Instead, these spawners will now only activate if an enemy has already identified you as a 目标.</li>
-<li>Previously, simply being within 200 meters of certain spawner 类型—such as flying enemy spawners, 追踪虫 lairs, or inside 终结族 locations—would trigger immediate enemy spawns and reveal your 位置. This 更新 shifts detection to a more logical, line-of-sight or alert-based system, reducing arbitrary auto-detection 机制 and improving stealth 玩法</li>
-<li>As a result of these 变更, 机器人 Fabricators now spawn 敌人 more consistently, ensuring smoother pacing and 交战 平衡</li></ul></li></ul>
+<ul><li>隐身侦测更新：
+<ul><li>当你靠近终结族生成器或生成飞行敌人的生成器时，敌人将不再自动侦测到你。相反，这些生成器现在只有在敌人已将你识别为目标时才会激活。</li>
+<li>此前，只要位于某些生成器类型200米范围内——例如飞行敌人生成器、追踪虫巢穴或终结族据点内部——就会立即触发敌人生成并暴露你的位置。本次更新将侦测机制改为更合理的视线或警戒系统，减少任意的自动侦测机制并改善潜行游戏性</li>
+<li>作为这些改动的结果，机器人制造厂现在生成敌人更加稳定，确保更流畅的节奏和交战平衡</li></ul></li></ul>
 <h3><span id=".E5.85.89.E8.83.BD.E8.80.85"></span><span class="mw-headline" id="光能者">光能者</span></h3>
 <h4><span class="mw-headline" id="Harvester"><a href="Harvester.html" title="Harvester">猎杀器</a></span></h4>
-<ul><li>Their 生命值 has been rebalanced to make them easier to 摧毁 using 反坦克武器, particularly when aiming at their head</li></ul>
+<ul><li>它们的生命值已重新调整，使其更容易被反坦克武器摧毁，尤其是在瞄准头部时</li></ul>
 <h4><span id=".E7.9B.91.E8.A7.86.E8.80.85"></span><span class="mw-headline" id="监视者"><a href="Overseer.html" title="Overseer">监视者</a></span></h4>
 <ul><li>已降低 the 频率 of <a href="Elevated_Overseer.html" title="Elevated Overseer">崇高监视者</a> 生成 during Prevent 入侵 Foothold missions</li>
-<li>监视者 can now 偶尔 spawn from landed dropships at 哨站, adding variety to their battlefield presence</li></ul>
+<li>监视者现在偶尔会从前哨站已着陆的运输船中生成，增加其在战场上的多样性</li></ul>
 <h4><span class="mw-headline" id="Leviathan"><a href="Leviathan.html" title="Leviathan">Leviathan</a></span></h4>
-<ul><li>投射物伤害 was 已降低 from 1500 to 350. The intent is to ensure 绝地潜兵 are still eliminated on 正面 impact, while preventing 瞬间 摧毁 of 外骨骼机甲 and FRVs</li>
-<li>爆炸伤害 and radius from turret shots have been 已增加 to 维护 lethality through area denial</li></ul>
+<ul><li>投射伤害从1500降低至350。此举旨在确保绝地潜兵在直接命中时仍会被消灭，同时防止外骨骼装甲和FRV被瞬间摧毁</li>
+<li>炮塔射击的爆炸伤害和半径已增加，以通过区域拒止维持杀伤力</li></ul>
 <h3><span id=".E6.9C.BA.E5.99.A8.E4.BA.BA"></span><span class="mw-headline" id="机器人">机器人</span></h3>
 <h4><span class="mw-headline" id="Factory_Strider"><a href="Factory_Strider.html" title="Factory Strider">移动工厂</a></span></h4>
-<ul><li>Slightly 已增加 the 生命值 of its feet. It should 否 longer be destroyed by a single GR-8 无后坐力炮 shot to the legs</li></ul>
+<ul><li>略微增加了其脚部的生命值。它不应再被一发GR-8无后坐力炮击中腿部就摧毁</li></ul>
 <h2><span id=".E7.9B.AE.E6.A0.87"></span><span class="mw-headline" id="目标">目标</span></h2>
 <h3><span class="mw-headline" id="Take_Down_Overship"><a href="Take_Down_Overship.html" title="Take Down Overship">击沉统御舰</a></span></h3>
-<ul><li>The 行星 防御 Cannon now causes an appropriate amount of 伤害 when shooting at Leviathans</li></ul>
+<ul><li>行星防御炮现在射击利维坦时会造成适当的伤害量</li></ul>
 <h1><span id=".E4.BF.AE.E5.A4.8D"></span><span class="mw-headline" id="修复">修复</span></h1>
-<ul><li>Crash Fixes, Hangs and Soft-locks:</li>
-<li>Fixed a crash that could happen after any player disconnects</li>
-<li>Fixed some 崩溃 that were caused by browsing different weapon 配件</li></ul>
-<h2><span class="mw-headline" id="Weapons_and_Stratagems">武器 and 战略配备</span></h2>
-<ul><li>已修复 <a href="RS-422_Railgun.html" title="RS-422 Railgun">RS-422 磁轨炮</a> scope's screen not displaying the heat level correctly</li>
-<li>Entrenchment tool's 耐力 费用 now properly matches other 近战 武器</li>
-<li>Fixed an issue where 近战 攻击 inside shield relays were not registering properly</li></ul>
+<ul><li>崩溃修复、卡顿与软锁：</li>
+<li>修复了任何玩家断开连接后可能发生的崩溃</li>
+<li>修复了浏览不同武器配件时导致的一些崩溃问题</li></ul>
+<h2><span id=".E6.AD.A6.E5.99.A8.E4.B8.8E.E6.88.98.E7.95.A5.E9.85.8D.E5.A4.87"></span><span class="mw-headline" id="武器与战略配备">武器与战略配备</span></h2>
+<ul><li>已修复 <a href="RS-422_Railgun.html" title="RS-422 Railgun">RS-422 磁轨炮</a> 瞄准镜屏幕无法正确显示高温等级</li>
+<li>堑壕工具的耐力消耗现在正确匹配其他近战武器</li>
+<li>修复了护盾中继器内近战攻击无法正常判定的问题</li></ul>
 <h2><span id=".E6.95.8C.E4.BA.BA_2"></span><span class="mw-headline" id="敌人_2">敌人</span></h2>
-<ul><li>Fixed two cases where the Stingray enemy would appear to stop or teleport on death</li></ul>
+<ul><li>修复了Stingray敌人在死亡时会出现停止或传送的两种情况</li></ul>
 <h2><span id=".E4.BB.BB.E5.8A.A1"></span><span class="mw-headline" id="任务">任务</span></h2>
-<ul><li>Fixed an issue with the '击沉统御舰' 任务 where the Overship 爆炸 did not always trigger for client 玩家</li>
-<li>Fixed a rare issue in '击沉统御舰' where the Overship could get destroyed and not trigger the 目标 completion</li>
-<li>Fixed an issue with the 'Deploy 地震探测仪' 任务 that could make it incompletable if you completed a Lidar 次要目标 while a 地震探测仪 had been called down</li>
-<li>Fixed an issue with the drill not falling correctly for clients on the '<a href="Nuke_Nursery.html" title="Nuke Nursery">Nuke Nursery</a>' 任务</li>
-<li>Fixed an issue with 超级样本 failing to spawn in cities</li></ul>
-<h2><span class="mw-headline" id="Miscellaneous_Fixes">Miscellaneous Fixes</span></h2>
-<ul><li>Fixed a bug that was causing 绝地潜兵 to slide while using the Lockstep march emote</li>
-<li>Fixed an issue with friendly &amp; enemy pathing around the Shuttlebay 位置</li>
-<li>修复 a bug that was causing the 绝地潜兵 to hold pickups as 武器 when switching between 武器 right after picking up an item</li>
-<li>Fixed missing 配件 for SEAF soldiers</li>
-<li>Game will now show error message if resources cannot be loaded correctly</li>
-<li>Fixed a flickering issue that 有时 would occur in the 武装配置 menu's 绝地潜兵 previews</li>
-<li>Fixed jitter while interacting with the 军械库</li></ul>
+<ul><li>修复了"击落超舰"任务中超舰爆炸不会总是为客户端玩家触发的问题</li>
+<li>修复了"击落超舰"任务中的一个罕见问题：超舰可能被摧毁后不会触发目标完成</li>
+<li>修复了"部署地震探测仪"任务中的一个可能导致无法完成的问题：如果在地震探测仪已召唤到位时完成了Lidar支线目标</li>
+<li>Fixed an issue with the drill not falling correctly for clients on the<a href="Nuke_Nursery.html" title="Nuke Nursery">Nuke Nursery</a>任务</li>
+<li>修复了超级样本无法在城市中生成的问题</li></ul>
+<h2><span id=".E6.9D.82.E9.A1.B9.E4.BF.AE.E5.A4.8D"></span><span class="mw-headline" id="杂项修复">杂项修复</span></h2>
+<ul><li>修复了一个导致绝地潜兵在使用Lockstep齐步走表情时滑行的漏洞</li>
+<li>修复了Shuttlebay位置友方与敌方寻路的问题</li>
+<li>修复了一个导致绝地潜兵在拾取物品后立即切换武器时，会将拾取物当作武器握持的漏洞</li>
+<li>修复了超级地球武装部队士兵缺少配件的问题</li>
+<li>游戏现在会在资源无法正确加载时显示错误信息</li>
+<li>修复了武装配置菜单中绝地潜兵预览有时会出现的闪烁问题</li>
+<li>修复了与军械库交互时的抖动问题</li></ul>
 <!-- 
 NewPP limit report
-Cached time: 20260818035435
+Cached time: 20260819055142
 Cache expiry: 2592000
 Reduced expiry: false
 Complications: [vary‐revision‐sha1, show‐toc]
-CPU time usage: 0.055 seconds
-Real time usage: 0.080 seconds
+CPU time usage: 0.054 seconds
+Real time usage: 0.076 seconds
 Preprocessor visited node count: 241/1000000
-Revision size: 5117/4194304 bytes
+Revision size: 4540/4194304 bytes
 Post‐expand include size: 5328/4194304 bytes
 Template argument size: 74/4194304 bytes
 Highest expansion depth: 8/100
@@ -171,34 +163,29 @@ Expensive parser function count: 2/500
 Unstrip recursion depth: 0/20
 Unstrip post‐expand size: 0/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.011/15.000 seconds
+Lua time usage: 0.010/15.000 seconds
 Lua memory usage: 664562/52428800 bytes
 Number of processed Cargo queries: 2
-Time spent processing Cargo queries: 0.012 s (avg. 0.006 s)
+Time spent processing Cargo queries: 0.009 s (avg. 0.005 s)
 Number of Cargo row insertion attempts: 1
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%   50.584      1 Template:Infobox_Game_Version
-100.00%   50.584      1 -total
- 74.75%   37.814      1 Template:Breadcrumb_Auto
-  4.74%    2.398      1 Template:Article_other
-  3.42%    1.728      2 Template:Update
+100.00%   47.588      1 Template:Infobox_Game_Version
+100.00%   47.588      1 -total
+ 70.10%   33.361      1 Template:Breadcrumb_Auto
+  5.37%    2.555      1 Template:Article_other
+  3.39%    1.614      2 Template:Update
 -->
-</div></div>
+</div><aside class="page-side"><div class="druid-infobox druid-container noexcerpt" id="druid-container-1"><div><div class="druid-title">1.003.101</div></div><div class="druid-section-container"><div class="druid-main-image"><img alt="HD2 Construction Tag.png" src="../images/HD2_Construction_Tag.webp" decoding="async" loading="lazy" width="1920" height="622" data-file-width="1920" data-file-height="622" /></div></div><div class="druid-section-container"><div class="druid-row druid-row-release&#95;date" data-druid-section-row="Info"><div class="druid-label druid-label-release&#95;date">发布日期</div><div class="druid-data druid-data-release&#95;date druid-data-nonempty">
+2025-06-10</div></div><div class="druid-row druid-row-release&#95;time" data-druid-section-row="Info"><div class="druid-label druid-label-release&#95;time">Release time</div><div class="druid-data druid-data-release&#95;time druid-data-nonempty">
+9:00 UTC</div></div><div class="druid-row druid-row-size" data-druid-section-row="Info"><div class="druid-label druid-label-size">更新 Size</div><div class="druid-data druid-data-size druid-data-nonempty">
+3.5 GB</div></div><div class="druid-row druid-row-versions" data-druid-section-row="Info"><div class="druid-label druid-label-versions">Versions</div><div class="druid-data druid-data-versions druid-data-nonempty">
+<a href="Game_Version.html" title="Game Version">1.003.101</a></div></div><div class="druid-row druid-row-blog" data-druid-section-row="Info"><div class="druid-label druid-label-blog">博客文章</div><div class="druid-data druid-data-blog druid-data-nonempty">
+<a rel="nofollow" class="external free" href="https://steamcommunity.com/games/553850/announcements/detail/516337874624317891?snr=2___">https://steamcommunity.com/games/553850/announcements/detail/516337874624317891?snr=2___</a></div></div></div><div class="druid-section-container"><div data-druid-section="Chronology"><div class="druid-section druid-section-Chronology">时间线</div></div><div class="druid-row druid-row-previous" data-druid-section-row="Chronology"><div class="druid-label druid-label-previous">上一个</div><div class="druid-data druid-data-previous druid-data-nonempty">
+<a href="1.003.004.html" title="1.003.004">1.003.004</a></div></div><div class="druid-row druid-row-next" data-druid-section-row="Chronology"><div class="druid-label druid-label-next">下一个</div><div class="druid-data druid-data-next druid-data-nonempty">
+<a href="1.003.102.html" title="1.003.102">1.003.102</a></div></div></div></div></aside></div></div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
-<script>
-功能 toggleTheme(){
-  var h = 文档.documentElement;
-  var alt = h.classList.toggle('view-alt');
-  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
-}
-try {
-  if (localStorage.getItem('hd2theme') === 'alt') {
-    文档.documentElement.classList.add('view-alt');
-  }
-} catch(e) {}
-</script>
 </body>
 </html>

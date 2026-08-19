@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-helldiver view-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,13 +14,12 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
-    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
   <button class="back-btn" type="button" onclick="history.back()">← 返回</button>
   <h1 class="page-title">Stealth</h1>
-  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr">
+  <div class="mw-parser-output">
 <div style="text-align:center;">
 
 </div>
@@ -29,23 +28,23 @@
 </p>
 <div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="#Stealth_as_a_Strategy"><span class="tocnumber">1</span> <span class="toctext">Stealth as a 策略</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="#Commando_Missions"><span class="tocnumber">2</span> <span class="toctext">突击兵 Missions</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="#Enemy_Behavior"><span class="tocnumber">3</span> <span class="toctext">Enemy 行为</span></a>
+<li class="toclevel-1 tocsection-1"><a href="#潜行策略"><span class="tocnumber">1</span> <span class="toctext">潜行策略</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#突击兵任务"><span class="tocnumber">2</span> <span class="toctext">突击兵任务</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#敌人行为"><span class="tocnumber">3</span> <span class="toctext">敌人行为</span></a>
 <ul>
 <li class="toclevel-2 tocsection-4"><a href="#巡逻队"><span class="tocnumber">3.1</span> <span class="toctext">巡逻队</span></a></li>
-<li class="toclevel-2 tocsection-5"><a href="#Enemy_Reinforcements"><span class="tocnumber">3.2</span> <span class="toctext">Enemy 增援</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#敌方增援"><span class="tocnumber">3.2</span> <span class="toctext">敌方增援</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-6"><a href="#Decision_Making"><span class="tocnumber">4</span> <span class="toctext">Decision Making</span></a>
+<li class="toclevel-1 tocsection-6"><a href="#决策制定"><span class="tocnumber">4</span> <span class="toctext">决策制定</span></a>
 <ul>
-<li class="toclevel-2 tocsection-7"><a href="#What_to_do_when_caught"><span class="tocnumber">4.1</span> <span class="toctext">What to do when caught</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#被捕时该怎么做"><span class="tocnumber">4.1</span> <span class="toctext">被捕时该怎么做</span></a></li>
 </ul>
 </li>
 <li class="toclevel-1 tocsection-8"><a href="#目标"><span class="tocnumber">5</span> <span class="toctext">目标</span></a>
 <ul>
-<li class="toclevel-2 tocsection-9"><a href="#Destruction_Objective"><span class="tocnumber">5.1</span> <span class="toctext">摧毁 目标</span></a></li>
-<li class="toclevel-2 tocsection-10"><a href="#Occupational_Objectives"><span class="tocnumber">5.2</span> <span class="toctext">Occupational 目标</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#摧毁目标"><span class="tocnumber">5.1</span> <span class="toctext">摧毁目标</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#职业目标"><span class="tocnumber">5.2</span> <span class="toctext">职业目标</span></a></li>
 <li class="toclevel-2 tocsection-11"><a href="#撤离"><span class="tocnumber">5.3</span> <span class="toctext">撤离</span></a></li>
 </ul>
 </li>
@@ -57,22 +56,22 @@
 <li class="toclevel-2 tocsection-16"><a href="#Boosters"><span class="tocnumber">6.4</span> <span class="toctext">Boosters</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-17"><a href="#References"><span class="tocnumber">7</span> <span class="toctext">参考</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="#参考资料"><span class="tocnumber">7</span> <span class="toctext">参考资料</span></a></li>
 </ul>
 </div>
 
-<h2><span class="mw-headline" id="Stealth_as_a_Strategy">Stealth as a 策略</span></h2>
+<h2><span id=".E6.BD.9C.E8.A1.8C.E7.AD.96.E7.95.A5"></span><span class="mw-headline" id="潜行策略">潜行策略</span></h2>
 <p>Utilizing stealth during missions is a form of 优化 developed from the following observations:
 </p>
 <ol><li>Combat slows down 任务 completion and risks deaths (and loss of 装备/samples) without contributing 经验值, 申购点 or 任务 progress (outside of Blitz/Eradication missions).</li>
 <li>Certain 敌人 can spawn aggro'd onto a 绝地潜兵, including <a href="Stalker.html" title="Stalker">追踪虫</a>, <a href="Shrieker.html" title="Shrieker">尖啸虫</a>, <a href="Dragonroach.html" title="Dragonroach">蟑龙</a>, <a href="Stingray.html" title="Stingray">刺魟</a>，以及 <a href="Gunship.html" title="Gunship">炮舰</a>.</li>
-<li>Being seen by 敌人 can cause them to 呼叫 增援, (<a href="Dropship.html" title="Dropship">运输舰</a>, <a href="Warp_Ship.html" title="Warp Ship">穿梭舰</a>，以及 <a href="Bug_Breach.html" title="Bug Breach">Bug 突破</a>), which contain more and more 困难 敌人 to engage the 绝地潜兵.</li></ol>
+<li>Being seen by 敌人 can cause them to 呼叫 增援, (<a href="Dropship.html" title="Dropship">运输舰</a>, <a href="Warp_Ship.html" title="Warp Ship">穿梭舰</a>，以及 <a href="Bug_Breach.html" title="Bug Breach">虫族突破口</a>), which contain more and more 困难 敌人 to engage the 绝地潜兵.</li></ol>
 <p>The majority of this guide is therefore oriented towards minimizing enemy 增援, as these are most threatening to 绝地潜兵 and have the potential to snowball: 压力 from high-威胁 敌人 spawned as 增援 提供 space and time for 更小 敌人 to call more 增援. The more 敌人 present in an area, the harder it is to de-aggro them through stuns or line of sight blocking because of their 更大 map coverage, which will likely cover 目标 or samples.
 </p>
-<h2><span class="mw-headline" id="Commando_Missions">突击兵 Missions</span></h2>
+<h2><span id=".E7.AA.81.E5.87.BB.E5.85.B5.E4.BB.BB.E5.8A.A1"></span><span class="mw-headline" id="突击兵任务">突击兵任务</span></h2>
 <p>突击兵 Missions are 机器人 Exclusive <a href="Missions.html" title="Missions">Missions</a> appearing only in 特殊 突击兵 Operations on any 机器人 行星 currently undergoing a 解放 Campaign. For further information, see <a href="Commando_Missions.html" title="Commando Missions">突击兵 Missions</a>
 </p>
-<h2><span class="mw-headline" id="Enemy_Behavior">Enemy 行为</span></h2>
+<h2><span id=".E6.95.8C.E4.BA.BA.E8.A1.8C.E4.B8.BA"></span><span class="mw-headline" id="敌人行为">敌人行为</span></h2>
 <p>敌人 detect 绝地潜兵 by sound and then sight. 敌人 通常 become alert to a 绝地潜兵’s presence by sight in their vision cone. This can vary wildly depending on 距离, the height of the enemy, and the stance of the 绝地潜兵. 绝地潜兵 that are sprinting are most 可见, while 绝地潜兵 that are prone are the least 可见.
 </p><p>In some cases, prone 绝地潜兵 can reach 极其 close distances to 敌人 without alerting them. 
 </p>
@@ -135,7 +134,7 @@
 
 </div>
 </div>
-<p><b>Certain 敌人 break this rule, such as 工厂 Striders having exceptional hearing, Cannon 炮塔 having exceptional sight, and Stingrays being able to detect any 绝地潜兵 present in the 任务 area.</b>
+<p><b>某些敌人会打破这一规则，例如移动工厂拥有超常的听觉，加农炮台拥有超常的视觉，而Stingrays能够探测到任务区域内的任何绝地潜兵。</b>
 </p><p>During missions that take place at night, 机器人 have a noticeably lower detection 射程, by roughly 10m at each posture. For 示例, A 绝地潜兵 standing still in 白天 will be detected by a 装甲兵 from 50m away, while the same 装甲兵 will detect 绝地潜兵 at night from only 40m away.
 </p><p>Planets with <a href="Environmental_Conditions.html" title="Environmental Conditions">Environmental Conditions</a> that reduce detection 射程 for enemy units is a choice for stealth or <a href="Commando_Missions.html" title="Commando Missions">突击兵 Missions</a>:
 </p>
@@ -143,34 +142,34 @@
 <li><a href="Thick_Fog.html" title="Thick Fog">Thick Fog</a> is noticebly 降低 vision during the entire 任务, making this 条件 is a 完美 choice for stealth approches overall.</li></ol>
 <h4><span id=".E5.B7.A1.E9.80.BB.E9.98.9F"></span><span class="mw-headline" id="巡逻队">巡逻队</span></h4>
 <p>See <a href="Spawn_Mechanics.html#Where_do_Patrols_spawn?" title="Spawn Mechanics">巡逻队</a> for the specific of enemy spawnings, specifically areas of influence and heat 机制. 
-</p><p>It is  重要 to note that Patrols are player-biased, 含义 they will spawn marching towards a 绝地潜兵 but not aggroed. As a 策略, <b>patrols are best left unbothered</b> as killing even one member of a patrol will alert the entire squad, likely leading to a 增援 call. It is best to prone and crawl around a patrol's path to avoid detection.
+</p><p>It is  重要 to note that Patrols are player-biased, 含义 they will spawn marching towards a 绝地潜兵 but not aggroed. As a 策略, <b>巡逻队最好不去招惹</b> as killing even one member of a patrol will alert the entire squad, likely leading to a 增援 call. It is best to prone and crawl around a patrol's path to avoid detection.
 </p>
-<h4><span class="mw-headline" id="Enemy_Reinforcements">Enemy 增援</span></h4>
+<h4><span id=".E6.95.8C.E6.96.B9.E5.A2.9E.E6.8F.B4"></span><span class="mw-headline" id="敌方增援">敌方增援</span></h4>
 <p>The goal of stealth is to minimize 增援, but they will inevitably still occur as the result of occasional mistakes. The 增援 动画 can, however, be interrupted. 机器人 have a subtle but long 动画 of pulling out and preparing their flare which can be interrupted. 终结族 have a distinct retching audio cue and 动画 and will start to 生产 a thin orange trail before a 虫族入侵 is opened. 光能者 要求 a <a href="Watcher.html" title="Watcher">守望者</a> to call a 增援, with a very long audio and 动画 cue that can be easily interrupted.
 </p><p>Units will only call for 增援 after visually detecting and engaging either a 绝地潜兵 or one of their proxies (哨戒炮, 外骨骼机甲, Tanks, etc.).
 </p><p>Some 目标 (notably the <a href="Conduct_Geological_Survey.html" title="Conduct Geological Survey">地质勘探</a> 和 <a href="Spread_Democracy.html" title="Spread Democracy">升起旗帜</a>) will cause 增援 to spawn when initiated.
 </p>
-<h2><span class="mw-headline" id="Decision_Making">Decision Making</span></h2>
+<h2><span id=".E5.86.B3.E7.AD.96.E5.88.B6.E5.AE.9A"></span><span class="mw-headline" id="决策制定">决策制定</span></h2>
 <p>The key factor in determining whether to 消除 a given enemy in a stealth 任务 is the risk of them calling 增援 if left alive. 绝地潜兵 will want to 目标 the 敌人 that can call 增援 first, such as <a href="Watcher.html" title="Watcher">Watchers</a> and 轻型 机器人 units (<a href="Commissar.html" title="Commissar">Commissars</a>, <a href="Trooper.html" title="Trooper">Troopers</a>, etc.). 敌人 that are capable of quickly dispatching a 绝地潜兵 (工厂 Striders, Tanks, Cannon 炮塔, etc.) are best left alone and at a great 距离, as they can 有时 aggro silently and from considerable 距离, proceeding to kill 绝地潜兵 unaware. 
 </p><p>This has some immediate implications. Groups of 敌人 with only one infantry member capable of calling 增援 are relatively low risk to 攻击. If that enemy is eliminated first the 剩余 敌人 can easily be contained and eliminated. By contrast, a large group of infantry is quite high risk to 攻击, given the likelihood of 剩余 members calling 增援 after one or two targets are killed. Their 武器 have very low 正面 威胁, but they represent and project the 更大 威胁 of the 敌人 they can summon.
 </p>
-<h4><span class="mw-headline" id="What_to_do_when_caught">What to do when caught</span></h4>
+<h4><span id=".E8.A2.AB.E6.8D.95.E6.97.B6.E8.AF.A5.E6.80.8E.E4.B9.88.E5.81.9A"></span><span class="mw-headline" id="被捕时该怎么做">被捕时该怎么做</span></h4>
 <p>When 敌人 are alerted and 绝地潜兵 are not in the immediate vicinity of an 目标, the most prudent 策略 is to <b>撤退</b>. The 有限 firepower and lower 护甲 that 通常 comes with a stealth 武装配置 is not suited to drawn-out engagements. Using diversionary tools such as <a href="Smoke.html" title="Smoke">Smoke</a>, 哨兵，以及 Lure Mines can be used to draw enemy 火焰 away from 绝地潜兵 while making a tactical 撤退 to return to stealth.
 </p>
 <h2><span id=".E7.9B.AE.E6.A0.87"></span><span class="mw-headline" id="目标">目标</span></h2>
 <p>All 目标 can spawn with or without a garrison, which will be 可见 on the 小地图 and 通常 comprise 大约 a patrol’s worth of 敌人 distributed across the 位置. 目标 can also have 卫星 locations, with groups of 3-5 敌人. These 卫星 groups are 频繁 surrounded by SEAF 混凝土 barricades and fences, or located within 小型 机器人 炮台. These are always far enough away from the 目标 that these 敌人 will not necessarily engage the 绝地潜兵. Killing garrison 敌人 near them or passing them to enter or leave an 目标 are the most common ways of 素描 their attention.
 </p><p>This guide will differentiate between Occupational 目标 (where 绝地潜兵 are 必需 to occupy a specific 位置 and engage terminals or other props) and 摧毁 目标 (where 绝地潜兵 are 必需 to 摧毁 targets and can be done without entering the site). Note that the use of a Hellbomb constitutes an Occupational 目标, as the Hellbomb must be called down and activated. In contrast to 摧毁 目标 completed by Eagle or 轨道武器 Strikes, these 要求 engaging the 目标’s garrison and potentially patrols while awaiting the Hellbomb in a similar manner to activating terminals or other props.
 </p>
-<h4><span class="mw-headline" id="Destruction_Objective">摧毁 目标</span></h4>
+<h4><span id=".E6.91.A7.E6.AF.81.E7.9B.AE.E6.A0.87"></span><span class="mw-headline" id="摧毁目标">摧毁目标</span></h4>
 <p>摧毁 目标 are 极其 straightforward in stealth missions. 绝地潜兵 should have a prepared plan for the 战略配备 or group of 战略配备 that will 完成 the 目标, deploy them from a safe 距离 and leave the area before any 剩余 garrison members can call 增援 or engage 绝地潜兵. The 鹰 和 轨道 战略配备 best tailored to specific 目标 are covered in the <a class="mw-selflink-fragment" href="#Equipment">装备</a> 章节.
 </p>
-<h4><span class="mw-headline" id="Occupational_Objectives">Occupational 目标</span></h4>
+<h4><span id=".E8.81.8C.E4.B8.9A.E7.9B.AE.E6.A0.87"></span><span class="mw-headline" id="职业目标">职业目标</span></h4>
 <p>Occupational 目标 will 通常 involve clearing of at least some of the 目标’s garrison to minimize 交战, then the monitoring of nearby patrols while the 目标 is completed. 
 Most 目标 will spawn patrols or 增援 to interrupt 绝地潜兵. These 敌人 do not automatically engage but have a patrol route towards the center of the 目标. This means that larger 目标 or 目标 where 绝地潜兵 are positioned far from the center of the site (the ICBM launch site is a good 示例 of both), the 目标 can 频繁 be completed without eliminating very many 敌人 at all. This 频繁 requires 剩余 prone and carefully tracking enemy movements using the mini-map.
 </p>
 <h4><span id=".E6.92.A4.E7.A6.BB"></span><span class="mw-headline" id="撤离">撤离</span></h4>
 <p>Stealth extractions are 主题 to 极难 randomness. Activating the beacon is approached the same as an 可选目标. Once waiting out the timer, 绝地潜兵 should remain prone near the edge of the 50 meter radius as patrols will search the point itself but move randomly in 更小 groups around the edges. It is very likely 绝地潜兵 will need to shuffle in an 大约 15 meter radius to avoid random 敌人. This will be 必需 less if the 绝地潜兵 is 高处 (such as on a rock face or 建筑), and easier if they have two faces of a corner to hide behind.
-</p><p><a href="Spawn_Mechanics.html#Patrols" title="Spawn Mechanics">The Patrols page</a> contains many 技术信息 详情 to 预测 Patrol spawns which are particularly helpful for 撤离. The Spawn Blocking 章节 also 详情 a more 技术信息 but consistent method of minimizing enemy 联络. 
+</p><p><a href="Spawn_Mechanics.html#Patrols" title="Spawn Mechanics">巡逻页面</a> contains many 技术信息 详情 to 预测 Patrol spawns which are particularly helpful for 撤离. The Spawn Blocking 章节 also 详情 a more 技术信息 but consistent method of minimizing enemy 联络. 
 </p><p>Alternatively, 绝地潜兵 can run down the 任务 clock and use the emergency 撤离. This has the 受益 of not constraining 绝地潜兵 to the 50 meter beacon radius and reducing spawned 敌人. However, the 20 second leave 倒计时 will start immediately. This means the final approach to the 鹈鹕 needs to be swift. This is most 有效 on missions with shorter 任务 timers.
 </p>
 <h2><span id=".E8.A3.85.E5.A4.87"></span><span class="mw-headline" id="装备">装备</span></h2>
@@ -181,7 +180,7 @@ Most 目标 will spawn patrols or 增援 to interrupt 绝地潜兵. These 敌人
 <ul><li>the <a href="Scout.html" title="Scout">Scout</a> 被动 does not make less noise while moving around, and therefore still needs to take care to move quietly.</li></ul>
 <h4><span class="mw-headline" id="Weapons">武器</span></h4>
 <div class="noexcerpt va-hatnote"><i>主体 条款:&#32;<a href="Weapons.html" title="Weapons">武器</a></i></div>
-<p>The most desirable 武器库 are 武器 equipped with <b>suppressors</b> or are otherwise more quiet compared to other 武器. 武器 such as the <a href="R-72_Censor.html" title="R-72 Censor">R-72 Censor</a>, <a href="AR-59_Suppressor.html" title="AR-59 Suppressor">AR-59 Suppressor</a>, <a href="M7S_SMG.html" title="M7S SMG">M7S SMG</a>, <a href="M6C_SOCOM_Pistol.html" title="M6C/SOCOM Pistol">M6C/SOCOM Pistol</a>, <a href="P-35_Re-Educator.html" title="P-35 Re-Educator">P-35 Re-Educator</a>，以及 <a href="K-2_Throwing_Knife.html" title="K-2 Throwing Knife">K-2 Throwing Knife</a> are all examples of quiet 武器. <b>Suppressed 武器 have an audible 射程 of 13 meters.</b> Outside of this 射程, 敌人 will not react to shots fired unless they are fired in their 方向 or hit them. Inside of this 射程, 敌人 will enter an alerted state, so it is best to dispatch them quickly.
+<p>The most desirable 武器库 are 武器 equipped with <b>suppressors</b> or are otherwise more quiet compared to other 武器. 武器 such as the <a href="R-72_Censor.html" title="R-72 Censor">R-72 Censor</a>, <a href="AR-59_Suppressor.html" title="AR-59 Suppressor">AR-59 Suppressor</a>, <a href="M7S_SMG.html" title="M7S SMG">M7S SMG</a>, <a href="M6C_SOCOM_Pistol.html" title="M6C/SOCOM Pistol">M6C/SOCOM Pistol</a>, <a href="P-35_Re-Educator.html" title="P-35 Re-Educator">P-35 Re-Educator</a>，以及 <a href="K-2_Throwing_Knife.html" title="K-2 Throwing Knife">K-2 Throwing Knife</a> are all examples of quiet 武器. <b>消音武器的听觉范围为13米。</b> Outside of this 射程, 敌人 will not react to shots fired unless they are fired in their 方向 or hit them. Inside of this 射程, 敌人 will enter an alerted state, so it is best to dispatch them quickly.
 </p><p>爆炸武器 capable of destroying nests and fabricators from 射程 can also be valuable, as they can save 战略配备 使用 and don’t 要求 getting close to throw a 手榴弹, minimizing enemy 联络. Alternatively, smoke grenades can also disorient enemy view, allowing you to easily move past them or use them as a wall of cover to escape their vision and return to stealth more easily if they catch you.
 </p>
 <h4><span class="mw-headline" id="Stratagems">战略配备</span></h4>
@@ -200,60 +199,48 @@ Most 目标 will spawn patrols or 增援 to interrupt 绝地潜兵. These 敌人
 <li><a href="Vitality_Enhancement.html" title="Vitality Enhancement">Vitality Enhancement</a> can be paired with <a href="Dead_Sprint.html" title="Dead Sprint">死亡冲刺</a> in missions with 多个 绝地潜兵, effectively increasing 耐力 at the 费用 of survivability.</li>
 <li><a href="Stamina_Enhancement.html" title="Stamina Enhancement">耐力强化</a> 和 <a href="Muscle_Enhancement.html" title="Muscle Enhancement">肌肉强化</a> help with map rotations and making 距离 to lose enemy attention.</li>
 <li><a href="Expert_Extraction_Pilot.html" title="Expert Extraction Pilot">专家撤离飞行员</a> helps on missions with <a href="Complex_Stratagem_Plotting.html" title="Complex Stratagem Plotting">复杂 战略配备 Plotting</a> 修正 for quick 撤离 without been overhelmed by enemy patrols.</li></ul>
-<h2><span class="mw-headline" id="References">参考</span></h2>
-<div role="navigation" aria-label="Navbox" class="ranger-navbox navigation-not-searchable mw-collapsible"><div class="ranger-title"><div class="mw-collapsible-toggle-placeholder"></div></span></span><div class="ranger-title-text"><a href="Game_Mechanics.html" title="Game Mechanics">Game 机制</a></div></div><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:3"><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">基本信息 机制</div></div><div class="ranger-listbox"><div class="ranger-sublist level-0"><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:2"><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">Non-Combat 机制</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Achievements.html" title="Achievements">Achievements</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Difficulty.html" title="Difficulty">难度</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Levels.html" title="Levels">Levels</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Second_Galactic_War_Mechanics.html" title="Second Galactic War Mechanics">Second 银河战争机制</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">Combat 机制</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span><a href="Combat.html" title="Combat">Combat</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Damage.html" title="Damage">伤害</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Damage_Comparison.html" title="Damage Comparison">伤害 Comparison</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Recoil.html" title="Recoil">后坐力</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Spawn_Mechanics.html" title="Spawn Mechanics">Spawn 机制</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Status_Effects.html" title="Status Effects">状态效果</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a class="mw-selflink selflink">Stealth</a></span></div></div></div></div></div></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap"><a href="Environmental_Hazards.html" title="Environmental Hazards">环境危害</a></div></div><div class="ranger-listbox"><div class="ranger-sublist level-0"><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:4"><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">天气 效果</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Environmental_Conditions.html" title="Environmental Conditions">Environmental Conditions</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Acid_Storms.html" title="Acid Storms">酸雨风暴</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Blizzards.html" title="Blizzards">暴风雪</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Extreme_Cold.html" title="Extreme Cold">极寒</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Fire_Tornados.html" title="Fire Tornados">烈焰龙卷</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Intense_Heat.html" title="Intense Heat">极暑</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Ion_Storms.html" title="Ion Storms">离子风暴</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Meteor_Storms.html" title="Meteor Storms">流星风暴</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Rainstorms.html" title="Rainstorms">暴雨</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Sandstorms.html" title="Sandstorms">沙暴</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Thick_Fog.html" title="Thick Fog">Thick Fog</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Tremors.html" title="Tremors">地震</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Volcanic_Activity.html" title="Volcanic Activity">火山活动</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">自然 Hazards</div></div><div class="ranger-listbox"><div class="ranger-sublist level-1"><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:2"><div class="ranger-row"><div class="ranger-group level-2 ranger-subgroup"><div class="ranger-wrap">Flora</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span>酸 Flower</span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Bug_Mine.html" title="Bug Mine">Bug Mine</a></span>&#32;&#160;&#8226;&#160;&#32;<span>Ice Plant</span>&#32;&#160;&#8226;&#160;&#32;<span>Moor Mushroom</span>&#32;&#160;&#8226;&#160;&#32;<span>Shrub</span>&#32;&#160;&#8226;&#160;&#32;<span>Spike Plant</span>&#32;&#160;&#8226;&#160;&#32;<span>火山 Plant</span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-2 ranger-subgroup"><div class="ranger-wrap">地形</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Lava.html" title="Lava">Lava</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Lava_Geyser.html" title="Lava Geyser">Lava Geyser</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Lava_Pits.html" title="Lava Pits">Lava Pits</a></span></div></div></div></div></div></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">Assorted Hazards</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span>Cars</span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Damaged_Hellbomb.html" title="Damaged Hellbomb">Damaged Hellbomb</a></span>&#32;&#160;&#8226;&#160;&#32;<span>Exploding Barrels</span>&#32;&#160;&#8226;&#160;&#32;<span>Forklift</span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap"><a href="Automaton_Hazards.html" title="Automaton Hazards">机器人 Hazards</a></div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Automaton_Mine.html" title="Automaton Mine">机器人 Mine</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Barbed_Wire.html" title="Barbed Wire">Barbed Wire</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Despotic_Explosive.html" title="Despotic Explosive">专制炸药</a></span></div></div></div></div></div></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">操作 Modifiers</div></div><div class="ranger-listbox"><div class="ranger-sublist level-0"><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:5"><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">基本信息</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span><a href="Civilians_and_SEAF_in_Area.html" title="Civilians and SEAF in Area">Civilians and SEAF in Area</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Complex_Stratagem_Plotting.html" title="Complex Stratagem Plotting">复杂 战略配备 Plotting</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Orbital_Fluctuations.html" title="Orbital Fluctuations">轨道武器 Fluctuations</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Poor_Intel.html" title="Poor Intel">Poor Intel</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">终结族 Specific</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Atmospheric_Spores.html" title="Atmospheric Spores">Atmospheric Spores</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Roving_Shriekers.html" title="Roving Shriekers">漫游尖啸虫</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">机器人 Specific</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span><a href="Gunship_Patrols.html" title="Gunship Patrols">炮舰巡逻队</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">光能者 Specific</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Leviathan_Blockade.html" title="Leviathan Blockade">利维坦封锁屏障</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">已移除</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span><a href="AA_Defenses.html" title="AA Defenses">对空防御</a></span>&#32;&#160;&#8226;&#160;&#32;<span>Atmospheric Interference</span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Electronic_Countermeasures.html" title="Electronic Countermeasures">电子对抗措施</a></span></div></div></div></div></div></div></div></div></div></div></div></div></div>
+<h2><span id=".E5.8F.82.E8.80.83.E8.B5.84.E6.96.99"></span><span class="mw-headline" id="参考资料">参考资料</span></h2>
+<div role="navigation" aria-label="Navbox" class="ranger-navbox navigation-not-searchable mw-collapsible"><div class="ranger-title"><div class="mw-collapsible-toggle-placeholder"></div></span></span><div class="ranger-title-text"><a href="Game_Mechanics.html" title="Game Mechanics">Game 机制</a></div></div><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:3"><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">基本信息 机制</div></div><div class="ranger-listbox"><div class="ranger-sublist level-0"><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:2"><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">Non-Combat 机制</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Achievements.html" title="Achievements">Achievements</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Difficulty.html" title="Difficulty">难度</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Levels.html" title="Levels">Levels</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Second_Galactic_War_Mechanics.html" title="Second Galactic War Mechanics">Second 银河战争机制</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">Combat 机制</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span><a href="Combat.html" title="Combat">Combat</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Damage.html" title="Damage">伤害</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Damage_Comparison.html" title="Damage Comparison">伤害 Comparison</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Recoil.html" title="Recoil">后坐力</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Spawn_Mechanics.html" title="Spawn Mechanics">Spawn 机制</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Status_Effects.html" title="Status Effects">状态效果</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a class="mw-selflink selflink">Stealth</a></span></div></div></div></div></div></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap"><a href="Environmental_Hazards.html" title="Environmental Hazards">环境危害</a></div></div><div class="ranger-listbox"><div class="ranger-sublist level-0"><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:4"><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">天气 效果</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Environmental_Conditions.html" title="Environmental Conditions">Environmental Conditions</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Acid_Storms.html" title="Acid Storms">酸雨风暴</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Blizzards.html" title="Blizzards">暴风雪</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Extreme_Cold.html" title="Extreme Cold">极寒</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Fire_Tornados.html" title="Fire Tornados">烈焰龙卷</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Intense_Heat.html" title="Intense Heat">极暑</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Ion_Storms.html" title="Ion Storms">离子风暴</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Meteor_Storms.html" title="Meteor Storms">流星风暴</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Rainstorms.html" title="Rainstorms">暴雨</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Sandstorms.html" title="Sandstorms">沙暴</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Thick_Fog.html" title="Thick Fog">Thick Fog</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Tremors.html" title="Tremors">地震</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Volcanic_Activity.html" title="Volcanic Activity">火山活动</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">自然 Hazards</div></div><div class="ranger-listbox"><div class="ranger-sublist level-1"><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:2"><div class="ranger-row"><div class="ranger-group level-2 ranger-subgroup"><div class="ranger-wrap">Flora</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span><a href="Bug_Mine.html" title="Bug Mine">Bug Mine</a></span>&#32;&#160;&#8226;&#160;&#32;<span>Ice Plant</span>&#32;&#160;&#8226;&#160;&#32;<span>Moor Mushroom</span>&#32;&#160;&#8226;&#160;&#32;<span>Shrub</span>&#32;&#160;&#8226;&#160;&#32;<span>Spike Plant</span>&#32;&#160;&#8226;&#160;&#32;<span>火山 Plant</span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-2 ranger-subgroup"><div class="ranger-wrap">地形</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Lava.html" title="Lava">Lava</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Lava_Geyser.html" title="Lava Geyser">Lava Geyser</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Lava_Pits.html" title="Lava Pits">Lava Pits</a></span></div></div></div></div></div></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">Assorted Hazards</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span>Cars</span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Damaged_Hellbomb.html" title="Damaged Hellbomb">Damaged Hellbomb</a></span>&#32;&#160;&#8226;&#160;&#32;<span>Exploding Barrels</span>&#32;&#160;&#8226;&#160;&#32;<span>Forklift</span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap"><a href="Automaton_Hazards.html" title="Automaton Hazards">机器人 Hazards</a></div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Automaton_Mine.html" title="Automaton Mine">机器人 Mine</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Barbed_Wire.html" title="Barbed Wire">Barbed Wire</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Despotic_Explosive.html" title="Despotic Explosive">专制炸药</a></span></div></div></div></div></div></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">操作 Modifiers</div></div><div class="ranger-listbox"><div class="ranger-sublist level-0"><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:5"><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">基本信息</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span><a href="Civilians_and_SEAF_in_Area.html" title="Civilians and SEAF in Area">Civilians and SEAF in Area</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Complex_Stratagem_Plotting.html" title="Complex Stratagem Plotting">复杂 战略配备 Plotting</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Orbital_Fluctuations.html" title="Orbital Fluctuations">轨道武器 Fluctuations</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Poor_Intel.html" title="Poor Intel">Poor Intel</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">终结族 Specific</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Atmospheric_Spores.html" title="Atmospheric Spores">Atmospheric Spores</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Roving_Shriekers.html" title="Roving Shriekers">漫游尖啸虫</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">机器人 Specific</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span><a href="Gunship_Patrols.html" title="Gunship Patrols">炮舰巡逻队</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">光能者 Specific</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Leviathan_Blockade.html" title="Leviathan Blockade">利维坦封锁屏障</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">已移除</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span><a href="AA_Defenses.html" title="AA Defenses">对空防御</a></span>&#32;&#160;&#8226;&#160;&#32;<span>Atmospheric Interference</span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Electronic_Countermeasures.html" title="Electronic Countermeasures">电子对抗措施</a></span></div></div></div></div></div></div></div></div></div></div></div></div></div>
 <p><br />
 </p>
 <!-- 
 NewPP limit report
-Cached time: 20260818034814
+Cached time: 20260819054629
 Cache expiry: 3600
 Reduced expiry: true
 Complications: [vary‐revision‐sha1, show‐toc]
-CPU time usage: 0.218 seconds
-Real time usage: 0.350 seconds
+CPU time usage: 0.210 seconds
+Real time usage: 0.360 seconds
 Preprocessor visited node count: 795/1000000
-Revision size: 17615/4194304 bytes
-Post‐expand include size: 30245/4194304 bytes
-Template argument size: 1330/4194304 bytes
+Revision size: 17524/4194304 bytes
+Post‐expand include size: 30041/4194304 bytes
+Template argument size: 1328/4194304 bytes
 Highest expansion depth: 9/100
 Expensive parser function count: 2/500
 Unstrip recursion depth: 0/20
 Unstrip post‐expand size: 2350/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.013/15.000 seconds
-Lua memory usage: 800237/52428800 bytes
+Lua time usage: 0.012/15.000 seconds
+Lua memory usage: 799897/52428800 bytes
 Number of processed Cargo queries: 2
-Time spent processing Cargo queries: 0.010 s (avg. 0.005 s)
+Time spent processing Cargo queries: 0.009 s (avg. 0.005 s)
 Number of Cargo row insertion attempts: 1
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%  305.928      1 -total
- 80.96%  247.671      1 Template:Nav_Mechanic
- 80.14%  245.166      1 Template:Navbox
- 12.09%   37.000      1 Template:Breadcrumb_Auto
-  2.63%    8.048      1 Template:WIP
-  1.79%    5.478      1 Template:Message_box
-  1.63%    4.979      4 Template:Main
-  1.42%    4.330      1 Template:Automatons
-  1.02%    3.119      2 Template:Article_other
-  0.90%    2.739     24 Template:*
+100.00%  315.594      1 -total
+ 78.68%  248.303      1 Template:Nav_Mechanic
+ 77.65%  245.072      1 Template:Navbox
+ 12.05%   38.034      1 Template:Breadcrumb_Auto
+  3.44%   10.853      1 Template:WIP
+  2.48%    7.830      1 Template:Automatons
+  2.16%    6.826      1 Template:Message_box
+  2.08%    6.554      4 Template:Main
+  1.25%    3.953      2 Template:Article_other
+  1.17%    3.706      4 Template:Hatnote
 -->
-</div></div>
+</div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
-<script>
-功能 toggleTheme(){
-  var h = 文档.documentElement;
-  var alt = h.classList.toggle('view-alt');
-  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
-}
-try {
-  if (localStorage.getItem('hd2theme') === 'alt') {
-    文档.documentElement.classList.add('view-alt');
-  }
-} catch(e) {}
-</script>
 </body>
 </html>

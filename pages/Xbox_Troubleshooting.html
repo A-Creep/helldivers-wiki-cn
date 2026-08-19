@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-helldiver view-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,38 +14,37 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
-    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
   <button class="back-btn" type="button" onclick="history.back()">← 返回</button>
   <h1 class="page-title">Xbox 故障排除</h1>
-  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div><div class="breadcrumb-item breadcrumb-item-final">Xbox 故障排除</div></div>
+  <div class="mw-parser-output"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div><div class="breadcrumb-item breadcrumb-item-final">Xbox 故障排除</div></div>
 <p>This 故障排除 page is meant specifically for resolving problems with <b>Xbox Series S &amp; X</b>.
 </p>
-<ul><li>These are some basic steps that help prevent issues such as 崩溃. If you 要求 more indepth help, feel free to check out Microsoft's <a rel="nofollow" class="external text" href="https://support.xbox.com/en-US">Online 支援 for Xbox</a>.</li></ul>
+<ul><li>These are some basic steps that help prevent issues such as 崩溃. If you 要求 more indepth help, feel free to check out Microsoft's <a rel="nofollow" class="external text" href="https://support.xbox.com/en-US">Xbox在线支持</a>.</li></ul>
 <div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#概述"><span class="tocnumber">1</span> <span class="toctext">概述</span></a>
 <ul>
-<li class="toclevel-2 tocsection-2"><a href="#Upscaling"><span class="tocnumber">1.1</span> <span class="toctext">Upscaling</span></a></li>
+<li class="toclevel-2 tocsection-2"><a href="#超分辨率"><span class="tocnumber">1.1</span> <span class="toctext">超分辨率</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-3"><a href="#Basic_Performance_&amp;_Stability"><span class="tocnumber">2</span> <span class="toctext">Basic Performance &amp; 稳定性</span></a>
+<li class="toclevel-1 tocsection-3"><a href="#基本性能与稳定性"><span class="tocnumber">2</span> <span class="toctext">基本性能与稳定性</span></a>
 <ul>
-<li class="toclevel-2 tocsection-4"><a href="#Updates"><span class="tocnumber">2.1</span> <span class="toctext">Updates</span></a></li>
-<li class="toclevel-2 tocsection-5"><a href="#Power_Cycling_&amp;_Clearing_System_Cache"><span class="tocnumber">2.2</span> <span class="toctext">Power Cycling &amp; Clearing System Cache</span></a></li>
-<li class="toclevel-2 tocsection-6"><a href="#Clearing_the_Game_&amp;_Profile_Data"><span class="tocnumber">2.3</span> <span class="toctext">Clearing the Game &amp; Profile Data</span></a></li>
-<li class="toclevel-2 tocsection-7"><a href="#Network_issues"><span class="tocnumber">2.4</span> <span class="toctext">网络 issues</span></a></li>
-<li class="toclevel-2 tocsection-8"><a href="#Performance_problems"><span class="tocnumber">2.5</span> <span class="toctext">Performance problems</span></a></li>
-<li class="toclevel-2 tocsection-9"><a href="#Temperature_&amp;_Power"><span class="tocnumber">2.6</span> <span class="toctext">温度 &amp; Power</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#更新"><span class="tocnumber">2.1</span> <span class="toctext">更新</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#电源循环与清除系统缓存"><span class="tocnumber">2.2</span> <span class="toctext">电源循环与清除系统缓存</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#清除游戏与档案数据"><span class="tocnumber">2.3</span> <span class="toctext">清除游戏与档案数据</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#网络问题"><span class="tocnumber">2.4</span> <span class="toctext">网络问题</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#性能问题"><span class="tocnumber">2.5</span> <span class="toctext">性能问题</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#温度与电源"><span class="tocnumber">2.6</span> <span class="toctext">温度与电源</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-10"><a href="#Black_Screen"><span class="tocnumber">3</span> <span class="toctext">Black Screen</span></a></li>
-<li class="toclevel-1 tocsection-11"><a href="#Controller_Problems"><span class="tocnumber">4</span> <span class="toctext">Controller Problems</span></a></li>
-<li class="toclevel-1 tocsection-12"><a href="#DLC_/_License_issues"><span class="tocnumber">5</span> <span class="toctext">DLC / 执照 issues</span></a></li>
-<li class="toclevel-1 tocsection-13"><a href="#Reinstalling_the_game"><span class="tocnumber">6</span> <span class="toctext">Reinstalling the game</span></a></li>
-<li class="toclevel-1 tocsection-14"><a href="#References"><span class="tocnumber">7</span> <span class="toctext">参考</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#黑屏"><span class="tocnumber">3</span> <span class="toctext">黑屏</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#控制器问题"><span class="tocnumber">4</span> <span class="toctext">控制器问题</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#DLC/许可问题"><span class="tocnumber">5</span> <span class="toctext">DLC/许可问题</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#重新安装游戏"><span class="tocnumber">6</span> <span class="toctext">重新安装游戏</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#参考资料"><span class="tocnumber">7</span> <span class="toctext">参考资料</span></a></li>
 </ul>
 </div>
 
@@ -79,16 +78,16 @@
 <td>1 TB PCIe Gen 4 NVMe SSD</td>
 <td>512 GB PCIe Gen 4 NVMe SSD
 </td></tr></tbody></table>
-<h3><span class="mw-headline" id="Upscaling">Upscaling</span></h3>
+<h3><span id=".E8.B6.85.E5.88.86.E8.BE.A8.E7.8E.87"></span><span class="mw-headline" id="超分辨率">超分辨率</span></h3>
 <p>Unfortunately, FSR 3.1 is currently only available for Xbox Series X.
 </p>
-<h2><span id="Basic_Performance_.26_Stability"></span><span class="mw-headline" id="Basic_Performance_&amp;_Stability">Basic Performance &amp; 稳定性</span></h2>
+<h2><span id=".E5.9F.BA.E6.9C.AC.E6.80.A7.E8.83.BD.E4.B8.8E.E7.A8.B3.E5.AE.9A.E6.80.A7"></span><span class="mw-headline" id="基本性能与稳定性">基本性能与稳定性</span></h2>
 <p>These are basic steps you can perform if you encounter 崩溃, profile loading errors, performance drops and other problems.
-</p><p><b>Please be aware that "Quick Resume can cause issues.</b>
+</p><p><b>请注意，"快速恢复"功能可能会导致问题。</b>
 </p><p>Because 绝地潜兵 2 is a persistent live-服务 game, Xbox's "Quick Resume" 特性 will break your server 连接 when the 控制台 goes to sleep. This causes infinite black loading screens or profile sync failures upon waking. It's best practice to fully quite the game when you are done playing.
 </p><p>Press the "Menu button (☰)"" on the "绝地潜兵 2" tile and select "Quit".
 </p>
-<h3><span class="mw-headline" id="Updates">Updates</span></h3>
+<h3><span id=".E6.9B.B4.E6.96.B0"></span><span class="mw-headline" id="更新">更新</span></h3>
 <p>Make sure to have the latest XBOX updates<sup id="cite&#95;ref-1" class="reference"><a href="#cite_note-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup> installed.
 </p>
 <ol><li>Go to "Settings".</li>
@@ -96,22 +95,22 @@
 <li>Open "Updates &amp; Downloads".</li>
 <li>下载 and 安装 any available updates.</li>
 <li>The same should also be done for any connected peripherals if possible.</li></ol>
-<p><i>Please ensure that 内容 is fully installed before the 应用程序 is started.</i>
+<p><i>请在启动应用程序前确保内容已完全安装。</i>
 </p>
-<h3><span id="Power_Cycling_.26_Clearing_System_Cache"></span><span class="mw-headline" id="Power_Cycling_&amp;_Clearing_System_Cache">Power Cycling &amp; Clearing System Cache</span></h3>
-<p>Flushing temporary system files can 解决 random performance degradation. Just like computers are capable of <a href="Clearing_The_Shader_Cache.html" title="Clearing The Shader Cache">clearing their cache</a> so can the Xbox.
+<h3><span id=".E7.94.B5.E6.BA.90.E5.BE.AA.E7.8E.AF.E4.B8.8E.E6.B8.85.E9.99.A4.E7.B3.BB.E7.BB.9F.E7.BC.93.E5.AD.98"></span><span class="mw-headline" id="电源循环与清除系统缓存">电源循环与清除系统缓存</span></h3>
+<p>Flushing temporary system files can 解决 random performance degradation. Just like computers are capable of <a href="Clearing_The_Shader_Cache.html" title="Clearing The Shader Cache">清除缓存</a> so can the Xbox.
 </p>
 <ol><li>Press and hold the "Xbox button" on the 正面 of the 控制台 for roughly 10 秒 until it shuts off completely.</li>
 <li>Unplug the power cable from the back.</li>
 <li>Press and hold the power button a few times while unplugged to fully 放电 the internal capacitors.</li>
 <li>Wait 1 minute, reconnect the cable, and turn the 控制台 back on.</li></ol>
-<h3><span id="Clearing_the_Game_.26_Profile_Data"></span><span class="mw-headline" id="Clearing_the_Game_&amp;_Profile_Data">Clearing the Game &amp; Profile Data</span></h3>
+<h3><span id=".E6.B8.85.E9.99.A4.E6.B8.B8.E6.88.8F.E4.B8.8E.E6.A1.A3.E6.A1.88.E6.95.B0.E6.8D.AE"></span><span class="mw-headline" id="清除游戏与档案数据">清除游戏与档案数据</span></h3>
 <p>If your game 崩溃 on startup or you have 麻烦 loading up your player profile, you can clear the local data.
 </p>
 <ol><li>Press Menu (=) on 绝地潜兵 2.</li>
 <li>Select "Manage Game Data and Add-Ons"</li>
 <li>Select "Saved Data".</li>
-<li>Select your <b>Profile</b>.</li>
+<li>Select your <b>档案</b>.</li>
 <li>Choose "Delete from 控制台".</li></ol>
 <div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ 绝地潜兵 2 progress re-syncs from servers. However, for other games, deleting local data may cause permanent loss if not synced to the cloud. ⚠</b></div>
 <p>If you want to clear the entire 更新 cache data, you can also do this:
@@ -120,31 +119,31 @@
 <li>Press the Menu Button (=) on the game.</li>
 <li>Select "Manage Game Data and Add-ons"</li>
 <li>Select "Saved Data"</li>
-<li>Select your <b>Profile</b>.</li>
+<li>Select your <b>档案</b>.</li>
 <li>Choose "Delete Everywhere".</li>
 <li>Now select "Reserved Space"</li>
 <li>Select "Clear Reserved Space".</li>
 <li>Finally select "Profile Data"</li>
 <li>Choose "Delete from 控制台".</li></ol>
-<h3><span class="mw-headline" id="Network_issues">网络 issues</span></h3>
+<h3><span id=".E7.BD.91.E7.BB.9C.E9.97.AE.E9.A2.98"></span><span class="mw-headline" id="网络问题">网络问题</span></h3>
 <p>For help with 网络 problems, please check the respective sections in <a href="Network_Troubleshooting.html" title="Network Troubleshooting">网络 故障排除</a>.
 </p><p><b>请注意：</b> Wired (LAN) connections are 通常 more stable than Wireless (WiFi) connections.
 </p>
-<h3><span class="mw-headline" id="Performance_problems">Performance problems</span></h3>
+<h3><span id=".E6.80.A7.E8.83.BD.E9.97.AE.E9.A2.98"></span><span class="mw-headline" id="性能问题">性能问题</span></h3>
 <ul><li>Drives:
 <ol><li>Please be aware that you cannot play 绝地潜兵 2 via external USB 困难 drivers or USB SSDs. The game must be installed on the <i>Internal SSD</i> or an 官员 存储 扩展包 Card. Regular external USB drives can only be used to store (archive) the game files, not play them in a proper fashion.</li>
 <li>If you have an external drive connected and 经验值 stuttering, please check if performance 变更 by disconnecting the drive. Try formatting the external drive again with the proper file system.</li></ol></li></ul>
 <ul><li>Clear Reserved Data
 <ul><li>Manage Game and Addons -&gt; Delete reserved Data (not game Profile) -&gt; This will delete space for updates and patches</li>
-<li>!Might 要求 a reinstallation of the game.!</li></ul></li></ul>
-<h3><span id="Temperature_.26_Power"></span><span class="mw-headline" id="Temperature_&amp;_Power">温度 &amp; Power</span></h3>
+<li>!可能需要重新安装游戏！</li></ul></li></ul>
+<h3><span id=".E6.B8.A9.E5.BA.A6.E4.B8.8E.E7.94.B5.E6.BA.90"></span><span class="mw-headline" id="温度与电源">温度与电源</span></h3>
 <p>If you encounter your 控制台 suddenly shutting off during intense activity, then this can 表明 problems with 温度 or power supply. It's worth observing this 行为; an 增加 in 频率 can 表明 that something is faulty. Also please check if the 问题 only occurs under 重型 load or if it happens randomly as this can 表明 what's going on exactly.
 </p><p>If you are still within the warranty period and 经验值 shutoffs, you can send it in to have it repaired. Outside of warranty there are shops who offer such repair services albeit there's 否 guarantee that this will 修复 the 问题.
 </p>
 <div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ 致命 SAFETY 警告: If you 嫌疑人 a hardware or power supply failure, DO NOT open the 控制台's Power Supply Unit (PSU) yourself. This is 极其 危险! Power 物资 retain 致命 电力 voltage even when unplugged! Opening the unit can cause severe injury or death and voids your warranty. Always consult a certified 专业 for 物理 repairs. ⚠</b></div>
 <ol><li>It's 重要 to place your 控制台 in a proper position so ventilation of the 控制台 can be ensured. 小型, cramped places will interfere with airflow.</li>
 <li>You might also need to clean out the fans, especially if you are in a household with pets and smokers.</li></ol>
-<h2><span class="mw-headline" id="Black_Screen">Black Screen</span></h2>
+<h2><span id=".E9.BB.91.E5.B1.8F"></span><span class="mw-headline" id="黑屏">黑屏</span></h2>
 <p>If you 经验值 a black screen, please try these steps:
 </p>
 <ul><li>Check HDMI connections.
@@ -154,7 +153,7 @@
 <ul><li>Turn off the 控制台 -&gt; Press the power button while holding the Eject button to boot into low-分辨率 mode -&gt; Reconfigure 显示 Settings.</li></ul></li>
 <li>If you have "Variable 刷新 Rate" on, test out other settings to see if the issue persists.</li>
 <li>If possible, test another 显示 to check if the original 显示 is faulty.</li></ul>
-<h2><span class="mw-headline" id="Controller_Problems">Controller Problems</span></h2>
+<h2><span id=".E6.8E.A7.E5.88.B6.E5.99.A8.E9.97.AE.E9.A2.98"></span><span class="mw-headline" id="控制器问题">控制器问题</span></h2>
 <p>If you 经验值 problems with your controller, try these steps:
 </p>
 <ul><li>Make sure to replace dead batteries in controllers.</li>
@@ -162,10 +161,10 @@
 <li>Make sure to have the firmware updated.
 <ul><li>Go to Settings &gt; Devices &amp; Connections &gt; Accessories to 检查更新.</li>
 <li>Other wireless devices nearby might interfere with the 连接</li></ul></li></ul>
-<h2><span id="DLC_.2F_License_issues"></span><span class="mw-headline" id="DLC_/_License_issues">DLC / 执照 issues</span></h2>
+<h2><span id="DLC.2F.E8.AE.B8.E5.8F.AF.E9.97.AE.E9.A2.98"></span><span class="mw-headline" id="DLC/许可问题">DLC/许可问题</span></h2>
 <p>Set the Xbox as your Home 控制台<sup id="cite&#95;ref-2" class="reference"><a href="#cite_note-2"><span class="cite-bracket">&#91;</span>2<span class="cite-bracket">&#93;</span></a></sup>, as this can 修复 problems with DLCs and Licenses.
 </p>
-<h2><span class="mw-headline" id="Reinstalling_the_game">Reinstalling the game</span></h2>
+<h2><span id=".E9.87.8D.E6.96.B0.E5.AE.89.E8.A3.85.E6.B8.B8.E6.88.8F"></span><span class="mw-headline" id="重新安装游戏">重新安装游戏</span></h2>
 <p>Reinstalling the game may be necessary if other attempts at resolving a 问题 fail.
 </p>
 <ol><li>Highlight the game.</li>
@@ -173,7 +172,7 @@
 <li>Select "Manage game and add-ons".</li>
 <li>Choose "卸载 all" and then "卸载".</li>
 <li>Reinstall the game from your 图书馆 or the Xbox Store.</li></ol>
-<h2><span class="mw-headline" id="References">参考</span></h2>
+<h2><span id=".E5.8F.82.E8.80.83.E8.B5.84.E6.96.99"></span><span class="mw-headline" id="参考资料">参考资料</span></h2>
 <div class="mw-references-wrap"><ol class="references">
 <li id="cite&#95;note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://support.xbox.com/en-US/help/hardware-network/settings-updates/system-update-overview">Xbo 支援 - System 更新 概述</a></span>
 </li>
@@ -211,14 +210,14 @@
 </div></div></div></div></div></div></div>
 <!-- 
 NewPP limit report
-Cached time: 20260818035742
+Cached time: 20260819055454
 Cache expiry: 2592000
 Reduced expiry: false
 Complications: [vary‐revision‐sha1, show‐toc]
-CPU time usage: 0.050 seconds
-Real time usage: 0.077 seconds
+CPU time usage: 0.049 seconds
+Real time usage: 0.071 seconds
 Preprocessor visited node count: 211/1000000
-Revision size: 7534/4194304 bytes
+Revision size: 7446/4194304 bytes
 Post‐expand include size: 8322/4194304 bytes
 Template argument size: 576/4194304 bytes
 Highest expansion depth: 8/100
@@ -234,27 +233,15 @@ Number of Cargo row insertion attempts: 1
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%   53.495      1 -total
- 66.57%   35.613      1 Template:Breadcrumb_Auto
- 23.96%   12.817      1 Template:Navbox_Troubleshooting
- 19.47%   10.413      1 Template:Navbox
-  7.81%    4.177      2 Template:Article_other
-  3.37%    1.803      2 Template:Crash_header
+100.00%   49.222      1 -total
+ 67.98%   33.459      1 Template:Breadcrumb_Auto
+ 22.29%   10.972      1 Template:Navbox_Troubleshooting
+ 18.93%    9.318      1 Template:Navbox
+  6.24%    3.070      2 Template:Article_other
+  3.20%    1.576      2 Template:Crash_header
 -->
-</div></div>
+</div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
-<script>
-功能 toggleTheme(){
-  var h = 文档.documentElement;
-  var alt = h.classList.toggle('view-alt');
-  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
-}
-try {
-  if (localStorage.getItem('hd2theme') === 'alt') {
-    文档.documentElement.classList.add('view-alt');
-  }
-} catch(e) {}
-</script>
 </body>
 </html>

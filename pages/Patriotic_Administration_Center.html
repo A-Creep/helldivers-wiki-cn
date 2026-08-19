@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-helldiver view-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,20 +14,19 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
-    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
   <button class="back-btn" type="button" onclick="history.back()">← 返回</button>
   <h1 class="page-title">爱国行政中心</h1>
-  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><p>the <b>爱国行政中心</b> (<b><span class="explain" title="爱国行政中心">PAC</span></b>）是……上的一个模块 <a href="Super_Destroyer.html" title="Super Destroyer">Super Destroyers</a>, providing access to 舰船管理.
+  <div class="mw-parser-output"><p>the <b>爱国行政中心</b> (<b><span class="explain" title="爱国行政中心">PAC</span></b>）是……上的一个模块 <a href="Super_Destroyer.html" title="Super Destroyer">Super Destroyers</a>, providing access to 舰船管理.
 </p>
 <div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#舰船管理"><span class="tocnumber">1</span> <span class="toctext">舰船管理</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#升级"><span class="tocnumber">2</span> <span class="toctext">升级</span></a>
 <ul>
-<li class="toclevel-2 tocsection-3"><a href="#Appearances"><span class="tocnumber">2.1</span> <span class="toctext">Appearances</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#出场"><span class="tocnumber">2.1</span> <span class="toctext">出场</span></a></li>
 </ul>
 </li>
 </ul>
@@ -48,7 +47,7 @@
 <li>Hand Carts<br />缩短所有……的冷却时间 <b>背包</b> 战略配备，减少 <b>10%</b>.</li>
 <li><a href="Superior_Packing_Methodology.html" title="Superior Packing Methodology">卓越封装方法</a><br /><b>重新补给战略配备</b> 补给箱重新装满 <b>辅助武器</b> 携带最大数量的可携带弹匣。</li>
 <li>Payroll 管理 System<br />减少所有支援武器的装填时间 <b>10%</b>.</li></ul>
-<h3><span class="mw-headline" id="Appearances">Appearances</span></h3>
+<h3><span id=".E5.87.BA.E5.9C.BA"></span><span class="mw-headline" id="出场">出场</span></h3>
 <p>升级你的 <span class="explain" title="爱国行政中心">PAC</span> 会改变其外观。
 </p>
 <ul class="gallery mw-gallery-nolines">
@@ -80,14 +79,14 @@
 
 <!-- 
 NewPP limit report
-Cached time: 20260818034625
+Cached time: 20260819054338
 Cache expiry: 2592000
 Reduced expiry: false
 Complications: [show‐toc]
-CPU time usage: 0.023 seconds
-Real time usage: 0.033 seconds
+CPU time usage: 0.019 seconds
+Real time usage: 0.028 seconds
 Preprocessor visited node count: 74/1000000
-Revision size: 2082/4194304 bytes
+Revision size: 2074/4194304 bytes
 Post‐expand include size: 214/4194304 bytes
 Template argument size: 63/4194304 bytes
 Highest expansion depth: 4/100
@@ -98,23 +97,11 @@ ExtLoops count: 0/5000
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%    3.868      1 -total
- 94.82%    3.668      3 Template:Tooltip
+100.00%    4.105      1 -total
+ 95.88%    3.936      3 Template:Tooltip
 -->
-</div></div>
+</div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
-<script>
-功能 toggleTheme(){
-  var h = 文档.documentElement;
-  var alt = h.classList.toggle('view-alt');
-  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
-}
-try {
-  if (localStorage.getItem('hd2theme') === 'alt') {
-    文档.documentElement.classList.add('view-alt');
-  }
-} catch(e) {}
-</script>
 </body>
 </html>

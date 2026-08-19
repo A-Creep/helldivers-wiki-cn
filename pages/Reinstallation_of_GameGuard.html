@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-helldiver view-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,16 +14,15 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
-    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
   <button class="back-btn" type="button" onclick="history.back()">← 返回</button>
   <h1 class="page-title">Reinstallation of GameGuard</h1>
-  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div><div class="breadcrumb-item breadcrumb-item-final">Reinstallation of GameGuard</div></div>
+  <div class="mw-parser-output"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div><div class="breadcrumb-item breadcrumb-item-final">Reinstallation of GameGuard</div></div>
 <p>This 条款 focuses on how to reinstall GameGuard in the event that the installation has become corrupted or you encounter other issues 相关 to the Anti-Cheat 软件.
 </p>
-<h2><span class="mw-headline" id="How_To">How To</span></h2>
+<h2><span id=".E5.A6.82.E4.BD.95"></span><span class="mw-headline" id="如何">如何</span></h2>
 <p>If you wish to manually reinstall GameGuard:
 </p>
 <ol><li>Navigate to <code>C:\程序 Files (x86)\Steam\steamapps\common\绝地潜兵 2\bin</code>.</li>
@@ -35,7 +34,7 @@
 <p><b>请注意：</b> The actions in Steps 4 and 5 may occur so quickly that it looks like nothing happened.
 </p><p>If you are using the <a href="Hellbomb_Script.html" title="Hellbomb Script">Hellbomb Script</a>:
 </p>
-<ol><li>Open the <code>重置/切换组件</code> menu.</li>
+<ol><li>打开 <code>重置/切换组件</code> menu.</li>
 <li>Select "GameGuard Re-安装".</li></ol>
 <div role="navigation" aria-label="Navbox" class="ranger-navbox navigation-not-searchable striped-even mw-collapsible"><div class="ranger-title"><div class="mw-collapsible-toggle-placeholder"></div></span></span><div class="ranger-title-text"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div></div><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:4"><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Tools</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist"><div class="ranger-list">
 <ul><li><a href="Hellbomb_Script.html" title="Hellbomb Script">Hellbomb Script</a></li>
@@ -68,14 +67,14 @@
 </div></div></div></div></div></div></div>
 <!-- 
 NewPP limit report
-Cached time: 20260818035747
+Cached time: 20260819055501
 Cache expiry: 2592000
 Reduced expiry: false
 Complications: [vary‐revision‐sha1]
 CPU time usage: 0.040 seconds
-Real time usage: 0.062 seconds
+Real time usage: 0.071 seconds
 Preprocessor visited node count: 129/1000000
-Revision size: 854/4194304 bytes
+Revision size: 852/4194304 bytes
 Post‐expand include size: 7563/4194304 bytes
 Template argument size: 47/4194304 bytes
 Highest expansion depth: 8/100
@@ -86,31 +85,19 @@ ExtLoops count: 0/5000
 Lua time usage: 0.010/15.000 seconds
 Lua memory usage: 663897/52428800 bytes
 Number of processed Cargo queries: 2
-Time spent processing Cargo queries: 0.008 s (avg. 0.004 s)
+Time spent processing Cargo queries: 0.009 s (avg. 0.005 s)
 Number of Cargo row insertion attempts: 1
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%   46.775      1 -total
- 74.60%   34.892      1 Template:Breadcrumb_Auto
- 25.08%   11.732      1 Template:Navbox_Troubleshooting
- 21.44%   10.030      1 Template:Navbox
-  7.06%    3.304      2 Template:Article_other
+100.00%   52.409      1 -total
+ 79.92%   41.884      1 Template:Breadcrumb_Auto
+ 19.89%   10.422      1 Template:Navbox_Troubleshooting
+ 16.96%    8.891      1 Template:Navbox
+  8.90%    4.665      2 Template:Article_other
 -->
-</div></div>
+</div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
-<script>
-功能 toggleTheme(){
-  var h = 文档.documentElement;
-  var alt = h.classList.toggle('view-alt');
-  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
-}
-try {
-  if (localStorage.getItem('hd2theme') === 'alt') {
-    文档.documentElement.classList.add('view-alt');
-  }
-} catch(e) {}
-</script>
 </body>
 </html>

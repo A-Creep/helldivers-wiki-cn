@@ -3,12 +3,12 @@
   --wiki-body-background-color:#171717;
   --wiki-content-background-color:#202020;
   --wiki-content-background-color--secondary:#2b2b2b;
-  --wiki-content-border-color:#991A51;
+  --wiki-content-border-color:#f0c800;
   --wiki-content-text-color:#ededed;
   --wiki-content-heading-color:#ffee33;
   --wiki-content-link-color:#ffee33;
-  --wiki-accent-color:#ff1980;
-  --wiki-accent-color--hover:#D82073;
+  --wiki-accent-color:#f0c800;
+  --wiki-accent-color--hover:#d4a017;
   --wiki-accent-label-color:#000;
   --wiki-alert-color:#FC3B2C;
   --wiki-warning-color:#cf721c;
@@ -106,7 +106,7 @@ a:hover{text-decoration:underline}
   border:2px solid #3a3a3a;color:var(--wiki-content-text-color);border-radius:6px;
   padding:12px 16px;font-size:16px;font-family:var(--font-body)}
 .home-search:focus{border-color:var(--wiki-accent-color);outline:none;
-  box-shadow:0 0 12px rgba(255,0,128,.25)}
+  box-shadow:0 0 12px rgba(240,200,0,.25)}
 .cat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;
   max-width:1160px;margin:0 auto 30px;padding:0 16px}
 .cat-card{background:#1e1e1e;border:1px solid #333;border-left:2px solid var(--wiki-accent-color);
@@ -396,34 +396,20 @@ html,body{overflow-x:hidden}
 .mw-parser-output .weapon-card{padding:8px 10px}
 .mw-parser-output .weapon-card table{font-size:11.5px}
 
-/* ============ E #76 双配色主题切换 ============ */
-/* 配色1（默认）：黄色文字 + 黑黄边框 */
+/* ============ E #76 固定黑金主题（已删除配色切换） ============ */
 :root{
   --e-border:#000000;
-  --e-border-accent:#ffd700;
-  --e-head-text:#ffd700;
-  --e-link:#ffd700;
+  --e-border-accent:#f0c800;
+  --e-head-text:#f0c800;
+  --e-link:#f0c800;
   --e-title-bg:#2e2e2e;
-  --e-title-text:#ffd700;
-  --e-table-head-text:#ffd700;
+  --e-title-text:#f0c800;
+  --e-table-head-text:#f0c800;
   --e-table-head-bg:#2a2a2a;
   --e-btn-bg:#232323;
   --e-btn-border:#555;
 }
-/* 配色2：紫红边框 + 蓝字（当前版本） */
-html.view-alt{
-  --e-border:#991A51;
-  --e-border-accent:#991A51;
-  --e-head-text:#e8e8e8;
-  --e-link:#7db4ff;
-  --e-title-bg:#3a3a3a;
-  --e-title-text:#fff;
-  --e-table-head-text:#fff;
-  --e-table-head-bg:#2c2c2c;
-  --e-btn-bg:#232323;
-  --e-btn-border:#444;
-}
-/* 应用双主题变量 */
+/* 应用固定主题变量 */
 .mw-parser-output a{color:var(--e-link)}
 .page-title{color:var(--e-head-text);border-bottom:2px solid var(--e-border-accent)}
 .mw-parser-output h2,.mw-parser-output h3,.mw-parser-output h4{color:var(--e-head-text)}
@@ -433,10 +419,6 @@ html.view-alt{
 .mw-parser-output .wikitable th,.mw-parser-output table.enemy-attack-stats th{
   background:var(--e-table-head-bg);color:var(--e-table-head-text)}
 .back-btn{background:var(--e-btn-bg);border:1px solid var(--e-btn-border);color:#ccc}
-.theme-toggle{background:var(--e-btn-bg);border:1px solid var(--e-btn-border);
-  color:var(--e-link);border-radius:4px;padding:6px 12px;font-size:13px;cursor:pointer;
-  margin-left:8px}
-.theme-toggle:hover{border-color:var(--e-link)}
 
 /* ============ E #80/#81 敌人分类页种族配色 ============ */
 :root{
@@ -453,3 +435,29 @@ html.view-alt{
 .cat-group.faction-illum .cat-group-title,
 .cat-group.faction-illum .cat-name,
 .cat-group.faction-illum .cat-en{color:var(--faction-illum)}
+
+/* ============ E #96 双栏 Grid 布局 + 金色装饰 ============ */
+.content{max-width:1280px;padding:18px 20px 70px}
+.page-container{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:24px;
+  max-width:1200px;margin:0 auto;align-items:start}
+.page-main{min-width:0}
+.page-side{min-width:0}
+.page-side .druid-infobox,.page-side .infobox{float:none;width:320px;max-width:100%;
+  margin:0;position:sticky;top:80px}
+.page-main .toc{position:sticky;top:80px;width:fit-content;max-width:100%;margin-bottom:18px}
+.back-btn{margin:0 0 6px}
+.page-title{margin:4px 0 14px;border-bottom:0}
+.page-title::after{content:"";display:block;height:2px;
+  background:linear-gradient(90deg,#f0c800,transparent);margin-top:8px}
+.mw-parser-output h2{border-bottom:0}
+.mw-parser-output h2::after{content:"";display:block;height:1px;
+  background:linear-gradient(90deg,#f0c800,transparent);margin-top:6px}
+.mw-parser-output blockquote{border:0;border-left:4px solid #f0c800;
+  background:rgba(240,200,0,.05);padding:12px 16px;margin:16px 0;line-height:1.5;
+  border-radius:4px}
+.mw-parser-output hr,hr{border:0;border-top:1px solid #f0c800}
+@media (max-width:900px){
+  .page-container{grid-template-columns:1fr;gap:16px}
+  .page-side .druid-infobox,.page-side .infobox{position:static;width:100%}
+  .page-main .toc{position:static;width:100%}
+}

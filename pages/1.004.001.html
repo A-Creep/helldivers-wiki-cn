@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-helldiver view-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,70 +14,62 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
-    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
   <button class="back-btn" type="button" onclick="history.back()">← 返回</button>
   <h1 class="page-title">1.004.001</h1>
-  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Game_Version.html" title="Game Version">游戏版本</a></div><div class="breadcrumb-item breadcrumb-item-final">1.004.001</div></div>
-<div class="druid-infobox druid-container noexcerpt" id="druid-container-1"><div><div class="druid-title">1.004.001</div></div><div class="druid-section-container"><div class="druid-main-image"><img alt="HD2 Construction Tag.png" src="../images/HD2_Construction_Tag.webp" decoding="async" loading="lazy" width="1920" height="622" data-file-width="1920" data-file-height="622" /></div></div><div class="druid-section-container"><div class="druid-row druid-row-release&#95;date" data-druid-section-row="Info"><div class="druid-label druid-label-release&#95;date">发布日期</div><div class="druid-data druid-data-release&#95;date druid-data-nonempty">
-2025-09-04</div></div><div class="druid-row druid-row-release&#95;time" data-druid-section-row="Info"><div class="druid-label druid-label-release&#95;time">Release time</div><div class="druid-data druid-data-release&#95;time druid-data-nonempty">
-9:00 UTC</div></div><div class="druid-row druid-row-size" data-druid-section-row="Info"><div class="druid-label druid-label-size">更新 Size</div><div class="druid-data druid-data-size druid-data-nonempty">
-3.4GB</div></div><div class="druid-row druid-row-versions" data-druid-section-row="Info"><div class="druid-label druid-label-versions">Versions</div><div class="druid-data druid-data-versions druid-data-nonempty">
-<a href="Game_Version.html" title="Game Version">1.004.001</a></div></div><div class="druid-row druid-row-blog" data-druid-section-row="Info"><div class="druid-label druid-label-blog">博客文章</div><div class="druid-data druid-data-blog druid-data-nonempty">
-<a rel="nofollow" class="external free" href="https://steamcommunity.com/games/553850/announcements/detail/516346126609155528?snr=2___">https://steamcommunity.com/games/553850/announcements/detail/516346126609155528?snr=2___</a></div></div></div><div class="druid-section-container"><div data-druid-section="Chronology"><div class="druid-section druid-section-Chronology">时间线</div></div><div class="druid-row druid-row-previous" data-druid-section-row="Chronology"><div class="druid-label druid-label-previous">上一个</div><div class="druid-data druid-data-previous druid-data-nonempty">
-<a href="1.004.000.html" title="1.004.000">1.004.000</a></div></div><div class="druid-row druid-row-next" data-druid-section-row="Chronology"><div class="druid-label druid-label-next">下一个</div><div class="druid-data druid-data-next druid-data-nonempty">
-<a href="1.004.002.html" title="1.004.002">1.004.002</a></div></div></div></div>
-<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+  <div class="mw-parser-output"><div class="page-container"><div class="page-main"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#概述"><span class="tocnumber">1</span> <span class="toctext">概述</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="#Balancing"><span class="tocnumber">2</span> <span class="toctext">Balancing</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#平衡性调整"><span class="tocnumber">2</span> <span class="toctext">平衡性调整</span></a></li>
 <li class="toclevel-1 tocsection-3"><a href="#修复"><span class="tocnumber">3</span> <span class="toctext">修复</span></a>
 <ul>
-<li class="toclevel-2 tocsection-4"><a href="#General_Fixes"><span class="tocnumber">3.1</span> <span class="toctext">基本信息 Fixes</span></a>
+<li class="toclevel-2 tocsection-4"><a href="#常规修复"><span class="tocnumber">3.1</span> <span class="toctext">常规修复</span></a>
 <ul>
-<li class="toclevel-3 tocsection-5"><a href="#Weapons_&amp;_Stratagem_Fixes"><span class="tocnumber">3.1.1</span> <span class="toctext">武器 &amp; 战略配备 Fixes</span></a></li>
+<li class="toclevel-3 tocsection-5"><a href="#武器与战略配备修复"><span class="tocnumber">3.1.1</span> <span class="toctext">武器与战略配备修复</span></a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-</div>
+</div><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Game_Version.html" title="Game Version">游戏版本</a></div><div class="breadcrumb-item breadcrumb-item-final">1.004.001</div></div>
+
+
 
 <h1><span id=".E6.A6.82.E8.BF.B0"></span><span class="mw-headline" id="概述">概述</span></h1>
 <p>崩溃修复<br />
-Dust Devils item buffs
+尘卷风物品增强
 </p>
-<h1><span class="mw-headline" id="Balancing">Balancing</span></h1>
+<h1><span id=".E5.B9.B3.E8.A1.A1.E6.80.A7.E8.B0.83.E6.95.B4"></span><span class="mw-headline" id="平衡性调整">平衡性调整</span></h1>
 <ul><li><a href="MS-11_Solo_Silo.html" title="MS-11 Solo Silo">MS-11 Solo Silo</a>
-<ul><li>冷却 已更改 from 210s to 180s</li></ul></li>
+<ul><li>冷却时间从210秒改为180秒</li></ul></li>
 <li><a href="S-11_Speargun.html" title="S-11 Speargun">S-11 Speargun</a>
-<ul><li>已减少 换弹 持续时间 3.5 -&gt; 2.5 sec</li></ul></li></ul>
+<ul><li>装填时间从3.5秒降低至2.5秒</li></ul></li></ul>
 <h1><span id=".E4.BF.AE.E5.A4.8D"></span><span class="mw-headline" id="修复">修复</span></h1>
-<h2><span class="mw-headline" id="General_Fixes">基本信息 Fixes</span></h2>
-<ul><li>Fixed a crash that can happen when too many particle 效果 are spawned</li>
-<li>Fixed a crash when 绝地潜兵 are in Hellpods after being reinforced</li>
-<li>Fixed an issue where 轻型 emitted by the Hellpad could become excessively bright under certain conditions</li>
-<li>基本信息 crash 修复 occurring during 机器人 missions</li>
-<li>Fixed issue in which 虫窝世界 tunnels would become darker than intended in certain circumstances when a user is using lower graphics settings</li>
-<li>Fixed a crash that could occur if the 目标 of a seeking 导弹 gets deleted before impact</li>
-<li>The 撤离 运输船 will land in a more safe and sound manner</li></ul>
-<h3><span id="Weapons_.26_Stratagem_Fixes"></span><span class="mw-headline" id="Weapons_&amp;_Stratagem_Fixes">武器 &amp; 战略配备 Fixes</span></h3>
-<ul><li>Fixed the <a href="LIFT-182_Warp_Pack.html" title="LIFT-182 Warp Pack">LIFT-182 Warp Pack</a> getting stuck suspended in the air or crashing</li>
-<li>Fixed a rare crash caused by 多个 玩家 having the MA5C AR equipped on the 超级驱逐舰</li>
-<li>Fixed Displacements Backpack VFX issues whilst aiming down sights</li>
-<li>Fixed a rare crash which could occur when aborting a 任务 while a player was wielding a turret or driving a 载具</li></ul>
+<h2><span id=".E5.B8.B8.E8.A7.84.E4.BF.AE.E5.A4.8D"></span><span class="mw-headline" id="常规修复">常规修复</span></h2>
+<ul><li>修复了生成过多粒子效果时可能发生的崩溃</li>
+<li>修复了绝地潜兵在增援后处于地狱舱内时的崩溃问题</li>
+<li>修复了绝地停机坪发出的光在特定条件下可能变得过度明亮的问题</li>
+<li>修复了机器人任务期间发生的通用崩溃问题</li>
+<li>修复了当用户使用较低画质设置时，虫窝世界隧道在某些情况下会变得比预期更暗的问题</li>
+<li>修复了如果追踪导弹的目标在命中前被删除可能发生的崩溃</li>
+<li>撤离运输船将以更安全稳妥的方式着陆</li></ul>
+<h3><span id=".E6.AD.A6.E5.99.A8.E4.B8.8E.E6.88.98.E7.95.A5.E9.85.8D.E5.A4.87.E4.BF.AE.E5.A4.8D"></span><span class="mw-headline" id="武器与战略配备修复">武器与战略配备修复</span></h3>
+<ul><li>Fixed the <a href="LIFT-182_Warp_Pack.html" title="LIFT-182 Warp Pack">LIFT-182 Warp Pack</a> 修复了卡在半空中或崩溃的问题</li>
+<li>修复了多名玩家在超级驱逐舰上装备MA5C AR导致的罕见崩溃</li>
+<li>修复了位移背包在瞄准时的视觉效果问题</li>
+<li>修复了当玩家持握炮塔或驾驶载具时中止任务可能发生的罕见崩溃</li></ul>
 <!-- 
 NewPP limit report
-Cached time: 20260818035602
+Cached time: 20260819055316
 Cache expiry: 2592000
 Reduced expiry: false
 Complications: [vary‐revision‐sha1, show‐toc]
-CPU time usage: 0.042 seconds
-Real time usage: 0.069 seconds
+CPU time usage: 0.051 seconds
+Real time usage: 0.104 seconds
 Preprocessor visited node count: 180/1000000
-Revision size: 1563/4194304 bytes
+Revision size: 1416/4194304 bytes
 Post‐expand include size: 5326/4194304 bytes
 Template argument size: 73/4194304 bytes
 Highest expansion depth: 8/100
@@ -85,34 +77,29 @@ Expensive parser function count: 2/500
 Unstrip recursion depth: 0/20
 Unstrip post‐expand size: 0/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.010/15.000 seconds
+Lua time usage: 0.013/15.000 seconds
 Lua memory usage: 663740/52428800 bytes
 Number of processed Cargo queries: 2
-Time spent processing Cargo queries: 0.008 s (avg. 0.004 s)
+Time spent processing Cargo queries: 0.013 s (avg. 0.007 s)
 Number of Cargo row insertion attempts: 1
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%   48.656      1 Template:Infobox_Game_Version
-100.00%   48.656      1 -total
- 69.81%   33.967      1 Template:Breadcrumb_Auto
-  6.89%    3.353      1 Template:Article_other
-  4.58%    2.229      2 Template:Update
+100.00%   74.838      1 Template:Infobox_Game_Version
+100.00%   74.838      1 -total
+ 70.77%   52.964      1 Template:Breadcrumb_Auto
+  7.58%    5.670      1 Template:Article_other
+  3.79%    2.835      2 Template:Update
 -->
-</div></div>
+</div><aside class="page-side"><div class="druid-infobox druid-container noexcerpt" id="druid-container-1"><div><div class="druid-title">1.004.001</div></div><div class="druid-section-container"><div class="druid-main-image"><img alt="HD2 Construction Tag.png" src="../images/HD2_Construction_Tag.webp" decoding="async" loading="lazy" width="1920" height="622" data-file-width="1920" data-file-height="622" /></div></div><div class="druid-section-container"><div class="druid-row druid-row-release&#95;date" data-druid-section-row="Info"><div class="druid-label druid-label-release&#95;date">发布日期</div><div class="druid-data druid-data-release&#95;date druid-data-nonempty">
+2025-09-04</div></div><div class="druid-row druid-row-release&#95;time" data-druid-section-row="Info"><div class="druid-label druid-label-release&#95;time">Release time</div><div class="druid-data druid-data-release&#95;time druid-data-nonempty">
+9:00 UTC</div></div><div class="druid-row druid-row-size" data-druid-section-row="Info"><div class="druid-label druid-label-size">更新 Size</div><div class="druid-data druid-data-size druid-data-nonempty">
+3.4GB</div></div><div class="druid-row druid-row-versions" data-druid-section-row="Info"><div class="druid-label druid-label-versions">Versions</div><div class="druid-data druid-data-versions druid-data-nonempty">
+<a href="Game_Version.html" title="Game Version">1.004.001</a></div></div><div class="druid-row druid-row-blog" data-druid-section-row="Info"><div class="druid-label druid-label-blog">博客文章</div><div class="druid-data druid-data-blog druid-data-nonempty">
+<a rel="nofollow" class="external free" href="https://steamcommunity.com/games/553850/announcements/detail/516346126609155528?snr=2___">https://steamcommunity.com/games/553850/announcements/detail/516346126609155528?snr=2___</a></div></div></div><div class="druid-section-container"><div data-druid-section="Chronology"><div class="druid-section druid-section-Chronology">时间线</div></div><div class="druid-row druid-row-previous" data-druid-section-row="Chronology"><div class="druid-label druid-label-previous">上一个</div><div class="druid-data druid-data-previous druid-data-nonempty">
+<a href="1.004.000.html" title="1.004.000">1.004.000</a></div></div><div class="druid-row druid-row-next" data-druid-section-row="Chronology"><div class="druid-label druid-label-next">下一个</div><div class="druid-data druid-data-next druid-data-nonempty">
+<a href="1.004.002.html" title="1.004.002">1.004.002</a></div></div></div></div></aside></div></div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
-<script>
-功能 toggleTheme(){
-  var h = 文档.documentElement;
-  var alt = h.classList.toggle('view-alt');
-  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
-}
-try {
-  if (localStorage.getItem('hd2theme') === 'alt') {
-    文档.documentElement.classList.add('view-alt');
-  }
-} catch(e) {}
-</script>
 </body>
 </html>

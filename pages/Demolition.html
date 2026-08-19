@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-helldiver view-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +14,6 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
-    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
@@ -25,23 +24,23 @@
 </p>
 <div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="#Demolition_Force_&amp;_Structures"><span class="tocnumber">1</span> <span class="toctext">爆破力 &amp; Structures</span></a>
+<li class="toclevel-1 tocsection-1"><a href="#爆破力与结构"><span class="tocnumber">1</span> <span class="toctext">爆破力与结构</span></a>
 <ul>
-<li class="toclevel-2 tocsection-2"><a href="#Demolition_Force_Sources"><span class="tocnumber">1.1</span> <span class="toctext">爆破力 Sources</span></a></li>
-<li class="toclevel-2 tocsection-3"><a href="#Demolition_Force_vs._Structures"><span class="tocnumber">1.2</span> <span class="toctext">爆破力 vs. Structures</span></a></li>
+<li class="toclevel-2 tocsection-2"><a href="#爆破部队来源"><span class="tocnumber">1.1</span> <span class="toctext">爆破部队来源</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#爆破部队_vs._建筑"><span class="tocnumber">1.2</span> <span class="toctext">爆破部队 vs. 建筑</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-4"><a href="#References"><span class="tocnumber">2</span> <span class="toctext">参考</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#参考资料"><span class="tocnumber">2</span> <span class="toctext">参考资料</span></a></li>
 </ul>
 </div>
 
-<h2><span id="Demolition_Force_.26_Structures"></span><span class="mw-headline" id="Demolition_Force_&amp;_Structures">爆破力 &amp; Structures</span></h2>
+<h2><span id=".E7.88.86.E7.A0.B4.E5.8A.9B.E4.B8.8E.E7.BB.93.E6.9E.84"></span><span class="mw-headline" id="爆破力与结构">爆破力与结构</span></h2>
 <p>All destructible structures in- game have a 爆破 Threshold between 10 and 60.
 </p><p>In order to 摧毁 a 建筑, the user needs to be using a weapon/战略配备 that has enough 爆破力. Explosions have 爆破力 fall-off in the 外圈半径. 护甲穿透 is irrelevant to this check, as is 伤害, and whether or not the 攻击 is 爆炸. When the threshold is met, the 建筑 will be destroyed. 
-</p><p>The exceptions to this are enemy spawners; <a href="Bug_Hole.html" title="Bug Hole">虫洞</a>, <a href="Automaton_Fabricator.html" title="Automaton Fabricator">机器人 Fabricators</a>, <a href="Bulk_Fabricator.html" title="Bulk Fabricator">巨型构筑者</a> 和 <a href="Grounded_Warp_Ship.html" title="Grounded Warp Ship">停靠的跃迁舰</a>, which 要求 a <b>最小</b> 爆破力 of <b>20</b> and the <i>爆炸</i> property to 摧毁 via their open hole, 通风口 and door; as they have <b>B</b>allistic <b>D</b>emolition <b>R</b>esistance, or BaDR. 弹道 爆破 抗性 means that the 建筑(s) resists 爆破力 from non-爆炸 projectiles such as bullets or 电 arcs. For 示例, an <a href="E_MG-101_HMG_Emplacement.html" title="E/MG-101 HMG Emplacement">E/MG-101 重机枪部署支架</a> which has a 爆破力 of 20, but is not 爆炸. Therefore, it will not 摧毁 the 建筑.
-</p><p>Note: Certain structures such as <a href="Spore_Spewer.html" title="Spore Spewer">Spore 喷吐者</a> 和 <a href="Shrieker_Nest.html" title="Shrieker Nest">尖啸虫巢穴</a>, are not labeled as structures that 要求 爆破力 to 摧毁. These entities are considered non-moving enemy units with low 护甲 Value, high HP, and 耐久度. The only exceptions to this are 机器人 Fabricators, Bulk Fabricators and Grounded Warp Ships, which use both 生命值, 护甲, and 爆破力 systems.
+</p><p>The exceptions to this are enemy spawners; <a href="Bug_Hole.html" title="Bug Hole">虫洞</a>, <a href="Automaton_Fabricator.html" title="Automaton Fabricator">机器人构筑者</a>, <a href="Bulk_Fabricator.html" title="Bulk Fabricator">巨型构筑者</a> 和 <a href="Grounded_Warp_Ship.html" title="Grounded Warp Ship">停靠的跃迁舰</a>, which 要求 a <b>最小</b> 爆破力 of <b>20</b> and the <i>爆炸</i> property to 摧毁 via their open hole, 通风口 and door; as they have <b>B</b>allistic <b>D</b>emolition <b>R</b>esistance, or BaDR. 弹道 爆破 抗性 means that the 建筑(s) resists 爆破力 from non-爆炸 projectiles such as bullets or 电 arcs. For 示例, an <a href="E_MG-101_HMG_Emplacement.html" title="E/MG-101 HMG Emplacement">E/MG-101 重机枪部署支架</a> which has a 爆破力 of 20, but is not 爆炸. Therefore, it will not 摧毁 the 建筑.
+</p><p>Note: Certain structures such as <a href="Spore_Spewer.html" title="Spore Spewer">孢子喷涌虫</a> 和 <a href="Shrieker_Nest.html" title="Shrieker Nest">尖啸虫巢穴</a>, are not labeled as structures that 要求 爆破力 to 摧毁. These entities are considered non-moving enemy units with low 护甲 Value, high HP, and 耐久度. The only exceptions to this are 机器人 Fabricators, Bulk Fabricators and Grounded Warp Ships, which use both 生命值, 护甲, and 爆破力 systems.
 </p>
-<h3><span class="mw-headline" id="Demolition_Force_Sources">爆破力 Sources</span></h3>
+<h3><span id=".E7.88.86.E7.A0.B4.E9.83.A8.E9.98.9F.E6.9D.A5.E6.BA.90"></span><span class="mw-headline" id="爆破部队来源">爆破部队来源</span></h3>
 <p>A variety of 武器 and other gear used by 绝地潜兵 are capable of destroying structures. The following tables list all sources of at least <b>20</b> 爆破力 available to 玩家, along with their 爆破力 values and whether they are considered 爆炸.
 </p>
 <table class="wikitable sortable mw-collapsible mw-collapsed">
@@ -1283,7 +1282,7 @@
 <td>是
 </td></tr>
 <tr>
-<td rowspan="2"><a href="Take_Down_Overship.html" title="Take Down Overship">行星 防御 Cannon</a>
+<td rowspan="2"><a href="Take_Down_Overship.html" title="Take Down Overship">行星防御加农炮</a>
 </td>
 <td>投射物
 </td>
@@ -1314,7 +1313,7 @@
 </td>
 <td>是
 </td></tr></tbody></table>
-<h3><span class="mw-headline" id="Demolition_Force_vs._Structures">爆破力 vs. Structures</span></h3>
+<h3><span id=".E7.88.86.E7.A0.B4.E9.83.A8.E9.98.9F_vs._.E5.BB.BA.E7.AD.91"></span><span class="mw-headline" id="爆破部队_vs._建筑">爆破部队 vs. 建筑</span></h3>
 <table class="wikitable sortable">
 <tbody><tr>
 <th>阵营</th>
@@ -1330,12 +1329,12 @@
 <td>20
 </td></tr>
 <tr>
-<td><a href="Missions.html#Terminate_Illegal_Broadcast_Tower" title="Missions">非法 广播 Tower</a></td>
+<td><a href="Missions.html#Terminate_Illegal_Broadcast_Tower" title="Missions">非法广播塔</a></td>
 <td>否</td>
 <td>30
 </td></tr>
 <tr>
-<td><a href="Destroy_Rogue_Research_Station.html" title="Destroy Rogue Research Station">Rogue 研究 车站</a></td>
+<td><a href="Destroy_Rogue_Research_Station.html" title="Destroy Rogue Research Station">Rogue 研究站</a></td>
 <td>否</td>
 <td>50
 </td></tr>
@@ -1347,17 +1346,17 @@
 <td>40
 </td></tr>
 <tr>
-<td><a href="Evacuate_High-Value_Assets.html#Defense_Gate" title="Evacuate High-Value Assets">防御 Gate</a></td>
+<td><a href="Evacuate_High-Value_Assets.html#Defense_Gate" title="Evacuate High-Value Assets">防御大门</a></td>
 <td>否</td>
 <td>40
 </td></tr>
 <tr>
-<td><a href="Evacuate_High-Value_Assets.html#Generator" title="Evacuate High-Value Assets">防御 发电机</a></td>
+<td><a href="Evacuate_High-Value_Assets.html#Generator" title="Evacuate High-Value Assets">防御发电机</a></td>
 <td>否</td>
 <td>40
 </td></tr>
 <tr>
-<td>Megacity Structures
+<td>特大城市 建筑
 </td>
 <td>否
 </td>
@@ -1366,7 +1365,7 @@
 <tr>
 <th rowspan="6"><span class="faction-icon icon-outline"><a href="Terminids.html" title="Terminids"><img class="wiki-icon" alt="" src="../images/Terminid_Icon.svg" decoding="async" loading="lazy" width="512" height="512" data-file-width="512" data-file-height="512" /></a>&#160;<a href="Terminids.html" title="Terminids">终结族 Horde</a></span>
 </th>
-<td><a href="Bug_Hole.html#Bile_Titan_Bug_Hole" title="Bug Hole">吐酸泰坦 虫穴</a></td>
+<td><a href="Bug_Hole.html#Bile_Titan_Bug_Hole" title="Bug Hole">吐酸泰坦虫穴</a></td>
 <td>否</td>
 <td>40
 </td></tr>
@@ -1388,7 +1387,7 @@
 <td>50
 </td></tr>
 <tr>
-<td><a href="Shrieker_Nest.html" title="Shrieker Nest">尖啸虫巢穴 Tower</a></td>
+<td><a href="Shrieker_Nest.html" title="Shrieker Nest">尖啸虫巢塔</a></td>
 <td>否</td>
 <td>60
 </td></tr>
@@ -1400,7 +1399,7 @@
 <tr>
 <th rowspan="10"><span class="faction-icon icon-outline"><a href="Automatons.html" title="Automatons"><img class="wiki-icon" alt="" src="../images/Automaton_Icon.svg" decoding="async" loading="lazy" width="512" height="512" data-file-width="512" data-file-height="512" /></a>&#160;<a href="Automatons.html" title="Automatons">机器人 Legion</a></span>
 </th>
-<td><a href="Enemy_Bio-Processors.html" title="Enemy Bio-Processors">Bio-处理器</a></td>
+<td><a href="Enemy_Bio-Processors.html" title="Enemy Bio-Processors">生物处理器</a></td>
 <td>否</td>
 <td>40
 </td></tr>
@@ -1430,7 +1429,7 @@
 <td>20
 </td></tr>
 <tr>
-<td><a href="Sabotage_Supply_Bases.html#Destroy_Fuel_Reserves" title="Sabotage Supply Bases">Fuel 储备</a></td>
+<td><a href="Sabotage_Supply_Bases.html#Destroy_Fuel_Reserves" title="Sabotage Supply Bases">燃料储备</a></td>
 <td>否</td>
 <td>60
 </td></tr>
@@ -1482,7 +1481,7 @@
 <td>20
 </td></tr>
 <tr>
-<td><a href="Monolith.html" title="Monolith">Monolith</a></td>
+<td><a href="Monolith.html" title="Monolith">巨石</a></td>
 <td>否</td>
 <td>60
 </td></tr></tbody></table>
@@ -1492,17 +1491,5 @@
 </div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
-<script>
-功能 toggleTheme(){
-  var h = 文档.documentElement;
-  var alt = h.classList.toggle('view-alt');
-  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
-}
-try {
-  if (localStorage.getItem('hd2theme') === 'alt') {
-    文档.documentElement.classList.add('view-alt');
-  }
-} catch(e) {}
-</script>
 </body>
 </html>

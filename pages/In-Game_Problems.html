@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-helldiver view-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,78 +14,77 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
-    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
   <button class="back-btn" type="button" onclick="history.back()">← 返回</button>
   <h1 class="page-title">In-Game Problems</h1>
-  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div><div class="breadcrumb-item breadcrumb-item-final">In-Game Problems</div></div>
+  <div class="mw-parser-output"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div><div class="breadcrumb-item breadcrumb-item-final">In-Game Problems</div></div>
 <p>These problems relate to issues you encounter while being in-game in <a href="Helldivers_2.html" title="Helldivers 2">绝地潜兵 2</a>.
 </p>
 <div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="#FAQ"><span class="tocnumber">1</span> <span class="toctext">FAQ</span></a>
+<li class="toclevel-1 tocsection-1"><a href="#常见问题"><span class="tocnumber">1</span> <span class="toctext">常见问题</span></a>
 <ul>
-<li class="toclevel-2 tocsection-2"><a href="#Account_ID"><span class="tocnumber">1.1</span> <span class="toctext">账户 ID</span></a></li>
-<li class="toclevel-2 tocsection-3"><a href="#Antivirus_reports_malicious_files"><span class="tocnumber">1.2</span> <span class="toctext">Antivirus reports malicious files</span></a></li>
-<li class="toclevel-2 tocsection-4"><a href="#Can_I_refund_in-game_items?"><span class="tocnumber">1.3</span> <span class="toctext">Can I refund in-game items?</span></a></li>
-<li class="toclevel-2 tocsection-5"><a href="#Cross_Progression"><span class="tocnumber">1.4</span> <span class="toctext">Cross Progression</span></a></li>
-<li class="toclevel-2 tocsection-6"><a href="#I_want_to_report_a_bug_that_I_have_found"><span class="tocnumber">1.5</span> <span class="toctext">I want to report a bug that I have found</span></a></li>
-<li class="toclevel-2 tocsection-7"><a href="#I_want_to_give_Arrowhead_feedback"><span class="tocnumber">1.6</span> <span class="toctext">I want to give Arrowhead feedback</span></a></li>
-<li class="toclevel-2 tocsection-8"><a href="#Offline_play"><span class="tocnumber">1.7</span> <span class="toctext">离线 play</span></a>
+<li class="toclevel-2 tocsection-2"><a href="#账户ID"><span class="tocnumber">1.1</span> <span class="toctext">账户ID</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#杀毒软件报告恶意文件"><span class="tocnumber">1.2</span> <span class="toctext">杀毒软件报告恶意文件</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#我能退还游戏内物品吗？"><span class="tocnumber">1.3</span> <span class="toctext">我能退还游戏内物品吗？</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#跨平台进度"><span class="tocnumber">1.4</span> <span class="toctext">跨平台进度</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#我想举报我发现的一个漏洞"><span class="tocnumber">1.5</span> <span class="toctext">我想举报我发现的一个漏洞</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#我想向Arrowhead提供反馈"><span class="tocnumber">1.6</span> <span class="toctext">我想向Arrowhead提供反馈</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#损毁游玩"><span class="tocnumber">1.7</span> <span class="toctext">损毁游玩</span></a>
 <ul>
 <li class="toclevel-3 tocsection-9"><a href="#PlayStation+_/_Xbox_Game_Pass"><span class="tocnumber">1.7.1</span> <span class="toctext">PlayStation+ / Xbox Game Pass</span></a></li>
 </ul>
 </li>
-<li class="toclevel-2 tocsection-10"><a href="#Can_I_play_with_Mouse_&amp;_Keyboard_on_Console?"><span class="tocnumber">1.8</span> <span class="toctext">Can I play with Mouse &amp; Keyboard on 控制台</span></a></li>
-<li class="toclevel-2 tocsection-11"><a href="#Time-Limited_Items"><span class="tocnumber">1.9</span> <span class="toctext">Time-有限 Items</span></a></li>
-<li class="toclevel-2 tocsection-12"><a href="#Warbond_Token"><span class="tocnumber">1.10</span> <span class="toctext">战争债券 Token</span></a></li>
-<li class="toclevel-2 tocsection-13"><a href="#Why_do_I_have_to_buy_the_Killzone_Warbond?_I_thought_it_was_free?"><span class="tocnumber">1.11</span> <span class="toctext">Why do I have to buy the Killzone 战争债券 I 思想 it was free?</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#我能在主机上使用鼠标及键盘游玩吗？"><span class="tocnumber">1.8</span> <span class="toctext">我能在主机上使用鼠标及键盘游玩吗？</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#限时物品"><span class="tocnumber">1.9</span> <span class="toctext">限时物品</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#战争债券代币"><span class="tocnumber">1.10</span> <span class="toctext">战争债券代币</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#为什么我必须购买杀戮地带战争债券？我以为它是免费的？"><span class="tocnumber">1.11</span> <span class="toctext">为什么我必须购买杀戮地带战争债券？我以为它是免费的？</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-14"><a href="#Can&#39;t_Start_Missions"><span class="tocnumber">2</span> <span class="toctext">Can't Start Missions</span></a></li>
-<li class="toclevel-1 tocsection-15"><a href="#Galactic_War_Map_Crashes"><span class="tocnumber">3</span> <span class="toctext">星系战争地图 崩溃</span></a>
+<li class="toclevel-1 tocsection-14"><a href="#无法开始任务"><span class="tocnumber">2</span> <span class="toctext">无法开始任务</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#银河战争地图崩溃"><span class="tocnumber">3</span> <span class="toctext">银河战争地图崩溃</span></a>
 <ul>
-<li class="toclevel-2 tocsection-16"><a href="#Stuck_on_Cyberstan"><span class="tocnumber">3.1</span> <span class="toctext">Stuck on Cyberstan</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#卡在赛博斯坦"><span class="tocnumber">3.1</span> <span class="toctext">卡在赛博斯坦</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-17"><a href="#4th_Player_crashes_the_game"><span class="tocnumber">4</span> <span class="toctext">4th Player 崩溃 the game</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="#第四名玩家导致游戏崩溃"><span class="tocnumber">4</span> <span class="toctext">第四名玩家导致游戏崩溃</span></a></li>
 <li class="toclevel-1 tocsection-18"><a href="#控制中心"><span class="tocnumber">5</span> <span class="toctext">控制中心</span></a>
 <ul>
-<li class="toclevel-2 tocsection-19"><a href="#Control_Center_has_massive_artefacts"><span class="tocnumber">5.1</span> <span class="toctext">控制 Center has 庞大 artefacts</span></a></li>
-<li class="toclevel-2 tocsection-20"><a href="#Control_Center_crashes"><span class="tocnumber">5.2</span> <span class="toctext">控制 Center 崩溃</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#控制中心出现严重伪影"><span class="tocnumber">5.1</span> <span class="toctext">控制中心出现严重伪影</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#控制中心崩溃"><span class="tocnumber">5.2</span> <span class="toctext">控制中心崩溃</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-21"><a href="#No_Medals_are_rewarded"><span class="tocnumber">6</span> <span class="toctext">否 奖章 are rewarded</span></a></li>
-<li class="toclevel-1 tocsection-22"><a href="#Everything_runs_in_Slow_Motion"><span class="tocnumber">7</span> <span class="toctext">Everything runs in Slow Motion</span></a></li>
-<li class="toclevel-1 tocsection-23"><a href="#Social_Tab"><span class="tocnumber">8</span> <span class="toctext">Social Tab</span></a></li>
-<li class="toclevel-1 tocsection-24"><a href="#Warbond_/_Super_Store"><span class="tocnumber">9</span> <span class="toctext">战争债券 / Super Store</span></a>
+<li class="toclevel-1 tocsection-21"><a href="#没有勋章奖励"><span class="tocnumber">6</span> <span class="toctext">没有勋章奖励</span></a></li>
+<li class="toclevel-1 tocsection-22"><a href="#所有内容以慢动作运行"><span class="tocnumber">7</span> <span class="toctext">所有内容以慢动作运行</span></a></li>
+<li class="toclevel-1 tocsection-23"><a href="#社交标签页"><span class="tocnumber">8</span> <span class="toctext">社交标签页</span></a></li>
+<li class="toclevel-1 tocsection-24"><a href="#战争债券_/_超级商店"><span class="tocnumber">9</span> <span class="toctext">战争债券 / 超级商店</span></a>
 <ul>
-<li class="toclevel-2 tocsection-25"><a href="#Black_or_White_Boxes_instead_in_the_Warbond_Section_/_Super_Store"><span class="tocnumber">9.1</span> <span class="toctext">Black or White Boxes instead in the 战争债券 章节 / Super Store</span></a></li>
-<li class="toclevel-2 tocsection-26"><a href="#Missing_Warbond"><span class="tocnumber">9.2</span> <span class="toctext">Missing 战争债券</span></a></li>
-<li class="toclevel-2 tocsection-27"><a href="#White_Warbond"><span class="tocnumber">9.3</span> <span class="toctext">White 战争债券</span></a></li>
-<li class="toclevel-2 tocsection-28"><a href="#Unable_to_buy_a_pattern"><span class="tocnumber">9.4</span> <span class="toctext">Unable to buy a 涂装</span></a></li>
+<li class="toclevel-2 tocsection-25"><a href="#战争债券区/超级商店中显示为黑框或白框"><span class="tocnumber">9.1</span> <span class="toctext">战争债券区/超级商店中显示为黑框或白框</span></a></li>
+<li class="toclevel-2 tocsection-26"><a href="#缺失战争债券"><span class="tocnumber">9.2</span> <span class="toctext">缺失战争债券</span></a></li>
+<li class="toclevel-2 tocsection-27"><a href="#白色战争债券"><span class="tocnumber">9.3</span> <span class="toctext">白色战争债券</span></a></li>
+<li class="toclevel-2 tocsection-28"><a href="#无法购买涂装"><span class="tocnumber">9.4</span> <span class="toctext">无法购买涂装</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-29"><a href="#Weapon_Customization_crashes"><span class="tocnumber">10</span> <span class="toctext">Weapon Customization 崩溃</span></a></li>
-<li class="toclevel-1 tocsection-30"><a href="#References"><span class="tocnumber">11</span> <span class="toctext">参考</span></a></li>
+<li class="toclevel-1 tocsection-29"><a href="#武器自定义崩溃"><span class="tocnumber">10</span> <span class="toctext">武器自定义崩溃</span></a></li>
+<li class="toclevel-1 tocsection-30"><a href="#参考资料"><span class="tocnumber">11</span> <span class="toctext">参考资料</span></a></li>
 </ul>
 </div>
 
-<h2><span class="mw-headline" id="FAQ">FAQ</span></h2>
-<h3><span class="mw-headline" id="Account_ID">账户 ID</span></h3>
+<h2><span id=".E5.B8.B8.E8.A7.81.E9.97.AE.E9.A2.98"></span><span class="mw-headline" id="常见问题">常见问题</span></h2>
+<h3><span id=".E8.B4.A6.E6.88.B7ID"></span><span class="mw-headline" id="账户ID">账户ID</span></h3>
 <div class="floatright"><img alt="Helldivers2AccountID.png" src="../images/400px-Helldivers2AccountID.webp" decoding="async" loading="lazy" width="400" height="225" class="responsive-image" data-file-width="2561" data-file-height="1440" /></div>
 <p>Please note that every 账户 has it's own unique 账户 ID, 否 matter what ingame-name you are using. This is really helpful in case you want to send a ticket to Arrowhead and helps the 支援 team to quickly find your 账户.<sup id="cite&#95;ref-1" class="reference"><a href="#cite_note-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup>
 </p><p>How to find your 账户 ID:
 </p>
 <ol><li>When on your ship, press ESC on a keyboard, or Options on the DualShock controller, where you will be presented with the Options Screen.</li>
 <li>Go to the Options Tab by clicking on it, pressing "3", or using the L1 and R1 Buttons to navigate between tabs. The 账户 ID will be displayed in the lower left corner of your screen. On PC you can copy this ID with the highlighted key directly onto your clipboard for 容易 pasting it when necessary.</li></ol>
-<h3><span class="mw-headline" id="Antivirus_reports_malicious_files">Antivirus reports malicious files</span></h3>
+<h3><span id=".E6.9D.80.E6.AF.92.E8.BD.AF.E4.BB.B6.E6.8A.A5.E5.91.8A.E6.81.B6.E6.84.8F.E6.96.87.E4.BB.B6"></span><span class="mw-headline" id="杀毒软件报告恶意文件">杀毒软件报告恶意文件</span></h3>
 <p>偶尔 it can occur that your Antivirus 软件 flags 绝地潜兵 2 is containing a suspicious file, which has a virus / trojan named "Themida.L".<sup id="cite&#95;ref-2" class="reference"><a href="#cite_note-2"><span class="cite-bracket">&#91;</span>2<span class="cite-bracket">&#93;</span></a></sup> Themida 实际上 refers to a 软件 by Oreans Technology<sup id="cite&#95;ref-3" class="reference"><a href="#cite_note-3"><span class="cite-bracket">&#91;</span>3<span class="cite-bracket">&#93;</span></a></sup> which is designed to 保护 files from reverse-engineering (a "packer"). That in of itself might seems contradictory, but given the fact that it is used by malware developers to hide their malicious 软件, it can trigger the 安全 软件 your 电脑 使用次数.<sup id="cite&#95;ref-4" class="reference"><a href="#cite_note-4"><span class="cite-bracket">&#91;</span>4<span class="cite-bracket">&#93;</span></a></sup>
 </p>
 <div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ Please be aware: Even if you 嫌疑人 this to be a false 正面 (fake alarm) it is good practice to double check your 电脑 for potential malware! ⚠</b></div>
-<h3><span id="Can_I_refund_in-game_items.3F"></span><span class="mw-headline" id="Can_I_refund_in-game_items?">Can I refund in-game items?</span></h3>
+<h3><span id=".E6.88.91.E8.83.BD.E9.80.80.E8.BF.98.E6.B8.B8.E6.88.8F.E5.86.85.E7.89.A9.E5.93.81.E5.90.97.EF.BC.9F"></span><span class="mw-headline" id="我能退还游戏内物品吗？">我能退还游戏内物品吗？</span></h3>
 <p>It is possible to refund items you have purchased within the game if you meet certain 标准:<sup id="cite&#95;ref-refund&#95;5-0" class="reference"><a href="#cite_note-refund-5"><span class="cite-bracket">&#91;</span>5<span class="cite-bracket">&#93;</span></a></sup>
 </p><p>标准:
 </p>
@@ -93,31 +92,31 @@
 <li>A 战争债券 is only refundable if nothing within it has been purchased.</li>
 <li>You are entitled to 3 分离 refunds a year, composed of up to 3 items each time.</li>
 <li>Super Credit purchases on 战争债券 cannot be refunded. 战争债券 where 超级货币 have been bought cannot be refunded.</li></ul>
-<p>If you meet these 标准, you can then submit a <a rel="nofollow" class="external text" href="https://arrowhead.zendesk.com/hc/en-us/requests/new">支援 request</a> with the following information:
+<p>If you meet these 标准, you can then submit a <a rel="nofollow" class="external text" href="https://arrowhead.zendesk.com/hc/en-us/requests/new">支援请求</a> with the following information:
 </p>
 <ul><li>The exact name of the purchased item.</li>
 <li>The 费用 of the item with the 货币 of the item, be it in 超级货币 or 奖章.</li>
 <li>The estimated time when you made the 购买.</li></ul>
-<h3><span class="mw-headline" id="Cross_Progression">Cross Progression</span></h3>
+<h3><span id=".E8.B7.A8.E5.B9.B3.E5.8F.B0.E8.BF.9B.E5.BA.A6"></span><span class="mw-headline" id="跨平台进度">跨平台进度</span></h3>
 <p>Please be aware that 绝地潜兵 2 supports <b>跨平台联机</b> between PC, PlayStation and Xbox to allow these different platforms to play with one another. However, this does not allow you to cross-buy or cross-save/cross-progress in any 容量. While you can link your Steam and PSN 账户, this does not copy any game-data between PC and PS5.<sup id="cite&#95;ref-6" class="reference"><a href="#cite_note-6"><span class="cite-bracket">&#91;</span>6<span class="cite-bracket">&#93;</span></a></sup>
 </p>
-<h3><span class="mw-headline" id="I_want_to_report_a_bug_that_I_have_found">I want to report a bug that I have found</span></h3>
-<p>If you are 正面 that you have found a bug, you can first check in with the <a rel="nofollow" class="external text" href="https://arrowhead.zendesk.com/hc/en-us/articles/15916898652700--HELLDIVERS-2-Known-Issues">list of known bugs</a>. If you cannot find your bug in that list, feel free to create a <a rel="nofollow" class="external text" href="https://arrowhead.zendesk.com/hc/en-us/requests/new">支援 request</a> on Arrowheads Zendesk.<sup id="cite&#95;ref-7" class="reference"><a href="#cite_note-7"><span class="cite-bracket">&#91;</span>7<span class="cite-bracket">&#93;</span></a></sup>
+<h3><span id=".E6.88.91.E6.83.B3.E4.B8.BE.E6.8A.A5.E6.88.91.E5.8F.91.E7.8E.B0.E7.9A.84.E4.B8.80.E4.B8.AA.E6.BC.8F.E6.B4.9E"></span><span class="mw-headline" id="我想举报我发现的一个漏洞">我想举报我发现的一个漏洞</span></h3>
+<p>If you are 正面 that you have found a bug, you can first check in with the <a rel="nofollow" class="external text" href="https://arrowhead.zendesk.com/hc/en-us/articles/15916898652700--HELLDIVERS-2-Known-Issues">已知错误列表</a>. If you cannot find your bug in that list, feel free to create a <a rel="nofollow" class="external text" href="https://arrowhead.zendesk.com/hc/en-us/requests/new">支援请求</a> on Arrowheads Zendesk.<sup id="cite&#95;ref-7" class="reference"><a href="#cite_note-7"><span class="cite-bracket">&#91;</span>7<span class="cite-bracket">&#93;</span></a></sup>
 </p>
-<h3><span class="mw-headline" id="I_want_to_give_Arrowhead_feedback">I want to give Arrowhead feedback</span></h3>
+<h3><span id=".E6.88.91.E6.83.B3.E5.90.91Arrowhead.E6.8F.90.E4.BE.9B.E5.8F.8D.E9.A6.88"></span><span class="mw-headline" id="我想向Arrowhead提供反馈">我想向Arrowhead提供反馈</span></h3>
 <p>If you want to send feedback to Arrowhead, then there's a variety of ways. The most common would be to join the 官员 Discord to be notified of the weekly surveys or ask moderators to invoke the Discord bot with the feedback form.
-</p><p>If you wish to give feedback outside of the regular feedback surveys, you can use this <a rel="nofollow" class="external text" href="https://dyno.gg/form/655d9c4e">dyno page</a> to send it once a week. Please note that you are 有限 to 2000 characters but every bit helps. Please note that this feedback should be made in 回应 to your 当前 玩法 经验值 and not for 特性 requests.<sup id="cite&#95;ref-8" class="reference"><a href="#cite_note-8"><span class="cite-bracket">&#91;</span>8<span class="cite-bracket">&#93;</span></a></sup>
+</p><p>If you wish to give feedback outside of the regular feedback surveys, you can use this <a rel="nofollow" class="external text" href="https://dyno.gg/form/655d9c4e">dyno页面</a> to send it once a week. Please note that you are 有限 to 2000 characters but every bit helps. Please note that this feedback should be made in 回应 to your 当前 玩法 经验值 and not for 特性 requests.<sup id="cite&#95;ref-8" class="reference"><a href="#cite_note-8"><span class="cite-bracket">&#91;</span>8<span class="cite-bracket">&#93;</span></a></sup>
 </p>
-<h3><span class="mw-headline" id="Offline_play">离线 play</span></h3>
+<h3><span id=".E6.8D.9F.E6.AF.81.E6.B8.B8.E7.8E.A9"></span><span class="mw-headline" id="损毁游玩">损毁游玩</span></h3>
 <p>绝地潜兵 2 requires you to be always online in order to play. Not only was it designed for playing with others but your entire progression is stored on servers. Solo-play is possible, however this still requires you to be online to access your profile and to store updated progress.<sup id="cite&#95;ref-faq&#95;9-0" class="reference"><a href="#cite_note-faq-9"><span class="cite-bracket">&#91;</span>9<span class="cite-bracket">&#93;</span></a></sup>
 </p>
 <h4><span id="PlayStation.2B_.2F_Xbox_Game_Pass"></span><span class="mw-headline" id="PlayStation+_/_Xbox_Game_Pass">PlayStation+ / Xbox Game Pass</span></h4>
 <p>Such services only need to be paid for if you want to play with a 控制台. Steam users are not 必需 to pay for these services to play online.<sup id="cite&#95;ref-faq&#95;9-1" class="reference"><a href="#cite_note-faq-9"><span class="cite-bracket">&#91;</span>9<span class="cite-bracket">&#93;</span></a></sup>
 </p>
-<h3><span id="Can_I_play_with_Mouse_.26_Keyboard_on_Console.3F"></span><span class="mw-headline" id="Can_I_play_with_Mouse_&amp;_Keyboard_on_Console?">Can I play with Mouse &amp; Keyboard on 控制台</span></h3>
+<h3><span id=".E6.88.91.E8.83.BD.E5.9C.A8.E4.B8.BB.E6.9C.BA.E4.B8.8A.E4.BD.BF.E7.94.A8.E9.BC.A0.E6.A0.87.E5.8F.8A.E9.94.AE.E7.9B.98.E6.B8.B8.E7.8E.A9.E5.90.97.EF.BC.9F"></span><span class="mw-headline" id="我能在主机上使用鼠标及键盘游玩吗？">我能在主机上使用鼠标及键盘游玩吗？</span></h3>
 <p>Unfortunately there is currently 否 such functionality.
 </p>
-<h3><span class="mw-headline" id="Time-Limited_Items">Time-有限 Items</span></h3>
+<h3><span id=".E9.99.90.E6.97.B6.E7.89.A9.E5.93.81"></span><span class="mw-headline" id="限时物品">限时物品</span></h3>
 <p>A lot of requests have been made about certain items, such as the Fallen Hero's 复仇 Cape which was awarded in remembrance of Malevelon Creek. These items were handed out to 玩家 who participated, so any player who got the game after the event will not 接收 it unless Arrowhead implements a way of getting such time-有限 items. If you are eligible for a time-有限 item but have not received it, it's best to 联络 Arrowhead.
 </p>
 <table class="wikitable">
@@ -211,7 +210,7 @@
 </td></tr>
 <tr>
 <td><a href="KDM-500_Outrider.html" title="KDM-500 Outrider">KDM-500 Outrider</a></td>
-<td><a href="Campaigns.html#Permanent_Enclosure" title="Campaigns">Campaign Permanent Enclosure</a></td>
+<td><a href="Campaigns.html#Permanent_Enclosure" title="Campaigns">战役：永久封锁</a></td>
 <td>7月28日（00:00 UTC）- 8月11日，2026年（08:20 UTC）
 </td></tr>
 <tr>
@@ -219,7 +218,7 @@
 </td></tr>
 <tr>
 <td><a href="KDM-500_Outrider.html" title="KDM-500 Outrider">KDM-500 Outrider</a></td>
-<td><a href="Campaigns.html#Lightning_Intercept" title="Campaigns">Campaign 闪电 Intercept</a></td>
+<td><a href="Campaigns.html#Lightning_Intercept" title="Campaigns">战役：闪电拦截</a></td>
 <td>7月14日（09:00 UTC+1）- 7月27日，2026年（09:00 UTC+1）
 </td></tr>
 <tr>
@@ -227,7 +226,7 @@
 </td></tr>
 <tr>
 <td><a href="M-103_Supply_FRV.html" title="M-103 Supply FRV">M-103 Supply FRV</a></td>
-<td><a href="Campaigns.html#Census_Thunder" title="Campaigns">Campaign Census Thunder</a></td>
+<td><a href="Campaigns.html#Census_Thunder" title="Campaigns">战役：普查雷霆</a></td>
 <td>6月16日 - 6月29日，2026年。预计将于2026年10月推出。<sup id="cite&#95;ref-10" class="reference"><a href="#cite_note-10"><span class="cite-bracket">&#91;</span>10<span class="cite-bracket">&#93;</span></a></sup>
 </td></tr>
 <tr>
@@ -235,17 +234,17 @@
 </td></tr>
 <tr>
 <td><a href="R-4_Hyena.html" title="R-4 Hyena">R-4 Hyena</a></td>
-<td><a href="Campaigns.html#Celestial_Fence" title="Campaigns">Campaign Celestial Fence</a></td>
+<td><a href="Campaigns.html#Celestial_Fence" title="Campaigns">战役：天界围栏</a></td>
 <td>6月30日（00:00 UTC）- 7月13日，2026年（14:00 UTC）
 </td></tr></tbody></table>
-<h3><span class="mw-headline" id="Warbond_Token">战争债券 Token</span></h3>
+<h3><span id=".E6.88.98.E4.BA.89.E5.80.BA.E5.88.B8.E4.BB.A3.E5.B8.81"></span><span class="mw-headline" id="战争债券代币">战争债券代币</span></h3>
 <p>The 战争债券 token is a form of ingame-货币 which allows 玩家 to claim any 尊享战争债券 (but not 传奇 战争债券!) without having to spend 超级货币. You can get a 战争债券 token by buying the Super 公民 Edition of the game or upgrading your regular Version with the Super 公民 升级 DLC. This has been implemented in August 26th 2025.<sup id="cite&#95;ref-11" class="reference"><a href="#cite_note-11"><span class="cite-bracket">&#91;</span>11<span class="cite-bracket">&#93;</span></a></sup>
 </p><p>Please not that 传奇 战争债券 are explicitly exempt from the 使用 of 战争债券 Tokens. 传奇 战争债券 are unique 战争债券 reserved for 特殊 purposes, such as collaborations with other franchises and 费用 1.500 超级货币 instead of 1.000 超级货币.<sup id="cite&#95;ref-12" class="reference"><a href="#cite_note-12"><span class="cite-bracket">&#91;</span>12<span class="cite-bracket">&#93;</span></a></sup>
 </p><p>Currently these 战争债券 are not redeemable via a 战争债券 Token:
 </p>
 <ul><li><a href="Obedient_Democracy_Support_Troopers_Legendary_Warbond.html" title="Obedient Democracy Support Troopers Legendary Warbond">Obedient Democracy 支援 Troopers 传奇 战争债券</a> (Halo 协作)</li>
 <li><a href="Righteous_Revenants_Legendary_Warbond.html" title="Righteous Revenants Legendary Warbond">正义 Revenants 传奇 战争债券</a> (Killzone 协作)</li></ul>
-<h3><span id="Why_do_I_have_to_buy_the_Killzone_Warbond.3F_I_thought_it_was_free.3F"></span><span class="mw-headline" id="Why_do_I_have_to_buy_the_Killzone_Warbond?_I_thought_it_was_free?">Why do I have to buy the Killzone 战争债券 I 思想 it was free?</span></h3>
+<h3><span id=".E4.B8.BA.E4.BB.80.E4.B9.88.E6.88.91.E5.BF.85.E9.A1.BB.E8.B4.AD.E4.B9.B0.E6.9D.80.E6.88.AE.E5.9C.B0.E5.B8.A6.E6.88.98.E4.BA.89.E5.80.BA.E5.88.B8.EF.BC.9F.E6.88.91.E4.BB.A5.E4.B8.BA.E5.AE.83.E6.98.AF.E5.85.8D.E8.B4.B9.E7.9A.84.EF.BC.9F"></span><span class="mw-headline" id="为什么我必须购买杀戮地带战争债券？我以为它是免费的？">为什么我必须购买杀戮地带战争债券？我以为它是免费的？</span></h3>
 <p>There has been some 困惑 on the "正义 Revenants 传奇 战争债券" (which was made in 协作 with the Killzone franchise). Some users got it for free while others had to pay for it, even though some of the users already own / owned parts of it.<sup id="cite&#95;ref-13" class="reference"><a href="#cite_note-13"><span class="cite-bracket">&#91;</span>13<span class="cite-bracket">&#93;</span></a></sup>
 </p><p>Who gets what and how does it work:
 </p>
@@ -267,21 +266,21 @@
 <li><a href="StA-11_SMG.html" title="StA-11 SMG">StA-11 SMG</a> (Weapon)</li></ul>
 <p>(These items were not purchasable - if you own them, please note that you never spent money on them!)
 </p>
-<h2><span id="Can.27t_Start_Missions"></span><span class="mw-headline" id="Can't_Start_Missions">Can't Start Missions</span></h2>
+<h2><span id=".E6.97.A0.E6.B3.95.E5.BC.80.E5.A7.8B.E4.BB.BB.E5.8A.A1"></span><span class="mw-headline" id="无法开始任务">无法开始任务</span></h2>
 <p>New 玩家 in particular might find that quick play  and 难度 selectors are missing and that they can't start any missions. If you find yourself in that situation that planets are locked up (even though you should be able to access them) and you can select 两者都不 quick play nor 难度, then follow these steps:
 </p>
-<ol><li>Head over to Azur Secundus in the Sten 分区 in the <a href="Terminids.html" title="Terminids">终结族 正面</a>.</li>
+<ol><li>Head over to Azur Secundus 在 Sten 分区 在 <a href="Terminids.html" title="Terminids">终结族前线</a>.</li>
 <li>Check if the 行星 is available.
 <ul><li>If it is available, do a 任务 on the 行星. After completing the 任务 you should now be able to select other planets and have access to both quick play and 难度 selection.</li>
-<li>If the 行星 is not available to you, please 联络 the <a rel="nofollow" class="external text" href="https://arrowhead.zendesk.com/hc/en-us/requests/new">Player 支援 Team</a> at Arrowhead's Zendesk.</li></ul></li></ol>
-<h2><span class="mw-headline" id="Galactic_War_Map_Crashes">星系战争地图 崩溃</span></h2>
+<li>If the 行星 is not available to you, please 联络 the <a rel="nofollow" class="external text" href="https://arrowhead.zendesk.com/hc/en-us/requests/new">玩家支援团队</a> at Arrowhead's Zendesk.</li></ul></li></ol>
+<h2><span id=".E9.93.B6.E6.B2.B3.E6.88.98.E4.BA.89.E5.9C.B0.E5.9B.BE.E5.B4.A9.E6.BA.83"></span><span class="mw-headline" id="银河战争地图崩溃">银河战争地图崩溃</span></h2>
 <p>If your game 崩溃 when you try to change planets, follow these steps:
 </p>
 <ol><li>Purposefully fail the 任务 on any 难度 in order to fail the 操作.</li>
 <li>Follow up by doing a 任务 on another 行星.</li>
 <li>掉落 from the lobby back to your own ship, and jump to any active 行星.</li>
 <li>Afterwards close the game and then 换弹 - you should be free now.</li></ol>
-<h3><span class="mw-headline" id="Stuck_on_Cyberstan">Stuck on Cyberstan</span></h3>
+<h3><span id=".E5.8D.A1.E5.9C.A8.E8.B5.9B.E5.8D.9A.E6.96.AF.E5.9D.A6"></span><span class="mw-headline" id="卡在赛博斯坦">卡在赛博斯坦</span></h3>
 <p>If you are stuck on Cyberstan and can't move off without crashing, follow these steps:
 </p>
 <ol><li>Join another ship currently not on Cyberstan.</li>
@@ -290,34 +289,34 @@
 <li>掉落 from the lobby back to your own ship.</li>
 <li>完成 another 难度 1 任务 on your own ship on the 行星 you are now in orbit of</li>
 <li>Afterwards close the game and then 换弹 - you should be free now.</li></ol>
-<h2><span class="mw-headline" id="4th_Player_crashes_the_game">4th Player 崩溃 the game</span></h2>
+<h2><span id=".E7.AC.AC.E5.9B.9B.E5.90.8D.E7.8E.A9.E5.AE.B6.E5.AF.BC.E8.87.B4.E6.B8.B8.E6.88.8F.E5.B4.A9.E6.BA.83"></span><span class="mw-headline" id="第四名玩家导致游戏崩溃">第四名玩家导致游戏崩溃</span></h2>
 <div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ This issue should be fixed with 补丁 6.3.1 and is kept in here in case it still occurs. ⚠</b></div>
 <p>If you 经验值 sudden disconnects or game 崩溃 upon the 4th player joining the game, please check if that person has set a skin for the new Incinerator FRV or Supply FRV. Unfortunately it is possible to equip the Mobile White 涂装 从 <a href="Exo_Experts_Premium_Warbond.html" title="Exo Experts Premium Warbond">Exo Experts 尊享战争债券</a>. Since these FRVs aren't available yet and not everyone owns this skin, this will cause the game to 经验值 the aforementioned difficulties.
 </p>
 <h2><span id=".E6.8E.A7.E5.88.B6.E4.B8.AD.E5.BF.83"></span><span class="mw-headline" id="控制中心">控制中心</span></h2>
-<h3><span class="mw-headline" id="Control_Center_has_massive_artefacts">控制 Center has 庞大 artefacts</span></h3>
+<h3><span id=".E6.8E.A7.E5.88.B6.E4.B8.AD.E5.BF.83.E5.87.BA.E7.8E.B0.E4.B8.A5.E9.87.8D.E4.BC.AA.E5.BD.B1"></span><span class="mw-headline" id="控制中心出现严重伪影">控制中心出现严重伪影</span></h3>
 <p>If you access the <a href="Control_Center.html" title="Control Center">控制 Center</a> and it shows 庞大 artefacts, please check if you have DX11 enabled (<code>--use-d3d11</code>). If so, please deactivate DX11 and launch the game regularly in DX 12.
 </p>
-<h3><span class="mw-headline" id="Control_Center_crashes">控制 Center 崩溃</span></h3>
+<h3><span id=".E6.8E.A7.E5.88.B6.E4.B8.AD.E5.BF.83.E5.B4.A9.E6.BA.83"></span><span class="mw-headline" id="控制中心崩溃">控制中心崩溃</span></h3>
 <p>If your game 崩溃 when interacting with the 控制 Center, check the following:
 </p>
 <ul><li>Try to set your game to borderless window instead of Fullscreen.</li>
 <li>Do not alt-tab to your desktop and back to the game prior to interacting with it.</li>
 <li>Disable Dynamic 分辨率 Scaling (DRS).</li></ul>
-<h2><span class="mw-headline" id="No_Medals_are_rewarded">否 奖章 are rewarded</span></h2>
+<h2><span id=".E6.B2.A1.E6.9C.89.E5.8B.8B.E7.AB.A0.E5.A5.96.E5.8A.B1"></span><span class="mw-headline" id="没有勋章奖励">没有勋章奖励</span></h2>
 <p>If you did not 接收 奖章, you should take these things into 账户:
 </p>
 <ul><li>If you have the 最大 of 250 奖章 in your 库存, you will not 接收 any more 奖章, 无论 来源.</li>
 <li>As of recent 变更 you are 否 longer awarded 奖章 from 主要命令 if you did not log in during the 重要指令.</li>
 <li>If you have participated in a 重要指令 but did not 接收 your 奖章 yet, you might need to wait for a bit. The system will hand them out in waves so as to not overburden the servers. This can take some time and some 玩家 will 接收 them sooner while others have to wait a bit. This can take some time!
 <ul><li>Should you not 接收 your 奖章 at all, it's advisable to 联络 Arrowhead, so 支援 can check on it.</li></ul></li></ul>
-<h2><span class="mw-headline" id="Everything_runs_in_Slow_Motion">Everything runs in Slow Motion</span></h2>
+<h2><span id=".E6.89.80.E6.9C.89.E5.86.85.E5.AE.B9.E4.BB.A5.E6.85.A2.E5.8A.A8.E4.BD.9C.E8.BF.90.E8.A1.8C"></span><span class="mw-headline" id="所有内容以慢动作运行">所有内容以慢动作运行</span></h2>
 <p>This error makes the player run in slow motion while the rest of the game seemingly has normal 速度. The exact cause for this isn't known but might be 相关 to the GPU.
 </p>
 <ol><li>If you run the game with the <code>--use-d3d11</code> launch 指挥, please remove it.</li>
 <li>Enable Vsync (preferably other similar technologies such as GSync)</li>
 <li>Change the 显示 分辨率 to a dynamic value and change "render Scale" to "Ultra Quality".</li></ol>
-<h2><span class="mw-headline" id="Social_Tab">Social Tab</span></h2>
+<h2><span id=".E7.A4.BE.E4.BA.A4.E6.A0.87.E7.AD.BE.E9.A1.B5"></span><span class="mw-headline" id="社交标签页">社交标签页</span></h2>
 <p>The Socials tab is better since its revamp last year, but there are still occasional issues.
 For PS5 and PC 玩家 there are some 稳定性 issues affecting a 小型 portion of 玩家 that seems to clear up when CrossPlay is Disabled. If you've tried different approaches but still encounter crashing issues, then try disabling CrossPlay. Note that Xbox doesn't have an In-Game option for this but has to set this in the 控制台's settings.
 </p><p>If your game displays only as <code>在菜单上</code> or <code>离线</code> , check for a Double-NAT as shown in <a href="Network_Troubleshooting.html" title="Network Troubleshooting">网络 故障排除</a> (Please 请参阅 the different sections of your specific device).
@@ -335,23 +334,23 @@ For PS5 and PC 玩家 there are some 稳定性 issues affecting a 小型 portion
 <li>Once cancelled, on PC open the Social tab and generate a Friend Code, give this to the PS5/Xbox 玩家 but DON'T close the Social Tab. Keep it open until you get the new request.</li></ul>
 <p>If still unsuccessful or if they are blocked and you cannot unblock, then submit a ticket to Arrowhead and ask them to clear your blocklist.
 </p>
-<h2><span id="Warbond_.2F_Super_Store"></span><span class="mw-headline" id="Warbond_/_Super_Store">战争债券 / Super Store</span></h2>
+<h2><span id=".E6.88.98.E4.BA.89.E5.80.BA.E5.88.B8_.2F_.E8.B6.85.E7.BA.A7.E5.95.86.E5.BA.97"></span><span class="mw-headline" id="战争债券_/_超级商店">战争债券 / 超级商店</span></h2>
 <p>Please note that there are a few differences between the japanese version of the game and the rest of the world; this is due to japanese laws in 关系 to ingame-货币 and the Super Store.
 </p>
-<h3><span id="Black_or_White_Boxes_instead_in_the_Warbond_Section_.2F_Super_Store"></span><span class="mw-headline" id="Black_or_White_Boxes_instead_in_the_Warbond_Section_/_Super_Store">Black or White Boxes instead in the 战争债券 章节 / Super Store</span></h3>
+<h3><span id=".E6.88.98.E4.BA.89.E5.80.BA.E5.88.B8.E5.8C.BA.2F.E8.B6.85.E7.BA.A7.E5.95.86.E5.BA.97.E4.B8.AD.E6.98.BE.E7.A4.BA.E4.B8.BA.E9.BB.91.E6.A1.86.E6.88.96.E7.99.BD.E6.A1.86"></span><span class="mw-headline" id="战争债券区/超级商店中显示为黑框或白框">战争债券区/超级商店中显示为黑框或白框</span></h3>
 <p>These issues mean that you either have boxes for Super Store items or in your 战争债券 章节.
 </p>
 <ol><li>Please ensure you have updated your game to the latest version. If your game did not 更新 properly it cannot load the new information for recently released items and is missing crucial data.</li>
 <li>Keep in mind that especially on a fresh release the servers 接收 a high load, so it might take a bit until things have loaded properly. Give it some time and try again.</li>
 <li>Ensure that all mods are 已移除 / disabled as Broken Mods can cause such issues as well.</li>
-<li>If this issue does not 解决 itself, try and <a href="Clearing_The_Shader_Cache.html" title="Clearing The Shader Cache">clear your shadercache</a>.</li></ol>
-<h3><span class="mw-headline" id="Missing_Warbond">Missing 战争债券</span></h3>
+<li>If this issue does not 解决 itself, try and <a href="Clearing_The_Shader_Cache.html" title="Clearing The Shader Cache">清除你的着色器缓存</a>.</li></ol>
+<h3><span id=".E7.BC.BA.E5.A4.B1.E6.88.98.E4.BA.89.E5.80.BA.E5.88.B8"></span><span class="mw-headline" id="缺失战争债券">缺失战争债券</span></h3>
 <p>If you've purchased a 战争债券 in the past but have 否 longer access to it, please consider these points.
 </p>
 <ol><li>If you've refunded a 战争债券<sup id="cite&#95;ref-refund&#95;5-1" class="reference"><a href="#cite_note-refund-5"><span class="cite-bracket">&#91;</span>5<span class="cite-bracket">&#93;</span></a></sup> then you will have 否 access to it anymore. Please note that 战争债券 can only be refunded if you have not bought any items in them.</li>
 <li>Keep in mind that Family Sharing can cause similar issues if the game copy 变更 to another person in the Steam Family that doesn't own the game. This will then lock the 战争债券. Switching back should reverse the 问题.</li>
 <li>If 两者都不 of these apply, you can always 联络 Arrowhead for further 支援.</li></ol>
-<h3><span class="mw-headline" id="White_Warbond">White 战争债券</span></h3>
+<h3><span id=".E7.99.BD.E8.89.B2.E6.88.98.E4.BA.89.E5.80.BA.E5.88.B8"></span><span class="mw-headline" id="白色战争债券">白色战争债券</span></h3>
 <p>If you see the 战争债券 being all white (as in the banner is just a white box) and you cannot interact with it, try these steps:
 </p>
 <ol><li>Close the game.</li>
@@ -361,13 +360,13 @@ For PS5 and PC 玩家 there are some 稳定性 issues affecting a 小型 portion
 <li>重新开始 Steam.</li></ol>
 <p>With this you should get to Steam to check for a new 更新 and 下载 the files that contain all necessary assets for the 战争债券 to work properly.
 </p>
-<h3><span class="mw-headline" id="Unable_to_buy_a_pattern">Unable to buy a 涂装</span></h3>
+<h3><span id=".E6.97.A0.E6.B3.95.E8.B4.AD.E4.B9.B0.E6.B6.82.E8.A3.85"></span><span class="mw-headline" id="无法购买涂装">无法购买涂装</span></h3>
 <p>If you are unable to buy a 涂装 for a 战略配备, such as an 外骨骼机甲, try this:
 </p>
 <ol><li>Make sure that you have bought the base 战略配备.</li>
 <li>If the error persists, 重新开始 the game.</li>
 <li>联络 Arrowhead if the issue continues.</li></ol>
-<h2><span class="mw-headline" id="Weapon_Customization_crashes">Weapon Customization 崩溃</span></h2>
+<h2><span id=".E6.AD.A6.E5.99.A8.E8.87.AA.E5.AE.9A.E4.B9.89.E5.B4.A9.E6.BA.83"></span><span class="mw-headline" id="武器自定义崩溃">武器自定义崩溃</span></h2>
 <p>This crash has become rare, but it can still 偶尔 occur. When attempting to edit the Weapon <a href="Attachments.html" title="Attachments">配件</a> the game 崩溃 every time.
 </p><p>While there's 否 definitive 修复 you can employ, there's a workaround that can be used to at least circumvent the issue for the time being.
 </p>
@@ -377,7 +376,7 @@ For PS5 and PC 玩家 there are some 稳定性 issues affecting a 小型 portion
 <li>Return to the ship either by finishing or abandoning the 任务.</li></ol>
 <p>The weapon you have equipped will now be customizable. It's tedious, but you'd have to do the same step for any other weapon you wish to customize.
 </p>
-<h2><span class="mw-headline" id="References">参考</span></h2>
+<h2><span id=".E5.8F.82.E8.80.83.E8.B5.84.E6.96.99"></span><span class="mw-headline" id="参考资料">参考资料</span></h2>
 <div class="mw-references-wrap mw-references-columns"><ol class="references">
 <li id="cite&#95;note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://arrowhead.zendesk.com/hc/en-us/articles/13040494257052-How-to-find-your-Account-ID">Arrowhead Zendesk - How to find your 账户 ID</a></span>
 </li>
@@ -437,14 +436,14 @@ For PS5 and PC 玩家 there are some 稳定性 issues affecting a 小型 portion
 </div></div></div></div></div></div></div>
 <!-- 
 NewPP limit report
-Cached time: 20260818035743
+Cached time: 20260819055455
 Cache expiry: 2592000
 Reduced expiry: false
 Complications: [vary‐revision‐sha1, show‐toc]
-CPU time usage: 0.090 seconds
-Real time usage: 0.139 seconds
+CPU time usage: 0.091 seconds
+Real time usage: 0.130 seconds
 Preprocessor visited node count: 469/1000000
-Revision size: 21254/4194304 bytes
+Revision size: 21232/4194304 bytes
 Post‐expand include size: 8023/4194304 bytes
 Template argument size: 301/4194304 bytes
 Highest expansion depth: 8/100
@@ -452,35 +451,23 @@ Expensive parser function count: 2/500
 Unstrip recursion depth: 0/20
 Unstrip post‐expand size: 8349/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.010/15.000 seconds
+Lua time usage: 0.012/15.000 seconds
 Lua memory usage: 664871/52428800 bytes
 Number of processed Cargo queries: 2
-Time spent processing Cargo queries: 0.010 s (avg. 0.005 s)
+Time spent processing Cargo queries: 0.009 s (avg. 0.005 s)
 Number of Cargo row insertion attempts: 1
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%   76.942      1 -total
- 55.73%   42.883      1 Template:Breadcrumb_Auto
- 17.12%   13.170      1 Template:Navbox_Troubleshooting
- 14.13%   10.873      1 Template:Navbox
-  6.17%    4.751      2 Template:Article_other
-  2.76%    2.127      2 Template:Crash_header
+100.00%   83.559      1 -total
+ 56.73%   47.403      1 Template:Breadcrumb_Auto
+ 16.85%   14.078      1 Template:Navbox_Troubleshooting
+ 13.98%   11.680      1 Template:Navbox
+  6.74%    5.629      2 Template:Article_other
+  2.72%    2.275      2 Template:Crash_header
 -->
-</div></div>
+</div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
-<script>
-功能 toggleTheme(){
-  var h = 文档.documentElement;
-  var alt = h.classList.toggle('view-alt');
-  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
-}
-try {
-  if (localStorage.getItem('hd2theme') === 'alt') {
-    文档.documentElement.classList.add('view-alt');
-  }
-} catch(e) {}
-</script>
 </body>
 </html>

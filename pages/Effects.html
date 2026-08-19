@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-helldiver view-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,44 +14,43 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
-    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
   <button class="back-btn" type="button" onclick="history.back()">← 返回</button>
   <h1 class="page-title">效果</h1>
-  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Game_Mechanics.html" title="Game Mechanics">机制</a></div><div class="breadcrumb-item breadcrumb-item-final">效果</div></div>
+  <div class="mw-parser-output"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Game_Mechanics.html" title="Game Mechanics">机制</a></div><div class="breadcrumb-item breadcrumb-item-final">效果</div></div>
 <p><b>效果</b> are certain conditions and modifiers that impact 玩法 in various ways. These 效果 are viewable on the 银河地图. The number of 效果 and 类型 vary by 生物群系, <a href="Factions.html" title="Factions">阵营</a>，以及 <a href="Difficulty.html" title="Difficulty">难度</a>.
 </p>
 <div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="#Weapons_Experimentation/Arsenal_Augmentation"><span class="tocnumber">1</span> <span class="toctext">武器 Experimentation/Arsenal Augmentation</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="#武器实验/军械扩充"><span class="tocnumber">1</span> <span class="toctext">武器实验/军械扩充</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#民主空间站"><span class="tocnumber">2</span> <span class="toctext">民主空间站</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="#Environmental_Conditions"><span class="tocnumber">3</span> <span class="toctext">Environmental Conditions</span></a>
+<li class="toclevel-1 tocsection-3"><a href="#环境条件"><span class="tocnumber">3</span> <span class="toctext">环境条件</span></a>
 <ul>
-<li class="toclevel-2 tocsection-4"><a href="#Operational_Effects"><span class="tocnumber">3.1</span> <span class="toctext">Operational 效果</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#作战效果"><span class="tocnumber">3.1</span> <span class="toctext">作战效果</span></a></li>
 </ul>
 </li>
 <li class="toclevel-1 tocsection-5"><a href="#行动限制条件"><span class="tocnumber">4</span> <span class="toctext">行动限制条件</span></a>
 <ul>
 <li class="toclevel-2 tocsection-6"><a href="#将军"><span class="tocnumber">4.1</span> <span class="toctext">将军</span></a></li>
-<li class="toclevel-2 tocsection-7"><a href="#Faction-Specific"><span class="tocnumber">4.2</span> <span class="toctext">阵营-Specific</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#阵营专属"><span class="tocnumber">4.2</span> <span class="toctext">阵营专属</span></a></li>
 <li class="toclevel-2 tocsection-8"><a href="#已移除"><span class="tocnumber">4.3</span> <span class="toctext">已移除</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-9"><a href="#Combatant_Forces"><span class="tocnumber">5</span> <span class="toctext">参战者 Forces</span></a></li>
-<li class="toclevel-1 tocsection-10"><a href="#Other_Effects"><span class="tocnumber">6</span> <span class="toctext">Other 效果</span></a>
+<li class="toclevel-1 tocsection-9"><a href="#作战部队"><span class="tocnumber">5</span> <span class="toctext">作战部队</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#其他效果"><span class="tocnumber">6</span> <span class="toctext">其他效果</span></a>
 <ul>
 <li class="toclevel-2 tocsection-11"><a href="#护甲被动"><span class="tocnumber">6.1</span> <span class="toctext">护甲被动</span></a></li>
 <li class="toclevel-2 tocsection-12"><a href="#增益"><span class="tocnumber">6.2</span> <span class="toctext">增益</span></a></li>
-<li class="toclevel-2 tocsection-13"><a href="#Physical_Conditions"><span class="tocnumber">6.3</span> <span class="toctext">物理 Conditions</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#物理条件"><span class="tocnumber">6.3</span> <span class="toctext">物理条件</span></a></li>
 </ul>
 </li>
 </ul>
 </div>
 
-<h2><span id="Weapons_Experimentation.2FArsenal_Augmentation"></span><span class="mw-headline" id="Weapons_Experimentation/Arsenal_Augmentation">武器 Experimentation/Arsenal Augmentation</span></h2>
-<p>偶尔, 超级地球 High 指挥 makes certain <a href="Stratagems.html" title="Stratagems">战略配备</a> available for <a href="Helldiver.html" title="Helldiver">绝地潜兵</a> to deploy with as an additional 任务 标准-issue 战略配备. These augmentations are purely additive and do not take up a slot on a 绝地潜兵's 战略配备 武装配置.
+<h2><span id=".E6.AD.A6.E5.99.A8.E5.AE.9E.E9.AA.8C.2F.E5.86.9B.E6.A2.B0.E6.89.A9.E5.85.85"></span><span class="mw-headline" id="武器实验/军械扩充">武器实验/军械扩充</span></h2>
+<p>偶尔, 超级地球 High 指挥 makes certain <a href="Stratagems.html" title="Stratagems">战略配备</a> 可用于 <a href="Helldiver.html" title="Helldiver">绝地潜兵</a> to deploy with as an additional 任务 标准-issue 战略配备. These augmentations are purely additive and do not take up a slot on a 绝地潜兵's 战略配备 武装配置.
 </p>
 <h2><span id=".E6.B0.91.E4.B8.BB.E7.A9.BA.E9.97.B4.E7.AB.99"></span><span class="mw-headline" id="民主空间站">民主空间站</span></h2>
 <p>the <a href="Democracy_Space_Station.html" title="Democracy Space Station">Democracy Space 车站</a> can provide a 绝地潜兵-funded "Tactical Action" in addition to the 解放 Campaign boosting "Operational 支援" to whichever 行星 is being orbited.
@@ -75,8 +74,8 @@
 <ul><li>Despite its 描述 stating it accelerates progress on 解放 Campaigns, it also accelerates 绝地潜兵 efforts in 防御 and <a href="Second_Galactic_War_Mechanics.html#Invasion_Campaigns" title="Second Galactic War Mechanics">入侵</a> Campaigns.</li>
 <li>The 外骨骼机甲 冷却 reduction 效果 was added with the conclusion of 重要指令 A2-4-1.</li></ul></div></div></div>
 </div>
-<h2><span class="mw-headline" id="Environmental_Conditions">Environmental Conditions</span></h2>
-<p>Environmental conditions 请参阅 geophysical events that influence a <a href="Planets_and_Sectors.html" title="Planets and Sectors">行星's</a> 环境, experienced throughout <a href="Missions.html" title="Missions">missions</a>.
+<h2><span id=".E7.8E.AF.E5.A2.83.E6.9D.A1.E4.BB.B6"></span><span class="mw-headline" id="环境条件">环境条件</span></h2>
+<p>Environmental conditions 请参阅 geophysical events that influence a <a href="Planets_and_Sectors.html" title="Planets and Sectors">行星的</a> 环境, experienced throughout <a href="Missions.html" title="Missions">missions</a>.
 </p>
 <ul><li><span class="faction-icon"><img alt="Generic Effect Icon.png" src="../images/50px-Generic_Effect_Icon.png" decoding="async" loading="lazy" width="50" height="50" data-file-width="64" data-file-height="64" /> 酸雨风暴</span></li>
 <li><span class="faction-icon"><a href="Blizzards.html" title="Blizzards"><img class="wiki-icon" alt="Blizzards Environmental Condition Icon.svg" src="../images/Blizzards_Environmental_Condition_Icon.svg" decoding="async" loading="lazy" width="50" height="50" data-file-width="512" data-file-height="512" /></a> <b><a href="Blizzards.html" title="Blizzards">暴风雪</a></b> – Intense 暴风雪 <span style="color:var(--wiki-custom-emphasis-color)">reduce mobility</span> and <span style="color:var(--wiki-custom-emphasis-color)">moderately reduce visibility</span> for both enemy and friendly units.</span><br /></li>
@@ -94,22 +93,22 @@
 <li><b>中度"阴霾"笼罩：</b> The Gloom covers this 行星 completely, obstructing a variety of logistical operations. 撤离 times are 已增加 by <span style="color:var(--wiki-custom-emphasis-color)">30 秒</span> and Eagle Re-arm time is 已增加 by <span style="color:var(--wiki-custom-emphasis-color)">20%.</span></li>
 <li><b>轻度"阴霾"笼罩：</b> Gloom particles interfere with landing Pelicans, increasing 撤离 times by <span style="color:var(--wiki-custom-emphasis-color)">20 秒。</span></li>
 <li><b><a href="Hive_World.html" title="Hive World">“阴霾”源头</a>:</b> This 行星 continually produces a thick atmospheric Gloom cover, rendering logistical 支援 极其 挑战. Total 增援 are 已降低 by  <span style="color:var(--wiki-custom-emphasis-color)">20%</span>, Eagle Re-arm time is 已增加 by <span style="color:var(--wiki-custom-emphasis-color)">30%</span>, and 弹药 from pickups is 已降低 by <span style="color:var(--wiki-custom-emphasis-color)">50%</span>.</li></ul>
-<h3><span class="mw-headline" id="Operational_Effects">Operational 效果</span></h3>
+<h3><span id=".E4.BD.9C.E6.88.98.E6.95.88.E6.9E.9C"></span><span class="mw-headline" id="作战效果">作战效果</span></h3>
 <p>有时, during certain events or 主要命令, some, if not 所有星球 may gain an extra 效果/修正, available on all difficulties.
 </p>
-<ul><li><b>轨道波动：</b> 所有 <span style="color:var(--wiki-custom-emphasis-color)">轨道武器 战略配备</span> have an 已增加 冷却. <i>（请勿与同名行动修改器混淆，此效果仅影响 <a href="Stratagems.html" title="Stratagems">轨道武器 战略配备</a>)</i></li>
+<ul><li><b>轨道波动：</b> 所有 <span style="color:var(--wiki-custom-emphasis-color)">轨道战略配备</span> have an 已增加 冷却. <i>（请勿与同名行动修改器混淆，此效果仅影响 <a href="Stratagems.html" title="Stratagems">轨道战略配备</a>)</i></li>
 <li><b>医疗补给紧张：</b> Number of stims each 绝地潜兵 deploys with 已减少 by 1.</li>
 <li><b>驾驶员短缺：</b> 撤离 takes 30 additional 秒.</li>
 <li><b>飞鹰时间减慢：</b> <span style="color:var(--wiki-custom-emphasis-color)">鹰式重新装弹</span> time is <span style="color:var(--wiki-custom-emphasis-color)">25%</span> slower.</li></ul>
 <h2><span id=".E8.A1.8C.E5.8A.A8.E9.99.90.E5.88.B6.E6.9D.A1.E4.BB.B6"></span><span class="mw-headline" id="行动限制条件">行动限制条件</span></h2>
-<p>操作 Modifiers are added 障碍 that 绝地潜兵 must handle on the battlefield. A single 修正 will appear on <a href="Difficulty.html" title="Difficulty"><img class="wiki-icon" alt="Hard Difficulty Icon.svg" src="../images/Hard_Difficulty_Icon.svg" decoding="async" loading="lazy" width="34" height="16" data-file-width="512" data-file-height="248" /></a> <span><a href="Difficulty.html" title="Difficulty">困难</a></span>, increasing to two at <a href="Difficulty.html" title="Difficulty"><img class="wiki-icon" alt="Impossible Difficulty Icon.svg" src="../images/Impossible_Difficulty_Icon.svg" decoding="async" loading="lazy" width="34" height="16" data-file-width="512" data-file-height="248" /></a> <span><a href="Difficulty.html" title="Difficulty">不可能</a></span>. 操作 Modifiers do not appear on planets undergoing a <a href="Second_Galactic_War_Mechanics.html#Defense_Campaigns" title="Second Galactic War Mechanics">防御 Campaign.</a>
+<p>操作 Modifiers are added 障碍 that 绝地潜兵 must handle on the battlefield. A single 修正 will appear on <a href="Difficulty.html" title="Difficulty"><img class="wiki-icon" alt="Hard Difficulty Icon.svg" src="../images/Hard_Difficulty_Icon.svg" decoding="async" loading="lazy" width="34" height="16" data-file-width="512" data-file-height="248" /></a> <span><a href="Difficulty.html" title="Difficulty">困难</a></span>, increasing to two at <a href="Difficulty.html" title="Difficulty"><img class="wiki-icon" alt="Impossible Difficulty Icon.svg" src="../images/Impossible_Difficulty_Icon.svg" decoding="async" loading="lazy" width="34" height="16" data-file-width="512" data-file-height="248" /></a> <span><a href="Difficulty.html" title="Difficulty">不可能</a></span>. 操作 Modifiers do not appear on planets undergoing a <a href="Second_Galactic_War_Mechanics.html#Defense_Campaigns" title="Second Galactic War Mechanics">防御战役。</a>
 </p>
 <h3><span id=".E5.B0.86.E5.86.9B"></span><span class="mw-headline" id="将军">将军</span></h3>
 <ul><li><a href="Complex_Stratagem_Plotting.html" title="Complex Stratagem Plotting">复杂 战略配备 Plotting</a> – 战略配备 <span style="color:var(--wiki-custom-emphasis-color)">呼叫时间</span> 已增加 by <span style="color:var(--wiki-custom-emphasis-color)">50%</span>.</li>
 <li><a href="Orbital_Fluctuations.html" title="Orbital Fluctuations">轨道武器 Fluctuations</a> – 战略配备 <span style="color:var(--wiki-custom-emphasis-color)">冷却</span> 已增加 by <span style="color:var(--wiki-custom-emphasis-color)">25%</span>.</li>
 <li><a href="Poor_Intel.html" title="Poor Intel">Poor Intel</a> – <span style="color:var(--wiki-custom-emphasis-color)">目标地点</span> are hidden.</li>
-<li><a href="Civilians_and_SEAF_in_Area.html" title="Civilians and SEAF in Area">Civilians and SEAF in Area</a> - <a href="SEAF_Soldier.html" title="SEAF Soldier">SEAF 战士</a> squads and <a href="Civilian.html" title="Civilian">平民</a> are both on the battlefield. (Event 修正 only present in <a href="Biomes.html#City_Biomes" title="Biomes">Metropolis Biomes</a>)</li></ul>
-<h3><span class="mw-headline" id="Faction-Specific">阵营-Specific</span></h3>
+<li><a href="Civilians_and_SEAF_in_Area.html" title="Civilians and SEAF in Area">Civilians and SEAF in Area</a> - <a href="SEAF_Soldier.html" title="SEAF Soldier">SEAF 战士</a> squads and <a href="Civilian.html" title="Civilian">平民</a> are both on the battlefield. (Event 修正 only present in <a href="Biomes.html#City_Biomes" title="Biomes">大都市生态区</a>)</li></ul>
+<h3><span id=".E9.98.B5.E8.90.A5.E4.B8.93.E5.B1.9E"></span><span class="mw-headline" id="阵营专属">阵营专属</span></h3>
 <p><span class="faction-icon icon-outline"><a href="Terminids.html" title="Terminids"><img class="wiki-icon" alt="" src="../images/Terminid_Icon.svg" decoding="async" loading="lazy" width="512" height="512" data-file-width="512" data-file-height="512" /></a>&#160;<a href="Terminids.html" title="Terminids">终结族 Horde</a></span>
 </p>
 <ul><li><a href="Atmospheric_Spores.html" title="Atmospheric Spores">Atmospheric Spores</a> – <span style="color:var(--wiki-custom-emphasis-color)">地图被遮蔽</span> by Bug Spores.</li>
@@ -124,7 +123,7 @@
 <ul><li><a href="AA_Defenses.html" title="AA Defenses">对空防御</a> – <span style="color:var(--wiki-custom-emphasis-color)">战略配备槽位</span> 已降低 by 1.</li>
 <li>Atmospheric Interference – 轨道武器 战略配备 <span style="color:var(--wiki-custom-emphasis-color)">散射增加</span>.</li>
 <li><a href="Electronic_Countermeasures.html" title="Electronic Countermeasures">电子对抗措施</a> – <span style="color:var(--wiki-custom-emphasis-color)">战略配备代码</span> Scrambled.</li></ul>
-<h2><span class="mw-headline" id="Combatant_Forces">参战者 Forces</span></h2>
+<h2><span id=".E4.BD.9C.E6.88.98.E9.83.A8.E9.98.9F"></span><span class="mw-headline" id="作战部队">作战部队</span></h2>
 <p>部分星球 or cities will have modifiers that affect the 类型 of units that spawn, whether it be friendly units or enemy ones, with them either increasing the 频率 of specific units, replacing certain units with unique 变体, or having entirely unique units.
 </p><p><b><span class="faction-icon icon-outline"><a href="Terminids.html" title="Terminids"><img class="wiki-icon" alt="" src="../images/Terminid_Icon.svg" decoding="async" loading="lazy" width="512" height="512" data-file-width="512" data-file-height="512" /></a>&#160;<a href="Terminids.html" title="Terminids">终结族 Horde</a></span></b>
 </p>
@@ -132,7 +131,7 @@
 <ul><li>捕食者 Strain - Unique cunning 变体 of <a href="Predator_Hunter.html" title="Predator Hunter">追猎虫</a> 和 <a href="Predator_Stalker.html" title="Predator Stalker">追踪虫</a> will appear.</li>
 <li>破裂 Strain - Unique 钻地中 变体 of <a href="Rupture_Warrior.html" title="Rupture Warrior">战士</a>, <a href="Rupture_Spewer.html" title="Rupture Spewer">喷吐者</a> 和 <a href="Rupture_Charger.html" title="Rupture Charger">强袭虫</a> will appear.</li>
 <li>Spore Burst Strain - Unique 爆炸 变体 of <a href="Spore_Burst_Scavenger.html" title="Spore Burst Scavenger">食腐虫</a>, <a href="Spore_Burst_Hunter.html" title="Spore Burst Hunter">追猎虫</a>s and <a href="Spore_Burst_Warrior.html" title="Spore Burst Warrior">战士</a> will appear.</li>
-<li><a href="Dragonroach.html" title="Dragonroach">蟑龙</a> - <a href="Bile_Titan.html" title="Bile Titan">吐酸泰坦</a> will be replaced with a unique flying enemy;  the <a href="Dragonroach.html" title="Dragonroach">Dragonroach.</a></li>
+<li><a href="Dragonroach.html" title="Dragonroach">蟑龙</a> - <a href="Bile_Titan.html" title="Bile Titan">吐酸泰坦</a> will be replaced with a unique flying enemy;  the <a href="Dragonroach.html" title="Dragonroach">龙螂</a></li>
 <li><a href="Hive_Lord.html" title="Hive Lord">霸王虫</a> - The colossal worm-like <a href="Hive_Lord.html" title="Hive Lord">霸王虫</a> will appear. (Requires <a href="Difficulty.html" title="Difficulty"><img class="wiki-icon" alt="Suicide Difficulty Icon.svg" src="../images/Suicide_Difficulty_Icon.svg" decoding="async" loading="lazy" width="34" height="16" data-file-width="512" data-file-height="248" /></a> <span><a href="Difficulty.html" title="Difficulty">自杀任务</a></span> or above.)</li></ul></li></ul>
 <p><b><span class="faction-icon icon-outline"><a href="Automatons.html" title="Automatons"><img class="wiki-icon" alt="" src="../images/Automaton_Icon.svg" decoding="async" loading="lazy" width="512" height="512" data-file-width="512" data-file-height="512" /></a>&#160;<a href="Automatons.html" title="Automatons">机器人 Legion</a></span></b>
 </p>
@@ -141,8 +140,8 @@
 <li>Incineration Corps - Unique <a href="Conflagration_Devastator.html" title="Conflagration Devastator">Conflagration 蹂躏者</a> 和 <a href="Hulk_Firebomber.html" title="Hulk Firebomber">Hulk Firebomber</a> units will appear alongside 燃烧弹-wielding 变体 of <a href="Pyro_Trooper.html" title="Pyro Trooper">装甲兵</a>, <a href="Incendiary_Rocket_Raider.html" title="Incendiary Rocket Raider">火箭奇袭者</a> 和 <a href="Incendiary_MG_Devastator.html" title="Incendiary MG Devastator">重型蹂躏者</a>.</li>
 <li>生化人 - Unique cyborg Agitator, <a href="Radical.html" title="Radical">Radical</a> 和 <a href="Vox_Engine.html" title="Vox Engine">Vox Engine</a> units will appear.</li></ul></li>
 <li>Enemy Divisions:
-<ul><li>Hulk Surge - <a href="Hulk.html" title="Hulk">Hulk units</a> will spawn with 已增加 频率.</li>
-<li>重型护甲 Surge - Tanks 和 Striders will spawn with 已增加 频率.</li>
+<ul><li>Hulk Surge - <a href="Hulk.html" title="Hulk">巨型者单位</a> will spawn with 已增加 频率.</li>
+<li>重型护甲 Surge - 坦克 和 大步者 will spawn with 已增加 频率.</li>
 <li>蹂躏者 Surge - <a href="Devastator.html" title="Devastator">蹂躏者</a> units will spawn with 已增加 频率.</li></ul></li></ul>
 <p><b><span class="faction-icon icon-outline"><img class="wiki-icon" alt="" src="../images/Illuminate_Icon.svg" decoding="async" loading="lazy" width="512" height="512" data-file-width="512" data-file-height="512" />&#160;The 光能者</span></b>
 </p>
@@ -155,67 +154,55 @@
 <p>'<b><i><span class="faction-icon icon-outline"><img class="wiki-icon" alt="" src="../images/Super_Earth_Icon.svg" decoding="async" loading="lazy" width="1024" height="1024" data-file-width="1024" data-file-height="1024" />&#160;联邦 of 超级地球</span></i></b>
 </p>
 <ul><li>师:
-<ul><li>重型 SEAF Presence - <a href="SEAF_Soldier.html" title="SEAF Soldier">SEAF Soldiers</a> will be deployed into 任务 areas via 鹈鹕 Shuttles.</li></ul></li></ul>
-<h2><span class="mw-headline" id="Other_Effects">Other 效果</span></h2>
+<ul><li>重型 SEAF Presence - <a href="SEAF_Soldier.html" title="SEAF Soldier">SEAF Soldiers</a> will be deployed into 任务 areas via 鹈鹕 运输船.</li></ul></li></ul>
+<h2><span id=".E5.85.B6.E4.BB.96.E6.95.88.E6.9E.9C"></span><span class="mw-headline" id="其他效果">其他效果</span></h2>
 <h3><span id=".E6.8A.A4.E7.94.B2.E8.A2.AB.E5.8A.A8"></span><span class="mw-headline" id="护甲被动">护甲被动</span></h3>
 <p><a href="Armor_Passives.html" title="Armor Passives">护甲 Passives</a> are unique, player-specific abilities or enhancements that are tied to their corresponding body armors. Depending on the perk, different 属性(s) will be affected, altering the way 绝地潜兵 can operate in the 任务.
 </p>
 <h3><span id=".E5.A2.9E.E7.9B.8A"></span><span class="mw-headline" id="增益">增益</span></h3>
 <p>Each 绝地潜兵 has the option to equip a <a href="Boosters.html" title="Boosters">增益</a> before deployment, which 施加 buff to the entire squad. Depending on the 强化资源, it can alter a 绝地潜兵's 属性, certain pieces of 装备, or 任务 机制.
 </p>
-<h3><span class="mw-headline" id="Physical_Conditions">物理 Conditions</span></h3>
+<h3><span id=".E7.89.A9.E7.90.86.E6.9D.A1.E4.BB.B6"></span><span class="mw-headline" id="物理条件">物理条件</span></h3>
 <p><a href="Physical_Conditions.html" title="Physical Conditions">物理 Conditions</a> 请参阅 adverse 效果 that a 绝地潜兵 may 经验值 on the battlefield. These conditions can 射程 from minor debuffs to being 致命 if left untreated. Depending on the 条件, it can be self-inflicted, caused by the 环境, or applied by an enemy 攻击.
 </p>
 <!-- 
 NewPP limit report
-Cached time: 20260818034620
+Cached time: 20260819054334
 Cache expiry: 2592000
 Reduced expiry: false
 Complications: [vary‐revision‐sha1, show‐toc]
-CPU time usage: 0.148 seconds
-Real time usage: 0.219 seconds
+CPU time usage: 0.134 seconds
+Real time usage: 0.186 seconds
 Preprocessor visited node count: 1076/1000000
-Revision size: 9391/4194304 bytes
+Revision size: 9333/4194304 bytes
 Post‐expand include size: 16506/4194304 bytes
-Template argument size: 980/4194304 bytes
+Template argument size: 978/4194304 bytes
 Highest expansion depth: 8/100
 Expensive parser function count: 0/500
 Unstrip recursion depth: 0/20
 Unstrip post‐expand size: 12888/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.018/15.000 seconds
+Lua time usage: 0.016/15.000 seconds
 Lua memory usage: 1273868/52428800 bytes
 Number of processed Cargo queries: 2
-Time spent processing Cargo queries: 0.011 s (avg. 0.005 s)
+Time spent processing Cargo queries: 0.009 s (avg. 0.004 s)
 Number of Cargo row insertion attempts: 1
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%  140.440      1 -total
- 38.06%   53.451      4 Template:DSS_Action
- 29.35%   41.224      1 Template:Breadcrumb_Auto
- 12.18%   17.102     13 Template:Environmental_Conditions
-  8.01%   11.252      3 Template:Difficulty
-  4.59%    6.447      1 Template:MajorOrderLink
-  4.03%    5.658      2 Template:Terminid
-  3.24%    4.555      7 Template:Inline_Icon_Abstract
-  2.50%    3.510      1 Template:Article_other
-  2.15%    3.022      2 Template:Illuminate
+100.00%  112.338      1 -total
+ 38.06%   42.758      4 Template:DSS_Action
+ 33.82%   37.988      1 Template:Breadcrumb_Auto
+ 10.89%   12.231     13 Template:Environmental_Conditions
+  6.83%    7.671      3 Template:Difficulty
+  4.33%    4.866      1 Template:MajorOrderLink
+  3.15%    3.534      2 Template:Terminid
+  3.00%    3.368      7 Template:Inline_Icon_Abstract
+  2.71%    3.039      1 Template:Article_other
+  1.88%    2.110      2 Template:Illuminate
 -->
-</div></div>
+</div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
-<script>
-功能 toggleTheme(){
-  var h = 文档.documentElement;
-  var alt = h.classList.toggle('view-alt');
-  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
-}
-try {
-  if (localStorage.getItem('hd2theme') === 'alt') {
-    文档.documentElement.classList.add('view-alt');
-  }
-} catch(e) {}
-</script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-helldiver view-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,18 +14,17 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
-    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
   <button class="back-btn" type="button" onclick="history.back()">← 返回</button>
   <h1 class="page-title">Crash On Startup</h1>
-  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div><div class="breadcrumb-item breadcrumb-item-final">Crash On Startup</div></div>
+  <div class="mw-parser-output"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div><div class="breadcrumb-item breadcrumb-item-final">Crash On Startup</div></div>
 <p>This 条款 focuses on 崩溃 on starting up the game.
 </p>
-<h2><span class="mw-headline" id="Basics">Basics</span></h2>
+<h2><span id=".E5.9F.BA.E7.A1.80"></span><span class="mw-headline" id="基础">基础</span></h2>
 <p>The quickest and easiest method to 解决 issues is via the 使用 of the <a href="Hellbomb_Script.html" title="Hellbomb Script">Hellbomb Script</a>.
-</p><p>The following are different steps you can take. It is recommended to do them one by one, 含义 you try one of the steps first and then test if the crash continues. If it does, 继续 to the 下一个 step. Please note that this guide is Windows-centric, if you need help for Linux please check <a href="Linux_Steam_Deck_Troubleshooting.html#Crash_upon_Start" title="Linux / Steam Deck Troubleshooting">the Linux guide</a>.
+</p><p>The following are different steps you can take. It is recommended to do them one by one, 含义 you try one of the steps first and then test if the crash continues. If it does, 继续 to the 下一个 step. Please note that this guide is Windows-centric, if you need help for Linux please check <a href="Linux_Steam_Deck_Troubleshooting.html#Crash_upon_Start" title="Linux / Steam Deck Troubleshooting">Linux指南</a>.
 </p>
 <ol><li>Reboot your PC.</li>
 <li>移除 <b>所有</b> mods. This is not optional.
@@ -46,9 +45,9 @@
 <ul><li><b>注意：</b> This is absolutely a must for 16GB or less RAM.</li></ul></li>
 <li>Set the 正确 GPU in Windows.
 <ol><li>Hellbomb Script: <code>图形选项</code> Menu -&gt; "Select 正确 GPU".</li></ol></li>
-<li>Make sure you are using one of the <a href="GPU_Driver_Recommendation.html" title="GPU Driver Recommendation">recommended GPU Drivers</a>.
+<li>Make sure you are using one of the <a href="GPU_Driver_Recommendation.html" title="GPU Driver Recommendation">推荐GPU驱动程序</a>.
 <ol><li>If you are rolling back to a 上一个 driver version, please 下载 the 显示 Driver Uninstaller and perform a clean installation.</li></ol></li></ol>
-<h2><span class="mw-headline" id="Other_causes">Other causes</span></h2>
+<h2><span id=".E5.85.B6.E4.BB.96.E5.8E.9F.E5.9B.A0"></span><span class="mw-headline" id="其他原因">其他原因</span></h2>
 <p>There's currently an issue with Dynamic 分辨率 Scaling (DRS) crashing the game on startup. If you 经验值 this, you can manually edit your settings externally. Please try and launch the game with the steam launch 指挥 <code>--disable-drs</code> .
 </p>
 <div role="navigation" aria-label="Navbox" class="ranger-navbox navigation-not-searchable striped-even mw-collapsible"><div class="ranger-title"><div class="mw-collapsible-toggle-placeholder"></div></span></span><div class="ranger-title-text"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div></div><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:4"><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Tools</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist"><div class="ranger-list">
@@ -82,14 +81,14 @@
 </div></div></div></div></div></div></div>
 <!-- 
 NewPP limit report
-Cached time: 20260818035747
+Cached time: 20260819055501
 Cache expiry: 2592000
 Reduced expiry: false
 Complications: [vary‐revision‐sha1]
-CPU time usage: 0.043 seconds
-Real time usage: 0.072 seconds
+CPU time usage: 0.024 seconds
+Real time usage: 0.051 seconds
 Preprocessor visited node count: 139/1000000
-Revision size: 2502/4194304 bytes
+Revision size: 2496/4194304 bytes
 Post‐expand include size: 7497/4194304 bytes
 Template argument size: 47/4194304 bytes
 Highest expansion depth: 8/100
@@ -97,34 +96,22 @@ Expensive parser function count: 2/500
 Unstrip recursion depth: 0/20
 Unstrip post‐expand size: 0/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.009/15.000 seconds
+Lua time usage: 0.006/15.000 seconds
 Lua memory usage: 664063/52428800 bytes
 Number of processed Cargo queries: 2
-Time spent processing Cargo queries: 0.012 s (avg. 0.006 s)
+Time spent processing Cargo queries: 0.008 s (avg. 0.004 s)
 Number of Cargo row insertion attempts: 1
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%   53.149      1 -total
- 76.24%   40.523      1 Template:Breadcrumb_Auto
- 23.50%   12.491      1 Template:Navbox_Troubleshooting
- 19.33%   10.273      1 Template:Navbox
-  7.02%    3.733      2 Template:Article_other
+100.00%   40.012      1 -total
+ 73.85%   29.550      1 Template:Breadcrumb_Auto
+ 25.96%   10.386      1 Template:Navbox_Troubleshooting
+ 21.59%    8.638      1 Template:Navbox
+  6.82%    2.728      2 Template:Article_other
 -->
-</div></div>
+</div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
-<script>
-功能 toggleTheme(){
-  var h = 文档.documentElement;
-  var alt = h.classList.toggle('view-alt');
-  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
-}
-try {
-  if (localStorage.getItem('hd2theme') === 'alt') {
-    文档.documentElement.classList.add('view-alt');
-  }
-} catch(e) {}
-</script>
 </body>
 </html>

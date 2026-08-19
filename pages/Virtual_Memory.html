@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-helldiver view-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,21 +14,20 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
-    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
   <button class="back-btn" type="button" onclick="history.back()">← 返回</button>
   <h1 class="page-title">Virtual Memory</h1>
-  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div><div class="breadcrumb-item breadcrumb-item-final">Virtual Memory</div></div>
-<p><b>Virtual Memory</b> is a memory 管理 technique utilized by a 电脑's operating system. By using a designated portion of secondary 存储 devices (such as SSDs or HDDs), it extends the system's available memory pool beyond its 物理 limits (RAM).
+  <div class="mw-parser-output"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div><div class="breadcrumb-item breadcrumb-item-final">Virtual Memory</div></div>
+<p><b>虚拟内存</b> is a memory 管理 technique utilized by a 电脑's operating system. By using a designated portion of secondary 存储 devices (such as SSDs or HDDs), it extends the system's available memory pool beyond its 物理 limits (RAM).
 </p>
-<h2><span class="mw-headline" id="Basics">Basics</span></h2>
+<h2><span id=".E5.9F.BA.E7.A1.80"></span><span class="mw-headline" id="基础">基础</span></h2>
 <p>Every system has a 有限 pool of 物理 memory, known as RAM. Once the RAM is fully saturated, the system has 否 more space to store and 回收 active data. This immediately leads to 稳定性 issues, resulting in random desktop 崩溃, severe stuttering, or even full system hangs like Blue Screens of Death (BSOD). Virtual memory prevents this by outsourcing less 致命 active files onto the system's secondary 存储.
 </p><p>However, it is 重要 to note that secondary 存储 is significantly slower than 物理 RAM. Therefore, virtual memory is not a viable method for boosting raw gaming performance, and it cannot magically replace 物理 RAM. Instead, it acts strictly as a safety net to 维护 system 稳定性 when 物理 memory runs out.
 </p><p>As a rule of thumb, the less 物理 RAM a system has, the more 致命 proper virtual memory configuration becomes. Systems with 16GB of RAM or less must absolutely ensure their virtual memory is enabled and correctly configured. Even systems with larger memory pools (32GB+) should never deactivate virtual memory, as many modern games and Windows services rely on its presence to avoid unforeseen 崩溃.
 </p>
-<h2><span class="mw-headline" id="Setting_the_Virtual_Memory">Setting the Virtual Memory</span></h2>
+<h2><span id=".E8.AE.BE.E7.BD.AE.E8.99.9A.E6.8B.9F.E5.86.85.E5.AD.98"></span><span class="mw-headline" id="设置虚拟内存">设置虚拟内存</span></h2>
 <div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ 重要, read the 下一个 three points carefully! ⚠</b></div>
 <ul><li>If you have both an SSD and an HDD, place the page file on your HDD! Placing it on a SSD can cause drastic wear &amp; tear if you regularly run out of 物理 memory. Furthermore some processes will inevitably write things onto the pagefile to free up valuable RAM. Using the SSD might be faster but the wear&amp;tear should always be kept in mind!</li>
 <li>Do NOT disable the page file.</li>
@@ -37,12 +36,12 @@
 </p>
 <table class="wikitable" style="width:300px; font-size:90%; float:right; margin-left: 40px">
 <tbody><tr>
-<td colspan="3" style="font-weight:bold; text-align:center; padding:6px; border-bottom:1px solid;">Manually set Virtual Memory
+<td colspan="3" style="font-weight:bold; text-align:center; padding:6px; border-bottom:1px solid;">手动设置虚拟内存
 </td></tr>
 <tr>
 <th>RAM</th>
-<th>最小 Size</th>
-<th>最大 Size
+<th>最小大小</th>
+<th>最大大小
 </th></tr>
 <tr>
 <td>8 GB</td>
@@ -65,26 +64,26 @@
 <td>65,793 MB
 </td></tr></tbody></table>
 <div class="tabber tabber--init"><header class="tabber__header"><button class="tabber__header__prev" tabindex="-1" type="button" aria-hidden="true"></button><nav class="tabber__tabs" role="tablist"><a class="tabber__tab" role="tab" id="Windows_(Pagefile)-0-label" href="#Windows_(Pagefile)-0" aria-controls="Windows_(Pagefile)-0">Windows (Pagefile)</a><a class="tabber__tab" role="tab" id="Linux_(SWAP)-0-label" href="#Linux_(SWAP)-0" aria-controls="Linux_(SWAP)-0">Linux (SWAP)</a></nav><button class="tabber__header__next" tabindex="-1" type="button" aria-hidden="true"></button></header><section class="tabber__section"><article class="tabber__panel" role="tabpanel" tabindex="0" id="Windows_(Pagefile)-0" aria-labelledby="Windows_(Pagefile)-0-label"><p class="mw-empty-elt">
-</p><ol><li>按下 <code>WIN + R</code> to open the "Run" dialog.</li>
-<li>类型 <code>sysdm.cpl</code> into the textbox and click "OK".</li>
+</p><ol><li>按下 <code>WIN + R</code> 以打开"运行"对话框。</li>
+<li>类型 <code>sysdm.cpl</code> 到文本框中，然后点击"确定"。</li>
 <li>Navigate to the "Advanced" tab, then click the "Settings..." button under the "Performance" 章节.</li>
 <li>In the "Performance Options" window, click the "Advanced" tab.</li>
 <li>Ensure that "处理器 scheduling" is set to "Programs".</li>
 <li>Click the "Change..." button under the "Virtual memory" 章节.</li>
-<li>Check the box at the very top: <code>Automatically manage paging file size for all drives</code>.</li>
+<li>Check the box at the very top: <code>自动管理所有驱动器的分页文件大小</code>.</li>
 <li>Click "OK", apply the 变更, and 重新开始 your 电脑 for them to take 效果.</li></ol>
-<p>If you prefer to set the size manually, uncheck the 全自动 管理 box, select the "Custom size" radio button, and set the Initial size to a 最小 of (0.25 * RAM) and the 最大 size to (1 * RAM + 257MB).<sup id="cite&#95;ref-1" class="reference"><a href="#cite_note-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup>
+<p>如果你希望手动设置大小，请取消勾选自动管理复选框，选择"自定义大小"单选按钮，并将初始大小设置为不低于(0.25 * RAM)，最大大小设置为(1 * RAM + 257MB)。<sup id="cite&#95;ref-1" class="reference"><a href="#cite_note-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup>
 </p>
-<p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Linux_(SWAP)-0" aria-labelledby="Linux_(SWAP)-0-label"><p>Linux offers two methods for configuring virtual memory: a dedicated SWAP partition or a SWAP file. Some distributions 要求 users to configure a partition during the initial OS installation.
-</p><p>通常, it is recommended to use a dedicated SWAP partition rather than a SWAP file. Even Linus Torvalds has emphasized the 稳定性 benefits of using a proper partition over a file setup.<sup id="cite&#95;ref-2" class="reference"><a href="#cite_note-2"><span class="cite-bracket">&#91;</span>2<span class="cite-bracket">&#93;</span></a></sup>
-</p><p>The ideal size of your SWAP partition depends heavily on two factors:
+<p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Linux_(SWAP)-0" aria-labelledby="Linux_(SWAP)-0-label"><p>Linux提供两种配置虚拟内存的方法：专用SWAP分区或SWAP文件。某些发行版要求用户在初始OS安装期间配置分区。
+</p><p>通常建议使用专用SWAP分区而非SWAP文件。即使是Linus Torvalds也强调过，与文件设置相比，使用正规分区在稳定性方面的优势。<sup id="cite&#95;ref-2" class="reference"><a href="#cite_note-2"><span class="cite-bracket">&#91;</span>2<span class="cite-bracket">&#93;</span></a></sup>
+</p><p>SWAP分区的理想大小主要取决于两个因素：
 </p>
 <ul><li>The amount of 物理 RAM installed.</li>
 <li>The primary workload of the system.</li></ul>
-<p>While 历史 tech advice recommended setting the pagefile or SWAP partition to 1.5x or 2x your RAM, modern 要求 have shifted. Red Hat 提供 官员 guidelines that lean toward system hibernation needs rather than gaming 优化. For gaming, the 经典 rule still holds some value: the less 物理 RAM you have, the larger your SWAP partition needs to be to prevent out-of-memory 崩溃.<sup id="cite&#95;ref-3" class="reference"><a href="#cite_note-3"><span class="cite-bracket">&#91;</span>3<span class="cite-bracket">&#93;</span></a></sup>
+<p>虽然历史上的技术建议推荐将页面文件或SWAP分区设置为内存的1.5倍或2倍，但现代需求已经发生变化。Red Hat提供的官方指南更倾向于满足系统休眠需求，而非游戏优化。对于游戏而言，经典规则仍有一定价值：物理内存越少，为防止内存不足崩溃，SWAP分区就需要越大。<sup id="cite&#95;ref-3" class="reference"><a href="#cite_note-3"><span class="cite-bracket">&#91;</span>3<span class="cite-bracket">&#93;</span></a></sup>
 </p>
-Additionally, <i>zRAM</i> is 频繁 recommended as a modern way to handle virtual memory via RAM compression. However, it is 重要 to note that zRAM utilizes real-time CPU compression, which can introduce extra CPU overhead. If your CPU is already heavily utilized by games like 绝地潜兵 2, using a traditional, uncompressed SWAP partition on a fast drive may yield more stable gaming performance when 物理 memory is exhausted.<p class="mw-empty-elt"></p></article></section></div>
-<h2><span class="mw-headline" id="References">参考</span></h2>
+Additionally, <i>zRAM</i> 常被推荐为一种通过RAM压缩处理虚拟内存的现代方式。然而需要注意的是，zRAM使用实时CPU压缩，可能带来额外的CPU开销。若CPU已被《绝地潜兵2》等游戏大量占用，在物理内存耗尽时，使用传统未压缩的SWAP分区（位于高速驱动器上）可能带来更稳定的游戏性能。<p class="mw-empty-elt"></p></article></section></div>
+<h2><span id=".E5.8F.82.E8.80.83.E8.B5.84.E6.96.99"></span><span class="mw-headline" id="参考资料">参考资料</span></h2>
 <div class="mw-references-wrap"><ol class="references">
 <li id="cite&#95;note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://learn.microsoft.com/en-us/troubleshoot/windows-client/performance/how-to-determine-the-appropriate-page-file-size-for-64-bit-versions-of-windows">Microsoft - How to determine the appropriate page file size for 64-bit versions of Windows</a></span>
 </li>
@@ -124,50 +123,38 @@ Additionally, <i>zRAM</i> is 频繁 recommended as a modern way to handle virtua
 </div></div></div></div></div></div></div>
 <!-- 
 NewPP limit report
-Cached time: 20260818035741
+Cached time: 20260819055453
 Cache expiry: 2592000
 Reduced expiry: false
 Complications: [vary‐revision‐sha1]
-CPU time usage: 0.053 seconds
-Real time usage: 0.087 seconds
+CPU time usage: 0.052 seconds
+Real time usage: 0.072 seconds
 Preprocessor visited node count: 184/1000000
-Revision size: 5513/4194304 bytes
+Revision size: 5285/4194304 bytes
 Post‐expand include size: 7677/4194304 bytes
 Template argument size: 103/4194304 bytes
 Highest expansion depth: 8/100
 Expensive parser function count: 2/500
 Unstrip recursion depth: 1/20
-Unstrip post‐expand size: 4874/10000000 bytes
+Unstrip post‐expand size: 4657/10000000 bytes
 ExtLoops count: 0/5000
 Lua time usage: 0.010/15.000 seconds
 Lua memory usage: 663916/52428800 bytes
 Number of processed Cargo queries: 2
-Time spent processing Cargo queries: 0.010 s (avg. 0.005 s)
+Time spent processing Cargo queries: 0.007 s (avg. 0.004 s)
 Number of Cargo row insertion attempts: 1
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%   61.901      1 -total
- 63.80%   39.492      1 Template:Breadcrumb_Auto
- 19.88%   12.304      1 Template:Navbox_Troubleshooting
- 16.39%   10.148      1 Template:Navbox
-  6.21%    3.842      2 Template:Article_other
-  2.81%    1.741      1 Template:Crash_header
+100.00%   51.105      1 -total
+ 63.02%   32.209      1 Template:Breadcrumb_Auto
+ 19.60%   10.016      1 Template:Navbox_Troubleshooting
+ 16.06%    8.209      1 Template:Navbox
+  5.25%    2.682      2 Template:Article_other
+  3.23%    1.649      1 Template:Crash_header
 -->
-</div></div>
+</div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
-<script>
-功能 toggleTheme(){
-  var h = 文档.documentElement;
-  var alt = h.classList.toggle('view-alt');
-  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
-}
-try {
-  if (localStorage.getItem('hd2theme') === 'alt') {
-    文档.documentElement.classList.add('view-alt');
-  }
-} catch(e) {}
-</script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-helldiver view-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,13 +14,12 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
-    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
   <button class="back-btn" type="button" onclick="history.back()">← 返回</button>
   <h1 class="page-title">装备</h1>
-  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item breadcrumb-item-final">装备</div></div>
+  <div class="mw-parser-output"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item breadcrumb-item-final">装备</div></div>
 <div class="msgbox noexcerpt searchaux msgbox-orange" style="max-width: 90%;">
 <div id="msgbox-icon"> <div id="msgbox-image" class="nomobile" style=""> <img alt="Reinforce Stratagem Icon Background.svg" src="../images/Reinforce_Stratagem_Icon_Background.svg" decoding="async" loading="lazy" width="45" height="45" style="vertical-align: text-top" data-file-width="512" data-file-height="512" /></div>
 </div>
@@ -33,12 +32,12 @@
 <ul><li>类别:护甲</li><li>类别:Boosters</li><li>类别:Cosmetics</li><li>类别:Starter 武装配置</li><li>类别:战略配备</li><li>类别:超级商店</li><li>类别:战争债券</li><li>类别:武器</li><li><a href="Stim.html" title="Stim">Stim</a></li><li><a href="Supplies.html" title="Supplies">物资</a></li></ul>
 <!-- 
 NewPP limit report
-Cached time: 20260818035736
+Cached time: 20260819055449
 Cache expiry: 3600
 Reduced expiry: true
 Complications: [vary‐revision‐sha1]
-CPU time usage: 0.025 seconds
-Real time usage: 0.057 seconds
+CPU time usage: 0.026 seconds
+Real time usage: 0.053 seconds
 Preprocessor visited node count: 162/1000000
 Revision size: 153/4194304 bytes
 Post‐expand include size: 1945/4194304 bytes
@@ -51,31 +50,19 @@ ExtLoops count: 0/5000
 Lua time usage: 0.005/15.000 seconds
 Lua memory usage: 572823/52428800 bytes
 Number of processed Cargo queries: 1
-Time spent processing Cargo queries: 0.008 s (avg. 0.008 s)
+Time spent processing Cargo queries: 0.007 s (avg. 0.007 s)
 Number of Cargo row insertion attempts: 1
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%   41.387      1 -total
- 79.44%   32.878      1 Template:Breadcrumb_Auto
- 20.40%    8.442      1 Template:Stub
- 14.07%    5.825      1 Template:Msgbox
-  9.36%    3.872      1 Template:Article_other
+100.00%   35.143      1 -total
+ 79.95%   28.097      1 Template:Breadcrumb_Auto
+ 19.87%    6.983      1 Template:Stub
+ 13.33%    4.683      1 Template:Msgbox
+  8.80%    3.094      1 Template:Article_other
 -->
-</div></div>
+</div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
-<script>
-功能 toggleTheme(){
-  var h = 文档.documentElement;
-  var alt = h.classList.toggle('view-alt');
-  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
-}
-try {
-  if (localStorage.getItem('hd2theme') === 'alt') {
-    文档.documentElement.classList.add('view-alt');
-  }
-} catch(e) {}
-</script>
 </body>
 </html>

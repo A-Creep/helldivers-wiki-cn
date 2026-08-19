@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-helldiver view-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,82 +14,81 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
-    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
   <button class="back-btn" type="button" onclick="history.back()">← 返回</button>
   <h1 class="page-title">故障排除 Stutters/Short Freezes</h1>
-  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div><div class="breadcrumb-item breadcrumb-item-final">故障排除 Stutters/Short Freezes</div></div>
-<p>This 条款 covers solutions for 玩家 experiencing <b>stuttering</b>, <b>audio cutting out</b>, <b>periodic 冰冻</b>，或 <b>system lockups</b> while playing <a href="Helldivers_2.html" title="Helldivers 2">绝地潜兵 2</a>.
+  <div class="mw-parser-output"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div><div class="breadcrumb-item breadcrumb-item-final">故障排除 Stutters/Short Freezes</div></div>
+<p>This 条款 covers solutions for 玩家 experiencing <b>卡顿</b>, <b>音频中断</b>, <b>周期性卡顿</b>，或 <b>系统死机</b> while playing <a href="Helldivers_2.html" title="Helldivers 2">绝地潜兵 2</a>.
 </p><p>This page is designed to be followed from top to bottom unless linked to a specific 章节.
 </p><p>If you are looking for better game performance, please check <a href="User_Settings_Config_FPS_Optimization.html" title="User Settings Config FPS Optimization">User Settings Config FPS 优化</a>. There you can get help with ingame-settings and other factors that may interfere with your FPS.
 </p>
 <div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="#Disconnect_or_Update_USB_Audio_Devices"><span class="tocnumber">1</span> <span class="toctext">断开 or 更新 USB Audio Devices</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="#Modify_Audio_Engine_Settings"><span class="tocnumber">2</span> <span class="toctext">Modify Audio Engine Settings</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="#断开或更新USB音频设备"><span class="tocnumber">1</span> <span class="toctext">断开或更新USB音频设备</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#修改音频引擎设置"><span class="tocnumber">2</span> <span class="toctext">修改音频引擎设置</span></a></li>
 <li class="toclevel-1 tocsection-3"><a href="#Microsoft_GameInput"><span class="tocnumber">3</span> <span class="toctext">Microsoft GameInput</span></a>
 <ul>
-<li class="toclevel-2 tocsection-4"><a href="#What_Is_GameInput?"><span class="tocnumber">3.1</span> <span class="toctext">What Is GameInput?</span></a></li>
-<li class="toclevel-2 tocsection-5"><a href="#Why_Should_I_Disable_GameInput?"><span class="tocnumber">3.2</span> <span class="toctext">Why Should I Disable GameInput?</span></a></li>
-<li class="toclevel-2 tocsection-6"><a href="#Is_Disabling_GameInput_Safe?"><span class="tocnumber">3.3</span> <span class="toctext">Is Disabling GameInput Safe?</span></a></li>
-<li class="toclevel-2 tocsection-7"><a href="#Reinstalling_GameInput"><span class="tocnumber">3.4</span> <span class="toctext">Reinstalling GameInput</span></a>
+<li class="toclevel-2 tocsection-4"><a href="#什么是GameInput？"><span class="tocnumber">3.1</span> <span class="toctext">什么是GameInput？</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#我为什么要禁用GameInput？"><span class="tocnumber">3.2</span> <span class="toctext">我为什么要禁用GameInput？</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#禁用GameInput安全吗？"><span class="tocnumber">3.3</span> <span class="toctext">禁用GameInput安全吗？</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#重新安装GameInput"><span class="tocnumber">3.4</span> <span class="toctext">重新安装GameInput</span></a>
 <ul>
-<li class="toclevel-3 tocsection-8"><a href="#Reinstalling_GameInput_2"><span class="tocnumber">3.4.1</span> <span class="toctext">Reinstalling GameInput</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="#重新安装GameInput_2"><span class="tocnumber">3.4.1</span> <span class="toctext">重新安装GameInput</span></a></li>
 </ul>
 </li>
-<li class="toclevel-2 tocsection-9"><a href="#Disabling/Enabling_GameInput"><span class="tocnumber">3.5</span> <span class="toctext">Disabling/Enabling GameInput</span></a>
+<li class="toclevel-2 tocsection-9"><a href="#禁用/启用GameInput"><span class="tocnumber">3.5</span> <span class="toctext">禁用/启用GameInput</span></a>
 <ul>
-<li class="toclevel-3 tocsection-10"><a href="#Disabling_GameInput"><span class="tocnumber">3.5.1</span> <span class="toctext">Disabling GameInput</span></a></li>
-<li class="toclevel-3 tocsection-11"><a href="#Enabling_GameInput"><span class="tocnumber">3.5.2</span> <span class="toctext">Enabling GameInput</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="#禁用GameInput"><span class="tocnumber">3.5.1</span> <span class="toctext">禁用GameInput</span></a></li>
+<li class="toclevel-3 tocsection-11"><a href="#启用GameInput"><span class="tocnumber">3.5.2</span> <span class="toctext">启用GameInput</span></a></li>
 </ul>
 </li>
-<li class="toclevel-2 tocsection-12"><a href="#Similar_Software"><span class="tocnumber">3.6</span> <span class="toctext">Similar 软件</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#类似软件"><span class="tocnumber">3.6</span> <span class="toctext">类似软件</span></a></li>
 </ul>
 </li>
 <li class="toclevel-1 tocsection-13"><a href="#(Windows)_DISM_/_SFC"><span class="tocnumber">4</span> <span class="toctext">(Windows) DISM / SFC</span></a></li>
-<li class="toclevel-1 tocsection-14"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">参考</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#参考资料"><span class="tocnumber">5</span> <span class="toctext">参考资料</span></a></li>
 </ul>
 </div>
 
-<h2><span class="mw-headline" id="Disconnect_or_Update_USB_Audio_Devices">断开 or 更新 USB Audio Devices</span></h2>
+<h2><span id=".E6.96.AD.E5.BC.80.E6.88.96.E6.9B.B4.E6.96.B0USB.E9.9F.B3.E9.A2.91.E8.AE.BE.E5.A4.87"></span><span class="mw-headline" id="断开或更新USB音频设备">断开或更新USB音频设备</span></h2>
 <p>If your problems persist and you use any USB audio devices (such as a 耳机, 扬声器, or 麦克风), try unplugging the devices and test the game again.
 If this resolves the issue:
 </p>
-<ul><li>Check your device 制造商’s 网站 for <b>driver updates</b>.</li>
+<ul><li>Check your device 制造商’s 网站 for <b>驱动程序更新</b>.</li>
 <li>If 否 updated drivers are available, you may need to use a non-USB audio device instead until an updated driver is available.</li></ul>
-<h2><span class="mw-headline" id="Modify_Audio_Engine_Settings">Modify Audio Engine Settings</span></h2>
+<h2><span id=".E4.BF.AE.E6.94.B9.E9.9F.B3.E9.A2.91.E5.BC.95.E6.93.8E.E8.AE.BE.E7.BD.AE"></span><span class="mw-headline" id="修改音频引擎设置">修改音频引擎设置</span></h2>
 <p>Increasing the memory buffer size allows more audio data to be preloaded, reducing stutters and crackling from audio starvation.
 </p>
-<ol><li>Right click in Steam, Hover over <code>Manage</code> and select <code>Browse local files</code></li>
+<ol><li>Right click in Steam, Hover over <code>管理</code> and select <code>浏览本地文件</code></li>
 <li>打开 <code>settings.ini</code> in your preferred text editor.</li>
 <li>Find <code>memory_size = 26214400</code> and replace it with <code>memory_size = 78643200</code></li>
 <li>Save the file.</li></ol>
-<p><b>Optional</b>: Please only change these if your CPU has <b>16 or more</b> threads - otherwise you might lose performance!
+<p><b>可选</b>: Please only change these if your CPU has <b>16或更多</b> threads - otherwise you might lose performance!
 </p>
 <ul><li>Find <code>num_reserved_threads = 2</code> and replace it with <code>num_reserved_threads = 4</code></li></ul>
 <p><b>注意：</b> You will most likely have to re-do these steps after a game 更新.
 </p>
 <h2><span class="mw-headline" id="Microsoft_GameInput">Microsoft GameInput</span></h2>
-<p>It is recommended to first test a <b>reinstall</b> and if problems persist then to disable the 服务 completely.
+<p>It is recommended to first test a <b>重新安装</b> and if problems persist then to disable the 服务 completely.
 </p>
-<h3><span id="What_Is_GameInput.3F"></span><span class="mw-headline" id="What_Is_GameInput?">What Is GameInput?</span></h3>
+<h3><span id=".E4.BB.80.E4.B9.88.E6.98.AFGameInput.EF.BC.9F"></span><span class="mw-headline" id="什么是GameInput？">什么是GameInput？</span></h3>
 <p><b>GameInput</b> is an input API developed by <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Microsoft">Microsoft</a> that 提供 a unified interface for a wide variety of input devices, including keyboards, mice, controllers, and other specialized peripherals. By standardizing input 操控性, GameInput allows developers to write code that works consistently across devices without needing to handle each device separately.  
 </p><p>The API is designed with performance and simplicity in mind, providing low-latency input processing and built-in 支援 for advanced features such as vibration, force feedback, and simultaneous multi-device input. This makes it particularly useful for games that 要求 precise and responsive input 操控性.<sup id="cite&#95;ref-1" class="reference"><a href="#cite_note-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup>
 </p>
-<h3><span id="Why_Should_I_Disable_GameInput.3F"></span><span class="mw-headline" id="Why_Should_I_Disable_GameInput?">Why Should I Disable GameInput?</span></h3>
+<h3><span id=".E6.88.91.E4.B8.BA.E4.BB.80.E4.B9.88.E8.A6.81.E7.A6.81.E7.94.A8GameInput.EF.BC.9F"></span><span class="mw-headline" id="我为什么要禁用GameInput？">我为什么要禁用GameInput？</span></h3>
 <p>Since the release of <a href="1.004.000.html" title="1.004.000"> Into The Unjust</a>, a number of PC 玩家 have reported performance issues, especially when using controllers. These issues include input lag, stuttering and 崩溃.<sup id="cite&#95;ref-2" class="reference"><a href="#cite_note-2"><span class="cite-bracket">&#91;</span>2<span class="cite-bracket">&#93;</span></a></sup>  
 </p><p>Player investigations have found that for some users <b>GameInput</b> can lead to degraded performance especially when using a controller. Disabling <b>GameInput</b> has been shown to 解决 a large majority of these issues for users with it still enabled.
 </p>
-<h3><span id="Is_Disabling_GameInput_Safe.3F"></span><span class="mw-headline" id="Is_Disabling_GameInput_Safe?">Is Disabling GameInput Safe?</span></h3>
+<h3><span id=".E7.A6.81.E7.94.A8GameInput.E5.AE.89.E5.85.A8.E5.90.97.EF.BC.9F"></span><span class="mw-headline" id="禁用GameInput安全吗？">禁用GameInput安全吗？</span></h3>
 <p>是, disabling <b>GameInput</b> is 通常 safe for most users. Very few applications or games rely exclusively on <b>GameInput</b> for controller 支援; most modern games provide fallback input 操控性 mechanisms.  
 </p><p>If you disable <b>GameInput</b> and encounter issues with any other game or 应用程序, the change is fully reversible. Re-enabling <b>GameInput</b> restores normal functionality without impacting your system or installed 软件. Instructions to do so are provided along-侧面 the instructions to disable <b>GameInput</b>.
 </p>
-<h3><span class="mw-headline" id="Reinstalling_GameInput">Reinstalling GameInput</span></h3>
+<h3><span id=".E9.87.8D.E6.96.B0.E5.AE.89.E8.A3.85GameInput"></span><span class="mw-headline" id="重新安装GameInput">重新安装GameInput</span></h3>
 <p>It is recommended to first try reinstalling <b>GameInput</b> before resorting to disabling it. The quickest and easiest method to do this would be the <a href="Hellbomb_Script.html" title="Hellbomb Script">Hellbomb Script</a>. If you want to do it manually, please follow the steps below:<br />
 </p>
-<h4><span class="mw-headline" id="Reinstalling_GameInput_2">Reinstalling GameInput</span></h4>
+<h4><span id=".E9.87.8D.E6.96.B0.E5.AE.89.E8.A3.85GameInput_2"></span><span class="mw-headline" id="重新安装GameInput_2">重新安装GameInput</span></h4>
 <ol><li>Close the game.</li>
 <li>Open Windows PowerShell (Admin) using one of the following methods:
 <ol><li>按下 <code>⊞ Win</code> + <code>X</code>，然后按下 <code>A</code> 或选择 <code>Windows PowerShell（管理员）</code> 从菜单中。</li>
@@ -102,16 +101,16 @@ If this resolves the issue:
 <ol><li>按下 <code>⊞ Win</code> + <code>X</code>，然后按下 <code>U</code>, then select <code>重新开始</code> from the open menu.</li>
 <li>Open the Windows Start menu, click the power icon, then select <code>重新开始</code> from the open menu.</li>
 <li>Run the 指挥: <code>shutdown -r -t 0</code>.</li></ol></li></ol>
-<h3><span id="Disabling.2FEnabling_GameInput"></span><span class="mw-headline" id="Disabling/Enabling_GameInput">Disabling/Enabling GameInput</span></h3>
-<h4><span class="mw-headline" id="Disabling_GameInput">Disabling GameInput</span></h4>
+<h3><span id=".E7.A6.81.E7.94.A8.2F.E5.90.AF.E7.94.A8GameInput"></span><span class="mw-headline" id="禁用/启用GameInput">禁用/启用GameInput</span></h3>
+<h4><span id=".E7.A6.81.E7.94.A8GameInput"></span><span class="mw-headline" id="禁用GameInput">禁用GameInput</span></h4>
 <div class="tabber tabber--init"><header class="tabber__header"><button class="tabber__header__prev" tabindex="-1" type="button" aria-hidden="true"></button><nav class="tabber__tabs" role="tablist"><a class="tabber__tab" role="tab" id="Windows_(GUI)-0-label" href="#Windows_(GUI)-0" aria-controls="Windows_(GUI)-0">Windows (GUI)</a><a class="tabber__tab" role="tab" id="Windows_(CLI)-0-label" href="#Windows_(CLI)-0" aria-controls="Windows_(CLI)-0">Windows (CLI)</a></nav><button class="tabber__header__next" tabindex="-1" type="button" aria-hidden="true"></button></header><section class="tabber__section"><article class="tabber__panel" role="tabpanel" tabindex="0" id="Windows_(GUI)-0" aria-labelledby="Windows_(GUI)-0-label"><p class="mw-empty-elt">
 </p><ol><li>Close the game.</li>
-<li>按下 <code>⊞ Win</code> + <code>R</code> to open the <code>运行</code> dialog.</li>
-<li>类型 or paste <code>services.msc</code> 进入 <code>运行</code> dialog, then click <code>OK</code> or press <code>Enter ↩</code>.</li>
-<li>In the Services window, locate <code>GameInput 服务</code>.</li>
+<li>按下 <code>⊞ Win</code> + <code>R</code> to open the <code>运行</code> 对话框。</li>
+<li>类型 or paste <code>services.msc</code> 进入 <code>运行</code> 对话框，然后点击 <code>OK</code> or press <code>回车 ↩</code>.</li>
+<li>In the Services window, locate <code>GameInput服务</code>.</li>
 <li>Right-click the 服务 and select <code>属性</code>.</li>
-<li>In the <code>Startup 类型</code> 掉落-down menu, select <code>禁用</code>.</li>
-<li>Click the <code>停止</code> button.</li></ol>
+<li>In the <code>启动类型</code> 下拉菜单，选择 <code>禁用</code>.</li>
+<li>点击 <code>停止</code> 按钮。</li></ol>
 <p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Windows_(CLI)-0" aria-labelledby="Windows_(CLI)-0-label"><p class="mw-empty-elt">
 </p><ol><li>Close the game.</li>
 <li>Open Windows PowerShell (Admin) using one of the following methods:
@@ -119,26 +118,26 @@ If this resolves the issue:
 <li>按下 <code>⊞ Win</code> + <code>R</code>，输入 <code>powershell</code> 进入 <code>运行</code> 对话框，然后按 <code>Ctrl</code> + <code>Shift</code> + <code>进入</code>.</li>
 <li>Search for <code>powershell</code> 在 Windows 搜索栏中并选择 <code>以管理员身份运行</code> 从右侧的面板中。</li></ol></li>
 <li>Run the following 指挥: <code>Set-服务 "GameInputSvc" -StartupType Disabled -Status Stopped</code></li>
-<li><b>（可选）</b> Verify that the 服务 has been disabled and stopped:
+<li><b>（可选）</b> 验证服务已被禁用并停止：
 <ol><li>运行 <code>Get-服务 "GameInputSvc" | Select-Object -Property Name, DisplayName, Status, StartType | Format-List</code>.</li>
 <li>Ensure <code>StartType</code> is <code>禁用</code>.</li>
-<li>Ensure <code>状态</code> is <code>Stopped</code>.
+<li>Ensure <code>状态</code> is <code>已停止</code>.
 <ol><li>If it is not, try one of the below:
 <ol><li>运行 <code>Stop-服务 "GameInputSvc" -Force</code> and recheck.</li>
 <li><b>重新开始</b> your machine with <code>shutdown -r -t 0</code>. <div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ Ensure you have saved anything 重要 before running this 指挥! ⚠</b></div></li></ol></li></ol></li></ol></li></ol>
 <p class="mw-empty-elt"></p></article></section></div>
-<h4><span class="mw-headline" id="Enabling_GameInput">Enabling GameInput</span></h4>
+<h4><span id=".E5.90.AF.E7.94.A8GameInput"></span><span class="mw-headline" id="启用GameInput">启用GameInput</span></h4>
 <p>To re-enable <b>GameInput</b>, reverse the disabling steps like so:
 </p>
 <div class="tabber tabber--init"><header class="tabber__header"><button class="tabber__header__prev" tabindex="-1" type="button" aria-hidden="true"></button><nav class="tabber__tabs" role="tablist"><a class="tabber__tab" role="tab" id="Windows_(GUI)-1-label" href="#Windows_(GUI)-1" aria-controls="Windows_(GUI)-1">Windows (GUI)</a><a class="tabber__tab" role="tab" id="Windows_(CLI)-1-label" href="#Windows_(CLI)-1" aria-controls="Windows_(CLI)-1">Windows (CLI)</a></nav><button class="tabber__header__next" tabindex="-1" type="button" aria-hidden="true"></button></header><section class="tabber__section"><article class="tabber__panel" role="tabpanel" tabindex="0" id="Windows_(GUI)-1" aria-labelledby="Windows_(GUI)-1-label"><p class="mw-empty-elt">
 </p><ol><li>Close the game.</li>
-<li>按下 <code>⊞ Win</code> + <code>R</code> to open the <code>运行</code> dialog.</li>
-<li>类型 or paste <code>services.msc</code> 进入 <code>运行</code> dialog, then click <code>OK</code> or press <code>Enter ↩</code>.</li>
-<li>In the Services window, locate <code>GameInput 服务</code>.</li>
+<li>按下 <code>⊞ Win</code> + <code>R</code> to open the <code>运行</code> 对话框。</li>
+<li>类型 or paste <code>services.msc</code> 进入 <code>运行</code> 对话框，然后点击 <code>OK</code> or press <code>回车 ↩</code>.</li>
+<li>In the Services window, locate <code>GameInput服务</code>.</li>
 <li>Right-click the 服务 and select <code>属性</code>.</li>
-<li>In the <code>Startup 类型</code> 掉落-down menu, select <code>全自动</code>.</li>
-<li>Click <code>应用</code></li>
-<li>Click the <code>开始</code> button.</li></ol>
+<li>In the <code>启动类型</code> 下拉菜单，选择 <code>全自动</code>.</li>
+<li>点击 <code>应用</code></li>
+<li>点击 <code>开始</code> 按钮。</li></ol>
 <p class="mw-empty-elt"></p></article><article class="tabber__panel" role="tabpanel" tabindex="0" id="Windows_(CLI)-1" aria-labelledby="Windows_(CLI)-1-label"><p class="mw-empty-elt">
 </p><ol><li>Close the game.</li>
 <li>Open Windows PowerShell (Admin) using one of the following methods:
@@ -146,34 +145,34 @@ If this resolves the issue:
 <li>按下 <code>⊞ Win</code> + <code>R</code>，输入 <code>powershell</code> 进入 <code>运行</code> 对话框，然后按 <code>Ctrl</code> + <code>Shift</code> + <code>进入</code>.</li>
 <li>Search for <code>powershell</code> 在 Windows 搜索栏中并选择 <code>以管理员身份运行</code> 从右侧的面板中。</li></ol></li>
 <li>Run the following 指挥: <code>Set-服务 "GameInputSvc" -StartupType 全自动 -Status Running</code></li>
-<li><b>（可选）</b> 确认 that the 服务 has been disabled and stopped:
+<li><b>（可选）</b> 确认服务已被禁用并停止：
 <ol><li>运行 <code>Get-服务 "GameInputSvc" | Select-Object -Property Name, DisplayName, Status, StartType | Format-List</code></li>
 <li>Ensure <code>StartType</code> is <code>全自动</code>.</li>
-<li>Ensure <code>状态</code> is <code>Running</code>.
+<li>Ensure <code>状态</code> is <code>奔跑</code>.
 <ol><li>If it is not, <b>重新开始</b> your machine with <code>shutdown -r -t 0</code>. <div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ Ensure you have saved anything 重要 before running this 指挥! ⚠</b></div></li></ol></li></ol></li></ol>
 <p class="mw-empty-elt"></p></article></section></div>
-<h3><span class="mw-headline" id="Similar_Software">Similar 软件</span></h3>
+<h3><span id=".E7.B1.BB.E4.BC.BC.E8.BD.AF.E4.BB.B6"></span><span class="mw-headline" id="类似软件">类似软件</span></h3>
 <p>Please be aware that there are cases when 软件 such as Razer Cortex has similar 效果 to GameInput. 通常 it is recommended to keep such 软件 updated or to remove it as a test to see if that resolves the issue.
 </p>
 <h2><span id=".28Windows.29_DISM_.2F_SFC"></span><span class="mw-headline" id="(Windows)_DISM_/_SFC">(Windows) DISM / SFC</span></h2>
 <p>If you are using Windows and encounter stuttering, it's worth at least trying once to check for potentially damaged Windows files and repair them. Via the 使用 of SFC ("System File Checker") you can let Windows check 受保护 system data for 伤害 and let it replace them with functioning copies from a local cache.
 </p>
 <ol><li>按下 <code>WIN + R</code> or Press "Start" and open the "Run" dialog.</li>
-<li>类型 in <code>CMD</code>.</li>
+<li>输入 <code>CMD</code>.</li>
 <li>Right click on it and choose "Run as 管理员".</li>
 <li>Now 类型 <code>sfc /scannow</code> into the CMD box.</li>
 <li>Once it's done, keep the CMD box open for the 下一个 steps.</li></ol>
 <p>After this has concluded, we will use DISM (Deployment Image Servicing and 管理). This 程序 will repair damaged Windows Images, Windows Updates and save components. It is capable of repairing files that SFC cannot repair.
 </p><p>Make sure to run these one by one as written:
 </p>
-<ol><li>类型 in <code>dism /online /cleanup-image /scanhealth</code>. Wait until it is finished.</li>
-<li>类型 in <code>dism /online /cleanup-image /checkhealth</code>. Again, wait until it is finished.</li>
+<ol><li>输入 <code>dism /online /cleanup-image /scanhealth</code>. Wait until it is finished.</li>
+<li>输入 <code>dism /online /cleanup-image /checkhealth</code>. Again, wait until it is finished.</li>
 <li>Finally 类型 in <code>dism /online /cleanup-image /restorehealth</code>.</li></ol>
 <div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ Please be aware that these steps can take a bit to 完成. Please do not close or interrupt the 流程. ⚠</b></div>
 <p>Scan / verify / repair Windows image may “freeze” at ~62.8%, this is completely normal and requires just a bit of patience. This step can take anywhere from 10 ~ 30+ 分钟, depending on your PC and your 互联网. Closing it halfway through is <b>not</b> advisable!
 </p><p>Once DISM is done, please 重新开始 your 电脑.
 </p>
-<h2><span class="mw-headline" id="References">参考</span></h2>
+<h2><span id=".E5.8F.82.E8.80.83.E8.B5.84.E6.96.99"></span><span class="mw-headline" id="参考资料">参考资料</span></h2>
 <div class="mw-references-wrap"><ol class="references">
 <li id="cite&#95;note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://learn.microsoft.com/en-us/gaming/gdk/docs/features/common/input/overviews/input-overview">Microsoft GameInput 文档</a> – Introduction to GameInput.</span>
 </li>
@@ -211,50 +210,38 @@ If this resolves the issue:
 </div></div></div></div></div></div></div>
 <!-- 
 NewPP limit report
-Cached time: 20260818035604
+Cached time: 20260819055318
 Cache expiry: 2592000
 Reduced expiry: false
 Complications: [vary‐revision‐sha1, show‐toc]
-CPU time usage: 0.061 seconds
-Real time usage: 0.106 seconds
+CPU time usage: 0.059 seconds
+Real time usage: 0.088 seconds
 Preprocessor visited node count: 241/1000000
-Revision size: 11206/4194304 bytes
+Revision size: 11152/4194304 bytes
 Post‐expand include size: 8507/4194304 bytes
 Template argument size: 381/4194304 bytes
 Highest expansion depth: 8/100
 Expensive parser function count: 2/500
 Unstrip recursion depth: 0/20
-Unstrip post‐expand size: 6549/10000000 bytes
+Unstrip post‐expand size: 6530/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.011/15.000 seconds
+Lua time usage: 0.010/15.000 seconds
 Lua memory usage: 664166/52428800 bytes
 Number of processed Cargo queries: 2
-Time spent processing Cargo queries: 0.011 s (avg. 0.005 s)
+Time spent processing Cargo queries: 0.009 s (avg. 0.004 s)
 Number of Cargo row insertion attempts: 1
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%   75.856      1 -total
- 71.53%   54.263      1 Template:Breadcrumb_Auto
- 14.86%   11.275      1 Template:Navbox_Troubleshooting
- 12.52%    9.499      1 Template:Navbox
-  5.10%    3.865      2 Template:Article_other
-  2.55%    1.934      4 Template:Crash_header
+100.00%   60.721      1 -total
+ 61.24%   37.188      1 Template:Breadcrumb_Auto
+ 21.70%   13.176      1 Template:Navbox_Troubleshooting
+ 18.39%   11.168      1 Template:Navbox
+  5.74%    3.485      2 Template:Article_other
+  2.82%    1.714      4 Template:Crash_header
 -->
-</div></div>
+</div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
-<script>
-功能 toggleTheme(){
-  var h = 文档.documentElement;
-  var alt = h.classList.toggle('view-alt');
-  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
-}
-try {
-  if (localStorage.getItem('hd2theme') === 'alt') {
-    文档.documentElement.classList.add('view-alt');
-  }
-} catch(e) {}
-</script>
 </body>
 </html>

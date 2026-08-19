@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-helldiver view-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,93 +14,92 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
-    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
   <button class="back-btn" type="button" onclick="history.back()">← 返回</button>
   <h1 class="page-title">伤害</h1>
-  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Game_Mechanics.html" title="Game Mechanics">机制</a></div><div class="breadcrumb-item breadcrumb-item-final">伤害</div></div>
+  <div class="mw-parser-output"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Game_Mechanics.html" title="Game Mechanics">机制</a></div><div class="breadcrumb-item breadcrumb-item-final">伤害</div></div>
 <p>the 伤害 page explains how different 敌人, <a href="Weapons.html" title="Weapons">武器</a>，以及 <a href="Stratagems.html" title="Stratagems">战略配备</a> handle 伤害.
 </p>
 <div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="#Damage_Calculation"><span class="tocnumber">1</span> <span class="toctext">伤害 Calculation</span></a>
+<li class="toclevel-1 tocsection-1"><a href="#伤害计算"><span class="tocnumber">1</span> <span class="toctext">伤害计算</span></a>
 <ul>
-<li class="toclevel-2 tocsection-2"><a href="#Enemy_Parts"><span class="tocnumber">1.1</span> <span class="toctext">Enemy Parts</span></a></li>
-<li class="toclevel-2 tocsection-3"><a href="#Percent_(%)_to_Main"><span class="tocnumber">1.2</span> <span class="toctext">百分比 (%) 对主血量</span></a></li>
-<li class="toclevel-2 tocsection-4"><a href="#Health_Constitution_(Bleed)"><span class="tocnumber">1.3</span> <span class="toctext">生命值 构造 (流血)</span></a></li>
-<li class="toclevel-2 tocsection-5"><a href="#Breakable_Armor_Plating"><span class="tocnumber">1.4</span> <span class="toctext">Breakable 护甲板</span></a></li>
-<li class="toclevel-2 tocsection-6"><a href="#Explosion_Damage"><span class="tocnumber">1.5</span> <span class="toctext">爆炸伤害</span></a>
+<li class="toclevel-2 tocsection-2"><a href="#敌人部位"><span class="tocnumber">1.1</span> <span class="toctext">敌人部位</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#百分比(%)至主体"><span class="tocnumber">1.2</span> <span class="toctext">百分比(%)至主体</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#生命体质（流血）"><span class="tocnumber">1.3</span> <span class="toctext">生命体质（流血）</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#可破坏装甲板"><span class="tocnumber">1.4</span> <span class="toctext">可破坏装甲板</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#爆炸伤害"><span class="tocnumber">1.5</span> <span class="toctext">爆炸伤害</span></a>
 <ul>
-<li class="toclevel-3 tocsection-7"><a href="#Explosive_Damage_Resistance_(ExDR)"><span class="tocnumber">1.5.1</span> <span class="toctext">爆炸 伤害抗性 (爆炸抗性)</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="#爆炸伤害抗性_(ExDR)"><span class="tocnumber">1.5.1</span> <span class="toctext">爆炸伤害抗性 (爆炸抗性)</span></a></li>
 </ul>
 </li>
-<li class="toclevel-2 tocsection-8"><a href="#Explosion_Verification_Mode_(ExVM)"><span class="tocnumber">1.6</span> <span class="toctext">爆炸 Verification Mode (ExVM)</span></a></li>
-<li class="toclevel-2 tocsection-9"><a href="#Armor_Penetration_&amp;_Armor_Values"><span class="tocnumber">1.7</span> <span class="toctext">护甲穿透 &amp; 护甲 Values</span></a></li>
-<li class="toclevel-2 tocsection-10"><a href="#Overpenetration_(Cleave)"><span class="tocnumber">1.8</span> <span class="toctext">Overpenetration (Cleave)</span></a>
+<li class="toclevel-2 tocsection-8"><a href="#爆炸验证模式_(ExVM)"><span class="tocnumber">1.6</span> <span class="toctext">爆炸验证模式 (ExVM)</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#护甲穿透与护甲值"><span class="tocnumber">1.7</span> <span class="toctext">护甲穿透与护甲值</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#过度穿透（劈裂）"><span class="tocnumber">1.8</span> <span class="toctext">过度穿透（劈裂）</span></a>
 <ul>
 <li class="toclevel-3 tocsection-11"><a href="#穿透减速"><span class="tocnumber">1.8.1</span> <span class="toctext">穿透减速</span></a></li>
 </ul>
 </li>
-<li class="toclevel-2 tocsection-12"><a href="#Weapon_Damage"><span class="tocnumber">1.9</span> <span class="toctext">Weapon 伤害</span></a></li>
-<li class="toclevel-2 tocsection-13"><a href="#Ballistics"><span class="tocnumber">1.10</span> <span class="toctext">Ballistics</span></a></li>
-<li class="toclevel-2 tocsection-14"><a href="#Damage_Fall-Off"><span class="tocnumber">1.11</span> <span class="toctext">伤害 Fall-Off</span></a></li>
-<li class="toclevel-2 tocsection-15"><a href="#Enemy_Durability_&amp;_Durable_Damage"><span class="tocnumber">1.12</span> <span class="toctext">Enemy 耐久度 &amp; 耐久伤害</span></a></li>
-<li class="toclevel-2 tocsection-16"><a href="#Examples_of_Damage_to_a_Durable_Part"><span class="tocnumber">1.13</span> <span class="toctext">Examples of 伤害 to a 耐久 Part</span></a></li>
-<li class="toclevel-2 tocsection-17"><a href="#Squishy_Enemy_Parts"><span class="tocnumber">1.14</span> <span class="toctext">脆皮 Enemy Parts</span></a></li>
-<li class="toclevel-2 tocsection-18"><a href="#Demolition_Force_&amp;_Structures"><span class="tocnumber">1.15</span> <span class="toctext">爆破力 &amp; Structures</span></a></li>
-<li class="toclevel-2 tocsection-19"><a href="#Other_Structures"><span class="tocnumber">1.16</span> <span class="toctext">Other Structures</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#武器伤害"><span class="tocnumber">1.9</span> <span class="toctext">武器伤害</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#弹道"><span class="tocnumber">1.10</span> <span class="toctext">弹道</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#伤害衰减"><span class="tocnumber">1.11</span> <span class="toctext">伤害衰减</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#敌人耐久度与坚固伤害"><span class="tocnumber">1.12</span> <span class="toctext">敌人耐久度与坚固伤害</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#坚固部位伤害示例"><span class="tocnumber">1.13</span> <span class="toctext">坚固部位伤害示例</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#脆弱敌人部位"><span class="tocnumber">1.14</span> <span class="toctext">脆弱敌人部位</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#爆破力与结构"><span class="tocnumber">1.15</span> <span class="toctext">爆破力与结构</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#其他建筑"><span class="tocnumber">1.16</span> <span class="toctext">其他建筑</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-20"><a href="#Armor_Damage_Modifiers"><span class="tocnumber">2</span> <span class="toctext">护甲 伤害 Modifiers</span></a></li>
-<li class="toclevel-1 tocsection-21"><a href="#Damage_Types"><span class="tocnumber">3</span> <span class="toctext">伤害类型</span></a>
+<li class="toclevel-1 tocsection-20"><a href="#护甲伤害修正"><span class="tocnumber">2</span> <span class="toctext">护甲伤害修正</span></a></li>
+<li class="toclevel-1 tocsection-21"><a href="#伤害类型"><span class="tocnumber">3</span> <span class="toctext">伤害类型</span></a>
 <ul>
-<li class="toclevel-2 tocsection-22"><a href="#List_of_Damage_Types"><span class="tocnumber">3.1</span> <span class="toctext">List of 伤害类型</span></a></li>
-<li class="toclevel-2 tocsection-23"><a href="#Status_Strength_&amp;_Thresholds"><span class="tocnumber">3.2</span> <span class="toctext">Status 力量 &amp; Thresholds</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="#伤害类型列表"><span class="tocnumber">3.1</span> <span class="toctext">伤害类型列表</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="#状态强度与阈值"><span class="tocnumber">3.2</span> <span class="toctext">状态强度与阈值</span></a></li>
 <li class="toclevel-2 tocsection-24"><a href="#持续伤害"><span class="tocnumber">3.3</span> <span class="toctext">持续伤害</span></a></li>
-<li class="toclevel-2 tocsection-25"><a href="#Elemental_Multipliers"><span class="tocnumber">3.4</span> <span class="toctext">Elemental Multipliers</span></a></li>
-<li class="toclevel-2 tocsection-26"><a href="#Damage_Comparison_Table"><span class="tocnumber">3.5</span> <span class="toctext">伤害 Comparison Table</span></a></li>
+<li class="toclevel-2 tocsection-25"><a href="#元素倍率"><span class="tocnumber">3.4</span> <span class="toctext">元素倍率</span></a></li>
+<li class="toclevel-2 tocsection-26"><a href="#伤害对比表"><span class="tocnumber">3.5</span> <span class="toctext">伤害对比表</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-27"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">参考</span></a></li>
+<li class="toclevel-1 tocsection-27"><a href="#参考资料"><span class="tocnumber">4</span> <span class="toctext">参考资料</span></a></li>
 </ul>
 </div>
 
-<h2><span class="mw-headline" id="Damage_Calculation">伤害 Calculation</span></h2>
+<h2><span id=".E4.BC.A4.E5.AE.B3.E8.AE.A1.E7.AE.97"></span><span class="mw-headline" id="伤害计算">伤害计算</span></h2>
 <p><sup id="cite&#95;ref-1" class="reference"><a href="#cite_note-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup>Calculating <b>伤害</b> in <a href="Helldivers_2.html" title="Helldivers 2">绝地潜兵 2</a> takes a large number of variables into consideration.
 All 伤害 calculation information in this 章节 of the 文档 has been confirmed to be 准确 as of <a href="Game_Version.html" title="Game Version">游戏版本</a> 1.001.001
 </p>
-<h3><span class="mw-headline" id="Enemy_Parts">Enemy Parts</span></h3>
+<h3><span id=".E6.95.8C.E4.BA.BA.E9.83.A8.E4.BD.8D"></span><span class="mw-headline" id="敌人部位">敌人部位</span></h3>
 <p>An enemy's hitbox is not as simple as a single value of 生命值 and universal 护甲 value. An enemy is made up of many different enemy parts, each part with its own 护甲 value, 生命值, 耐久度, and a 主生命值 pool. Parts can also be considered "耐久" parts, which take 伤害 in a completely different way. 
 </p><p>Enemy parts can be destroyed, but that does not always mean the enemy dies. An enemy will die if one of the following conditions are satisfied:
 </p>
 <ul><li>Enemy 主生命值 is 已降低 to 0.</li>
 <li>A 致命 enemy part is destroyed.</li></ul>
-<h3><span id="Percent_.28.25.29_to_Main"></span><span class="mw-headline" id="Percent_(%)_to_Main">百分比 (%) 对主血量</span></h3>
+<h3><span id=".E7.99.BE.E5.88.86.E6.AF.94.28.25.29.E8.87.B3.E4.B8.BB.E4.BD.93"></span><span class="mw-headline" id="百分比(%)至主体">百分比(%)至主体</span></h3>
 <p>Enemy parts that take 伤害 通常 have a 百分比 of the 造成伤害 to them also be applied to their 主生命值. Most enemy parts will cap the 伤害 对主血量 at their full HP value, however some parts allow excess 伤害 to overflow into 主体.
 </p>
-<ul><li>Regular 示例: A <a href="Devastator.html" title="Devastator">蹂躏者's</a> 主生命值 is 750, with its arms having 260 生命值 and 50% 伤害 对主血量. An <a href="AR-23_Liberator.html" title="AR-23 Liberator">AR-23 解放者</a> deals 90 伤害 to the arms leaving them at 170 生命值. 45 伤害 is also dealt to the 主生命值 leaving it at 705.</li>
-<li>Uncapped 伤害 示例: A <a href="Trooper.html" title="Trooper">装甲兵's</a> 主生命值 is 125, with its arms having 65 生命值 and 50% 伤害 对主血量. A 单发 from an <a href="R-6_Deadeye.html" title="R-6 Deadeye">R-6 Deadeye</a> will deal its full 300 伤害 to the arms, dealing 150 伤害 to the 装甲兵's 主生命值 which will kill it.</li></ul>
-<h3><span id="Health_Constitution_.28Bleed.29"></span><span class="mw-headline" id="Health_Constitution_(Bleed)">生命值 构造 (流血)</span></h3>
+<ul><li>Regular 示例: A <a href="Devastator.html" title="Devastator">蹂躏者的</a> 主生命值 is 750, with its arms having 260 生命值 and 50% 伤害 对主血量. An <a href="AR-23_Liberator.html" title="AR-23 Liberator">AR-23 解放者</a> deals 90 伤害 to the arms leaving them at 170 生命值. 45 伤害 is also dealt to the 主生命值 leaving it at 705.</li>
+<li>Uncapped 伤害 示例: A <a href="Trooper.html" title="Trooper">装甲兵的</a> 主生命值 is 125, with its arms having 65 生命值 and 50% 伤害 对主血量. A 单发 from an <a href="R-6_Deadeye.html" title="R-6 Deadeye">R-6 Deadeye</a> will deal its full 300 伤害 to the arms, dealing 150 伤害 to the 装甲兵's 主生命值 which will kill it.</li></ul>
+<h3><span id=".E7.94.9F.E5.91.BD.E4.BD.93.E8.B4.A8.EF.BC.88.E6.B5.81.E8.A1.80.EF.BC.89"></span><span class="mw-headline" id="生命体质（流血）">生命体质（流血）</span></h3>
 <p>构造 is a second 生命池 that begins decaying once the 主生命值 is depleted. The enemy is now in the "downed" state and will limp until they bleedout and die. Bleedout is a second 生命池 for limbs that determines how long they live for once they are destroyed, at which point, its 构造 will begin to decay, or "流血 out," at a set rate. For some limbs, the 衰退速率 may be 0, 含义 they will not decay over time and bleedout must be depleted with further 伤害 to fully 摧毁 the limb.
 </p>
 <ul><li>构造 示例: <a href="Charger.html" title="Charger">强袭虫</a> have 750 构造 with a 衰退速率 of 100hp/s. Destroying the butt or depleting 主生命值 will trigger the "downed" state and the 强袭虫 will 流血 out until it depletes its 构造 and dies. Bleedout is 通常 致命.</li>
 <li>Bleedout without Decay 示例: <a href="Factory_Strider.html" title="Factory Strider">移动工厂</a> have 1,500 腿部生命值 and 2,000 构造 but 0 decay therefore the 构造 effectively 作为额外 生命值 so the legs have 3,500 有效 生命值.</li></ul>
-<h3><span class="mw-headline" id="Breakable_Armor_Plating">Breakable 护甲板</span></h3>
-<p>Some 敌人 have protective 护甲板 shielding 脆弱 and 致命 parts underneath it. The 敌人 that have this are <a href="Crescent_Overseer.html" title="Crescent Overseer">新月监视者</a>, <a href="Elevated_Overseer.html" title="Elevated Overseer">崇高监视者</a>, <a href="Overseer.html" title="Overseer">监视者</a>, <a href="Harvester.html" title="Harvester">猎杀器</a>, <a href="Leviathan.html" title="Leviathan">利维坦</a>, <a href="Bile_Titan.html" title="Bile Titan">吐酸泰坦</a>, <a href="Charger.html" title="Charger">强袭虫</a>, <a href="Charger_Behemoth.html" title="Charger Behemoth">巨兽级强袭虫</a>, <a href="Rupture_Charger.html" title="Rupture Charger">爆裂强袭虫</a>, <a href="Spore_Charger.html" title="Spore Charger">孢子强袭虫</a>, <a href="Impaler.html" title="Impaler">穿刺虫</a>, <a href="Hive_Lord.html" title="Hive Lord">Hive Lords,</a> 和 <a href="Factory_Strider.html" title="Factory Strider">移动工厂</a>.
+<h3><span id=".E5.8F.AF.E7.A0.B4.E5.9D.8F.E8.A3.85.E7.94.B2.E6.9D.BF"></span><span class="mw-headline" id="可破坏装甲板">可破坏装甲板</span></h3>
+<p>Some 敌人 have protective 护甲板 shielding 脆弱 and 致命 parts underneath it. The 敌人 that have this are <a href="Crescent_Overseer.html" title="Crescent Overseer">新月监视者</a>, <a href="Elevated_Overseer.html" title="Elevated Overseer">崇高监视者</a>, <a href="Overseer.html" title="Overseer">监视者</a>, <a href="Harvester.html" title="Harvester">猎杀器</a>, <a href="Leviathan.html" title="Leviathan">利维坦</a>, <a href="Bile_Titan.html" title="Bile Titan">吐酸泰坦</a>, <a href="Charger.html" title="Charger">强袭虫</a>, <a href="Charger_Behemoth.html" title="Charger Behemoth">巨兽级强袭虫</a>, <a href="Rupture_Charger.html" title="Rupture Charger">爆裂强袭虫</a>, <a href="Spore_Charger.html" title="Spore Charger">孢子强袭虫</a>, <a href="Impaler.html" title="Impaler">穿刺虫</a>, <a href="Hive_Lord.html" title="Hive Lord">霸王虫，</a> 和 <a href="Factory_Strider.html" title="Factory Strider">移动工厂</a>.
 </p>
 <ul><li>Breakable 护甲板 has a 分离 生命池 from the parts underneath it that <b>不会</b> 传输 excess 伤害 to the parts underneath. The 护甲板 <b>必须</b> be destroyed in order to deal 伤害 to the 脆弱 and 通常 致命 part underneath.
 <ul><li>For 示例: Destroying a 强袭虫's 腿部护甲 with a rocket from the <a href="MLS-4X_Commando.html" title="MLS-4X Commando">MLS-4X 突击兵</a> and finishing off the 暴露 脆弱 flesh off with a 主武器 such as the <a href="BR-14_Adjudicator.html" title="BR-14 Adjudicator">BR-14 审判者</a>.</li></ul></li></ul>
-<h3><span class="mw-headline" id="Explosion_Damage">爆炸伤害</span></h3>
+<h3><span id=".E7.88.86.E7.82.B8.E4.BC.A4.E5.AE.B3"></span><span class="mw-headline" id="爆炸伤害">爆炸伤害</span></h3>
 <p>爆炸伤害 deals <b>100%</b> 耐久伤害 and due to the 能力 to hit 多个 limbs, This allows explosives to deal multiplied 伤害 to 主生命值.
 </p>
 <ul><li>爆炸伤害 transferred 对主血量 via 爆炸 脆弱 parts "ignore" 主体 护甲值 and its 爆炸抗性.</li></ul>
-<p>For 示例: An HE shell 爆炸 from the <a href="GR-8_Recoilless_Rifle.html" title="GR-8 Recoilless Rifle">GR-8 无后坐力炮</a> which is <span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AP4_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a class="mw-selflink-fragment" href="#Armor_Penetration_&amp;_Armor_Values">重型</a></span> 护甲穿透 fired at an <a href="Annihilator_Tank.html" title="Annihilator Tank">Annihilator Tank's</a> 通风口 will ignore the 主体 护甲值 when transferring 伤害 对主血量 which is <span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AV5_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a class="mw-selflink-fragment" href="#Armor_Penetration_&amp;_Armor_Values">Tank I</a></span> 护甲。
+<p>For 示例: An HE shell 爆炸 from the <a href="GR-8_Recoilless_Rifle.html" title="GR-8 Recoilless Rifle">GR-8 无后坐力炮</a> which is <span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AP4_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a class="mw-selflink-fragment" href="#Armor_Penetration_&amp;_Armor_Values">重型</a></span> 护甲穿透 fired at an <a href="Annihilator_Tank.html" title="Annihilator Tank">湮灭坦克的</a> 通风口 will ignore the 主体 护甲值 when transferring 伤害 对主血量 which is <span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AV5_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a class="mw-selflink-fragment" href="#Armor_Penetration_&amp;_Armor_Values">Tank I</a></span> 护甲。
 </p>
 <ul><li>Explosions 伤害 主体 via a 机械师 called <i>受爆炸影响</i>. This allows 爆炸伤害 to 伤害 主体 via a 100% 爆炸抗性 Part because instead of the limb taking the 伤害, it will be redirected 对主血量. Note: This can only occur <b>一次</b>, 无论 parts hit and 爆炸 护甲穿透 must <b>比赛</b> or <b>超过</b> 主体护甲 to deal 伤害.</li></ul>
 <ul><li><ul><li>For 示例: An <a href="Eagle_500kg_Bomb.html" title="Eagle 500kg Bomb">Eagle 500kg Bomb</a> exploding underneath a <a href="Bile_Titan.html" title="Bile Titan">吐酸泰坦</a> and dealing 伤害 to all four of its legs, bile sacs, underside, 躯干护甲 and head.</li></ul></li></ul>
-<h4><span id="Explosive_Damage_Resistance_.28ExDR.29"></span><span class="mw-headline" id="Explosive_Damage_Resistance_(ExDR)">爆炸 伤害抗性 (爆炸抗性)</span></h4>
+<h4><span id=".E7.88.86.E7.82.B8.E4.BC.A4.E5.AE.B3.E6.8A.97.E6.80.A7_.28ExDR.29"></span><span class="mw-headline" id="爆炸伤害抗性_(ExDR)">爆炸伤害抗性 (爆炸抗性)</span></h4>
 <p>Enemy limbs commonly have 爆炸抗性 and/or 免疫 to 保护 against explosions dealing 多个 instances of 伤害 by hitting 多个 parts.
 </p>
 <ul><li>A limb with an 爆炸抗性 value of 100% means it is <i>爆炸免疫</i> and that part itself does not take 爆炸伤害. 主体 takes the 爆炸伤害 instead.</li>
@@ -114,13 +113,13 @@ All 伤害 calculation information in this 章节 of the 文档 has been confirm
 <li>绝地潜兵 will only 经验值 硬直 if they are hit by the 内圈 or 外圈半径.</li>
 <li>Going prone 降低 爆炸伤害 by <b>90%</b> only in the 外圈半径 as well as being in ragdoll state.</li></ul>
 <ul><li>内圈半径 will bypass 障碍 and obstructions, while 外圈半径 will only let 冲击波 and 硬直 效果 through 障碍.</li></ul>
-<h3><span id="Explosion_Verification_Mode_.28ExVM.29"></span><span class="mw-headline" id="Explosion_Verification_Mode_(ExVM)">爆炸 Verification Mode (ExVM)</span></h3>
+<h3><span id=".E7.88.86.E7.82.B8.E9.AA.8C.E8.AF.81.E6.A8.A1.E5.BC.8F_.28ExVM.29"></span><span class="mw-headline" id="爆炸验证模式_(ExVM)">爆炸验证模式 (ExVM)</span></h3>
 <p>Explosions use raycasts; ExVM dictates whether these raycasts 要求 Line of Sight (LoS) or not. ExVM is part-dependent on 敌人. Note: 多个 limbs with ExVM: 外圈半径 or 无 can have explosions "clip" through hitboxes as the raycast can ignore the LoS 要求.
 </p>
 <ul><li><b>所有</b>: 内圈 &amp; 外圈半径 要求 LoS.</li>
 <li><b>外半径</b>: 内圈半径 ignores LoS, 外圈半径 requires LoS.</li>
 <li><b>无</b>: 内圈 &amp; 外圈半径 both ignore LoS.</li></ul>
-<h3><span id="Armor_Penetration_.26_Armor_Values"></span><span class="mw-headline" id="Armor_Penetration_&amp;_Armor_Values">护甲穿透 &amp; 护甲 Values</span></h3>
+<h3><span id=".E6.8A.A4.E7.94.B2.E7.A9.BF.E9.80.8F.E4.B8.8E.E6.8A.A4.E7.94.B2.E5.80.BC"></span><span class="mw-headline" id="护甲穿透与护甲值">护甲穿透与护甲值</span></h3>
 <p>Every part of every 敌人 has a specific 护甲 Value, with a 射程 of 0 to 10. This number indicates how 有护甲 that part is, and how much 护甲穿透 or AP a <a href="Weapons.html" title="Weapons">武器</a> needs to be to deal 伤害 to it.
 </p>
 <ul><li>护甲穿透 is abbreviated as AP0-10.</li>
@@ -157,11 +156,11 @@ All 伤害 calculation information in this 章节 of the 文档 has been confirm
 <tr>
 <td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AV0_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a class="mw-selflink-fragment" href="#Armor_Penetration_&amp;_Armor_Values">无护甲</a></span>
 </td>
-<td><a href="Bile_Spewer.html" title="Bile Spewer">胆汁喷涌虫</a> (臀部)&#160;&#8226;&#160;<a href="Bile_Titan.html" title="Bile Titan">吐酸泰坦</a> (囊 &amp; 内部肉体)&#160;&#8226;&#160;<a href="Enemy_Bio-Processors.html" title="Enemy Bio-Processors">Bio-处理器</a>&#160;&#8226;&#160;<a href="Charger.html" title="Charger">强袭虫</a> (臀部)&#160;&#8226;&#160;<a href="Hunter.html" title="Hunter">Hunter</a>&#160;&#8226;&#160;<a href="Impaler.html" title="Impaler">穿刺虫</a> (触手&#160;&#8226;&#160;内部 &amp; 腿部肉体)&#160;&#8226;&#160;<a href="Pouncer.html" title="Pouncer">Pouncer</a>&#160;&#8226;&#160;<a href="Shrieker.html" title="Shrieker">尖啸虫</a>&#160;&#8226;&#160;<a href="Trooper.html" title="Trooper">装甲兵</a> (所有变种)&#160;&#8226;&#160;<a href="Fleshmob.html" title="Fleshmob">Fleshmob</a>&#160;&#8226;&#160;<a href="Voteless.html" title="Voteless">无票者</a> (躯干 &amp; 肢体)
+<td><a href="Bile_Spewer.html" title="Bile Spewer">胆汁喷涌虫</a> (臀部)&#160;&#8226;&#160;<a href="Bile_Titan.html" title="Bile Titan">吐酸泰坦</a> (囊 &amp; 内部肉体)&#160;&#8226;&#160;<a href="Enemy_Bio-Processors.html" title="Enemy Bio-Processors">生物处理器</a>&#160;&#8226;&#160;<a href="Charger.html" title="Charger">强袭虫</a> (臀部)&#160;&#8226;&#160;<a href="Hunter.html" title="Hunter">Hunter</a>&#160;&#8226;&#160;<a href="Impaler.html" title="Impaler">穿刺虫</a> (触手&#160;&#8226;&#160;内部 &amp; 腿部肉体)&#160;&#8226;&#160;<a href="Pouncer.html" title="Pouncer">Pouncer</a>&#160;&#8226;&#160;<a href="Shrieker.html" title="Shrieker">尖啸虫</a>&#160;&#8226;&#160;<a href="Trooper.html" title="Trooper">装甲兵</a> (所有变种)&#160;&#8226;&#160;<a href="Fleshmob.html" title="Fleshmob">Fleshmob</a>&#160;&#8226;&#160;<a href="Voteless.html" title="Voteless">无票者</a> (躯干 &amp; 肢体)
 </td>
 <td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AP0_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a class="mw-selflink-fragment" href="#Armor_Penetration_&amp;_Armor_Values">无护甲</a></span>
 </td>
-<td><a href="A_M-12_Mortar_Sentry.html" title="A/M-12 Mortar Sentry">迫击哨戒炮 (投射物)</a>&#160;&#8226;&#160;<a href="A_M-23_EMS_Mortar_Sentry.html" title="A/M-23 EMS Mortar Sentry">EMS 迫击哨戒炮 (投射物)</a>&#160;&#8226;&#160;<a href="A_GM-17_Gas_Mortar_Sentry.html" title="A/GM-17 Gas Mortar Sentry">毒气 迫击哨戒炮 (投射物)</a>&#160;&#8226;&#160;<a href="EAT-700_Expendable_Napalm.html" title="EAT-700 Expendable Napalm">Expendable Napalm (Flak Shrapnel)</a>
+<td><a href="A_M-12_Mortar_Sentry.html" title="A/M-12 Mortar Sentry">迫击哨戒炮（投射物）</a>&#160;&#8226;&#160;<a href="A_M-23_EMS_Mortar_Sentry.html" title="A/M-23 EMS Mortar Sentry">电磁冲击波迫击哨戒炮（投射物）</a>&#160;&#8226;&#160;<a href="A_GM-17_Gas_Mortar_Sentry.html" title="A/GM-17 Gas Mortar Sentry">瓦斯迫击哨戒炮（投射物）</a>&#160;&#8226;&#160;<a href="EAT-700_Expendable_Napalm.html" title="EAT-700 Expendable Napalm">消耗性凝固汽油弹（高射炮弹片）</a>
 </td></tr>
 <tr>
 <td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AV1_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a class="mw-selflink-fragment" href="#Armor_Penetration_&amp;_Armor_Values">Very 轻型</a></span>
@@ -213,21 +212,21 @@ All 伤害 calculation information in this 章节 of the 文档 has been confirm
 </td>
 <td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AP6_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a class="mw-selflink-fragment" href="#Armor_Penetration_&amp;_Armor_Values">反坦克 II</a></span>
 </td>
-<td><a href="EAT-17_Expendable_Anti-Tank.html" title="EAT-17 Expendable Anti-Tank">一次性反坦克武器</a>&#160;&#8226;&#160;<a href="GP-20_Ultimatum.html" title="GP-20 Ultimatum">最后通牒</a>&#160;&#8226;&#160;<a href="GR-8_Recoilless_Rifle.html" title="GR-8 Recoilless Rifle">无后坐力步枪</a>&#160;&#8226;&#160;<a href="LAS-99_Quasar_Cannon.html" title="LAS-99 Quasar Cannon">类星体加农炮</a><a href="MLS-4X_Commando.html" title="MLS-4X Commando">&#160;&#8226;&#160;突击队</a>&#160;&#8226;&#160;<a href="Orbital_Laser.html" title="Orbital Laser">轨道激光炮</a>&#160;&#8226;&#160;<a href="StA-X3_W.A.S.P._Launcher.html" title="StA-X3 W.A.S.P. Launcher">W.A.S.P</a>&#160;&#8226;&#160;<a href="E_AT-12_Anti-Tank_Emplacement.html" title="E/AT-12 Anti-Tank Emplacement">反坦克炮台,</a> <a href="EAT-411_Leveller.html" title="EAT-411 Leveller">荡平者</a>&#160;&#8226;&#160;<a href="EAT-700_Expendable_Napalm.html" title="EAT-700 Expendable Napalm">消耗性凝固汽油弹</a> （爆炸）
+<td><a href="EAT-17_Expendable_Anti-Tank.html" title="EAT-17 Expendable Anti-Tank">一次性反坦克武器</a>&#160;&#8226;&#160;<a href="GP-20_Ultimatum.html" title="GP-20 Ultimatum">最后通牒</a>&#160;&#8226;&#160;<a href="GR-8_Recoilless_Rifle.html" title="GR-8 Recoilless Rifle">无后坐力步枪</a>&#160;&#8226;&#160;<a href="LAS-99_Quasar_Cannon.html" title="LAS-99 Quasar Cannon">类星体加农炮</a><a href="MLS-4X_Commando.html" title="MLS-4X Commando">&#160;&#8226;&#160;突击队</a>&#160;&#8226;&#160;<a href="Orbital_Laser.html" title="Orbital Laser">轨道激光炮</a>&#160;&#8226;&#160;<a href="StA-X3_W.A.S.P._Launcher.html" title="StA-X3 W.A.S.P. Launcher">W.A.S.P</a>&#160;&#8226;&#160;<a href="E_AT-12_Anti-Tank_Emplacement.html" title="E/AT-12 Anti-Tank Emplacement">反坦克炮台，</a> <a href="EAT-411_Leveller.html" title="EAT-411 Leveller">荡平者</a>&#160;&#8226;&#160;<a href="EAT-700_Expendable_Napalm.html" title="EAT-700 Expendable Napalm">消耗性凝固汽油弹</a> （爆炸）
 </td></tr>
 <tr>
 <td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AV7_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a class="mw-selflink-fragment" href="#Armor_Penetration_&amp;_Armor_Values">Tank III</a></span>
 </td>
 <td>无</td>
 <td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AP7_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a class="mw-selflink-fragment" href="#Armor_Penetration_&amp;_Armor_Values">反坦克 III</a></span> </td>
-<td><a href="Eagle_110mm_Rocket_Pods.html" title="Eagle 110mm Rocket Pods">Eagle 110mm 火箭巢</a>&#160;&#8226;&#160;<a href="Eagle_500kg_Bomb.html" title="Eagle 500kg Bomb">Eagle 500kg</a>&#160;&#8226;&#160;<a href="Eagle_Airstrike.html" title="Eagle Airstrike">“飞鹰”空袭</a>&#160;&#8226;&#160;<a href="Eagle_Napalm_Airstrike.html" title="Eagle Napalm Airstrike">Eagle Napalm Strike</a>&#160;&#8226;&#160;<a href="FAF-14_Spear.html" title="FAF-14 Spear">长矛</a>&#160;&#8226;&#160;<a href="G-123_Thermite.html" title="G-123 Thermite">铝热剂</a>&#160;&#8226;&#160;<a href="Orbital_Railcannon_Strike.html" title="Orbital Railcannon Strike">轨道武器 Railcannon</a>&#160;&#8226;&#160;<a href="Orbital_120mm_HE_Barrage.html" title="Orbital 120mm HE Barrage">轨道武器 120mm HE 弹幕</a>&#160;&#8226;&#160;<a href="ARC-3_Arc_Thrower.html" title="ARC-3 Arc Thrower">电弧投掷器</a>&#160;&#8226;&#160;<a href="MS-11_Solo_Silo.html" title="MS-11 Solo Silo">单兵导弹发射井</a> (Second 爆炸)
+<td><a href="Eagle_110mm_Rocket_Pods.html" title="Eagle 110mm Rocket Pods">Eagle 110mm 火箭巢</a>&#160;&#8226;&#160;<a href="Eagle_500kg_Bomb.html" title="Eagle 500kg Bomb">飞鹰"500KG</a>&#160;&#8226;&#160;<a href="Eagle_Airstrike.html" title="Eagle Airstrike">“飞鹰”空袭</a>&#160;&#8226;&#160;<a href="Eagle_Napalm_Airstrike.html" title="Eagle Napalm Airstrike">飞鹰凝固汽油弹打击</a>&#160;&#8226;&#160;<a href="FAF-14_Spear.html" title="FAF-14 Spear">长矛</a>&#160;&#8226;&#160;<a href="G-123_Thermite.html" title="G-123 Thermite">铝热剂</a>&#160;&#8226;&#160;<a href="Orbital_Railcannon_Strike.html" title="Orbital Railcannon Strike">轨道磁轨炮</a>&#160;&#8226;&#160;<a href="Orbital_120mm_HE_Barrage.html" title="Orbital 120mm HE Barrage">轨道武器 120mm HE 弹幕</a>&#160;&#8226;&#160;<a href="ARC-3_Arc_Thrower.html" title="ARC-3 Arc Thrower">电弧投掷器</a>&#160;&#8226;&#160;<a href="MS-11_Solo_Silo.html" title="MS-11 Solo Silo">单兵导弹发射井</a> (Second 爆炸)
 </td></tr>
 <tr>
 <td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AV8_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a class="mw-selflink-fragment" href="#Armor_Penetration_&amp;_Armor_Values">Tank IV</a></span>
 </td>
 <td>无</td>
 <td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AP8_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a class="mw-selflink-fragment" href="#Armor_Penetration_&amp;_Armor_Values">反坦克 IV</a></span></td>
-<td><a href="Orbital_380mm_HE_Barrage.html" title="Orbital 380mm HE Barrage">轨道武器 380mm HE 弹幕</a>&#160;&#8226;&#160;<a href="Orbital_Precision_Strike.html" title="Orbital Precision Strike">轨道精准攻击</a>&#160;&#8226;&#160;<a href="Orbital_Walking_Barrage.html" title="Orbital Walking Barrage">轨道游走火力网</a>&#160;&#8226;&#160;<a href="TD-220_Bastion_MK_XVI.html" title="TD-220 Bastion MK XVI">Bastion 主炮</a>
+<td><a href="Orbital_380mm_HE_Barrage.html" title="Orbital 380mm HE Barrage">轨道武器 380mm HE 弹幕</a>&#160;&#8226;&#160;<a href="Orbital_Precision_Strike.html" title="Orbital Precision Strike">轨道精准攻击</a>&#160;&#8226;&#160;<a href="Orbital_Walking_Barrage.html" title="Orbital Walking Barrage">轨道游走火力网</a>&#160;&#8226;&#160;<a href="TD-220_Bastion_MK_XVI.html" title="TD-220 Bastion MK XVI">堡垒主炮</a>
 </td></tr>
 <tr>
 <td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AV9_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a class="mw-selflink-fragment" href="#Armor_Penetration_&amp;_Armor_Values">Tank V</a></span>
@@ -241,7 +240,7 @@ All 伤害 calculation information in this 章节 of the 文档 has been confirm
 </td>
 <td><a href="Hive_Lord.html" title="Hive Lord">霸王虫</a> (顶部) &#160;&#8226;&#160; <a href="Illuminate_Overship.html" title="Illuminate Overship">光能者统御舰</a></td>
 <td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AP10_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a class="mw-selflink-fragment" href="#Armor_Penetration_&amp;_Armor_Values">反坦克 VI</a></span></td>
-<td><a href="NUX-223_Hellbomb.html" title="NUX-223 Hellbomb">地狱火炸弹</a>&#160;&#8226;&#160;<a href="SEAF_Artillery.html" title="SEAF Artillery">Mini-Nuke</a>&#160;&#8226;&#160;<a href="Hellpod.html" title="Hellpod">绝地喷射舱</a> Impact
+<td><a href="NUX-223_Hellbomb.html" title="NUX-223 Hellbomb">地狱火炸弹</a>&#160;&#8226;&#160;<a href="SEAF_Artillery.html" title="SEAF Artillery">微型核弹</a>&#160;&#8226;&#160;<a href="Hellpod.html" title="Hellpod">绝地喷射舱</a> Impact
 </td></tr>
 <tr>
 <td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AV11_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a class="mw-selflink-fragment" href="#Armor_Penetration_&amp;_Armor_Values">Indestructible</a></span>
@@ -265,7 +264,7 @@ All 伤害 calculation information in this 章节 of the 文档 has been confirm
 <p>The first three 穿透 values are often identical, resulting in a 基本信息 穿透 value and a bouncing angle.
 </p><p>For explosions, only one 护甲穿透 value is used. It 减少 by 1 in the 外圈半径.
 </p>
-<h3><span id="Overpenetration_.28Cleave.29"></span><span class="mw-headline" id="Overpenetration_(Cleave)">Overpenetration (Cleave)</span></h3>
+<h3><span id=".E8.BF.87.E5.BA.A6.E7.A9.BF.E9.80.8F.EF.BC.88.E5.8A.88.E8.A3.82.EF.BC.89"></span><span class="mw-headline" id="过度穿透（劈裂）">过度穿透（劈裂）</span></h3>
 <p>Overpenetration is when a 投射物 pierces 多个 parts or 敌人. Overpenetration occurs when the 护甲穿透 of the 投射物 exceeds the 护甲 value of the struck part by 2 or more. With each hitbox cleaved, the 投射物 has its 护甲穿透 已降低 by 1.
 </p><p>Some 敌人 sport breakable 护甲, overpenetration of which requires a 投射物 with at least three times the 护甲穿透 as the 护甲 value of the struck part.
 </p>
@@ -274,18 +273,18 @@ All 伤害 calculation information in this 章节 of the 文档 has been confirm
 <h4><span id=".E7.A9.BF.E9.80.8F.E5.87.8F.E9.80.9F"></span><span class="mw-headline" id="穿透减速">穿透减速</span></h4>
 <ul><li>穿透减速 is the 百分比 of 速率 lost when a 投射物 cleaves through an enemy's 伤害 zone.
 <ul><li>示例: A 投射物 has a 速率 of 500m/s with 否 速率 loss and 25% 穿透减速. That means 25% of 速率 is lost, so the 投射物 will exit the 目标 at a rate of 速度 of 375m/s.</li></ul></li></ul>
-<h3><span class="mw-headline" id="Weapon_Damage">Weapon 伤害</span></h3>
+<h3><span id=".E6.AD.A6.E5.99.A8.E4.BC.A4.E5.AE.B3"></span><span class="mw-headline" id="武器伤害">武器伤害</span></h3>
 <p>Each weapon, 战略配备, etc. has two different 伤害 values assigned to them
 </p>
 <ul><li>标准伤害 is the normal 伤害 the weapon does to anything it shoots.</li>
 <li>耐久伤害, is the 伤害 done to 耐久 enemy parts<sup id="cite&#95;ref-2" class="reference"><a href="#cite_note-2"><span class="cite-bracket">&#91;</span>2<span class="cite-bracket">&#93;</span></a></sup> and large volume bodies<sup id="cite&#95;ref-3" class="reference"><a href="#cite_note-3"><span class="cite-bracket">&#91;</span>3<span class="cite-bracket">&#93;</span></a></sup>, both of which have a <a class="mw-selflink-fragment" href="#Enemy_Durability">耐久度</a> 更大 than zero.</li></ul>
-<h3><span class="mw-headline" id="Ballistics">Ballistics</span></h3>
+<h3><span id=".E5.BC.B9.E9.81.93"></span><span class="mw-headline" id="弹道">弹道</span></h3>
 <ul><li>Caliber: Drastically 增加 伤害 fall-off.</li>
 <li>速度: The bullet's initial magnitude to its 速率, higher 速度 增加 伤害 fall-off slightly.</li>
 <li>质量: 降低 伤害 falloff.</li>
 <li>Drag: 增加 伤害 falloff.</li>
 <li>重力 倍率: How much the bullet drops in travel.</li></ul>
-<h3><span class="mw-headline" id="Damage_Fall-Off">伤害 Fall-Off</span></h3>
+<h3><span id=".E4.BC.A4.E5.AE.B3.E8.A1.B0.E5.87.8F"></span><span class="mw-headline" id="伤害衰减">伤害衰减</span></h3>
 <p>Many 伤害 sources can suffer from reduction independently of their 目标. 伤害 fall-off is affected by Caliber, 速度, 质量, and Drag. There are two 类型; 速率-based fall-off (ballistics) and 射程-based fall-off (explosions).
 </p>
 <ul><li>If a 投射物 is slower than its 枪口 速率, 伤害 is lost.</li>
@@ -297,7 +296,7 @@ All 伤害 calculation information in this 章节 of the 文档 has been confirm
 <li>The 爆炸 from projectiles is not affected by this system, only the 投射物.</li></ul>
 <p>One 重要 thing to note, these 伤害 values are the 伤害 done at point-blank 射程. 伤害 减少 as the 距离 traveled 增加.
 </p>
-<h3><span id="Enemy_Durability_.26_Durable_Damage"></span><span class="mw-headline" id="Enemy_Durability_&amp;_Durable_Damage">Enemy 耐久度 &amp; 耐久伤害</span></h3>
+<h3><span id=".E6.95.8C.E4.BA.BA.E8.80.90.E4.B9.85.E5.BA.A6.E4.B8.8E.E5.9D.9A.E5.9B.BA.E4.BC.A4.E5.AE.B3"></span><span class="mw-headline" id="敌人耐久度与坚固伤害">敌人耐久度与坚固伤害</span></h3>
 <p>Enemy parts may also have 耐久度. This is a variable between 0 and 100%.
 </p>
 <ul><li>A value of 0% means the enemy part is not 耐久 at all, and will take full 标准伤害</li>
@@ -306,7 +305,7 @@ All 伤害 calculation information in this 章节 of the 文档 has been confirm
 <ul><li>For 示例: An enemy part is 30% 耐久, therefore 70% 标准伤害 is also taken into 账户.</li></ul></li></ul>
 <p>Each weapon has a specific value defined for the amount of 伤害 it can do to 标准 enemy parts, and a 分离 value defined for the amount of "耐久" 伤害 it can do to enemy parts. The part's 耐久度 value defines the ratio of 标准伤害 对耐久伤害 applied.
 </p>
-<h3><span class="mw-headline" id="Examples_of_Damage_to_a_Durable_Part">Examples of 伤害 to a 耐久 Part</span></h3>
+<h3><span id=".E5.9D.9A.E5.9B.BA.E9.83.A8.E4.BD.8D.E4.BC.A4.E5.AE.B3.E7.A4.BA.E4.BE.8B"></span><span class="mw-headline" id="坚固部位伤害示例">坚固部位伤害示例</span></h3>
 <p>Formula to calculate 伤害 vs 耐久 targets:
 <br />
 </p><p><big><b>标准伤害 × (1 - 耐久&#160;%) + (耐久伤害 × 耐久&#160;%) = 造成的伤害</b></big>
@@ -334,17 +333,17 @@ For this 示例, it will be assumed that the weapon used has 1,000 标准伤害 
 <li>If the enemy part shot by this weapon has a 耐久度 value of 75 (75% 耐久), the part will take 625 伤害.
 <ul><li>25% of 标准伤害 = 250</li>
 <li>75% of 耐久伤害 = 375</li></ul></li></ul>
-<h3><span class="mw-headline" id="Squishy_Enemy_Parts">脆皮 Enemy Parts</span></h3>
+<h3><span id=".E8.84.86.E5.BC.B1.E6.95.8C.E4.BA.BA.E9.83.A8.E4.BD.8D"></span><span class="mw-headline" id="脆弱敌人部位">脆弱敌人部位</span></h3>
 <p><b>脆皮</b> parts have an 护甲 Value of 0 <big>(</big><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AV0_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a class="mw-selflink-fragment" href="#Armor_Penetration_&amp;_Armor_Values">无护甲</a></span><big>)</big> but have 极其 high 耐久度, high 生命值 and normally 0% 爆炸抗性 (e.g. <a href="Bile_Spewer.html" title="Bile Spewer">胆汁喷涌虫</a>,  <a href="Charger.html" title="Charger">强袭虫</a> &amp; <a href="Nursing_Spewer.html" title="Nursing Spewer">抚育喷涌虫</a> butts).
 </p>
 <ul><li>示例: 强袭虫 butts are <span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AV0_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a class="mw-selflink-fragment" href="#Armor_Penetration_&amp;_Armor_Values">无护甲</a></span>, 950 hp and 80% 耐久.</li>
 <li>This means that all 武器 can 伤害 the part, but the 伤害 done is almost entirely 相关 to the guns 耐久伤害, not its 标准伤害.</li>
 <li>武器, 战略配备, etc. with 爆炸伤害 such as the <a href="GL-21_Grenade_Launcher.html" title="GL-21 Grenade Launcher">GL-21 榴弹发射器</a> are most 克制 脆皮 enemy parts because explosives deal 100% 耐久伤害.</li></ul>
-<h3><span id="Demolition_Force_.26_Structures"></span><span class="mw-headline" id="Demolition_Force_&amp;_Structures">爆破力 &amp; Structures</span></h3>
-<p>另见: <a href="Demolition.html" title="Demolition">爆破</a>
-</p><p>All destructible structures in the game have a 爆破 Threshold value between 0 and 60.  In order to 摧毁 most structures, the user needs to be using a weapon/战略配备 that has enough 爆破力.  Depending on the 建筑, the weapon/战略配备 may need to be 爆炸 as well if it has <b>BaDR</b> (弹道 爆破 抗性) set to 是. Currently only spawners such as <a href="Bug_Hole.html" title="Bug Hole">虫洞</a>, <a href="Automaton_Fabricator.html" title="Automaton Fabricator">机器人 Fabricators</a>，以及 <a href="Grounded_Warp_Ship.html" title="Grounded Warp Ship">停靠的跃迁舰</a> have BaDR set as 是. 护甲穿透 is irrelevant to this check, as is 伤害. If the threshold is met, the 建筑 is destroyed.
+<h3><span id=".E7.88.86.E7.A0.B4.E5.8A.9B.E4.B8.8E.E7.BB.93.E6.9E.84"></span><span class="mw-headline" id="爆破力与结构">爆破力与结构</span></h3>
+<p>参见： <a href="Demolition.html" title="Demolition">爆破</a>
+</p><p>All destructible structures in the game have a 爆破 Threshold value between 0 and 60.  In order to 摧毁 most structures, the user needs to be using a weapon/战略配备 that has enough 爆破力.  Depending on the 建筑, the weapon/战略配备 may need to be 爆炸 as well if it has <b>BaDR</b> (弹道 爆破 抗性) set to 是. Currently only spawners such as <a href="Bug_Hole.html" title="Bug Hole">虫洞</a>, <a href="Automaton_Fabricator.html" title="Automaton Fabricator">机器人构筑者</a>，以及 <a href="Grounded_Warp_Ship.html" title="Grounded Warp Ship">停靠的跃迁舰</a> have BaDR set as 是. 护甲穿透 is irrelevant to this check, as is 伤害. If the threshold is met, the 建筑 is destroyed.
 </p>
-<h3><span class="mw-headline" id="Other_Structures">Other Structures</span></h3>
+<h3><span id=".E5.85.B6.E4.BB.96.E5.BB.BA.E7.AD.91"></span><span class="mw-headline" id="其他建筑">其他建筑</span></h3>
 <p>These structures are not exclusively dependent on 爆破力.
 </p>
 <table class="wikitable">
@@ -370,7 +369,7 @@ For this 示例, it will be assumed that the weapon used has 1,000 标准伤害 
 <td>100%
 </td></tr>
 <tr>
-<td><a href="Enemy_Bio-Processors.html" title="Enemy Bio-Processors">Bio-处理器</a></td>
+<td><a href="Enemy_Bio-Processors.html" title="Enemy Bio-Processors">生物处理器</a></td>
 <td>5,000</td>
 <td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AV0_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a class="mw-selflink-fragment" href="#Armor_Penetration_&amp;_Armor_Values">无护甲</a></span></td>
 <td>0%</td>
@@ -384,7 +383,7 @@ For this 示例, it will be assumed that the weapon used has 1,000 标准伤害 
 <td>100%
 </td></tr>
 <tr>
-<td><a href="Cognitive_Disruptor.html" title="Cognitive Disruptor">Cognitive Disruptior PSU</a></td>
+<td><a href="Cognitive_Disruptor.html" title="Cognitive Disruptor">感知干扰器 PSU</a></td>
 <td>180</td>
 <td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AV0_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a class="mw-selflink-fragment" href="#Armor_Penetration_&amp;_Armor_Values">无护甲</a></span></td>
 <td>100%</td>
@@ -398,21 +397,21 @@ For this 示例, it will be assumed that the weapon used has 1,000 标准伤害 
 <td>100%
 </td></tr>
 <tr>
-<td><a href="Cyberstan_Megafactory.html" title="Cyberstan Megafactory">Megafactory Gate</a></td>
+<td><a href="Cyberstan_Megafactory.html" title="Cyberstan Megafactory">巨型工厂大门</a></td>
 <td>6,000</td>
 <td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AV4_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a class="mw-selflink-fragment" href="#Armor_Penetration_&amp;_Armor_Values">重型</a></span></td>
 <td>800%</td>
 <td>100%
 </td></tr>
 <tr>
-<td><a href="Evacuate_High-Value_Assets.html#Defense_Gate" title="Evacuate High-Value Assets">防御 Gate</a></td>
+<td><a href="Evacuate_High-Value_Assets.html#Defense_Gate" title="Evacuate High-Value Assets">防御大门</a></td>
 <td>8,000</td>
 <td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AV4_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a class="mw-selflink-fragment" href="#Armor_Penetration_&amp;_Armor_Values">重型</a></span></td>
 <td>100%</td>
 <td>100%
 </td></tr>
 <tr>
-<td><a href="Evacuate_High-Value_Assets.html#Generator" title="Evacuate High-Value Assets">防御 发电机</a></td>
+<td><a href="Evacuate_High-Value_Assets.html#Generator" title="Evacuate High-Value Assets">防御发电机</a></td>
 <td>5,000</td>
 <td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AV0_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a class="mw-selflink-fragment" href="#Armor_Penetration_&amp;_Armor_Values">无护甲</a></span></td>
 <td>0%</td>
@@ -440,7 +439,7 @@ For this 示例, it will be assumed that the weapon used has 1,000 标准伤害 
 <td>100%
 </td></tr>
 <tr>
-<td><a href="Cleanse_Infested_District.html" title="Cleanse Infested District">Mega 尖啸虫巢穴</a></td>
+<td><a href="Cleanse_Infested_District.html" title="Cleanse Infested District">超巨尖啸虫巢穴</a></td>
 <td>15,000</td>
 <td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AV2_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a class="mw-selflink-fragment" href="#Armor_Penetration_&amp;_Armor_Values">轻型</a></span></td>
 <td>100%</td>
@@ -454,21 +453,21 @@ For this 示例, it will be assumed that the weapon used has 1,000 标准伤害 
 <td>100%
 </td></tr>
 <tr>
-<td><a href="Purge_Hatcheries.html" title="Purge Hatcheries">Nest Egg</a></td>
+<td><a href="Purge_Hatcheries.html" title="Purge Hatcheries">巢穴之卵</a></td>
 <td>10</td>
 <td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AV0_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a class="mw-selflink-fragment" href="#Armor_Penetration_&amp;_Armor_Values">无护甲</a></span></td>
 <td>100%</td>
 <td>100%
 </td></tr>
 <tr>
-<td><a href="Sabotage_Air_Base.html#Parked_Dropship_Stats" title="Sabotage Air Base">Parked 运输舰</a></td>
+<td><a href="Sabotage_Air_Base.html#Parked_Dropship_Stats" title="Sabotage Air Base">停泊的运输舰</a></td>
 <td>1,000</td>
 <td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AV5_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a class="mw-selflink-fragment" href="#Armor_Penetration_&amp;_Armor_Values">Tank I</a></span></td>
 <td>100%</td>
 <td>100%
 </td></tr>
 <tr>
-<td><a href="Shrieker_Nest.html" title="Shrieker Nest">尖啸虫巢穴 Tower</a></td>
+<td><a href="Shrieker_Nest.html" title="Shrieker Nest">尖啸虫巢塔</a></td>
 <td>2,500</td>
 <td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AV2_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a class="mw-selflink-fragment" href="#Armor_Penetration_&amp;_Armor_Values">轻型</a></span></td>
 <td>100%</td>
@@ -489,13 +488,13 @@ For this 示例, it will be assumed that the weapon used has 1,000 标准伤害 
 <td>100%
 </td></tr>
 <tr>
-<td><a href="Warp_Ship.html" title="Warp Ship">Warp Ship Shield</a></td>
+<td><a href="Warp_Ship.html" title="Warp Ship">穿梭舰护盾</a></td>
 <td>2,500</td>
 <td><span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AV0_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a class="mw-selflink-fragment" href="#Armor_Penetration_&amp;_Armor_Values">无护甲</a></span></td>
 <td>0%</td>
 <td>100%
 </td></tr></tbody></table>
-<h2><span class="mw-headline" id="Armor_Damage_Modifiers">护甲 伤害 Modifiers</span></h2>
+<h2><span id=".E6.8A.A4.E7.94.B2.E4.BC.A4.E5.AE.B3.E4.BF.AE.E6.AD.A3"></span><span class="mw-headline" id="护甲伤害修正">护甲伤害修正</span></h2>
 <p><a href="Armor.html" title="Armor">护甲</a> will lower the 伤害 the 绝地潜兵 takes when hit, depending on its 护甲值. The following tables explain the 效果 护甲 has on each part of the <a href="Helldiver.html" title="Helldiver">绝地潜兵</a>
 </p>
 <div style="display: flex; gap: 1em; flex-wrap: wrap;">
@@ -1021,10 +1020,10 @@ For this 示例, it will be assumed that the weapon used has 1,000 标准伤害 
 </td></tr>
 </tbody></table></div></div>
 </div>
-<h2><span class="mw-headline" id="Damage_Types">伤害类型</span></h2>
+<h2><span id=".E4.BC.A4.E5.AE.B3.E7.B1.BB.E5.9E.8B"></span><span class="mw-headline" id="伤害类型">伤害类型</span></h2>
 <p>Different <a href="Stratagems.html" title="Stratagems">战略配备</a>, <a href="Weapons.html" title="Weapons">武器</a> 和 敌人 deal different 类型 of 伤害 to <a href="Helldiver.html" title="Helldiver">绝地潜兵</a> and 敌人. 
 </p>
-<h3><span class="mw-headline" id="List_of_Damage_Types">List of 伤害类型</span></h3>
+<h3><span id=".E4.BC.A4.E5.AE.B3.E7.B1.BB.E5.9E.8B.E5.88.97.E8.A1.A8"></span><span class="mw-headline" id="伤害类型列表">伤害类型列表</span></h3>
 <div class="msgbox noexcerpt searchaux msgbox-mini msgbox-orange" style="max-width: 50em;">
 <div id="msgbox-icon">  
 </div>
@@ -1101,9 +1100,9 @@ For this 示例, it will be assumed that the weapon used has 1,000 标准伤害 
 </td>
 <td>伤害 from 毒气, both 正面 streams and 伤害-over-time. 护甲 with the <a href="Advanced_Filtration.html" title="Advanced Filtration">高级过滤</a>, <a href="Acclimated.html" title="Acclimated">应变自如</a> or <a href="Desert_Stormer.html" title="Desert Stormer">沙漠突击者</a> 被动 will resist this 伤害类型.
 </td>
-<td><a href="AX_TX-13_Dog_Breath.html" title="AX/TX-13 Dog Breath">AX/TX-13 Dog Breath</a>&#160;&#8226;&#160;<a href="G-4_Gas.html" title="G-4 Gas">G-4 毒气 Grenades</a>&#160;&#8226;&#160;<a href="MD-8_Gas_Mines.html" title="MD-8 Gas Mines">MD-8 毒气 Mines</a>&#160;&#8226;&#160;<a href="Orbital_Gas_Strike.html" title="Orbital Gas Strike">轨道武器 毒气 Strike</a>&#160;&#8226;&#160;<a href="TX-41_Sterilizer.html" title="TX-41 Sterilizer">TX-41 Sterilizer</a>&#160;&#8226;&#160;<a href="S-11_Speargun.html" title="S-11 Speargun">S-11 Speargun</a>&#160;&#8226;&#160;<a href="A_GM-17_Gas_Mortar_Sentry.html" title="A/GM-17 Gas Mortar Sentry">A/GM-17 毒气 迫击哨戒炮</a>
+<td><a href="AX_TX-13_Dog_Breath.html" title="AX/TX-13 Dog Breath">AX/TX-13 Dog Breath</a>&#160;&#8226;&#160;<a href="G-4_Gas.html" title="G-4 Gas">G-4 毒气榴弹</a>&#160;&#8226;&#160;<a href="MD-8_Gas_Mines.html" title="MD-8 Gas Mines">MD-8 毒气 Mines</a>&#160;&#8226;&#160;<a href="Orbital_Gas_Strike.html" title="Orbital Gas Strike">轨道武器 毒气 Strike</a>&#160;&#8226;&#160;<a href="TX-41_Sterilizer.html" title="TX-41 Sterilizer">TX-41 Sterilizer</a>&#160;&#8226;&#160;<a href="S-11_Speargun.html" title="S-11 Speargun">S-11 Speargun</a>&#160;&#8226;&#160;<a href="A_GM-17_Gas_Mortar_Sentry.html" title="A/GM-17 Gas Mortar Sentry">A/GM-17 毒气 迫击哨戒炮</a>
 </td></tr></tbody></table>
-<h3><span id="Status_Strength_.26_Thresholds"></span><span class="mw-headline" id="Status_Strength_&amp;_Thresholds">Status 力量 &amp; Thresholds</span></h3>
+<h3><span id=".E7.8A.B6.E6.80.81.E5.BC.BA.E5.BA.A6.E4.B8.8E.E9.98.88.E5.80.BC"></span><span class="mw-headline" id="状态强度与阈值">状态强度与阈值</span></h3>
 <div class="msgbox noexcerpt searchaux msgbox-mini msgbox-orange" style="max-width: 50em;">
 <div id="msgbox-icon"> <div id="msgbox-image" class="nomobile" style=""> <img class="wiki-icon" alt="Reinforce Stratagem Icon.svg" src="../images/Reinforce_Stratagem_Icon.svg" decoding="async" loading="lazy" width="45" height="45" style="vertical-align: text-top" data-file-width="512" data-file-height="512" /></div>
 </div>
@@ -1120,14 +1119,14 @@ For this 示例, it will be assumed that the weapon used has 1,000 标准伤害 
 <ul><li>For 示例: 火焰 DoT which is <span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AP4_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a class="mw-selflink-fragment" href="#Armor_Penetration_&amp;_Armor_Values">重型</a></span> 护甲穿透 deals 35% less 伤害 to a 强袭虫's 主生命值 which is <span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AV4_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a class="mw-selflink-fragment" href="#Armor_Penetration_&amp;_Armor_Values">重型</a></span> 护甲。
 <ul><li>火焰 does 100 dmg/s × 1.5 = 150 dmg/s × 0.65 = 97.5 → 97 dmg/s.</li></ul></li>
 <li>Sources of DoT are 火焰, 燃烧 重型, <a href="LAS-17_Double-Edge_Sickle.html" title="LAS-17 Double-Edge Sickle">LAS-17 Double-Edge Sickle</a> Burn, 铝热弹, 毒气, 酸, Thorn Bushes and Barbed Wire and 流血 (绝地潜兵 only)</li></ul>
-<h3><span class="mw-headline" id="Elemental_Multipliers">Elemental Multipliers</span></h3>
+<h3><span id=".E5.85.83.E7.B4.A0.E5.80.8D.E7.8E.87"></span><span class="mw-headline" id="元素倍率">元素倍率</span></h3>
 <p>Elemental 伤害 and 状态效果 operate via 伤害 multipliers, the most common being 火焰, though there are few 敌人 with 弧度 and 毒气 status 效果 伤害 multipliers that are also affected. Such as <a href="Fleshmob.html" title="Fleshmob">Fleshmobs</a> receiving a 1.8x 电弧伤害 倍率 or 绝地潜兵 with a 1.3x 毒气伤害 倍率. These multipliers operate are based on enemy size; the larger the enemy the higher the 倍率 and vice versa, with 更小 敌人 having a 更小 倍率.
 </p>
 <ul><li>火焰伤害倍率 examples: <a href="Warrior.html" title="Warrior">武斗虫</a> have a 0.8x 倍率, <a href="Brood_Commander.html" title="Brood Commander">Brood 指挥官</a> have a 1x 倍率, <a href="Charger.html" title="Charger">Chargers</a> have a 1.5x 倍率, and <a href="Bile_Titan.html" title="Bile Titan">Bile Titans</a> have a 1.7x 倍率,.</li>
 <li>Robotic and large 敌人 have higher status thresholds and take longer to ignite than 有机.</li></ul>
-<h3><span class="mw-headline" id="Damage_Comparison_Table">伤害 Comparison Table</span></h3>
+<h3><span id=".E4.BC.A4.E5.AE.B3.E5.AF.B9.E6.AF.94.E8.A1.A8"></span><span class="mw-headline" id="伤害对比表">伤害对比表</span></h3>
 <div class="noexcerpt va-hatnote"><i>主体 条款:&#32;<a href="Damage_Comparison.html" title="Damage Comparison">伤害 Comparison</a></i></div>
-<h2><span class="mw-headline" id="References">参考</span></h2>
+<h2><span id=".E5.8F.82.E8.80.83.E8.B5.84.E6.96.99"></span><span class="mw-headline" id="参考资料">参考资料</span></h2>
 <div class="mw-references-wrap"><ol class="references">
 <li id="cite&#95;note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external free" href="https://invadersfromplanet.space/helldivers-2/">https://invadersfromplanet.space/绝地潜兵-2/</a> used for data values.</span>
 </li>
@@ -1136,57 +1135,45 @@ For this 示例, it will be assumed that the weapon used has 1,000 标准伤害 
 <li id="cite&#95;note-3"><span class="mw-cite-backlink"><a href="#cite_ref-3">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://arrowhead.zendesk.com/hc/en-us/articles/13807959633564-PATCH-01-000-300,">Player 支援 Team, 🛠️ 补丁 01.000.300 ⚙️, 2024-04-29</a></span>
 </li>
 </ol></div>
-<div role="navigation" aria-label="Navbox" class="ranger-navbox navigation-not-searchable mw-collapsible"><div class="ranger-title"><div class="mw-collapsible-toggle-placeholder"></div></span></span><div class="ranger-title-text"><a href="Game_Mechanics.html" title="Game Mechanics">Game 机制</a></div></div><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:3"><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">基本信息 机制</div></div><div class="ranger-listbox"><div class="ranger-sublist level-0"><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:2"><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">Non-Combat 机制</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Achievements.html" title="Achievements">Achievements</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Difficulty.html" title="Difficulty">难度</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Levels.html" title="Levels">Levels</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Second_Galactic_War_Mechanics.html" title="Second Galactic War Mechanics">Second 银河战争机制</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">Combat 机制</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span><a href="Combat.html" title="Combat">Combat</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a class="mw-selflink selflink">伤害</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Damage_Comparison.html" title="Damage Comparison">伤害 Comparison</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Recoil.html" title="Recoil">后坐力</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Spawn_Mechanics.html" title="Spawn Mechanics">Spawn 机制</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Status_Effects.html" title="Status Effects">状态效果</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Stealth.html" title="Stealth">Stealth</a></span></div></div></div></div></div></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap"><a href="Environmental_Hazards.html" title="Environmental Hazards">环境危害</a></div></div><div class="ranger-listbox"><div class="ranger-sublist level-0"><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:4"><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">天气 效果</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Environmental_Conditions.html" title="Environmental Conditions">Environmental Conditions</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Acid_Storms.html" title="Acid Storms">酸雨风暴</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Blizzards.html" title="Blizzards">暴风雪</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Extreme_Cold.html" title="Extreme Cold">极寒</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Fire_Tornados.html" title="Fire Tornados">烈焰龙卷</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Intense_Heat.html" title="Intense Heat">极暑</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Ion_Storms.html" title="Ion Storms">离子风暴</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Meteor_Storms.html" title="Meteor Storms">流星风暴</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Rainstorms.html" title="Rainstorms">暴雨</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Sandstorms.html" title="Sandstorms">沙暴</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Thick_Fog.html" title="Thick Fog">Thick Fog</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Tremors.html" title="Tremors">地震</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Volcanic_Activity.html" title="Volcanic Activity">火山活动</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">自然 Hazards</div></div><div class="ranger-listbox"><div class="ranger-sublist level-1"><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:2"><div class="ranger-row"><div class="ranger-group level-2 ranger-subgroup"><div class="ranger-wrap">Flora</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span>酸 Flower</span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Bug_Mine.html" title="Bug Mine">Bug Mine</a></span>&#32;&#160;&#8226;&#160;&#32;<span>Ice Plant</span>&#32;&#160;&#8226;&#160;&#32;<span>Moor Mushroom</span>&#32;&#160;&#8226;&#160;&#32;<span>Shrub</span>&#32;&#160;&#8226;&#160;&#32;<span>Spike Plant</span>&#32;&#160;&#8226;&#160;&#32;<span>火山 Plant</span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-2 ranger-subgroup"><div class="ranger-wrap">地形</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Lava.html" title="Lava">Lava</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Lava_Geyser.html" title="Lava Geyser">Lava Geyser</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Lava_Pits.html" title="Lava Pits">Lava Pits</a></span></div></div></div></div></div></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">Assorted Hazards</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span>Cars</span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Damaged_Hellbomb.html" title="Damaged Hellbomb">Damaged Hellbomb</a></span>&#32;&#160;&#8226;&#160;&#32;<span>Exploding Barrels</span>&#32;&#160;&#8226;&#160;&#32;<span>Forklift</span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap"><a href="Automaton_Hazards.html" title="Automaton Hazards">机器人 Hazards</a></div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Automaton_Mine.html" title="Automaton Mine">机器人 Mine</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Barbed_Wire.html" title="Barbed Wire">Barbed Wire</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Despotic_Explosive.html" title="Despotic Explosive">专制炸药</a></span></div></div></div></div></div></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">操作 Modifiers</div></div><div class="ranger-listbox"><div class="ranger-sublist level-0"><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:5"><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">基本信息</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span><a href="Civilians_and_SEAF_in_Area.html" title="Civilians and SEAF in Area">Civilians and SEAF in Area</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Complex_Stratagem_Plotting.html" title="Complex Stratagem Plotting">复杂 战略配备 Plotting</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Orbital_Fluctuations.html" title="Orbital Fluctuations">轨道武器 Fluctuations</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Poor_Intel.html" title="Poor Intel">Poor Intel</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">终结族 Specific</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Atmospheric_Spores.html" title="Atmospheric Spores">Atmospheric Spores</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Roving_Shriekers.html" title="Roving Shriekers">漫游尖啸虫</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">机器人 Specific</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span><a href="Gunship_Patrols.html" title="Gunship Patrols">炮舰巡逻队</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">光能者 Specific</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Leviathan_Blockade.html" title="Leviathan Blockade">利维坦封锁屏障</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">已移除</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span><a href="AA_Defenses.html" title="AA Defenses">对空防御</a></span>&#32;&#160;&#8226;&#160;&#32;<span>Atmospheric Interference</span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Electronic_Countermeasures.html" title="Electronic Countermeasures">电子对抗措施</a></span></div></div></div></div></div></div></div></div></div></div></div></div></div>
+<div role="navigation" aria-label="Navbox" class="ranger-navbox navigation-not-searchable mw-collapsible"><div class="ranger-title"><div class="mw-collapsible-toggle-placeholder"></div></span></span><div class="ranger-title-text"><a href="Game_Mechanics.html" title="Game Mechanics">Game 机制</a></div></div><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:3"><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">基本信息 机制</div></div><div class="ranger-listbox"><div class="ranger-sublist level-0"><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:2"><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">Non-Combat 机制</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Achievements.html" title="Achievements">Achievements</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Difficulty.html" title="Difficulty">难度</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Levels.html" title="Levels">Levels</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Second_Galactic_War_Mechanics.html" title="Second Galactic War Mechanics">Second 银河战争机制</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">Combat 机制</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span><a href="Combat.html" title="Combat">Combat</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a class="mw-selflink selflink">伤害</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Damage_Comparison.html" title="Damage Comparison">伤害 Comparison</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Recoil.html" title="Recoil">后坐力</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Spawn_Mechanics.html" title="Spawn Mechanics">Spawn 机制</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Status_Effects.html" title="Status Effects">状态效果</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Stealth.html" title="Stealth">Stealth</a></span></div></div></div></div></div></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap"><a href="Environmental_Hazards.html" title="Environmental Hazards">环境危害</a></div></div><div class="ranger-listbox"><div class="ranger-sublist level-0"><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:4"><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">天气 效果</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Environmental_Conditions.html" title="Environmental Conditions">Environmental Conditions</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Acid_Storms.html" title="Acid Storms">酸雨风暴</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Blizzards.html" title="Blizzards">暴风雪</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Extreme_Cold.html" title="Extreme Cold">极寒</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Fire_Tornados.html" title="Fire Tornados">烈焰龙卷</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Intense_Heat.html" title="Intense Heat">极暑</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Ion_Storms.html" title="Ion Storms">离子风暴</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Meteor_Storms.html" title="Meteor Storms">流星风暴</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Rainstorms.html" title="Rainstorms">暴雨</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Sandstorms.html" title="Sandstorms">沙暴</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Thick_Fog.html" title="Thick Fog">Thick Fog</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Tremors.html" title="Tremors">地震</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Volcanic_Activity.html" title="Volcanic Activity">火山活动</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">自然 Hazards</div></div><div class="ranger-listbox"><div class="ranger-sublist level-1"><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:2"><div class="ranger-row"><div class="ranger-group level-2 ranger-subgroup"><div class="ranger-wrap">Flora</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span><a href="Bug_Mine.html" title="Bug Mine">Bug Mine</a></span>&#32;&#160;&#8226;&#160;&#32;<span>Ice Plant</span>&#32;&#160;&#8226;&#160;&#32;<span>Moor Mushroom</span>&#32;&#160;&#8226;&#160;&#32;<span>Shrub</span>&#32;&#160;&#8226;&#160;&#32;<span>Spike Plant</span>&#32;&#160;&#8226;&#160;&#32;<span>火山 Plant</span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-2 ranger-subgroup"><div class="ranger-wrap">地形</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Lava.html" title="Lava">Lava</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Lava_Geyser.html" title="Lava Geyser">Lava Geyser</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Lava_Pits.html" title="Lava Pits">Lava Pits</a></span></div></div></div></div></div></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">Assorted Hazards</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span>Cars</span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Damaged_Hellbomb.html" title="Damaged Hellbomb">Damaged Hellbomb</a></span>&#32;&#160;&#8226;&#160;&#32;<span>Exploding Barrels</span>&#32;&#160;&#8226;&#160;&#32;<span>Forklift</span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap"><a href="Automaton_Hazards.html" title="Automaton Hazards">机器人 Hazards</a></div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Automaton_Mine.html" title="Automaton Mine">机器人 Mine</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Barbed_Wire.html" title="Barbed Wire">Barbed Wire</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Despotic_Explosive.html" title="Despotic Explosive">专制炸药</a></span></div></div></div></div></div></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">操作 Modifiers</div></div><div class="ranger-listbox"><div class="ranger-sublist level-0"><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:5"><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">基本信息</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span><a href="Civilians_and_SEAF_in_Area.html" title="Civilians and SEAF in Area">Civilians and SEAF in Area</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Complex_Stratagem_Plotting.html" title="Complex Stratagem Plotting">复杂 战略配备 Plotting</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Orbital_Fluctuations.html" title="Orbital Fluctuations">轨道武器 Fluctuations</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Poor_Intel.html" title="Poor Intel">Poor Intel</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">终结族 Specific</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Atmospheric_Spores.html" title="Atmospheric Spores">Atmospheric Spores</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Roving_Shriekers.html" title="Roving Shriekers">漫游尖啸虫</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">机器人 Specific</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span><a href="Gunship_Patrols.html" title="Gunship Patrols">炮舰巡逻队</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">光能者 Specific</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Leviathan_Blockade.html" title="Leviathan Blockade">利维坦封锁屏障</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">已移除</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span><a href="AA_Defenses.html" title="AA Defenses">对空防御</a></span>&#32;&#160;&#8226;&#160;&#32;<span>Atmospheric Interference</span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Electronic_Countermeasures.html" title="Electronic Countermeasures">电子对抗措施</a></span></div></div></div></div></div></div></div></div></div></div></div></div></div>
 <!-- 
 NewPP limit report
-Cached time: 20260818034739
+Cached time: 20260819054452
 Cache expiry: 3600
 Reduced expiry: true
 Complications: [vary‐revision‐sha1, show‐toc]
-CPU time usage: 0.385 seconds
-Real time usage: 0.691 seconds
+CPU time usage: 0.425 seconds
+Real time usage: 0.601 seconds
 Preprocessor visited node count: 5483/1000000
-Revision size: 30744/4194304 bytes
-Post‐expand include size: 85537/4194304 bytes
-Template argument size: 1980/4194304 bytes
+Revision size: 30670/4194304 bytes
+Post‐expand include size: 85333/4194304 bytes
+Template argument size: 1978/4194304 bytes
 Highest expansion depth: 9/100
 Expensive parser function count: 11/500
 Unstrip recursion depth: 0/20
 Unstrip post‐expand size: 1498/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.013/15.000 seconds
-Lua memory usage: 806827/52428800 bytes
+Lua time usage: 0.014/15.000 seconds
+Lua memory usage: 806487/52428800 bytes
 Number of processed Cargo queries: 2
-Time spent processing Cargo queries: 0.011 s (avg. 0.006 s)
+Time spent processing Cargo queries: 0.010 s (avg. 0.005 s)
 Number of Cargo row insertion attempts: 1
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%  507.606      1 -total
- 70.76%  359.179      1 Template:Nav_Mechanic
- 70.18%  356.240      1 Template:Navbox
-  8.29%   42.070      1 Template:Breadcrumb_Auto
-  5.66%   28.739      1 Template:Armor_Ratings
-  4.71%   23.890     55 Template:Armor
-  2.67%   13.578      9 Template:Damage
-  1.57%    7.992      3 Template:Msgbox
-  1.55%    7.879      1 Template:Armor_Ratings/Full_Armor_Table_With_Vitality_Booster
-  1.37%    6.976      1 Template:Armor_Ratings/Full_Armor_Table
+100.00%  407.555      1 -total
+ 62.69%  255.505      1 Template:Nav_Mechanic
+ 61.91%  252.314      1 Template:Navbox
+ 10.81%   44.061      1 Template:Breadcrumb_Auto
+  6.44%   26.261     55 Template:Armor
+  6.42%   26.163      1 Template:Armor_Ratings
+  3.13%   12.737      9 Template:Damage
+  2.33%    9.503      3 Template:Msgbox
+  2.02%    8.229      1 Template:Armor_Ratings/Full_Armor_Table_With_Vitality_Booster
+  1.83%    7.448      1 Template:Armor_Ratings/Full_Armor_Table
 -->
-</div></div>
+</div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
-<script>
-功能 toggleTheme(){
-  var h = 文档.documentElement;
-  var alt = h.classList.toggle('view-alt');
-  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
-}
-try {
-  if (localStorage.getItem('hd2theme') === 'alt') {
-    文档.documentElement.classList.add('view-alt');
-  }
-} catch(e) {}
-</script>
 </body>
 </html>

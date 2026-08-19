@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-helldiver view-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,13 +14,12 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
-    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
   <button class="back-btn" type="button" onclick="history.back()">← 返回</button>
   <h1 class="page-title">Cities</h1>
-  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><hr />
+  <div class="mw-parser-output"><hr />
 <table>
 <tbody><tr>
 <td><img alt="Disambig.svg" src="https://commons.wiki.gg/images/Disambig.svg?5de338" decoding="async" loading="lazy" width="30" height="24" data-file-width="48" data-file-height="38" />
@@ -31,18 +30,18 @@
 <p><b>城市</b> may 请参阅 the following:
 </p>
 <ul><li><a href="Colonies.html" title="Colonies">Colonies</a>, a 类型 of grid based megastructure that occupies a portion of a 标准 任务 area, added in the Omens of 暴政 更新.</li>
-<li><a href="Metropolis.html" title="Metropolis">Metropolises</a>, giant megastructures that take up the entirety of a 任务 area, added in the Heart of Democracy 更新.</li>
+<li><a href="Metropolis.html" title="Metropolis">大都市</a>, giant megastructures that take up the entirety of a 任务 area, added in the Heart of Democracy 更新.</li>
 <li><a href="Super_Earth_Metropolis.html" title="Super Earth Metropolis">超级地球 Metropolis</a>, a unique 生物群系 found exclusively on 超级地球.</li></ul>
 <!-- 
 NewPP limit report
-Cached time: 20260818035438
+Cached time: 20260819055145
 Cache expiry: 2592000
 Reduced expiry: false
 Complications: []
 CPU time usage: 0.010 seconds
 Real time usage: 0.014 seconds
 Preprocessor visited node count: 8/1000000
-Revision size: 422/4194304 bytes
+Revision size: 419/4194304 bytes
 Post‐expand include size: 340/4194304 bytes
 Template argument size: 0/4194304 bytes
 Highest expansion depth: 4/100
@@ -53,23 +52,11 @@ ExtLoops count: 0/5000
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%    2.986      1 Template:Disambig
-100.00%    2.986      1 -total
+100.00%    2.572      1 Template:Disambig
+100.00%    2.572      1 -total
 -->
-</div></div>
+</div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
-<script>
-功能 toggleTheme(){
-  var h = 文档.documentElement;
-  var alt = h.classList.toggle('view-alt');
-  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
-}
-try {
-  if (localStorage.getItem('hd2theme') === 'alt') {
-    文档.documentElement.classList.add('view-alt');
-  }
-} catch(e) {}
-</script>
 </body>
 </html>

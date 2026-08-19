@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-helldiver view-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,13 +14,12 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
-    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
   <button class="back-btn" type="button" onclick="history.back()">← 返回</button>
   <h1 class="page-title">近战</h1>
-  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><hr />
+  <div class="mw-parser-output"><hr />
 <table>
 <tbody><tr>
 <td><img alt="Disambig.svg" src="https://commons.wiki.gg/images/Disambig.svg?5de338" decoding="async" loading="lazy" width="30" height="24" data-file-width="48" data-file-height="38" />
@@ -29,7 +28,7 @@
 </td></tr></tbody></table>
 <hr /> 
 <ul><li><a href="Weapons.html#Melee-0" title="Weapons">近战武器</a>: A list of Secondary &amp; 支援 近战 武器 in a 绝地潜兵's aresenal</li>
-<li><a href="Combat.html#Melee" title="Combat">The Combat Page</a>: A more detailed 章节 regarding 近战 combat and its 机制.</li>
+<li><a href="Combat.html#Melee" title="Combat">战斗页面</a>: A more detailed 章节 regarding 近战 combat and its 机制.</li>
 <li>近战攻击 data: (read below)</li></ul>
 <div class="flextablediv">
 <table class="wikitable tableleftjustified Secondcolumnright table-weapon-stats attack-data-table-damage">
@@ -147,14 +146,14 @@
 </p>
 <!-- 
 NewPP limit report
-Cached time: 20260818034804
+Cached time: 20260819054514
 Cache expiry: 2592000
 Reduced expiry: false
 Complications: []
-CPU time usage: 0.112 seconds
-Real time usage: 0.153 seconds
+CPU time usage: 0.118 seconds
+Real time usage: 0.161 seconds
 Preprocessor visited node count: 618/1000000
-Revision size: 393/4194304 bytes
+Revision size: 390/4194304 bytes
 Post‐expand include size: 12823/4194304 bytes
 Template argument size: 116/4194304 bytes
 Highest expansion depth: 8/100
@@ -162,29 +161,17 @@ Expensive parser function count: 1/500
 Unstrip recursion depth: 0/20
 Unstrip post‐expand size: 0/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.073/15.000 seconds
+Lua time usage: 0.077/15.000 seconds
 Lua memory usage: 3857238/52428800 bytes
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%  118.111      1 -total
- 97.03%  114.600      2 Template:Attack_Data/attack
-  2.80%    3.310      1 Template:Disambig
+100.00%  125.153      1 -total
+ 97.00%  121.400      2 Template:Attack_Data/attack
+  2.81%    3.516      1 Template:Disambig
 -->
-</div></div>
+</div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
-<script>
-功能 toggleTheme(){
-  var h = 文档.documentElement;
-  var alt = h.classList.toggle('view-alt');
-  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
-}
-try {
-  if (localStorage.getItem('hd2theme') === 'alt') {
-    文档.documentElement.classList.add('view-alt');
-  }
-} catch(e) {}
-</script>
 </body>
 </html>

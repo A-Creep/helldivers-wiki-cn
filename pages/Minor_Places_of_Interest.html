@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-helldiver view-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +14,6 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
-    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
@@ -30,67 +29,67 @@
 </p>
 <div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="#Locations_and_Icons"><span class="tocnumber">1</span> <span class="toctext">Locations and Icons</span></a>
+<li class="toclevel-1 tocsection-1"><a href="#地点与图标"><span class="tocnumber">1</span> <span class="toctext">地点与图标</span></a>
 <ul>
-<li class="toclevel-2 tocsection-2"><a href="#Guards_at_mPOIs"><span class="tocnumber">1.1</span> <span class="toctext">Guards at mPOIs</span></a></li>
-<li class="toclevel-2 tocsection-3"><a href="#Minor_Places_of_Interest_Within_Cities"><span class="tocnumber">1.2</span> <span class="toctext">Minor Places of Interest Within Cities</span></a></li>
-<li class="toclevel-2 tocsection-4"><a href="#What_decides_the_amount_of_mPOIs_placed_on_a_map?"><span class="tocnumber">1.3</span> <span class="toctext">What decides the amount of mPOIs placed on a map?</span></a></li>
-<li class="toclevel-2 tocsection-5"><a href="#Of_the_mPOI_Availability_Per_Mission"><span class="tocnumber">1.4</span> <span class="toctext">Of the mPOI Availability 每次任务</span></a></li>
+<li class="toclevel-2 tocsection-2"><a href="#mPOI_处的守卫"><span class="tocnumber">1.1</span> <span class="toctext">mPOI 处的守卫</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#城市内的次要兴趣点"><span class="tocnumber">1.2</span> <span class="toctext">城市内的次要兴趣点</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#什么决定了地图上_mPOI_的数量？"><span class="tocnumber">1.3</span> <span class="toctext">什么决定了地图上 mPOI 的数量？</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#每局任务中_mPOI_的可用性"><span class="tocnumber">1.4</span> <span class="toctext">每局任务中 mPOI 的可用性</span></a></li>
 </ul>
 </li>
 <li class="toclevel-1 tocsection-6"><a href="#Special_Loot"><span class="tocnumber">2</span> <span class="toctext">特殊 Loot</span></a>
 <ul>
-<li class="toclevel-2 tocsection-7"><a href="#Rescue_Pods"><span class="tocnumber">2.1</span> <span class="toctext">Rescue Pods</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#救援舱"><span class="tocnumber">2.1</span> <span class="toctext">救援舱</span></a></li>
 <li class="toclevel-2 tocsection-8"><a href="#掩体"><span class="tocnumber">2.2</span> <span class="toctext">掩体</span></a></li>
-<li class="toclevel-2 tocsection-9"><a href="#Cargo_Containers"><span class="tocnumber">2.3</span> <span class="toctext">Cargo Containers</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#货运集装箱"><span class="tocnumber">2.3</span> <span class="toctext">货运集装箱</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-10"><a href="#Types"><span class="tocnumber">3</span> <span class="toctext">类型</span></a>
+<li class="toclevel-1 tocsection-10"><a href="#类型"><span class="tocnumber">3</span> <span class="toctext">类型</span></a>
 <ul>
-<li class="toclevel-2 tocsection-11"><a href="#Wild_Minor_Places_of_Interest"><span class="tocnumber">3.1</span> <span class="toctext">Wild Minor Places of Interest</span></a></li>
-<li class="toclevel-2 tocsection-12"><a href="#Colony_Minor_Places_of_Interest"><span class="tocnumber">3.2</span> <span class="toctext">Colony Minor Places of Interest</span></a></li>
-<li class="toclevel-2 tocsection-13"><a href="#City_Minor_Places_of_Interest"><span class="tocnumber">3.3</span> <span class="toctext">City Minor Places of Interest</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#野外次要兴趣点"><span class="tocnumber">3.1</span> <span class="toctext">野外次要兴趣点</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#拓殖地次要兴趣点"><span class="tocnumber">3.2</span> <span class="toctext">拓殖地次要兴趣点</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#城市次要兴趣点"><span class="tocnumber">3.3</span> <span class="toctext">城市次要兴趣点</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-14"><a href="#Weapons_found_in_Minor_Places_of_Interest"><span class="tocnumber">4</span> <span class="toctext">武器 found in Minor Places of Interest</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#在次要兴趣点中发现的武器"><span class="tocnumber">4</span> <span class="toctext">在次要兴趣点中发现的武器</span></a></li>
 
 </ul>
 </div>
 
-<h2><span class="mw-headline" id="Locations_and_Icons">Locations and Icons</span></h2>
+<h2><span id=".E5.9C.B0.E7.82.B9.E4.B8.8E.E5.9B.BE.E6.A0.87"></span><span class="mw-headline" id="地点与图标">地点与图标</span></h2>
 <p>Minor Places of Interests can be found in 多个 ways:
 </p>
 <ul><li>All mPOIs are displayed onto the topographical 小地图. Spotting or otherwise recognizing some of the mPOIs can be tricky due the numerous variations of the topographical drawings varying between different <a href="Biomes.html" title="Biomes">biomes</a> or otherwise having different randomly selected sharpness and other quality variations.</li>
 <li>The compass displays a 问题 mark ("?") when 绝地潜兵 is within 60-metres radius of undiscovered mPOI-markers; this mark functions identically to pinged locations being bright while in field-of-view and transparent at the edges of the compass.</li>
-<li>Completing the <a href="Radar_Station.html" title="Radar Station">雷达站 次要目标</a> highlights all POIs on the map.</li>
-<li>偶尔 the marking-cursor on the mini-map can reveal some (and very rarely all mPOIs) with a <i><b>次要特殊地点</b></i> text-pop-up. NOTE: This method becomes functional only after first playing an 远征-类型 (not <a href="Eradicate.html" title="Eradicate">歼灭</a> or <a href="Evacuate_High-Value_Assets.html" title="Evacuate High-Value Assets">Defence</a>)-任务 during each 玩法-session / ".exe-boot".</li></ul>
+<li>Completing the <a href="Radar_Station.html" title="Radar Station">雷达站支线目标</a> highlights all POIs on the map.</li>
+<li>偶尔 the marking-cursor on the mini-map can reveal some (and very rarely all mPOIs) with a <i><b>次要特殊地点</b></i> text-pop-up. NOTE: This method becomes functional only after first playing an 远征-类型 (not <a href="Eradicate.html" title="Eradicate">歼灭</a> or <a href="Evacuate_High-Value_Assets.html" title="Evacuate High-Value Assets">防御</a>)-任务 during each 玩法-session / ".exe-boot".</li></ul>
 <p>When found, the icons of Minor Places of Interests will change on the 小地图 if it was sufficiently looted of all samples (ammunition and 支援武器 通常 do not count):
 </p>
 <ul><li><img alt="POI Unplundered Icon.png" src="../images/50px-POI_Unplundered_Icon.png" decoding="async" loading="lazy" width="50" height="50" data-file-width="580" data-file-height="580" /> Contains Samples / un-explored mPOI.</li>
 <li><img alt="POI Plundered Icon.png" src="../images/50px-POI_Plundered_Icon.png" decoding="async" loading="lazy" width="50" height="50" data-file-width="580" data-file-height="580" />Does not contain Samples/all Samples collected.</li></ul>
-<p>An exception to note is that if there was a Rescue Pod at the mPOI, and it did not contain a 支援武器, then the icon will not change from the gem after successful looting, even if all <a href="Sample.html" title="Sample">样本</a> 和 <a href="Currency.html" title="Currency">货币</a> have been collected. If it did contain a 支援武器, then it will change after picking it up. This is unique to Rescue Pods, and does not apply to <a href="Underground_Cache.html" title="Underground Cache">地下 Caches</a> or other 类型 of mPOIs. 
+<p>An exception to note is that if there was a Rescue Pod at the mPOI, and it did not contain a 支援武器, then the icon will not change from the gem after successful looting, even if all <a href="Sample.html" title="Sample">样本</a> 和 <a href="Currency.html" title="Currency">货币</a> have been collected. If it did contain a 支援武器, then it will change after picking it up. This is unique to Rescue Pods, and does not apply to <a href="Underground_Cache.html" title="Underground Cache">地下储藏点</a> or other 类型 of mPOIs. 
 </p>
-<h3><span class="mw-headline" id="Guards_at_mPOIs">Guards at mPOIs</span></h3>
+<h3><span id="mPOI_.E5.A4.84.E7.9A.84.E5.AE.88.E5.8D.AB"></span><span class="mw-headline" id="mPOI_处的守卫">mPOI 处的守卫</span></h3>
 <p>On <a href="Difficulty.html" title="Difficulty"><img class="wiki-icon" alt="Challenging Difficulty Icon.svg" src="../images/Challenging_Difficulty_Icon.svg" decoding="async" loading="lazy" width="34" height="16" data-file-width="512" data-file-height="248" /></a> <span><a href="Difficulty.html" title="Difficulty">挑战</a></span> and above, 敌人 can be present at most Minor Places of Interests. On <a href="Difficulty.html" title="Difficulty"><img class="wiki-icon" alt="Suicide Difficulty Icon.svg" src="../images/Suicide_Difficulty_Icon.svg" decoding="async" loading="lazy" width="34" height="16" data-file-width="512" data-file-height="248" /></a> <span><a href="Difficulty.html" title="Difficulty">自杀任务</a></span> and above, 敌人 can occupy them, along with their appearances changing, such as adding structures like <a href="Environmental_Hazards.html" title="Environmental Hazards">倒刺铁丝网</a> or <a href="Cannon_Turret.html" title="Cannon Turret">Cannon 炮塔</a>.
 </p>
-<h3><span class="mw-headline" id="Minor_Places_of_Interest_Within_Cities">Minor Places of Interest Within Cities</span></h3>
-<p>The 世代 of mPOIs within <a href="Cities.html" title="Cities"> colonies / cities</a> has some exceptions: 
+<h3><span id=".E5.9F.8E.E5.B8.82.E5.86.85.E7.9A.84.E6.AC.A1.E8.A6.81.E5.85.B4.E8.B6.A3.E7.82.B9"></span><span class="mw-headline" id="城市内的次要兴趣点">城市内的次要兴趣点</span></h3>
+<p>The 世代 of mPOIs within <a href="Cities.html" title="Cities"> 拓殖地 / 城市</a> has some exceptions: 
 </p>
 <ul><li>All eligible mPOI candidate "tiles" will be generated 无论 if they end up being a mPOI or not, such "Checkpoints" and "Customs / 集装箱 Platforms".
 <ul><li>This rule allows a chance of colony-tileset being the most densely populated by mPOIs. E.G. There can be 几个 Rescue Pods placed within few steps of each other due to the 小型 浮出地面-area-要求 of these mPOIs.</li></ul></li>
-<li>Most importantly mPOIs inside 超级地球 <a href="Cities.html" title="Cities"> colonial cities</a> / urban 定居点 zones are only marked as a mPOI if there is at least a Sample, 支援武器, or a 特殊 Loot 容器 (including bunkers).
+<li>Most importantly mPOIs inside 超级地球 <a href="Cities.html" title="Cities"> 殖民城市</a> / urban 定居点 zones are only marked as a mPOI if there is at least a Sample, 支援武器, or a 特殊 Loot 容器 (including bunkers).
 <ul><li>E.G. 集装箱 area / customs will only be marked as a mPOI if there is a lootable (shipping) 容器.</li></ul></li></ul>
 <p>The above rules however only affect the colonial / offworld cities: Mega City / <a href="Super_Earth_Metropolis.html" title="Super Earth Metropolis">超级地球 Metropolis</a>-mPOI-世代 works for the most part identically to other non-City mPOIs. I.E. the Mega City mPOI-assets are fully tied to the mPOI itself and cannot exist as non-mPOI, even if they exist as a "scenery-prop" akin to empty "<a href="Ground_Stash.html" title="Ground Stash">Ground Stash</a>"-mPOIs. Metropolis-biomes also spawn both decorative and proper 地下 bunkers; these bunkers are 通常 located below a lone saluting statue of a <a href="Helldiver.html" title="Helldiver">绝地潜兵</a>.
 </p>
-<h3><span id="What_decides_the_amount_of_mPOIs_placed_on_a_map.3F"></span><span class="mw-headline" id="What_decides_the_amount_of_mPOIs_placed_on_a_map?">What decides the amount of mPOIs placed on a map?</span></h3>
+<h3><span id=".E4.BB.80.E4.B9.88.E5.86.B3.E5.AE.9A.E4.BA.86.E5.9C.B0.E5.9B.BE.E4.B8.8A_mPOI_.E7.9A.84.E6.95.B0.E9.87.8F.EF.BC.9F"></span><span class="mw-headline" id="什么决定了地图上_mPOI_的数量？">什么决定了地图上 mPOI 的数量？</span></h3>
 <p>The amount of mPOIs spawned (if any to begin with) on the map hugely fluctuates depending on how "敌对" to mPOIs the generated map ends up being.
-</p><p>This is not only 有限 to 位置 and the size of the 主体-目标 but also the fixed 任务-难度 variable amount of <a href="Automaton_Outpost.html" title="Automaton Outpost">哨站</a> / <a href="Bug_Nest.html" title="Bug Nest">Nests</a> / <a href="Illuminate_Encampment.html" title="Illuminate Encampment">Encampments</a> alongside Optional 目标, all which do occupy potential mPOI-slots. Therefore, it is more likely to encounter far less mPOIs on higher difficulties especially on mPOI-敌对 <a href="Biomes.html" title="Biomes">biomes</a>.
+</p><p>This is not only 有限 to 位置 and the size of the 主体-目标 but also the fixed 任务-难度 variable amount of <a href="Automaton_Outpost.html" title="Automaton Outpost">哨站</a> / <a href="Bug_Nest.html" title="Bug Nest">巢穴</a> / <a href="Illuminate_Encampment.html" title="Illuminate Encampment">营地</a> alongside Optional 目标, all which do occupy potential mPOI-slots. Therefore, it is more likely to encounter far less mPOIs on higher difficulties especially on mPOI-敌对 <a href="Biomes.html" title="Biomes">biomes</a>.
 </p><p>E.G: 机器人 <a href="Difficulty.html" title="Difficulty"><img class="wiki-icon" alt="Super Helldive Difficulty Icon.svg" src="../images/Super_Helldive_Difficulty_Icon.svg" decoding="async" loading="lazy" width="34" height="16" data-file-width="512" data-file-height="248" /></a> <span><a href="Difficulty.html" title="Difficulty">超级绝地潜兵难度</a></span> (10) on <a href="Icy_Glaciers.html" title="Icy Glaciers">Icy Glaciers</a> with plentiful amount of slippery ice and bodies of thawed water might not even have enough space for a singular mPOI.
-</p><p>The larger more 浮出地面-area occupying mPOIs (E.G. <a href="Valley.html" title="Valley">Valleys</a>) will also reduce the amount of mPOIs on the map.
-</p><p>Theoretically, an <a href="Illuminate.html" title="Illuminate">光能者</a> <a href="Difficulty.html" title="Difficulty"><img class="wiki-icon" alt="Challenging Difficulty Icon.svg" src="../images/Challenging_Difficulty_Icon.svg" decoding="async" loading="lazy" width="34" height="16" data-file-width="512" data-file-height="248" /></a> <span><a href="Difficulty.html" title="Difficulty">挑战</a></span>-任务 map consisting only of <a href="Cities.html" title="Cities">Colony / City</a>-tiles has the potential of to have over twenty (20-)mPOIs due to the 最大-map-size (400-meter radius) to lowest 任务-目标 ratio (1 or 2-主体 目标 and 3-Optional 目标, and four spacious (4) Encampments). This potentially can also allow tens of "Rescue Pod"-特殊-loot-containers being placed near proximity of each other, if not right 下一个 to each other (cross-roads, sidewalks, city-corners, etc).
+</p><p>The larger more 浮出地面-area occupying mPOIs (E.G. <a href="Valley.html" title="Valley">山谷</a>) will also reduce the amount of mPOIs on the map.
+</p><p>Theoretically, an <a href="Illuminate.html" title="Illuminate">光能者</a> <a href="Difficulty.html" title="Difficulty"><img class="wiki-icon" alt="Challenging Difficulty Icon.svg" src="../images/Challenging_Difficulty_Icon.svg" decoding="async" loading="lazy" width="34" height="16" data-file-width="512" data-file-height="248" /></a> <span><a href="Difficulty.html" title="Difficulty">挑战</a></span>-任务 map consisting only of <a href="Cities.html" title="Cities">拓殖地 / 城市</a>-tiles has the potential of to have over twenty (20-)mPOIs due to the 最大-map-size (400-meter radius) to lowest 任务-目标 ratio (1 or 2-主体 目标 and 3-Optional 目标, and four spacious (4) Encampments). This potentially can also allow tens of "Rescue Pod"-特殊-loot-containers being placed near proximity of each other, if not right 下一个 to each other (cross-roads, sidewalks, city-corners, etc).
 </p>
-<h3><span class="mw-headline" id="Of_the_mPOI_Availability_Per_Mission">Of the mPOI Availability 每次任务</span></h3>
-<ul><li>Outside the <a href="Cities.html" title="Cities"> Colony / City</a> 和 <a href="Super_Earth_Metropolis.html" title="Super Earth Metropolis">Metropolis</a> biomes, 通常 only one of each mPOI-layout can exist on a 任务 map. E.G. There can be only one Solar Farm and one <a href="Vehicle_Repair_Shop.html" title="Vehicle Repair Shop">载具 Repair Shop</a> 和 <a href="Junkyard.html" title="Junkyard">Junkyard</a>.
+<h3><span id=".E6.AF.8F.E5.B1.80.E4.BB.BB.E5.8A.A1.E4.B8.AD_mPOI_.E7.9A.84.E5.8F.AF.E7.94.A8.E6.80.A7"></span><span class="mw-headline" id="每局任务中_mPOI_的可用性">每局任务中 mPOI 的可用性</span></h3>
+<ul><li>Outside the <a href="Cities.html" title="Cities"> 拓殖地 / 城市</a> 和 <a href="Super_Earth_Metropolis.html" title="Super Earth Metropolis">大都市</a> biomes, 通常 only one of each mPOI-layout can exist on a 任务 map. E.G. There can be only one Solar Farm and one <a href="Vehicle_Repair_Shop.html" title="Vehicle Repair Shop">载具 Repair Shop</a> 和 <a href="Junkyard.html" title="Junkyard">Junkyard</a>.
 <ul><li>mPOIs with different layout-变体 通常 will co-exist on the same map, such as the case with <a href="L_Shaped_House.html" title="L Shaped House">L Shaped House</a> with a mine and without one.</li>
 <li>Farm / Greenhouse have the same layout with different props, thus only either one can exist a map.</li>
 <li>Of the "wilderness" mPOIs, <a href="Ground_Stash.html" title="Ground Stash">Ground Stash</a> and mPOI-marked <a href="Damaged_Hellbomb.html" title="Damaged Hellbomb">受损的地狱火炸弹</a> are exceptions: These can exist in 多个 counts and 内容 variation, E.G. all can be either empty or have 物资.</li></ul></li>
@@ -117,15 +116,15 @@
 <li>a slip 100, or (rarely) <span class="Currencyicons"><span style="white-space:nowrap"><a href="Requisition_Slips.html" title="Requisition Slips"><img alt="" src="../images/Requisition_Slip.svg" decoding="async" loading="lazy" width="512" height="571" data-file-width="512" data-file-height="571" /></a> 1000</span> <a href="Requisition_Slips.html" title="Requisition Slips">申购点 Slips</a></span></li>
 <li>a case of 1-3 <span class="Currencyicons"><span style="white-space:nowrap"><span class="Medalicon"><a href="Medal.html" title="Medal"><img class="wiki-icon" alt="" src="../images/Medal.svg" decoding="async" loading="lazy" width="512" height="716" data-file-width="512" data-file-height="716" /></a></span> </span> <a href="Medal.html" title="Medal">奖章</a></span></li>
 <li>one (1) single <span class="Currencyicons"><span style="white-space:nowrap"><a href="Sample.html#Rare" title="Sample"><img class="wiki-icon" alt="" src="../images/Rare_Sample_Icon.svg" decoding="async" loading="lazy" width="512" height="512" data-file-width="512" data-file-height="512" /></a> 1</span> <a href="Sample.html#Rare" title="Sample">Rare Sample</a></span>; collecting these additional "undocumented" specimens won't despawn or prevent collecting the pre-generated "wild" units. Thus one can 撤离 with E.G. 23/20 稀有样本; the latter number only indicates the amount of generated "floor"-units.</li></ul>
-<h3><span class="mw-headline" id="Rescue_Pods">Rescue Pods</span></h3>
+<h3><span id=".E6.95.91.E6.8F.B4.E8.88.B1"></span><span class="mw-headline" id="救援舱">救援舱</span></h3>
 <p>Pods can be opened by pressing the <b>互动</b>-button and holding still for ~1-second after which the hatch will pop open; a standing 绝地潜兵 performs Casual Salute-emote. You can also salute from up to 5 meters away without interacting using the emote.
 </p><p>While pods are still closed, they emit a signal beam which can be observed from 11-metres and beyond; the further away a 绝地潜兵 is, the higher reaching is the beam. There is also pulse-sound emitted which can be faintly heard already from 65-meters away. 
-</p><p>On <a href="Super_Earth_Metropolis.html" title="Super Earth Metropolis">超级地球 Metropolis</a> 生物群系-maps an additional Rescue Pod is placed within specific secondary 目标, E.G. <a href="Cognitive_Disruptor.html" title="Cognitive Disruptor">Cognitive Disruptors</a> 和 <a href="Radar_Station.html" title="Radar Station">Radar Stations</a>.
+</p><p>On <a href="Super_Earth_Metropolis.html" title="Super Earth Metropolis">超级地球 Metropolis</a> 生物群系-maps an additional Rescue Pod is placed within specific secondary 目标, E.G. <a href="Cognitive_Disruptor.html" title="Cognitive Disruptor">感知干扰器</a> 和 <a href="Radar_Station.html" title="Radar Station">雷达站</a>.
 </p>
 <h3><span id=".E6.8E.A9.E4.BD.93"></span><span class="mw-headline" id="掩体">掩体</span></h3>
 <p><a href="Bunker.html" title="Bunker">掩体</a> 要求 two (2) coordinated 绝地潜兵 to open bay door by simultaneously pressing the unlock button.
 </p>
-<h3><span class="mw-headline" id="Cargo_Containers">Cargo Containers</span></h3>
+<h3><span id=".E8.B4.A7.E8.BF.90.E9.9B.86.E8.A3.85.E7.AE.B1"></span><span class="mw-headline" id="货运集装箱">货运集装箱</span></h3>
 <p><b>货物集装箱</b> can be breached open with anything performing <b>20点爆破力</b>. The 伤害 can be directed on any part of the 容器 without need of hitting the door itself.
 </p><p>当前 list of 武器 that can open the 容器:
 </p>
@@ -187,7 +186,7 @@
 <ul><li>Warping with destination 下一个 to the 容器</li></ul></li></ul></li>
 <li>A nearby 爆炸, such as from an 爆炸桶 or 战略配备</li>
 <li>任何 <a href="Hellpod.html" title="Hellpod">绝地喷射舱</a>, however aiming the 战略配备 beacon to land at the door is very 困难</li></ul>
-<h2><span class="mw-headline" id="Types">类型</span></h2>
+<h2><span id=".E7.B1.BB.E5.9E.8B"></span><span class="mw-headline" id="类型">类型</span></h2>
 <div class="msgbox noexcerpt searchaux msgbox-mini msgbox-orange" style="max-width: 50em;">
 <div id="msgbox-icon"> <div id="msgbox-image" class="nomobile" style=""> <img alt="Resupply Stratagem Icon Background.svg" src="../images/Resupply_Stratagem_Icon_Background.svg" decoding="async" loading="lazy" width="45" height="45" style="vertical-align: text-top" data-file-width="512" data-file-height="512" /></div>
 </div>
@@ -204,7 +203,7 @@
 </div>
 <p>There are various 类型 of Minor Places of Interest.
 </p>
-<h3><span class="mw-headline" id="Wild_Minor_Places_of_Interest">Wild Minor Places of Interest</span></h3>
+<h3><span id=".E9.87.8E.E5.A4.96.E6.AC.A1.E8.A6.81.E5.85.B4.E8.B6.A3.E7.82.B9"></span><span class="mw-headline" id="野外次要兴趣点">野外次要兴趣点</span></h3>
 <table class="wikitable mw-collapsible">
 <caption>野外小型兴趣点
 </caption>
@@ -214,7 +213,7 @@
 <th>变体</th>
 <th>特殊战利品容器</th>
 <th>物资</th>
-<th>背景 Interactables</th>
+<th>剧情互动物品</th>
 <th>备注
 </th></tr>
 <tr>
@@ -296,7 +295,7 @@
 </td>
 <td>治疗剂 + 榴弹 + 武器
 </td>
-<td>* 2 <a href="Supplies.html" title="Supplies">Stim Crates</a> <br /> * 1 <a href="Supplies.html" title="Supplies">手榴弹 Case</a> <br /> * 1 <a class="mw-selflink-fragment" href="#Weapons_found_in_Minor_Places_of_Interest">支援武器</a>
+<td>* 2 <a href="Supplies.html" title="Supplies">治疗剂箱</a> <br /> * 1 <a href="Supplies.html" title="Supplies">榴弹箱</a> <br /> * 1 <a class="mw-selflink-fragment" href="#Weapons_found_in_Minor_Places_of_Interest">支援武器</a>
 </td>
 <td rowspan="4">无
 </td>
@@ -325,12 +324,12 @@
 </td>
 <td>榴弹 + 弹药 + 武器
 </td>
-<td>* 2 <a href="Supplies.html" title="Supplies">手榴弹 Cases</a> <br /> * 1 <a href="Supplies.html" title="Supplies">弹药箱</a> <br /> * 1 支援武器 <br /> 1 Entrenchment Tool
+<td>* 2 <a href="Supplies.html" title="Supplies">榴弹箱</a> <br /> * 1 <a href="Supplies.html" title="Supplies">弹药箱</a> <br /> * 1 支援武器 <br /> 1 Entrenchment Tool
 </td>
 <td>
 </td></tr>
 <tr>
-<td rowspan="2">Uranium Rock
+<td rowspan="2">铀矿石
 </td>
 <td><img alt="PoI Silvery Rock.png" src="../images/150px-PoI_Silvery_Rock.webp" decoding="async" loading="lazy" width="150" height="230" data-file-width="405" data-file-height="621" />
 </td>
@@ -349,14 +348,14 @@
 </td>
 <td>连通深坑
 </td>
-<td>* 0-7 <a href="Sample.html#Super" title="Sample">超级样本</a><br />* 0-2 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 0-1 <a href="Supplies.html" title="Supplies">Stim Crates</a><br />* 0-1 <a href="Supplies.html" title="Supplies">手榴弹 Case</a><br />* 0-1 <a class="mw-selflink-fragment" href="#Weapons_found_in_Minor_Places_of_Interest">支援武器</a>
+<td>* 0-7 <a href="Sample.html#Super" title="Sample">超级样本</a><br />* 0-2 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 0-1 <a href="Supplies.html" title="Supplies">治疗剂箱</a><br />* 0-1 <a href="Supplies.html" title="Supplies">榴弹箱</a><br />* 0-1 <a class="mw-selflink-fragment" href="#Weapons_found_in_Minor_Places_of_Interest">支援武器</a>
 </td>
 <td>Communications Device
 </td>
 <td>
 </td></tr>
 <tr>
-<td rowspan="2"><a href="L_Shaped_House.html" title="L Shaped House">Dugout House</a>
+<td rowspan="2"><a href="L_Shaped_House.html" title="L Shaped House">掩体房屋</a>
 </td>
 <td><img alt="L Shaped House PoI Cargo.png" src="../images/150px-L_Shaped_House_PoI_Cargo.png" decoding="async" loading="lazy" width="150" height="88" data-file-width="1930" data-file-height="1136" />
 </td>
@@ -388,7 +387,7 @@
 </td>
 <td>是
 </td>
-<td>* 0-3 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 0-2 <a href="Supplies.html" title="Supplies">Stim Crates</a><br />* 0-1 <a href="Supplies.html" title="Supplies">手榴弹 Case</a><br />* 0-2 <a href="Sample.html#Common" title="Sample">常见样本</a><br />* 0-1 Break-Action 霰弹枪
+<td>* 0-3 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 0-2 <a href="Supplies.html" title="Supplies">治疗剂箱</a><br />* 0-1 <a href="Supplies.html" title="Supplies">榴弹箱</a><br />* 0-2 <a href="Sample.html#Common" title="Sample">常见样本</a><br />* 0-1 Break-Action 霰弹枪
 </td>
 <td rowspan="2">Vending Machine<br />Communications Device
 </td>
@@ -401,7 +400,7 @@
 </td>
 <td>否
 </td>
-<td>* 0-3 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 0-2 <a href="Supplies.html" title="Supplies">Stim Crates</a><br />* 0-1 <a href="Supplies.html" title="Supplies">手榴弹 Case</a><br />* 0-2 <a href="Sample.html#Common" title="Sample">常见样本</a><br />* 0-1 Break-Action 霰弹枪<br />* 0-3 <a href="Sample.html#Rare" title="Sample">稀有样本</a>
+<td>* 0-3 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 0-2 <a href="Supplies.html" title="Supplies">治疗剂箱</a><br />* 0-1 <a href="Supplies.html" title="Supplies">榴弹箱</a><br />* 0-2 <a href="Sample.html#Common" title="Sample">常见样本</a><br />* 0-1 Break-Action 霰弹枪<br />* 0-3 <a href="Sample.html#Rare" title="Sample">稀有样本</a>
 </td></tr>
 <tr>
 <td>Solar Farm
@@ -412,7 +411,7 @@
 </td>
 <td>是
 </td>
-<td>* 4-5 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 3 <a href="Supplies.html" title="Supplies">Stim Crates</a><br />* 0-3 <a href="Sample.html#Common" title="Sample">常见样本</a><br />* 1-3 <a href="Supplies.html" title="Supplies">手榴弹 Case</a>
+<td>* 4-5 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 3 <a href="Supplies.html" title="Supplies">治疗剂箱</a><br />* 0-3 <a href="Sample.html#Common" title="Sample">常见样本</a><br />* 1-3 <a href="Supplies.html" title="Supplies">榴弹箱</a>
 </td>
 <td>Case of "Democracy Drafts" Premium 轻型 Beer
 </td>
@@ -427,9 +426,9 @@
 </td>
 <td>是
 </td>
-<td>* 5-9 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 0-1 <a href="Supplies.html" title="Supplies">Stim Crates</a><br />* 0-3 <a href="Sample.html#Common" title="Sample">常见样本</a><br />* 0-1 <a href="E_MG-101_HMG_Emplacement.html" title="E/MG-101 HMG Emplacement">E/MG-101 重机枪部署支架</a>
+<td>* 5-9 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 0-1 <a href="Supplies.html" title="Supplies">治疗剂箱</a><br />* 0-3 <a href="Sample.html#Common" title="Sample">常见样本</a><br />* 0-1 <a href="E_MG-101_HMG_Emplacement.html" title="E/MG-101 HMG Emplacement">E/MG-101 重机枪部署支架</a>
 </td>
-<td>SEAF Communications Device<br />Tool Rack
+<td>SEAF Communications Device<br />工具架
 </td>
 <td>On rare occasions the pod will be replaced by a damaged <a href="NUX-223_Hellbomb.html" title="NUX-223 Hellbomb">NUX-223 Hellbomb</a>，被射击时会爆炸
 </td></tr>
@@ -442,7 +441,7 @@
 </td>
 <td>是
 </td>
-<td>* 1-3 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 0-1 <a href="Supplies.html" title="Supplies">Stim Crates</a><br />* 0-1 <a href="Supplies.html" title="Supplies">手榴弹 Case</a><br />* 0-2 <a href="Sample.html#Common" title="Sample">常见样本</a><br />* 0-1 <a href="CQC-72_Entrenchment_Tool.html" title="CQC-72 Entrenchment Tool">CQC-72 Entrenchment Tool</a>
+<td>* 1-3 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 0-1 <a href="Supplies.html" title="Supplies">治疗剂箱</a><br />* 0-1 <a href="Supplies.html" title="Supplies">榴弹箱</a><br />* 0-2 <a href="Sample.html#Common" title="Sample">常见样本</a><br />* 0-1 <a href="CQC-72_Entrenchment_Tool.html" title="CQC-72 Entrenchment Tool">CQC-72 Entrenchment Tool</a>
 </td>
 <td>Communications Device<br />Vending Machine
 </td>
@@ -457,7 +456,7 @@
 </td>
 <td>是
 </td>
-<td>* 2-3 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 1 <a href="Supplies.html" title="Supplies">Stim Crates</a><br />* 0-1 <a href="Supplies.html" title="Supplies">手榴弹 Cases</a><br />* 0-2 <a href="Sample.html#Common" title="Sample">常见样本</a>
+<td>* 2-3 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 1 <a href="Supplies.html" title="Supplies">治疗剂箱</a><br />* 0-1 <a href="Supplies.html" title="Supplies">榴弹箱</a><br />* 0-2 <a href="Sample.html#Common" title="Sample">常见样本</a>
 </td>
 <td rowspan="4">Communications Device<br />Greenhouse - 类型 203
 </td>
@@ -470,7 +469,7 @@
 </td>
 <td rowspan="3">否
 </td>
-<td>* 2-3 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 1 <a href="Supplies.html" title="Supplies">Stim Crates</a><br />* 0-1 <a href="Supplies.html" title="Supplies">手榴弹 Cases</a><br />* 0-2 <a href="Sample.html#Common" title="Sample">常见样本</a><br />* 0-3 <a href="Sample.html#Rare" title="Sample">稀有样本</a>
+<td>* 2-3 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 1 <a href="Supplies.html" title="Supplies">治疗剂箱</a><br />* 0-1 <a href="Supplies.html" title="Supplies">榴弹箱</a><br />* 0-2 <a href="Sample.html#Common" title="Sample">常见样本</a><br />* 0-3 <a href="Sample.html#Rare" title="Sample">稀有样本</a>
 </td>
 <td>
 </td></tr>
@@ -479,7 +478,7 @@
 </td>
 <td>物资
 </td>
-<td>* 2-3 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 1 <a href="Supplies.html" title="Supplies">Stim Crates</a><br />* 0-1 <a href="Supplies.html" title="Supplies">手榴弹 Cases</a><br />* 0-2 <a href="Sample.html#Common" title="Sample">常见样本</a><br />* 0-1 <a class="mw-selflink-fragment" href="#Weapons_found_in_Minor_Places_of_Interest">支援武器</a>
+<td>* 2-3 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 1 <a href="Supplies.html" title="Supplies">治疗剂箱</a><br />* 0-1 <a href="Supplies.html" title="Supplies">榴弹箱</a><br />* 0-2 <a href="Sample.html#Common" title="Sample">常见样本</a><br />* 0-1 <a class="mw-selflink-fragment" href="#Weapons_found_in_Minor_Places_of_Interest">支援武器</a>
 </td>
 <td>
 </td></tr>
@@ -488,7 +487,7 @@
 </td>
 <td>被淹没
 </td>
-<td>* 2-3 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 1 <a href="Supplies.html" title="Supplies">Stim Crates</a><br />* 0-1 <a href="Supplies.html" title="Supplies">手榴弹 Cases</a><br />* 0-2 <a href="Sample.html#Common" title="Sample">常见样本</a>
+<td>* 2-3 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 1 <a href="Supplies.html" title="Supplies">治疗剂箱</a><br />* 0-1 <a href="Supplies.html" title="Supplies">榴弹箱</a><br />* 0-2 <a href="Sample.html#Common" title="Sample">常见样本</a>
 </td>
 <td>
 </td></tr>
@@ -501,7 +500,7 @@
 </td>
 <td>是
 </td>
-<td>* 2-3 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 1 <a href="Supplies.html" title="Supplies">Stim Crates</a><br />* 0-1 <a href="Supplies.html" title="Supplies">手榴弹 Cases</a><br />* 0-2 <a href="Sample.html#Common" title="Sample">常见样本</a>
+<td>* 2-3 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 1 <a href="Supplies.html" title="Supplies">治疗剂箱</a><br />* 0-1 <a href="Supplies.html" title="Supplies">榴弹箱</a><br />* 0-2 <a href="Sample.html#Common" title="Sample">常见样本</a>
 </td>
 <td rowspan="4">Communications Device
 </td>
@@ -514,7 +513,7 @@
 </td>
 <td rowspan="3">否
 </td>
-<td>* 2-3 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 1 <a href="Supplies.html" title="Supplies">Stim Crates</a><br />* 0-1 <a href="Supplies.html" title="Supplies">手榴弹 Cases</a><br />* 0-2 <a href="Sample.html#Common" title="Sample">常见样本</a><br />* 0-3 <a href="Sample.html#Rare" title="Sample">稀有样本</a>
+<td>* 2-3 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 1 <a href="Supplies.html" title="Supplies">治疗剂箱</a><br />* 0-1 <a href="Supplies.html" title="Supplies">榴弹箱</a><br />* 0-2 <a href="Sample.html#Common" title="Sample">常见样本</a><br />* 0-3 <a href="Sample.html#Rare" title="Sample">稀有样本</a>
 </td>
 <td>
 </td></tr>
@@ -523,7 +522,7 @@
 </td>
 <td>物资
 </td>
-<td>* 2-3 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 1 <a href="Supplies.html" title="Supplies">Stim Crates</a><br />* 0-1 <a href="Supplies.html" title="Supplies">手榴弹 Cases</a><br />* 0-2 <a href="Sample.html#Common" title="Sample">常见样本</a>
+<td>* 2-3 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 1 <a href="Supplies.html" title="Supplies">治疗剂箱</a><br />* 0-1 <a href="Supplies.html" title="Supplies">榴弹箱</a><br />* 0-2 <a href="Sample.html#Common" title="Sample">常见样本</a>
 </td>
 <td>
 </td></tr>
@@ -532,7 +531,7 @@
 </td>
 <td>被淹没
 </td>
-<td>* 2-3 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 1 <a href="Supplies.html" title="Supplies">Stim Crates</a><br />* 0-1 <a href="Supplies.html" title="Supplies">手榴弹 Cases</a><br />* 0-2 <a href="Sample.html#Common" title="Sample">常见样本</a>
+<td>* 2-3 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 1 <a href="Supplies.html" title="Supplies">治疗剂箱</a><br />* 0-1 <a href="Supplies.html" title="Supplies">榴弹箱</a><br />* 0-2 <a href="Sample.html#Common" title="Sample">常见样本</a>
 </td>
 <td>
 </td></tr>
@@ -560,7 +559,7 @@
 </td>
 <td>是
 </td>
-<td>* 0-2 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 0-2 <a href="Supplies.html" title="Supplies">Stim Crates</a><br />* 0-1 <a href="Supplies.html" title="Supplies">手榴弹 Cases</a><br />* 0-3 <a href="Sample.html#Common" title="Sample">常见样本</a>
+<td>* 0-2 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 0-2 <a href="Supplies.html" title="Supplies">治疗剂箱</a><br />* 0-1 <a href="Supplies.html" title="Supplies">榴弹箱</a><br />* 0-3 <a href="Sample.html#Common" title="Sample">常见样本</a>
 </td>
 <td>机器人 遗骸<br />上尉's Log<br />Communications Device
 </td>
@@ -575,7 +574,7 @@
 </td>
 <td>否
 </td>
-<td>* 4 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 1 <a href="Supplies.html" title="Supplies">手榴弹 Cases</a><br />*0-3 <a href="Sample.html#Common" title="Sample">常见样本</a><br />*0-1 <a href="Sample.html#Rare" title="Sample">稀有样本</a>
+<td>* 4 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 1 <a href="Supplies.html" title="Supplies">榴弹箱</a><br />*0-3 <a href="Sample.html#Common" title="Sample">常见样本</a><br />*0-1 <a href="Sample.html#Rare" title="Sample">稀有样本</a>
 </td>
 <td>Case of "Democracy Drafts" Premium 轻型 Beer
 <p>上尉's Log
@@ -592,7 +591,7 @@
 </td>
 <td rowspan="7">是
 </td>
-<td>* 0-1 <a href="Supplies.html" title="Supplies">弹药箱</a><br />*0-2 <a href="Supplies.html" title="Supplies">Stim Crates</a><br />*0-1 <a href="Supplies.html" title="Supplies">手榴弹 Cases</a><br />*0-2 常见样本
+<td>* 0-1 <a href="Supplies.html" title="Supplies">弹药箱</a><br />*0-2 <a href="Supplies.html" title="Supplies">治疗剂箱</a><br />*0-1 <a href="Supplies.html" title="Supplies">榴弹箱</a><br />*0-2 常见样本
 </td>
 <td>Blood-Stained 图书馆 Card<br />Forklift
 </td>
@@ -603,7 +602,7 @@
 </td>
 <td>中型沟渠
 </td>
-<td>*0-2 <a href="Supplies.html" title="Supplies">弹药箱</a><br />*0-1 <a href="Supplies.html" title="Supplies">Stim Crates</a><br />*0-2 常见样本
+<td>*0-2 <a href="Supplies.html" title="Supplies">弹药箱</a><br />*0-1 <a href="Supplies.html" title="Supplies">治疗剂箱</a><br />*0-2 常见样本
 </td>
 <td>Communications Device
 </td>
@@ -614,7 +613,7 @@
 </td>
 <td>带房屋的大型沟渠
 </td>
-<td>* 0-1 <a href="Supplies.html" title="Supplies">手榴弹 Cases</a><br />* 0-2 常见样本
+<td>* 0-1 <a href="Supplies.html" title="Supplies">榴弹箱</a><br />* 0-2 常见样本
 </td>
 <td>?
 </td>
@@ -625,9 +624,9 @@
 </td>
 <td>高处
 </td>
-<td>* 0-2 <a href="Supplies.html" title="Supplies">弹药箱</a><br />*0-1 <a href="Supplies.html" title="Supplies">手榴弹 Cases</a>
+<td>* 0-2 <a href="Supplies.html" title="Supplies">弹药箱</a><br />*0-1 <a href="Supplies.html" title="Supplies">榴弹箱</a>
 </td>
-<td>Tool Rack<br />Forklift
+<td>工具架<br />Forklift
 </td>
 <td>
 </td></tr>
@@ -636,7 +635,7 @@
 </td>
 <td>高处<br />无房屋
 </td>
-<td>* 0-2 <a href="Supplies.html" title="Supplies">弹药箱</a><br />*0-1 <a href="Supplies.html" title="Supplies">Stim Crates</a><br />*0-1 <a href="Supplies.html" title="Supplies">手榴弹 Cases</a><br />*0-2 常见样本
+<td>* 0-2 <a href="Supplies.html" title="Supplies">弹药箱</a><br />*0-1 <a href="Supplies.html" title="Supplies">治疗剂箱</a><br />*0-1 <a href="Supplies.html" title="Supplies">榴弹箱</a><br />*0-2 常见样本
 </td>
 <td>Communications Device
 </td>
@@ -649,7 +648,7 @@
 </td>
 <td>* 0-4 常见样本<br />* 1 <a href="CQC-72_Entrenchment_Tool.html" title="CQC-72 Entrenchment Tool">CQC-72 Entrenchment Tool</a>
 </td>
-<td>Tool Rack
+<td>工具架
 </td>
 <td>
 </td></tr>
@@ -658,7 +657,7 @@
 </td>
 <td>温室
 </td>
-<td>* 0-1 <a href="Sample.html#Common" title="Sample">普通样本</a><br />* 1 <a href="CQC-72_Entrenchment_Tool.html" title="CQC-72 Entrenchment Tool">CQC-72 Entrenchment Tool</a><br />* 0-2 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 0-1 <a href="Supplies.html" title="Supplies">手榴弹 Cases</a>
+<td>* 0-1 <a href="Sample.html#Common" title="Sample">普通样本</a><br />* 1 <a href="CQC-72_Entrenchment_Tool.html" title="CQC-72 Entrenchment Tool">CQC-72 Entrenchment Tool</a><br />* 0-2 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 0-1 <a href="Supplies.html" title="Supplies">榴弹箱</a>
 </td>
 <td>Greenhouse - 类型 203<br />Personal Device<br />Welcome Sign - Homely 变体 02
 </td>
@@ -673,7 +672,7 @@
 </td>
 <td>是
 </td>
-<td>* 4-7 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 1-2 <a href="Supplies.html" title="Supplies">Stim Crates</a><br />* 1-2 <a href="Supplies.html" title="Supplies">手榴弹 Cases</a><br />* 0-3 <a href="Sample.html#Common" title="Sample">常见样本</a>
+<td>* 4-7 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 1-2 <a href="Supplies.html" title="Supplies">治疗剂箱</a><br />* 1-2 <a href="Supplies.html" title="Supplies">榴弹箱</a><br />* 0-3 <a href="Sample.html#Common" title="Sample">常见样本</a>
 </td>
 <td>Handwritten Note
 </td>
@@ -686,7 +685,7 @@
 </td>
 <td>否
 </td>
-<td>* 4-7 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 1-2 <a href="Supplies.html" title="Supplies">Stim Crates</a><br />* 1-2 <a href="Supplies.html" title="Supplies">手榴弹 Cases</a><br />* 0-3 <a href="Sample.html#Common" title="Sample">常见样本</a><br />* 0-3 <a href="Sample.html#Rare" title="Sample">稀有样本</a>
+<td>* 4-7 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 1-2 <a href="Supplies.html" title="Supplies">治疗剂箱</a><br />* 1-2 <a href="Supplies.html" title="Supplies">榴弹箱</a><br />* 0-3 <a href="Sample.html#Common" title="Sample">常见样本</a><br />* 0-3 <a href="Sample.html#Rare" title="Sample">稀有样本</a>
 </td>
 <td>Handwritten Note
 </td>
@@ -701,7 +700,7 @@
 </td>
 <td>是
 </td>
-<td>* 4-6 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 2 <a href="Supplies.html" title="Supplies">Stim Crates</a><br />* 2-3 <a href="Supplies.html" title="Supplies">手榴弹 Cases</a><br />* 0-3 <a href="Sample.html#Common" title="Sample">常见样本</a>
+<td>* 4-6 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 2 <a href="Supplies.html" title="Supplies">治疗剂箱</a><br />* 2-3 <a href="Supplies.html" title="Supplies">榴弹箱</a><br />* 0-3 <a href="Sample.html#Common" title="Sample">常见样本</a>
 </td>
 <td rowspan="2">Communications Device
 </td>
@@ -714,7 +713,7 @@
 </td>
 <td>否
 </td>
-<td>* 4-6 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 2 <a href="Supplies.html" title="Supplies">Stim Crates</a><br />* 2-3 <a href="Supplies.html" title="Supplies">手榴弹 Cases</a><br />* 0-3 <a href="Sample.html#Common" title="Sample">常见样本</a><br />* 0-4 <a href="Sample.html#Rare" title="Sample">稀有样本</a>
+<td>* 4-6 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 2 <a href="Supplies.html" title="Supplies">治疗剂箱</a><br />* 2-3 <a href="Supplies.html" title="Supplies">榴弹箱</a><br />* 0-3 <a href="Sample.html#Common" title="Sample">常见样本</a><br />* 0-4 <a href="Sample.html#Rare" title="Sample">稀有样本</a>
 </td>
 <td>
 </td></tr>
@@ -727,7 +726,7 @@
 </td>
 <td>是
 </td>
-<td>* 0-3 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 0-1 <a href="Supplies.html" title="Supplies">Stim Crates</a>
+<td>* 0-3 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 0-1 <a href="Supplies.html" title="Supplies">治疗剂箱</a>
 </td>
 <td>?
 </td>
@@ -742,7 +741,7 @@
 </td>
 <td>是
 </td>
-<td>* 0-1 <a href="Supplies.html" title="Supplies">手榴弹 Cases</a><br />* 0-1 Break-Action 霰弹枪
+<td>* 0-1 <a href="Supplies.html" title="Supplies">榴弹箱</a><br />* 0-1 Break-Action 霰弹枪
 </td>
 <td>?
 </td>
@@ -757,14 +756,14 @@
 </td>
 <td>是
 </td>
-<td>* 3 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 2 <a href="Supplies.html" title="Supplies">Stim Crates</a><br />* 1 <a href="Supplies.html" title="Supplies">手榴弹 Case</a><br />* 0-2 <a href="Sample.html#Common" title="Sample">常见样本</a><br />* 0-3 <a href="Sample.html#Rare" title="Sample">稀有样本</a>
+<td>* 3 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 2 <a href="Supplies.html" title="Supplies">治疗剂箱</a><br />* 1 <a href="Supplies.html" title="Supplies">榴弹箱</a><br />* 0-2 <a href="Sample.html#Common" title="Sample">常见样本</a><br />* 0-3 <a href="Sample.html#Rare" title="Sample">稀有样本</a>
 </td>
 <td>Vending Machine
 </td>
 <td>稀有样本总是在有火的瓦砾中。
 </td></tr>
 <tr>
-<td>Crashed SEAF Bomber
+<td>坠毁的超级地球武装部队轰炸机
 </td>
 <td><img alt="Partion Landscape Ground Gloom SEAF Bomber.png" src="../images/150px-Partion_Landscape_Ground_Gloom_SEAF_Bomber.png" decoding="async" loading="lazy" width="150" height="84" data-file-width="3840" data-file-height="2160" />
 </td>
@@ -772,7 +771,7 @@
 </td>
 <td>是
 </td>
-<td>* 6 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 3 <a href="Supplies.html" title="Supplies">手榴弹 Cases</a>
+<td>* 6 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 3 <a href="Supplies.html" title="Supplies">榴弹箱</a>
 </td>
 <td>Vending Machine<br />SEAF Communications Device
 </td>
@@ -787,7 +786,7 @@
 </td>
 <td>是
 </td>
-<td>* 6 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 2 <a href="Supplies.html" title="Supplies">手榴弹 Cases</a><br />* 1 <a href="CQC-72_Entrenchment_Tool.html" title="CQC-72 Entrenchment Tool">CQC-72 Entrenchment Tool</a>
+<td>* 6 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 2 <a href="Supplies.html" title="Supplies">榴弹箱</a><br />* 1 <a href="CQC-72_Entrenchment_Tool.html" title="CQC-72 Entrenchment Tool">CQC-72 Entrenchment Tool</a>
 </td>
 <td>Communications Device<br />超级地球 issued Tool Rack
 </td>
@@ -802,7 +801,7 @@
 </td>
 <td>是
 </td>
-<td>* 3 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 2 <a href="Supplies.html" title="Supplies">手榴弹 Cases</a><br />* 2 <a href="Supplies.html" title="Supplies">Stim Crates</a>
+<td>* 3 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 2 <a href="Supplies.html" title="Supplies">榴弹箱</a><br />* 2 <a href="Supplies.html" title="Supplies">治疗剂箱</a>
 </td>
 <td>SEAF Communications Device
 </td>
@@ -817,7 +816,7 @@
 </td>
 <td>是
 </td>
-<td>* 0-3 <a href="Supplies.html" title="Supplies">Stim Crates</a><br />* 0-6 <a href="Supplies.html" title="Supplies">弹药 Crates</a>
+<td>* 0-3 <a href="Supplies.html" title="Supplies">治疗剂箱</a><br />* 0-6 <a href="Supplies.html" title="Supplies">弹药箱</a>
 </td>
 <td>无
 </td>
@@ -832,12 +831,12 @@
 </td>
 <td>是
 </td>
-<td>* 3 <a class="mw-selflink-fragment" href="#Special_Loot">特殊 Loot Stacks</a>
+<td>* 3 <a class="mw-selflink-fragment" href="#Special_Loot">特殊战利品堆</a>
 </td>
 <td>无
 </td>
 <td>
-<ul><li>仅发现于 <a href="Hive_World.html" title="Hive World">虫窝世界</a> planets.</li>
+<ul><li>仅发现于 <a href="Hive_World.html" title="Hive World">虫窝世界</a> 行星。</li>
 <li>Instead of a 特殊 Loot 容器, the 特殊 Loot simply lays on the ground.</li></ul>
 </td></tr>
 <tr>
@@ -849,12 +848,12 @@
 </td>
 <td>是
 </td>
-<td>* 2 <a class="mw-selflink-fragment" href="#Special_Loot">特殊 Loot Stacks</a>
+<td>* 2 <a class="mw-selflink-fragment" href="#Special_Loot">特殊战利品堆</a>
 </td>
 <td rowspan="2">无
 </td>
 <td rowspan="2">
-<ul><li>仅发现于 <a href="Hive_World.html" title="Hive World">虫窝世界</a> planets.</li>
+<ul><li>仅发现于 <a href="Hive_World.html" title="Hive World">虫窝世界</a> 行星。</li>
 <li>Instead of a 特殊 Loot 容器, the 特殊 Loot simply lays on the ground.</li>
 <li>Filled with <a href="Bug_Mine.html" title="Bug Mine">Bug Mines</a></li></ul>
 </td></tr>
@@ -865,7 +864,7 @@
 </td>
 <td>否
 </td>
-<td>* 2 <a href="Supplies.html" title="Supplies">手榴弹 Cases</a><br />* 4 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 1 <a class="mw-selflink-fragment" href="#Weapons_found_in_Minor_Places_of_Interest">支援武器</a>
+<td>* 2 <a href="Supplies.html" title="Supplies">榴弹箱</a><br />* 4 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 1 <a class="mw-selflink-fragment" href="#Weapons_found_in_Minor_Places_of_Interest">支援武器</a>
 </td></tr>
 <tr>
 <td>鹈鹕 Overgrowth
@@ -880,7 +879,7 @@
 </td>
 <td>无
 </td>
-<td>仅发现于 <a href="Hive_World.html" title="Hive World">虫窝世界</a> planets.
+<td>仅发现于 <a href="Hive_World.html" title="Hive World">虫窝世界</a> 行星。
 </td></tr>
 <tr>
 <td>Ribcage Overgrowth
@@ -891,12 +890,12 @@
 </td>
 <td>是
 </td>
-<td>* 1 <a class="mw-selflink-fragment" href="#Special_Loot">特殊 Loot Stack</a><br /> * 0-2 <a href="Supplies.html" title="Supplies">手榴弹 Cases</a><br />* 0-4 <a href="Supplies.html" title="Supplies">弹药箱</a>
+<td>* 1 <a class="mw-selflink-fragment" href="#Special_Loot">特殊战利品堆</a><br /> * 0-2 <a href="Supplies.html" title="Supplies">榴弹箱</a><br />* 0-4 <a href="Supplies.html" title="Supplies">弹药箱</a>
 </td>
 <td>无
 </td>
 <td>
-<ul><li>仅发现于 <a href="Hive_World.html" title="Hive World">虫窝世界</a> planets.</li>
+<ul><li>仅发现于 <a href="Hive_World.html" title="Hive World">虫窝世界</a> 行星。</li>
 <li>Instead of a 特殊 Loot 容器, the 特殊 Loot simply lays on the ground.</li></ul>
 </td></tr>
 <tr>
@@ -908,12 +907,12 @@
 </td>
 <td>是
 </td>
-<td>* 1 <a class="mw-selflink-fragment" href="#Special_Loot">特殊 Loot Stack</a><br />* 0-3 <a href="Supplies.html" title="Supplies">弹药箱</a>
+<td>* 1 <a class="mw-selflink-fragment" href="#Special_Loot">特殊战利品堆</a><br />* 0-3 <a href="Supplies.html" title="Supplies">弹药箱</a>
 </td>
 <td>无
 </td>
 <td>
-<ul><li>仅发现于 <a href="Hive_World.html" title="Hive World">虫窝世界</a> planets.</li>
+<ul><li>仅发现于 <a href="Hive_World.html" title="Hive World">虫窝世界</a> 行星。</li>
 <li>Instead of a 特殊 Loot 容器, the 特殊 Loot simply lays on the ground.</li></ul>
 </td></tr>
 <tr>
@@ -925,12 +924,12 @@
 </td>
 <td>否
 </td>
-<td>* 5 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 1 <a href="Supplies.html" title="Supplies">Stim Crate</a>
+<td>* 5 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 1 <a href="Supplies.html" title="Supplies">治疗剂箱</a>
 </td>
 <td>无
 </td>
 <td>
-<ul><li>仅发现于 <a href="Hive_World.html" title="Hive World">虫窝世界</a> planets.</li></ul>
+<ul><li>仅发现于 <a href="Hive_World.html" title="Hive World">虫窝世界</a> 行星。</li></ul>
 </td></tr>
 <tr>
 <td>鹈鹕坠机点
@@ -941,12 +940,12 @@
 </td>
 <td>是
 </td>
-<td>* 3 <a class="mw-selflink-fragment" href="#Special_Loot">特殊 Loot Stack</a><br />* 3 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 2 <a href="Sample.html#Common" title="Sample">常见样本</a>
+<td>* 3 <a class="mw-selflink-fragment" href="#Special_Loot">特殊战利品堆</a><br />* 3 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 2 <a href="Sample.html#Common" title="Sample">常见样本</a>
 </td>
 <td>无
 </td>
 <td>
-<ul><li>仅发现于 <a href="Hive_World.html" title="Hive World">虫窝世界</a> planets.</li>
+<ul><li>仅发现于 <a href="Hive_World.html" title="Hive World">虫窝世界</a> 行星。</li>
 <li>Instead of a 特殊 Loot 容器, the 特殊 Loot simply lays on the ground.</li></ul>
 </td></tr>
 <tr>
@@ -958,15 +957,15 @@
 </td>
 <td>是
 </td>
-<td>* 2 <a class="mw-selflink-fragment" href="#Special_Loot">特殊 Loot Stack</a><br />* 2 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 2 Break-Action Shotguns
+<td>* 2 <a class="mw-selflink-fragment" href="#Special_Loot">特殊战利品堆</a><br />* 2 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 2 Break-Action Shotguns
 </td>
 <td>无
 </td>
 <td>
-<ul><li>仅发现于 <a href="Hive_World.html" title="Hive World">虫窝世界</a> planets.</li>
+<ul><li>仅发现于 <a href="Hive_World.html" title="Hive World">虫窝世界</a> 行星。</li>
 <li>Instead of a 特殊 Loot 容器, the 特殊 Loot simply lays on the ground.</li></ul>
 </td></tr></tbody></table>
-<h3><span class="mw-headline" id="Colony_Minor_Places_of_Interest">Colony Minor Places of Interest</span></h3>
+<h3><span id=".E6.8B.93.E6.AE.96.E5.9C.B0.E6.AC.A1.E8.A6.81.E5.85.B4.E8.B6.A3.E7.82.B9"></span><span class="mw-headline" id="拓殖地次要兴趣点">拓殖地次要兴趣点</span></h3>
 <p><a href="Colonies.html" title="Colonies">Colonies</a> will often have Minor Places of Interest that won't show up on the map or on the compass if they don't have a 特殊 Loot 容器 (or alternatively the <a href="Sample.html#Rare" title="Sample">稀有样本</a> replacement), though they will still have 物资 present.
 </p><p><i>注意：当刷取 <a href="Super_Credits.html" title="Super Credits">超级货币</a>, <a href="Medal.html" title="Medal">奖章</a>, or <a href="Requisition_Slips.html" title="Requisition Slips">申购点 Slips</a>，请务必查看该小型兴趣点是否在地图上显示为小型兴趣点，否则不会生成特殊战利品。</i>
 </p>
@@ -979,7 +978,7 @@
 <th>变体</th>
 <th>特殊战利品容器</th>
 <th>物资</th>
-<th>背景 Interactables</th>
+<th>剧情互动物品</th>
 <th>备注
 </th></tr>
 <tr>
@@ -991,7 +990,7 @@
 </td>
 <td rowspan="2">否
 </td>
-<td>* 3-4 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 1 <a href="Supplies.html" title="Supplies">Stim Crate</a><br />* 0-1 <a href="Supplies.html" title="Supplies">手榴弹 Case</a><br />* 0-2 <a href="Sample.html#Common" title="Sample">常见样本</a><br />* 0-1 消耗性反坦克武器<br />* 0-1 机枪
+<td>* 3-4 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 1 <a href="Supplies.html" title="Supplies">治疗剂箱</a><br />* 0-1 <a href="Supplies.html" title="Supplies">榴弹箱</a><br />* 0-2 <a href="Sample.html#Common" title="Sample">常见样本</a><br />* 0-1 消耗性反坦克武器<br />* 0-1 机枪
 </td>
 <td rowspan="2">无
 </td>
@@ -1002,7 +1001,7 @@
 </td>
 <td>重机枪阵地
 </td>
-<td>* 3-4 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 1 <a href="Supplies.html" title="Supplies">Stim Crate</a><br />* 0-1 <a href="Supplies.html" title="Supplies">手榴弹 Case</a><br />* 0-2 <a href="Sample.html#Common" title="Sample">常见样本</a><br />* 0-1 消耗性反坦克武器<br />* 0-1 机枪<br />* 1 <a href="E_MG-101_HMG_Emplacement.html" title="E/MG-101 HMG Emplacement">E/MG-101 重机枪部署支架</a>
+<td>* 3-4 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 1 <a href="Supplies.html" title="Supplies">治疗剂箱</a><br />* 0-1 <a href="Supplies.html" title="Supplies">榴弹箱</a><br />* 0-2 <a href="Sample.html#Common" title="Sample">常见样本</a><br />* 0-1 消耗性反坦克武器<br />* 0-1 机枪<br />* 1 <a href="E_MG-101_HMG_Emplacement.html" title="E/MG-101 HMG Emplacement">E/MG-101 重机枪部署支架</a>
 </td></tr>
 <tr>
 <td>Containers
@@ -1039,7 +1038,7 @@
 </td>
 <td>防御公园
 </td>
-<td>* 4 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 1 <a href="Supplies.html" title="Supplies">手榴弹 Case</a>
+<td>* 4 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 1 <a href="Supplies.html" title="Supplies">榴弹箱</a>
 </td>
 <td>
 </td></tr>
@@ -1052,7 +1051,7 @@
 </td>
 <td>是
 </td>
-<td>* 0-1 <a href="Supplies.html" title="Supplies">手榴弹 Case</a><br />* 0-2 <a href="Sample.html#Common" title="Sample">常见样本</a>
+<td>* 0-1 <a href="Supplies.html" title="Supplies">榴弹箱</a><br />* 0-2 <a href="Sample.html#Common" title="Sample">常见样本</a>
 </td>
 <td>无
 </td>
@@ -1097,7 +1096,7 @@
 </td>
 <td rowspan="3">否
 </td>
-<td>* 6 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 1 <a href="Supplies.html" title="Supplies">Stim Crate</a><br />* 1 <a href="EAT-17_Expendable_Anti-Tank.html" title="EAT-17 Expendable Anti-Tank">EAT-17 消耗性反坦克武器</a><br />* 1 <a class="mw-selflink-fragment" href="#Weapons_found_in_Minor_Places_of_Interest">支援武器</a>
+<td>* 6 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 1 <a href="Supplies.html" title="Supplies">治疗剂箱</a><br />* 1 <a href="EAT-17_Expendable_Anti-Tank.html" title="EAT-17 Expendable Anti-Tank">EAT-17 消耗性反坦克武器</a><br />* 1 <a class="mw-selflink-fragment" href="#Weapons_found_in_Minor_Places_of_Interest">支援武器</a>
 </td>
 <td rowspan="3">无
 </td>
@@ -1108,7 +1107,7 @@
 </td>
 <td>人行道（宽）
 </td>
-<td>* 4 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 1 <a href="Supplies.html" title="Supplies">手榴弹 Case</a><br />* 0-2 <a href="Sample.html#Common" title="Sample">常见样本</a><br />* 2 <a href="EAT-17_Expendable_Anti-Tank.html" title="EAT-17 Expendable Anti-Tank">EAT-17 消耗性反坦克武器</a>
+<td>* 4 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 1 <a href="Supplies.html" title="Supplies">榴弹箱</a><br />* 0-2 <a href="Sample.html#Common" title="Sample">常见样本</a><br />* 2 <a href="EAT-17_Expendable_Anti-Tank.html" title="EAT-17 Expendable Anti-Tank">EAT-17 消耗性反坦克武器</a>
 </td></tr>
 <tr>
 <td><img alt="Resupply Areas POI SidewalkNarrowVariation.png" src="../images/150px-Resupply_Areas_POI_SidewalkNarrowVariation.png" decoding="async" loading="lazy" width="150" height="85" data-file-width="2163" data-file-height="1231" />
@@ -1147,7 +1146,7 @@
 </td>
 <td>
 </td></tr></tbody></table>
-<h3><span class="mw-headline" id="City_Minor_Places_of_Interest">City Minor Places of Interest</span></h3>
+<h3><span id=".E5.9F.8E.E5.B8.82.E6.AC.A1.E8.A6.81.E5.85.B4.E8.B6.A3.E7.82.B9"></span><span class="mw-headline" id="城市次要兴趣点">城市次要兴趣点</span></h3>
 <div class="msgbox noexcerpt searchaux msgbox-mini msgbox-orange" style="max-width: 50em;">
 <div id="msgbox-icon"> <div id="msgbox-image" class="nomobile" style=""> <img alt="Resupply Stratagem Icon Background.svg" src="../images/Resupply_Stratagem_Icon_Background.svg" decoding="async" loading="lazy" width="45" height="45" style="vertical-align: text-top" data-file-width="512" data-file-height="512" /></div>
 </div>
@@ -1164,7 +1163,7 @@
 <th>变体</th>
 <th>特殊战利品容器</th>
 <th>物资</th>
-<th>背景 Interactables</th>
+<th>剧情互动物品</th>
 <th>备注
 </th></tr>
 <tr>
@@ -1213,7 +1212,7 @@
 </td>
 <td>否
 </td>
-<td>* 5 <a href="Sample.html#Super_Samples" title="Sample">超级样本</a><br />* 6 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 2 <a href="Supplies.html" title="Supplies">手榴弹 Cases</a><br />* <a href="Sample.html#Common" title="Sample">常见样本</a><br />* 1 <a href="EAT-17_Expendable_Anti-Tank.html" title="EAT-17 Expendable Anti-Tank">EAT-17 消耗性反坦克武器</a>
+<td>* 5 <a href="Sample.html#Super_Samples" title="Sample">超级样本</a><br />* 6 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 2 <a href="Supplies.html" title="Supplies">榴弹箱</a><br />* <a href="Sample.html#Common" title="Sample">常见样本</a><br />* 1 <a href="EAT-17_Expendable_Anti-Tank.html" title="EAT-17 Expendable Anti-Tank">EAT-17 消耗性反坦克武器</a>
 </td>
 <td>无
 </td>
@@ -1258,7 +1257,7 @@
 </td>
 <td>是
 </td>
-<td>* 1 <a href="Supplies.html" title="Supplies">Stim Crate</a><br />* 5-6 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 0-1 <a class="mw-selflink-fragment" href="#Weapons_found_in_Minor_Places_of_Interest">支援武器</a>
+<td>* 1 <a href="Supplies.html" title="Supplies">治疗剂箱</a><br />* 5-6 <a href="Supplies.html" title="Supplies">弹药箱</a><br />* 0-1 <a class="mw-selflink-fragment" href="#Weapons_found_in_Minor_Places_of_Interest">支援武器</a>
 </td>
 <td>无
 </td>
@@ -1279,7 +1278,7 @@
 </td>
 <td>（注意，添加图片后删除：坍塌入口指的是城市建筑损毁的门/悬挑部分）
 </td></tr></tbody></table>
-<h2><span class="mw-headline" id="Weapons_found_in_Minor_Places_of_Interest">武器 found in Minor Places of Interest</span></h2>
+<h2><span id=".E5.9C.A8.E6.AC.A1.E8.A6.81.E5.85.B4.E8.B6.A3.E7.82.B9.E4.B8.AD.E5.8F.91.E7.8E.B0.E7.9A.84.E6.AD.A6.E5.99.A8"></span><span class="mw-headline" id="在次要兴趣点中发现的武器">在次要兴趣点中发现的武器</span></h2>
 <div class="msgbox noexcerpt searchaux msgbox-orange" style="max-width: 90%;">
 <div id="msgbox-icon"> <div id="msgbox-image" class="nomobile" style=""> <img alt="Reinforce Stratagem Icon Background.svg" src="../images/Reinforce_Stratagem_Icon_Background.svg" decoding="async" loading="lazy" width="45" height="45" style="vertical-align: text-top" data-file-width="512" data-file-height="512" /></div>
 </div>
@@ -1309,17 +1308,5 @@
 </div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
-<script>
-功能 toggleTheme(){
-  var h = 文档.documentElement;
-  var alt = h.classList.toggle('view-alt');
-  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
-}
-try {
-  if (localStorage.getItem('hd2theme') === 'alt') {
-    文档.documentElement.classList.add('view-alt');
-  }
-} catch(e) {}
-</script>
 </body>
 </html>

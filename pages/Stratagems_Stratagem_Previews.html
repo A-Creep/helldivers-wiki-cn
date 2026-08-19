@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-helldiver view-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,13 +14,12 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
-    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
   <button class="back-btn" type="button" onclick="history.back()">← 返回</button>
   <h1 class="page-title">战略配备/战略配备 Previews</h1>
-  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><p>The following 战略配备 are found in <i><a href="Helldivers_2.html" title="Helldivers 2">绝地潜兵2</a>.</i> 绝地潜兵 can select up to four different 战略配备 when defining their 武装配置 for a 任务.
+  <div class="mw-parser-output"><p>The following 战略配备 are found in <i><a href="Helldivers_2.html" title="Helldivers 2">绝地潜兵2</a>.</i> 绝地潜兵 can select up to four different 战略配备 when defining their 武装配置 for a 任务.
 </p><p>Preview all 战略配备' basic information and what they do below.
 </p><p><br />
 </p><p><br />
@@ -325,12 +324,12 @@
 </p>
 <!-- 
 NewPP limit report
-Cached time: 20260818035626
+Cached time: 20260819055337
 Cache expiry: 2592000
 Reduced expiry: false
 Complications: [show‐toc]
-CPU time usage: 1.111 seconds
-Real time usage: 1.533 seconds
+CPU time usage: 1.108 seconds
+Real time usage: 1.443 seconds
 Preprocessor visited node count: 13342/1000000
 Revision size: 273/4194304 bytes
 Post‐expand include size: 1096508/4194304 bytes
@@ -340,36 +339,24 @@ Expensive parser function count: 0/500
 Unstrip recursion depth: 0/20
 Unstrip post‐expand size: 318500/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.495/15.000 seconds
-Lua memory usage: 2244841/52428800 bytes
+Lua time usage: 0.477/15.000 seconds
+Lua memory usage: 2084569/52428800 bytes
 Number of processed Cargo queries: 1
-Time spent processing Cargo queries: 0.008 s (avg. 0.008 s)
+Time spent processing Cargo queries: 0.009 s (avg. 0.009 s)
 Number of Cargo row insertion attempts: 0
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%  678.628      1 Template:Stratagem_Info_Panel_List
-100.00%  678.628      1 -total
- 93.76%  636.302     91 Template:Stratagem_Info_Panel
-  5.12%   34.719     86 Template:Currency
-  4.73%   32.084     84 Template:Stratagem_code
-  0.88%    5.965     27 Template:Tooltip
-  0.69%    4.678      5 Template:Stratagem_Code
+100.00%  630.027      1 Template:Stratagem_Info_Panel_List
+100.00%  630.027      1 -total
+ 93.55%  589.404     91 Template:Stratagem_Info_Panel
+  5.13%   32.351     86 Template:Currency
+  4.96%   31.276     84 Template:Stratagem_code
+  0.75%    4.699     27 Template:Tooltip
+  0.59%    3.741      5 Template:Stratagem_Code
 -->
-</div></div>
+</div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
-<script>
-功能 toggleTheme(){
-  var h = 文档.documentElement;
-  var alt = h.classList.toggle('view-alt');
-  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
-}
-try {
-  if (localStorage.getItem('hd2theme') === 'alt') {
-    文档.documentElement.classList.add('view-alt');
-  }
-} catch(e) {}
-</script>
 </body>
 </html>

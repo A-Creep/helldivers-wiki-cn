@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-helldiver view-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,13 +14,12 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
-    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
   <button class="back-btn" type="button" onclick="history.back()">← 返回</button>
   <h1 class="page-title">优质润滑剂</h1>
-  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="headerimage">
+  <div class="mw-parser-output"><div class="headerimage">
 <p><img alt="High-Quality Lubricant Module Background.png" src="../images/800px-High-Quality_Lubricant_Module_Background.webp" decoding="async" loading="lazy" width="800" height="395" data-file-width="988" data-file-height="488" />
 </p>
 </div>
@@ -32,7 +31,7 @@
 <li class="toclevel-1 tocsection-1"><a href="#升级效果"><span class="tocnumber">1</span> <span class="toctext">升级效果</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#要求"><span class="tocnumber">2</span> <span class="toctext">要求</span></a></li>
 <li class="toclevel-1 tocsection-3"><a href="#受影响的战略配备"><span class="tocnumber">3</span> <span class="toctext">受影响的战略配备</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="#Change_History"><span class="tocnumber">4</span> <span class="toctext">变更历史</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#变更历史"><span class="tocnumber">4</span> <span class="toctext">变更历史</span></a></li>
 </ul>
 </div>
 
@@ -55,7 +54,7 @@
 <li><a href="A_MG-43_Machine_Gun_Sentry.html" title="A/MG-43 Machine Gun Sentry">哨戒机枪</a></li>
 <li><a href="A_AC-8_Autocannon_Sentry.html" title="A/AC-8 Autocannon Sentry">自动加农炮哨戒炮</a></li>
 <li><a href="A_FLAM-40_Flame_Sentry.html" title="A/FLAM-40 Flame Sentry">火焰哨戒炮</a></li></ul>
-<h2><span class="mw-headline" id="Change_History">变更历史</span></h2>
+<h2><span id=".E5.8F.98.E6.9B.B4.E5.8E.86.E5.8F.B2"></span><span class="mw-headline" id="变更历史">变更历史</span></h2>
 <div style="display:flex; border: 1px solid; padding: 1px; border-radius: 5px; text-align:center; font-weight:bold;">
 <div style="flex: 0 0 119px; text-align: center; font-weight: bold;">补丁</div>
 <div style="flex: 1 1 auto; border-left: 1px solid;">描述</div>
@@ -68,7 +67,7 @@
 <div style="border-left:1px solid; padding:4px 8px; min-height: 55px;">
 <div style="display: table; min-height: 55px;">
 <div style="display: table-cell; vertical-align: middle;"> 
-<p>Released with the game.
+<p>随游戏发布。
 </p>
 </div>
 </div>
@@ -77,16 +76,16 @@
 
 <!-- 
 NewPP limit report
-Cached time: 20260818034429
+Cached time: 20260819054150
 Cache expiry: 3600
 Reduced expiry: true
 Complications: [show‐toc]
-CPU time usage: 0.046 seconds
-Real time usage: 0.078 seconds
+CPU time usage: 0.022 seconds
+Real time usage: 0.051 seconds
 Preprocessor visited node count: 257/1000000
-Revision size: 1399/4194304 bytes
-Post‐expand include size: 2523/4194304 bytes
-Template argument size: 300/4194304 bytes
+Revision size: 1392/4194304 bytes
+Post‐expand include size: 2518/4194304 bytes
+Template argument size: 295/4194304 bytes
 Highest expansion depth: 7/100
 Expensive parser function count: 0/500
 Unstrip recursion depth: 0/20
@@ -95,27 +94,15 @@ ExtLoops count: 0/5000
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%   45.934      1 -total
- 46.77%   21.483      1 Template:Quote
- 38.29%   17.588      1 Template:Change_History_Update
-  9.50%    4.364      3 Template:Currency
-  4.37%    2.009      1 Template:Update
-  4.13%    1.898      1 Template:Change_History_Head
+100.00%   27.713      1 -total
+ 44.98%   12.464      1 Template:Change_History_Update
+ 38.76%   10.742      1 Template:Quote
+  9.80%    2.717      3 Template:Currency
+  6.56%    1.819      1 Template:Update
+  5.50%    1.523      1 Template:Change_History_Head
 -->
-</div></div>
+</div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
-<script>
-功能 toggleTheme(){
-  var h = 文档.documentElement;
-  var alt = h.classList.toggle('view-alt');
-  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
-}
-try {
-  if (localStorage.getItem('hd2theme') === 'alt') {
-    文档.documentElement.classList.add('view-alt');
-  }
-} catch(e) {}
-</script>
 </body>
 </html>

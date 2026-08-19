@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-helldiver view-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Spawn 机制 - 绝地潜兵2 中文百科</title>
+<title>生成机制 - 绝地潜兵2 中文百科</title>
 <link rel="stylesheet" href="../theme.css">
 </head>
 <body>
@@ -14,13 +14,12 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
-    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
   <button class="back-btn" type="button" onclick="history.back()">← 返回</button>
-  <h1 class="page-title">Spawn 机制</h1>
-  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Game_Mechanics.html" title="Game Mechanics">机制</a></div><div class="breadcrumb-item breadcrumb-item-final">Spawn 机制</div></div>
+  <h1 class="page-title">生成机制</h1>
+  <div class="mw-parser-output"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Game_Mechanics.html" title="Game Mechanics">机制</a></div><div class="breadcrumb-item breadcrumb-item-final">生成机制</div></div>
 <div class="msgbox noexcerpt searchaux msgbox-orange" style="max-width: 90%;">
 <div id="msgbox-icon"> <div id="msgbox-image" class="nomobile" style=""> <img alt="Seismic Probe Stratagem Icon Background.svg" src="../images/Seismic_Probe_Stratagem_Icon_Background.svg" decoding="async" loading="lazy" width="45" height="45" style="vertical-align: text-top" data-file-width="512" data-file-height="512" /></div>
 </div>
@@ -53,60 +52,60 @@
 </p>
 <div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="#Part_1"><span class="tocnumber">1</span> <span class="toctext">Part 1</span></a>
+<li class="toclevel-1 tocsection-1"><a href="#第1部分"><span class="tocnumber">1</span> <span class="toctext">第1部分</span></a>
 <ul>
-<li class="toclevel-2 tocsection-2"><a href="#What_types_of_enemy_spawns_are_there"><span class="tocnumber">1.1</span> <span class="toctext">What 类型 of enemy spawns are there</span></a>
+<li class="toclevel-2 tocsection-2"><a href="#有哪些类型的敌人生成"><span class="tocnumber">1.1</span> <span class="toctext">有哪些类型的敌人生成</span></a>
 <ul>
 <li class="toclevel-3 tocsection-3"><a href="#巡逻队"><span class="tocnumber">1.1.1</span> <span class="toctext">巡逻队</span></a></li>
-<li class="toclevel-3 tocsection-4"><a href="#What_are_Spawn_Points_and_Tick_Rate"><span class="tocnumber">1.1.2</span> <span class="toctext">What are Spawn Points and Tick Rate</span></a></li>
+<li class="toclevel-3 tocsection-4"><a href="#什么是生成点和刷新速率"><span class="tocnumber">1.1.2</span> <span class="toctext">什么是生成点和刷新速率</span></a></li>
 </ul>
 </li>
-<li class="toclevel-2 tocsection-5"><a href="#Establishing_our_Baseline"><span class="tocnumber">1.2</span> <span class="toctext">Establishing our Baseline</span></a></li>
-<li class="toclevel-2 tocsection-6"><a href="#What_things_affect_the_Spawn_Point_generation_or_Threshold_required_to_spawn_a_Patrol?"><span class="tocnumber">1.3</span> <span class="toctext">What things affect the Spawn Point 世代 or Threshold 必需 to spawn a Patrol?</span></a></li>
-<li class="toclevel-2 tocsection-7"><a href="#What_are_Areas_of_Influence_and_Heat_Generation?"><span class="tocnumber">1.4</span> <span class="toctext">What are Areas of Influence and Heat 世代</span></a></li>
-<li class="toclevel-2 tocsection-8"><a href="#What_are_the_effects_of_clearing_out_Enemy_Outposts?"><span class="tocnumber">1.5</span> <span class="toctext">What are the 效果 of clearing out Enemy 哨站</span></a></li>
-<li class="toclevel-2 tocsection-9"><a href="#What_are_the_effects_of_completing_the_Primary_Objective?"><span class="tocnumber">1.6</span> <span class="toctext">What are the 效果 of completing the Primary 目标</span></a></li>
-<li class="toclevel-2 tocsection-10"><a href="#What_is_the_effect_of_being_near_Objectives?"><span class="tocnumber">1.7</span> <span class="toctext">What is the 效果 of being near 目标</span></a></li>
-<li class="toclevel-2 tocsection-11"><a href="#What_is_the_effect_of_the_Extraction_Point?"><span class="tocnumber">1.8</span> <span class="toctext">What is the 效果 of the 撤离 Point?</span></a></li>
-<li class="toclevel-2 tocsection-12"><a href="#What_happens_when_players_split_up?"><span class="tocnumber">1.9</span> <span class="toctext">What happens when 玩家 split up?</span></a></li>
-<li class="toclevel-2 tocsection-13"><a href="#What_about_the_Unit_Composition_of_Patrols?"><span class="tocnumber">1.10</span> <span class="toctext">What about the Unit Composition of Patrols?</span></a></li>
-<li class="toclevel-2 tocsection-14"><a href="#What_are_the_effects_of_Player_Death?"><span class="tocnumber">1.11</span> <span class="toctext">What are the 效果 of Player Death?</span></a></li>
-<li class="toclevel-2 tocsection-15"><a href="#What_are_the_effects_of_Bot_Drops/Breaches?"><span class="tocnumber">1.12</span> <span class="toctext">What are the 效果 of 机器人空投/突破</span></a></li>
-<li class="toclevel-2 tocsection-16"><a href="#What_is_the_impact_of_Time?"><span class="tocnumber">1.13</span> <span class="toctext">What is the impact of Time?</span></a></li>
-<li class="toclevel-2 tocsection-17"><a href="#How_do_these_all_systems_interact_and_combine_with_each_other?"><span class="tocnumber">1.14</span> <span class="toctext">How do these all systems interact and 合并 with each other?</span></a></li>
-<li class="toclevel-2 tocsection-18"><a href="#What_is_the_impact_of_the_&quot;Localization_Confusion&quot;_Booster?"><span class="tocnumber">1.15</span> <span class="toctext">What is the impact of the "定位混淆" 强化资源</span></a></li>
-<li class="toclevel-2 tocsection-19"><a href="#Final_note_regarding_Population_Cap"><span class="tocnumber">1.16</span> <span class="toctext">Final note regarding 人口 Cap</span></a></li>
-<li class="toclevel-2 tocsection-20"><a href="#Show_me_the_evidence"><span class="tocnumber">1.17</span> <span class="toctext">Show me the 证据</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#建立我们的基准"><span class="tocnumber">1.2</span> <span class="toctext">建立我们的基准</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#哪些因素会影响生成点的生成或生成巡逻队所需的阈值？"><span class="tocnumber">1.3</span> <span class="toctext">哪些因素会影响生成点的生成或生成巡逻队所需的阈值？</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#影响区域和高温生成是什么？"><span class="tocnumber">1.4</span> <span class="toctext">影响区域和高温生成是什么？</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#清除敌人前哨站有什么效果？"><span class="tocnumber">1.5</span> <span class="toctext">清除敌人前哨站有什么效果？</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#完成主要目标有什么效果？"><span class="tocnumber">1.6</span> <span class="toctext">完成主要目标有什么效果？</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#靠近目标有什么效果？"><span class="tocnumber">1.7</span> <span class="toctext">靠近目标有什么效果？</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#撤离点有什么效果？"><span class="tocnumber">1.8</span> <span class="toctext">撤离点有什么效果？</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#玩家分散时会发生什么？"><span class="tocnumber">1.9</span> <span class="toctext">玩家分散时会发生什么？</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#巡逻队的单位构成如何？"><span class="tocnumber">1.10</span> <span class="toctext">巡逻队的单位构成如何？</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#玩家死亡有什么效果？"><span class="tocnumber">1.11</span> <span class="toctext">玩家死亡有什么效果？</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#机器人空降/突破有什么效果？"><span class="tocnumber">1.12</span> <span class="toctext">机器人空降/突破有什么效果？</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#时间有什么影响？"><span class="tocnumber">1.13</span> <span class="toctext">时间有什么影响？</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#所有这些系统如何相互作用和结合？"><span class="tocnumber">1.14</span> <span class="toctext">所有这些系统如何相互作用和结合？</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#定位混淆&quot;强化资源有什么影响？"><span class="tocnumber">1.15</span> <span class="toctext">定位混淆"强化资源有什么影响？</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#关于人口上限的最后说明"><span class="tocnumber">1.16</span> <span class="toctext">关于人口上限的最后说明</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#展示证据"><span class="tocnumber">1.17</span> <span class="toctext">展示证据</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-21"><a href="#Part_2"><span class="tocnumber">2</span> <span class="toctext">Part 2</span></a>
+<li class="toclevel-1 tocsection-21"><a href="#第2部分"><span class="tocnumber">2</span> <span class="toctext">第2部分</span></a>
 <ul>
-<li class="toclevel-2 tocsection-22"><a href="#Where_do_Patrols_spawn?"><span class="tocnumber">2.1</span> <span class="toctext">Where do Patrols spawn?</span></a>
+<li class="toclevel-2 tocsection-22"><a href="#巡逻队在哪里生成？"><span class="tocnumber">2.1</span> <span class="toctext">巡逻队在哪里生成？</span></a>
 <ul>
-<li class="toclevel-3 tocsection-23"><a href="#Key_Points"><span class="tocnumber">2.1.1</span> <span class="toctext">Key Points</span></a></li>
-<li class="toclevel-3 tocsection-24"><a href="#Player_Safety_Bubble"><span class="tocnumber">2.1.2</span> <span class="toctext">Player Safety Bubble</span></a></li>
-<li class="toclevel-3 tocsection-25"><a href="#What_determines_where_a_Patrol_spawns?"><span class="tocnumber">2.1.3</span> <span class="toctext">What determines where a Patrol spawns?</span></a></li>
+<li class="toclevel-3 tocsection-23"><a href="#要点"><span class="tocnumber">2.1.1</span> <span class="toctext">要点</span></a></li>
+<li class="toclevel-3 tocsection-24"><a href="#玩家安全气泡"><span class="tocnumber">2.1.2</span> <span class="toctext">玩家安全气泡</span></a></li>
+<li class="toclevel-3 tocsection-25"><a href="#什么决定了巡逻队的生成位置？"><span class="tocnumber">2.1.3</span> <span class="toctext">什么决定了巡逻队的生成位置？</span></a></li>
 </ul>
 </li>
-<li class="toclevel-2 tocsection-26"><a href="#Spawn_Blocking"><span class="tocnumber">2.2</span> <span class="toctext">Spawn Blocking</span></a>
+<li class="toclevel-2 tocsection-26"><a href="#生成阻挡"><span class="tocnumber">2.2</span> <span class="toctext">生成阻挡</span></a>
 <ul>
-<li class="toclevel-3 tocsection-27"><a href="#Edge_Cases_with_Spawn_Blocking"><span class="tocnumber">2.2.1</span> <span class="toctext">Edge Cases with Spawn Blocking</span></a></li>
+<li class="toclevel-3 tocsection-27"><a href="#生成阻挡的边界情况"><span class="tocnumber">2.2.1</span> <span class="toctext">生成阻挡的边界情况</span></a></li>
 </ul>
 </li>
-<li class="toclevel-2 tocsection-28"><a href="#How_does_all_of_this_work_with_Split_Player_Groups?"><span class="tocnumber">2.3</span> <span class="toctext">How does all of this work with Split Player Groups?</span></a></li>
+<li class="toclevel-2 tocsection-28"><a href="#这一切在分队的玩家群体中如何运作？"><span class="tocnumber">2.3</span> <span class="toctext">这一切在分队的玩家群体中如何运作？</span></a></li>
 </ul>
 </li>
 <li class="toclevel-1 tocsection-29"><a href="#备注"><span class="tocnumber">3</span> <span class="toctext">备注</span></a>
 <ul>
-<li class="toclevel-2 tocsection-30"><a href="#This_page_needs_to_be_populated_from_these_sources:"><span class="tocnumber">3.1</span> <span class="toctext">This page needs to be populated from these sources:</span></a></li>
+<li class="toclevel-2 tocsection-30"><a href="#本页面需要从这些来源填充："><span class="tocnumber">3.1</span> <span class="toctext">本页面需要从这些来源填充：</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-31"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">参考</span></a></li>
+<li class="toclevel-1 tocsection-31"><a href="#参考资料"><span class="tocnumber">4</span> <span class="toctext">参考资料</span></a></li>
 </ul>
 </div>
 
-<h2><span class="mw-headline" id="Part_1">Part 1</span></h2>
-<h3><span class="mw-headline" id="What_types_of_enemy_spawns_are_there">What 类型 of enemy spawns are there</span></h3>
+<h2><span id=".E7.AC.AC1.E9.83.A8.E5.88.86"></span><span class="mw-headline" id="第1部分">第1部分</span></h2>
+<h3><span id=".E6.9C.89.E5.93.AA.E4.BA.9B.E7.B1.BB.E5.9E.8B.E7.9A.84.E6.95.8C.E4.BA.BA.E7.94.9F.E6.88.90"></span><span class="mw-headline" id="有哪些类型的敌人生成">有哪些类型的敌人生成</span></h3>
 <ol><li>Static spawns. These are the 敌人 placed around 兴趣点, enemy 哨站, and 目标 (both Primary and Sub).</li>
 <li>增援 spawns. These are the 敌人 that are in Dropships or come out of Bug 突破.</li>
 <li>构筑者/Nest spawns. These are created from Fabricators/Nests and unless you're detected, it will 通常 just stand near their parent.</li>
@@ -114,10 +113,10 @@
 <h4><span id=".E5.B7.A1.E9.80.BB.E9.98.9F"></span><span class="mw-headline" id="巡逻队">巡逻队</span></h4>
 <p>A patrol is a group of 敌人 that appear somewhere on the map at set intervals and then walk towards another point on the map. Their path will always have them cross very close or even directly on top of a Player's position at the moment the patrol is spawned. These 敌人 simply appear out of thin air. If you look at a patrol and "Mark" it, your character will 实际上 say, "Enemy Patrol". They are the only 敌人 on the map that will move around without an external influence. Patrols will despawn if any unit in the Patrol gets 175 meters or more away from the nearest player AND are not actively engaged in combat. NOTE: There is a 当前 bug specific to 机器人 where 小型 (Troopers/Raiders) bots will spawn in and then move towards the exact center of the map and then stand there and never despawn. This is not a patrol and we just want to call them out specifically as a bug. 
 </p>
-<h4><span class="mw-headline" id="What_are_Spawn_Points_and_Tick_Rate">What are Spawn Points and Tick Rate</span></h4>
+<h4><span id=".E4.BB.80.E4.B9.88.E6.98.AF.E7.94.9F.E6.88.90.E7.82.B9.E5.92.8C.E5.88.B7.E6.96.B0.E9.80.9F.E7.8E.87"></span><span class="mw-headline" id="什么是生成点和刷新速率">什么是生成点和刷新速率</span></h4>
 <p>Our working theory for how the game determines when to spawn a patrol is the following. The server has a "Tick Rate" which is 本质上 the 频率 at which the server updates the Game's State. For sake of simplicity, we'll just assume that the server has a "Tick" every 1 second although the real Tick Rate is almost certainly much faster. Every "Tick" generates an amount of "Spawn Points" which gets put into a bucket. When this bucket reaches a threshold value, a patrol is spawned and the bucket gets emptied. The amount of Spawn Points generated per Tick and/or the Threshold 必需 to spawn a patrol is affected by various factors which we will detail further down.
 </p>
-<h3><span class="mw-headline" id="Establishing_our_Baseline">Establishing our Baseline</span></h3>
+<h3><span id=".E5.BB.BA.E7.AB.8B.E6.88.91.E4.BB.AC.E7.9A.84.E5.9F.BA.E5.87.86"></span><span class="mw-headline" id="建立我们的基准">建立我们的基准</span></h3>
 <p>In order to do controlled tests against a single variable, we first need to 建立 a "Baseline" 生成速率 in the absence of any other conditions or activities.
 </p><p>We did this by doing the following:
 </p>
@@ -136,17 +135,17 @@
 <tbody><tr>
 <th scope="col" width="100px">难度
 </th>
-<th scope="col" width="50px">War 正面
+<th scope="col" width="50px">战争前线
 </th>
-<th scope="col" width="250px">Baseline
+<th scope="col" width="250px">基准线
 </th>
-<th scope="col" width="80px">War 正面
+<th scope="col" width="80px">战争前线
 </th>
-<th scope="col" width="280px">Baseline
+<th scope="col" width="280px">基准线
 </th>
-<th scope="col" width="80px">War 正面
+<th scope="col" width="80px">战争前线
 </th>
-<th scope="col" width="280px">Baseline
+<th scope="col" width="280px">基准线
 </th></tr>
 <tr>
 <td>1
@@ -157,7 +156,7 @@
 </td>
 <td>终结族
 </td>
-<td>Unable due to TCS missions
+<td>由于终结族遏制体系任务而无法进行
 </td>
 <td>光能者
 </td>
@@ -172,7 +171,7 @@
 </td>
 <td>终结族
 </td>
-<td>Unable due to TCS missions
+<td>由于终结族遏制体系任务而无法进行
 </td>
 <td>光能者
 </td>
@@ -305,7 +304,7 @@
 <p>Unfortunately we did not have a 4th player available for testing so cannot 评论 on the 修正 for 4 玩家.
 </p><p>Due to the ease of controlling the conditions, we did most of our testing in Level 4 机器人 missions but we have confirmed that all the behaviors 功能 consistently 无论 难度, Number of 玩家 or War 正面. 
 </p>
-<h3><span id="What_things_affect_the_Spawn_Point_generation_or_Threshold_required_to_spawn_a_Patrol.3F"></span><span class="mw-headline" id="What_things_affect_the_Spawn_Point_generation_or_Threshold_required_to_spawn_a_Patrol?">What things affect the Spawn Point 世代 or Threshold 必需 to spawn a Patrol?</span></h3>
+<h3><span id=".E5.93.AA.E4.BA.9B.E5.9B.A0.E7.B4.A0.E4.BC.9A.E5.BD.B1.E5.93.8D.E7.94.9F.E6.88.90.E7.82.B9.E7.9A.84.E7.94.9F.E6.88.90.E6.88.96.E7.94.9F.E6.88.90.E5.B7.A1.E9.80.BB.E9.98.9F.E6.89.80.E9.9C.80.E7.9A.84.E9.98.88.E5.80.BC.EF.BC.9F"></span><span class="mw-headline" id="哪些因素会影响生成点的生成或生成巡逻队所需的阈值？">哪些因素会影响生成点的生成或生成巡逻队所需的阈值？</span></h3>
 <p>The following activities either 增加 the Spawn Point 世代 or 减少 the Threshold, each activity has nuance to it and will be covered in detail in its own 章节. The end result of almost all of this is that spawns occur MORE 频繁 than the Baseline. We have not identified ANY action that slows the Spawn Point 世代 beyond it's "Baseline" with 1 exception which is highly situational and that is having a 机器人空投/Breach very close to the time you would have a patrol spawn.
 </p>
 <ol><li>玩家 being in proximity of Primary 目标, Secondary 目标, Enemy 哨站 and the 撤离 point</li>
@@ -329,7 +328,7 @@
 <li>Being in proximity of 兴趣点</li>
 <li>Using Terminals or interacting with 目标 elements such as turning the radar dish or loading 大炮 shells</li>
 <li>Completion of Secondary 目标 (with a caveat that is explained further down)</li></ol>
-<h3><span id="What_are_Areas_of_Influence_and_Heat_Generation.3F"></span><span class="mw-headline" id="What_are_Areas_of_Influence_and_Heat_Generation?">What are Areas of Influence and Heat 世代</span></h3>
+<h3><span id=".E5.BD.B1.E5.93.8D.E5.8C.BA.E5.9F.9F.E5.92.8C.E9.AB.98.E6.B8.A9.E7.94.9F.E6.88.90.E6.98.AF.E4.BB.80.E4.B9.88.EF.BC.9F"></span><span class="mw-headline" id="影响区域和高温生成是什么？">影响区域和高温生成是什么？</span></h3>
 <p>We need to explain a concept that we've termed "Area of Influence". Certain elements in the world create an Area of Influence around them. We have identified the following elements that have this 效果 and each element has some nuance which will be covered later:
 </p>
 <ol><li>Primary 目标 (IE The ICBM Silo itself)</li>
@@ -350,7 +349,7 @@
 </p><p>The amount of Heat is calculated every Tick so as you move closer/further from an element producing Heat, the amount of Spawn Points generated per Tick is constantly changing.
 </p><p>For 示例, using our Baseline of 240 秒, if you spotted a freshly spawned Patrol while outside any area of Influence and then moved towards the center of an Area of Influence and then stayed there, your 下一个 Patrol would spawn between 158 and 240 秒. If you then stayed within the full 力量 Area of Influence, you should expect a Patrol after 158 秒. Finally, if you either left the Area of Influence or stopped its 世代, you would again expect the 下一个 Patrol between 158 and 240 秒. Heat 世代 can be stopped but the conditions under which this occurs is specific to each of the different 类型 of things that are generating it and will be detailed in a 分离 章节. 
 </p>
-<h3><span id="What_are_the_effects_of_clearing_out_Enemy_Outposts.3F"></span><span class="mw-headline" id="What_are_the_effects_of_clearing_out_Enemy_Outposts?">What are the 效果 of clearing out Enemy 哨站</span></h3>
+<h3><span id=".E6.B8.85.E9.99.A4.E6.95.8C.E4.BA.BA.E5.89.8D.E5.93.A8.E7.AB.99.E6.9C.89.E4.BB.80.E4.B9.88.E6.95.88.E6.9E.9C.EF.BC.9F"></span><span class="mw-headline" id="清除敌人前哨站有什么效果？">清除敌人前哨站有什么效果？</span></h3>
 <p>Enemy 哨站 are a distinct 类型 of map element that comes in 轻型, 中型 and 重型 变体. The number of 哨站 varies from 任务 to 任务 at the same 难度. Destroying these 哨站 will result in a popup message indicating "AREA SECURED" and provide the player with 申购点 Slips and 经验值. Only 中型 and 重型 哨站 生产 an Area of Influence and therefore Heat. 轻型 哨站 have 否 效果 or one that is so 小型 that it is negligible. Destroying 哨站 causes a reduction in the Threshold 必需 to spawn patrols.
 </p><p>You might be thinking, "Destroying 哨站 means MORE 敌人" The only 准确 answer is "Sort of" because the 摧毁 of an Enemy Outpost also removes its Area of Influence from the world. This means that the global 生成速率 might go up but being in those areas of the map 否 longer 增加 your Heat.
 </p><p>Specifics and Numbers on this topic:
@@ -361,10 +360,10 @@
 <li>This Threshold reduction persist for the remainder of the 任务.</li></ol>
 <p>As an 示例, on a map with 5 outpost and our baseline of 240 秒: as soon as you 摧毁 the first outpost, you get patrols every 216 秒 (~10% faster). When you 摧毁 the 5th Outpost, you get patrols every 192 秒 (25% faster). 
 </p>
-<h3><span id="What_are_the_effects_of_completing_the_Primary_Objective.3F"></span><span class="mw-headline" id="What_are_the_effects_of_completing_the_Primary_Objective?">What are the 效果 of completing the Primary 目标</span></h3>
+<h3><span id=".E5.AE.8C.E6.88.90.E4.B8.BB.E8.A6.81.E7.9B.AE.E6.A0.87.E6.9C.89.E4.BB.80.E4.B9.88.E6.95.88.E6.9E.9C.EF.BC.9F"></span><span class="mw-headline" id="完成主要目标有什么效果？">完成主要目标有什么效果？</span></h3>
 <p>Completion of the Primary 目标 has by far the biggest impact on the 频率 of Enemy Patrol spawns. As soon as you 完成 the Primary 目标, the Threshold gets multiplied by 0.75 含义 you are receiving Patrols 33% more often. Using our Baseline value of 240 秒, this gets 已降低 to 180 秒. Primary 目标 completion also triggers the 撤离 Point hotspot.
 </p>
-<h3><span id="What_is_the_effect_of_being_near_Objectives.3F"></span><span class="mw-headline" id="What_is_the_effect_of_being_near_Objectives?">What is the 效果 of being near 目标</span></h3>
+<h3><span id=".E9.9D.A0.E8.BF.91.E7.9B.AE.E6.A0.87.E6.9C.89.E4.BB.80.E4.B9.88.E6.95.88.E6.9E.9C.EF.BC.9F"></span><span class="mw-headline" id="靠近目标有什么效果？">靠近目标有什么效果？</span></h3>
 <p>As discussed above, certain elements on the map 生产 an "Area of Influence" and being inside this generates "Heat" that quickens the 生成速率. The way Primary (Both 主体 and Subobjectives) and Secondary 目标 generate their Area of Influence is kind of 复杂. If a 位置 has static spawns attached to it and the 目标 is in an "Active" state 含义 it hasn't been completed, it will generate Heat as long both these conditions are true:
 </p>
 <ol><li>The static spawns are still alive</li>
@@ -377,11 +376,11 @@
 </p><p>However, there exists an exception to these rules and it is best illustrated by the 行为 of 探测器 Towers and 战略配备 Jammers (along with other Secondary 目标).
 </p><p>For 探测器 Towers and 战略配备 Jammers, the 主体 object(s) generating the Area of Influence are the Fabricators in these locations. Once the 构筑者 is destroyed most of the Heat 世代 stops. However, the 探测塔/Jammer itself ALSO generates an Area of Influence with a 小型 Heat coefficient. While the Fabricators create Heat that 增加 the 生成速率 by 50%, the 目标 建筑 itself does so with a 10% 增加. These 效果 合并 multiplicatively. 本质上, if you're going to 攻击 these 目标, the Fabricators should be your first 目标. 
 </p>
-<h3><span id="What_is_the_effect_of_the_Extraction_Point.3F"></span><span class="mw-headline" id="What_is_the_effect_of_the_Extraction_Point?">What is the 效果 of the 撤离 Point?</span></h3>
+<h3><span id=".E6.92.A4.E7.A6.BB.E7.82.B9.E6.9C.89.E4.BB.80.E4.B9.88.E6.95.88.E6.9E.9C.EF.BC.9F"></span><span class="mw-headline" id="撤离点有什么效果？">撤离点有什么效果？</span></h3>
 <p>The 撤离 Point 充当 a 特殊 hotspot that generates an Area of Influence only when active, <i>ie</i> when the Primary 目标 is completed. 实际上 呼叫中 鹈鹕-1 has 否 效果, the 已增加 生成速率 is simply due to being near the active 撤离 Point. The 撤离 Point generates Heat with a wider radius than other Area of Influences, starting all the way out at 250m and increasing linearly up to 100m from 撤离 Point. The 最大 Heat 倍率 is 0.185 between 0m and 100m, resulting in 5.4x faster patrol spawns.
-</p><p><i>Note: Some missions have a pre-existing hotspot on 撤离 Point from static spawns. This hotspot seems to generate Heat at a rate similar to other Areas of Influence until the static spawns are cleard. Primary 目标 completion triggers the normal 撤离 Point 行为.</i>
+</p><p><i>注意：某些任务在撤离点存在由静态刷新产生的预设热点。该热点的产热速率似乎与其他影响区域相似，直到静态刷新被清除。完成主要目标会触发正常的撤离点行为。</i>
 </p>
-<h3><span id="What_happens_when_players_split_up.3F"></span><span class="mw-headline" id="What_happens_when_players_split_up?">What happens when 玩家 split up?</span></h3>
+<h3><span id=".E7.8E.A9.E5.AE.B6.E5.88.86.E6.95.A3.E6.97.B6.E4.BC.9A.E5.8F.91.E7.94.9F.E4.BB.80.E4.B9.88.EF.BC.9F"></span><span class="mw-headline" id="玩家分散时会发生什么？">玩家分散时会发生什么？</span></h3>
 <p>We need to introduce the concept of a "Player Group". A Player Group can be defined as any set of 玩家 that are 75 meters or closer to at least one other player. A player by themselves is still considered a "Player Group", just with one member. Each Player Group maintains their own Spawn Point bucket and when that Player Group's bucket is filled, it will spawn a Patrol for that Player Group.
 </p><p>For 示例, if 4 玩家 were all over 75 meters away from any other player, you have 本质上 quadrupled the 生成速率 because every Player Group is 生成 their own 分离 Patrol.
 </p><p>This infographic helps demonstrate
@@ -391,21 +390,21 @@
 </p><p>The 行为 of what happens when 玩家 split and rejoin repeatedly is very 困难 to test and get clean results for. We are also unsure of the importance (if any) of Host vs Client.
 </p><p>Here is a video demonstrating this 行为 <sup id="cite&#95;ref-3" class="reference"><a href="#cite_note-3"><span class="cite-bracket">&#91;</span>3<span class="cite-bracket">&#93;</span></a></sup>
 </p>
-<h3><span id="What_about_the_Unit_Composition_of_Patrols.3F"></span><span class="mw-headline" id="What_about_the_Unit_Composition_of_Patrols?">What about the Unit Composition of Patrols?</span></h3>
+<h3><span id=".E5.B7.A1.E9.80.BB.E9.98.9F.E7.9A.84.E5.8D.95.E4.BD.8D.E6.9E.84.E6.88.90.E5.A6.82.E4.BD.95.EF.BC.9F"></span><span class="mw-headline" id="巡逻队的单位构成如何？">巡逻队的单位构成如何？</span></h3>
 <p>Patrols have different "Templates" that they simply randomly choose from when created. These templates are tied to 阵营 and 任务 类型, but not 行星 类型. We have not been able to 识别 any player actions that either 增加 or 减少 the intensity or composition of a Patrol. Number of 玩家 does affect the composition. 
 </p>
-<h3><span id="What_are_the_effects_of_Player_Death.3F"></span><span class="mw-headline" id="What_are_the_effects_of_Player_Death?">What are the 效果 of Player Death?</span></h3>
+<h3><span id=".E7.8E.A9.E5.AE.B6.E6.AD.BB.E4.BA.A1.E6.9C.89.E4.BB.80.E4.B9.88.E6.95.88.E6.9E.9C.EF.BC.9F"></span><span class="mw-headline" id="玩家死亡有什么效果？">玩家死亡有什么效果？</span></h3>
 <p>A player dying in and by itself appears to have 否 效果 but spending a 增援 Point adds a random amount of Spawn Points to the 当前 pool. We tested this extensively by spotting a freshly spawned patrol, immediately killing someone and then reinforcing them and timing how long it took for the 下一个 patrol to appear. There was 否 discernable 涂装 in our results. 有时 it would result in a drastic reduction in time (upwards of 6x faster) and 有时 it seemed to have almost 否 效果 at all.
 </p><p>Our 主体 takeaway here is that Reinforcing dead 玩家 can drastically 速度 up the 下一个 Patrol Spawn. We have 否 way to 识别 if spending more 增援 points within a single spawn 循环 has any 效果 given the random nature of it.
 </p><p>We never observed the 下一个 spawn being slower than expected, it was either faster or on time. 
 </p>
-<h3><span id="What_are_the_effects_of_Bot_Drops.2FBreaches.3F"></span><span class="mw-headline" id="What_are_the_effects_of_Bot_Drops/Breaches?">What are the 效果 of 机器人空投/突破</span></h3>
+<h3><span id=".E6.9C.BA.E5.99.A8.E4.BA.BA.E7.A9.BA.E9.99.8D.2F.E7.AA.81.E7.A0.B4.E6.9C.89.E4.BB.80.E4.B9.88.E6.95.88.E6.9E.9C.EF.BC.9F"></span><span class="mw-headline" id="机器人空降/突破有什么效果？">机器人空降/突破有什么效果？</span></h3>
 <p>It appears that triggering a 机器人空投/Breach can introduce a short delay before the 生成 of the 下一个 patrol. This delay only occurs if you're close to the 下一个 patrol 生成.
 </p><p>Specifics and Examples
 </p><p>The longest amount of delay that can occur is ~1/6th of the Baseline value and this only occurs if you are in the last 5/6th of the 当前 spawn 循环.
 </p><p>For 示例, if I engaged a freshly spawned Patrol and this patrol called for 增援, the 下一个 Patrol will spawn exactly on time as the call happened too early in the spawn 循环. Using our Baseline of 240 秒 per Patrol, if I engaged some units that call for 增援 195 秒 into the 当前 spawn 循环 (or 81.25%), it will have 否 效果 on the timing of the 当前 Patrol 循环. However, if I were to trigger a 增援 call at 235 秒, the 当前 spawn 循环 will get delayed by ~40 秒. The timing of the 下一个 循环 is not affected and will arrive after 240 秒 barring any other factors. 
 </p>
-<h3><span id="What_is_the_impact_of_Time.3F"></span><span class="mw-headline" id="What_is_the_impact_of_Time?">What is the impact of Time?</span></h3>
+<h3><span id=".E6.97.B6.E9.97.B4.E6.9C.89.E4.BB.80.E4.B9.88.E5.BD.B1.E5.93.8D.EF.BC.9F"></span><span class="mw-headline" id="时间有什么影响？">时间有什么影响？</span></h3>
 <p>Verifying whether or not Time in and by itself had an impact on 生成速率 was the first thing we did as we would need to 账户 for it going forward. As we discovered each new 机械师, we then retested that 机械师 against Time to see if it was affected. We discovered that Time has 否 impact on anything 相关 to Patrols.
 </p><p>Does it impact the Baseline? 否
 </p><p>Does it impact Heat 世代 or Areas of Influence? 否
@@ -413,13 +412,13 @@
 </p><p>Does it alter the intensity or composition of Patrols? Not that we can tell but this one is 困难 to lock down due to Patrol composition being randomized.
 </p><p>This video shows a Baseline Test and also demonstrates that Time has 否 impact <sup id="cite&#95;ref-4" class="reference"><a href="#cite_note-4"><span class="cite-bracket">&#91;</span>4<span class="cite-bracket">&#93;</span></a></sup>
 </p>
-<h3><span id="How_do_these_all_systems_interact_and_combine_with_each_other.3F"></span><span class="mw-headline" id="How_do_these_all_systems_interact_and_combine_with_each_other?">How do these all systems interact and 合并 with each other?</span></h3>
+<h3><span id=".E6.89.80.E6.9C.89.E8.BF.99.E4.BA.9B.E7.B3.BB.E7.BB.9F.E5.A6.82.E4.BD.95.E7.9B.B8.E4.BA.92.E4.BD.9C.E7.94.A8.E5.92.8C.E7.BB.93.E5.90.88.EF.BC.9F"></span><span class="mw-headline" id="所有这些系统如何相互作用和结合？">所有这些系统如何相互作用和结合？</span></h3>
 <p>The following factors 合并 in a multiplicative fashion:
 </p>
 <ol><li>Primary 目标 Completion</li>
 <li>Area of Influence Heat</li>
 <li>Outpost 摧毁's 效果</li></ol>
-<p><i>Note: this is not longer the case as of 补丁 <a href="1.001.104.html" title="1.001.104">1.001.104</a>, but the behavor 遗骸 close enough that this 遗骸 a useful approximation for 玩家.</i>
+<p><i>注意：自补丁起，情况已不再如此 <a href="1.001.104.html" title="1.001.104">1.001.104</a>，但行为仍然足够接近，因此对玩家来说这仍是一个有用的近似值。</i>
 </p><p>Some examples:
 </p>
 <ol><li>If a solo player was in a Level 4 机器人 任务, they have a Baseline time of 240 秒.</li>
@@ -440,37 +439,37 @@
 <p>When we consider that these Patrol Spawns can be duplicated if 玩家 are split into 分离 Player Groups, you can easily have an 有效 生成 速度 that is less than 10 秒.
 </p><p>When we also consider that even a single death can drastically 缩短 the time to the 下一个 patrol, it's 容易 to see how 玩家 get stuck in a "Death Spiral". 
 </p>
-<h3><span id="What_is_the_impact_of_the_.22Localization_Confusion.22_Booster.3F"></span><span class="mw-headline" id="What_is_the_impact_of_the_&quot;Localization_Confusion&quot;_Booster?">What is the impact of the "定位混淆" 强化资源</span></h3>
+<h3><span id=".E5.AE.9A.E4.BD.8D.E6.B7.B7.E6.B7.86.22.E5.BC.BA.E5.8C.96.E8.B5.84.E6.BA.90.E6.9C.89.E4.BB.80.E4.B9.88.E5.BD.B1.E5.93.8D.EF.BC.9F"></span><span class="mw-headline" id="定位混淆&quot;强化资源有什么影响？">定位混淆"强化资源有什么影响？</span></h3>
 <p>As of 3/14/24, the 定位混淆 强化资源 has 否 效果 on the Baseline times or any of the 机制 described. It appears to not have any 效果 on Patrols whatsoever.
 </p><p>定位混淆 增加 the time between calls for 增援 (机器人空投/突破). It does not delay the time for a particular enemy to call, it just lengthens the time before another call can occur.
 </p><p>Rough Testing on this looks to be a ~10% 增加 but getting a clean stable baseline on this is 困难 due to relying on AI 行为. 
 </p>
-<h3><span class="mw-headline" id="Final_note_regarding_Population_Cap">Final note regarding 人口 Cap</span></h3>
+<h3><span id=".E5.85.B3.E4.BA.8E.E4.BA.BA.E5.8F.A3.E4.B8.8A.E9.99.90.E7.9A.84.E6.9C.80.E5.90.8E.E8.AF.B4.E6.98.8E"></span><span class="mw-headline" id="关于人口上限的最后说明">关于人口上限的最后说明</span></h3>
 <p>It is 困难 to determine 困难 numbers on this but there does exist a global "人口 Cap" that will prevent the 生成 of additional Patrols. If too many enemy units are active in the world, 否 patrols will be created until some 敌人 are killed or despawned. 
 </p>
-<h3><span class="mw-headline" id="Show_me_the_evidence">Show me the 证据</span></h3>
+<h3><span id=".E5.B1.95.E7.A4.BA.E8.AF.81.E6.8D.AE"></span><span class="mw-headline" id="展示证据">展示证据</span></h3>
 <p>We understand that we're making some major claims about the game 机制 here so we made a video demonstrating the concepts in action.
 </p><p>Testing the various factors that alter the 生成速率 <sup id="cite&#95;ref-5" class="reference"><a href="#cite_note-5"><span class="cite-bracket">&#91;</span>5<span class="cite-bracket">&#93;</span></a></sup>
 </p>
-<h2><span class="mw-headline" id="Part_2">Part 2</span></h2>
-<h3><span id="Where_do_Patrols_spawn.3F"></span><span class="mw-headline" id="Where_do_Patrols_spawn?">Where do Patrols spawn?</span></h3>
+<h2><span id=".E7.AC.AC2.E9.83.A8.E5.88.86"></span><span class="mw-headline" id="第2部分">第2部分</span></h2>
+<h3><span id=".E5.B7.A1.E9.80.BB.E9.98.9F.E5.9C.A8.E5.93.AA.E9.87.8C.E7.94.9F.E6.88.90.EF.BC.9F"></span><span class="mw-headline" id="巡逻队在哪里生成？">巡逻队在哪里生成？</span></h3>
 <p>In Part 1, we know we made huge claims about the game 机制 and Luch's summary video contains our real-time manipulation of the system to 生产 predicated outcomes. Here is the demonstration u/Psyker101 (Luchs on Youtube) has put together a video summary for those that prefer a TLDR version. This video also contains our 证据 and real-time demonstration of us actively manipulating the 机制 detailed below. <sup id="cite&#95;ref-6" class="reference"><a href="#cite_note-6"><span class="cite-bracket">&#91;</span>6<span class="cite-bracket">&#93;</span></a></sup>
 </p>
-<h4><span class="mw-headline" id="Key_Points">Key Points</span></h4>
+<h4><span id=".E8.A6.81.E7.82.B9"></span><span class="mw-headline" id="要点">要点</span></h4>
 <p>Each of the following topics will be detailed in its own 章节 but here are the broad takeaways<sup id="cite&#95;ref-7" class="reference"><a href="#cite_note-7"><span class="cite-bracket">&#91;</span>7<span class="cite-bracket">&#93;</span></a></sup>
 </p>
 <ol><li>Patrols will always attempt to spawn 125 meters away from their associated player</li>
 <li>Patrols will always be orientated towards an active enemy Outpost which is randomly selected among all active 哨站</li>
 <li>If 否 eligible 哨站 remain Patrol spawns will be orientated towards the nearest Map Edge</li>
 <li>Patrols can be completely blocked from 生成 in certain circumstances and the system can be manipulated to virtually guarantee Extractions without 敌人</li></ol>
-<h4><span class="mw-headline" id="Player_Safety_Bubble">Player Safety Bubble</span></h4>
+<h4><span id=".E7.8E.A9.E5.AE.B6.E5.AE.89.E5.85.A8.E6.B0.94.E6.B3.A1"></span><span class="mw-headline" id="玩家安全气泡">玩家安全气泡</span></h4>
 <p>First we need to explain the concept of the “Player Safety Bubble”. Each player on the map generates an area around them which prevents a Patrol from being spawned within this area. The 困难 射程 of this bubble is around 85 meters 含义 you are virtually guaranteed to not have a Patrol spawn within 85 meters of any player.
 </p><p>Patrols will attempt to spawn at exactly 125 meters from their associated player but this 距离 can have variance depending on 地形. You will almost always see spawns between 90-140 meters. We 请参阅 this area as the "Eligible Spawn Space". 
 </p><p><img alt="Spawn Mechanics Infographic Part 7.png" src="../images/300px-Spawn_Mechanics_Infographic_Part_7.png" decoding="async" loading="lazy" width="300" height="245" data-file-width="981" data-file-height="800" />
 </p><p>Prior to 补丁 1.000.103, we believe that when a Patrol spawned it failed to 账户 for the Safety Bubble of 玩家 other than the one it was associated with. This led to the 臭名昭著 “生成 on top of me” 问题. Furthermore, it appears that the Safety Bubble 射程 was substantially 已增加 with 补丁 1.000.103.
 </p><p>With 补丁 1.000.103, all Player's Safety Bubbles are considered when attempting to spawn a Patrol. This new logic also allows 玩家 to "chain" their Safety Bubbles together. 
 </p>
-<h4><span id="What_determines_where_a_Patrol_spawns.3F"></span><span class="mw-headline" id="What_determines_where_a_Patrol_spawns?">What determines where a Patrol spawns?</span></h4>
+<h4><span id=".E4.BB.80.E4.B9.88.E5.86.B3.E5.AE.9A.E4.BA.86.E5.B7.A1.E9.80.BB.E9.98.9F.E7.9A.84.E7.94.9F.E6.88.90.E4.BD.8D.E7.BD.AE.EF.BC.9F"></span><span class="mw-headline" id="什么决定了巡逻队的生成位置？">什么决定了巡逻队的生成位置？</span></h4>
 <p>Patrols are always oriented towards an active enemy Outpost if possible and if that is not possible, they orient towards the nearest map edge. The size of the Outpost does not matter. 轻型, 中型, and 重型 can all be chosen to orient towards and there appears to be 否 “重量” associated with an Outpost’s size, they are treated as equal.
 </p><p>When a patrol spawns, it takes a slice out of the Eligible Spawn Space that is oriented towards the chosen Outpost or Map Edge. Then it attempts to find a valid spot exactly 125 meters from the player anywhere within that sliced Eligible Spawn Space. If a valid space doesn't exist at 125m, it shifts it around 地形 until a space is found. This is why you 有时 get Patrols a bit closer or a bit further than 125m. 
 </p><p><img alt="Spawn Mechanics Infographic Part 8.png" src="../images/300px-Spawn_Mechanics_Infographic_Part_8.webp" decoding="async" loading="lazy" width="300" height="305" data-file-width="553" data-file-height="563" />
@@ -481,19 +480,19 @@
 </p><p>If all the 哨站 on a map are destroyed, Patrols will always spawn orientated towards the closest point on the map edge.
 </p><p><img alt="Spawn Mechanics Infographic Part 11.png" src="../images/300px-Spawn_Mechanics_Infographic_Part_11.webp" decoding="async" loading="lazy" width="300" height="279" data-file-width="496" data-file-height="461" />
 </p>
-<h3><span class="mw-headline" id="Spawn_Blocking">Spawn Blocking</span></h3>
+<h3><span id=".E7.94.9F.E6.88.90.E9.98.BB.E6.8C.A1"></span><span class="mw-headline" id="生成阻挡">生成阻挡</span></h3>
 <p>Once all 哨站 have been destroyed the only eligible spawn space is the nearest point on the map edge. 玩家 can leverage this situation by moving to 65 meters or closer to the map edge. Doing so causes the Map Edge Oriented Eligible Spawn Space to be fully engulfed by the Player’s Safety Bubble and 否 Patrols can spawn. So long as the player stays within 65 meters of the map edge, they can move anywhere around the map without any Patrols 生成. 
 </p><p><img alt="Spawn Mechanics Infographic Part 12.png" src="../images/300px-Spawn_Mechanics_Infographic_Part_12.png" decoding="async" loading="lazy" width="300" height="216" data-file-width="1497" data-file-height="1080" />
 </p><p>This can also be leveraged during 撤离 to completely block Patrols from 生成 which means you have an 撤离 with absolutely 否 敌人 threatening you. Even with an 撤离 that is somewhat far from the map edge, if you can stay within 75 meters of the 下一个 player in the Safety Bubble Chain, you can reach out to the map edge and block the spawns. 
 </p><p><br />
 <img alt="Spawn Mechanics Infographic Part 13.png" src="../images/300px-Spawn_Mechanics_Infographic_Part_13.webp" decoding="async" loading="lazy" width="300" height="292" data-file-width="521" data-file-height="507" />
 </p>
-<h4><span class="mw-headline" id="Edge_Cases_with_Spawn_Blocking">Edge Cases with Spawn Blocking</span></h4>
+<h4><span id=".E7.94.9F.E6.88.90.E9.98.BB.E6.8C.A1.E7.9A.84.E8.BE.B9.E7.95.8C.E6.83.85.E5.86.B5"></span><span class="mw-headline" id="生成阻挡的边界情况">生成阻挡的边界情况</span></h4>
 <p>It is also possible to Spawn Block on certain maps without destroying all 哨站 but it is 极其 地形 dependent. 本质上, so long as the Eligible Spawn Space for 敌人 is entirely located in areas they aren’t allowed to spawn on, such as deep water, 否 敌人 will spawn. The game does not fallback to Map Edge Oriented 生成 in this case, it just fails outright.
 </p><p>Actively manipulating the game state to 达成 this is quite 困难 but we want to call out that Spawn Blocking can occur without destroying all the 哨站 or being near a Map Edge. 
 </p><p><img alt="Spawn Mechanics Infographic Part 14.png" src="../images/300px-Spawn_Mechanics_Infographic_Part_14.webp" decoding="async" loading="lazy" width="300" height="111" data-file-width="1517" data-file-height="559" />
 </p>
-<h3><span id="How_does_all_of_this_work_with_Split_Player_Groups.3F"></span><span class="mw-headline" id="How_does_all_of_this_work_with_Split_Player_Groups?">How does all of this work with Split Player Groups?</span></h3>
+<h3><span id=".E8.BF.99.E4.B8.80.E5.88.87.E5.9C.A8.E5.88.86.E9.98.9F.E7.9A.84.E7.8E.A9.E5.AE.B6.E7.BE.A4.E4.BD.93.E4.B8.AD.E5.A6.82.E4.BD.95.E8.BF.90.E4.BD.9C.EF.BC.9F"></span><span class="mw-headline" id="这一切在分队的玩家群体中如何运作？">这一切在分队的玩家群体中如何运作？</span></h3>
 <p>If 玩家 are split enough to form their own Player Group, each Player Group's Patrol will orient itself independent of other Player Groups. If one Player Group is in a position that blocks their Spawns or makes an Outpost ineligible, it does not prevent Spawn orientation for other Player Groups from that Outpost. 
 </p><p><img alt="Spawn Mechanics Infographic Part 15.png" src="../images/300px-Spawn_Mechanics_Infographic_Part_15.webp" decoding="async" loading="lazy" width="300" height="307" data-file-width="521" data-file-height="534" />
 </p><p><br />
@@ -506,10 +505,10 @@
 <li>3/20 更新: Retested and confirmed 行为 on 补丁 1.000.103, 否 变更 occurred</li>
 <li>4/2 更新: Retested and confirmed 行为 on 补丁 1.000.200, 否 变更 occurred</li>
 <li>Note from Authors: We hope that Arrowhead will approach this topic in a different way going forward as it is incredibly 容易 to Spawn Block right now and 玩家 can even 经验值 it unintentionally. We are not spreading this information to 鼓励 exploiting the 机制, we are simply informing 玩家 about why things are happening. As part of this post, we are submitting an 官员 bug report to Arrowhead along with our 证据 so that they can 地址 the issue. We all love 绝地潜兵 2 and want to see it be as good a game as possible.</li></ul>
-<h3><span class="mw-headline" id="This_page_needs_to_be_populated_from_these_sources:">This page needs to be populated from these sources:</span></h3>
+<h3><span id=".E6.9C.AC.E9.A1.B5.E9.9D.A2.E9.9C.80.E8.A6.81.E4.BB.8E.E8.BF.99.E4.BA.9B.E6.9D.A5.E6.BA.90.E5.A1.AB.E5.85.85.EF.BC.9A"></span><span class="mw-headline" id="本页面需要从这些来源填充：">本页面需要从这些来源填充：</span></h3>
 <ol><li>条款 1. <sup id="cite&#95;ref-9" class="reference"><a href="#cite_note-9"><span class="cite-bracket">&#91;</span>9<span class="cite-bracket">&#93;</span></a></sup></li>
 <li>条款 2. <sup id="cite&#95;ref-10" class="reference"><a href="#cite_note-10"><span class="cite-bracket">&#91;</span>10<span class="cite-bracket">&#93;</span></a></sup></li></ol>
-<h2><span class="mw-headline" id="References">参考</span></h2>
+<h2><span id=".E5.8F.82.E8.80.83.E8.B5.84.E6.96.99"></span><span class="mw-headline" id="参考资料">参考资料</span></h2>
 <div class="mw-references-wrap"><ol class="references">
 <li id="cite&#95;note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external free" href="https://www.reddit.com/r/Helldivers/comments/1bdudf3/lets_talk_about_patrols_an_in_depth_analysis_of/">https://www.reddit.com/r/绝地潜兵/comments/1bdudf3/lets_talk_about_patrols_an_in_depth_analysis_of/</a></span>
 </li>
@@ -532,59 +531,47 @@
 <li id="cite&#95;note-10"><span class="mw-cite-backlink"><a href="#cite_ref-10">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external free" href="https://www.zleague.gg/theportal/helldivers-should-destroying-nests-and-fabricators-decrease-enemy-spawns/">https://www.zleague.gg/theportal/绝地潜兵-should-destroying-nests-and-fabricators-减少-enemy-spawns/</a></span>
 </li>
 </ol></div>
-<div role="navigation" aria-label="Navbox" class="ranger-navbox navigation-not-searchable mw-collapsible"><div class="ranger-title"><div class="mw-collapsible-toggle-placeholder"></div></span></span><div class="ranger-title-text"><a href="Game_Mechanics.html" title="Game Mechanics">Game 机制</a></div></div><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:3"><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">基本信息 机制</div></div><div class="ranger-listbox"><div class="ranger-sublist level-0"><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:2"><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">Non-Combat 机制</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Achievements.html" title="Achievements">Achievements</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Difficulty.html" title="Difficulty">难度</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Levels.html" title="Levels">Levels</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Second_Galactic_War_Mechanics.html" title="Second Galactic War Mechanics">Second 银河战争机制</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">Combat 机制</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span><a href="Combat.html" title="Combat">Combat</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Damage.html" title="Damage">伤害</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Damage_Comparison.html" title="Damage Comparison">伤害 Comparison</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Recoil.html" title="Recoil">后坐力</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a class="mw-selflink selflink">Spawn 机制</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Status_Effects.html" title="Status Effects">状态效果</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Stealth.html" title="Stealth">Stealth</a></span></div></div></div></div></div></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap"><a href="Environmental_Hazards.html" title="Environmental Hazards">环境危害</a></div></div><div class="ranger-listbox"><div class="ranger-sublist level-0"><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:4"><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">天气 效果</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Environmental_Conditions.html" title="Environmental Conditions">Environmental Conditions</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Acid_Storms.html" title="Acid Storms">酸雨风暴</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Blizzards.html" title="Blizzards">暴风雪</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Extreme_Cold.html" title="Extreme Cold">极寒</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Fire_Tornados.html" title="Fire Tornados">烈焰龙卷</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Intense_Heat.html" title="Intense Heat">极暑</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Ion_Storms.html" title="Ion Storms">离子风暴</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Meteor_Storms.html" title="Meteor Storms">流星风暴</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Rainstorms.html" title="Rainstorms">暴雨</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Sandstorms.html" title="Sandstorms">沙暴</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Thick_Fog.html" title="Thick Fog">Thick Fog</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Tremors.html" title="Tremors">地震</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Volcanic_Activity.html" title="Volcanic Activity">火山活动</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">自然 Hazards</div></div><div class="ranger-listbox"><div class="ranger-sublist level-1"><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:2"><div class="ranger-row"><div class="ranger-group level-2 ranger-subgroup"><div class="ranger-wrap">Flora</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span>酸 Flower</span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Bug_Mine.html" title="Bug Mine">Bug Mine</a></span>&#32;&#160;&#8226;&#160;&#32;<span>Ice Plant</span>&#32;&#160;&#8226;&#160;&#32;<span>Moor Mushroom</span>&#32;&#160;&#8226;&#160;&#32;<span>Shrub</span>&#32;&#160;&#8226;&#160;&#32;<span>Spike Plant</span>&#32;&#160;&#8226;&#160;&#32;<span>火山 Plant</span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-2 ranger-subgroup"><div class="ranger-wrap">地形</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Lava.html" title="Lava">Lava</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Lava_Geyser.html" title="Lava Geyser">Lava Geyser</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Lava_Pits.html" title="Lava Pits">Lava Pits</a></span></div></div></div></div></div></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">Assorted Hazards</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span>Cars</span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Damaged_Hellbomb.html" title="Damaged Hellbomb">Damaged Hellbomb</a></span>&#32;&#160;&#8226;&#160;&#32;<span>Exploding Barrels</span>&#32;&#160;&#8226;&#160;&#32;<span>Forklift</span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap"><a href="Automaton_Hazards.html" title="Automaton Hazards">机器人 Hazards</a></div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Automaton_Mine.html" title="Automaton Mine">机器人 Mine</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Barbed_Wire.html" title="Barbed Wire">Barbed Wire</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Despotic_Explosive.html" title="Despotic Explosive">专制炸药</a></span></div></div></div></div></div></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">操作 Modifiers</div></div><div class="ranger-listbox"><div class="ranger-sublist level-0"><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:5"><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">基本信息</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span><a href="Civilians_and_SEAF_in_Area.html" title="Civilians and SEAF in Area">Civilians and SEAF in Area</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Complex_Stratagem_Plotting.html" title="Complex Stratagem Plotting">复杂 战略配备 Plotting</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Orbital_Fluctuations.html" title="Orbital Fluctuations">轨道武器 Fluctuations</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Poor_Intel.html" title="Poor Intel">Poor Intel</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">终结族 Specific</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Atmospheric_Spores.html" title="Atmospheric Spores">Atmospheric Spores</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Roving_Shriekers.html" title="Roving Shriekers">漫游尖啸虫</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">机器人 Specific</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span><a href="Gunship_Patrols.html" title="Gunship Patrols">炮舰巡逻队</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">光能者 Specific</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Leviathan_Blockade.html" title="Leviathan Blockade">利维坦封锁屏障</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">已移除</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span><a href="AA_Defenses.html" title="AA Defenses">对空防御</a></span>&#32;&#160;&#8226;&#160;&#32;<span>Atmospheric Interference</span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Electronic_Countermeasures.html" title="Electronic Countermeasures">电子对抗措施</a></span></div></div></div></div></div></div></div></div></div></div></div></div></div>
+<div role="navigation" aria-label="Navbox" class="ranger-navbox navigation-not-searchable mw-collapsible"><div class="ranger-title"><div class="mw-collapsible-toggle-placeholder"></div></span></span><div class="ranger-title-text"><a href="Game_Mechanics.html" title="Game Mechanics">Game 机制</a></div></div><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:3"><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">基本信息 机制</div></div><div class="ranger-listbox"><div class="ranger-sublist level-0"><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:2"><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">Non-Combat 机制</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Achievements.html" title="Achievements">Achievements</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Difficulty.html" title="Difficulty">难度</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Levels.html" title="Levels">Levels</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Second_Galactic_War_Mechanics.html" title="Second Galactic War Mechanics">Second 银河战争机制</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">Combat 机制</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span><a href="Combat.html" title="Combat">Combat</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Damage.html" title="Damage">伤害</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Damage_Comparison.html" title="Damage Comparison">伤害 Comparison</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Recoil.html" title="Recoil">后坐力</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a class="mw-selflink selflink">Spawn 机制</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Status_Effects.html" title="Status Effects">状态效果</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Stealth.html" title="Stealth">Stealth</a></span></div></div></div></div></div></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap"><a href="Environmental_Hazards.html" title="Environmental Hazards">环境危害</a></div></div><div class="ranger-listbox"><div class="ranger-sublist level-0"><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:4"><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">天气 效果</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Environmental_Conditions.html" title="Environmental Conditions">Environmental Conditions</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Acid_Storms.html" title="Acid Storms">酸雨风暴</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Blizzards.html" title="Blizzards">暴风雪</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Extreme_Cold.html" title="Extreme Cold">极寒</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Fire_Tornados.html" title="Fire Tornados">烈焰龙卷</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Intense_Heat.html" title="Intense Heat">极暑</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Ion_Storms.html" title="Ion Storms">离子风暴</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Meteor_Storms.html" title="Meteor Storms">流星风暴</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Rainstorms.html" title="Rainstorms">暴雨</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Sandstorms.html" title="Sandstorms">沙暴</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Thick_Fog.html" title="Thick Fog">Thick Fog</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Tremors.html" title="Tremors">地震</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Volcanic_Activity.html" title="Volcanic Activity">火山活动</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">自然 Hazards</div></div><div class="ranger-listbox"><div class="ranger-sublist level-1"><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:2"><div class="ranger-row"><div class="ranger-group level-2 ranger-subgroup"><div class="ranger-wrap">Flora</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span><a href="Bug_Mine.html" title="Bug Mine">Bug Mine</a></span>&#32;&#160;&#8226;&#160;&#32;<span>Ice Plant</span>&#32;&#160;&#8226;&#160;&#32;<span>Moor Mushroom</span>&#32;&#160;&#8226;&#160;&#32;<span>Shrub</span>&#32;&#160;&#8226;&#160;&#32;<span>Spike Plant</span>&#32;&#160;&#8226;&#160;&#32;<span>火山 Plant</span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-2 ranger-subgroup"><div class="ranger-wrap">地形</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Lava.html" title="Lava">Lava</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Lava_Geyser.html" title="Lava Geyser">Lava Geyser</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Lava_Pits.html" title="Lava Pits">Lava Pits</a></span></div></div></div></div></div></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">Assorted Hazards</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span>Cars</span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Damaged_Hellbomb.html" title="Damaged Hellbomb">Damaged Hellbomb</a></span>&#32;&#160;&#8226;&#160;&#32;<span>Exploding Barrels</span>&#32;&#160;&#8226;&#160;&#32;<span>Forklift</span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap"><a href="Automaton_Hazards.html" title="Automaton Hazards">机器人 Hazards</a></div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Automaton_Mine.html" title="Automaton Mine">机器人 Mine</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Barbed_Wire.html" title="Barbed Wire">Barbed Wire</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Despotic_Explosive.html" title="Despotic Explosive">专制炸药</a></span></div></div></div></div></div></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">操作 Modifiers</div></div><div class="ranger-listbox"><div class="ranger-sublist level-0"><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:5"><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">基本信息</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span><a href="Civilians_and_SEAF_in_Area.html" title="Civilians and SEAF in Area">Civilians and SEAF in Area</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Complex_Stratagem_Plotting.html" title="Complex Stratagem Plotting">复杂 战略配备 Plotting</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Orbital_Fluctuations.html" title="Orbital Fluctuations">轨道武器 Fluctuations</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Poor_Intel.html" title="Poor Intel">Poor Intel</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">终结族 Specific</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Atmospheric_Spores.html" title="Atmospheric Spores">Atmospheric Spores</a></span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Roving_Shriekers.html" title="Roving Shriekers">漫游尖啸虫</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">机器人 Specific</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span><a href="Gunship_Patrols.html" title="Gunship Patrols">炮舰巡逻队</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">光能者 Specific</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist hlist"><div class="ranger-list"><div><span><a href="Leviathan_Blockade.html" title="Leviathan Blockade">利维坦封锁屏障</a></span></div></div></div></div></div><div class="ranger-row"><div class="ranger-group level-1 ranger-subgroup"><div class="ranger-wrap">已移除</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-even hlist hlist"><div class="ranger-list"><div><span><a href="AA_Defenses.html" title="AA Defenses">对空防御</a></span>&#32;&#160;&#8226;&#160;&#32;<span>Atmospheric Interference</span>&#32;&#160;&#8226;&#160;&#32;<span><a href="Electronic_Countermeasures.html" title="Electronic Countermeasures">电子对抗措施</a></span></div></div></div></div></div></div></div></div></div></div></div></div></div>
 <p><br />
 </p>
 <!-- 
 NewPP limit report
-Cached time: 20260818034738
+Cached time: 20260819054451
 Cache expiry: 3600
 Reduced expiry: true
 Complications: [vary‐revision‐sha1, show‐toc]
-CPU time usage: 0.235 seconds
-Real time usage: 0.384 seconds
+CPU time usage: 0.219 seconds
+Real time usage: 0.305 seconds
 Preprocessor visited node count: 959/1000000
-Revision size: 32305/4194304 bytes
-Post‐expand include size: 32463/4194304 bytes
-Template argument size: 2266/4194304 bytes
+Revision size: 32132/4194304 bytes
+Post‐expand include size: 32259/4194304 bytes
+Template argument size: 2264/4194304 bytes
 Highest expansion depth: 11/100
 Expensive parser function count: 2/500
 Unstrip recursion depth: 0/20
 Unstrip post‐expand size: 4900/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.013/15.000 seconds
-Lua memory usage: 809509/52428800 bytes
+Lua time usage: 0.012/15.000 seconds
+Lua memory usage: 809169/52428800 bytes
 Number of processed Cargo queries: 2
-Time spent processing Cargo queries: 0.007 s (avg. 0.004 s)
+Time spent processing Cargo queries: 0.007 s (avg. 0.003 s)
 Number of Cargo row insertion attempts: 1
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%  308.429      1 -total
- 79.14%  244.077      1 Template:Nav_Mechanic
- 78.22%  241.263      1 Template:Navbox
- 12.24%   37.756      1 Template:Breadcrumb_Auto
-  3.16%    9.738      1 Template:Cleanup
-  2.97%    9.157      2 Template:Message_box
-  1.89%    5.821      1 Template:Improve_lead
-  1.79%    5.520      3 Template:Article_other
-  1.37%    4.220      2 Template:Hatnote
-  0.77%    2.361     24 Template:*
+100.00%  235.391      1 -total
+ 77.52%  182.470      1 Template:Nav_Mechanic
+ 76.63%  180.374      1 Template:Navbox
+ 13.25%   31.199      1 Template:Breadcrumb_Auto
+  3.39%    7.987      2 Template:Message_box
+  2.74%    6.451      1 Template:Cleanup
+  2.18%    5.133      1 Template:Improve_lead
+  1.53%    3.610      2 Template:Hatnote
+  1.38%    3.254      3 Template:Article_other
+  0.77%    1.808      1 Template:Direct_link
 -->
-</div></div>
+</div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
-<script>
-功能 toggleTheme(){
-  var h = 文档.documentElement;
-  var alt = h.classList.toggle('view-alt');
-  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
-}
-try {
-  if (localStorage.getItem('hd2theme') === 'alt') {
-    文档.documentElement.classList.add('view-alt');
-  }
-} catch(e) {}
-</script>
 </body>
 </html>

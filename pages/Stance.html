@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-helldiver view-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,13 +14,12 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
-    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
   <button class="back-btn" type="button" onclick="history.back()">← 返回</button>
   <h1 class="page-title">Stance</h1>
-  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="msgbox noexcerpt searchaux msgbox-mini msgbox-orange" style="max-width: 50em;">
+  <div class="mw-parser-output"><div class="msgbox noexcerpt searchaux msgbox-mini msgbox-orange" style="max-width: 50em;">
 <div id="msgbox-icon"> <div id="msgbox-image" class="nomobile" style=""> <img class="wiki-icon" alt="Reinforce Stratagem Icon.svg" src="../images/Reinforce_Stratagem_Icon.svg" decoding="async" loading="lazy" width="45" height="45" style="vertical-align: text-top" data-file-width="512" data-file-height="512" /></div>
 </div>
 <div style="width: 100%;"><b>This 章节 needs 扩展包.</b>&#160;
@@ -32,123 +31,123 @@ Stance refers to the 物理 position of the 绝地潜兵: standing, crouching, a
 </p>
 <div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="#Running"><span class="tocnumber">1</span> <span class="toctext">Running</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="#Standing"><span class="tocnumber">2</span> <span class="toctext">Standing</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="#Crouched"><span class="tocnumber">3</span> <span class="toctext">Crouched</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="#奔跑"><span class="tocnumber">1</span> <span class="toctext">奔跑</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#站立"><span class="tocnumber">2</span> <span class="toctext">站立</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#蹲下"><span class="tocnumber">3</span> <span class="toctext">蹲下</span></a></li>
 <li class="toclevel-1 tocsection-4"><a href="#卧倒"><span class="tocnumber">4</span> <span class="toctext">卧倒</span></a></li>
 </ul>
 </div>
 
-<h2><span class="mw-headline" id="Running">Running</span></h2>
+<h2><span id=".E5.A5.94.E8.B7.91"></span><span class="mw-headline" id="奔跑">奔跑</span></h2>
 <table class="wikitable">
 <caption>
 </caption>
 <tbody><tr>
 <td>(put running image here)
 </td>
-<th>Moving
+<th>移动中
 </th></tr>
 <tr>
-<td>Third person coefficient
+<td>第三人称系数
 </td>
 <td>不适用
 </td></tr>
 <tr>
-<td>First person coefficient
+<td>第一人称系数
 </td>
 <td>不适用
 </td></tr>
 <tr>
-<td>Stealth Coefficient
+<td>隐蔽系数
 </td>
 <td>45米
 </td></tr>
 <tr>
-<td>耐力 drain rate
+<td>耐力消耗速率
 </td>
 <td><b>TBD</b>
 </td></tr>
 </tbody></table>
-<ul><li>Performing this action will drain 耐力 from a 绝地潜兵 at a rate depending on their <a href="Armor.html" title="Armor">护甲 耐力 属性</a> with heavier 护甲 having a quick drain rate and slower 恢复 rate than lighter models.
+<ul><li>Performing this action will drain 耐力 from a 绝地潜兵 at a rate depending on their <a href="Armor.html" title="Armor">护甲耐力数据</a> with heavier 护甲 having a quick drain rate and slower 恢复 rate than lighter models.
 <ul><li>The perk <a href="Stamina_Enhancement.html" title="Stamina Enhancement">耐力强化</a> 减少 the 耐力 drain rate of sprinting and 增加 it's 恢复 rate</li></ul></li>
 <li>When 耐力 runs out the 绝地潜兵 will 继续 to sprint at a slower rate.
 <ul><li>The perk <a href="Dead_Sprint.html" title="Dead Sprint">死亡冲刺</a> allows running at the 最大 rate with a depleted 耐力 bar by draining Player's 生命值 instead.</li></ul></li>
 <li>It's the quickest a 绝地潜兵 can move without <a href="Stratagems.html" title="Stratagems">装备</a> and is used as a primary repositioning tool.</li>
 <li>绝地潜兵 is unable to 攻击 while running</li></ul>
-<h2><span class="mw-headline" id="Standing">Standing</span></h2>
+<h2><span id=".E7.AB.99.E7.AB.8B"></span><span class="mw-headline" id="站立">站立</span></h2>
 <table class="wikitable">
 <caption>
 </caption>
 <tbody><tr>
 <td>
 </td>
-<th>Stationary
+<th>静止
 </th>
-<th>Moving
+<th>移动中
 </th></tr>
 <tr>
-<td>Third person coefficient
+<td>第三人称系数
 </td>
 <td>100%
 </td>
 <td>150%
 </td></tr>
 <tr>
-<td>First person coefficient
+<td>第一人称系数
 </td>
 <td>90%
 </td>
 <td>110%
 </td></tr>
 <tr>
-<td>Stealth Coefficient
+<td>隐蔽系数
 </td>
 <td>45米
 </td>
 <td>45米
 </td></tr>
 <tr>
-<td>耐力 drain rate
+<td>耐力消耗速率
 </td>
 <td>TBD
 </td>
 <td>-TBD
 </td></tr>
 </tbody></table>
-<h2><span class="mw-headline" id="Crouched">Crouched</span></h2>
+<h2><span id=".E8.B9.B2.E4.B8.8B"></span><span class="mw-headline" id="蹲下">蹲下</span></h2>
 <table class="wikitable">
 <caption>
 </caption>
 <tbody><tr>
 <td>
 </td>
-<th>Stationary
+<th>静止
 </th>
-<th>Moving
+<th>移动中
 </th></tr>
 <tr>
-<td>Third person coefficient
+<td>第三人称系数
 </td>
 <td>60%
 </td>
 <td>100%
 </td></tr>
 <tr>
-<td>First person coefficient
+<td>第一人称系数
 </td>
 <td>60%
 </td>
 <td>90%
 </td></tr>
 <tr>
-<td>Stealth Detection 射程
+<td>隐蔽侦测范围
 </td>
 <td>25米
 </td>
 <td>25米
 </td></tr>
 <tr>
-<td>耐力 drain rate
+<td>耐力消耗速率
 </td>
 <td>TBD
 </td>
@@ -162,33 +161,33 @@ Stance refers to the 物理 position of the 绝地潜兵: standing, crouching, a
 <tbody><tr>
 <td><img alt="Prone HD2.png" src="../images/100px-Prone_HD2.png" decoding="async" loading="lazy" width="100" height="102" data-file-width="701" data-file-height="718" />
 </td>
-<th>Stationary
+<th>静止
 </th>
-<th>Moving
+<th>移动中
 </th></tr>
 <tr>
-<td>Third person coefficient
+<td>第三人称系数
 </td>
 <td>40%
 </td>
 <td>不适用
 </td></tr>
 <tr>
-<td>First person coefficient
+<td>第一人称系数
 </td>
 <td>40%
 </td>
 <td>不适用
 </td></tr>
 <tr>
-<td>Stealth Detection 射程
+<td>隐蔽侦测范围
 </td>
 <td>15米
 </td>
 <td>15米
 </td></tr>
 <tr>
-<td>耐力 drain rate
+<td>耐力消耗速率
 </td>
 <td>TBD
 </td>
@@ -200,7 +199,7 @@ Stance refers to the 物理 position of the 绝地潜兵: standing, crouching, a
 <li>Stimming is also possible during a dive, mitigating the time it take for a 绝地潜兵 to stop and inject themselves</li></ul></li>
 <li>Due to it's 庞大 reduction to 后坐力 it's best for using precision 武器 such as the <a href="APW-1_Anti-Materiel_Rifle.html" title="APW-1 Anti-Materiel Rifle">APW-1 反器材步枪</a> or 武器 with 庞大 后坐力 such as the <a href="MG-206_Heavy_Machine_Gun.html" title="MG-206 Heavy Machine Gun">MG-206 重机枪</a>.
 <ul><li>When going prone on a slopped 浮出地面 it will tilt a 绝地潜兵's aim to be parallel with that slope which can make aiming 困难.</li></ul></li>
-<li>While prone or diving 绝地潜兵 are granted 90% 抗性 to the <b>外半径</b> of <a href="Damage.html" title="Damage">explosions</a></li></ul>
+<li>While prone or diving 绝地潜兵 are granted 90% 抗性 to the <b>外半径</b> of <a href="Damage.html" title="Damage">爆炸</a></li></ul>
 <p>(add diving 图片 here)
 </p>
 <div class="mw-references-wrap"><ol class="references">
@@ -209,14 +208,14 @@ Stance refers to the 物理 position of the 绝地潜兵: standing, crouching, a
 </ol></div>
 <!-- 
 NewPP limit report
-Cached time: 20260818034924
+Cached time: 20260819054632
 Cache expiry: 2592000
 Reduced expiry: false
 Complications: [show‐toc]
-CPU time usage: 0.027 seconds
-Real time usage: 0.050 seconds
+CPU time usage: 0.029 seconds
+Real time usage: 0.042 seconds
 Preprocessor visited node count: 152/1000000
-Revision size: 3075/4194304 bytes
+Revision size: 2993/4194304 bytes
 Post‐expand include size: 1862/4194304 bytes
 Template argument size: 772/4194304 bytes
 Highest expansion depth: 7/100
@@ -227,25 +226,13 @@ ExtLoops count: 0/5000
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%   11.892      1 Template:Expand_section
-100.00%   11.892      1 -total
- 47.16%    5.608      1 Template:Msgbox
- 23.10%    2.747      1 Template:Article_other
+100.00%   13.858      1 Template:Expand_section
+100.00%   13.858      1 -total
+ 40.83%    5.658      1 Template:Msgbox
+ 29.72%    4.119      1 Template:Article_other
 -->
-</div></div>
+</div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
-<script>
-功能 toggleTheme(){
-  var h = 文档.documentElement;
-  var alt = h.classList.toggle('view-alt');
-  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
-}
-try {
-  if (localStorage.getItem('hd2theme') === 'alt') {
-    文档.documentElement.classList.add('view-alt');
-  }
-} catch(e) {}
-</script>
 </body>
 </html>

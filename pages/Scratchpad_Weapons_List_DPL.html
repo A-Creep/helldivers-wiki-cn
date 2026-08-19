@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-helldiver view-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,13 +14,12 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
-    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
   <button class="back-btn" type="button" onclick="history.back()">← 返回</button>
   <h1 class="page-title">Scratchpad/武器 List DPL</h1>
-  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><h2><span class="mw-headline" id="Weapon_Damage_Comparison">Weapon 伤害 Comparison</span></h2>
+  <div class="mw-parser-output"><h2><span id=".E6.AD.A6.E5.99.A8.E4.BC.A4.E5.AE.B3.E5.AF.B9.E6.AF.94"></span><span class="mw-headline" id="武器伤害对比">武器伤害对比</span></h2>
 <div class="mw-collapsible-content">
 <table class="wikitable sortable" style="text-align: center;">
 <tbody><tr>
@@ -1803,14 +1802,14 @@
 </div>
 <!-- 
 NewPP limit report
-Cached time: 20260818034603
+Cached time: 20260819054215
 Cache expiry: 3600
 Reduced expiry: true
 Complications: []
-CPU time usage: 0.852 seconds
-Real time usage: 1.494 seconds
+CPU time usage: 0.849 seconds
+Real time usage: 1.099 seconds
 Preprocessor visited node count: 8532/1000000
-Revision size: 546/4194304 bytes
+Revision size: 540/4194304 bytes
 Post‐expand include size: 124161/4194304 bytes
 Template argument size: 2408/4194304 bytes
 Highest expansion depth: 9/100
@@ -1821,27 +1820,15 @@ ExtLoops count: 0/5000
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%  148.595      1 -total
- 39.16%   58.192     91 Template:Damage
- 28.84%   42.862     82 Template:Armor
-  2.58%    3.828    143 Template:*
-  1.99%    2.957      1 Template:Currency
-  0.86%    1.274      1 Template:Tooltip
+100.00%  105.543      1 -total
+ 44.11%   46.558     91 Template:Damage
+ 31.81%   33.577     82 Template:Armor
+  2.57%    2.715    143 Template:*
+  2.57%    2.713      1 Template:Currency
+  1.23%    1.297      1 Template:Tooltip
 -->
-</div></div>
+</div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
-<script>
-功能 toggleTheme(){
-  var h = 文档.documentElement;
-  var alt = h.classList.toggle('view-alt');
-  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
-}
-try {
-  if (localStorage.getItem('hd2theme') === 'alt') {
-    文档.documentElement.classList.add('view-alt');
-  }
-} catch(e) {}
-</script>
 </body>
 </html>

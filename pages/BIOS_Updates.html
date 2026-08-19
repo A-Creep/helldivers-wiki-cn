@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-helldiver view-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,122 +14,121 @@
            onkeydown="if(event.key==='Enter'){location='../index.html?q='+encodeURIComponent(this.value);}">
     <a class="btn" href="../patch_notes.html">📜 更新日志</a>
     <a class="btn" href="../index.html">首页</a>
-    <button class="theme-toggle" type="button" onclick="toggleTheme()">切换配色</button>
   </div>
 </header>
 <main class="content">
   <button class="back-btn" type="button" onclick="history.back()">← 返回</button>
   <h1 class="page-title">BIOS Updates</h1>
-  <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div><div class="breadcrumb-item breadcrumb-item-final">BIOS Updates</div></div>
-<p><b>主板BIOS / UEFI更新</b> are among the most impactful system 维护 routines you can perform. This 流程 updates your motherboard's core firmware, which dictates how your CPU, RAM, graphics card, and 存储 devices interact on a low hardware level.
+  <div class="mw-parser-output"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div><div class="breadcrumb-item breadcrumb-item-final">BIOS Updates</div></div>
+<p><b>主板BIOS / UEFI更新</b> 是你能执行的最具影响力的系统维护程序之一。此过程更新主板的核心固件，它决定了你的CPU、RAM、显卡和存储设备如何在低级硬件层面交互。
 </p>
-<div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ 致命 警告: READ CAREFULLY BEFORE PROCEEDING ⚠</b>
-Flashing your BIOS is a low-level hardware modification that carries inherent risks. Unlike 标准 软件 installations, interrupting a BIOS 更新 (due to a power outage, system freeze, or accidentally pulling the USB drive) can <b>永久损坏您的主板<i>., rendering your PC completely unbootable.</i></b><i></i></div>
-<p>Please <b>仅</b> 继续 if you are confident in taking this risk. Any and all damages that may occur to your hardware or data during this 流程 are entirely your own responsibility. This guide is provided strictly for informational purposes; 否 liability or responsibility is assumed for any errors, hardware failures, or data loss encountered. If you feel inexperienced or uncomfortable with this 程序, please consult a certified hardware 技术员.
+<div style="background: rgba(245, 62, 36,.8); text-align: left; color: #ffffff; font-size: 100%; padding: 1px 1px 3px 3px;"><b>⚠ 关键警告：操作前请仔细阅读 ⚠</b>
+刷新BIOS是一种带有固有风险的低级硬件修改。与标准软件安装不同，中断BIOS更新（由于断电、系统死机或意外拔出USB驱动器）可能会<i>永久损坏您的主板</i>，致使您的PC完全无法启动。<b></b></div>
+<p>请 <b>仅</b> 如果你确信愿意承担此风险，请继续。在此过程中，你的硬件或数据可能遭受的任何及全部损坏，完全由你自己负责。本指南仅供信息参考之用；对于任何错误、硬件故障或数据丢失，不承担任何责任或义务。如果你觉得自己经验不足或对此操作感到不安，请咨询认证硬件技术人员。
 </p>
 <div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="#When_or_Why_you_should_update"><span class="tocnumber">1</span> <span class="toctext">When or Why you should 更新</span></a>
+<li class="toclevel-1 tocsection-1"><a href="#何时以及为何应该更新"><span class="tocnumber">1</span> <span class="toctext">何时以及为何应该更新</span></a>
 <ul>
-<li class="toclevel-2 tocsection-2"><a href="#Known_hardware_flaws"><span class="tocnumber">1.1</span> <span class="toctext">Known hardware flaws</span></a></li>
+<li class="toclevel-2 tocsection-2"><a href="#已知硬件缺陷"><span class="tocnumber">1.1</span> <span class="toctext">已知硬件缺陷</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-3"><a href="#The_Golden_Rules_of_Preparation"><span class="tocnumber">2</span> <span class="toctext">The Golden Rules of Preparation</span></a>
+<li class="toclevel-1 tocsection-3"><a href="#准备的黄金法则"><span class="tocnumber">2</span> <span class="toctext">准备的黄金法则</span></a>
 <ul>
-<li class="toclevel-2 tocsection-4"><a href="#Locate_Your_Exact_Mainboard_Model"><span class="tocnumber">2.1</span> <span class="toctext">Locate Your Exact Mainboard Model</span></a></li>
-<li class="toclevel-2 tocsection-5"><a href="#The_BitLocker_Data_Trap"><span class="tocnumber">2.2</span> <span class="toctext">The BitLocker Data Trap</span></a></li>
-<li class="toclevel-2 tocsection-6"><a href="#Prepare_a_Reliable_USB_Drive"><span class="tocnumber">2.3</span> <span class="toctext">Prepare a Reliable USB Drive</span></a></li>
-<li class="toclevel-2 tocsection-7"><a href="#Clear_the_Environment"><span class="tocnumber">2.4</span> <span class="toctext">Clear the 环境</span></a></li>
-<li class="toclevel-2 tocsection-8"><a href="#Document_Your_Current_Custom_Settings"><span class="tocnumber">2.5</span> <span class="toctext">文档 Your 当前 Custom Settings</span></a></li>
-<li class="toclevel-2 tocsection-9"><a href="#Nvidia_Legacy_Black_Screen_Loop"><span class="tocnumber">2.6</span> <span class="toctext">Nvidia Legacy Black Screen Loop</span></a></li>
-<li class="toclevel-2 tocsection-10"><a href="#Avoid_Windows-Based_Update_Tools"><span class="tocnumber">2.7</span> <span class="toctext">Avoid Windows-Based 更新 Tools</span></a></li>
-<li class="toclevel-2 tocsection-11"><a href="#Avoid_Beta_Versions"><span class="tocnumber">2.8</span> <span class="toctext">Avoid Beta Versions</span></a></li>
-<li class="toclevel-2 tocsection-12"><a href="#Chipset_Drivers_(AMD)"><span class="tocnumber">2.9</span> <span class="toctext">Chipset Drivers (AMD)</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#查找你的确切主板型号"><span class="tocnumber">2.1</span> <span class="toctext">查找你的确切主板型号</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#BitLocker_数据陷阱"><span class="tocnumber">2.2</span> <span class="toctext">BitLocker 数据陷阱</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#准备一个可靠的USB驱动器"><span class="tocnumber">2.3</span> <span class="toctext">准备一个可靠的USB驱动器</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#清理环境"><span class="tocnumber">2.4</span> <span class="toctext">清理环境</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#记录你当前的自定义设置"><span class="tocnumber">2.5</span> <span class="toctext">记录你当前的自定义设置</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Nvidia_Legacy_黑屏循环"><span class="tocnumber">2.6</span> <span class="toctext">Nvidia Legacy 黑屏循环</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#避免使用基于Windows的更新工具"><span class="tocnumber">2.7</span> <span class="toctext">避免使用基于Windows的更新工具</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#避免使用测试版"><span class="tocnumber">2.8</span> <span class="toctext">避免使用测试版</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#芯片组驱动程序（AMD）"><span class="tocnumber">2.9</span> <span class="toctext">芯片组驱动程序（AMD）</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-13"><a href="#Motherboard_Quickflash_Features_(USB_FlashBack_/_Q-Flash_Plus)"><span class="tocnumber">3</span> <span class="toctext">Motherboard Quickflash Features (USB FlashBack / Q-Flash Plus)</span></a></li>
-<li class="toclevel-1 tocsection-14"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">参考</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#主板快速刷新功能（USB_FlashBack_/_Q-Flash_Plus）"><span class="tocnumber">3</span> <span class="toctext">主板快速刷新功能（USB FlashBack / Q-Flash Plus）</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#参考资料"><span class="tocnumber">4</span> <span class="toctext">参考资料</span></a></li>
 </ul>
 </div>
 
-<h2><span class="mw-headline" id="When_or_Why_you_should_update">When or Why you should 更新</span></h2>
-<p>As a 基本信息 rule of thumb, it is often best to only 更新 your BIOS if you encounter persistent 稳定性 problems that 标准 故障排除 methods cannot 解决. As per <a rel="nofollow" class="external text" href="https://www.intel.com/content/www/us/en/gaming/resources/how-to-update-bios.html">Intel's 官员 guidelines</a>: <i>BIOS更新并非例行流程，通常不应在运行正常的PC上执行。</i> Or in simpler terms: <b>如果没坏，就别修。</b>
-</p><p>However, with modern hardware architectures, this paradigm has significantly shifted. 致命 稳定性 issues in existing hardware, voltage safety corrections for newer processors, memory compatibility fixes, and severe 安全 flaws often make these updates an absolute necessity rather than an optional choice. <b>注意：</b> BIOS updates 通常 won't unlock any extra performance (not that it cannot be, it's just a very rare occurrence). For more information on this, you may want to read up on <a rel="nofollow" class="external text" href="https://www.xda-developers.com/when-to-update-bios/">XDA Developers</a>.
-</p><p>If you decide to 继续 with a BIOS 更新, it is strongly advised that you thoroughly read the 官员 文档 provided by your exact motherboard (or laptop) 制造商 beforehand, ensuring you understand the precise, model-specific steps 必需.
+<h2><span id=".E4.BD.95.E6.97.B6.E4.BB.A5.E5.8F.8A.E4.B8.BA.E4.BD.95.E5.BA.94.E8.AF.A5.E6.9B.B4.E6.96.B0"></span><span class="mw-headline" id="何时以及为何应该更新">何时以及为何应该更新</span></h2>
+<p>作为一般经验法则，通常最好只在遇到标准故障排除方法无法解决的持续性稳定性问题时才更新BIOS。根据 <a rel="nofollow" class="external text" href="https://www.intel.com/content/www/us/en/gaming/resources/how-to-update-bios.html">英特尔官方指南</a>: <i>BIOS更新并非例行流程，通常不应在运行正常的PC上执行。</i> 或者更简单地说： <b>如果没坏，就别修。</b>
+</p><p>然而，随着现代硬件架构的发展，这一范式已发生重大转变。现有硬件中的关键稳定性问题、针对较新处理器的电压安全修正、内存兼容性修复以及严重的安全漏洞，往往使这些更新成为绝对必要，而非可选之举。 <b>注意：</b> BIOS更新通常不会解锁任何额外性能（并非完全不可能，只是非常罕见）。如需了解更多信息，你可以查阅 <a rel="nofollow" class="external text" href="https://www.xda-developers.com/when-to-update-bios/">XDA Developers</a>.
+</p><p>如果你决定继续进行BIOS更新，强烈建议事先仔细阅读主板（或笔记本电脑）制造商提供的官方文档，确保你了解精确的、特定于型号的步骤。
 </p>
-<h3><span class="mw-headline" id="Known_hardware_flaws">Known hardware flaws</span></h3>
-<p>BIOS / UEFI updates are 极其 crucial on certain systems:
+<h3><span id=".E5.B7.B2.E7.9F.A5.E7.A1.AC.E4.BB.B6.E7.BC.BA.E9.99.B7"></span><span class="mw-headline" id="已知硬件缺陷">已知硬件缺陷</span></h3>
+<p>在某些系统上，BIOS/UEFI更新极为关键：
 </p>
-<ul><li>Intel's 13th and 14th 世代 CPUs are known to suffer from hardware instability issues known as "vMin Shift", caused by 高处 operating voltages which lead to rapid 物理 degradation of the 处理器. To mitigate this 问题, motherboard manufacturers released 致命 UEFI updates containing <i>microcode 0x12F</i> to prevent further degradation.
+<ul><li>Intel第13和14代CPU已知存在硬件不稳定问题，称为"vMin Shift"，由升高的工作电压导致处理器快速物理退化。为缓解此问题，主板制造商发布了包含关键UEFI更新 <i>microcode 0x12F</i> 以防止进一步恶化。
 <ul><li><i>⚠ 请注意：如果您的CPU已出现物理性退化且正在发生崩溃，BIOS更新无法逆转硬件损伤。在这种情况下，必须通过RMA更换处理器。</i></li></ul></li></ul>
-<p>But AMD also has their fair share of problems. While this doesn't mean that you will inevitably run into problems with your configuration, it's good practice to keep your system updated to avoid hardware failure.
+<p>但AMD也有其自身的问题。虽然这并不意味着你的配置必然会遇到问题，但保持系统更新是避免硬件故障的良好做法。
 </p>
-<ul><li><b>AMD Ryzen 7000 series CPUs:</b> Particularly the 3D V-Cache models like the 7800X3D, suffered fom a devastating hardware flaw tied to outdated motherboard firmware.<sup id="cite&#95;ref-1" class="reference"><a href="#cite_note-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup>
-<ul><li>When 玩家 enabled memory overclocking profiles (such as AMD EXPO or Intel XMP) to maximize performance, many early AM5 mainboard BIOS configurations automatically pushed the "CPU SOC Voltage (VCC_SOC)" past unsafe limits - 频繁 exceeding 1.35V to 1.4V.</li>
-<li>This kind of excessive overvoltage then triggered intense internal heat degradation, causing the 处理器's 3D V-Cache silicon to physically bulge, melt, and eventually burn out the CPU and the motherboard socket, rendering both components permanently dead.</li>
-<li>AMD rushed out 致命 AGESA microcode updates which strictly cap the 最大 SOC voltage at a safe 1.3 V.</li></ul></li>
-<li><b>AMD Ryzen 9000 series CPUs:</b> These CPU face severe 稳定性 and hardware risks if their motherboard firmware is outdated.<sup id="cite&#95;ref-2" class="reference"><a href="#cite_note-2"><span class="cite-bracket">&#91;</span>2<span class="cite-bracket">&#93;</span></a></sup>
-<ul><li>The issue stems from the initial AM5 BIOS versions provided by 多个 motherboard vendors (such as ASRock), which use an overly 激进 工厂 默认 for <i>Precision Boost Overdrive (PBO)</i>, delivering excessive voltage and 当前 limits.<sup id="cite&#95;ref-3" class="reference"><a href="#cite_note-3"><span class="cite-bracket">&#91;</span>3<span class="cite-bracket">&#93;</span></a></sup></li>
-<li>Under 重型, sustained multi-threaded CPU workloads (which can be applied by applications or games), these 极难 power settings caused severe thermal strain, leading to premature 处理器 deaths and, in rare catastrophic cases, physically burnt silicon or scorched pads.<sup id="cite&#95;ref-4" class="reference"><a href="#cite_note-4"><span class="cite-bracket">&#91;</span>4<span class="cite-bracket">&#93;</span></a></sup></li></ul></li></ul>
-<p>Updating your BIOS to the latest stable version is therefore recommended to 受益 from the fixes. Once your mainboard's BIOS / UEFI has been updated, it will automatically load the updated microcode which will then 保护 your CPU from such occurrences.
+<ul><li><b>AMD Ryzen 7000 series CPUs:</b> 特别是诸如7800X3D之类的3D V-Cache型号，曾遭受与过时主板固件相关的严重硬件缺陷。<sup id="cite&#95;ref-1" class="reference"><a href="#cite_note-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup>
+<ul><li>当玩家启用内存超频配置文件（如AMD EXPO或Intel XMP）以最大化性能时，许多早期AM5主板BIOS配置会自动将"CPU SOC电压(VCC_SOC)"推至不安全限值以上——经常超过1.35V至1.4V。</li>
+<li>这种过度过压随后引发了剧烈的内部高温退化，导致处理器的3D V-Cache硅片物理膨胀、熔化，并最终烧毁CPU和主板插槽，使两个组件永久报废。</li>
+<li>AMD紧急发布了关键AGESA微码更新，将最大SOC电压严格限制在安全的1.3V。</li></ul></li>
+<li><b>AMD Ryzen 9000 series CPUs:</b> 如果这些CPU的主板固件过时，它们将面临严重的稳定性和硬件风险。<sup id="cite&#95;ref-2" class="reference"><a href="#cite_note-2"><span class="cite-bracket">&#91;</span>2<span class="cite-bracket">&#93;</span></a></sup>
+<ul><li>该问题源于多家主板厂商（如ASRock）提供的初始AM5 BIOS版本，它们使用了过于激进的出厂默认 <i>Precision Boost Overdrive (PBO)</i>，提供过高的电压和电流限制。<sup id="cite&#95;ref-3" class="reference"><a href="#cite_note-3"><span class="cite-bracket">&#91;</span>3<span class="cite-bracket">&#93;</span></a></sup></li>
+<li>在高强度、持续的多线程CPU负载下（可由应用程序或游戏施加），这些极端电源设置会导致严重的热应力，导致处理器过早死亡，在罕见的灾难性情况下，甚至会导致硅片物理烧毁或焊盘烧焦。<sup id="cite&#95;ref-4" class="reference"><a href="#cite_note-4"><span class="cite-bracket">&#91;</span>4<span class="cite-bracket">&#93;</span></a></sup></li></ul></li></ul>
+<p>因此建议将BIOS更新到最新的稳定版本以获得修复。一旦主板的BIOS/UEFI更新完成，它将自动加载更新的微代码，从而保护你的CPU免受此类事件的影响。
 </p>
-<h2><span class="mw-headline" id="The_Golden_Rules_of_Preparation">The Golden Rules of Preparation</span></h2>
-<p>To minimize the risks of a failed flash and 消除 common post-更新 frustrations, always 完成 the following preparatory steps before starting the 更新 管道. Always keep your handbook ready and if you are unsure about specifics for your motherboard, please 联络 the 官员 支援 of your motherboard 制造商.
+<h2><span id=".E5.87.86.E5.A4.87.E7.9A.84.E9.BB.84.E9.87.91.E6.B3.95.E5.88.99"></span><span class="mw-headline" id="准备的黄金法则">准备的黄金法则</span></h2>
+<p>为了最大限度地降低刷写失败的风险并消除常见的更新后困扰，在开始更新流程之前，请务必完成以下准备步骤。请随时准备好你的手册，如果你不确定主板的具体情况，请联系主板制造商的官方支援。
 </p>
-<h3><span class="mw-headline" id="Locate_Your_Exact_Mainboard_Model">Locate Your Exact Mainboard Model</span></h3>
-<p>Motherboard firmware is hyper-specific. Flashing a BIOS meant for a "Version 1.0" board onto a "Version 2.0" board, or confusing an <i>ASUS Prime Z790-A</i> with a <i>Z790-P</i>, can immediately lock up the system. Check your exact model beforehand.
+<h3><span id=".E6.9F.A5.E6.89.BE.E4.BD.A0.E7.9A.84.E7.A1.AE.E5.88.87.E4.B8.BB.E6.9D.BF.E5.9E.8B.E5.8F.B7"></span><span class="mw-headline" id="查找你的确切主板型号">查找你的确切主板型号</span></h3>
+<p>主板固件是极度特定的。将面向"Version 1.0"主板的BIOS刷入"Version 2.0"主板，或混淆 <i>ASUS Prime Z790-A</i> with a <i>Z790-P</i>，可能会立即导致系统锁定。请事先确认您的确切型号。
 </p>
-<ol><li>Your mainboards packaging should have the name of the 制造商 and model on it.</li>
-<li>The mainboards model is also printed onto the PCB of the mainboard.</li>
-<li>If you are on Windows, you can open the Windows Start Menu, 类型 in <code>msinfo32</code> (System Information), and look at the "BaseBoard 产品" line.</li></ol>
-<p><b>请注意：</b> If your board received a Revision, it's 重要 to 下载 BIOS updates for your exact revision and not for older / newer revisions.
-</p><p>For pre-built computers it's recommended to check if the 制造商 of that 电脑 is providing their own UEFI versions.
+<ol><li>您主板的包装上应印有制造商名称和型号。</li>
+<li>主板型号也印在主板PCB上。</li>
+<li>如果您使用Windows，可以打开Windows开始菜单，输入 <code>msinfo32</code> （系统信息），并查看"BaseBoard 产品"一行。</li></ol>
+<p><b>请注意：</b> 如果您的主板有修订版本，请务必下载适用于您确切修订版本的BIOS更新，而非旧版/新版修订的更新。
+</p><p>对于预装电脑，建议检查该电脑的制造商是否提供其自有UEFI版本。
 </p>
-<h3><span class="mw-headline" id="The_BitLocker_Data_Trap">The BitLocker Data Trap</span></h3>
-<p>If Windows BitLocker device encryption is active on your 存储 drives, <i>更新BIOS将重置您的可信平台模块(TPM)</i>. Windows will interpret this as a 物理 安全 breach and trap you in a permanent boot loop demanding a BitLocker 恢复 Key. 
+<h3><span id="BitLocker_.E6.95.B0.E6.8D.AE.E9.99.B7.E9.98.B1"></span><span class="mw-headline" id="BitLocker_数据陷阱">BitLocker 数据陷阱</span></h3>
+<p>如果您的存储驱动器上启用了Windows BitLocker设备加密， <i>更新BIOS将重置您的可信平台模块(TPM)</i>。Windows会将其视为物理安全入侵，并使您陷入永久启动循环，要求提供BitLocker恢复密钥。 
 </p>
-<ul><li>Temporarily <i>暂停BitLocker加密</i> in Windows or locate your 官员 Microsoft 账户 恢复 Key <i>BEFORE</i> you reboot your PC to flash the firmware.</li></ul>
-<h3><span class="mw-headline" id="Prepare_a_Reliable_USB_Drive">Prepare a Reliable USB Drive</span></h3>
-<p>Use a high-quality, stable USB thumb drive.
+<ul><li>暂时 <i>暂停BitLocker加密</i> 于Windows中，或查找您的官方Microsoft账户恢复密钥 <i>BEFORE</i> 您重启PC以刷写固件。</li></ul>
+<h3><span id=".E5.87.86.E5.A4.87.E4.B8.80.E4.B8.AA.E5.8F.AF.E9.9D.A0.E7.9A.84USB.E9.A9.B1.E5.8A.A8.E5.99.A8"></span><span class="mw-headline" id="准备一个可靠的USB驱动器">准备一个可靠的USB驱动器</span></h3>
+<p>请使用高质量、稳定的U盘。
 </p>
-<ol><li>Format it strictly to the <b>FAT32</b> file system, as most motherboard BIOS flash utilities cannot read NTFS or exFAT partitions.</li>
-<li>下载 the firmware file directly from the 制造商’s 官员 支援 page (not any third-party pages!)</li>
-<li>Unpack the ZIP archive, and place the bare ".CAP" or ".ROM" file onto the root 目录 of the drive.</li></ol>
-<h3><span class="mw-headline" id="Clear_the_Environment">Clear the 环境</span></h3>
-<p>Never attempt to flash your BIOS if your area is currently experiencing severe 天气 (storms, 重型 winds, other 极难 天气 phenomenon) that could cause a localized power failure. If you own an Uninterruptible Power Supply (UPS), ensure your PC and 监控 are plugged into it.
-</p><p>Keeping your power uninterrupted is doubly 重要 if you are playing on a Laptop! Only 更新 your BIOS when you are connected to a wall socket. <b>切勿仅在电池供电时更新BIOS。</b>
+<ol><li>将其严格格式化为 <b>FAT32</b> 文件系统，因为大多数主板BIOS刷写工具无法读取NTFS或exFAT分区。</li>
+<li>直接从制造商官方支持页面下载固件文件（而非任何第三方页面！）</li>
+<li>解压ZIP压缩包，并将纯".CAP"或".ROM"文件放入该驱动器的根目录。</li></ol>
+<h3><span id=".E6.B8.85.E7.90.86.E7.8E.AF.E5.A2.83"></span><span class="mw-headline" id="清理环境">清理环境</span></h3>
+<p>切勿在恶劣天气（暴风雨、大风或其他极端天气现象）可能导致局部停电时尝试刷写BIOS。如果你拥有不间断电源（UPS），请确保你的PC和显示器已连接到它。
+</p><p>如果您在笔记本电脑上游玩，保持供电不间断尤为重要！仅在连接墙壁插座时更新BIOS。 <b>切勿仅在电池供电时更新BIOS。</b>
 </p>
-<h3><span class="mw-headline" id="Document_Your_Current_Custom_Settings">文档 Your 当前 Custom Settings</span></h3>
-<p>Flashing the BIOS will completely erase all your custom profiles and restore 工厂 defaults. If you previously enabled "XMP/EXPO" for your RAM, adjusted custom <i>风扇曲线</i> for an AIO liquid cooler, or configured "Resizable BAR", you will need to manually re-enable them after the system reboots successfully.
+<h3><span id=".E8.AE.B0.E5.BD.95.E4.BD.A0.E5.BD.93.E5.89.8D.E7.9A.84.E8.87.AA.E5.AE.9A.E4.B9.89.E8.AE.BE.E7.BD.AE"></span><span class="mw-headline" id="记录你当前的自定义设置">记录你当前的自定义设置</span></h3>
+<p>刷新BIOS将完全清除你的所有自定义配置文件并恢复出厂默认设置。如果你之前为RAM启用了"XMP/EXPO"，调整了自定义 <i>风扇曲线</i> 对于一体式水冷散热器，或已配置"Resizable BAR"的情况，您需要在系统成功重启后手动重新启用它们。
 </p>
-<h3><span class="mw-headline" id="Nvidia_Legacy_Black_Screen_Loop">Nvidia Legacy Black Screen Loop</span></h3>
-<p>Certain Graphics cards - most commonly the NVIDIA GeForce RTX 5000 series - suffer from a firmware-level incompatibility with specific motherboard BIOS versions if the system relies on legacy / CSM boot modes instead of the modern UEFI. This can result in a permanent black screen upon system reboot.
-</p><p>Please check up on your specific GPU before updating your UEFI to check if you need to prepare anything in advance or if it is possible to 更新 your GPUs vBIOS before updating your mainboards BIOS / UEFI.
-</p><p>Ensure that your motherboard's boot state is strictly set to "native UEFI mode (CSM Disabled)" before updating. If you are already caught in a black screen loop with these specific cards, you will need to utilize the 官员 <a rel="nofollow" class="external text" href="https://www.igorslab.de/en/nvidia-releases-new-firmware-for-rtx-5060-series-black-screens-on-reboot-as-a-symptom-not-an-exception/">NVIDIA GPU UEFI Firmware 更新 Tool v2.0</a>.
+<h3><span id="Nvidia_Legacy_.E9.BB.91.E5.B1.8F.E5.BE.AA.E7.8E.AF"></span><span class="mw-headline" id="Nvidia_Legacy_黑屏循环">Nvidia Legacy 黑屏循环</span></h3>
+<p>某些显卡——最常见的是NVIDIA GeForce RTX 5000系列——如果系统依赖传统/CSM启动模式而非现代UEFI，则与特定主板BIOS版本存在固件级不兼容。这可能导致系统重启时出现永久性黑屏。
+</p><p>请在更新UEFI之前检查你的特定GPU，以确认是否需要提前准备任何事项，或者是否可以在更新主板BIOS/UEFI之前更新GPU的vBIOS。
+</p><p>更新前请确保主板的启动状态严格设置为"原生UEFI模式（CSM禁用）"。如果你已经因为这些特定显卡而陷入黑屏循环，你将需要使用官方 <a rel="nofollow" class="external text" href="https://www.igorslab.de/en/nvidia-releases-new-firmware-for-rtx-5060-series-black-screens-on-reboot-as-a-symptom-not-an-exception/">NVIDIA GPU UEFI Firmware 更新 Tool v2.0</a>.
 </p>
-<h3><span class="mw-headline" id="Avoid_Windows-Based_Update_Tools">Avoid Windows-Based 更新 Tools</span></h3>
-<p>Many motherboard manufacturers nowadays bundle desktop 软件 suites (such as "ASUS 军械库 Crate", "MSI Center", etc.) that advertise the 能力 to flash your BIOS directly from within the Windows desktop with a single click.
-</p><p>通常 it is recommended to <b>not</b> use these 更新 utilities. Windows is a highly 复杂 环境 with a lot of active services and background processes that run simultaneously. If a Windows-based flash tool encounters issues (in the worst of circumstances triggering a Blue Screen of Death) mid-flash, the 更新 might fail, resulting in a permanently corrupted firmware.
-</p><p>Updating your BIOS via a formatted USB drive and directly executing it within your motherboard's native 功能型 allows you to avoid another point of possible failure that cannot be interrupted as easily.
+<h3><span id=".E9.81.BF.E5.85.8D.E4.BD.BF.E7.94.A8.E5.9F.BA.E4.BA.8EWindows.E7.9A.84.E6.9B.B4.E6.96.B0.E5.B7.A5.E5.85.B7"></span><span class="mw-headline" id="避免使用基于Windows的更新工具">避免使用基于Windows的更新工具</span></h3>
+<p>如今许多主板制造商捆绑了桌面软件套件（如"ASUS 军械库 Crate"、"MSI Center"等），宣称能够直接从Windows桌面一键刷新BIOS。
+</p><p>通常建议 <b>not</b> 使用这些更新工具。Windows是一个高度复杂的环境，同时运行着大量活动服务和后台进程。如果基于Windows的刷写工具在刷写过程中遇到问题（最坏情况下触发蓝屏死机），更新可能会失败，导致固件永久损坏。
+</p><p>通过格式化USB驱动器并在主板原生工具中直接执行来更新BIOS，可以避免另一个潜在故障点，且该方式不那么容易被中断。
 </p>
-<h3><span class="mw-headline" id="Avoid_Beta_Versions">Avoid Beta Versions</span></h3>
-<p>有时 manufacturers offer beta versions of upcoming BIOS updates. As a 基本信息 rule of thumb these should be avoided, unless you have a very specific 问题 that cannot be 已解决 with older stable versions. Be aware though that while manufacturers 通常 create new versions with care, there's always a chance of something not working as it should.
+<h3><span id=".E9.81.BF.E5.85.8D.E4.BD.BF.E7.94.A8.E6.B5.8B.E8.AF.95.E7.89.88"></span><span class="mw-headline" id="避免使用测试版">避免使用测试版</span></h3>
+<p>有时制造商会提供即将推出的BIOS更新的测试版本。作为一般经验法则，应避免使用这些版本，除非你遇到了一个非常具体的问题，而旧版稳定版本无法解决。但请注意，虽然制造商通常会谨慎地创建新版本，但总有某些功能无法正常工作的可能。
 </p>
-<h3><span id="Chipset_Drivers_.28AMD.29"></span><span class="mw-headline" id="Chipset_Drivers_(AMD)">Chipset Drivers (AMD)</span></h3>
-<p>For AMD users it's 重要 to also 更新 their chipset drivers to the latest version after updating the BIOS. Otherwise you might encounter instability problems.
+<h3><span id=".E8.8A.AF.E7.89.87.E7.BB.84.E9.A9.B1.E5.8A.A8.E7.A8.8B.E5.BA.8F.EF.BC.88AMD.EF.BC.89"></span><span class="mw-headline" id="芯片组驱动程序（AMD）">芯片组驱动程序（AMD）</span></h3>
+<p>对于AMD用户，在更新BIOS后同样将芯片组驱动程序更新到最新版本非常重要。否则你可能会遇到稳定性问题。
 </p>
-<h2><span id="Motherboard_Quickflash_Features_.28USB_FlashBack_.2F_Q-Flash_Plus.29"></span><span class="mw-headline" id="Motherboard_Quickflash_Features_(USB_FlashBack_/_Q-Flash_Plus)">Motherboard Quickflash Features (USB FlashBack / Q-Flash Plus)</span></h2>
-<p>Most of modern mid-射程 to high-end motherboards come equipped with a specialized, hardware-level 恢复 特性. Among them are:
+<h2><span id=".E4.B8.BB.E6.9D.BF.E5.BF.AB.E9.80.9F.E5.88.B7.E6.96.B0.E5.8A.9F.E8.83.BD.EF.BC.88USB_FlashBack_.2F_Q-Flash_Plus.EF.BC.89"></span><span class="mw-headline" id="主板快速刷新功能（USB_FlashBack_/_Q-Flash_Plus）">主板快速刷新功能（USB FlashBack / Q-Flash Plus）</span></h2>
+<p>大多数现代中高端主板都配备了专用的硬件级恢复功能。其中包括：
 </p>
 <ul><li>BIOS FlashBack (ASRock)</li>
 <li>USB BIOS FlashBack (ASUS)</li>
 <li>M-Flash Button (MSI)</li>
 <li>Q-Flash Plus (GigaByte)</li></ul>
-<p>This technology allows you to flash or 恢复 your motherboard's firmware using a USB thumb drive and a dedicated button on the 后部 I/O panel.
-</p><p>In the event of a failed BIOS 更新 (due to a sudden power outage or system freeze) which would render your motherboard completely, this tool can fully restore and revive the board. As this 流程 runs via a dedicated microchip on the motherboard, it functions <i>without</i> needing a working CPU, installed RAM or even a graphics card. It only requires power from your Power Supply Unit (PSU).
-</p><p>Because this 功能型 executes without an on-screen 显示 or graphical interface, it is 极其 strict regarding file preparation. Deviation from these steps will cause the flash 流程 to fail. Before you attempt it, make sure to read your manufacturers 文档 carefully and follow the steps provided.
+<p>该技术允许您使用U盘和后置I/O面板上的专用按钮来刷写或恢复主板固件。
+</p><p>如果BIOS更新失败（由于突然断电或系统死机）导致主板完全无法使用，此工具可以完全恢复并使主板重获新生。由于此过程通过主板上的专用微芯片运行，因此它能 <i>without</i> 正常工作的CPU、已安装的内存，甚至显卡。它只需要来自电源装置(PSU)的供电。
+</p><p>由于此工具在没有屏幕显示或图形界面的情况下执行，它对文件准备的要求极为严格。偏离这些步骤将导致刷写过程失败。在尝试之前，请务必仔细阅读制造商提供的文档并遵循所提供的步骤。
 </p>
-<h2><span class="mw-headline" id="References">参考</span></h2>
+<h2><span id=".E5.8F.82.E8.80.83.E8.B5.84.E6.96.99"></span><span class="mw-headline" id="参考资料">参考资料</span></h2>
 <div class="mw-references-wrap"><ol class="references">
 <li id="cite&#95;note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://www.techpowerup.com/307703/amd-ryzen-7000x3d-processors-prone-to-physical-damage-with-voltage-assisted-overclocking-motherboard-vendors-rush-bios-updates-with-voltage-limiters?cp=10">Techpowerup - AMD Ryzen 7000X3D Processors Prone to 物理 伤害 with Voltage-assisted Overclocking, Motherboard Vendors Rush BIOS Updates with Voltage Limiters</a></span>
 </li>
@@ -171,50 +170,38 @@ Flashing your BIOS is a low-level hardware modification that carries inherent ri
 </div></div></div></div></div></div></div>
 <!-- 
 NewPP limit report
-Cached time: 20260818035744
+Cached time: 20260819055457
 Cache expiry: 2592000
 Reduced expiry: false
 Complications: [vary‐revision‐sha1, show‐toc]
-CPU time usage: 0.049 seconds
-Real time usage: 0.071 seconds
+CPU time usage: 0.032 seconds
+Real time usage: 0.057 seconds
 Preprocessor visited node count: 226/1000000
-Revision size: 12507/4194304 bytes
-Post‐expand include size: 7974/4194304 bytes
-Template argument size: 412/4194304 bytes
+Revision size: 10664/4194304 bytes
+Post‐expand include size: 7899/4194304 bytes
+Template argument size: 337/4194304 bytes
 Highest expansion depth: 8/100
 Expensive parser function count: 1/500
 Unstrip recursion depth: 0/20
 Unstrip post‐expand size: 2240/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.009/15.000 seconds
+Lua time usage: 0.007/15.000 seconds
 Lua memory usage: 663675/52428800 bytes
 Number of processed Cargo queries: 2
-Time spent processing Cargo queries: 0.007 s (avg. 0.004 s)
+Time spent processing Cargo queries: 0.008 s (avg. 0.004 s)
 Number of Cargo row insertion attempts: 1
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%   50.760      1 -total
- 63.56%   32.262      1 Template:Breadcrumb_Auto
- 22.55%   11.449      1 Template:Navbox_Troubleshooting
- 18.70%    9.492      1 Template:Navbox
-  6.61%    3.354      2 Template:Article_other
-  3.45%    1.750      1 Template:Crash_header
+100.00%   42.403      1 -total
+ 63.76%   27.035      1 Template:Breadcrumb_Auto
+ 24.76%   10.498      1 Template:Navbox_Troubleshooting
+ 20.63%    8.746      1 Template:Navbox
+  5.94%    2.517      2 Template:Article_other
+  3.40%    1.443      1 Template:Crash_header
 -->
-</div></div>
+</div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>
-<script>
-功能 toggleTheme(){
-  var h = 文档.documentElement;
-  var alt = h.classList.toggle('view-alt');
-  try { localStorage.setItem('hd2theme', alt ? 'alt' : '经典'); } catch(e) {}
-}
-try {
-  if (localStorage.getItem('hd2theme') === 'alt') {
-    文档.documentElement.classList.add('view-alt');
-  }
-} catch(e) {}
-</script>
 </body>
 </html>
