@@ -232,6 +232,23 @@ mark{background:var(--wiki-accent-color);color:#000;border-radius:2px;padding:0 
 .mw-parser-output .box.biome-box .thumbinner img{max-width:100%;height:auto}
 .mw-parser-output .weapon-card table{width:100%;table-layout:fixed;font-size:12px}
 .mw-parser-output .weapon-card td{padding:2px 4px;line-height:1.3}
+/* 敌人武器配置 Flexbox 容器：自适应三列网格（覆盖内联 display:flex） */
+.mw-parser-output .Flexbox:has(> .box.biome-box table.enemy-attack-stats){
+  display:grid !important;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:12px;align-items:start;
+}
+.mw-parser-output .Flexbox:has(> .box.biome-box table.enemy-attack-stats) > p{display:none}
+.mw-parser-output .Flexbox:has(> .box.biome-box table.enemy-attack-stats) > .box.biome-box{
+  float:none;min-width:0;max-height:none;
+  padding:10px 12px;margin:0;
+}
+.mw-parser-output .Flexbox:has(> .box.biome-box table.enemy-attack-stats) .box.biome-box .thumb{
+  float:none;width:100%;margin:0 auto 8px}
+.mw-parser-output .Flexbox:has(> .box.biome-box table.enemy-attack-stats) .box.biome-box .thumbinner{
+  max-width:180px;width:auto;margin:0 auto}
+.mw-parser-output .Flexbox:has(> .box.biome-box table.enemy-attack-stats) .box.biome-box .thumbinner img{
+  max-width:100%;height:auto}
 /* 5. 导航模板 ranger / navbox：可折叠、金左边框、图标 20px、密集链接 */
 .mw-parser-output .ranger{display:block;border:1px solid #333;border-left:4px solid #d4a017;
   background:#1c1c1c;border-radius:6px;margin:14px 0;font-size:13px}
@@ -461,3 +478,6 @@ html,body{overflow-x:hidden}
   .page-side .druid-infobox,.page-side .infobox{position:static;width:100%}
   .page-main .toc{position:static;width:100%}
 }
+
+/* ============ 收尾：Campaigns 战役卡片背景图定位兜底 ============ */
+.mw-parser-output .hd2-campaign-container,.mw-parser-output .hd2-mo-card{position:relative}.mw-parser-output .hd2-mo-bg-file{max-width:100%;overflow:hidden}
