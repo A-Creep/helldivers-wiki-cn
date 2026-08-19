@@ -229,6 +229,7 @@ Crossbow%2C_Weapon_Wheel.png
 DS-42_Federation%27s_Blade_Armor_Render.webp
 DS-42_Federation%27s_Blade_Helmet_Render.webp
 De-Forester%27s_Sailcloth_Player_Card_Icon.webp
+Disambig.svg
 Dissident%27s_Nightmare_Player_Card_Icon.webp
 Draw%21_Emote_Icon.png
 Eagle%27s_Fury_Player_Card_Icon.webp
@@ -248,4 +249,5 @@ Raider%27s_Cheer_Emote_Icon.png
 Roll_%27Em_Victory_Pose_Icon.png
 SG-225SP_Breaker_Spray%26Pray_Primary_Render.webp
 Speargun%2C_Weapon_Wheel.png
+Windows_11.svg
 You%27re_Next_Victory_Pose_Icon.png
