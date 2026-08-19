@@ -1,5 +1,16 @@
 # 汉化进度（自动更新）
 
+## 2026-08-20 收尾修复发布（/root 统筹直接完成）
+- 背景：翻译 100% 完成、项目进入收尾；用户指示所有任务由 /root 直接完成，不再派单任务组
+- 修复项：
+  1. **武器配置三列布局**：Rocket Raider 等 79 个武器配置页（`.Flexbox` 内含 `enemy-attack-stats`）由内联 flex 折行改为自适应三列 grid（minmax 240px），武器图限宽 180px 居中；1366/720 全站 0 溢出
+  2. **外链图片本地化**：`commons.wiki.gg/images/Disambig.svg`（13 页消歧义）、`Windows_11.svg`（3 页补丁）下载到本地 images/ 并替换引用；build_site.py 增加 `commons.wiki.gg/images/` 匹配，防重建丢
+  3. **style 块 CSS 中文属性还原**：apply_zh_terms.py 误翻 `<style>` 内 CSS 属性（显示/内容/动画/重量/亲戚/媒体 等）→ 增加 style 块保护 + `fix_style_css` 逆向还原（display/content/animation/font-weight/relative/media/none）
+  4. **Campaigns 无横向滚动**：`.hd2-campaign-container/.hd2-mo-card` 补 `position:relative`、`.hd2-mo-bg-file` 限宽不溢出
+- 验收：**全站 1146 页 Playwright 复扫 0 横向滚动、0 断图、0 错误**；validate 0 高危/中危/低危；178,886 链接全绿
+- EXE：dist\Helldivers2WikiCN.exe（约 488MB），冒烟通过（窗口标题"绝地潜兵2 中文百科"）
+- 镜像：main **0687cab9 → 5f55570c**（已推 GitHub Pages）
+
 ## 2026-08-19 任务 D：实装 A 完整翻译发布（T-D-003 完工）
 - 背景：A 完整翻译完成（DB translated 48,536 / pending 620 / locked 901；pending 均为 template_param 不译）
 - 执行：`python sync_update.py --skip-sync --all` 完整管线 + 打包 + 推送
