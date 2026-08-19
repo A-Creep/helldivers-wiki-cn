@@ -1,5 +1,12 @@
 # 汉化进度（自动更新）
 
+## 2026-08-19 任务 D：实装 A 完整翻译发布（T-D-003 完工）
+- 背景：A 完整翻译完成（DB translated 48,536 / pending 620 / locked 901；pending 均为 template_param 不译）
+- 执行：`python sync_update.py --skip-sync --all` 完整管线 + 打包 + 推送
+- 验收：**178,874 链接全绿、1146 页 0 高危/0 中危/0 低危**；EXE 约 488MB（dist\Helldivers2WikiCN.exe）
+- 镜像：main **9747f759 → 0687cab9**（已推 GitHub Pages）
+- LeadCheck 自动修复 1 页后 18 页引导句均命中中文
+
 ## 2026-08-19 任务 D：实装 A 部分翻译发布（T-D-001 完工）
 - 背景：A 翻译驱动收尾（DB translated 26,926 / pending 22,230 / locked 901），用户指示 D 实装已入库翻译；清空 `zh_cache.jsonl` 全量重渲染 1143 页
 - 执行：`python sync_update.py --skip-sync --all` 完整管线 + 打包 + 推送
@@ -181,13 +188,13 @@
 
 ## 当前统计（2026-08-19）
 - 页面总数：3,225（其中重定向 1,282）；site_final 保留子集：1,146 页
-- 总文本块：50,057；已翻译：26,926（锁定 901）；待翻译：22,230
+- 总文本块：50,057；已翻译：48,536（锁定 901）；待翻译：620（均为 template_param）
 - site_final 页面：1,146；图片：8,169 张（missing_images.txt 记录 162 个缺失引用，随页面更新浮动）
 - 链接检查（E 图集/Media 删除后口径）：178,874 个全部正常
-- 上次发布：2026-08-19 实装 A 部分翻译（镜像 main 9747f759）；上次操作：sync_update.py --skip-sync --all
+- 上次发布：2026-08-19 实装 A 完整翻译（镜像 main 0687cab9）；上次操作：sync_update.py --skip-sync --all
 - 已完页：敌人、武器、战略配备、护甲、近战、手雷、SEAF士兵、Major Orders of 2024（954）、Major Orders of 2025（全部）
-- 进行中：Major Orders 主页面（A 翻译驱动已暂停；批次文件 game_loc/mo_main_pending.txt 从第 75 行继续）
-- 下一步顺序：Major Orders 主页面 → Galactic War → 行星战史/Battle Log → 其余叙事页
+- 进行中：无（pending 620 均为 template_param，按规范不翻译）
+- 下一步：等待原站内容更新或新派单
 
 ## 已导入的翻译文件（本会话新增）
 - translated_mo25_013.json（150）
