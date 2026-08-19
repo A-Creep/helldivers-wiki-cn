@@ -1,5 +1,16 @@
 # 汉化进度（自动更新）
 
+## 2026-08-19 任务 D：实装 A 部分翻译发布（T-D-001 完工）
+- 背景：A 翻译驱动收尾（DB translated 26,926 / pending 22,230 / locked 901），用户指示 D 实装已入库翻译；清空 `zh_cache.jsonl` 全量重渲染 1143 页
+- 执行：`python sync_update.py --skip-sync --all` 完整管线 + 打包 + 推送
+- 验收：**178,874 链接全绿、1146 页 0 高危/0 中危/0 低危**；EXE 约 488MB（dist\Helldivers2WikiCN.exe）
+- 镜像：main **be6ade2d → 9747f759**（站点已推 GitHub Pages）
+- 期间修复：
+  - `apply_zh_terms.py` 引导句命中标记补充「是…地点」形态（Hangar / Robotics_Workshop 新病句），LeadCheck 通过
+  - 补拉 9 张全量重建后缺失缩略图（A-35 / A-9 / CE-64 / PH-9 护甲与图标、Patriot Exosuit POI、Rift landscape）
+  - `strip_hd1.py` 修复：HD1 章节删除越界吞掉右侧 infobox（Arc 页 druid-infobox 丢失）→ 删除范围封顶到 page-side
+- 说明：apply_zh_terms / strip_hd1 为渲染层修复，建议 E 复核；PROGRESS 记录随后单独提交
+
 ## 2026-08-19 任务 D：工程文档补全（T-D-002）
 - 补全 README / PROGRESS / 同步与打包指南并刷新基线：site_final 1146 页、177,304 链接全绿、0 高危/0 中危/0 低危、EXE 487MB、missing_images 162 条
 - 同步更新本地与镜像仓文档副本；T-D-001 仍阻塞于 A 入库，未跑发布管线
@@ -170,10 +181,10 @@
 
 ## 当前统计（2026-08-19）
 - 页面总数：3,225（其中重定向 1,282）；site_final 保留子集：1,146 页
-- 总文本块：50,057；已翻译：19,075（锁定 901）；待翻译：30,081
+- 总文本块：50,057；已翻译：26,926（锁定 901）；待翻译：22,230
 - site_final 页面：1,146；图片：8,169 张（missing_images.txt 记录 162 个缺失引用，随页面更新浮动）
-- 链接检查（E 图集/Media 删除后口径）：177,304 个全部正常
-- 上次发布：2026-08-19 敌人分类页种族配色（镜像 main bb3c221d，PROGRESS 57ee3fa2）；上次操作：sync_update.py --skip-sync --all
+- 链接检查（E 图集/Media 删除后口径）：178,874 个全部正常
+- 上次发布：2026-08-19 实装 A 部分翻译（镜像 main 9747f759）；上次操作：sync_update.py --skip-sync --all
 - 已完页：敌人、武器、战略配备、护甲、近战、手雷、SEAF士兵、Major Orders of 2024（954）、Major Orders of 2025（全部）
 - 进行中：Major Orders 主页面（A 翻译驱动已暂停；批次文件 game_loc/mo_main_pending.txt 从第 75 行继续）
 - 下一步顺序：Major Orders 主页面 → Galactic War → 行星战史/Battle Log → 其余叙事页
