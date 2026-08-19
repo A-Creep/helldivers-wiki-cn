@@ -31,7 +31,7 @@
 
 </div>
 <div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Factions.html" title="Factions">阵营</a></div><div class="breadcrumb-item"><a href="Illuminate.html" title="Illuminate">光能者</a></div><div class="breadcrumb-item breadcrumb-item-final">传送门</div></div>
-<p><b>传送门</b> 是一个 <a href="Illuminate.html" title="Illuminate">光能者</a> 专属 <a href="Structures.html" title="Structures">建筑</a> found exclusively on <a href="Destroy_Gazer_Spire.html" title="Destroy Gazer Spire">摧毁 Gazer Spire</a> <a href="Missions.html" title="Missions">Missions</a>. These will continuously teleport new 光能者 units until the 建筑 is destroyed.
+<p>The <b>传送门</b> is an <a href="Illuminate.html" title="Illuminate">光能者</a> exclusive <a href="Structures.html" title="Structures">建筑</a> found exclusively on <a href="Destroy_Gazer_Spire.html" title="Destroy Gazer Spire">摧毁 Gazer Spire</a> <a href="Missions.html" title="Missions">Missions</a>. These will continuously teleport new 光能者 units until the 建筑 is destroyed.
 </p>
 
 
@@ -88,7 +88,7 @@
 <td>无</td>
 <td>是</td>
 <td>0%</td>
-<td>20 如果 <span class="DamageIcons icon-outline"><a href="Damage.html" title="Damage"><img class="wiki-icon" alt="Explosion" src="../images/Damage_Explosion_Icon.svg" decoding="async" loading="lazy" width="20" height="17" data-file-width="118" data-file-height="101" /></a></span>&#160;<span class="DamageIcons"><a href="Damage.html#Damage_Types" title="Damage"><span style="color: orange;"> </span></a></span>
+<td>20 if <span class="DamageIcons icon-outline"><a href="Damage.html" title="Damage"><img class="wiki-icon" alt="Explosion" src="../images/Damage_Explosion_Icon.svg" decoding="async" loading="lazy" width="20" height="17" data-file-width="118" data-file-height="101" /></a></span>&#160;<span class="DamageIcons"><a href="Damage.html#Damage_Types" title="Damage"><span style="color: orange;"> </span></a></span>
 </td></tr>
 
 
@@ -96,18 +96,18 @@
 </div>
 <p>Disclaimer: 每个带数量的高亮部位 a 数量有各自的 生命值. 未标注数量的部位共享 生命值 pools.
 </p>
-<div id="TableRef1">1) 生命值标注为 标注为 "主体" 没有各自的 individual 生命值. All 造成伤害 to these parts is 转移到敌人的 主生命值 pool.</div>
-<div id="TableRef2">2) 请参阅 护甲 values and enemy 耐久度 as defined in <a href="Damage.html#Enemy_Durability_&amp;_Durable_Damage" title="Damage">伤害</a> for more information.</div>
-<div id="TableRef3">3) 造成伤害 to a part will also be 部分或全部转移 in full to 主生命值. 若设置为 0%, 否 伤害 is transferred.</div>
-<div id="TableRef4">4) 若设置为 "是", 伤害 transferred 对主血量 is capped by the combined 生命值 and 构造 of the part.</div>
-<div id="TableRef5">5) 构造 充当 a secondary 生命池 that, 一旦主体或肢体 生命值 has been depleted, 可能会衰减. The first number is the total 构造 and the second is the 衰退速率. 若设置为 0/s 不会衰减 and the 构造 作为额外 生命值.</div>
-<div id="TableRef6">6) 爆炸抗性 means 爆炸 伤害抗性, and can 射程 from 0 to 100%. 若设置为 100%, the limb cannot take 爆炸伤害; The 爆炸伤害 will instead 目标 主体. 请参阅 <a href="Damage.html#Explosion_Damage" title="Damage">伤害</a> for more information.
-<ul><li>Note: This 机械师, known as <i>Affected By 爆炸</i> can only occur <b>once</b> per 爆炸, 无论 100% 爆炸抗性 parts hit, and the 爆炸's 护甲穿透 <b>must</b> match or exceed 主体护甲 to deal 伤害 对主血量. However, 如果相同 爆炸 has already damaged 主体, this 机械师 will <b>not</b> trigger.</li></ul>
+<div id="TableRef1">1) 生命值标注为"主体"的部位没有各自的独立生命值。对这些部位造成的所有伤害都会转移到敌人的主生命值池。</div>
+<div id="TableRef2">2) 护甲值与敌人耐久度请参阅<a href="Damage.html#Enemy_Durability_&amp;_Durable_Damage" title="Damage">伤害</a> 以获取更多信息。</div>
+<div id="TableRef3">3) 对部位造成的伤害也会部分或全部转移到主生命值。若设置为 0%，则不会转移任何伤害。</div>
+<div id="TableRef4">4) 若设置为"是"，转移到主生命值的伤害将以部位的生命值与构造之和为上限。</div>
+<div id="TableRef5">5) 构造充当次级生命池，一旦主体或肢体的生命值耗尽，可能会开始衰减。第一个数字是构造总量，第二个是衰减速率。若设置为 0/秒，则不会衰减，构造将作为额外生命值。</div>
+<div id="TableRef6">6) 爆炸抗性指爆炸伤害抗性，范围可为 0 至 100%。若设置为 100%，肢体无法承受爆炸伤害，爆炸伤害将转而攻击主体。请参阅<a href="Damage.html#Explosion_Damage" title="Damage">伤害</a>以获取更多信息。
+<ul><li>注：此机制称为\"受爆炸影响\"，每次爆炸只能触发一次，无论命中多少个 100% 爆炸抗性的部位；且爆炸的护甲穿透必须达到或超过主体护甲才能对主血量造成伤害。但如果同一次爆炸已经伤害过主体，此机制将不会触发。</li></ul>
 </div>
 <p><br />
 </p>
 <h2><span id=".E6.88.98.E6.9C.AF.E4.BF.A1.E6.81.AF"></span><span class="mw-headline" id="战术信息">战术信息</span></h2>
-<ul><li>Warp Gateways can be destroyed in two ways:
+<ul><li>传送通路可以通过两种方式摧毁：
 <ul><li>Damaging the inside of the Gateway when the 内圈 mechanism is 暴露, requiring an <b>爆炸 爆破力 of 20</b>.
 <ul><li>The center aperture of the Gateway will periodically open to spawn new 光能者 units, providing a chance for a weapon such as a 手榴弹 to be thrown inside.</li></ul></li>
 <li>Destroying the Gateway from the outside with a weapon or 战略配备 capable of a <b>爆破力 of 40</b>, or penetrating its <span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AV5_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage">Tank I</a></span> 护甲 to deplete the 建筑's 生命值.</li></ul></li></ul>
@@ -135,45 +135,45 @@
 
 <!-- 
 NewPP limit report
-Cached time: 20260819055507
+Cached time: 20260819210017
 Cache expiry: 3600
 Reduced expiry: true
 Complications: [vary‐revision‐sha1, show‐toc]
-CPU time usage: 0.237 seconds
-Real time usage: 0.414 seconds
+CPU time usage: 0.341 seconds
+Real time usage: 0.618 seconds
 Preprocessor visited node count: 1396/1000000
-Revision size: 1886/4194304 bytes
-Post‐expand include size: 58382/4194304 bytes
-Template argument size: 2160/4194304 bytes
+Revision size: 1875/4194304 bytes
+Post‐expand include size: 58350/4194304 bytes
+Template argument size: 2142/4194304 bytes
 Highest expansion depth: 13/100
 Expensive parser function count: 4/500
 Unstrip recursion depth: 0/20
 Unstrip post‐expand size: 2772/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.063/15.000 seconds
-Lua memory usage: 3256103/52428800 bytes
+Lua time usage: 0.088/15.000 seconds
+Lua memory usage: 3256099/52428800 bytes
 Number of processed Cargo queries: 15
-Time spent processing Cargo queries: 0.039 s (avg. 0.003 s)
+Time spent processing Cargo queries: 0.050 s (avg. 0.003 s)
 Number of Cargo row insertion attempts: 2
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%  352.788      1 -total
- 66.37%  234.159      1 Template:Nav_Enemy
- 65.63%  231.543      1 Template:Navbox
- 19.38%   68.360      1 Template:Infobox_Structure
-  8.12%   28.642      5 Template:Article_other
-  7.08%   24.964      1 Template:Anatomy_Table
-  6.88%   24.262      2 Template:Difficulty
-  6.09%   21.481      1 Template:Breadcrumb_Auto
-  5.48%   19.323      2 Template:Anatomy_Row
-  3.52%   12.420      1 Template:Change_History_Update
+100.00%  544.201      1 -total
+ 69.42%  377.806      1 Template:Nav_Enemy
+ 68.80%  374.430      1 Template:Navbox
+ 17.28%   94.017      1 Template:Infobox_Structure
+  7.04%   38.305      1 Template:Anatomy_Table
+  6.98%   37.996      5 Template:Article_other
+  5.68%   30.936      2 Template:Difficulty
+  5.49%   29.874      2 Template:Anatomy_Row
+  5.39%   29.324      1 Template:Breadcrumb_Auto
+  3.26%   17.719      1 Template:Change_History_Update
 -->
 </div><aside class="page-side"><div class="druid-infobox druid-container noexcerpt druid-container-enemy" id="druid-container-1"><div><div class="druid-title">Warp Gateway</div></div><div class="druid-section-container"><div class="druid-main-image"><img alt="Illuminate Warp Gateway.png" src="../images/Illuminate_Warp_Gateway.webp" decoding="async" loading="lazy" width="901" height="792" data-file-width="901" data-file-height="792" /></div></div><div class="druid-section-container"><div data-druid-section="GeneralInfo"><div class="druid-section druid-section-GeneralInfo">基本信息 信息</div></div><div class="druid-row druid-row-faction" data-druid-section-row="GeneralInfo"><div class="druid-label druid-label-faction">阵营</div><div class="druid-data druid-data-faction druid-data-nonempty">
 光能者</div></div></div><div class="druid-section-container"><div data-druid-section="StatsInfo"><div class="druid-section druid-section-StatsInfo">属性 信息</div></div><div class="druid-row druid-row-health" data-druid-section-row="StatsInfo"><div class="druid-label druid-label-health">生命值</div><div class="druid-data druid-data-health druid-data-nonempty">
 1,500</div></div><div class="druid-row druid-row-demo&#95;force" data-druid-section-row="StatsInfo"><div class="druid-label druid-label-demo&#95;force">爆破力</div><div class="druid-data druid-data-demo&#95;force druid-data-nonempty">
-20 Gateway<br /> 40 其他位置。</div></div><div class="druid-row druid-row-badr" data-druid-section-row="StatsInfo"><div class="druid-label druid-label-badr"><span style="cursor: help; text-decoration: underline; display: inline;" class="tooltip" title="Ballistic Damage Resistance. Projectile weapons that meet demo threshold but are not explosive cannot destroy said structure with BaDR.">BaDR</span></div><div class="druid-data druid-data-badr druid-data-nonempty">
-是 Gateway<br /> 无其他位置。</div></div><div class="druid-row druid-row-min&#95;difficulty" data-druid-section-row="StatsInfo"><div class="druid-label druid-label-min&#95;difficulty">最低难度</div><div class="druid-data druid-data-min&#95;difficulty druid-data-nonempty">
+20 Gateway<br /> 40 Elsewhere.</div></div><div class="druid-row druid-row-badr" data-druid-section-row="StatsInfo"><div class="druid-label druid-label-badr"><span style="cursor: help; text-decoration: underline; display: inline;" class="tooltip" title="Ballistic Damage Resistance. Projectile weapons that meet demo threshold but are not explosive cannot destroy said structure with BaDR.">BaDR</span></div><div class="druid-data druid-data-badr druid-data-nonempty">
+是 Gateway<br /> 否 Elsewhere.</div></div><div class="druid-row druid-row-min&#95;difficulty" data-druid-section-row="StatsInfo"><div class="druid-label druid-label-min&#95;difficulty">最低难度</div><div class="druid-data druid-data-min&#95;difficulty druid-data-nonempty">
 <a href="Difficulty.html" title="Difficulty"><img class="wiki-icon" alt="Hard Difficulty Icon.svg" src="../images/Hard_Difficulty_Icon.svg" decoding="async" loading="lazy" width="34" height="16" data-file-width="512" data-file-height="248" /></a> <span><a href="Difficulty.html" title="Difficulty">困难</a></span></div></div></div></div></aside></div></div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>

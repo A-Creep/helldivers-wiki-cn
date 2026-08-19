@@ -44,7 +44,7 @@
 <div class="noexcerpt" style="border: 1px solid var(--wiki-content-border-color); padding: 0; background-color: var(--wiki-content-background-color--secondary); color: var(--wiki-content-text-color); width: 50%; max-width: 250px; margin: 10px 10px 10px auto; float: right; text-align: center;">	最后更新: <b><a href="1.001.100.html" title="1.001.100">1.001.100</a></b><br /> 当前补丁: <b><a href="1.007.001.html" title="1.007.001">1.007.001</a></b>
 </div>
 <div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Factions.html" title="Factions">阵营</a></div><div class="breadcrumb-item"><a href="Terminids.html" title="Terminids">终结族</a></div><div class="breadcrumb-item breadcrumb-item-final">虫穴</div></div>
-<p><b>虫穴</b> 是一个 <span class="faction-icon icon-outline"><a href="Terminids.html" title="Terminids"><img class="wiki-icon" alt="" src="../images/Terminid_Icon.svg" decoding="async" loading="lazy" width="512" height="512" data-file-width="512" data-file-height="512" /></a>&#160;<a href="Terminids.html" title="Terminids">终结族 Horde</a></span> exclusive 建筑 found primarily in <a href="Bug_Nest.html" title="Bug Nest">虫巢</a>. These holes will continuously deploy new <a href="Terminids.html" title="Terminids">终结族</a> 单位，直到它们被摧毁。在游戏中，它们通常以黄橙色孢子标示。
+<p>The <b>虫穴</b> is a <span class="faction-icon icon-outline"><a href="Terminids.html" title="Terminids"><img class="wiki-icon" alt="" src="../images/Terminid_Icon.svg" decoding="async" loading="lazy" width="512" height="512" data-file-width="512" data-file-height="512" /></a>&#160;<a href="Terminids.html" title="Terminids">终结族 Horde</a></span> exclusive 建筑 found primarily in <a href="Bug_Nest.html" title="Bug Nest">Bug Nests</a>. These holes will continuously deploy new <a href="Terminids.html" title="Terminids">终结族</a> units until they are destroyed. They are 通常 indicated by yellow-orangish spores in-game.
 </p>
 
 
@@ -60,7 +60,7 @@
 <li><a href="Stalker_Lair.html" title="Stalker Lair">追踪虫巢穴</a> (1-2)</li>
 <li><a href="Shrieker_Nest.html" title="Shrieker Nest">尖啸虫巢穴</a> (2-3)</li></ul>
 <ul><li>终结族 Hatcheries during the <a href="Purge_Hatcheries.html" title="Purge Hatcheries">清除孵化点</a> 任务. (6+)</li></ul>
-<ul><li>most 任务 目标   (ex: 撤离 points, 地下 nursery’s)</li></ul>
+<ul><li>大多数任务目标（例如：撤离点、地下育幼室）</li></ul>
 <h2><span id=".E7.BB.93.E6.9E.84.E8.A7.A3.E6.9E.90"></span><span class="mw-headline" id="结构解析">结构解析</span></h2>
 <div style="overflow-x: scroll">
 <table class="wikitable">
@@ -91,7 +91,7 @@
 <td>无</td>
 <td>是</td>
 <td>0%</td>
-<td>20 如果 <span class="DamageIcons icon-outline"><a href="Damage.html" title="Damage"><img class="wiki-icon" alt="Explosion" src="../images/Damage_Explosion_Icon.svg" decoding="async" loading="lazy" width="20" height="17" data-file-width="118" data-file-height="101" /></a></span>&#160;<span class="DamageIcons"><a href="Damage.html#Damage_Types" title="Damage"><span style="color: orange;"> </span></a></span>
+<td>20 if <span class="DamageIcons icon-outline"><a href="Damage.html" title="Damage"><img class="wiki-icon" alt="Explosion" src="../images/Damage_Explosion_Icon.svg" decoding="async" loading="lazy" width="20" height="17" data-file-width="118" data-file-height="101" /></a></span>&#160;<span class="DamageIcons"><a href="Damage.html#Damage_Types" title="Damage"><span style="color: orange;"> </span></a></span>
 </td></tr>
 
 
@@ -116,28 +116,28 @@
 </div>
 <p>Disclaimer: 每个带数量的高亮部位 a 数量有各自的 生命值. 未标注数量的部位共享 生命值 pools.
 </p>
-<div id="TableRef1">1) 生命值标注为 标注为 "主体" 没有各自的 individual 生命值. All 造成伤害 to these parts is 转移到敌人的 主生命值 pool.</div>
-<div id="TableRef2">2) 请参阅 护甲 values and enemy 耐久度 as defined in <a href="Damage.html#Enemy_Durability_&amp;_Durable_Damage" title="Damage">伤害</a> for more information.</div>
-<div id="TableRef3">3) 造成伤害 to a part will also be 部分或全部转移 in full to 主生命值. 若设置为 0%, 否 伤害 is transferred.</div>
-<div id="TableRef4">4) 若设置为 "是", 伤害 transferred 对主血量 is capped by the combined 生命值 and 构造 of the part.</div>
-<div id="TableRef5">5) 构造 充当 a secondary 生命池 that, 一旦主体或肢体 生命值 has been depleted, 可能会衰减. The first number is the total 构造 and the second is the 衰退速率. 若设置为 0/s 不会衰减 and the 构造 作为额外 生命值.</div>
-<div id="TableRef6">6) 爆炸抗性 means 爆炸 伤害抗性, and can 射程 from 0 to 100%. 若设置为 100%, the limb cannot take 爆炸伤害; The 爆炸伤害 will instead 目标 主体. 请参阅 <a href="Damage.html#Explosion_Damage" title="Damage">伤害</a> for more information.
-<ul><li>Note: This 机械师, known as <i>Affected By 爆炸</i> can only occur <b>once</b> per 爆炸, 无论 100% 爆炸抗性 parts hit, and the 爆炸's 护甲穿透 <b>must</b> match or exceed 主体护甲 to deal 伤害 对主血量. However, 如果相同 爆炸 has already damaged 主体, this 机械师 will <b>not</b> trigger.</li></ul>
+<div id="TableRef1">1) 生命值标注为"主体"的部位没有各自的独立生命值。对这些部位造成的所有伤害都会转移到敌人的主生命值池。</div>
+<div id="TableRef2">2) 护甲值与敌人耐久度请参阅<a href="Damage.html#Enemy_Durability_&amp;_Durable_Damage" title="Damage">伤害</a> 以获取更多信息。</div>
+<div id="TableRef3">3) 对部位造成的伤害也会部分或全部转移到主生命值。若设置为 0%，则不会转移任何伤害。</div>
+<div id="TableRef4">4) 若设置为"是"，转移到主生命值的伤害将以部位的生命值与构造之和为上限。</div>
+<div id="TableRef5">5) 构造充当次级生命池，一旦主体或肢体的生命值耗尽，可能会开始衰减。第一个数字是构造总量，第二个是衰减速率。若设置为 0/秒，则不会衰减，构造将作为额外生命值。</div>
+<div id="TableRef6">6) 爆炸抗性指爆炸伤害抗性，范围可为 0 至 100%。若设置为 100%，肢体无法承受爆炸伤害，爆炸伤害将转而攻击主体。请参阅<a href="Damage.html#Explosion_Damage" title="Damage">伤害</a>以获取更多信息。
+<ul><li>注：此机制称为\"受爆炸影响\"，每次爆炸只能触发一次，无论命中多少个 100% 爆炸抗性的部位；且爆炸的护甲穿透必须达到或超过主体护甲才能对主血量造成伤害。但如果同一次爆炸已经伤害过主体，此机制将不会触发。</li></ul>
 </div>
 <p><br />
 </p>
 <h2><span id=".E6.88.98.E6.9C.AF.E4.BF.A1.E6.81.AF"></span><span class="mw-headline" id="战术信息">战术信息</span></h2>
-<ul><li>虫穴 can only be destroyed in two ways:
-<ul><li>Damaging the inside of the 虫穴:
+<ul><li>虫穴只能通过两种方式摧毁：
+<ul><li>对虫穴内部造成伤害：
 <ul><li>With a 最小 爆破力 of <b>20</b>, which requires an 爆炸伤害 类型.</li></ul></li>
-<li>Damaging the outside of the 虫穴:
+<li>对虫穴外部造成伤害：
 <ul><li>With a 爆破力 of <b>40</b> or 更大 (which does NOT have to be 爆炸).</li></ul></li></ul></li>
 <li>绝地潜兵可以使用各种武器和战略配备来摧毁虫穴：
-<ul><li>Throwing an 爆炸 类型 手榴弹 inside the 虫穴 will 摧毁 it. <a href="G-3_Smoke.html" title="G-3 Smoke">烟雾弹</a>, <a href="G-23_Stun.html" title="G-23 Stun">眩晕手榴弹</a>，以及 <a href="K-2_Throwing_Knife.html" title="K-2 Throwing Knife">飞刀</a> in particular <b>不要</b> have a high enough 爆破力 to close 虫穴.</li>
+<ul><li>向虫穴内投掷爆炸种类榴弹可将其摧毁。 <a href="G-3_Smoke.html" title="G-3 Smoke">Smoke Grenades</a>, <a href="G-23_Stun.html" title="G-23 Stun">眩晕手榴弹</a>, and <a href="K-2_Throwing_Knife.html" title="K-2 Throwing Knife">Throwing Knives</a> in particular <b>do not</b> have a high enough 爆破力 to close 虫穴.</li>
 <li>Shooting a 手榴弹 inside the 虫穴 with the <a href="GL-21_Grenade_Launcher.html" title="GL-21 Grenade Launcher">GL-21 榴弹发射器</a> or <a href="GP-31_Grenade_Pistol.html" title="GP-31 Grenade Pistol">GP-31 榴弹手枪</a> will 摧毁 it. The <a href="GL-52_De-Escalator.html" title="GL-52 De-Escalator">GL-52 De-Escalator</a> in particular does not do not have a high enough 爆破力 to close 虫穴.</li>
-<li>Shooting 爆炸 武器库 into the 虫穴 will 摧毁 it. The <a href="R-36_Eruptor.html" title="R-36 Eruptor">R-36 Eruptor</a>, <a href="AC-8_Autocannon.html" title="AC-8 Autocannon">AC-8 机炮</a>, <a href="CB-9_Exploding_Crossbow.html" title="CB-9 Exploding Crossbow">CB-9 Exploding Crossbow</a>，以及 <a href="GR-8_Recoilless_Rifle.html" title="GR-8 Recoilless Rifle">GR-8 无后坐力炮</a> are among 几个 武器 that can close 虫穴.</li>
-<li>Certain <a href="Stratagems.html" title="Stratagems">战略配备</a> 或拥有40及以上爆破力的武器，从外部摧毁虫穴，例如 <a href="Eagle_Airstrike.html" title="Eagle Airstrike">鹰式空袭</a>, <a href="Eagle_Napalm_Airstrike.html" title="Eagle Napalm Airstrike">飞鹰凝固汽油弹空袭</a>, <a href="Eagle_Smoke_Strike.html" title="Eagle Smoke Strike">飞鹰"烟雾攻击</a>, <a href="Eagle_500kg_Bomb.html" title="Eagle 500kg Bomb">飞鹰"500KG炸弹</a>, <a href="Orbital_Laser.html" title="Orbital Laser">轨道激光炮</a>, <a href="Orbital_Gas_Strike.html" title="Orbital Gas Strike">轨道武器 毒气 Strike</a>, <a href="Orbital_Precision_Strike.html" title="Orbital Precision Strike">轨道精准攻击</a>, <a href="Orbital_120mm_HE_Barrage.html" title="Orbital 120mm HE Barrage">120mm</a>, <a href="Orbital_380mm_HE_Barrage.html" title="Orbital 380mm HE Barrage">380mm</a>,  and <a href="Orbital_Walking_Barrage.html" title="Orbital Walking Barrage">游走火力网</a>, <a href="FAF-14_Spear.html" title="FAF-14 Spear">FAF-14 Spear</a>, <a href="B-100_Portable_Hellbomb.html" title="B-100 Portable Hellbomb">B-100 Portable Hellbomb</a> or the <a href="GP-20_Ultimatum.html" title="GP-20 Ultimatum">GP-20 Ultimatum</a>.</li>
-<li>绝地喷射舱 <a href="Stratagems.html" title="Stratagems">战略配备</a> like the <a href="Resupply.html" title="Resupply">重新补给</a>，或任何支援武器绝地喷射舱都可以用来关闭虫穴，前提是绝地喷射舱落在虫穴上。绝地潜兵请注意，如果这样做，他们可能无法获得绝地喷射舱本应提供的物资。</li>
+<li>Shooting 爆炸 武器库 into the 虫穴 will 摧毁 it. The <a href="R-36_Eruptor.html" title="R-36 Eruptor">R-36 Eruptor</a>, <a href="AC-8_Autocannon.html" title="AC-8 Autocannon">AC-8 机炮</a>, <a href="CB-9_Exploding_Crossbow.html" title="CB-9 Exploding Crossbow">CB-9 Exploding Crossbow</a>, and <a href="GR-8_Recoilless_Rifle.html" title="GR-8 Recoilless Rifle">GR-8 无后坐力炮</a> are among 几个 武器 that can close 虫穴.</li>
+<li>Certain <a href="Stratagems.html" title="Stratagems">战略配备</a> or 武器 with a 爆破力 of 40 or 更大 to 摧毁 the hole from the outside such as <a href="Eagle_Airstrike.html" title="Eagle Airstrike">Eagle Airstrikes</a>, <a href="Eagle_Napalm_Airstrike.html" title="Eagle Napalm Airstrike">Eagle Napalm Airstrikes</a>, <a href="Eagle_Smoke_Strike.html" title="Eagle Smoke Strike">Eagle Smoke Strikes</a>, <a href="Eagle_500kg_Bomb.html" title="Eagle 500kg Bomb">Eagle 500kg 炸弹</a>, <a href="Orbital_Laser.html" title="Orbital Laser">轨道激光炮</a>, <a href="Orbital_Gas_Strike.html" title="Orbital Gas Strike">轨道武器 毒气 Strike</a>, <a href="Orbital_Precision_Strike.html" title="Orbital Precision Strike">轨道精准攻击</a>, <a href="Orbital_120mm_HE_Barrage.html" title="Orbital 120mm HE Barrage">120mm</a>, <a href="Orbital_380mm_HE_Barrage.html" title="Orbital 380mm HE Barrage">380mm</a>,  and <a href="Orbital_Walking_Barrage.html" title="Orbital Walking Barrage">Walking Barrages</a>, <a href="FAF-14_Spear.html" title="FAF-14 Spear">FAF-14 Spear</a>, <a href="B-100_Portable_Hellbomb.html" title="B-100 Portable Hellbomb">B-100 Portable Hellbomb</a> or the <a href="GP-20_Ultimatum.html" title="GP-20 Ultimatum">GP-20 Ultimatum</a>.</li>
+<li>绝地喷射舱 <a href="Stratagems.html" title="Stratagems">战略配备</a> like the <a href="Resupply.html" title="Resupply">重新补给</a>, or any 支援武器 绝地喷射舱 can be used to close the hole, given the 绝地喷射舱 lands on the 虫穴. 绝地潜兵 are advised that they may not have access to what the 绝地喷射舱 would've supplied if they do this.</li>
 <li>绝地潜兵请注意，在其他绝地潜兵在场时部署飞鹰/轨道/防御战略配备可能会导致事故。</li></ul></li></ul>
 <h3><span id=".E4.B8.AD.E5.9E.8B.E8.99.AB.E7.A9.B4"></span><span class="mw-headline" id="中型虫穴">中型虫穴</span></h3>
 <ul><li>中型 虫穴 will 通常 spawn <a href="Brood_Commander.html" title="Brood Commander">Brood 指挥官</a>, <a href="Bile_Spewer.html" title="Bile Spewer">Bile 喷吐者</a> and <a href="Nursing_Spewer.html" title="Nursing Spewer">Nursing 喷吐者</a>. Starting on <a href="Difficulty.html" title="Difficulty"><img class="wiki-icon" alt="Impossible Difficulty Icon.svg" src="../images/Impossible_Difficulty_Icon.svg" decoding="async" loading="lazy" width="34" height="16" data-file-width="512" data-file-height="248" /></a> <span><a href="Difficulty.html" title="Difficulty">不可能</a></span>, <a href="Brood_Commander.html" title="Brood Commander">Brood 指挥官</a> are replaced by its 变体, the <a href="Alpha_Commander.html" title="Alpha Commander">阿尔法指挥官</a>.
@@ -146,7 +146,7 @@
 <ul><li>吐酸泰坦 虫穴 will 通常 spawn <a href="Bile_Titan.html" title="Bile Titan">Bile Titans</a>.
 <ul><li>If the <a href="Dragonroach.html" title="Dragonroach">Dragonroach</a> is active on the 行星, 吐酸泰坦 虫穴 will spawn <a href="Charger.html" title="Charger">Chargers</a>.</li></ul></li></ul>
 <h2><span id=".E4.BA.BA.E5.B7.A5.E8.99.AB.E7.A9.B4"></span><span class="mw-headline" id="人工虫穴">人工虫穴</span></h2>
-<p>The 人造 虫穴 变体 can only be found in the <a href="Earn_Your_Helldiver_Cape.html" title="Earn Your Helldiver Cape">教程</a>。跳入其中是不可能的。一旦检测到内部发生榴弹爆炸，它就会关闭。
+<p>The 人造 虫穴 变体 can only be found in the <a href="Earn_Your_Helldiver_Cape.html" title="Earn Your Helldiver Cape">tutorial</a>. It is 不可能 to jump into one. It will close once it detects a 手榴弹 爆炸 inside itself.
 </p>
 <ul class="gallery mw-gallery-packed">
 		<li class="gallerybox" style="width: 314.66666666667px"><div style="width: 314.66666666667px">
@@ -159,10 +159,10 @@
 		</div></li>
 </ul>
 <h2><span id=".E5.90.90.E9.85.B8.E6.B3.B0.E5.9D.A6.E8.99.AB.E7.A9.B4_2"></span><span class="mw-headline" id="吐酸泰坦虫穴_2">吐酸泰坦虫穴</span></h2>
-<p>the <a href="Bile_Titan.html" title="Bile Titan">吐酸泰坦</a> 虫穴 can be found on <a href="Difficulty.html" title="Difficulty"><img class="wiki-icon" alt="Extreme Difficulty Icon.svg" src="../images/Extreme_Difficulty_Icon.svg" decoding="async" loading="lazy" width="34" height="16" data-file-width="512" data-file-height="248" /></a> <span><a href="Difficulty.html" title="Difficulty">极难</a></span> <a href="Missions.html" title="Missions">missions</a> 及以上，在特定的重型巢穴和巨型巢穴中。它不会生成小型终结族，而是会生成吐酸泰坦。它比标准虫穴大得多，且至少需要 <a href="Demolition.html" title="Demolition">爆破</a> 力度 <b>40</b> to 摧毁.
+<p>The <a href="Bile_Titan.html" title="Bile Titan">吐酸泰坦</a> 虫穴 can be found on <a href="Difficulty.html" title="Difficulty"><img class="wiki-icon" alt="Extreme Difficulty Icon.svg" src="../images/Extreme_Difficulty_Icon.svg" decoding="async" loading="lazy" width="34" height="16" data-file-width="512" data-file-height="248" /></a> <span><a href="Difficulty.html" title="Difficulty">极难</a></span> <a href="Missions.html" title="Missions">missions</a> and above, in specific 重型 Nests and mega Nests. Instead of 生成 小型 终结族, it will spawn Bile Titans. It is much bigger than 标准 虫穴 and requires at least <a href="Demolition.html" title="Demolition">爆破</a> Force <b>40</b> to 摧毁.
 </p>
-<ul><li>Worth noting is that <a href="Hellpod.html" title="Hellpod">绝地喷射舱</a> 拥有40的拆除之势。因此，将绝地喷射舱战略配备召唤到吐酸泰坦虫穴上将会关闭它，但正如本页前面提到的，召唤下来的战略配备本身可能会变得无法使用。</li>
-<li>也可以让一只吐酸泰坦的尸体坠落到虫穴上并将其关闭。这可以通过在不惊动守卫吐酸泰坦的情况下将其击倒，或者在它从虫穴中钻出时将其消灭来实现。</li></ul>
+<ul><li>Worth noting is that <a href="Hellpod.html" title="Hellpod">Hellpods</a> have a 爆破力 of 40. Therefore, calling down a 绝地喷射舱 战略配备 onto the 吐酸泰坦 Hole will close it, though as mentioned earlier on this page, the called-down 战略配备 itself might become inaccessible.</li>
+<li>It is also possible to have a 吐酸泰坦 carcass crash down onto the hole and close it. This can be achieved by 击倒中 a guarding 吐酸泰坦 without alerting it first, or eliminating one as it 出现 from the 虫穴.</li></ul>
 <ul class="gallery mw-gallery-packed">
 		<li class="gallerybox" style="width: 234px"><div style="width: 234px">
 			<div class="thumb" style="width: 232px;"><div style="margin:0px auto;"><img alt="Close up of a Bile Titan Hole on the edge of a Mega Nest." src="../images/348px-Bile_Titan_Bug_hole.webp" decoding="async" loading="lazy" title="Close up of a Bile Titan Hole on the edge of a Mega Nest." width="232" height="200" data-file-width="659" data-file-height="569" /></div></div>
@@ -174,8 +174,8 @@
 		</div></li>
 </ul>
 <h2><span id=".E4.B8.AD.E5.9E.8B.E8.99.AB.E7.A9.B4_2"></span><span class="mw-headline" id="中型虫穴_2">中型虫穴</span></h2>
-<p>The 中型 虫穴 can be found on <a href="Difficulty.html" title="Difficulty"><img class="wiki-icon" alt="Challenging Difficulty Icon.svg" src="../images/Challenging_Difficulty_Icon.svg" decoding="async" loading="lazy" width="34" height="16" data-file-width="512" data-file-height="248" /></a> <span><a href="Difficulty.html" title="Difficulty">挑战</a></span> or above as part of <a href="Stalker_Lair.html" title="Stalker Lair">追踪虫巢穴</a>, in 重型 Nests, or <a href="Bug_Nest.html" title="Bug Nest">超巨巢穴</a>
-</p><p>The 中型 虫穴 shares the same 属性 as a 小型 虫穴.
+<p>The 中型 虫穴 can be found on <a href="Difficulty.html" title="Difficulty"><img class="wiki-icon" alt="Challenging Difficulty Icon.svg" src="../images/Challenging_Difficulty_Icon.svg" decoding="async" loading="lazy" width="34" height="16" data-file-width="512" data-file-height="248" /></a> <span><a href="Difficulty.html" title="Difficulty">挑战</a></span> or above as part of <a href="Stalker_Lair.html" title="Stalker Lair">追踪虫 Lairs</a>, in 重型 Nests, or <a href="Bug_Nest.html" title="Bug Nest">Mega Nests</a>
+</p><p>中型虫穴与小型虫穴拥有相同的数据。
 </p>
 <ul class="gallery mw-gallery-packed">
 		<li class="gallerybox" style="width: 322px"><div style="width: 322px">
@@ -212,39 +212,39 @@
 </p>
 <!-- 
 NewPP limit report
-Cached time: 20260819054515
+Cached time: 20260819205014
 Cache expiry: 3600
 Reduced expiry: true
 Complications: [vary‐revision‐sha1, show‐toc]
-CPU time usage: 0.345 seconds
-Real time usage: 0.705 seconds
+CPU time usage: 0.141 seconds
+Real time usage: 0.367 seconds
 Preprocessor visited node count: 1594/1000000
-Revision size: 5884/4194304 bytes
-Post‐expand include size: 59515/4194304 bytes
-Template argument size: 3653/4194304 bytes
+Revision size: 5869/4194304 bytes
+Post‐expand include size: 59503/4194304 bytes
+Template argument size: 3645/4194304 bytes
 Highest expansion depth: 11/100
 Expensive parser function count: 4/500
 Unstrip recursion depth: 0/20
 Unstrip post‐expand size: 3528/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.077/15.000 seconds
-Lua memory usage: 3168822/52428800 bytes
+Lua time usage: 0.034/15.000 seconds
+Lua memory usage: 3168821/52428800 bytes
 Number of processed Cargo queries: 15
-Time spent processing Cargo queries: 0.054 s (avg. 0.004 s)
+Time spent processing Cargo queries: 0.031 s (avg. 0.002 s)
 Number of Cargo row insertion attempts: 2
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%  604.103      1 -total
- 67.61%  408.454      1 Template:Nav_Enemy
- 67.10%  405.377      1 Template:Navbox
- 15.54%   93.891      1 Template:Infobox_Structure
-  6.77%   40.923      6 Template:Article_other
-  5.69%   34.364      5 Template:Difficulty
-  4.46%   26.944      1 Template:Anatomy_Table
-  4.45%   26.855      1 Template:Breadcrumb_Auto
-  3.34%   20.173      2 Template:Anatomy_Row
-  2.94%   17.790      1 Template:Last_Updated
+100.00%  316.796      1 -total
+ 59.28%  187.801      1 Template:Nav_Enemy
+ 58.31%  184.729      1 Template:Navbox
+ 20.03%   63.448      1 Template:Infobox_Structure
+  7.85%   24.877      6 Template:Article_other
+  6.97%   22.096      5 Template:Difficulty
+  6.25%   19.810      1 Template:Breadcrumb_Auto
+  4.97%   15.731      1 Template:Anatomy_Table
+  3.34%   10.566      1 Template:Stub
+  3.10%    9.814      1 Template:Last_Updated
 -->
 </div><aside class="page-side"><div class="druid-infobox druid-container noexcerpt druid-container-enemy" id="druid-container-1"><div><div class="druid-title">Bug Hole</div></div><div class="druid-section-container"><div class="druid-main-image"><img class="wiki-icon" alt="Bug Hole Icon.png" src="../images/Bug_Hole_Icon.webp" decoding="async" loading="lazy" width="1427" height="1363" data-file-width="1427" data-file-height="1363" /></div></div><div class="druid-section-container"><div data-druid-section="GeneralInfo"><div class="druid-section druid-section-GeneralInfo">基本信息 信息</div></div><div class="druid-row druid-row-faction" data-druid-section-row="GeneralInfo"><div class="druid-label druid-label-faction">阵营</div><div class="druid-data druid-data-faction druid-data-nonempty">
 终结族</div></div></div><div class="druid-section-container"><div data-druid-section="StatsInfo"><div class="druid-section druid-section-StatsInfo">属性 信息</div></div><div class="druid-row druid-row-min&#95;difficulty" data-druid-section-row="StatsInfo"><div class="druid-label druid-label-min&#95;difficulty">最低难度</div><div class="druid-data druid-data-min&#95;difficulty druid-data-nonempty">

@@ -22,7 +22,7 @@
   <div class="mw-parser-output"><div class="page-container"><div class="page-main"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#概述"><span class="tocnumber">1</span> <span class="toctext">概述</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="#平衡性调整"><span class="tocnumber">2</span> <span class="toctext">平衡性调整</span></a>
+<li class="toclevel-1 tocsection-2"><a href="#Balancing"><span class="tocnumber">2</span> <span class="toctext">Balancing</span></a>
 <ul>
 <li class="toclevel-2 tocsection-3"><a href="#常规变更"><span class="tocnumber">2.1</span> <span class="toctext">常规变更</span></a></li>
 <li class="toclevel-2 tocsection-4"><a href="#绝地潜兵"><span class="tocnumber">2.2</span> <span class="toctext">绝地潜兵</span></a></li>
@@ -43,7 +43,7 @@
 </li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-17"><a href="#修复"><span class="tocnumber">3</span> <span class="toctext">修复</span></a>
+<li class="toclevel-1 tocsection-17"><a href="#Fixes"><span class="tocnumber">3</span> <span class="toctext">Fixes</span></a>
 <ul>
 <li class="toclevel-2 tocsection-18"><a href="#已解决的最高优先级问题："><span class="tocnumber">3.1</span> <span class="toctext">已解决的最高优先级问题：</span></a></li>
 <li class="toclevel-2 tocsection-19"><a href="#崩溃修复、卡顿与软锁："><span class="tocnumber">3.2</span> <span class="toctext">崩溃修复、卡顿与软锁：</span></a></li>
@@ -79,14 +79,14 @@
 <li>战略配备修复</li></ul>
 <p><br />
 </p>
-<h1><span id=".E5.B9.B3.E8.A1.A1.E6.80.A7.E8.B0.83.E6.95.B4"></span><span class="mw-headline" id="平衡性调整">平衡性调整</span></h1>
+<h1><span class="mw-headline" id="Balancing">Balancing</span></h1>
 <h3><span id=".E5.B8.B8.E8.A7.84.E5.8F.98.E6.9B.B4"></span><span class="mw-headline" id="常规变更">常规变更</span></h3>
 <ul><li>持续时间 of the 毒气 status 效果 from spray 武器 has been从6提升至10</li>
 <li>为光能者运输舰残骸添加了计时器使其消失，以防止它们阻碍殖民地中的道路</li></ul>
 <p><br />
 </p>
 <h3><span id=".E7.BB.9D.E5.9C.B0.E6.BD.9C.E5.85.B5"></span><span class="mw-headline" id="绝地潜兵">绝地潜兵</span></h3>
-<ul><li>人道部 在其《安全搬运正确姿势原则》中新增了一项条款，现在允许绝地潜兵在搬运双手物品（如油桶和超级地球武装部队大炮弹药）时慢跑</li></ul>
+<ul><li>The Ministry of 人类 has added a clause to its Principles of 正确 Posture for Safe Lifting, now allowing 绝地潜兵 to jog while carrying two-handed items such as barrels and SEAF 大炮 发</li></ul>
 <p><br />
 </p>
 <h3><span class="mw-headline" id="FRV">FRV</span></h3>
@@ -107,15 +107,15 @@
 <p><br />
 </p>
 <h3><span id=".E6.8A.A4.E7.94.B2.E8.A2.AB.E5.8A.A8"></span><span class="mw-headline" id="护甲被动">护甲被动</span></h3>
-<ul><li>在听取玩家反馈后，我们决定不修复Siege Ready护甲被动的bug，该bug为所有弹匣式武器提供更多弹药，而不仅仅是描述中的主武器。我们最终会更新军械库描述以反映这一点，但目前我们正在评估它是否会导致任何其他不可预见的bug</li></ul>
+<ul><li>After hearing player feedback, we have decided not to 修复 a bug with the Siege Ready 护甲 被动 which gives more 弹药 to all 弹匣-based 武器, instead of just 主武器 as described. We will eventually 更新 the 军械库 描述 to reflect this but for now we’re evaluating if it's causing any other additional unforeseen bugs</li></ul>
 <p><br />
 </p>
 <h3><span id=".E8.83.8C.E5.8C.85"></span><span class="mw-headline" id="背包">背包</span></h3>
 <h3><span id="AX.2FTX-13_.22Guard_Dog.22_Dog_Breath"></span><span class="mw-headline" id="AX/TX-13_&quot;Guard_Dog&quot;_Dog_Breath">AX/TX-13 "Guard Dog" Dog Breath</span></h3>
 <p>已重做以提高其效果，并确保其保持独特性，专注于其独特的毒气榴弹机制。
 </p>
-<ul><li>现在它将只优先攻击未受毒气榴弹状态效果影响的敌人，从而节省弹药。一旦敌人受到毒气榴弹影响，无人机就会转移并攻击另一个未受影响的敌人</li>
-<li>锁定目标逻辑已重做，以防止无人机漫游过远。锁定目标的原点将从绝地潜兵的位置而非无人机自身位置开始</li>
+<ul><li>It will now preserve 弹药 by only prioritizing 敌人 unaffected by the 毒气 status 效果. Once an enemy is affected by 毒气 the drone will move on and 目标 another unaffected enemy</li>
+<li>The 索敌 logic has been reworked to prevent the drone from roaming too far. The origin of the 索敌 will be from the 绝地潜兵 position rather than the drone itself</li>
 <li>锁定目标范围已从10米增加到20米</li>
 <li>持续时间 of the 毒气 status 效果 from spray 武器 has been从6提升至10</li></ul>
 <p><br />
@@ -141,9 +141,9 @@
 <ul><li>现在会格挡近战攻击，直到因承受足够伤害而破损</li></ul>
 <p><br />
 </p>
-<h1><span id=".E4.BF.AE.E5.A4.8D"></span><span class="mw-headline" id="修复">修复</span></h1>
+<h1><span class="mw-headline" id="Fixes">Fixes</span></h1>
 <h3><span id=".E5.B7.B2.E8.A7.A3.E5.86.B3.E7.9A.84.E6.9C.80.E9.AB.98.E4.BC.98.E5.85.88.E7.BA.A7.E9.97.AE.E9.A2.98.EF.BC.9A"></span><span class="mw-headline" id="已解决的最高优先级问题：">已解决的最高优先级问题：</span></h3>
-<ul><li>你再次可以在坠落或布娃娃状态时使用表情了！它不再减少坠落伤害，但你可以在坠向死亡或重伤时自由表达自己——没有什么是一剂治疗剂解决不了的！</li>
+<ul><li>You can once again emote while falling or ragdolling! It should 否 longer reduce fall 伤害, but you’ll be able to freely express yourself as you fall to your imminent death or severe injuries - Nothing a stim can’t 修复!</li>
 <li>修复了光能者生成舰船护盾不受冲击弹伤害的问题</li>
 <li>修复了光能者生成舰船内部的碰撞间隙问题，防止在门附近投掷的手雷摧毁舰船</li>
 <li>医疗包现在会完全恢复绝地潜兵的所有兴奋剂</li>
@@ -181,13 +181,13 @@
 <li>战略配备炮塔不再以光能者特斯拉塔为目标</li>
 <li>修复了一个视觉错误，高温武器在武器轮盘菜单的进度条上会显示数字</li>
 <li>近战武器不应再将平民车辆和世界中的其他物体击飞很远距离</li>
-<li>B-1补给背包现在将再次为其他玩家提供兴奋剂。记住，绝地潜兵，分享就是关爱！</li>
+<li>B-1 补给背包 will now once again provide stims to other 玩家. Remember 绝地潜兵, sharing is caring!</li>
 <li>修复了玩家在耗尽E/AT-12反坦克炮台所有弹药后可能被困在其中的问题</li></ul>
 <p><br />
 </p>
 <h3><span class="mw-headline" id="FRV_2">FRV</span></h3>
-<ul><li>经过对FRV冲击测试中严重幸存者偏差效应的调查，所有FRV均已得到加固。轻微的停车失误将不再导致FRV发生灾难性爆炸</li>
-<li>对FRV摄像机进行了全面改进，使其看起来更酷，并防止在下坡行驶时卡入地下。绝对的电影级体验！</li>
+<ul><li>Following an 调查 into the 效果 of severe survivorship bias during FRV Impact Testing, all FRVs have been reinforced. Minor parking mishaps will 否 longer result in catastrophic FRV explosions</li>
+<li>基本信息 improvements to the FRV camera to make it look cooler and prevent it from getting stuck 地下 when driving downhill. Absolute cinema!</li>
 <li>降低了FRV被呼叫时掉落在屋顶上的几率</li>
 <li>FRV移动按键绑定现在应该接受非QWERTY键盘输入</li>
 <li>修复了某些敌人（如虫族指挥官）被FRV击中时飞出过远的问题</li></ul>
@@ -236,38 +236,38 @@
 <li>带有充能机制的武器在以超过发/分钟（每分钟弹药数）限制的速度射击时可能出现意外行为</li></ul>
 <!-- 
 NewPP limit report
-Cached time: 20260819054825
+Cached time: 20260819205306
 Cache expiry: 2592000
 Reduced expiry: false
 Complications: [vary‐revision‐sha1, show‐toc]
-CPU time usage: 0.076 seconds
-Real time usage: 0.159 seconds
+CPU time usage: 0.062 seconds
+Real time usage: 0.092 seconds
 Preprocessor visited node count: 246/1000000
-Revision size: 8911/4194304 bytes
-Post‐expand include size: 5308/4194304 bytes
-Template argument size: 75/4194304 bytes
+Revision size: 9058/4194304 bytes
+Post‐expand include size: 5296/4194304 bytes
+Template argument size: 74/4194304 bytes
 Highest expansion depth: 8/100
 Expensive parser function count: 2/500
 Unstrip recursion depth: 0/20
 Unstrip post‐expand size: 0/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.016/15.000 seconds
+Lua time usage: 0.013/15.000 seconds
 Lua memory usage: 664229/52428800 bytes
 Number of processed Cargo queries: 2
-Time spent processing Cargo queries: 0.016 s (avg. 0.008 s)
+Time spent processing Cargo queries: 0.011 s (avg. 0.005 s)
 Number of Cargo row insertion attempts: 1
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%   85.359      1 Template:Infobox_Game_Version
-100.00%   85.359      1 -total
- 69.10%   58.981      1 Template:Breadcrumb_Auto
-  4.68%    3.995      1 Template:Article_other
-  3.85%    3.283      2 Template:Update
+100.00%   59.458      1 Template:Infobox_Game_Version
+100.00%   59.458      1 -total
+ 71.72%   42.641      1 Template:Breadcrumb_Auto
+  6.50%    3.862      1 Template:Article_other
+  4.19%    2.489      2 Template:Update
 -->
 </div><aside class="page-side"><div class="druid-infobox druid-container noexcerpt" id="druid-container-1"><div><div class="druid-title">1.002.101</div></div><div class="druid-section-container"><div class="druid-main-image"><img alt="HD2 Construction Tag.png" src="../images/HD2_Construction_Tag.webp" decoding="async" loading="lazy" width="1920" height="622" data-file-width="1920" data-file-height="622" /></div></div><div class="druid-section-container"><div class="druid-row druid-row-release&#95;date" data-druid-section-row="Info"><div class="druid-label druid-label-release&#95;date">发布日期</div><div class="druid-data druid-data-release&#95;date druid-data-nonempty">
 2025-02-04</div></div><div class="druid-row druid-row-release&#95;time" data-druid-section-row="Info"><div class="druid-label druid-label-release&#95;time">Release time</div><div class="druid-data druid-data-release&#95;time druid-data-nonempty">
-UTC时间10:00</div></div><div class="druid-row druid-row-size" data-druid-section-row="Info"><div class="druid-label druid-label-size">更新 Size</div><div class="druid-data druid-data-size druid-data-nonempty">
+10:00 UTC</div></div><div class="druid-row druid-row-size" data-druid-section-row="Info"><div class="druid-label druid-label-size">更新 Size</div><div class="druid-data druid-data-size druid-data-nonempty">
 3.5 GB</div></div><div class="druid-row druid-row-versions" data-druid-section-row="Info"><div class="druid-label druid-label-versions">Versions</div><div class="druid-data druid-data-versions druid-data-nonempty">
 <a href="Game_Version.html" title="Game Version">01.002.101</a></div></div><div class="druid-row druid-row-blog" data-druid-section-row="Info"><div class="druid-label druid-label-blog">博客文章</div><div class="druid-data druid-data-blog druid-data-nonempty">
 <a rel="nofollow" class="external free" href="https://store.steampowered.com/news/app/553850/view/505067472486924551">https://store.steampowered.com/news/app/553850/view/505067472486924551</a></div></div></div><div class="druid-section-container"><div data-druid-section="Chronology"><div class="druid-section druid-section-Chronology">时间线</div></div><div class="druid-row druid-row-previous" data-druid-section-row="Chronology"><div class="druid-label druid-label-previous">上一个</div><div class="druid-data druid-data-previous druid-data-nonempty">

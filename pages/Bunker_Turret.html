@@ -30,16 +30,16 @@
 <li class="toclevel-1 tocsection-7"><a href="#变更历史"><span class="tocnumber">7</span> <span class="toctext">变更历史</span></a></li>
 </ul>
 </div><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Factions.html" title="Factions">阵营</a></div><div class="breadcrumb-item"><a href="Automatons.html" title="Automatons">机器人</a></div><div class="breadcrumb-item breadcrumb-item-final">碉堡炮台</div></div>
-<p><b>Bunker Turret</b> 是一个 <a href="Automatons.html" title="Automatons">机器人</a> weapon system present at 机器人 structures.
+<p>The <b>Bunker Turret</b> is an <a href="Automatons.html" title="Automatons">机器人</a> weapon system present at 机器人 structures.
 </p>
 
 
 <h2><span id=".E7.94.9F.E6.88.90"></span><span class="mw-headline" id="生成">生成</span></h2>
-<p>It is most commonly seen atop <a href="Destroy_Command_Bunkers.html" title="Destroy Command Bunkers">指挥碉堡</a>, but have a 生成几率 at 机器人 occupied 次要兴趣点, which start appearing at <a href="Difficulty.html" title="Difficulty"><img class="wiki-icon" alt="Suicide Difficulty Icon.svg" src="../images/Suicide_Difficulty_Icon.svg" decoding="async" loading="lazy" width="34" height="16" data-file-width="512" data-file-height="248" /></a> <span><a href="Difficulty.html" title="Difficulty">自杀任务</a></span> 难度. 
+<p>It is most commonly seen atop <a href="Destroy_Command_Bunkers.html" title="Destroy Command Bunkers">指挥 Bunkers</a>, but have a 生成几率 at 机器人 occupied Minor Place of Interests, which start appearing at <a href="Difficulty.html" title="Difficulty"><img class="wiki-icon" alt="Suicide Difficulty Icon.svg" src="../images/Suicide_Difficulty_Icon.svg" decoding="async" loading="lazy" width="34" height="16" data-file-width="512" data-file-height="248" /></a> <span><a href="Difficulty.html" title="Difficulty">自杀任务</a></span> 难度.
 </p><p>On <a href="Difficulty.html" title="Difficulty"><img class="wiki-icon" alt="Super Helldive Difficulty Icon.svg" src="../images/Super_Helldive_Difficulty_Icon.svg" decoding="async" loading="lazy" width="34" height="16" data-file-width="512" data-file-height="248" /></a> <span><a href="Difficulty.html" title="Difficulty">超级绝地潜兵难度</a></span> 难度, it can be seen defending 机器人 Fortresses.
 </p>
 <h2><span id=".E8.A1.8C.E4.B8.BA"></span><span class="mw-headline" id="行为">行为</span></h2>
-<p>The Bunker Turret slowly fires two times before 冷却 down for roughly five 秒, and has very little 警告 of when it is going to 火焰 at 绝地潜兵, besides it aiming at them.
+<p>碉堡炮台缓慢射击两次后需要冷却约五秒，除了瞄准绝地潜兵外，几乎没有何时开火的预警。
 </p>
 <h2><span id=".E7.BB.93.E6.9E.84.E8.A7.A3.E6.9E.90"></span><span class="mw-headline" id="结构解析">结构解析</span></h2>
 <div style="overflow-x: scroll">
@@ -108,13 +108,13 @@
 </div>
 <p>Disclaimer: 每个带数量的高亮部位 a 数量有各自的 生命值. 未标注数量的部位共享 生命值 pools.
 </p>
-<div id="TableRef1">1) 生命值标注为 标注为 "主体" 没有各自的 individual 生命值. All 造成伤害 to these parts is 转移到敌人的 主生命值 pool.</div>
-<div id="TableRef2">2) 请参阅 护甲 values and enemy 耐久度 as defined in <a href="Damage.html#Enemy_Durability_&amp;_Durable_Damage" title="Damage">伤害</a> for more information.</div>
-<div id="TableRef3">3) 造成伤害 to a part will also be 部分或全部转移 in full to 主生命值. 若设置为 0%, 否 伤害 is transferred.</div>
-<div id="TableRef4">4) 若设置为 "是", 伤害 transferred 对主血量 is capped by the combined 生命值 and 构造 of the part.</div>
-<div id="TableRef5">5) 构造 充当 a secondary 生命池 that, 一旦主体或肢体 生命值 has been depleted, 可能会衰减. The first number is the total 构造 and the second is the 衰退速率. 若设置为 0/s 不会衰减 and the 构造 作为额外 生命值.</div>
-<div id="TableRef6">6) 爆炸抗性 means 爆炸 伤害抗性, and can 射程 from 0 to 100%. 若设置为 100%, the limb cannot take 爆炸伤害; The 爆炸伤害 will instead 目标 主体. 请参阅 <a href="Damage.html#Explosion_Damage" title="Damage">伤害</a> for more information.
-<ul><li>Note: This 机械师, known as <i>Affected By 爆炸</i> can only occur <b>once</b> per 爆炸, 无论 100% 爆炸抗性 parts hit, and the 爆炸's 护甲穿透 <b>must</b> match or exceed 主体护甲 to deal 伤害 对主血量. However, 如果相同 爆炸 has already damaged 主体, this 机械师 will <b>not</b> trigger.</li></ul>
+<div id="TableRef1">1) 生命值标注为"主体"的部位没有各自的独立生命值。对这些部位造成的所有伤害都会转移到敌人的主生命值池。</div>
+<div id="TableRef2">2) 护甲值与敌人耐久度请参阅<a href="Damage.html#Enemy_Durability_&amp;_Durable_Damage" title="Damage">伤害</a> 以获取更多信息。</div>
+<div id="TableRef3">3) 对部位造成的伤害也会部分或全部转移到主生命值。若设置为 0%，则不会转移任何伤害。</div>
+<div id="TableRef4">4) 若设置为"是"，转移到主生命值的伤害将以部位的生命值与构造之和为上限。</div>
+<div id="TableRef5">5) 构造充当次级生命池，一旦主体或肢体的生命值耗尽，可能会开始衰减。第一个数字是构造总量，第二个是衰减速率。若设置为 0/秒，则不会衰减，构造将作为额外生命值。</div>
+<div id="TableRef6">6) 爆炸抗性指爆炸伤害抗性，范围可为 0 至 100%。若设置为 100%，肢体无法承受爆炸伤害，爆炸伤害将转而攻击主体。请参阅<a href="Damage.html#Explosion_Damage" title="Damage">伤害</a>以获取更多信息。
+<ul><li>注：此机制称为\"受爆炸影响\"，每次爆炸只能触发一次，无论命中多少个 100% 爆炸抗性的部位；且爆炸的护甲穿透必须达到或超过主体护甲才能对主血量造成伤害。但如果同一次爆炸已经伤害过主体，此机制将不会触发。</li></ul>
 </div>
 <p><br />
 </p>
@@ -135,7 +135,7 @@
 <tr>
 <th><img alt="Damage.png" src="../images/25px-Damage.png" decoding="async" loading="lazy" width="25" height="31" data-file-width="113" data-file-height="140" /> <img alt="Durable Damage.png" src="../images/25px-Durable_Damage.png" decoding="async" loading="lazy" width="25" height="31" data-file-width="113" data-file-height="140" /> 伤害
 </th>
-<td colspan="2"><span class="DamageIcons icon-outline"><a href="Damage.html" title="Damage"><img class="wiki-icon" alt="" src="../images/Damage_Ballistic_Icon.svg" decoding="async" loading="lazy" width="20" height="20" data-file-width="512" data-file-height="512" /></a></span>&#160;<span class="DamageIcons">80弹道伤害</span> <br /> <span class="DamageIcons icon-outline"><a href="Damage.html" title="Damage"><img class="wiki-icon" alt="" src="../images/Damage_Ballistic_Icon.svg" decoding="async" loading="lazy" width="20" height="20" data-file-width="512" data-file-height="512" /></a></span>&#160;<span class="DamageIcons">80耐久伤害</span>
+<td colspan="2"><span class="DamageIcons icon-outline"><a href="Damage.html" title="Damage"><img class="wiki-icon" alt="" src="../images/Damage_Ballistic_Icon.svg" decoding="async" loading="lazy" width="20" height="20" data-file-width="512" data-file-height="512" /></a></span>&#160;<span class="DamageIcons">80 弹道 伤害</span> <br /> <span class="DamageIcons icon-outline"><a href="Damage.html" title="Damage"><img class="wiki-icon" alt="" src="../images/Damage_Ballistic_Icon.svg" decoding="async" loading="lazy" width="20" height="20" data-file-width="512" data-file-height="512" /></a></span>&#160;<span class="DamageIcons">80 耐久伤害</span>
 </td></tr>
 
 <tr>
@@ -143,7 +143,7 @@
 </th>
 <th><img alt="Blast Damage.png" src="../images/25px-Blast_Damage.png" decoding="async" loading="lazy" width="25" height="28" data-file-width="140" data-file-height="159" /> 伤害
 </th>
-<td><span class="DamageIcons icon-outline"><a href="Damage.html" title="Damage"><img class="wiki-icon" alt="Explosion" src="../images/Damage_Explosion_Icon.svg" decoding="async" loading="lazy" width="20" height="17" data-file-width="118" data-file-height="101" /></a></span>&#160;<span class="DamageIcons"><a href="Damage.html#Damage_Types" title="Damage"><span style="color: orange;">65爆炸伤害 </span></a></span>
+<td><span class="DamageIcons icon-outline"><a href="Damage.html" title="Damage"><img class="wiki-icon" alt="Explosion" src="../images/Damage_Explosion_Icon.svg" decoding="async" loading="lazy" width="20" height="17" data-file-width="118" data-file-height="101" /></a></span>&#160;<span class="DamageIcons"><a href="Damage.html#Damage_Types" title="Damage"><span style="color: orange;">65 爆炸 伤害 </span></a></span>
 </td></tr>
 <tr>
 <th><img alt="Radii.png" src="../images/25px-Radii.png" decoding="async" loading="lazy" width="25" height="25" data-file-width="231" data-file-height="233" /> 内圈
@@ -173,7 +173,7 @@
 <tr>
 <th><img alt="Firerate.png" src="../images/25px-Firerate.png" decoding="async" loading="lazy" width="25" height="25" data-file-width="231" data-file-height="234" /> 射速
 </th>
-<td colspan="2">60发/分钟 / 1s <br /> (2-Round Burst) <br /> 5秒（Burst 冷却）
+<td colspan="2">60发/分钟 / 1s <br /> (2-Round Burst) <br /> 5s (Burst 冷却)
 </td></tr>
 
 
@@ -188,9 +188,9 @@
 <td colspan="2">30 (Impact + 爆炸)
 </td></tr>
 <tr>
-<th><img alt="Stagger.png" src="../images/25px-Stagger.png" decoding="async" loading="lazy" width="25" height="29" data-file-width="187" data-file-height="219" /> 硬直力度
+<th><img alt="Stagger.png" src="../images/25px-Stagger.png" decoding="async" loading="lazy" width="25" height="29" data-file-width="187" data-file-height="219" /> 踉跄值
 </th>
-<td colspan="2">40（撞击），15（爆炸） <br /> (<span class="DamageIcons icon-outline"><a href="Damage.html" title="Damage"><img class="wiki-icon" alt="Stagger" src="../images/Damage_Stagger_Icon.svg" decoding="async" loading="lazy" width="20" height="16" data-file-width="512" data-file-height="414" /></a></span>&#160;<span class="DamageIcons"><a href="Damage.html#Damage_Types" title="Damage"><span style="color: #58EAE9;">Impact 布娃娃 </span></a></span>)
+<td colspan="2">40 (Impact), 15 (爆炸) <br /> (<span class="DamageIcons icon-outline"><a href="Damage.html" title="Damage"><img class="wiki-icon" alt="Stagger" src="../images/Damage_Stagger_Icon.svg" decoding="async" loading="lazy" width="20" height="16" data-file-width="512" data-file-height="414" /></a></span>&#160;<span class="DamageIcons"><a href="Damage.html#Damage_Types" title="Damage"><span style="color: #58EAE9;">Impact 布娃娃 </span></a></span>)
 </td></tr>
 <tr>
 <th><img alt="Push Force.png" src="../images/25px-Push_Force.png" decoding="async" loading="lazy" width="25" height="29" data-file-width="189" data-file-height="220" /> 推力
@@ -203,24 +203,24 @@
 </p>
 </div>
 <h2><span id=".E6.88.98.E6.9C.AF.E4.BF.A1.E6.81.AF"></span><span class="mw-headline" id="战术信息">战术信息</span></h2>
-<ul><li>The 正面 of the Bunker Turret is covered in <span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AV4_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage">重型</a></span> 护甲, while having a <span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AV3_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage">中型</a></span> 弱点 on its back. Any <span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AP4_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage">重型</a></span> 护甲-penetrating weapon, such as the <a href="AC-8_Autocannon.html" title="AC-8 Autocannon">AC-8 机炮</a> 和 <a href="LAS-98_Laser_Cannon.html" title="LAS-98 Laser Cannon">LAS-98 激光大炮</a>, can 摧毁 them effectively.
-<ul><li>Any 反坦克 weapon can 1-shot the turret.
-<ul><li>值得注意的是， <a href="FAF-14_Spear.html" title="FAF-14 Spear">FAF-14 Spear</a> is incapable of locking onto a Bunker Turret, as they are considered a 小型 enemy.</li></ul></li>
-<li>the <a href="RS-422_Railgun.html" title="RS-422 Railgun">RS-422 磁轨炮</a> 需要80%充能射击才能摧毁。</li>
-<li>the <a href="PLAS-45_Epoch.html" title="PLAS-45 Epoch">PLAS-45 Epoch</a> requires a fully-charged shot.</li></ul></li>
-<li>Damaging 榴弹 that have <span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AV4_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage">重型</a></span> or above can 摧毁 a Bunker Turret.
-<ul><li>铝热弹 可以1-shot Bunker Turret if it sticks to it.</li>
-<li>两者 <a href="G-12_High_Explosive.html" title="G-12 High Explosive">G-12 High 爆炸</a> 和 <a href="TED-63_Dynamite.html" title="TED-63 Dynamite">TED-63 Dynamite</a> can also 1-shot Bunker Turret, but requires careful cooking of the 手榴弹.</li></ul></li>
+<ul><li>The 正面 of the Bunker Turret is covered in <span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AV4_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage">重型</a></span> 护甲, while having a <span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AV3_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage">中型</a></span> 弱点 on its back. Any <span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AP4_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage">重型</a></span> 护甲-penetrating weapon, such as the <a href="AC-8_Autocannon.html" title="AC-8 Autocannon">AC-8 机炮</a> and <a href="LAS-98_Laser_Cannon.html" title="LAS-98 Laser Cannon">LAS-98 激光大炮</a>, can 摧毁 them effectively.
+<ul><li>任何反坦克武器都能一击摧毁这座炮台。
+<ul><li>Notably, the <a href="FAF-14_Spear.html" title="FAF-14 Spear">FAF-14 Spear</a> is incapable of locking onto a Bunker Turret, as they are considered a 小型 enemy.</li></ul></li>
+<li>The <a href="RS-422_Railgun.html" title="RS-422 Railgun">RS-422 磁轨炮</a> requires an 80% charge shot to 摧毁.</li>
+<li>The <a href="PLAS-45_Epoch.html" title="PLAS-45 Epoch">PLAS-45 Epoch</a> requires a fully-charged shot.</li></ul></li>
+<li>Damaging Grenades that have <span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AV4_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage">重型</a></span> or above can 摧毁 a Bunker Turret.
+<ul><li>铝热弹 can 1-shot Bunker Turret if it sticks to it.</li>
+<li>Both <a href="G-12_High_Explosive.html" title="G-12 High Explosive">G-12 High 爆炸</a> and <a href="TED-63_Dynamite.html" title="TED-63 Dynamite">TED-63 Dynamite</a> can also 1-shot Bunker Turret, but requires careful cooking of the 手榴弹.</li></ul></li>
 <li>Completing the <a href="Compromise_Automaton_Defenses.html" title="Compromise Automaton Defenses">妥协 机器人 Defenses</a> 可选目标 disables the Bunker Turret's 能力 to 目标 绝地潜兵, making it practically harmless.</li>
 <li>Bunker 炮塔 can also be destroyed by any of the 进攻型 <a href="Stratagems.html" title="Stratagems">战略配备</a> or 阵地 战略配备.</li>
 <li>Bunker 炮塔 have a 有限 射程 of around 150m. Using long-远程 武器 such as the <a href="APW-1_Anti-Materiel_Rifle.html" title="APW-1 Anti-Materiel Rifle">APW-1 反器材步枪</a> can 摧毁 them from afar.</li>
 <li>The Turret's laser can severely 伤害 or outright kill a 绝地潜兵 depending on their <a href="Armor.html" title="Armor">护甲值</a>, and can 伤害 the M-102 Fast 侦察 载具, making this turret a high-priority 威胁.</li>
-<li>The Turret's barrel depression can unintentionally clip through its base, causing it to 有时 火焰 even lower than expected.</li>
-<li>Bunker 炮塔 can be 困难 to spot at night or during 天气 events, especially within 机器人 Fortresses.
-<ul><li>As they are considered a 小型 enemy, they appear as a 小型 dot on the radar, making them 困难 to locate during an 攻击 on an 机器人 堡垒.</li></ul></li></ul>
+<li>碉堡炮台的炮管俯角可能会意外穿模穿过其基地，导致它有时射击角度比预期更低。</li>
+<li>碉堡炮台在夜晚或天气事件中可能难以发现，尤其是在机器人要塞内。
+<ul><li>由于它们被视为小型敌人，它们在雷达上显示为一个小点，使得在攻击机器人堡垒时难以定位。</li></ul></li></ul>
 <h2><span id=".E7.90.90.E4.BA.8B"></span><span class="mw-headline" id="琐事">琐事</span></h2>
-<ul><li>The Turret has 否 官员 in-game name; it is simply referred to as "Enemy Unit", and dying to it reads "Killed by 未知". However, Arrowhead has recognized it as the "Bunker Turret" or "Bunker 阵地", as seen in <a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=Cca-KKScFKc&amp;t=1066s">01.003.00 的补丁说明视频</a>, and in <a href="1.005.000.html" title="1.005.000">1.005.000's 更新说明</a>，分别。</li>
-<li>Before the <a href="1.001.002.html" title="1.001.002">自由升级</a> 更新, Bunker 炮塔 at <a href="Minor_Places_of_Interest.html" title="Minor Places of Interest">次要兴趣点</a> did not 功能, but could still be destroyed.</li></ul>
+<ul><li>The Turret has 否 官员 in-game name; it is simply referred to as "Enemy Unit", and dying to it reads "Killed by 未知". However, Arrowhead has recognized it as the "Bunker Turret" or "Bunker 阵地", as seen in <a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=Cca-KKScFKc&amp;t=1066s">01.003.00's 更新日志 video</a>, and in <a href="1.005.000.html" title="1.005.000">1.005.000's 更新日志</a>, respectively.</li>
+<li>Before the <a href="1.001.002.html" title="1.001.002">Escalation of Freedom</a> 更新, Bunker 炮塔 at <a href="Minor_Places_of_Interest.html" title="Minor Places of Interest">Minor Place of Interests</a> did not 功能, but could still be destroyed.</li></ul>
 <h2><span id=".E5.8F.98.E6.9B.B4.E5.8E.86.E5.8F.B2"></span><span class="mw-headline" id="变更历史">变更历史</span></h2>
 <div style="display:flex; border: 1px solid; padding: 1px; border-radius: 5px; text-align:center; font-weight:bold;">
 <div style="flex: 0 0 119px; text-align: center; font-weight: bold;">补丁</div>
@@ -249,7 +249,7 @@
 <div style="border-left:1px solid; padding:4px 8px; min-height: 55px;">
 <div style="display: table; min-height: 55px;">
 <div style="display: table-cell; vertical-align: middle;"> 
-<p>Change
+<p>变化
 </p>
 <ul><li>Added a <span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AV3_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage">中型</a></span> 有护甲 弱点 to the vents on the backside of the Bunker Turret.</li></ul>
 </div>
@@ -266,7 +266,7 @@
 <div style="display: table-cell; vertical-align: middle;"> 
 <p>未记录变更
 </p>
-<ul><li>已移除 ragdoll from 投射物 explosions.</li></ul>
+<ul><li>移除了投射物爆炸产生的布娃娃效果。</li></ul>
 </div>
 </div>
 </div>
@@ -279,7 +279,7 @@
 <div style="border-left:1px solid; padding:4px 8px; min-height: 55px;">
 <div style="display: table; min-height: 55px;">
 <div style="display: table-cell; vertical-align: middle;"> 
-<p>Change
+<p>变化
 </p>
 <ul><li>散布从25提升至50</li></ul>
 </div>
@@ -296,7 +296,7 @@
 <div style="display: table-cell; vertical-align: middle;"> 
 <p>未记录修复
 </p>
-<ul><li>The Bunker Turret located at Minor Place of Interest now properly 功能 and 火焰 at 绝地潜兵.</li></ul>
+<ul><li>位于小型兴趣点的碉堡炮台现在能正常运作并向绝地潜兵开火了。</li></ul>
 </div>
 </div>
 </div>
@@ -305,39 +305,39 @@
 
 <!-- 
 NewPP limit report
-Cached time: 20260819054754
+Cached time: 20260819205250
 Cache expiry: 3600
 Reduced expiry: true
 Complications: [vary‐revision‐sha1, show‐toc]
-CPU time usage: 0.165 seconds
-Real time usage: 0.404 seconds
+CPU time usage: 0.343 seconds
+Real time usage: 0.545 seconds
 Preprocessor visited node count: 2348/1000000
-Revision size: 5763/4194304 bytes
-Post‐expand include size: 75689/4194304 bytes
-Template argument size: 5884/4194304 bytes
+Revision size: 5655/4194304 bytes
+Post‐expand include size: 75810/4194304 bytes
+Template argument size: 5901/4194304 bytes
 Highest expansion depth: 12/100
 Expensive parser function count: 8/500
 Unstrip recursion depth: 0/20
 Unstrip post‐expand size: 3508/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.039/15.000 seconds
+Lua time usage: 0.082/15.000 seconds
 Lua memory usage: 2964292/52428800 bytes
 Number of processed Cargo queries: 15
-Time spent processing Cargo queries: 0.031 s (avg. 0.002 s)
+Time spent processing Cargo queries: 0.033 s (avg. 0.002 s)
 Number of Cargo row insertion attempts: 2
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%  319.021      1 -total
- 58.81%  187.612      1 Template:Enemy2List
- 56.84%  181.326      1 Template:Navbox
- 20.63%   65.828      1 Template:Infobox_Structure
-  9.78%   31.193      5 Template:Change_History_Update
-  8.28%   26.404      5 Template:Article_other
-  7.03%   22.417      1 Template:Anatomy_Table
-  6.28%   20.046      1 Template:Breadcrumb_Auto
-  5.61%   17.902      3 Template:Difficulty
-  5.29%   16.890      2 Template:Anatomy_Row
+100.00%  409.199      1 -total
+ 55.20%  225.874      1 Template:Enemy2List
+ 54.08%  221.303      1 Template:Navbox
+ 20.39%   83.447      1 Template:Infobox_Structure
+ 11.54%   47.226      5 Template:Change_History_Update
+  8.94%   36.571      5 Template:Article_other
+  8.86%   36.270      1 Template:Anatomy_Table
+  7.11%   29.108      2 Template:Anatomy_Row
+  6.35%   25.966      3 Template:Difficulty
+  5.35%   21.907      1 Template:Breadcrumb_Auto
 -->
 </div><aside class="page-side"><div class="druid-infobox druid-container noexcerpt Special druid-container-enemy" id="druid-container-1"><div><div class="druid-title">Bunker Turret</div></div><div class="druid-section-container"><div class="druid-main-image"><img class="wiki-icon" alt="Bunker Turret Enemy Icon.png" src="../images/Bunker_Turret_Enemy_Icon.webp" decoding="async" loading="lazy" width="2048" height="2048" data-file-width="2048" data-file-height="2048" /></div></div><div class="druid-section-container"><div data-druid-section="GeneralInfo"><div class="druid-section druid-section-GeneralInfo">基本信息 信息</div></div><div class="druid-row druid-row-faction" data-druid-section-row="GeneralInfo"><div class="druid-label druid-label-faction">阵营</div><div class="druid-data druid-data-faction druid-data-nonempty">
 机器人</div></div><div class="druid-row druid-row-class" data-druid-section-row="GeneralInfo"><div class="druid-label druid-label-class">级别</div><div class="druid-data druid-data-class druid-data-nonempty">

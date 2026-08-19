@@ -20,7 +20,7 @@
   <button class="back-btn" type="button" onclick="history.back()">← 返回</button>
   <h1 class="page-title">爆破</h1>
   <div class="mw-parser-output"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Game_Mechanics.html" title="Game Mechanics">机制</a></div><div class="breadcrumb-item"><a href="Damage.html" title="Damage">伤害</a></div><div class="breadcrumb-item breadcrumb-item-final">爆破</div></div>
-<p>分离 from 伤害, the <b>爆破之势</b> of an 攻击 determines if said 攻击 can 摧毁 a 建筑.
+<p>分离 from 伤害, the <b>爆破力</b> of an 攻击 determines if said 攻击 can 摧毁 a 建筑.
 </p>
 <div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
@@ -35,29 +35,29 @@
 </div>
 
 <h2><span id=".E7.88.86.E7.A0.B4.E5.8A.9B.E4.B8.8E.E7.BB.93.E6.9E.84"></span><span class="mw-headline" id="爆破力与结构">爆破力与结构</span></h2>
-<p>All destructible structures in- game have a 爆破 Threshold between 10 and 60.
-</p><p>In order to 摧毁 a 建筑, the user needs to be using a weapon/战略配备 that has enough 爆破力. Explosions have 爆破力 fall-off in the 外圈半径. 护甲穿透 is irrelevant to this check, as is 伤害, and whether or not the 攻击 is 爆炸. When the threshold is met, the 建筑 will be destroyed. 
-</p><p>The exceptions to this are enemy spawners; <a href="Bug_Hole.html" title="Bug Hole">虫洞</a>, <a href="Automaton_Fabricator.html" title="Automaton Fabricator">机器人构筑者</a>, <a href="Bulk_Fabricator.html" title="Bulk Fabricator">巨型构筑者</a> 和 <a href="Grounded_Warp_Ship.html" title="Grounded Warp Ship">停靠的跃迁舰</a>, which 要求 a <b>最小</b> 爆破力 of <b>20</b> and the <i>爆炸</i> property to 摧毁 via their open hole, 通风口 and door; as they have <b>B</b>allistic <b>D</b>emolition <b>R</b>esistance, or BaDR. 弹道 爆破 抗性 means that the 建筑(s) resists 爆破力 from non-爆炸 projectiles such as bullets or 电 arcs. For 示例, an <a href="E_MG-101_HMG_Emplacement.html" title="E/MG-101 HMG Emplacement">E/MG-101 重机枪部署支架</a> which has a 爆破力 of 20, but is not 爆炸. Therefore, it will not 摧毁 the 建筑.
-</p><p>Note: Certain structures such as <a href="Spore_Spewer.html" title="Spore Spewer">孢子喷涌虫</a> 和 <a href="Shrieker_Nest.html" title="Shrieker Nest">尖啸虫巢穴</a>, are not labeled as structures that 要求 爆破力 to 摧毁. These entities are considered non-moving enemy units with low 护甲 Value, high HP, and 耐久度. The only exceptions to this are 机器人 Fabricators, Bulk Fabricators and Grounded Warp Ships, which use both 生命值, 护甲, and 爆破力 systems.
+<p>游戏内所有可破坏结构的爆破阈值都在 10 到 60 之间。
+</p><p>In order to 摧毁 a 建筑, the user needs to be using a weapon/战略配备 that has enough 爆破力. Explosions have 爆破力 fall-off in the 外圈半径. 护甲穿透 is irrelevant to this check, as is 伤害, and whether or not the 攻击 is 爆炸. When the threshold is met, the 建筑 will be destroyed.
+</p><p>The exceptions to this are enemy spawners; <a href="Bug_Hole.html" title="Bug Hole">虫穴</a>, <a href="Automaton_Fabricator.html" title="Automaton Fabricator">机器人 Fabricators</a>, <a href="Bulk_Fabricator.html" title="Bulk Fabricator">Bulk Fabricators</a> and <a href="Grounded_Warp_Ship.html" title="Grounded Warp Ship">Grounded Warp Ships</a>, which 要求 a <b>最小</b> 爆破力 of <b>20</b> and the <i>爆炸</i> property to 摧毁 via their open hole, 通风口 and door; as they have <b>B</b>allistic <b>D</b>emolition <b>R</b>esistance, or BaDR. 弹道 爆破 抗性 means that the 建筑(s) resists 爆破力 from non-爆炸 projectiles such as bullets or 电 arcs. For 示例, an <a href="E_MG-101_HMG_Emplacement.html" title="E/MG-101 HMG Emplacement">E/MG-101 重机枪部署支架</a> which has a 爆破力 of 20, but is not 爆炸. Therefore, it will not 摧毁 the 建筑.
+</p><p>Note: Certain structures such as <a href="Spore_Spewer.html" title="Spore Spewer">Spore 喷吐者</a> and <a href="Shrieker_Nest.html" title="Shrieker Nest">尖啸虫 Nests</a>, are not labeled as structures that 要求 爆破力 to 摧毁. These entities are considered non-moving enemy units with low 护甲 Value, high HP, and 耐久度. The only exceptions to this are 机器人 Fabricators, Bulk Fabricators and Grounded Warp Ships, which use both 生命值, 护甲, and 爆破力 systems.
 </p>
 <h3><span id=".E7.88.86.E7.A0.B4.E9.83.A8.E9.98.9F.E6.9D.A5.E6.BA.90"></span><span class="mw-headline" id="爆破部队来源">爆破部队来源</span></h3>
 <p>A variety of 武器 and other gear used by 绝地潜兵 are capable of destroying structures. The following tables list all sources of at least <b>20</b> 爆破力 available to 玩家, along with their 爆破力 values and whether they are considered 爆炸.
 </p>
 <table class="wikitable sortable mw-collapsible mw-collapsed">
-<caption>主要和次要武器
+<caption>Primary and 副武器
 </caption>
 <tbody><tr>
-<td><b>武器</b>
+<td><b>Weapon</b>
 </td>
 <td><b>攻击</b>
 </td>
-<td><b>拆除力</b>
+<td><b>爆破力</b>
 </td>
-<td><b>炸弹？</b>
+<td><b>爆炸</b>
 </td></tr>
 <tr>
 <td rowspan="2"><a href="AR_GL-21_One-Two.html" title="AR/GL-21 One-Two">AR/GL-21 One-Two</a></td>
-<td>投射（40mm）</td>
+<td>投射物 (40mm)</td>
 <td>30</td>
 <td>否
 </td></tr>
@@ -136,16 +136,16 @@
 <td>是
 </td></tr></tbody></table>
 <table class="wikitable sortable mw-collapsible mw-collapsed">
-<caption>投掷物
+<caption>Throwables
 </caption>
 <tbody><tr>
-<td><b>武器</b>
+<td><b>Weapon</b>
 </td>
 <td><b>攻击</b>
 </td>
-<td><b>拆除力</b>
+<td><b>爆破力</b>
 </td>
-<td><b>炸弹？</b>
+<td><b>爆炸</b>
 </td></tr>
 <tr>
 <td><a href="G-4_Gas.html" title="G-4 Gas">G-4 毒气</a></td>
@@ -166,12 +166,12 @@
 <td>是
 </td></tr>
 <tr>
-<td>集束冲击弹</td>
+<td>Cluster Impact</td>
 <td>30</td>
 <td>否
 </td></tr>
 <tr>
-<td>集束爆炸</td>
+<td>Cluster 爆炸</td>
 <td>20</td>
 <td>是
 </td></tr>
@@ -201,7 +201,7 @@
 </td></tr>
 <tr>
 <td><a href="G-31_Arc.html" title="G-31 Arc">G-31 弧度</a></td>
-<td>电弧</td>
+<td>弧度</td>
 <td>20</td>
 <td>否
 </td></tr>
@@ -260,18 +260,18 @@
 <caption>支援武器
 </caption>
 <tbody><tr>
-<td><b>武器</b>
+<td><b>Weapon</b>
 </td>
 <td><b>攻击</b>
 </td>
-<td><b>拆除力</b>
+<td><b>爆破力</b>
 </td>
-<td><b>炸弹？</b>
+<td><b>爆炸</b>
 </td></tr>
 <tr>
 <td><a href="40-K_Meltagun.html" title="40-K Meltagun">40-K Meltagun</a>
 </td>
-<td>光束
+<td>Beam
 </td>
 <td>30
 </td>
@@ -280,7 +280,7 @@
 <tr>
 <td rowspan="4"><a href="AC-8_Autocannon.html" title="AC-8 Autocannon">AC-8 机炮</a>
 </td>
-<td>APHET 冲击弹
+<td>APHET Impact
 </td>
 <td>30
 </td>
@@ -294,7 +294,7 @@
 <td>是
 </td></tr>
 <tr>
-<td>Flak 冲击弹
+<td>Flak Impact
 </td>
 <td>20
 </td>
@@ -316,7 +316,7 @@
 <tr>
 <td><a href="ARC-3_Arc_Thrower.html" title="ARC-3 Arc Thrower">弧度-3 电弧发射器</a>
 </td>
-<td>电弧
+<td>弧度
 </td>
 <td>20
 </td>
@@ -334,14 +334,14 @@
 <tr>
 <td rowspan="2"><a href="CQC-9_Defoliation_Tool.html" title="CQC-9 Defoliation Tool">CQC-9 Defoliation Tool</a>
 </td>
-<td>1s 接触
+<td>1s 联络
 </td>
 <td>20
 </td>
 <td>否
 </td></tr>
 <tr>
-<td>2s 接触
+<td>2s 联络
 </td>
 <td>30
 </td>
@@ -349,7 +349,7 @@
 </td></tr>
 <tr>
 <td rowspan="2"><a href="CQC-20_Breaching_Hammer.html" title="CQC-20 Breaching Hammer">CQC-20 Breaching Hammer</a></td>
-<td>影响</td>
+<td>Impact</td>
 <td>30</td>
 <td>否
 </td></tr>
@@ -397,14 +397,14 @@
 <td>是
 </td></tr>
 <tr>
-<td>集束冲击弹
+<td>Cluster Impact
 </td>
 <td>30
 </td>
 <td>否
 </td></tr>
 <tr>
-<td>集束爆炸
+<td>Cluster 爆炸
 </td>
 <td>30
 </td>
@@ -442,14 +442,14 @@
 </td></tr>
 <tr>
 <td><a href="GL-52_De-Escalator.html" title="GL-52 De-Escalator">GL-52 De-Escalator</a></td>
-<td>电弧</td>
+<td>弧度</td>
 <td>20</td>
 <td>否
 </td></tr>
 <tr>
 <td rowspan="4"><a href="GR-8_Recoilless_Rifle.html" title="GR-8 Recoilless Rifle">GR-8 无后坐力炮</a>
 </td>
-<td>HEAT 冲击弹
+<td>HEAT Impact
 </td>
 <td>30
 </td>
@@ -463,7 +463,7 @@
 <td>是
 </td></tr>
 <tr>
-<td>HE 冲击弹
+<td>HE Impact
 </td>
 <td>30
 </td>
@@ -479,7 +479,7 @@
 <tr>
 <td><a href="LAS-98_Laser_Cannon.html" title="LAS-98 Laser Cannon">LAS-98 激光大炮</a>
 </td>
-<td>光束
+<td>Beam
 </td>
 <td>20
 </td>
@@ -536,14 +536,14 @@
 <tr>
 <td rowspan="2"><a href="PLAS-45_Epoch.html" title="PLAS-45 Epoch">PLAS-45 Epoch</a>
 </td>
-<td>充能爆炸
+<td>Charged 爆炸
 </td>
 <td>30
 </td>
 <td>是
 </td></tr>
 <tr>
-<td>破坏爆炸
+<td>Destruct 爆炸
 </td>
 <td>30
 </td>
@@ -552,28 +552,28 @@
 <tr>
 <td rowspan="4"><a href="RL-77_Airburst_Rocket_Launcher.html" title="RL-77 Airburst Rocket Launcher">RL-77 空爆火箭弹发射器</a>
 </td>
-<td>火箭冲击弹
+<td>Rocket Impact
 </td>
 <td>30
 </td>
 <td>否
 </td></tr>
 <tr>
-<td>火箭爆炸
+<td>Rocket 爆炸
 </td>
 <td>25
 </td>
 <td>是
 </td></tr>
 <tr>
-<td>集束冲击弹
+<td>Cluster Impact
 </td>
 <td>25
 </td>
 <td>否
 </td></tr>
 <tr>
-<td>集束爆炸
+<td>Cluster 爆炸
 </td>
 <td>20
 </td>
@@ -582,7 +582,7 @@
 <tr>
 <td><a href="RS-422_Railgun.html" title="RS-422 Railgun">RS-422 磁轨炮</a>
 </td>
-<td>破坏爆炸
+<td>Destruct 爆炸
 </td>
 <td>20
 </td>
@@ -607,37 +607,37 @@
 <tr>
 <td rowspan="3"><a href="StA-X3_W.A.S.P._Launcher.html" title="StA-X3 W.A.S.P. Launcher">StA-X3 W.A.S.P. 发射器</a>
 </td>
-<td>火箭冲击弹
+<td>Rocket Impact
 </td>
 <td>30
 </td>
 <td>否
 </td></tr>
 <tr>
-<td>火箭爆炸
+<td>Rocket 爆炸
 </td>
 <td>30
 </td>
 <td>是
 </td></tr>
 <tr>
-<td>火炮爆炸
+<td>大炮 爆炸
 </td>
 <td>30
 </td>
 <td>是
 </td></tr></tbody></table>
 <table class="wikitable sortable mw-collapsible mw-collapsed">
-<caption>轨道与飞鹰打击
+<caption>轨道武器 and Eagle Strikes
 </caption>
 <tbody><tr>
-<td><b>武器</b>
+<td><b>Weapon</b>
 </td>
 <td><b>攻击</b>
 </td>
-<td><b>拆除力</b>
+<td><b>爆破力</b>
 </td>
-<td><b>炸弹？</b>
+<td><b>爆炸</b>
 </td></tr>
 <tr>
 <td rowspan="2"><a href="Orbital_Gatling_Barrage.html" title="Orbital Gatling Barrage">轨道加特林火力网</a>
@@ -672,7 +672,7 @@
 <td>是
 </td></tr>
 <tr>
-<td>重型弹片爆炸
+<td>重型 Shrapnel 爆炸
 </td>
 <td>30
 </td>
@@ -729,7 +729,7 @@
 <tr>
 <td><a href="Orbital_Laser.html" title="Orbital Laser">轨道激光炮</a>
 </td>
-<td>光束
+<td>Beam
 </td>
 <td>50
 </td>
@@ -873,7 +873,7 @@
 <td>是
 </td></tr>
 <tr>
-<td>集束爆炸
+<td>Cluster 爆炸
 </td>
 <td>30
 </td>
@@ -937,16 +937,16 @@
 <td>是
 </td></tr></tbody></table>
 <table class="wikitable sortable mw-collapsible mw-collapsed">
-<caption>其他战略配备
+<caption>Other 战略配备
 </caption>
 <tbody><tr>
-<td><b>武器</b>
+<td><b>Weapon</b>
 </td>
 <td><b>攻击</b>
 </td>
-<td><b>拆除力</b>
+<td><b>爆破力</b>
 </td>
-<td><b>炸弹？</b>
+<td><b>爆炸</b>
 </td></tr>
 <tr>
 <td><a href="E_MG-101_HMG_Emplacement.html" title="E/MG-101 HMG Emplacement">E/MG-101 重机枪部署支架</a>
@@ -976,7 +976,7 @@
 <tr>
 <td><a href="A_ARC-3_Tesla_Tower.html" title="A/ARC-3 Tesla Tower">A/弧度-3 特斯拉塔</a>
 </td>
-<td>电弧
+<td>弧度
 </td>
 <td>20
 </td>
@@ -1080,23 +1080,23 @@
 <tr>
 <td><a href="A_FLAM-40_Flame_Sentry.html" title="A/FLAM-40 Flame Sentry">A/FLAM-40 火焰喷射哨戒炮</a>
 </td>
-<td>毁灭爆炸
+<td>摧毁 爆炸
 </td>
 <td>20
 </td>
 <td>是
 </td></tr>
 <tr>
-<td rowspan="2">所有 外骨骼机甲
+<td rowspan="2">All 外骨骼机甲
 </td>
-<td>践踏
+<td>Stomp
 </td>
 <td>30
 </td>
 <td>否
 </td></tr>
 <tr>
-<td>毁灭爆炸
+<td>摧毁 爆炸
 </td>
 <td>30
 </td>
@@ -1105,14 +1105,14 @@
 <tr>
 <td rowspan="2"><a href="EXO-45_Patriot_Exosuit.html" title="EXO-45 Patriot Exosuit">EXO-45 爱国者 外骨骼机甲</a>
 </td>
-<td>火箭投射
+<td>Rocket 投射物
 </td>
 <td>30
 </td>
 <td>否
 </td></tr>
 <tr>
-<td>火箭爆炸
+<td>Rocket 爆炸
 </td>
 <td>30
 </td>
@@ -1121,7 +1121,7 @@
 <tr>
 <td rowspan="2"><a href="EXO-49_Emancipator_Exosuit.html" title="EXO-49 Emancipator Exosuit">EXO-49 Emancipator 外骨骼机甲</a>
 </td>
-<td>APHE 投射
+<td>APHE 投射物
 </td>
 <td>30
 </td>
@@ -1137,14 +1137,14 @@
 <tr>
 <td rowspan="2"><a href="EXO-51_Lumberer_Exosuit.html" title="EXO-51 Lumberer Exosuit">EXO-51 Lumberer 外骨骼机甲</a>
 </td>
-<td>加农炮投射
+<td>Cannon 投射物
 </td>
 <td>30
 </td>
 <td>否
 </td></tr>
 <tr>
-<td>加农炮爆炸
+<td>Cannon 爆炸
 </td>
 <td>30
 </td>
@@ -1153,14 +1153,14 @@
 <tr>
 <td rowspan="2"><a href="EXO-55_Breakthrough_Exosuit.html" title="EXO-55 Breakthrough Exosuit">EXO-55 Breakthrough 外骨骼机甲</a>
 </td>
-<td>盾击
+<td>Shield Bash
 </td>
 <td>30
 </td>
 <td>否
 </td></tr>
 <tr>
-<td>霰弹枪投射
+<td>Scattergun 投射物
 </td>
 <td>20
 </td>
@@ -1169,14 +1169,14 @@
 <tr>
 <td rowspan="2"><a href="TD-220_Bastion_MK_XVI.html" title="TD-220 Bastion MK XVI">TD-220 Bastion MK XVI</a>
 </td>
-<td>加农炮投射
+<td>Cannon 投射物
 </td>
 <td>40
 </td>
 <td>否
 </td></tr>
 <tr>
-<td>加农炮爆炸
+<td>Cannon 爆炸
 </td>
 <td>40
 </td>
@@ -1192,16 +1192,16 @@
 <td>是
 </td></tr></tbody></table>
 <table class="wikitable sortable mw-collapsible mw-collapsed">
-<caption>其他
+<caption>Other
 </caption>
 <tbody><tr>
-<td><b>武器</b>
+<td><b>Weapon</b>
 </td>
 <td><b>攻击</b>
 </td>
-<td><b>拆除力</b>
+<td><b>爆破力</b>
 </td>
-<td><b>炸弹？</b>
+<td><b>爆炸</b>
 </td></tr>
 <tr>
 <td><a href="NUX-223_Hellbomb.html" title="NUX-223 Hellbomb">NUX-223 Hellbomb</a>
@@ -1215,7 +1215,7 @@
 <tr>
 <td><a href="Hellpod.html" title="Hellpod">绝地喷射舱</a>
 </td>
-<td>影响
+<td>Impact
 </td>
 <td>40
 </td>
@@ -1231,35 +1231,35 @@
 <td>否
 </td></tr>
 <tr>
-<td>爆炸（炸弹）
+<td>爆炸 (爆炸)
 </td>
 <td>50
 </td>
 <td>是
 </td></tr>
 <tr>
-<td>爆炸（高爆炸药）
+<td>爆炸 (High-Yield 爆炸)
 </td>
 <td>50
 </td>
 <td>是
 </td></tr>
 <tr>
-<td>爆炸（迷你核弹）
+<td>爆炸 (Mini-Nuke)
 </td>
 <td>60
 </td>
 <td>是
 </td></tr>
 <tr>
-<td>爆炸（静电场）
+<td>爆炸 (Static Field)
 </td>
 <td>30
 </td>
 <td>是
 </td></tr>
 <tr>
-<td>爆炸（凝固汽油弹）
+<td>爆炸 (Napalm)
 </td>
 <td>30
 </td>
@@ -1282,7 +1282,7 @@
 <td>是
 </td></tr>
 <tr>
-<td rowspan="2"><a href="Take_Down_Overship.html" title="Take Down Overship">行星防御加农炮</a>
+<td rowspan="2"><a href="Take_Down_Overship.html" title="Take Down Overship">行星 防御 Cannon</a>
 </td>
 <td>投射物
 </td>
@@ -1319,44 +1319,44 @@
 <th>阵营</th>
 <th>建筑</th>
 <th>BaDR</th>
-<th>拆除力
+<th>爆破力
 </th></tr>
 <tr>
-<th rowspan="3">无属性
+<th rowspan="3">Neutral
 </th>
-<td><a href="Minor_Places_of_Interest.html#Cargo_Containers" title="Minor Places of Interest">货物集装箱</a></td>
+<td><a href="Minor_Places_of_Interest.html#Cargo_Containers" title="Minor Places of Interest">Cargo 容器</a></td>
 <td>否</td>
 <td>20
 </td></tr>
 <tr>
-<td><a href="Missions.html#Terminate_Illegal_Broadcast_Tower" title="Missions">非法广播塔</a></td>
+<td><a href="Missions.html#Terminate_Illegal_Broadcast_Tower" title="Missions">非法 广播 Tower</a></td>
 <td>否</td>
 <td>30
 </td></tr>
 <tr>
-<td><a href="Destroy_Rogue_Research_Station.html" title="Destroy Rogue Research Station">Rogue 研究站</a></td>
+<td><a href="Destroy_Rogue_Research_Station.html" title="Destroy Rogue Research Station">Rogue 研究 车站</a></td>
 <td>否</td>
 <td>50
 </td></tr>
 <tr>
 <th rowspan="4"><span class="faction-icon icon-outline"><img class="wiki-icon" alt="" src="../images/Super_Earth_Icon.svg" decoding="async" loading="lazy" width="1024" height="1024" data-file-width="1024" data-file-height="1024" />&#160;超级地球 联邦</span>
 </th>
-<td><a href="Colonies.html" title="Colonies">殖民地</a> 墙</td>
+<td><a href="Colonies.html" title="Colonies">Colony</a> Wall</td>
 <td>否</td>
 <td>40
 </td></tr>
 <tr>
-<td><a href="Evacuate_High-Value_Assets.html#Defense_Gate" title="Evacuate High-Value Assets">防御大门</a></td>
+<td><a href="Evacuate_High-Value_Assets.html#Defense_Gate" title="Evacuate High-Value Assets">防御 Gate</a></td>
 <td>否</td>
 <td>40
 </td></tr>
 <tr>
-<td><a href="Evacuate_High-Value_Assets.html#Generator" title="Evacuate High-Value Assets">防御发电机</a></td>
+<td><a href="Evacuate_High-Value_Assets.html#Generator" title="Evacuate High-Value Assets">防御 发电机</a></td>
 <td>否</td>
 <td>40
 </td></tr>
 <tr>
-<td>特大城市 建筑
+<td>Megacity Structures
 </td>
 <td>否
 </td>
@@ -1365,29 +1365,29 @@
 <tr>
 <th rowspan="6"><span class="faction-icon icon-outline"><a href="Terminids.html" title="Terminids"><img class="wiki-icon" alt="" src="../images/Terminid_Icon.svg" decoding="async" loading="lazy" width="512" height="512" data-file-width="512" data-file-height="512" /></a>&#160;<a href="Terminids.html" title="Terminids">终结族 Horde</a></span>
 </th>
-<td><a href="Bug_Hole.html#Bile_Titan_Bug_Hole" title="Bug Hole">吐酸泰坦虫穴</a></td>
+<td><a href="Bug_Hole.html#Bile_Titan_Bug_Hole" title="Bug Hole">吐酸泰坦 虫穴</a></td>
 <td>否</td>
 <td>40
 </td></tr>
 <tr>
-<td><a href="Bug_Hole.html" title="Bug Hole">虫穴</a> (内部)</td>
+<td><a href="Bug_Hole.html" title="Bug Hole">虫穴</a> (内圈)</td>
 <td>是</td>
 <td>20
 </td></tr>
 <tr>
-<td><a href="Bug_Hole.html" title="Bug Hole">虫穴</a> (外部)</td>
+<td><a href="Bug_Hole.html" title="Bug Hole">虫穴</a> (外圈)</td>
 <td>否</td>
 <td>40
 </td></tr>
 <tr>
-<td><a href="Cleanse_Infested_District.html" title="Cleanse Infested District">侵染塔巢</a>
+<td><a href="Cleanse_Infested_District.html" title="Cleanse Infested District">Infested Tower</a>
 </td>
 <td>否
 </td>
 <td>50
 </td></tr>
 <tr>
-<td><a href="Shrieker_Nest.html" title="Shrieker Nest">尖啸虫巢塔</a></td>
+<td><a href="Shrieker_Nest.html" title="Shrieker Nest">尖啸虫巢穴 Tower</a></td>
 <td>否</td>
 <td>60
 </td></tr>
@@ -1399,12 +1399,12 @@
 <tr>
 <th rowspan="10"><span class="faction-icon icon-outline"><a href="Automatons.html" title="Automatons"><img class="wiki-icon" alt="" src="../images/Automaton_Icon.svg" decoding="async" loading="lazy" width="512" height="512" data-file-width="512" data-file-height="512" /></a>&#160;<a href="Automatons.html" title="Automatons">机器人 Legion</a></span>
 </th>
-<td><a href="Enemy_Bio-Processors.html" title="Enemy Bio-Processors">生物处理器</a></td>
+<td><a href="Enemy_Bio-Processors.html" title="Enemy Bio-Processors">Bio-处理器</a></td>
 <td>否</td>
 <td>40
 </td></tr>
 <tr>
-<td><a href="Bulk_Fabricator.html" title="Bulk Fabricator">Bulk 构筑者</a> (外部)</td>
+<td><a href="Bulk_Fabricator.html" title="Bulk Fabricator">Bulk 构筑者</a> (外圈)</td>
 <td>否</td>
 <td>50
 </td></tr>
@@ -1419,17 +1419,17 @@
 <td>50
 </td></tr>
 <tr>
-<td><a href="Automaton_Fabricator.html" title="Automaton Fabricator">制造厂</a> (外部)</td>
+<td><a href="Automaton_Fabricator.html" title="Automaton Fabricator">构筑者</a> (外圈)</td>
 <td>否</td>
 <td>40
 </td></tr>
 <tr>
-<td><a href="Automaton_Fabricator.html" title="Automaton Fabricator">制造厂</a> (通风口)</td>
+<td><a href="Automaton_Fabricator.html" title="Automaton Fabricator">构筑者</a> (通风口)</td>
 <td>是</td>
 <td>20
 </td></tr>
 <tr>
-<td><a href="Sabotage_Supply_Bases.html#Destroy_Fuel_Reserves" title="Sabotage Supply Bases">燃料储备</a></td>
+<td><a href="Sabotage_Supply_Bases.html#Destroy_Fuel_Reserves" title="Sabotage Supply Bases">Fuel 储备</a></td>
 <td>否</td>
 <td>60
 </td></tr>
@@ -1461,17 +1461,17 @@
 <td>20
 </td></tr>
 <tr>
-<td><a href="Grounded_Warp_Ship.html" title="Grounded Warp Ship">Grounded Warp Ship</a> (门)</td>
+<td><a href="Grounded_Warp_Ship.html" title="Grounded Warp Ship">Grounded Warp Ship</a> (Door)</td>
 <td>是</td>
 <td>20
 </td></tr>
 <tr>
-<td><a href="Grounded_Warp_Ship.html" title="Grounded Warp Ship">Grounded Warp Ship</a> (外部)</td>
+<td><a href="Grounded_Warp_Ship.html" title="Grounded Warp Ship">Grounded Warp Ship</a> (外圈)</td>
 <td>是</td>
 <td>50
 </td></tr>
 <tr>
-<td><a href="Grounded_Warp_Ship.html" title="Grounded Warp Ship">Grounded Warp Ship</a> (护盾)</td>
+<td><a href="Grounded_Warp_Ship.html" title="Grounded Warp Ship">Grounded Warp Ship</a> (Shield)</td>
 <td>是</td>
 <td>50
 </td></tr>
@@ -1481,12 +1481,12 @@
 <td>20
 </td></tr>
 <tr>
-<td><a href="Monolith.html" title="Monolith">巨石</a></td>
+<td><a href="Monolith.html" title="Monolith">Monolith</a></td>
 <td>否</td>
 <td>60
 </td></tr></tbody></table>
-<p>注意： <b>BaDR</b> means <b>Ba</b>llistic <b>D</b>emolition <b>R</b>esistance. 投射物 武器 that meet demo threshold but are not 爆炸 cannot 摧毁 said 建筑 with BaDR.
-</p><p>For 示例: LAS-98 激光大炮 has 爆破力 20 but cannot 摧毁 虫穴, fabricators or warp ships since it is not 爆炸.
+<p>Note: <b>BaDR</b> means <b>Ba</b>llistic <b>D</b>emolition <b>R</b>esistance. 投射物 武器 that meet demo threshold but are not 爆炸 cannot 摧毁 said 建筑 with BaDR.
+</p><p>例如：LAS-98 激光加农炮拥有 20 点爆破力，但由于它不是爆炸性武器，无法摧毁虫穴、构筑者或穿梭舰。
 </p>
 </div>
 </main>

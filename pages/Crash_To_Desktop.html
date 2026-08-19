@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Crash To Desktop - 绝地潜兵2 中文百科</title>
+<title>闪退到桌面 - 绝地潜兵2 中文百科</title>
 <link rel="stylesheet" href="../theme.css">
 </head>
 <body>
@@ -18,44 +18,44 @@
 </header>
 <main class="content">
   <button class="back-btn" type="button" onclick="history.back()">← 返回</button>
-  <h1 class="page-title">Crash To Desktop</h1>
-  <div class="mw-parser-output"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div><div class="breadcrumb-item breadcrumb-item-final">Crash To Desktop</div></div>
-<p>This 条款 focuses on 崩溃 that occur during the game and that throw 玩家 back onto their desktop 环境.
+  <h1 class="page-title">闪退到桌面</h1>
+  <div class="mw-parser-output"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div><div class="breadcrumb-item breadcrumb-item-final">闪退到桌面</div></div>
+<p>本文重点介绍游戏过程中发生并将玩家弹回桌面的崩溃问题。
 </p>
 <h2><span id=".E5.B7.A5.E4.BD.9C.E6.B5.81"></span><span class="mw-headline" id="工作流">工作流</span></h2>
-<p>通常 it is recommended to use the <a href="Hellbomb_Script.html" title="Hellbomb Script">Hellbomb Script</a> to 速度 up the 流程 and to help you gather information on your system. Please note that this guide was written with Windows in mind. If you need help with Linux, please check <a href="Linux_Steam_Deck_Troubleshooting.html" title="Linux / Steam Deck Troubleshooting">这篇Linux文章</a>.
+<p>通常 it is recommended to use the <a href="Hellbomb_Script.html" title="Hellbomb Script">Hellbomb Script</a> to 速度 up the 流程 and to help you gather information on your system. Please note that this guide was written with Windows in mind. If you need help with Linux, please check <a href="Linux_Steam_Deck_Troubleshooting.html" title="Linux / Steam Deck Troubleshooting">this Linux 条款</a>.
 </p><p>It is recommended to do them one by one, 含义 you try one of the steps first and then test if the crashing continues. If it does, 继续 to the 下一个 step.
 </p>
 <ol><li>Ensure your Motherboard's UEFI / BIOS is up to date. (For more information, please read up on <a href="BIOS_Updates.html" title="BIOS Updates">BIOS Updates</a>. Please read the information carefully.)
-<ol><li>This is absolutely necessary for Intel 13th and 14th Gen CPUs as those are suffering from a hardware flaw that can only be halted via microcode 0x12F.</li></ol></li>
-<li>Ensure Windows is fully up to date.</li>
-<li>Remove any and <b>所有</b> overclocking / undervolting.
-<ol><li>Disable Precision Boost Overdrive, Intel Boost, ASUS MCE, XMP / EXPO / DOCP, 工厂 GPU OCs, etc.</li>
+<ol><li>对于 Intel 第 13 代和第 14 代 CPU 来说这绝对必要，因为它们存在只能通过微码 0x12F 遏制的硬件缺陷。</li></ol></li>
+<li>确保 Windows 已完全更新。</li>
+<li>Remove any and <b>ALL</b> overclocking / undervolting.
+<ol><li>禁用 Precision Boost Overdrive、Intel Boost、ASUS MCE、XMP/EXPO/DOCP、出厂 GPU 超频等。</li>
 <li>Some AMD 5000 / 6000 / 7000 GPUs may need a 负面 core offset. For more information, please check <a href="Troubleshooting_System_Failure.html#AMD_GPUs" title="Troubleshooting System Failure">故障排除 System Failure#AMD GPUs</a>.</li></ol></li>
-<li>Make sure your <a href="Virtual_Memory.html" title="Virtual Memory">页面文件</a> is enabled and set as "System Managed" on at least one disk.
-<ol><li>This is an absolute MUST for 16GB or less RAM.</li></ol></li>
-<li>Remove all mods - this is not optional.
-<ol><li>If you are using the Hellbomb Script -&gt; <code>清除数据选项</code> Menu -&gt; Select "Quick Mod Removal".</li>
-<li>Then in the same menu, select <code>清除设置（Appdata）</code></li>
-<li>Go to the <code>重置/切换组件</code> Menu -&gt; Select "Steam Reset".</li>
-<li>Verify the game files in Steam.</li></ol>
+<li>Make sure your <a href="Virtual_Memory.html" title="Virtual Memory">Pagefile</a> is enabled and set as "System Managed" on at least one disk.
+<ol><li>对于 16GB 或更少的内存来说，这是绝对必须的。</li></ol></li>
+<li>移除所有模组——这不是可选项。
+<ol><li>If you are using the Hellbomb Script -&gt; <code>Clear Data Options</code> Menu -&gt; Select "Quick Mod Removal".</li>
+<li>Then in the same menu, select <code>Clear Settings (Appdata)</code></li>
+<li>Go to the <code>Reset/Toggle Components</code> Menu -&gt; Select "Steam Reset".</li>
+<li>在 Steam 中验证游戏文件。</li></ol>
 <ul><li>For manual steps, follow this guide: Broken Mods.</li></ul></li>
-<li><a href="Clearing_The_Shader_Cache.html" title="Clearing The Shader Cache">清除着色器缓存</a> (Click for Manual Steps)
-<ul><li>Hellbomb Script: <code>清除数据选项</code> menu. -&gt; Select "Clear Only Shader Caches"</li>
-<li>Please be aware that if you are using DX11 you'll need to clear the driver's shader cache instead.</li></ul></li>
+<li><a href="Clearing_The_Shader_Cache.html" title="Clearing The Shader Cache">Clear your shader cache</a> (Click for Manual Steps)
+<ul><li>Hellbomb Script: <code>Clear Data Options</code> menu. -&gt; Select "Clear Only Shader Caches"</li>
+<li>请注意，如果你使用 DX11，则需要改为清除驱动的着色器缓存。</li></ul></li>
 <li><a href="Reinstallation_of_Visual_C++_Redistributables.html" title="Reinstallation of Visual C++ Redistributables">Reinstallation of Visual C++ Redistributables</a> (Click for manual steps)
-<ol><li>Hellbomb Script: <code>重置/切换组件</code> Menu -&gt; Select "卸载 VC++".</li>
-<li>Reboot your PC.</li>
-<li>Hellbomb Script: <code>重置/切换组件</code> Menu -&gt; Select "安装 VC++".</li></ol></li>
-<li>Select the 正确 GPU in Windows:
-<ul><li>Hellbomb Script: <code>图形选项</code> Menu -&gt; "Select 正确 GPU".</li></ul></li>
-<li>Disable "Hardware Accelerated Graphics Scheduling" (HAGS)
-<ol><li>Go to "Windows Settings".</li>
-<li>Select "System".</li>
-<li>Select  "显示".</li>
-<li>Go to "Graphics Settings Link".</li>
-<li>Choose "Toggle off HAGS".</li>
-<li>重新开始 your PC.</li></ol></li></ol>
+<ol><li>Hellbomb Script: <code>Reset/Toggle Components</code> Menu -&gt; Select "卸载 VC++".</li>
+<li>重启电脑。</li>
+<li>Hellbomb Script: <code>Reset/Toggle Components</code> Menu -&gt; Select "安装 VC++".</li></ol></li>
+<li>在 Windows 中选择正确的 GPU：
+<ul><li>Hellbomb Script: <code>Graphics Options</code> Menu -&gt; "Select 正确 GPU".</li></ul></li>
+<li>禁用“硬件加速图形计划”（HAGS）
+<ol><li>前往“Windows 设置”。</li>
+<li>选择“系统”。</li>
+<li>选择“显示”。</li>
+<li>前往“图形设置链接”。</li>
+<li>选择“关闭 HAGS”。</li>
+<li>重启你的电脑。</li></ol></li></ol>
 <div role="navigation" aria-label="Navbox" class="ranger-navbox navigation-not-searchable striped-even mw-collapsible"><div class="ranger-title"><div class="mw-collapsible-toggle-placeholder"></div></span></span><div class="ranger-title-text"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div></div><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:4"><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Tools</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist"><div class="ranger-list">
 <ul><li><a href="Hellbomb_Script.html" title="Hellbomb Script">Hellbomb Script</a></li>
 <li><a href="Steam_Launch_Commands.html" title="Steam Launch Commands">Steam Launch Commands</a></li></ul>
@@ -87,14 +87,14 @@
 </div></div></div></div></div></div></div>
 <!-- 
 NewPP limit report
-Cached time: 20260819055501
+Cached time: 20260819210012
 Cache expiry: 2592000
 Reduced expiry: false
 Complications: [vary‐revision‐sha1]
-CPU time usage: 0.047 seconds
-Real time usage: 0.086 seconds
+CPU time usage: 0.043 seconds
+Real time usage: 0.073 seconds
 Preprocessor visited node count: 129/1000000
-Revision size: 2773/4194304 bytes
+Revision size: 2751/4194304 bytes
 Post‐expand include size: 7497/4194304 bytes
 Template argument size: 47/4194304 bytes
 Highest expansion depth: 8/100
@@ -102,19 +102,19 @@ Expensive parser function count: 2/500
 Unstrip recursion depth: 0/20
 Unstrip post‐expand size: 0/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.011/15.000 seconds
+Lua time usage: 0.010/15.000 seconds
 Lua memory usage: 663239/52428800 bytes
 Number of processed Cargo queries: 2
-Time spent processing Cargo queries: 0.011 s (avg. 0.006 s)
+Time spent processing Cargo queries: 0.010 s (avg. 0.005 s)
 Number of Cargo row insertion attempts: 1
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%   63.309      1 -total
- 74.54%   47.188      1 Template:Breadcrumb_Auto
- 25.28%   16.002      1 Template:Navbox_Troubleshooting
- 21.58%   13.662      1 Template:Navbox
-  4.25%    2.688      2 Template:Article_other
+100.00%   53.455      1 -total
+ 76.62%   40.955      1 Template:Breadcrumb_Auto
+ 23.15%   12.373      1 Template:Navbox_Troubleshooting
+ 19.12%   10.218      1 Template:Navbox
+  7.31%    3.906      2 Template:Article_other
 -->
 </div>
 </main>

@@ -27,7 +27,7 @@
 <li class="toclevel-1 tocsection-4"><a href="#变更历史"><span class="tocnumber">4</span> <span class="toctext">变更历史</span></a></li>
 </ul>
 </div><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Factions.html" title="Factions">阵营</a></div><div class="breadcrumb-item"><a href="Automatons.html" title="Automatons">机器人</a></div><div class="breadcrumb-item breadcrumb-item-final">巨型构筑者</div></div>
-<p><b>巨型构筑者</b> 是一个 机器人 megastructure found exclusively at <a href="Automaton_Outpost.html" title="Automaton Outpost">机器人哨站</a> in <a href="Cities.html" title="Cities">cities</a>. They periodically deploy 重型 敌人 such as <a href="Hulk.html" title="Hulk">巨型者</a> until they are destroyed.
+<p>The <b>Bulk 构筑者</b> is an 机器人 megastructure found exclusively at <a href="Automaton_Outpost.html" title="Automaton Outpost">机器人 哨站</a> in <a href="Cities.html" title="Cities">cities</a>. They periodically deploy 重型 敌人 such as <a href="Hulk.html" title="Hulk">Hulks</a> until they are destroyed.
 </p>
 
 
@@ -84,7 +84,7 @@
 <td>无</td>
 <td>是</td>
 <td>0%</td>
-<td>20 如果 <span class="DamageIcons icon-outline"><a href="Damage.html" title="Damage"><img class="wiki-icon" alt="Explosion" src="../images/Damage_Explosion_Icon.svg" decoding="async" loading="lazy" width="20" height="17" data-file-width="118" data-file-height="101" /></a></span>&#160;<span class="DamageIcons"><a href="Damage.html#Damage_Types" title="Damage"><span style="color: orange;"> </span></a></span>
+<td>20 if <span class="DamageIcons icon-outline"><a href="Damage.html" title="Damage"><img class="wiki-icon" alt="Explosion" src="../images/Damage_Explosion_Icon.svg" decoding="async" loading="lazy" width="20" height="17" data-file-width="118" data-file-height="101" /></a></span>&#160;<span class="DamageIcons"><a href="Damage.html#Damage_Types" title="Damage"><span style="color: orange;"> </span></a></span>
 </td></tr>
 
 
@@ -92,29 +92,29 @@
 </div>
 <p>Disclaimer: 每个带数量的高亮部位 a 数量有各自的 生命值. 未标注数量的部位共享 生命值 pools.
 </p>
-<div id="TableRef1">1) 生命值标注为 标注为 "主体" 没有各自的 individual 生命值. All 造成伤害 to these parts is 转移到敌人的 主生命值 pool.</div>
-<div id="TableRef2">2) 请参阅 护甲 values and enemy 耐久度 as defined in <a href="Damage.html#Enemy_Durability_&amp;_Durable_Damage" title="Damage">伤害</a> for more information.</div>
-<div id="TableRef3">3) 造成伤害 to a part will also be 部分或全部转移 in full to 主生命值. 若设置为 0%, 否 伤害 is transferred.</div>
-<div id="TableRef4">4) 若设置为 "是", 伤害 transferred 对主血量 is capped by the combined 生命值 and 构造 of the part.</div>
-<div id="TableRef5">5) 构造 充当 a secondary 生命池 that, 一旦主体或肢体 生命值 has been depleted, 可能会衰减. The first number is the total 构造 and the second is the 衰退速率. 若设置为 0/s 不会衰减 and the 构造 作为额外 生命值.</div>
-<div id="TableRef6">6) 爆炸抗性 means 爆炸 伤害抗性, and can 射程 from 0 to 100%. 若设置为 100%, the limb cannot take 爆炸伤害; The 爆炸伤害 will instead 目标 主体. 请参阅 <a href="Damage.html#Explosion_Damage" title="Damage">伤害</a> for more information.
-<ul><li>Note: This 机械师, known as <i>Affected By 爆炸</i> can only occur <b>once</b> per 爆炸, 无论 100% 爆炸抗性 parts hit, and the 爆炸's 护甲穿透 <b>must</b> match or exceed 主体护甲 to deal 伤害 对主血量. However, 如果相同 爆炸 has already damaged 主体, this 机械师 will <b>not</b> trigger.</li></ul>
+<div id="TableRef1">1) 生命值标注为"主体"的部位没有各自的独立生命值。对这些部位造成的所有伤害都会转移到敌人的主生命值池。</div>
+<div id="TableRef2">2) 护甲值与敌人耐久度请参阅<a href="Damage.html#Enemy_Durability_&amp;_Durable_Damage" title="Damage">伤害</a> 以获取更多信息。</div>
+<div id="TableRef3">3) 对部位造成的伤害也会部分或全部转移到主生命值。若设置为 0%，则不会转移任何伤害。</div>
+<div id="TableRef4">4) 若设置为"是"，转移到主生命值的伤害将以部位的生命值与构造之和为上限。</div>
+<div id="TableRef5">5) 构造充当次级生命池，一旦主体或肢体的生命值耗尽，可能会开始衰减。第一个数字是构造总量，第二个是衰减速率。若设置为 0/秒，则不会衰减，构造将作为额外生命值。</div>
+<div id="TableRef6">6) 爆炸抗性指爆炸伤害抗性，范围可为 0 至 100%。若设置为 100%，肢体无法承受爆炸伤害，爆炸伤害将转而攻击主体。请参阅<a href="Damage.html#Explosion_Damage" title="Damage">伤害</a>以获取更多信息。
+<ul><li>注：此机制称为\"受爆炸影响\"，每次爆炸只能触发一次，无论命中多少个 100% 爆炸抗性的部位；且爆炸的护甲穿透必须达到或超过主体护甲才能对主血量造成伤害。但如果同一次爆炸已经伤害过主体，此机制将不会触发。</li></ul>
 </div>
 <p><br />
 </p>
 <h2><span id=".E6.88.98.E6.9C.AF.E4.BF.A1.E6.81.AF"></span><span class="mw-headline" id="战术信息">战术信息</span></h2>
-<ul><li>Bulk Fabricators can be taken down with 几个 methods:
-<ul><li>Demolished via the vents using explosives with a 最小 <a href="Demolition.html" title="Demolition">拆除力</a> of <b>20.</b> E.G. a <a href="G-4_Gas.html" title="G-4 Gas">G-4 毒气</a> 手榴弹.
+<ul><li>巨型构筑者可以通过多种方式被摧毁：
+<ul><li>Demolished via the vents using explosives with a 最小 <a href="Demolition.html" title="Demolition">爆破力</a> of <b>20.</b> E.G. a <a href="G-4_Gas.html" title="G-4 Gas">G-4 毒气</a> 手榴弹.
 <ul><li>A 单发 of the <a href="R-36_Eruptor.html" title="R-36 Eruptor">R-36 Eruptor</a> to the vents will 摧毁 it.</li>
 <li>A <a href="G-123_Thermite.html" title="G-123 Thermite">G-123 铝热弹</a> 手榴弹 can 摧毁 a Bulk 构筑者 if it manages to enter through one of the vents, although this can be 困难 to accomplish as the 手榴弹 can stick to the sides of a 通风口.</li></ul></li>
 <li>Applying 最小 爆破力 of <b>50</b> for the 外圈 shell. E.G. 正面 hit of an <a href="Orbital_Gas_Strike.html" title="Orbital Gas Strike">轨道武器 毒气 Strike</a>.</li>
 <li>Causing enough 护甲穿透 of <span class="Templateicons icon-outline"><a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage"><img class="wiki-icon" alt="" src="../images/Armor_AP5_Icon.png" decoding="async" loading="lazy" width="188" height="221" data-file-width="188" data-file-height="221" /></a>&#160;<a href="Damage.html#Armor_Penetration_&amp;_Armor_Values" title="Damage">反坦克 I</a></span> - 伤害 until the 主生命值 has been depleted.
-<ul><li>the <a href="FAF-14_Spear.html" title="FAF-14 Spear">FAF-14 Spear</a> can 摧毁 a Bulk 构筑者 in 1 shot; the <a href="GR-8_Recoilless_Rifle.html" title="GR-8 Recoilless Rifle">GR-8 无后坐力炮</a>, <a href="EAT-17_Expendable_Anti-Tank.html" title="EAT-17 Expendable Anti-Tank">EAT-17 消耗性反坦克武器</a>，以及 <a href="LAS-99_Quasar_Cannon.html" title="LAS-99 Quasar Cannon">LAS-99 类星体加农炮</a>  in 2 shots; the <a href="E_AT-12_Anti-Tank_Emplacement.html" title="E/AT-12 Anti-Tank Emplacement">E/AT-12 反坦克炮台</a>, <a href="EXO-45_Patriot_Exosuit.html" title="EXO-45 Patriot Exosuit">EXO-45 爱国者 外骨骼机甲</a>，以及 <a href="MLS-4X_Commando.html" title="MLS-4X Commando">MLS-4X 突击兵</a> rockets 要求 4 shots.</li>
+<ul><li>The <a href="FAF-14_Spear.html" title="FAF-14 Spear">FAF-14 Spear</a> can 摧毁 a Bulk 构筑者 in 1 shot; the <a href="GR-8_Recoilless_Rifle.html" title="GR-8 Recoilless Rifle">GR-8 无后坐力炮</a>, <a href="EAT-17_Expendable_Anti-Tank.html" title="EAT-17 Expendable Anti-Tank">EAT-17 消耗性反坦克武器</a>, and <a href="LAS-99_Quasar_Cannon.html" title="LAS-99 Quasar Cannon">LAS-99 类星体加农炮</a>  in 2 shots; the <a href="E_AT-12_Anti-Tank_Emplacement.html" title="E/AT-12 Anti-Tank Emplacement">E/AT-12 反坦克炮台</a>, <a href="EXO-45_Patriot_Exosuit.html" title="EXO-45 Patriot Exosuit">EXO-45 爱国者 外骨骼机甲</a>, and <a href="MLS-4X_Commando.html" title="MLS-4X Commando">MLS-4X 突击兵</a> rockets 要求 4 shots.</li>
 <li>Due to their large 浮出地面 area, an <a href="Eagle_Strafing_Run.html" title="Eagle Strafing Run">“飞鹰”机枪扫射</a> can easily 摧毁 a Bulk 构筑者, provided most of the shells 连接.</li></ul></li></ul></li>
-<li>It is possible to use a <a href="Cannon_Turret.html" title="Cannon Turret">Cannon Turret</a>, <a href="Annihilator_Tank.html" title="Annihilator Tank">Annihilator Tank</a>，或 <a href="Factory_Strider.html" title="Factory Strider">移动工厂</a> to 摧毁 Bulk 构筑者.</li>
-<li>Upon 摧毁 the 构筑者 will 爆炸 with a large amount of force, ragdolling, damaging, or killing any 敌人 或附近的绝地潜兵。
+<li>It is possible to use a <a href="Cannon_Turret.html" title="Cannon Turret">Cannon Turret</a>, <a href="Annihilator_Tank.html" title="Annihilator Tank">Annihilator Tank</a>, or <a href="Factory_Strider.html" title="Factory Strider">移动工厂</a> to 摧毁 Bulk 构筑者.</li>
+<li>Upon 摧毁 the 构筑者 will 爆炸 with a large amount of force, ragdolling, damaging, or killing any 敌人 or 绝地潜兵 nearby.
 <ul><li>A <a href="Helldiver.html" title="Helldiver">绝地潜兵</a> getting out of a <a href="Hellpod.html" title="Hellpod">绝地喷射舱</a> will be 受保护 from the 构筑者 爆炸 during the deployment 动画.
-<ul><li>Alternatively calling down a 绝地喷射舱-战略配备 will also 摧毁 a Bulk 构筑者 with the 内容 surviving the following 爆炸.</li></ul></li></ul></li></ul>
+<ul><li>或者，呼叫地狱舱战略配备也可以摧毁巨型构筑者，且其内部物资能在随后的爆炸中幸存。</li></ul></li></ul></li></ul>
 <h2><span id=".E5.8F.98.E6.9B.B4.E5.8E.86.E5.8F.B2"></span><span class="mw-headline" id="变更历史">变更历史</span></h2>
 <div style="display:flex; border: 1px solid; padding: 1px; border-radius: 5px; text-align:center; font-weight:bold;">
 <div style="flex: 0 0 119px; text-align: center; font-weight: bold;">补丁</div>
@@ -128,7 +128,7 @@
 <div style="border-left:1px solid; padding:4px 8px; min-height: 55px;">
 <div style="display: table; min-height: 55px;">
 <div style="display: table-cell; vertical-align: middle;"> 
-<p>Change
+<p>变化
 </p>
 <ul><li>生命值从1,500提升至5,000
 <ul><li>官员 更新日志 incorrectly state 生命值 已增加 from 400 to 5,000. 生命值 was 实际上 已增加 to 4,000.</li></ul></li></ul>
@@ -156,44 +156,44 @@
 </p>
 <!-- 
 NewPP limit report
-Cached time: 20260819054835
+Cached time: 20260819205420
 Cache expiry: 3600
 Reduced expiry: true
 Complications: [vary‐revision‐sha1, show‐toc]
-CPU time usage: 0.246 seconds
-Real time usage: 0.418 seconds
+CPU time usage: 0.145 seconds
+Real time usage: 0.346 seconds
 Preprocessor visited node count: 1442/1000000
-Revision size: 3249/4194304 bytes
-Post‐expand include size: 59541/4194304 bytes
-Template argument size: 3096/4194304 bytes
+Revision size: 3199/4194304 bytes
+Post‐expand include size: 59521/4194304 bytes
+Template argument size: 3084/4194304 bytes
 Highest expansion depth: 13/100
 Expensive parser function count: 4/500
 Unstrip recursion depth: 0/20
 Unstrip post‐expand size: 1568/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.064/15.000 seconds
-Lua memory usage: 3256104/52428800 bytes
+Lua time usage: 0.039/15.000 seconds
+Lua memory usage: 3256100/52428800 bytes
 Number of processed Cargo queries: 15
-Time spent processing Cargo queries: 0.028 s (avg. 0.002 s)
+Time spent processing Cargo queries: 0.032 s (avg. 0.002 s)
 Number of Cargo row insertion attempts: 2
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%  348.180      1 -total
- 69.10%  240.594      1 Template:Nav_Enemy
- 68.46%  238.347      1 Template:Navbox
- 16.48%   57.397      1 Template:Infobox_Structure
-  7.38%   25.682      1 Template:Anatomy_Table
-  6.91%   24.064      5 Template:Article_other
-  5.89%   20.505      2 Template:Difficulty
-  5.42%   18.855      2 Template:Anatomy_Row
-  4.61%   16.041      1 Template:Breadcrumb_Auto
-  4.25%   14.783      2 Template:Change_History_Update
+100.00%  299.209      1 -total
+ 62.01%  185.539      1 Template:Nav_Enemy
+ 60.37%  180.634      1 Template:Navbox
+ 21.36%   63.903      1 Template:Infobox_Structure
+  8.48%   25.359      1 Template:Anatomy_Table
+  7.32%   21.911      5 Template:Article_other
+  7.08%   21.171      1 Template:Breadcrumb_Auto
+  6.15%   18.405      2 Template:Difficulty
+  6.09%   18.209      2 Template:Anatomy_Row
+  4.83%   14.438      2 Template:Change_History_Update
 -->
 </div><aside class="page-side"><div class="druid-infobox druid-container noexcerpt druid-container-enemy" id="druid-container-1"><div><div class="druid-title">Bulk Fabricator</div></div><div class="druid-section-container"><div class="druid-main-image"><img alt="Bulk Fabricator.png" src="../images/Bulk_Fabricator.webp" decoding="async" loading="lazy" width="1679" height="1664" data-file-width="1679" data-file-height="1664" /></div></div><div class="druid-section-container"><div data-druid-section="GeneralInfo"><div class="druid-section druid-section-GeneralInfo">基本信息 信息</div></div><div class="druid-row druid-row-faction" data-druid-section-row="GeneralInfo"><div class="druid-label druid-label-faction">阵营</div><div class="druid-data druid-data-faction druid-data-nonempty">
 机器人</div></div></div><div class="druid-section-container"><div data-druid-section="StatsInfo"><div class="druid-section druid-section-StatsInfo">属性 信息</div></div><div class="druid-row druid-row-health" data-druid-section-row="StatsInfo"><div class="druid-label druid-label-health">生命值</div><div class="druid-data druid-data-health druid-data-nonempty">
 4,000</div></div><div class="druid-row druid-row-badr" data-druid-section-row="StatsInfo"><div class="druid-label druid-label-badr"><span style="cursor: help; text-decoration: underline; display: inline;" class="tooltip" title="Ballistic Damage Resistance. Projectile weapons that meet demo threshold but are not explosive cannot destroy said structure with BaDR.">BaDR</span></div><div class="druid-data druid-data-badr druid-data-nonempty">
-是 通风口 <br /> 否 Elsewhere</div></div><div class="druid-row druid-row-min&#95;difficulty" data-druid-section-row="StatsInfo"><div class="druid-label druid-label-min&#95;difficulty">最低难度</div><div class="druid-data druid-data-min&#95;difficulty druid-data-nonempty">
+是 Vents <br /> 否 Elsewhere</div></div><div class="druid-row druid-row-min&#95;difficulty" data-druid-section-row="StatsInfo"><div class="druid-label druid-label-min&#95;difficulty">最低难度</div><div class="druid-data druid-data-min&#95;difficulty druid-data-nonempty">
 <a href="Difficulty.html" title="Difficulty"><img class="wiki-icon" alt="Trivial Difficulty Icon.svg" src="../images/Trivial_Difficulty_Icon.svg" decoding="async" loading="lazy" width="34" height="16" data-file-width="512" data-file-height="248" /></a> <span><a href="Difficulty.html" title="Difficulty">简单</a></span></div></div></div></div></aside></div></div>
 </main>
 <footer class="site-footer">离线中文版 · 内容版权归 The 绝地潜兵 Wiki / wiki.gg 贡献者所有 · 仅供个人学习交流</footer>

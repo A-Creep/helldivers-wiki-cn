@@ -1,5 +1,51 @@
 # 汉化进度（自动更新）
 
+## 2026-08-20 全量重建+核心敌人页句子级翻译（/root 完成，推送 GitHub）
+- 全量重建：清空缓存，清洗后的旧翻译（4341 条）全部重新渲染生效
+- 核心敌人页句子级翻译：Marauder（劫掠者）/Brawler（乱斗者）/Watcher（守望者）43 条句子块高质量翻译并写库，Builder 句子级管线验证通过（占位符完整还原、无残留）
+- 全站验证：183,836 链接全绿、1135 页 0 高危；qa 门禁问题从 9753 降至 ~4800（主要残留为补丁页正文中英混杂）
+- 补拉 Placeholder 占位图 1 张
+- EXE 重新打包；镜像推送 GitHub
+
+## 2026-08-20 翻译管线重构（句子级）+ 存量清洗（/root 完成）
+- **句子级翻译管线**：
+  - 新增 `SentenceParser`（wiki_extractor.py）：以自然语言句子为单位切分（替代旧版按 wikitext 语法块切分），`[[链接]]/{{模板}}/<tag>/'''粗体'''` 替换为 `[PH_内容hash]` 占位符（跨解析稳定），每句一块（context='sentence'）
+  - `Builder.build_page` 句子级优先：有句子译文用句子级，否则回退旧块级管线；混合模式无占位符残留
+  - 全站提取 **56,865 个句子块**（pending）
+  - 新增 `translate_sentences.py`：提取句子块 + 术语前置替换表（Sentry/Trooper/Fabricator/Biome 等先替换中文）
+  - PROMPT 改造：禁止"……"、`[PH_x]` 占位符保留、无法确定保留英文、官方术语优先
+- **存量清洗**：`clean_ellipsis.py` 按 4 条规则清"……"（连续多个/紧贴标点/孤立句首句尾），**4341 条**已清洗，保留 4159 条分块衔接占位
+- **质量门禁**：`qa_gate.py` 拦截中英混杂/省略号/语序异常（全站基线 968 页 9753 问题，主要是补丁页正文）；已接入 sync_update.py（step_qa）
+- **重翻标记**：15 个核心页（Marauder/Brawler/Watcher 等用户点名 + qa 严重页）729 个句子块重置待翻
+- 说明：句子级翻译待 A 组/Kimi 批量执行后，Builder 自动采用；旧块级翻译仍作为回退保留
+
+## 2026-08-20 全站检查+翻译生效+术语统一（/root 完成，未推 GitHub）
+- **翻译生效根因修复**：发现 zh_cache.jsonl 缓存是翻译导入前的旧版本，1143 页中 829 页含大段英文（DB 已翻译但页面未生效）。清空缓存全量重建，M90A/AR-32/AR-2 等页面翻译全部生效
+- **标题补全**：122 个英文 h1 补中文译名（Warbond/教程/战史/机制页，extra_title 映射）；剔除 8 个垃圾页（Scratchpad/Fanon/WIP/Module talk/zh-tw）+ 3 个行星残留页
+- **标题映射扩展**：build_title_map 纳入 template_param/formatting 的精确标题翻译（AR-32 Pacifier→AR-32 安抚者、AR-2 Coyote→AR-2 野狼、Acidic Badlands→酸性荒原 等）
+- **Stagger Force 术语统一**：DB 67 条 + glossary + apply_zh_terms 全部统一为"踉跄值"（原硬直力度/踉跄力/踉跄之势/失衡之势 混用）；页面 729 处踉跄值
+- **图片补拉**：IX-Voidwalker Helmet Render、Void Source Planet Landscape 两个失效缩略图补拉并压缩
+- 验收：全站 1135 页 Playwright 复扫 **0 横滚/0 断图/0 h1英文/0 Weapon not found**；179,823 链接全绿、0 高危
+- EXE：dist\Helldivers2WikiCN.exe（约 512MB）冒烟通过；**未推送 GitHub（用户要求）**
+
+## 2026-08-20 武器数据/弹药字段终审通过（Kimi 4/4）
+- 继上轮修复后补充：
+  1. **Attachments Table 模板键**：DBS-2 配件表 "无配件 data found" 根因是 `{{Attachments Table|Double Freedom}}` 参数被汉化 → wiki_extractor.py 增加 attachments_table 保护，配件表恢复（6 行数据）
+  2. **infobox 弹药值**：`3 Magazines` → `3 个弹匣`（备用弹匣 druid-row 值）
+  3. **面包屑/许可类型**：`Supply` → 补给（面包屑链接文本 + infobox 许可类型值），Offensive/Defensive 同步处理
+- Kimi 终审 4/4 通过：AR-23（数据表完整/无报错）、DBS-2（备用弹药/枪管/配件表）、MG-43（3 个弹匣/补给）、AC-8（数据表完整）
+- 线上镜像 main caae1ff6 已推；EXE 约 495MB 冒烟通过
+
+## 2026-08-20 武器数据表与弹药字段修复发布（/root 直接完成）
+- 背景：用户反馈 DBS-2/AR-23 弹药字段半翻译（Spare 发/Starting 发/发 from Supply）、Barrels 未译、AR-23 数据图表缺失
+- 根因与修复：
+  1. **弹药字段半翻译**：apply_zh_terms.py TERMS 中 `("ROUNDS","发")` 因 re.I 匹配所有 Rounds，破坏 `Spare Rounds` 等整词 → 增加 Rounds/Shells 系列长词（备用弹药/初始弹药/从补给中获得弹药/从弹药箱中获得弹药）+ `fix_ammo_fields` 修复已损坏产物
+  2. **Barrels**：武器统计表单元格 `Barrels` → 枪管（专用正则，不碰正文 Exploding Barrels）
+  3. **武器数据表缺失（161 页）**：`{{Attack Data_Weapon|武器英文键}}` 模板参数被汉化 → 模板查不到数据输出 "Weapon not found" → wiki_extractor.py 对 Attack_Data 系列模板参数强制保持英文原文；清除 161 条坏缓存行重新渲染，AR-23 等页面完整恢复"详细武器数据"章节与数据表
+- 验收：全站 0 Weapon not found；AR-23/DBS-2 数据表完整、字段译名正确；181,379 链接全绿、1146 页 0 高危
+- EXE：dist\Helldivers2WikiCN.exe（约 495MB），冒烟通过
+- 镜像：main **1d703310 → 85fe9163**（已推 GitHub Pages）
+
 ## 2026-08-20 收尾修复发布（/root 统筹直接完成）
 - 背景：翻译 100% 完成、项目进入收尾；用户指示所有任务由 /root 直接完成，不再派单任务组
 - 修复项：

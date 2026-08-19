@@ -28,7 +28,7 @@
 123px-DS-42_Federation%27s_Blade_Armor_Render.png
 123px-GS-11_Democracy%27s_Deputy_Armor_Render.png
 123px-P%C3%B6pli_IX_Planet_Landscape_Header.png
-123px-Rift_active_landscape.png
+123px-Void_Source_Planet_Landscape_Void_Header.png
 128px-Caught_them_by_Supplies%21_Trophy_Unlocked_Icon.png
 128px-Cool_guys_don%27t_loo-_AAAAH%21_Trophy_Unlocked_Icon.png
 128px-Democracy_ain%27t_done_with_you_yet_Trophy_Unlocked_Icon.png
@@ -89,6 +89,7 @@
 200px-Freedom%27s_Tapestry_Cape_Render.png
 200px-Freedom%27s_Tapestry_Player_Card_Icon.webp
 200px-GS-11_Democracy%27s_Deputy_Helmet_Render.webp
+200px-IX-Voidwalker_Helmet_Render.png
 200px-Liberty%27s_Herald_Cape_Render.png
 200px-Liberty%27s_Herald_Player_Card_Icon.webp
 200px-Miranda%27s_Legacy_Cape_Render.png
@@ -98,6 +99,7 @@
 200px-Patient_Zero%27s_Remembrance_Cape_Render.png
 200px-Patient_Zero%27s_Remembrance_Player_Card_Icon.webp
 200px-Reckoning%27s_Cheer_Cape_Render.png
+20px-Placeholder.png
 240px-De-Forester%27s_Sailcloth_Cape_Render.png
 240px-De-Forester%27s_Sailcloth_Player_Card_Icon.webp
 240px-Draw%21_Emote_Icon.webp
@@ -155,13 +157,10 @@
 512px-City_Fighter%27s_Resolve_Player_Card.webp
 512px-DS-42_Federation%27s_Blade_Armor_Render.webp
 512px-DS-42_Federation%27s_Blade_Helmet_Render.webp
-512px-De-Forester%27s_Sailcloth_Cape_Render.webp
 512px-Dissident%27s_Nightmare_Cape_Armory.png
 512px-Eagle%27s_Fury_Cape_Render.webp
 512px-Federation%27s_Embrace_Cape_Render.webp
 512px-Freedom%27s_Tapestry_Cape_Render.webp
-512px-GS-11_Democracy%27s_Deputy_Armor_Render.webp
-512px-GS-11_Democracy%27s_Deputy_Helmet_Render.webp
 512px-Liberty%27s_Herald_Cape_Render.webp
 512px-Miranda%27s_Legacy_Cape_Render.webp
 512px-Mother_Eagle%27s_Wings_Cape_Render.webp
@@ -228,10 +227,8 @@ Cloak_of_Posterity%27s_Gratitude_Player_Card_Icon.webp
 Crossbow%2C_Weapon_Wheel.png
 DS-42_Federation%27s_Blade_Armor_Render.webp
 DS-42_Federation%27s_Blade_Helmet_Render.webp
-De-Forester%27s_Sailcloth_Player_Card_Icon.webp
 Disambig.svg
 Dissident%27s_Nightmare_Player_Card_Icon.webp
-Draw%21_Emote_Icon.png
 Eagle%27s_Fury_Player_Card_Icon.webp
 Executioner%27s_Canopy_Cape_Armory.webp
 Executioner%27s_Canopy_Player_Card_Icon.webp

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Laptop 故障排除 - 绝地潜兵2 中文百科</title>
+<title>笔记本故障排查 - 绝地潜兵2 中文百科</title>
 <link rel="stylesheet" href="../theme.css">
 </head>
 <body>
@@ -18,9 +18,9 @@
 </header>
 <main class="content">
   <button class="back-btn" type="button" onclick="history.back()">← 返回</button>
-  <h1 class="page-title">Laptop 故障排除</h1>
-  <div class="mw-parser-output"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div><div class="breadcrumb-item breadcrumb-item-final">Laptop 故障排除</div></div>
-<p>This page is dedicated for help with <b>笔记本电脑</b>.
+  <h1 class="page-title">笔记本故障排查</h1>
+  <div class="mw-parser-output"><div class="breadcrumb noexcerpt"><div class="breadcrumb-item"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div><div class="breadcrumb-item breadcrumb-item-final">笔记本故障排查</div></div>
+<p>This page is dedicated for help with <b>Laptops</b>.
 </p>
 <div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
 <ul>
@@ -36,94 +36,94 @@
 
 <h2><span id=".E5.9F.BA.E6.9C.AC.E6.80.A7.E8.83.BD.E4.B8.8E.E7.A8.B3.E5.AE.9A.E6.80.A7"></span><span class="mw-headline" id="基本性能与稳定性">基本性能与稳定性</span></h2>
 <p>Laptops have stricter thermal and power limits than Desktops. 绝地潜兵 2 is demanding enough to expose those limits and can potentially cause throttling, 崩溃 or shutdowns.
-</p><p><b>通用提示：</b>
+</p><p><b>基本信息 技巧:</b>
 </p>
-<ul><li>Plug your Laptop directly into the wall.
-<ul><li>Do not run the game using the 电池.</li>
-<li>Avoid weak power strips.</li>
-<li>Set Windows Power Plan to "<b>平衡</b>" (Recommended for most Laptops)</li></ul></li></ul>
-<ul><li>Ensure the 使用 of the 正确 GPU.
+<ul><li>将笔记本直接插入墙插。
+<ul><li>不要使用电池运行游戏。</li>
+<li>避免使用劣质插线板。</li>
+<li>Set Windows Power Plan to "<b>Balanced</b>" (Recommended for most Laptops)</li></ul></li></ul>
+<ul><li>确保使用正确的GPU。
 <ul><li><a href="Hellbomb_Script.html" title="Hellbomb Script">Hellbomb Script</a> -&gt; Graphics Options Menu -&gt; Select 正确 GPU.</li>
-<li>Manually: Go to "Windows Graphics Settings" -&gt; Set 绝地潜兵 2 to "High Performance".</li>
-<li>Use the <a href="GPU_Driver_Recommendation.html" title="GPU Driver Recommendation">推荐GPU驱动</a>.</li></ul></li></ul>
-<ul><li>Please 监控 temperatures under load.
+<li>手动操作：前往“Windows图形设置” -&gt; 将绝地潜兵2设为“高性能”。</li>
+<li>Use the <a href="GPU_Driver_Recommendation.html" title="GPU Driver Recommendation">recommended GPU driver</a>.</li></ul></li></ul>
+<ul><li>请在负载下监控温度。
 <ul><li>You can use HWiNFO64 for sensor logging. If the 软件 reports overheating, it's imperative to clean the vents and ensure proper airflow.</li></ul></li></ul>
-<ul><li>安装 the game on a SSD / NVMe (not HDD!).
-<ul><li>Keep at least 20% free space for best performance.</li></ul></li></ul>
-<ul><li>Make sure your <a href="Virtual_Memory.html" title="Virtual Memory">页面文件</a> is enabled and set as System Managed on at least one disk.
-<ul><li>This is an absolute MUST for 16GB or less RAM.</li></ul></li></ul>
-<p><b>请注意：</b>
+<ul><li>将游戏安装在SSD/NVMe上（不要用HDD！）。
+<ul><li>至少保留20%的可用空间以获得最佳性能。</li></ul></li></ul>
+<ul><li>Make sure your <a href="Virtual_Memory.html" title="Virtual Memory">pagefile</a> is enabled and set as System Managed on at least one disk.
+<ul><li>对于 16GB 或更少的内存来说，这是绝对必须的。</li></ul></li></ul>
+<p><b>Please be aware:</b>
 </p>
-<ul><li>Thin / 轻型 Laptops may still throttle in 重型 missions.</li>
-<li>iGPU-only systems are below 最小 spec and most likely will either not start at all or perform very badly.</li>
-<li>Older 4-core CPUs often cause bottlenecks.
+<ul><li>轻薄本在重型任务中仍可能降频。</li>
+<li>仅使用核显的系统低于最低配置，很可能根本无法启动或性能极差。</li>
+<li>较旧的4核CPU经常造成瓶颈。
 <ul><li>See <a href="User_Settings_Config_FPS_Optimization.html" title="User Settings Config FPS Optimization">User Settings Config FPS 优化</a> for help with settings.</li></ul></li>
-<li>Sustained thermal throttling can cause 崩溃 or shutdowns!</li></ul>
+<li>持续的热降频可能导致崩溃或关机！</li></ul>
 <h2><span id=".E5.8D.A1.E9.A1.BF"></span><span class="mw-headline" id="卡顿">卡顿</span></h2>
-<p>If you are on a Laptop and 经验值 stuttering despite all other 故障排除 steps, please try the following:
+<p>如果你使用笔记本，并且尝试了所有其他故障排除步骤后仍出现卡顿，请尝试以下方法：
 </p>
 <div class="floatright"><img alt="Laptop stutter.png" src="../images/400px-Laptop_stutter.webp" decoding="async" loading="lazy" width="400" height="400" data-file-width="1281" data-file-height="1281" /></div>
 <ul><li>下载 <a rel="nofollow" class="external text" href="https://www.techpowerup.com/gpuz/">GPU-Z</a></li>
-<li>Select your high-end GPU, then go to the "Sensors" tab.</li>
-<li>Launch the game until you encounter stuttering.</li>
-<li>Scroll down to the "PerfCap Reason" field.
+<li>选择你的高端GPU，然后进入“传感器”标签页。</li>
+<li>启动游戏，直到遇到卡顿。</li>
+<li>向下滚动到“PerfCap Reason”字段。
 <ul><li>If it says <code>PWR</code> this indicates that the GPU is power-有限, which commonly happens due to firmware-level power mismanagement (EC/BIOS state issue) where the laptop incorrectly restricts GPU power even under load. Should this be the case, the quickest way to 解决 this 问题 is to perform a CMOS reset by holding the laptop's power button for 30 to 60 秒.</li></ul></li></ul>
-<p>This can happen because of 几个 reasons:
+<p>这可能由多种原因导致：
 </p>
-<ul><li>Aftermarket or low-wattage 强袭虫</li>
-<li>Laptop power 管理 (EC/firmware) getting stuck in a bad state.</li>
-<li>电池 degradation or power 运送 issues.</li>
-<li>Long periods of being constantly plugged in (can 有时 贡献 to EC state issues).</li></ul>
-<p><b>其他可能的警告：</b>
+<ul><li>第三方或低功率充电器</li>
+<li>笔记本电源管理（EC/固件）卡在异常状态。</li>
+<li>电池老化或供电问题。</li>
+<li>长时间一直插着电源（有时会导致EC状态问题）。</li></ul>
+<p><b>Others possible warnings:</b>
 </p>
 <ul><li><code>Thrm</code> - Laptop is overheating.
-<ul><li>Clean fans/vents; if needed, replace thermal paste.</li></ul></li></ul>
+<ul><li>清洁风扇/通风口；如有必要，更换导热硅脂。</li></ul></li></ul>
 <ul><li><code>Util</code> - GPU 使用 is too low
 <ul><li>Likely CPU 瓶颈 or scheduling issue (Check <a href="Troubleshooting_Stutters_Short_Freezes.html" title="Troubleshooting Stutters/Short Freezes">故障排除 Stutters/Short Freezes</a> as well)</li></ul></li></ul>
 <ul><li><code>VRel / VOp</code> - Normal 行为
-<ul><li>The 问题 is likely elsewhere (CPU, drivers, background tasks, etc.)</li></ul></li></ul>
+<ul><li>问题很可能出在其他地方（CPU、驱动、后台任务等）</li></ul></li></ul>
 <h3><span id="ASUS_Gaming_Laptops.EF.BC.882021.E5.8F.8A.E6.9B.B4.E6.96.B0.E6.AC.BE.EF.BC.89"></span><span class="mw-headline" id="ASUS_Gaming_Laptops（2021及更新款）">ASUS Gaming Laptops（2021及更新款）</span></h3>
 <div class="floatright"><img alt="ASUSLaptopMessage.png" src="../images/400px-ASUSLaptopMessage.webp" decoding="async" loading="lazy" width="400" height="400" data-file-width="1080" data-file-height="1080" /></div>
 <p>There is an inherent flaw in the BIOS/UEFI of ASUS gaming laptops produced from 2021 onward.  Their 公告 specifically calls out their 2023 models, but these are just the ones they are starting with.  ALL ASUS Gaming models produced from 2021 and onward have this 问题.
 </p>
-<ul><li>If you have ANY ASUS gaming laptop, you can check their 网站 for an 更新 to your specific model: <a rel="nofollow" class="external text" href="https://www.asus.com/support/?id=155">ASUS.com支持</a></li>
-<li>If there is not a new beta BIOS/UEFI available for your laptop, you can 联络 ASUS 支援 and request an 更新: <a rel="nofollow" class="external text" href="https://www.asus.com/support/contact/troubleshooting/">ASUS.com联系故障排除</a></li>
-<li>技术信息 users can review the full 调查 here: <a rel="nofollow" class="external text" href="https://github.com/Zephkek/Asus-ROG-Aml-Deep-Dive">GitHub.com调查</a></li></ul>
+<ul><li>If you have ANY ASUS gaming laptop, you can check their 网站 for an 更新 to your specific model: <a rel="nofollow" class="external text" href="https://www.asus.com/support/?id=155">ASUS.com 支援</a></li>
+<li>If there is not a new beta BIOS/UEFI available for your laptop, you can 联络 ASUS 支援 and request an 更新: <a rel="nofollow" class="external text" href="https://www.asus.com/support/contact/troubleshooting/">ASUS.com 联络 故障排除</a></li>
+<li>技术信息 users can review the full 调查 here: <a rel="nofollow" class="external text" href="https://github.com/Zephkek/Asus-ROG-Aml-Deep-Dive">GitHub.com 调查</a></li></ul>
 <div style="clear:both;"></div>
 <h3><span id=".E7.A6.81.E7.94.A8.E7.AC.94.E8.AE.B0.E6.9C.AC.E7.94.B5.E8.84.91.E5.AD.98.E5.9C.A8.E8.BD.AF.E4.BB.B6"></span><span class="mw-headline" id="禁用笔记本电脑存在软件">禁用笔记本电脑存在软件</span></h3>
-<p>The following presence 软件 needs to be deactivated as the functionality can cause stuttering.
+<p>以下检测软件需要停用，因为其功能可能导致卡顿。
 </p>
 <table class="wikitable">
 
 <tbody><tr>
-<th>笔记本电脑制造商</th>
+<th>Laptop 制造商</th>
 <th>软件</th>
-<th>变化
+<th>Change
 </th></tr>
 <tr>
 <td>LG</td>
 <td>LG Glance by Mirametrix</td>
-<td>禁用软件
+<td>Disable 软件
 </td></tr>
 <tr>
 <td>Dell</td>
 <td>Dell Optimizer</td>
-<td>禁用 <code>ExpressSign-in</code> or <code>接近传感器</code>
+<td>Disable <code>ExpressSign-in</code> or <code>Proximity Sensor</code>
 </td></tr>
 <tr>
 <td>Lenovo</td>
 <td>Lenovo Vantage</td>
-<td>禁用 <code>Zero Zouch Lock</code> or <code>虚拟锁定传感器</code>
+<td>Disable <code>Zero Zouch Lock</code> or <code>Virtual Lock Sensor</code>
 </td></tr>
 <tr>
 <td>HP</td>
 <td>HP Presence</td>
-<td>禁用 <code>自动锁定/唤醒</code>
+<td>Disable <code>Auto Lock/Awake</code>
 </td></tr>
 <tr>
 <td>ASUS</td>
 <td>MyASUS</td>
-<td>禁用 <code>自适应锁定</code>
+<td>Disable <code>Adaptive Lock</code>
 </td></tr></tbody></table>
 <div role="navigation" aria-label="Navbox" class="ranger-navbox navigation-not-searchable striped-even mw-collapsible"><div class="ranger-title"><div class="mw-collapsible-toggle-placeholder"></div></span></span><div class="ranger-title-text"><a href="Troubleshooting.html" title="Troubleshooting">故障排除</a></div></div><div class="ranger-section mw-collapsible-content"><div class="ranger-section-body mw-collapsible-content" style="--count:4"><div class="ranger-row"><div class="ranger-group level-0"><div class="ranger-wrap">Tools</div></div><div class="ranger-listbox"><div class="ranger-wrap ranger-odd hlist"><div class="ranger-list">
 <ul><li><a href="Hellbomb_Script.html" title="Hellbomb Script">Hellbomb Script</a></li>
@@ -156,14 +156,14 @@
 </div></div></div></div></div></div></div>
 <!-- 
 NewPP limit report
-Cached time: 20260819055457
+Cached time: 20260819205904
 Cache expiry: 2592000
 Reduced expiry: false
 Complications: [vary‐revision‐sha1, show‐toc]
-CPU time usage: 0.045 seconds
-Real time usage: 0.067 seconds
+CPU time usage: 0.034 seconds
+Real time usage: 0.082 seconds
 Preprocessor visited node count: 146/1000000
-Revision size: 4602/4194304 bytes
+Revision size: 4497/4194304 bytes
 Post‐expand include size: 7533/4194304 bytes
 Template argument size: 47/4194304 bytes
 Highest expansion depth: 8/100
@@ -171,19 +171,19 @@ Expensive parser function count: 2/500
 Unstrip recursion depth: 0/20
 Unstrip post‐expand size: 0/10000000 bytes
 ExtLoops count: 0/5000
-Lua time usage: 0.010/15.000 seconds
+Lua time usage: 0.008/15.000 seconds
 Lua memory usage: 664515/52428800 bytes
 Number of processed Cargo queries: 2
-Time spent processing Cargo queries: 0.010 s (avg. 0.005 s)
+Time spent processing Cargo queries: 0.012 s (avg. 0.006 s)
 Number of Cargo row insertion attempts: 1
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%   46.769      1 -total
- 77.27%   36.137      1 Template:Breadcrumb_Auto
- 22.46%   10.505      1 Template:Navbox_Troubleshooting
- 17.80%    8.326      1 Template:Navbox
-  6.86%    3.207      2 Template:Article_other
+100.00%   60.493      1 -total
+ 75.92%   45.926      1 Template:Breadcrumb_Auto
+ 23.60%   14.276      1 Template:Navbox_Troubleshooting
+ 19.27%   11.656      1 Template:Navbox
+  8.81%    5.332      2 Template:Article_other
 -->
 </div>
 </main>
